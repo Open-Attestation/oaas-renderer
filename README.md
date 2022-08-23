@@ -65,7 +65,6 @@ export const templates = [
         template: Template,
     },
 ]
-
 ```
 
 ### Adding a new template

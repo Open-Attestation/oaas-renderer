@@ -6,7 +6,7 @@ import { <%= h.changeCase.pascalCase(issuerId + ' ' + docType) %>Template } from
 export const <%= h.changeCase.camelCase(issuerId + ' ' + docType) %>Templates = [
     {
         id: '<%= h.changeCase.camelCase(issuerId + ' ' + docType) %>',
-        label: '<%= h.changeCase.camelCase(issuerId + ' ' + docType) %>',
+        label: 'Certificate',
         template: <%= h.changeCase.pascalCase(issuerId + ' ' + docType) %>Template,
     },
 ]
