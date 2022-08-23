@@ -10,6 +10,7 @@ import {
     CardFace,
     FooterContainer,
     LogoImage,
+    SignatureImage,
     Typography,
 } from './bcls-aed.components'
 import { NycBclsAedOaDoc } from './bcls-aed.types'
@@ -17,6 +18,13 @@ import obsLogoSrc from './obs-logo.png'
 import obstcLogoSrc from './obstc-logo.png'
 import { Helmet } from 'react-helmet-async'
 import { FlippableCard } from 'components/flippable-card/flippable-card'
+
+import signatureOne from './1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png'
+
+const signatureSources: Record<string, string> = {
+    '1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc':
+        signatureOne,
+}
 
 export const NycBclsAedTemplate: FunctionComponent<
     TemplateProps<NycBclsAedOaDoc> & { className?: string }
@@ -107,7 +115,12 @@ export const NycBclsAedTemplate: FunctionComponent<
                         {/* Center container */}
                         <FlexBox $vertical>
                             <Typography $size="large" $m={0} $mb={1} $bold>
-                                {document.ciSignature}
+                                <SignatureImage
+                                    src={`${
+                                        signatureSources[document.ciSignature]
+                                    }`}
+                                    alt="ci signature"
+                                />
                             </Typography>
                             <Line $maxWidth="162px" />
                             <FlexBox $vertical $spacing={2} $mt={0}>

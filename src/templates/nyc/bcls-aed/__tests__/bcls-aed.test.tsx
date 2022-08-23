@@ -101,7 +101,7 @@ describe('NycBclsAedTemplate', () => {
               justify-content: center;
             }
 
-            .c17 {
+            .c18 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -121,11 +121,11 @@ describe('NycBclsAedTemplate', () => {
               margin-top: 0px;
             }
 
-            .c17 > *:not(:last-child) {
+            .c18 > *:not(:last-child) {
               margin-bottom: 16px;
             }
 
-            .c16 {
+            .c17 {
               display: block;
               border-bottom: 1px solid black;
               width: 100%;
@@ -195,7 +195,7 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c18 {
+            .c19 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 700;
@@ -205,14 +205,14 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c19 {
+            .c20 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c20 {
+            .c21 {
               font-size: 1em;
               font-style: normal;
               font-weight: 400;
@@ -222,7 +222,7 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c21 {
+            .c22 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 400;
@@ -269,6 +269,10 @@ describe('NycBclsAedTemplate', () => {
 
             .c11 img {
               width: 100%;
+            }
+
+            .c16 {
+              max-height: 72px;
             }
 
             .c0 {
@@ -383,37 +387,41 @@ describe('NycBclsAedTemplate', () => {
                     <p
                       className="c15 c8"
                     >
-                      ci-signature-1
+                      <img
+                        alt="ci signature"
+                        className="c16"
+                        src="1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png"
+                      />
                     </p>
                     <div
-                      className="c16"
+                      className="c17"
                     />
                     <div
-                      className="c17"
+                      className="c18"
                     >
                       <div
                         className="c6"
                       >
                         <p
-                          className="c18 c8"
+                          className="c19 c8"
                         >
                           trainer-1
                         </p>
                         <p
-                          className="c19 c8"
+                          className="c20 c8"
                         >
                           Chief Instructor
                         </p>
                       </div>
                       <p
-                        className="c20 c8"
+                        className="c21 c8"
                       >
                         Certification is valid for 2 years from date of issue
                       </p>
                     </div>
                   </div>
                   <p
-                    className="c21 c8"
+                    className="c22 c8"
                   >
                     S/N: 
                     serial-number-1

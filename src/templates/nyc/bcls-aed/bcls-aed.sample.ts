@@ -13,7 +13,8 @@ export const sample: NycBclsAedOaDoc = {
             name: 'institute of blockchain',
         },
     ],
-    ciSignature: 'ci-signature-1',
+    ciSignature:
+        '1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc',
     issueDate: '2020-03-01',
     nric: 'nric-1',
     serialNumber: 'serial-number-1',

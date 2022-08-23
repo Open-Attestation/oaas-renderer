@@ -43,3 +43,7 @@ export const FooterContainer = styled.div`
         width: 100%;
     }
 `
+
+export const SignatureImage = styled.img`
+    max-height: 72px;
+`
