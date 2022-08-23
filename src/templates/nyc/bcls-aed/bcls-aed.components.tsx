@@ -10,30 +10,34 @@ const TYPOGRAPHY_FONT_SIZES = {
 } as const
 export const Typography = styled(makeTypography(TYPOGRAPHY_FONT_SIZES))`
     font-family: 'Libre Franklin';
-    font-weight: 700;
 `
 
-export const LogoImage = styled.img`
+export const LogoImage = styled.img<{
+    $imgHeight?: string
+    $margin?: string
+}>`
     width: auto;
-    height: 90px;
+    height: ${({ $imgHeight }) => $imgHeight ?? '90px'};
+    margin: ${({ $margin }) => $margin ?? '0'};
 `
 
-export const CardFace = styled(FlexBox)`
+export const CardFace = styled(FlexBox)<{
+    $padding?: string
+    $borderRadius?: string
+}>`
     background: white;
     border: 1px black dotted;
     position: relative;
-    width: calc(100% - 34px);
+    width: 500px;
     height: 350px;
-    padding: 16px;
+    box-sizing: border-box;
+    padding: ${({ $padding }) => $padding ?? '16px'};
+    border-radius: ${({ $borderRadius }) => $borderRadius ?? '16px'};
 `
 
 export const FooterContainer = styled.div`
     position: relative;
     width: 100%;
-
-    p {
-        position: absolute;
-    }
 
     img {
         width: 100%;

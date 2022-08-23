@@ -33,7 +33,11 @@ export const NycBclsAedTemplate: FunctionComponent<
             <FlippableCard
                 widthInPx={500}
                 front={
-                    <CardFace $vertical $justifyContent="space-between">
+                    <CardFace
+                        $vertical
+                        $justifyContent="space-between"
+                        $padding="24px 24px 8px 24px"
+                    >
                         {/* Header container */}
                         <FlexBox
                             $spacing={1}
@@ -43,16 +47,28 @@ export const NycBclsAedTemplate: FunctionComponent<
                             <LogoImage
                                 src={obsLogoSrc}
                                 alt="Outward Bound School Logo"
+                                $imgHeight="70px"
                             />
                         </FlexBox>
                         {/* Center container */}
                         <FlexBox $vertical $spacing={2}>
-                            <Typography $m={0} $size="large">
-                                {document.name}
-                            </Typography>
+                            <FlexBox $vertical>
+                                <Typography
+                                    $mb={0}
+                                    $m={0}
+                                    $mt={2}
+                                    $size="large"
+                                    $bold
+                                >
+                                    {document.name}
+                                </Typography>
+                                <Typography $mt={0} $size="medium">
+                                    {document.nric}
+                                </Typography>
+                            </FlexBox>
                             <Typography
                                 $m={0}
-                                $size="large"
+                                $size="medium"
                                 $maxWidth="312px"
                                 $textAlign="center"
                             >
@@ -62,7 +78,12 @@ export const NycBclsAedTemplate: FunctionComponent<
                         </FlexBox>
                         {/* Footer container */}
                         <FooterContainer>
-                            <Typography $m={0}>
+                            <Typography
+                                $size="small"
+                                $textAlign="center"
+                                $m={0}
+                                $mt={1}
+                            >
                                 Date issued: {issueDate}
                             </Typography>
                             <img
@@ -73,28 +94,36 @@ export const NycBclsAedTemplate: FunctionComponent<
                     </CardFace>
                 }
                 back={
-                    <CardFace $vertical $justifyContent="space-between">
+                    <CardFace
+                        $vertical
+                        $justifyContent="space-between"
+                        $padding="56px 24px 4px 24px"
+                    >
                         {/* Header container */}
-                        <Typography $size="large" $textAlign="center" $m={0}>
+                        <Typography $size="medium" $textAlign="center" $m={0}>
                             The holder of this card has successfully completed
-                            <br />
-                            the
-                            <br />
-                            course requirements
+                            the course requirements
                         </Typography>
                         {/* Center container */}
                         <FlexBox $vertical>
-                            <Typography $size="large" $m={0} $mb={1}>
+                            <Typography $size="large" $m={0} $mb={1} $bold>
                                 {document.ciSignature}
                             </Typography>
                             <Line $maxWidth="162px" />
-                            <FlexBox $vertical $spacing={2} $mt={2}>
-                                <Typography $size="large" $m={0}>
-                                    {document.trainerName}
-                                </Typography>
-                                <Typography $size="large" $m={0}>
-                                    Chief Instructor
-                                </Typography>
+                            <FlexBox $vertical $spacing={2} $mt={0}>
+                                <FlexBox $vertical>
+                                    <Typography
+                                        $size="small"
+                                        $mt={1}
+                                        $m={0}
+                                        $bold
+                                    >
+                                        {document.trainerName}
+                                    </Typography>
+                                    <Typography $size="small" $mt={0}>
+                                        Chief Instructor
+                                    </Typography>
+                                </FlexBox>
                                 <Typography $size="medium" $m={0}>
                                     Certification is valid for 2 years from date
                                     of issue
@@ -106,7 +135,6 @@ export const NycBclsAedTemplate: FunctionComponent<
                             $size="small"
                             $textAlign="left"
                             $width="100%"
-                            $m={0}
                         >
                             S/N: {document.serialNumber}
                         </Typography>
