@@ -38,122 +38,130 @@ export const NycBclsAedTemplate: FunctionComponent<
             <Helmet>
                 <title>nyc - bcls-aed</title>
             </Helmet>
-            <FlippableCard
-                widthInPx={500}
-                front={
-                    <CardFace
-                        $vertical
-                        $justifyContent="space-between"
-                        $padding="24px 24px 8px 24px"
-                    >
-                        {/* Header container */}
-                        <FlexBox
-                            $spacing={1}
-                            $justifyContent="flex-start"
-                            $width="100%"
+            <FlexBox $justifyContent="center">
+                <FlippableCard
+                    widthInPx={500}
+                    front={
+                        <CardFace
+                            $vertical
+                            $justifyContent="space-between"
+                            $padding="24px 24px 8px 24px"
                         >
-                            <LogoImage
-                                src={obsLogoSrc}
-                                alt="Outward Bound School Logo"
-                                $imgHeight="70px"
-                            />
-                        </FlexBox>
-                        {/* Center container */}
-                        <FlexBox $vertical $spacing={2}>
-                            <FlexBox $vertical>
-                                <Typography
-                                    $mb={0}
-                                    $m={0}
-                                    $mt={2}
-                                    $size="large"
-                                    $bold
-                                >
-                                    {document.name}
-                                </Typography>
-                                <Typography $mt={0} $size="medium">
-                                    {document.nric}
-                                </Typography>
-                            </FlexBox>
-                            <Typography
-                                $m={0}
-                                $size="medium"
-                                $maxWidth="312px"
-                                $textAlign="center"
+                            {/* Header container */}
+                            <FlexBox
+                                $spacing={1}
+                                $justifyContent="flex-start"
+                                $width="100%"
                             >
-                                Is certified as a BCLS + AED Provider Accredited
-                                by SRFAC
-                            </Typography>
-                        </FlexBox>
-                        {/* Footer container */}
-                        <FooterContainer>
-                            <Typography
-                                $size="small"
-                                $textAlign="center"
-                                $m={0}
-                                $mt={1}
-                            >
-                                Date issued: {issueDate}
-                            </Typography>
-                            <img
-                                src={obstcLogoSrc}
-                                alt="OUTWARD BOUND SINGAPORE LIFE SUPPORTING TRAINING CENTRE"
-                            />
-                        </FooterContainer>
-                    </CardFace>
-                }
-                back={
-                    <CardFace
-                        $vertical
-                        $justifyContent="space-between"
-                        $padding="56px 24px 4px 24px"
-                    >
-                        {/* Header container */}
-                        <Typography $size="medium" $textAlign="center" $m={0}>
-                            The holder of this card has successfully completed
-                            the course requirements
-                        </Typography>
-                        {/* Center container */}
-                        <FlexBox $vertical>
-                            <Typography $size="large" $m={0} $mb={1} $bold>
-                                <SignatureImage
-                                    src={`${
-                                        signatureSources[document.ciSignature]
-                                    }`}
-                                    alt="ci signature"
+                                <LogoImage
+                                    src={obsLogoSrc}
+                                    alt="Outward Bound School Logo"
+                                    $imgHeight="70px"
                                 />
-                            </Typography>
-                            <Line $maxWidth="162px" />
-                            <FlexBox $vertical $spacing={2} $mt={0}>
+                            </FlexBox>
+                            {/* Center container */}
+                            <FlexBox $vertical $spacing={2}>
                                 <FlexBox $vertical>
                                     <Typography
-                                        $size="small"
-                                        $mt={1}
+                                        $mb={0}
                                         $m={0}
+                                        $mt={2}
+                                        $size="large"
                                         $bold
                                     >
-                                        {document.trainerName}
+                                        {document.name}
                                     </Typography>
-                                    <Typography $size="small" $mt={0}>
-                                        Chief Instructor
+                                    <Typography $mt={0} $size="medium">
+                                        {document.nric}
                                     </Typography>
                                 </FlexBox>
-                                <Typography $size="medium" $m={0}>
-                                    Certification is valid for 2 years from date
-                                    of issue
+                                <Typography
+                                    $m={0}
+                                    $size="medium"
+                                    $maxWidth="312px"
+                                    $textAlign="center"
+                                >
+                                    Is certified as a BCLS + AED Provider
+                                    Accredited by SRFAC
                                 </Typography>
                             </FlexBox>
-                        </FlexBox>
-                        {/* Footer */}
-                        <Typography
-                            $size="small"
-                            $textAlign="left"
-                            $width="100%"
+                            {/* Footer container */}
+                            <FooterContainer>
+                                <Typography
+                                    $size="small"
+                                    $textAlign="center"
+                                    $m={0}
+                                    $mt={1}
+                                >
+                                    Date issued: {issueDate}
+                                </Typography>
+                                <img
+                                    src={obstcLogoSrc}
+                                    alt="OUTWARD BOUND SINGAPORE LIFE SUPPORTING TRAINING CENTRE"
+                                />
+                            </FooterContainer>
+                        </CardFace>
+                    }
+                    back={
+                        <CardFace
+                            $vertical
+                            $justifyContent="space-between"
+                            $padding="56px 24px 4px 24px"
                         >
-                            S/N: {document.serialNumber}
-                        </Typography>
-                    </CardFace>
-                }
-            />
+                            {/* Header container */}
+                            <Typography
+                                $size="medium"
+                                $textAlign="center"
+                                $m={0}
+                            >
+                                The holder of this card has successfully
+                                completed the course requirements
+                            </Typography>
+                            {/* Center container */}
+                            <FlexBox $vertical>
+                                <Typography $size="large" $m={0} $mb={1} $bold>
+                                    <SignatureImage
+                                        src={`${
+                                            signatureSources[
+                                                document.ciSignature
+                                            ]
+                                        }`}
+                                        alt="ci signature"
+                                    />
+                                </Typography>
+                                <Line $maxWidth="162px" />
+                                <FlexBox $vertical $spacing={2} $mt={0}>
+                                    <FlexBox $vertical>
+                                        <Typography
+                                            $size="small"
+                                            $mt={1}
+                                            $m={0}
+                                            $bold
+                                        >
+                                            {document.trainerName}
+                                        </Typography>
+                                        <Typography $size="small" $mt={0}>
+                                            Chief Instructor
+                                        </Typography>
+                                    </FlexBox>
+                                    <Typography $size="medium" $m={0}>
+                                        Certification is valid for 2 years from
+                                        date of issue
+                                    </Typography>
+                                </FlexBox>
+                            </FlexBox>
+                            {/* Footer */}
+                            <Typography
+                                $size="small"
+                                $textAlign="left"
+                                $width="100%"
+                            >
+                                S/N: {document.serialNumber}
+                            </Typography>
+                        </CardFace>
+                    }
+                />
+            </FlexBox>
         </>
     )
 }

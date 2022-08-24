@@ -17,7 +17,26 @@ describe('NycBclsAedTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c1 {
+            .c0 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
+            .c2 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -36,7 +55,7 @@ describe('NycBclsAedTemplate', () => {
               justify-content: space-between;
             }
 
-            .c3 {
+            .c4 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -55,31 +74,8 @@ describe('NycBclsAedTemplate', () => {
               justify-content: flex-start;
             }
 
-            .c3 > *:not(:last-child) {
+            .c4 > *:not(:last-child) {
               margin-right: 8px;
-            }
-
-            .c5 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
-            .c5 > *:not(:last-child) {
-              margin-bottom: 16px;
             }
 
             .c6 {
@@ -101,7 +97,30 @@ describe('NycBclsAedTemplate', () => {
               justify-content: center;
             }
 
-            .c18 {
+            .c6 > *:not(:last-child) {
+              margin-bottom: 16px;
+            }
+
+            .c7 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
+            .c19 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -121,11 +140,11 @@ describe('NycBclsAedTemplate', () => {
               margin-top: 0px;
             }
 
-            .c18 > *:not(:last-child) {
+            .c19 > *:not(:last-child) {
               margin-bottom: 16px;
             }
 
-            .c17 {
+            .c18 {
               display: block;
               border-bottom: 1px solid black;
               width: 100%;
@@ -134,7 +153,7 @@ describe('NycBclsAedTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c7 {
+            .c8 {
               font-size: 1.25em;
               font-style: normal;
               font-weight: 700;
@@ -144,14 +163,14 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c9 {
+            .c10 {
               font-size: 1em;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c10 {
+            .c11 {
               font-size: 1em;
               font-style: normal;
               font-weight: 400;
@@ -163,7 +182,7 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c12 {
+            .c13 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 400;
@@ -174,7 +193,7 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c14 {
+            .c15 {
               font-size: 1em;
               font-style: normal;
               font-weight: 400;
@@ -185,7 +204,7 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c15 {
+            .c16 {
               font-size: 1.25em;
               font-style: normal;
               font-weight: 700;
@@ -195,7 +214,7 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c19 {
+            .c20 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 700;
@@ -205,14 +224,14 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c20 {
+            .c21 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c21 {
+            .c22 {
               font-size: 1em;
               font-style: normal;
               font-weight: 400;
@@ -222,7 +241,7 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c22 {
+            .c23 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 400;
@@ -230,17 +249,17 @@ describe('NycBclsAedTemplate', () => {
               text-align: left;
             }
 
-            .c8 {
+            .c9 {
               font-family: 'Libre Franklin';
             }
 
-            .c4 {
+            .c5 {
               width: auto;
               height: 70px;
               margin: 0;
             }
 
-            .c2 {
+            .c3 {
               background: white;
               border: 1px black dotted;
               position: relative;
@@ -251,7 +270,7 @@ describe('NycBclsAedTemplate', () => {
               border-radius: 16px;
             }
 
-            .c13 {
+            .c14 {
               background: white;
               border: 1px black dotted;
               position: relative;
@@ -262,30 +281,30 @@ describe('NycBclsAedTemplate', () => {
               border-radius: 16px;
             }
 
-            .c11 {
+            .c12 {
               position: relative;
               width: 100%;
             }
 
-            .c11 img {
+            .c12 img {
               width: 100%;
             }
 
-            .c16 {
+            .c17 {
               max-height: 72px;
             }
 
-            .c0 {
+            .c1 {
               position: relative;
               width: 500px;
             }
 
-            .c0 > *:not(:last-child) {
+            .c1 > *:not(:last-child) {
               margin-bottom: 16px;
             }
 
             @media not print {
-              .c0 {
+              .c1 {
                 -webkit-transform-style: preserve-3d;
                 -ms-transform-style: preserve-3d;
                 transform-style: preserve-3d;
@@ -298,13 +317,13 @@ describe('NycBclsAedTemplate', () => {
                 cursor: pointer;
               }
 
-              .c0.flip {
+              .c1.flip {
                 -webkit-transform: rotateY(180deg);
                 -ms-transform: rotateY(180deg);
                 transform: rotateY(180deg);
               }
 
-              .c0 > *:nth-child(2) {
+              .c1 > *:nth-child(2) {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -318,114 +337,118 @@ describe('NycBclsAedTemplate', () => {
 
             <div
               className="c0"
-              onClick={[Function]}
             >
-              <div>
-                <div
-                  className="c1 c2"
-                >
+              <div
+                className="c1"
+                onClick={[Function]}
+              >
+                <div>
                   <div
-                    className="c3"
+                    className="c2 c3"
                   >
-                    <img
-                      alt="Outward Bound School Logo"
+                    <div
                       className="c4"
-                      src="obs-logo.png"
-                    />
-                  </div>
-                  <div
-                    className="c5"
-                  >
+                    >
+                      <img
+                        alt="Outward Bound School Logo"
+                        className="c5"
+                        src="obs-logo.png"
+                      />
+                    </div>
                     <div
                       className="c6"
                     >
-                      <p
-                        className="c7 c8"
-                      >
-                        John Doe
-                      </p>
-                      <p
-                        className="c9 c8"
-                      >
-                        nric-1
-                      </p>
-                    </div>
-                    <p
-                      className="c10 c8"
-                    >
-                      Is certified as a BCLS + AED Provider Accredited by SRFAC
-                    </p>
-                  </div>
-                  <div
-                    className="c11"
-                  >
-                    <p
-                      className="c12 c8"
-                    >
-                      Date issued: 
-                      01/03/2020
-                    </p>
-                    <img
-                      alt="OUTWARD BOUND SINGAPORE LIFE SUPPORTING TRAINING CENTRE"
-                      src="obstc-logo.png"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div
-                  className="c1 c13"
-                >
-                  <p
-                    className="c14 c8"
-                  >
-                    The holder of this card has successfully completed the course requirements
-                  </p>
-                  <div
-                    className="c6"
-                  >
-                    <p
-                      className="c15 c8"
-                    >
-                      <img
-                        alt="ci signature"
-                        className="c16"
-                        src="1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png"
-                      />
-                    </p>
-                    <div
-                      className="c17"
-                    />
-                    <div
-                      className="c18"
-                    >
                       <div
-                        className="c6"
+                        className="c7"
                       >
                         <p
-                          className="c19 c8"
+                          className="c8 c9"
                         >
-                          trainer-1
+                          John Doe
                         </p>
                         <p
-                          className="c20 c8"
+                          className="c10 c9"
                         >
-                          Chief Instructor
+                          nric-1
                         </p>
                       </div>
                       <p
-                        className="c21 c8"
+                        className="c11 c9"
                       >
-                        Certification is valid for 2 years from date of issue
+                        Is certified as a BCLS + AED Provider Accredited by SRFAC
                       </p>
                     </div>
+                    <div
+                      className="c12"
+                    >
+                      <p
+                        className="c13 c9"
+                      >
+                        Date issued: 
+                        01/03/2020
+                      </p>
+                      <img
+                        alt="OUTWARD BOUND SINGAPORE LIFE SUPPORTING TRAINING CENTRE"
+                        src="obstc-logo.png"
+                      />
+                    </div>
                   </div>
-                  <p
-                    className="c22 c8"
+                </div>
+                <div>
+                  <div
+                    className="c2 c14"
                   >
-                    S/N: 
-                    serial-number-1
-                  </p>
+                    <p
+                      className="c15 c9"
+                    >
+                      The holder of this card has successfully completed the course requirements
+                    </p>
+                    <div
+                      className="c7"
+                    >
+                      <p
+                        className="c16 c9"
+                      >
+                        <img
+                          alt="ci signature"
+                          className="c17"
+                          src="1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png"
+                        />
+                      </p>
+                      <div
+                        className="c18"
+                      />
+                      <div
+                        className="c19"
+                      >
+                        <div
+                          className="c7"
+                        >
+                          <p
+                            className="c20 c9"
+                          >
+                            trainer-1
+                          </p>
+                          <p
+                            className="c21 c9"
+                          >
+                            Chief Instructor
+                          </p>
+                        </div>
+                        <p
+                          className="c22 c9"
+                        >
+                          Certification is valid for 2 years from date of issue
+                        </p>
+                      </div>
+                    </div>
+                    <p
+                      className="c23 c9"
+                    >
+                      S/N: 
+                      serial-number-1
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
