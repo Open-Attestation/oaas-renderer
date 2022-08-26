@@ -12,10 +12,12 @@ import {
     LogoImage,
     SignatureImage,
     Typography,
+    InstructionContainer,
 } from './bcls-aed.components'
 import { NycBclsAedOaDoc } from './bcls-aed.types'
 import obsLogoSrc from './obs-logo.png'
 import obstcLogoSrc from './obstc-logo.png'
+import cardFlipIconSrc from './icon-cardflip.svg'
 import { Helmet } from 'react-helmet-async'
 import { FlippableCard } from 'components/flippable-card/flippable-card'
 
@@ -38,7 +40,7 @@ export const NycBclsAedTemplate: FunctionComponent<
             <Helmet>
                 <title>nyc - bcls-aed</title>
             </Helmet>
-            <FlexBox $justifyContent="center">
+            <FlexBox $justifyContent="center" $vertical>
                 <FlippableCard
                     widthInPx={500}
                     front={
@@ -161,6 +163,18 @@ export const NycBclsAedTemplate: FunctionComponent<
                         </CardFace>
                     }
                 />
+                <InstructionContainer>
+                    <FlexBox>
+                        <img
+                            src={cardFlipIconSrc}
+                            alt="card flip icon"
+                            width="20"
+                        />
+                        <Typography $size="small" $textAlign="center" $ml={1}>
+                            Click on the card to reveal the other side
+                        </Typography>
+                    </FlexBox>
+                </InstructionContainer>
             </FlexBox>
         </>
     )

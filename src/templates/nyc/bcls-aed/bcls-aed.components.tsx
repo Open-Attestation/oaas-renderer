@@ -26,7 +26,7 @@ export const CardFace = styled(FlexBox)<{
     $borderRadius?: string
 }>`
     background: white;
-    border: 1px black dotted;
+    border: 1px solid #ccc;
     position: relative;
     width: 500px;
     height: 350px;
@@ -46,4 +46,13 @@ export const FooterContainer = styled.div`
 
 export const SignatureImage = styled.img`
     max-height: 72px;
+`
+
+export const InstructionContainer = styled.div`
+    position: relative;
+    width: 100%;
+
+    @media print {
+        display: none;
+    }
 `
