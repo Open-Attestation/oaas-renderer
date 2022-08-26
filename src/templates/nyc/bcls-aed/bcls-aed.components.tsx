@@ -56,3 +56,7 @@ export const InstructionContainer = styled.div`
         display: none;
     }
 `
+
+export const Root = styled(FlexBox)`
+    min-width: 500px;
+`

@@ -13,6 +13,7 @@ import {
     SignatureImage,
     Typography,
     InstructionContainer,
+    Root,
 } from './bcls-aed.components'
 import { NycBclsAedOaDoc } from './bcls-aed.types'
 import obsLogoSrc from './obs-logo.png'
@@ -40,7 +41,7 @@ export const NycBclsAedTemplate: FunctionComponent<
             <Helmet>
                 <title>nyc - bcls-aed</title>
             </Helmet>
-            <FlexBox $justifyContent="center" $vertical>
+            <Root $justifyContent="center" $vertical>
                 <FlippableCard
                     widthInPx={500}
                     front={
@@ -175,7 +176,7 @@ export const NycBclsAedTemplate: FunctionComponent<
                         </Typography>
                     </FlexBox>
                 </InstructionContainer>
-            </FlexBox>
+            </Root>
         </>
     )
 }
