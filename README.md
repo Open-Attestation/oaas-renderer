@@ -33,7 +33,6 @@ Templates organisation have to follow such a format
 
 ```
 src/templates/${issuerId}/{docTypeTemplate}
-
 ```
 
 #### Main files
