@@ -6,7 +6,7 @@ import { <%= h.changeCase.pascalCase(issuerId + ' ' + docType) %>OaDoc } from '.
 
 export const sample: <%= h.changeCase.pascalCase(issuerId + ' ' + docType) %>OaDoc = {
     $template: {
-        name: '<%= h.changeCase.camelCase(issuerId + ' ' + docType) %>',
+        name: '<%= h.changeCase.paramCase(issuerId) + '/' + h.changeCase.paramCase(docType) %>',
         type: v2.TemplateType.EmbeddedRenderer,
         url: 'http://localhost:3000',
     },

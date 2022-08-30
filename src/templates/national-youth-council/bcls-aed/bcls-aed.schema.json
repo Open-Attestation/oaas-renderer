@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "Nyc/BclsAed",
+    "$id": "NationalYouthCouncil/BclsAed",
     "type": "object",
     "required": [
         "name",

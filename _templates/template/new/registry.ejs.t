@@ -6,5 +6,5 @@ import { TemplateRegistry } from '@govtechsg/decentralized-renderer-react-compon
 import { <%= h.changeCase.camelCase(issuerId + ' ' + docType) %>Templates } from './<%= h.changeCase.paramCase(docType) %>'
 
 export const registry: TemplateRegistry<any> = {
-    <%= h.changeCase.camelCase(issuerId + ' ' + docType) %>: <%= h.changeCase.camelCase(issuerId + ' ' + docType) %>Templates,
+    "<%= h.changeCase.paramCase(issuerId) + '/' + h.changeCase.paramCase(docType) %>": <%= h.changeCase.camelCase(issuerId + ' ' + docType) %>Templates,
 }

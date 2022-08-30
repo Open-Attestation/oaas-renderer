@@ -5,26 +5,26 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface NycBclsAed {
-    name: string
-    /**
-     * NRIC of the recipient
-     */
-    nric: string
-    /**
-     * Issuance date of the certificate
-     */
-    issueDate: string
-    /**
-     * Name of trainer
-     */
-    trainerName: string
-    /**
-     * CI's signature
-     */
-    ciSignature: string
-    /**
-     * Certificate number
-     */
-    serialNumber: string
+export interface NationalYouthCouncilBclsAed {
+  name: string;
+  /**
+   * NRIC of the recipient
+   */
+  nric: string;
+  /**
+   * Issuance date of the certificate
+   */
+  issueDate: string;
+  /**
+   * Name of trainer
+   */
+  trainerName: string;
+  /**
+   * CI's signature
+   */
+  ciSignature: string;
+  /**
+   * Certificate number
+   */
+  serialNumber: string;
 }

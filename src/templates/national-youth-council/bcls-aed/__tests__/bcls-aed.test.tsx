@@ -3,13 +3,13 @@ import * as React from 'react'
 import renderer from 'react-test-renderer'
 
 import { sample } from '../bcls-aed.sample'
-import { NycBclsAedTemplate } from '../bcls-aed.template'
+import { NationalYouthCouncilBclsAedTemplate } from '../bcls-aed.template'
 
 describe('NycBclsAedTemplate', () => {
     it('should match snapshot', () => {
         const tree = renderer
             .create(
-                <NycBclsAedTemplate
+                <NationalYouthCouncilBclsAedTemplate
                     document={sample}
                     handleObfuscation={() => void 0}
                 />
@@ -498,7 +498,7 @@ describe('NycBclsAedTemplate', () => {
 
     test('should render recipient name', () => {
         render(
-            <NycBclsAedTemplate
+            <NationalYouthCouncilBclsAedTemplate
                 document={sample}
                 handleObfuscation={() => void 0}
             />
@@ -508,7 +508,7 @@ describe('NycBclsAedTemplate', () => {
 
     test('Should format issuer date to DD/MM/YYYY', () => {
         render(
-            <NycBclsAedTemplate
+            <NationalYouthCouncilBclsAedTemplate
                 document={{
                     ...sample,
                     issueDate: '2020-03-01',

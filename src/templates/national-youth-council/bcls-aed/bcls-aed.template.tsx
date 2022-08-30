@@ -15,7 +15,6 @@ import {
     InstructionContainer,
     Root,
 } from './bcls-aed.components'
-import { NycBclsAedOaDoc } from './bcls-aed.types'
 import obsLogoSrc from './obs-logo.png'
 import obstcLogoSrc from './obstc-logo.png'
 import cardFlipIconSrc from './icon-cardflip.svg'
@@ -23,14 +22,15 @@ import { Helmet } from 'react-helmet-async'
 import { FlippableCard } from 'components/flippable-card/flippable-card'
 
 import signatureOne from './1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png'
+import { NationalYouthCouncilBclsAedOaDoc } from './bcls-aed.types'
 
 const signatureSources: Record<string, string> = {
     '1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc':
         signatureOne,
 }
 
-export const NycBclsAedTemplate: FunctionComponent<
-    TemplateProps<NycBclsAedOaDoc> & { className?: string }
+export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
+    TemplateProps<NationalYouthCouncilBclsAedOaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
     const issueDate = DateTime.fromISO(document.issueDate).toFormat(
         'dd/MM/yyyy'
