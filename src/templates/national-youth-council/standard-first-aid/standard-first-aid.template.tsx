@@ -1,30 +1,27 @@
-import './styles.css'
-
-import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { DateTime } from 'luxon'
 import React, { FunctionComponent } from 'react'
+import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
+import { NationalYouthCouncilStandardFirstAidOaDoc } from './standard-first-aid.types'
+// import styled from 'styled-components'
+import { Helmet } from 'react-helmet-async'
 
 import {
-    FooterContainer,
-    LogoImage,
-    SignatureImage,
-    Typography,
     Root,
-} from './bcls-aed.components'
+    LogoImage,
+    Typography,
+    FooterContainer,
+    SignatureImage,
+} from './standard-first-aid.components'
+import obsLogoSrc from '../common-assets/obs-logo.png'
+import obstcLogoSrc from '../common-assets/obstc-logo.png'
+import { DateTime } from 'luxon'
 
-import { Helmet } from 'react-helmet-async'
 import { FlippableCard } from 'components/flippable-card/flippable-card'
 import { FlipInstruction } from 'components/flippable-card/flip-instruction'
 import { CardFace } from 'components/card-face'
-import { FlexBox } from 'components/flexbox'
 import { Line } from 'components/line'
+import { FlexBox } from 'components/flexbox'
 
-import obsLogoSrc from '../common-assets/obs-logo.png'
-import obstcLogoSrc from '../common-assets/obstc-logo.png'
 import signatureOne from '../common-assets/1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png'
-
-import { NationalYouthCouncilBclsAedOaDoc } from './bcls-aed.types'
-
 const signatureSources: Record<string, string> = {
     '1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc':
         signatureOne,
@@ -33,17 +30,18 @@ const signatureSources: Record<string, string> = {
 const CERT_WIDTH = 500
 const CERT_HEIGHT = 350
 
-export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
-    TemplateProps<NationalYouthCouncilBclsAedOaDoc> & { className?: string }
+export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
+    TemplateProps<NationalYouthCouncilStandardFirstAidOaDoc> & {
+        className?: string
+    }
 > = ({ document, className = '' }) => {
     const issueDate = DateTime.fromISO(document.issueDate).toFormat(
         'dd/MM/yyyy'
     )
-
     return (
         <>
             <Helmet>
-                <title>nyc - bcls-aed</title>
+                <title>national-youth-council - standard-first-aid</title>
             </Helmet>
             <Root $justifyContent="center" $vertical>
                 <FlippableCard
@@ -90,8 +88,8 @@ export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
                                     $maxWidth="312px"
                                     $textAlign="center"
                                 >
-                                    Is certified as a BCLS + AED Provider
-                                    Accredited by SRFAC
+                                    Is certified as a Standard First Aid (SFA)
+                                    Provider Accredited by SRFAC
                                 </Typography>
                             </FlexBox>
                             {/* Footer container */}

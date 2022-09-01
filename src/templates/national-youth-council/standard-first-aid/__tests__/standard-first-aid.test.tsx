@@ -1,15 +1,14 @@
-import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
+import { NationalYouthCouncilStandardFirstAidTemplate } from '../standard-first-aid.template'
+import { render, screen } from '@testing-library/react'
+import { sample } from '../standard-first-aid.sample'
 
-import { sample } from '../bcls-aed.sample'
-import { NationalYouthCouncilBclsAedTemplate } from '../bcls-aed.template'
-
-describe('NycBclsAedTemplate', () => {
+describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
     it('should match snapshot', () => {
         const tree = renderer
             .create(
-                <NationalYouthCouncilBclsAedTemplate
+                <NationalYouthCouncilStandardFirstAidTemplate
                     document={sample}
                     handleObfuscation={() => void 0}
                 />
@@ -144,6 +143,16 @@ describe('NycBclsAedTemplate', () => {
               justify-content: center;
             }
 
+            .c1 {
+              min-width: 500px;
+            }
+
+            .c6 {
+              width: auto;
+              height: 70px;
+              margin: 0;
+            }
+
             .c8 {
               font-size: 1.25em;
               font-style: normal;
@@ -244,12 +253,6 @@ describe('NycBclsAedTemplate', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c6 {
-              width: auto;
-              height: 70px;
-              margin: 0;
-            }
-
             .c12 {
               position: relative;
               width: 100%;
@@ -261,10 +264,6 @@ describe('NycBclsAedTemplate', () => {
 
             .c17 {
               max-height: 72px;
-            }
-
-            .c1 {
-              min-width: 500px;
             }
 
             .c2 {
@@ -404,7 +403,7 @@ describe('NycBclsAedTemplate', () => {
                       <p
                         className="c11 c9"
                       >
-                        Is certified as a BCLS + AED Provider Accredited by SRFAC
+                        Is certified as a Standard First Aid (SFA) Provider Accredited by SRFAC
                       </p>
                     </div>
                     <div
@@ -504,25 +503,11 @@ describe('NycBclsAedTemplate', () => {
 
     test('should render recipient name', () => {
         render(
-            <NationalYouthCouncilBclsAedTemplate
+            <NationalYouthCouncilStandardFirstAidTemplate
                 document={sample}
                 handleObfuscation={() => void 0}
             />
         )
         expect(screen.getByText('John Doe')).toBeTruthy()
-    })
-
-    test('Should format issuer date to DD/MM/YYYY', () => {
-        render(
-            <NationalYouthCouncilBclsAedTemplate
-                document={{
-                    ...sample,
-                    issueDate: '2020-03-01',
-                }}
-                handleObfuscation={() => void 0}
-            />
-        )
-
-        expect(screen.getByText(/01\/03\/2020/)).toBeTruthy()
     })
 })

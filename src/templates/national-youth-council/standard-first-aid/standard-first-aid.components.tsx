@@ -1,6 +1,18 @@
 import { FlexBox } from 'components/flexbox'
-import { makeTypography } from 'components/typography/makeTypography'
 import styled from 'styled-components'
+import { makeTypography } from 'components/typography/makeTypography'
+
+export const Root = styled(FlexBox)`
+    min-width: 500px;
+`
+export const LogoImage = styled.img<{
+    $imgHeight?: string
+    $margin?: string
+}>`
+    width: auto;
+    height: ${({ $imgHeight }) => $imgHeight ?? '90px'};
+    margin: ${({ $margin }) => $margin ?? '0'};
+`
 
 const TYPOGRAPHY_FONT_SIZES = {
     small: '0.75em',
@@ -10,15 +22,6 @@ const TYPOGRAPHY_FONT_SIZES = {
 } as const
 export const Typography = styled(makeTypography(TYPOGRAPHY_FONT_SIZES))`
     font-family: 'Libre Franklin';
-`
-
-export const LogoImage = styled.img<{
-    $imgHeight?: string
-    $margin?: string
-}>`
-    width: auto;
-    height: ${({ $imgHeight }) => $imgHeight ?? '90px'};
-    margin: ${({ $margin }) => $margin ?? '0'};
 `
 
 export const FooterContainer = styled.div`
@@ -32,8 +35,4 @@ export const FooterContainer = styled.div`
 
 export const SignatureImage = styled.img`
     max-height: 72px;
-`
-
-export const Root = styled(FlexBox)`
-    min-width: 500px;
 `
