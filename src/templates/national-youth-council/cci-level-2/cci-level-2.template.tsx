@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilCciLevel_1OaDoc } from './cci-level-1.types'
-// import styled from 'styled-components'
+import { NationalYouthCouncilCciLevel_2OaDoc } from './cci-level-2.types'
 import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
 import { Line } from 'components/line'
@@ -22,13 +21,13 @@ import {
     TableData,
     RowHeader,
     UnorderedList,
-} from './cci-level-1.components'
+} from './cci-level-2.components'
 
 const CERT_WIDTH = 633
 const CERT_HEIGHT = 882
 
-export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
-    TemplateProps<NationalYouthCouncilCciLevel_1OaDoc> & { className?: string }
+export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
+    TemplateProps<NationalYouthCouncilCciLevel_2OaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
     const issueDate = DateTime.fromISO(document.issueDate).toFormat(
         'dd MMMM yyyy'
@@ -71,7 +70,7 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                                     qualify for the following award
                                 </Typography>
                                 <Typography $size={'large'} $mt={0} $bold>
-                                    Challenge Course Instructor (Level 1)
+                                    Challenge Course Instructor (Level 2)
                                 </Typography>
                                 <Typography $size={'small'} $mt={0}>
                                     On the date of
@@ -100,8 +99,8 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                                     Certificate No.: {document.serialNumber}
                                 </Typography>
                                 <Typography $size={'small'} $mt={-1} $bold>
-                                    Validity is for one (1) year from the above
-                                    date.
+                                    Validity is for three (3) year from the
+                                    above date.
                                 </Typography>
                             </FlexBox>
                             <SignatureComponent>
@@ -267,8 +266,8 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                                         $my={2}
                                     >
                                         This certificate shall remain valid for
-                                        a period of one (1) year from the date
-                                        of this certificate.{' '}
+                                        a period of three (3) years from the
+                                        date of this certificate.
                                     </Typography>
                                     <Typography
                                         as="li"

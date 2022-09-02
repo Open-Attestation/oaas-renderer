@@ -422,7 +422,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                       <p
                         className="c11 c8"
                       >
-                        2022-08-10
+                        10 August 2022
                       </p>
                       <p
                         className="c10 c8"
@@ -443,7 +443,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                         className="c13 c8"
                       >
                         Course Date: 
-                        2022-06-10
+                        10 June 2022
                       </p>
                       <p
                         className="c14 c8"
