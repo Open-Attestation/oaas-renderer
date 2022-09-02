@@ -19,6 +19,7 @@
         "nric": {
             "type": "string",
             "description": "NRIC of the recipient",
+            "examples": ["S0000001A"],
             "minLength": 1
         },
         "issueDate": {
@@ -30,16 +31,19 @@
         "trainerName": {
             "type": "string",
             "description": "Name of trainer",
+            "examples": ["Keanu Reeves"],
             "minLength": 1
         },
         "ciSignature": {
             "type": "string",
             "description": "CI's signature",
+            "examples": ["1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc"],
             "minLength": 1
         },
         "serialNumber": {
             "type": "string",
             "description": "Certificate number",
+            "examples": ["OBSBCLS20XX/XXX"],
             "minLength": 1
         }
     },
