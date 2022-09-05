@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
+import { NationalYouthCouncilGeneralCertificateOaDoc } from './general-certificate.types'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilGenerateCertificateOaDoc } from './generate-certificate.types'
 import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
 import { CardFace } from 'components/card-face'
@@ -17,8 +17,8 @@ import backgroundImg from '../common-assets/background.png'
 const CERT_WIDTH = 633
 const CERT_HEIGHT = 882
 
-export const NationalYouthCouncilGenerateCertificateTemplate: FunctionComponent<
-    TemplateProps<NationalYouthCouncilGenerateCertificateOaDoc> & {
+export const NationalYouthCouncilGeneralCertificateTemplate: FunctionComponent<
+    TemplateProps<NationalYouthCouncilGeneralCertificateOaDoc> & {
         className?: string
     }
 > = ({ document, className = '' }) => {

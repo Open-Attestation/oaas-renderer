@@ -1,9 +1,9 @@
 import { v2 } from '@govtechsg/open-attestation'
-import { NationalYouthCouncilGenerateCertificateOaDoc } from './generate-certificate.types'
+import { NationalYouthCouncilGeneralCertificateOaDoc } from './general-certificate.types'
 
-export const sample: NationalYouthCouncilGenerateCertificateOaDoc = {
+export const sample: NationalYouthCouncilGeneralCertificateOaDoc = {
     $template: {
-        name: 'national-youth-council/generate-certificate',
+        name: 'national-youth-council/general-certificate',
         type: v2.TemplateType.EmbeddedRenderer,
         url: 'http://localhost:3000',
     },
