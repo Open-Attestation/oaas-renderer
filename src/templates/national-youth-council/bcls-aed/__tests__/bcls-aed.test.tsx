@@ -272,8 +272,8 @@ describe('NycBclsAedTemplate', () => {
               width: 500px;
             }
 
-            .c2 > *:not(:last-child) {
-              margin-bottom: 16px;
+            .c2 > *:first-child {
+              page-break-after: always;
             }
 
             .c24 {
@@ -303,6 +303,7 @@ describe('NycBclsAedTemplate', () => {
               border: 1px solid #ccc;
               border-radius: 16px;
               z-index: 0;
+              -webkit-print-color-adjust: exact;
             }
 
             .c14 {
@@ -315,6 +316,7 @@ describe('NycBclsAedTemplate', () => {
               border: 1px solid #ccc;
               border-radius: 16px;
               z-index: 0;
+              -webkit-print-color-adjust: exact;
             }
 
             .c18 {
@@ -346,7 +348,7 @@ describe('NycBclsAedTemplate', () => {
                 transform: rotateY(180deg);
               }
 
-              .c2 > *:nth-child(2) {
+              .c2 > *:last-child {
                 position: absolute;
                 top: 0;
                 left: 0;

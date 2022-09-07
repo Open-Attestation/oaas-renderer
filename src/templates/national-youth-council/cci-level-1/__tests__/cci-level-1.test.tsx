@@ -149,8 +149,8 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               width: 633px;
             }
 
-            .c2 > *:not(:last-child) {
-              margin-bottom: 16px;
+            .c2 > *:first-child {
+              page-break-after: always;
             }
 
             .c29 {
@@ -180,6 +180,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               border: 1px solid #ccc;
               border-radius: 16px;
               z-index: -2;
+              -webkit-print-color-adjust: exact;
             }
 
             .c20 {
@@ -192,6 +193,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               border: 1px solid #ccc;
               border-radius: 16px;
               z-index: -2;
+              -webkit-print-color-adjust: exact;
             }
 
             .c7 {
@@ -349,7 +351,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                 transform: rotateY(180deg);
               }
 
-              .c2 > *:nth-child(2) {
+              .c2 > *:last-child {
                 position: absolute;
                 top: 0;
                 left: 0;

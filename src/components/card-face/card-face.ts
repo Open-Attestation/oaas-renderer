@@ -17,4 +17,5 @@ export const CardFace = styled(FlexBox)<{
     border: 1px solid #ccc;
     border-radius: ${({ $borderRadius }) => $borderRadius ?? '16px'};
     z-index: ${({ $zIndex }) => $zIndex ?? 0};
+    -webkit-print-color-adjust: exact;
 `

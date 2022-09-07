@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "NationalYouthCouncil/ObsWmfr",
+    "type": "object",
+    "required": ["name", "issueDate", "serialNumber"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "examples": ["John Wick"],
+            "minLength": 1
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "example": "2022-05-10",
+            "format": "date"
+        },
+        "serialNumber": {
+            "type": "string",
+            "description": "Serial number",
+            "examples": ["OBSWMFR20XX/XXX"],
+            "minLength": 1
+        },
+        "issuingOfficerName": {
+            "type": "string",
+            "description": "Name of the issuing officer",
+            "examples": ["Nicholas Conceicao"],
+            "minLength": 1
+        },
+        "issuingOfficerPosition": {
+            "type": "string",
+            "description": "Position of the issuing officer",
+            "examples": ["Executive Director"],
+            "minLength": 1
+        },
+        "additionalProperties": false
+    }
+}

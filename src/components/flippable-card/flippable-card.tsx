@@ -11,8 +11,8 @@ const Root = styled.div<{
     width: ${({ $widthInPx }) => $widthInPx}px;
 
     > * {
-        :not(:last-child) {
-            margin-bottom: 16px;
+        :first-child {
+            page-break-after: always;
         }
     }
 
@@ -31,7 +31,7 @@ const Root = styled.div<{
         }
 
         > * {
-            :nth-child(2) {
+            :last-child {
                 position: absolute;
                 top: 0;
                 left: 0;
