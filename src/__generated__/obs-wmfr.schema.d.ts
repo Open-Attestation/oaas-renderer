@@ -18,11 +18,15 @@ export interface NationalYouthCouncilObsWmfr {
     /**
      * Name of the issuing officer
      */
-    issuingOfficerName?: string
+    issuingOfficerName: string
     /**
      * Position of the issuing officer
      */
-    issuingOfficerPosition?: string
+    issuingOfficerPosition: string
+    /**
+     * Image hash value of the issuing officer's signature
+     */
+    issuingOfficerSignature: string
     additionalProperties?: false
     [k: string]: unknown
 }

@@ -9,7 +9,7 @@ import { CardFace } from 'components/card-face'
 
 import backgroundImgFront from '../common-assets/obs-wmfr-front-bg.png'
 import backgroundImgBack from '../common-assets/obs-wmfr-back-bg.png'
-import signatureImg from '../common-assets/1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
+import signatureOne from '../common-assets/1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
 
 import {
     BackgroundImg,
@@ -23,6 +23,11 @@ import {
     SignatureImg,
     SignatureProfileComponent,
 } from './obs-wmfr.components'
+
+const signatureSources: Record<string, string> = {
+    '1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120':
+        signatureOne,
+}
 
 const CERT_WIDTH = 352
 const CERT_HEIGHT = 230
@@ -85,7 +90,14 @@ export const NationalYouthCouncilObsWmfrTemplate: FunctionComponent<
                                 Valid till {expiryDate}
                             </DateOfExpiryComponent>
                             <SignatureComponent>
-                                <SignatureImg src={signatureImg}></SignatureImg>
+                                <SignatureImg
+                                    src={`${
+                                        signatureSources[
+                                            document.issuingOfficerSignature
+                                        ]
+                                    }`}
+                                    alt="Issuing officer signature"
+                                />
                             </SignatureComponent>
                             <SignatureProfileComponent>
                                 {document.issuingOfficerName}
