@@ -396,7 +396,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                       className="c9"
                     >
                       DATE OF ISSUE: 
-                      10/05/2022
+                      31/12/2022
                     </div>
                   </div>
                 </div>
@@ -412,7 +412,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                       className="c10"
                     >
                       Valid till 
-                      10 May 2024
+                      30 Dec 2024
                     </div>
                     <div
                       className="c11"

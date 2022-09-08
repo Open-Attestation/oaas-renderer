@@ -19,13 +19,13 @@
         "courseStartDate": {
             "type": "string",
             "description": "Start date of course",
-            "example": "2022-05-10",
+            "example": "2021-12-31",
             "format": "date"
         },
         "courseEndDate": {
             "type": "string",
             "description": "End date of course",
-            "example": "2022-06-03",
+            "example": "2022-12-31",
             "format": "date"
         },
         "additionalProperties": false

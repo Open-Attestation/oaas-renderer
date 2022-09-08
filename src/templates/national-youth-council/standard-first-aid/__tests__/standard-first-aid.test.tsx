@@ -415,7 +415,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                         className="c13 c9"
                       >
                         Date issued: 
-                        01/03/2020
+                        31/12/2020
                       </p>
                       <img
                         alt="OUTWARD BOUND SINGAPORE LIFE SUPPORTING TRAINING CENTRE"

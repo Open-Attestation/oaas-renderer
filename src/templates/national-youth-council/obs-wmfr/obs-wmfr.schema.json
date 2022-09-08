@@ -19,7 +19,7 @@
         "issueDate": {
             "type": "string",
             "description": "Date of issue",
-            "example": "2022-05-10",
+            "example": "2022-12-31",
             "format": "date"
         },
         "serialNumber": {

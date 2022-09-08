@@ -20,13 +20,13 @@
             "type": "string",
             "format": "date",
             "description": "Issuance date of the certificate",
-            "examples": ["2022-05-10"]
+            "examples": ["2022-12-31"]
         },
         "courseDate": {
             "type": "string",
             "format": "date",
             "description": "Course date",
-            "examples": ["2022-05-10"]
+            "examples": ["2022-11-30"]
         },
         "dutyProgrammeOfficerName": {
             "type": "string",

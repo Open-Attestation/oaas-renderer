@@ -40,6 +40,7 @@ export const NationalYouthCouncilObsWmfrTemplate: FunctionComponent<
     )
     const expiryDate = DateTime.fromISO(document.issueDate)
         .plus({ years: 2 })
+        .minus({ days: 1 })
         .toFormat('dd MMM yyyy')
 
     return (

@@ -26,7 +26,7 @@
             "type": "string",
             "format": "date",
             "description": "Issuance date of the certificate",
-            "examples": ["2022-05-10"]
+            "examples": ["2022-12-31"]
         },
         "trainerName": {
             "type": "string",
@@ -37,7 +37,9 @@
         "ciSignature": {
             "type": "string",
             "description": "CI's signature",
-            "examples": ["1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc"],
+            "examples": [
+                "1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc"
+            ],
             "minLength": 1
         },
         "serialNumber": {
