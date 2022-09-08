@@ -420,7 +420,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                       <img
                         alt="Issuing officer signature"
                         className="c12"
-                        src="1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
                       />
                     </div>
                     <div

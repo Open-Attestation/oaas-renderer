@@ -12,7 +12,7 @@ export const sample: NationalYouthCouncilCciLevel_2OaDoc = {
     courseDate: '2022-11-30',
     dutyProgrammeOfficerName: 'Jane Doe',
     dutyProgrammeOfficerSignature:
-        '7645fe871778d34c1daed13a12f2b3fe68555325fd7bdea3973a54399027eeab',
+        'ci-signature&1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png',
     serialNumber: '1',
     issuers: [
         {

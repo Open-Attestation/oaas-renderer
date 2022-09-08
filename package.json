@@ -45,8 +45,9 @@
         "lint:fix": "eslint ./src --fix",
         "lint-staged": "lint-staged",
         "typecheck": "tsc --noEmit",
-        "schemasToTsTypes": "rm -rf src/__generated__; json2ts -i 'src/**/*.schema.json' -o src/__generated__/",
-        "new:template": "run() { npx hygen template new --issuerId $1 --docType $2; yarn schemasToTsTypes; }; run",
+        "process:schema": "npx ts-node src/__internal__/process-schemas.ts",
+        "process:images": "npx ts-node src/__internal__/process-to-hash-images.ts",
+        "new:template": "run() { npx hygen template new --issuerId $1 --docType $2; yarn process:schema; }; run",
         "prepare": "husky install"
     },
     "eslintConfig": {

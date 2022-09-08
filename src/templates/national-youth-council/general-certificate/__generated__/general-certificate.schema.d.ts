@@ -22,6 +22,4 @@ export interface NationalYouthCouncilGeneralCertificate {
      * End date of course
      */
     courseEndDate: string
-    additionalProperties?: false
-    [k: string]: unknown
 }

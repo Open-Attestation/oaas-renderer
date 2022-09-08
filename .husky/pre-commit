@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn schemasToTsTypes && git add src/__generated__/*
+yarn process:images
+yarn process:schema
+git add src/**/*/__generated__/*
 yarn lint-staged

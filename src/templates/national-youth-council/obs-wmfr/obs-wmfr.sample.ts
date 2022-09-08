@@ -13,7 +13,7 @@ export const sample: NationalYouthCouncilObsWmfrOaDoc = {
     issuingOfficerName: 'Nicholas Conceicao',
     issuingOfficerPosition: 'Executive Director',
     issuingOfficerSignature:
-        '1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120',
+        'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
     issuers: [
         {
             name: 'NATIONAL YOUTH COUNCIL',

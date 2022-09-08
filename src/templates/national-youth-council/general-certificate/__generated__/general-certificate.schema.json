@@ -27,7 +27,7 @@
             "description": "End date of course",
             "example": "2022-12-31",
             "format": "date"
-        },
-        "additionalProperties": false
-    }
+        }
+    },
+    "additionalProperties": false
 }

@@ -20,12 +20,7 @@ import { FlipInstruction } from 'components/flippable-card/flip-instruction'
 import { CardFace } from 'components/card-face'
 import { Line } from 'components/line'
 import { FlexBox } from 'components/flexbox'
-
-import signatureOne from '../common-assets/1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png'
-const signatureSources: Record<string, string> = {
-    '1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc':
-        signatureOne,
-}
+import imagesMap from '../common-assets/__generated__/images-map'
 
 const CERT_WIDTH = 500
 const CERT_HEIGHT = 350
@@ -131,9 +126,7 @@ export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
                                 <Typography $size="large" $m={0} $mb={1} $bold>
                                     <SignatureImage
                                         src={`${
-                                            signatureSources[
-                                                document.ciSignature
-                                            ]
+                                            imagesMap[document.ciSignature]
                                         }`}
                                         alt="ci signature"
                                     />

@@ -21,14 +21,9 @@ import { Line } from 'components/line'
 
 import obsLogoSrc from '../common-assets/obs-logo.png'
 import obstcLogoSrc from '../common-assets/obstc-logo.png'
-import signatureOne from '../common-assets/1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png'
+import imagesMap from '../common-assets/__generated__/images-map'
 
 import { NationalYouthCouncilBclsAedOaDoc } from './bcls-aed.types'
-
-const signatureSources: Record<string, string> = {
-    '1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc':
-        signatureOne,
-}
 
 const CERT_WIDTH = 500
 const CERT_HEIGHT = 350
@@ -133,9 +128,7 @@ export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
                                 <Typography $size="large" $m={0} $mb={1} $bold>
                                     <SignatureImage
                                         src={`${
-                                            signatureSources[
-                                                document.ciSignature
-                                            ]
+                                            imagesMap[document.ciSignature]
                                         }`}
                                         alt="ci signature"
                                     />
