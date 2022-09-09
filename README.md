@@ -69,5 +69,71 @@ export const templates = [
 ### Adding a new template
 
 ```
-yarn new:template ${issuerId} ${docType} // for example: yarn new:template govtechSingapore softwareEngineerer
+# for example: yarn new:template govtechSingapore softwareEngineere
+yarn new:template ${issuerId} ${docType}
+```
+
+### `_.schema.ts -> __generated__/*.schema.json + __generated__/*.schema.d.ts`
+
+```
+yarn process:schemas
+```
+
+Defining json schemas are done in typescript to benefit not only from type protection, but also the ability to import values from our ts codebase.
+The command above does 2 things:
+
+1. convert the schema into JSON format
+2. generate typescript interfaces from the schema
+
+You should find the generated files in `__generated__`, which can is where the original `.schema.ts` file is.
+
+### Hashing (SHA256) of images
+
+To hash an image:
+
+1. rename your image to `${filename}.hash.{png,jpg,jpeg}`
+2. run
+
+```
+yarn process:images
+```
+
+This would generate a few files and can be found in `__generated__`, again, this folder should be where your original source image is.
+In the generated folder you should see:
+
+1. the same image, but renamed to this format:
+
+```
+${filename}&{hashOfFile}.{png,jpg,jpeg} // you shouldnt need to directly reference this file
+```
+
+2. `images-map.ts`
+   This has a default export that maps `${filename}&{hashOfFile}.{png,jpg,jpeg}` to the image source provided by CRA.
+   This should be use in your `.template.tsx` where the document should have a field that can be passed directly into the map
+   to render the corresponding image.
+
+3. `image-enum-values.ts`
+   This file exports two things
+    - `enumValuesMap` the main use of this map, is so that it can be used in `schema.ts` enum's example
+    - `enumValues` which is the default export, to be used in `schema.ts` too as an enum
+
+below illustrates the above usage in a `schema.ts` file
+
+```
+// sample json.schema.ts
+import enumValues, {
+    enumValuesMap,
+} from '../common-assets/__generated__/images-enum-values'
+...
+        ciSignature: {
+            type: 'string',
+            description: "CI's signature",
+            enum: enumValues, // enum values generated can be directly used to populate the enum in the json schema
+            examples: [
+                enumValuesMap[
+                    'ci-signature&1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png' // examples are referenced from the enumValuesMap so that any changes to the source images will immediately lead to a type error
+                ],
+            ],
+        },
+...
 ```

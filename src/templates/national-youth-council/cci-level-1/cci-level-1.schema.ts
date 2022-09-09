@@ -1,5 +1,7 @@
 import { JSONSchema } from 'json-schema-to-typescript'
-import enumValues from '../common-assets/__generated__/images-enum-values'
+import enumValues, {
+    enumValuesMap,
+} from '../common-assets/__generated__/images-enum-values'
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
@@ -40,6 +42,11 @@ export default {
             type: 'string',
             description: "Duty Programme Officer's signature",
             enum: enumValues,
+            examples: [
+                enumValuesMap[
+                    'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
+                ],
+            ],
         },
         serialNumber: {
             type: 'string',

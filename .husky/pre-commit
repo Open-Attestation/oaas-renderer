@@ -2,6 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 yarn process:images
-yarn process:schema
+yarn process:schemas
 git add src/**/*/__generated__/*
 yarn lint-staged

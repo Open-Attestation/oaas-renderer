@@ -72,7 +72,9 @@ for (const targetDir of targetDirs) {
         exportMapContent.push(
             `   '${targetImageFilename}': ${imageIdentifier},`
         )
-        exportEnumValuesContent.push(`"${targetImageFilename}"`)
+        exportEnumValuesContent.push(
+            `   "${targetImageFilename}": "${targetImageFilename}"`
+        )
     }
 
     // 2 files to be generated
@@ -88,8 +90,12 @@ for (const targetDir of targetDirs) {
 
     // file 2: array of enum values to be used in json schema
     const enumValuesFileContent = [
-        `const enumValues = [${exportEnumValuesContent.join(', ')}]`,
-        `export default enumValues;`,
+        'export const enumValuesMap = {',
+        exportEnumValuesContent.join(',\n'),
+        '} as const',
+        '',
+        'const enumValues = Object.keys(enumValuesMap)',
+        `export default enumValues`,
     ].join('\n')
     fs.writeFileSync(
         path.join(targetDir, 'images-enum-values.ts'),

@@ -1,5 +1,7 @@
 import { JSONSchema } from 'json-schema-to-typescript'
-import enumValues from '../common-assets/__generated__/images-enum-values'
+import enumValues, {
+    enumValuesMap,
+} from '../common-assets/__generated__/images-enum-values'
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
@@ -38,7 +40,16 @@ export default {
         ciSignature: {
             type: 'string',
             description: "CI's signature",
-            enum: enumValues,
+            enum: [
+                enumValuesMap[
+                    'ci-signature&1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png'
+                ],
+            ],
+            examples: [
+                enumValuesMap[
+                    'ci-signature&1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png'
+                ],
+            ],
         },
         serialNumber: {
             type: 'string',
