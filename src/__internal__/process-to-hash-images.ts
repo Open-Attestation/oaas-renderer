@@ -5,6 +5,7 @@ import path from 'path'
 import { camelCase } from 'change-case'
 
 const TARGET_DIR_NAME = '__generated__'
+const SUPPORTED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'svg'] as const
 
 const targetDirMap: Record<
     string,
@@ -16,12 +17,14 @@ const targetDirMap: Record<
 > = {}
 
 // grab all filepaths of images that needs to be hashed
-const imageFilepaths = glob.sync('src/**/*.hash.{png,jpg,jpeg}')
+const imageFilepaths = glob.sync(
+    `src/**/*.hash.{${SUPPORTED_EXTENSIONS.join(',')}}`
+)
 for (const imageFilepath of imageFilepaths) {
     // directory where the image is found
     const imageDir = path.dirname(imageFilepath)
 
-    // .png or .jpg or .jpeg
+    // for eg: .png,.jpg,.jpeg
     const imageExtension = path.extname(imageFilepath)
     // example.hash.png
     const imageFilenameWithExt = path.basename(imageFilepath)
@@ -72,9 +75,7 @@ for (const targetDir of targetDirs) {
         exportMapContent.push(
             `   '${targetImageFilename}': ${imageIdentifier},`
         )
-        exportEnumValuesContent.push(
-            `   "${targetImageFilename}": "${targetImageFilename}"`
-        )
+        exportEnumValuesContent.push(`"${targetImageFilename}"`)
     }
 
     // 2 files to be generated
@@ -90,12 +91,19 @@ for (const targetDir of targetDirs) {
 
     // file 2: array of enum values to be used in json schema
     const enumValuesFileContent = [
-        'export const enumValuesMap = {',
+        'const enumValues = [',
         exportEnumValuesContent.join(',\n'),
-        '} as const',
+        '] as const',
+        'type EnumValue = typeof enumValues[number]',
         '',
-        'const enumValues = Object.keys(enumValuesMap)',
-        `export default enumValues`,
+        '/**',
+        '* Gets the possible image hash values that can be used as enum values',
+        '* @param pick subset of the images hash values that will be returned out',
+        '* @returns image hash values to be used in schema.ts',
+        '*/',
+        'export function getEnumValues(pick?: EnumValue[]) {',
+        `return pick ?? enumValues`,
+        '}',
     ].join('\n')
     fs.writeFileSync(
         path.join(targetDir, 'images-enum-values.ts'),

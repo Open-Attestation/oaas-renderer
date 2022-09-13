@@ -1,4 +1,5 @@
 import { TemplateRegistry } from '@govtechsg/decentralized-renderer-react-components'
+import { nationalYouthCouncilTechnicalSkillsTemplates } from './technical-skills'
 import { nationalYouthCouncilGeneralCertificateTemplates } from './general-certificate'
 import { nationalYouthCouncilObsWmfrTemplates } from './obs-wmfr'
 import { nationalYouthCouncilCciLevel_2Templates } from './cci-level-2'
@@ -7,6 +8,8 @@ import { nationalYouthCouncilStandardFirstAidTemplates } from './standard-first-
 import { nationalYouthCouncilBclsAedTemplates } from './bcls-aed'
 
 export const registry: TemplateRegistry<any> = {
+    'national-youth-council/technical-skills':
+        nationalYouthCouncilTechnicalSkillsTemplates,
     'national-youth-council/general-certificate':
         nationalYouthCouncilGeneralCertificateTemplates,
     'national-youth-council/obs-wmfr': nationalYouthCouncilObsWmfrTemplates,

@@ -1,5 +1,5 @@
 import { JSONSchema } from 'json-schema-to-typescript'
-import { enumValuesMap } from '../common-assets/__generated__/images-enum-values'
+import { getEnumValues } from '../common-assets/__generated__/images-enum-values'
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
@@ -46,16 +46,12 @@ export default {
         issuingOfficerSignature: {
             type: 'string',
             description: "Image hash value of the issuing officer's signature",
-            enum: [
-                enumValuesMap[
-                    'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
-                ],
-            ],
-            examples: [
-                enumValuesMap[
-                    'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
-                ],
-            ],
+            enum: getEnumValues([
+                'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
+            ]),
+            examples: getEnumValues([
+                'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
+            ]),
         },
     },
     additionalProperties: false,

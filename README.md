@@ -113,27 +113,26 @@ ${filename}&{hashOfFile}.{png,jpg,jpeg} // you shouldnt need to directly referen
    to render the corresponding image.
 
 3. `image-enum-values.ts`
-   This file exports two things
-    - `enumValuesMap` the main use of this map, is so that it can be used in `schema.ts` enum's example
-    - `enumValues` which is the default export, to be used in `schema.ts` too as an enum
+   This file exports
+    - `getEnumValues` to be used in `schema.ts`, accepts an optional param `pick` to narrow down the possible enumValues
 
 below illustrates the above usage in a `schema.ts` file
 
 ```
 // sample json.schema.ts
-import enumValues, {
-    enumValuesMap,
+import {
+    getEnumValues,
 } from '../common-assets/__generated__/images-enum-values'
 ...
         ciSignature: {
             type: 'string',
             description: "CI's signature",
-            enum: enumValues, // enum values generated can be directly used to populate the enum in the json schema
-            examples: [
-                enumValuesMap[
-                    'ci-signature&1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png' // examples are referenced from the enumValuesMap so that any changes to the source images will immediately lead to a type error
-                ],
-            ],
+            enum: getEnumValues([
+                'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
+            ]),
+            examples: getEnumValues([
+                'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
+            ]),
         },
 ...
 ```

@@ -1,5 +1,4 @@
 import { v2 } from '@govtechsg/open-attestation'
-import { enumValuesMap } from '../common-assets/__generated__/images-enum-values'
 import { NationalYouthCouncilCciLevel_1OaDoc } from './cci-level-1.types'
 
 export const sample: NationalYouthCouncilCciLevel_1OaDoc = {
@@ -13,9 +12,7 @@ export const sample: NationalYouthCouncilCciLevel_1OaDoc = {
     courseDate: '2022-11-30',
     dutyProgrammeOfficerName: 'Jane Doe',
     dutyProgrammeOfficerSignature:
-        enumValuesMap[
-            'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
-        ],
+        'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
     serialNumber: '1',
     issuers: [
         {

@@ -15,6 +15,7 @@ interface TypographyProps {
     $width?: string
     $maxWidth?: string
     $textAlign?: 'center' | 'left' | 'right' | 'justify'
+    $color?: string
 }
 
 export const makeTypography = <
@@ -33,5 +34,6 @@ export const makeTypography = <
         ${({ $width }) => ($width ? `width: ${$width};` : '')}
         ${({ $maxWidth }) => ($maxWidth ? `max-width: ${$maxWidth};` : '')}
         ${({ $textAlign }) => ($textAlign ? `text-align: ${$textAlign};` : '')}
+        ${({ $color }) => ($color ? `color: ${$color};` : '')}
     `
 }
