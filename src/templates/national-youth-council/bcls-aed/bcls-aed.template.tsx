@@ -31,9 +31,13 @@ const CERT_HEIGHT = 350
 export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilBclsAedOaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
-    const issueDate = DateTime.fromISO(document.issueDate).toFormat(
-        'dd/MM/yyyy'
-    )
+    const issueDate = DateTime.fromISO(document.issueDate)
+    const issueDateString = issueDate.toFormat('dd/MM/yyyy')
+
+    const validTillDate = DateTime.fromISO(document.issueDate)
+        .plus({ years: 2 })
+        .minus({ days: 1 })
+    const validTillDateString = validTillDate.toFormat('dd MMM yyyy')
 
     return (
         <>
@@ -97,7 +101,7 @@ export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
                                     $m={0}
                                     $mt={1}
                                 >
-                                    Date issued: {issueDate}
+                                    Date issued: {issueDateString}
                                 </Typography>
                                 <img
                                     src={obstcLogoSrc}
@@ -149,8 +153,8 @@ export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
                                         </Typography>
                                     </FlexBox>
                                     <Typography $size="medium" $m={0}>
-                                        Certification is valid for 2 years from
-                                        date of issue
+                                        Certificate is valid till{' '}
+                                        {validTillDateString}
                                     </Typography>
                                 </FlexBox>
                             </FlexBox>

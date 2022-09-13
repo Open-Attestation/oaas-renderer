@@ -468,7 +468,9 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                         <p
                           className="c22 c9"
                         >
-                          Certification is valid for 2 years from date of issue
+                          Certificate is valid till
+                           
+                          30 Dec 2022
                         </p>
                       </div>
                     </div>

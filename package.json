@@ -45,8 +45,8 @@
         "lint:fix": "eslint ./src --fix",
         "lint-staged": "lint-staged",
         "typecheck": "tsc --noEmit",
-        "process:schemas": "npx ts-node src/__internal__/process-schemas.ts",
-        "process:images": "npx ts-node src/__internal__/process-to-hash-images.ts",
+        "process:schemas": "npx ts-node src/__internal__/process-schemas.ts; npx prettier --write src/**/__generated__/*.schema.{json,d.ts}",
+        "process:images": "npx ts-node src/__internal__/process-to-hash-images.ts; npx prettier --write src/**/__generated__/*[!.d].ts",
         "new:template": "run() { npx hygen template new --issuerId $1 --docType $2; yarn process:schemas; }; run",
         "prepare": "husky install"
     },
