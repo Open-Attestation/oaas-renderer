@@ -7,7 +7,7 @@ import { FlippableCard } from 'components/flippable-card/flippable-card'
 import { FlipInstruction } from 'components/flippable-card/flip-instruction'
 import { CardFace } from 'components/card-face'
 
-import backgroundImgFront from '../common-assets/obs-wmfr-front-bg.png'
+import backgroundImgFront from '../common-assets/obs-wmfr-front-bg.jpg'
 import backgroundImgBack from '../common-assets/obs-wmfr-back-bg.png'
 
 import {

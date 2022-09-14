@@ -370,7 +370,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                   >
                     <img
                       className="c5"
-                      src="obs-wmfr-front-bg.png"
+                      src="obs-wmfr-front-bg.jpg"
                     />
                     <div
                       className="c6"

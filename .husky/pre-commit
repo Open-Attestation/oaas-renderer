@@ -5,3 +5,4 @@ yarn process:images
 yarn process:schemas
 git add src/**/*/__generated__/*
 yarn lint-staged
+yarn typecheck

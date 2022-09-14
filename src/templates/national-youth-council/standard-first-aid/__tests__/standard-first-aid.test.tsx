@@ -442,7 +442,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                         <img
                           alt="ci signature"
                           className="c17"
-                          src="ci-signature&1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png"
+                          src="svg-stub"
                         />
                       </p>
                       <div

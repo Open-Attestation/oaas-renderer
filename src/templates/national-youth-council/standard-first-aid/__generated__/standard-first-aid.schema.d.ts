@@ -22,7 +22,9 @@ export interface NationalYouthCouncilStandardFirstAid {
     /**
      * CI's signature
      */
-    ciSignature: 'ci-signature&1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png'
+    ciSignature:
+        | 'ci-1-signature&bf8c6cd029b7d6775aee555a09a1bf87166f8440c8b8be7eadf3551d6e9fab6e.svg'
+        | 'ci-1-signature-thick&682cb920fc8ee86c4b5e60ca908bd0dcd2fe1a5a4695edb9206c5a7e8edffaa2.svg'
     /**
      * Certificate number
      */

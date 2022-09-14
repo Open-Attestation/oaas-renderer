@@ -14,7 +14,7 @@ export const sample: NationalYouthCouncilStandardFirstAidOaDoc = {
         },
     ],
     ciSignature:
-        'ci-signature&1e4008a9529d7f62affa65d71ca40f9e92fe15041b9e77d331ec5a839217fdfc.png',
+        'ci-1-signature&bf8c6cd029b7d6775aee555a09a1bf87166f8440c8b8be7eadf3551d6e9fab6e.svg',
     issueDate: '2020-12-31',
     nric: 'nric-1',
     serialNumber: 'serial-number-1',
