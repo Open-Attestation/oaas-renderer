@@ -22,7 +22,7 @@ export default {
         issueDate: {
             type: 'string',
             description: 'Date of issue',
-            example: '2022-12-31',
+            examples: ['2022-12-31'],
             format: 'date',
         },
         serialNumber: {
