@@ -8,12 +8,17 @@ export const sample: NationalYouthCouncilCciLevel_1OaDoc = {
         url: 'http://localhost:3000',
     },
     name: 'John Doe',
-    issueDate: '2022-12-31',
-    courseDate: '2022-11-30',
+    courseEndDate: '2022-12-31',
+    courseStartDate: '2022-11-30',
     dutyProgrammeOfficerName: 'Jane Doe',
+    dutyProgrammeOfficerTitle: 'Trainer',
     dutyProgrammeOfficerSignature:
-        'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
+        'sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png',
     serialNumber: '1',
+    organisationRepName: 'Nicholas Conceicao',
+    organisationRepTitle: 'Executive Director',
+    organisationRepSignature:
+        'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
     issuers: [
         {
             name: 'institute of blockchain',

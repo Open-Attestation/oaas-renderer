@@ -122,7 +122,7 @@ below illustrates the above usage in a `schema.ts` file
 // sample json.schema.ts
 import {
     getEnumValues,
-} from '../common-assets/__generated__/images-enum-values'
+} from '../common/assets/__generated__/images-enum-values'
 ...
         ciSignature: {
             type: 'string',

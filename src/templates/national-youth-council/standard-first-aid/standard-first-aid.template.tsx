@@ -11,8 +11,8 @@ import {
     FooterContainer,
     SignatureImage,
 } from './standard-first-aid.components'
-import obsLogoSrc from '../common-assets/obs-logo.png'
-import obstcLogoSrc from '../common-assets/obstc-logo.png'
+import obsLogoSrc from '../common/assets/obs-logo.png'
+import obstcLogoSrc from '../common/assets/obstc-logo.png'
 import { DateTime } from 'luxon'
 
 import { FlippableCard } from 'components/flippable-card/flippable-card'
@@ -20,7 +20,7 @@ import { FlipInstruction } from 'components/flippable-card/flip-instruction'
 import { CardFace } from 'components/card-face'
 import { Line } from 'components/line'
 import { FlexBox } from 'components/flexbox'
-import imagesMap from '../common-assets/__generated__/images-map'
+import imagesMap from '../common/assets/__generated__/images-map'
 
 const CERT_WIDTH = 500
 const CERT_HEIGHT = 350

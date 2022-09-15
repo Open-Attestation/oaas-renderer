@@ -19,9 +19,9 @@ import { CardFace } from 'components/card-face'
 import { FlexBox } from 'components/flexbox'
 import { Line } from 'components/line'
 
-import obsLogoSrc from '../common-assets/obs-logo.png'
-import obstcLogoSrc from '../common-assets/obstc-logo.png'
-import imagesMap from '../common-assets/__generated__/images-map'
+import obsLogoSrc from '../common/assets/obs-logo.png'
+import obstcLogoSrc from '../common/assets/obstc-logo.png'
+import imagesMap from '../common/assets/__generated__/images-map'
 
 import { NationalYouthCouncilBclsAedOaDoc } from './bcls-aed.types'
 

@@ -1,6 +1,5 @@
 import { JSONSchema } from 'json-schema-to-typescript'
-import * as certAssets from './__generated__/images-enum-values'
-import * as commonAssets from '../common-assets/__generated__/images-enum-values'
+import * as commonAssets from '../common/assets/__generated__/images-enum-values'
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
@@ -10,13 +9,13 @@ export default {
         'name',
         'courseTitle',
         'courseDate',
-        'trainerName',
-        'trainerTitle',
-        'trainerSignature',
         'dutyProgrammeOfficerName',
         'dutyProgrammeOfficerTitle',
         'dutyProgrammeOfficerSignature',
         'courseDescription',
+        'organisationRepSignature',
+        'organisationRepName',
+        'organisationRepTitle',
     ],
     properties: {
         name: {
@@ -37,40 +36,45 @@ export default {
             example: '2022-05-10',
             format: 'date',
         },
-        trainerName: {
-            type: 'string',
-            description: 'Name of the trainer',
-            examples: ['Abdul Haireel Bin Abdul Haleem'],
-            minLength: 1,
-        },
-        trainerTitle: {
-            type: 'string',
-            description: 'Title of the trainer',
-            examples: ['Trainer'],
-            minLength: 1,
-        },
-        trainerSignature: {
-            type: 'string',
-            description: "SHA256 hash of the trainer's signature",
-            enum: certAssets.getEnumValues(),
-            examples: certAssets.getEnumValues(),
-        },
         dutyProgrammeOfficerName: {
             type: 'string',
             description: 'Name of the duty programme officer',
-            examples: ['Nicholas Conceicao'],
+            examples: ['Abdul Haireel Bin Abdul Haleem'],
             minLength: 1,
         },
         dutyProgrammeOfficerTitle: {
             type: 'string',
             description: 'Title of the duty programme officer',
-            examples: ['Executive Director'],
+            examples: ['Trainer'],
             minLength: 1,
         },
         dutyProgrammeOfficerSignature: {
             type: 'string',
             description:
                 "SHA256 hash of the duty programme officer's signature",
+            enum: commonAssets.getEnumValues([
+                'sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png',
+            ]),
+            examples: commonAssets.getEnumValues([
+                'sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png',
+            ]),
+        },
+        organisationRepName: {
+            type: 'string',
+            description: 'Name of the organisation representation',
+            examples: ['Nicholas Conceicao'],
+            minLength: 1,
+        },
+        organisationRepTitle: {
+            type: 'string',
+            description: 'Title of the organisation representation',
+            examples: ['Executive Director'],
+            minLength: 1,
+        },
+        organisationRepSignature: {
+            type: 'string',
+            description:
+                "SHA256 hash of the organisation representation's signature",
             enum: commonAssets.getEnumValues([
                 'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
             ]),

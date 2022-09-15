@@ -1,4 +1,5 @@
-import { Typography, OrderedList } from './technical-skills.components'
+import { OrderedList } from './technical-skills.components'
+import { Typography } from '../common/components'
 
 export const descriptions: { [key: string]: JSX.Element } = {
     'challenge-rope-course': (

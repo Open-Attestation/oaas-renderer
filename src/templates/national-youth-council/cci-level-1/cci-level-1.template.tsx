@@ -4,19 +4,13 @@ import { NationalYouthCouncilCciLevel_1OaDoc } from './cci-level-1.types'
 // import styled from 'styled-components'
 import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
-import { Line } from 'components/line'
 import { FlippableCard } from 'components/flippable-card/flippable-card'
 import { FlipInstruction } from 'components/flippable-card/flip-instruction'
-import { CardFace } from 'components/card-face'
 
 import { DateTime } from 'luxon'
 
-import backgroundImg from '../common-assets/background.png'
 import {
-    BackgroundImg,
     Root,
-    Typography,
-    SignatureComponent,
     Table,
     Header,
     TableData,
@@ -24,16 +18,24 @@ import {
     UnorderedList,
 } from './cci-level-1.components'
 
-const CERT_WIDTH = 633
-const CERT_HEIGHT = 882
+import { A4 } from 'components/paper-size'
+import {
+    Typography,
+    AbsoluteBottom,
+    SignatureComponent,
+} from '../common/components'
+import commonImagesMap from '../common/assets/__generated__/images-map'
+import mainBg from '../common/assets/background.svg'
+
+const CERT_WIDTH = 793.7 // converted from 21cm from A4
 
 export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
     TemplateProps<NationalYouthCouncilCciLevel_1OaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
-    const issueDate = DateTime.fromISO(document.issueDate).toFormat(
+    const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMMM yyyy'
     )
-    const courseDate = DateTime.fromISO(document.courseDate).toFormat(
+    const courseDate = DateTime.fromISO(document.courseStartDate).toFormat(
         'dd MMMM yyyy'
     )
     return (
@@ -45,88 +47,91 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                 <FlippableCard
                     widthInPx={CERT_WIDTH}
                     front={
-                        <CardFace
-                            $width={`${CERT_WIDTH}px`}
-                            $height={`${CERT_HEIGHT}px`}
-                            $zIndex={-2}
-                            $vertical
-                        >
-                            <BackgroundImg src={backgroundImg}></BackgroundImg>
+                        <A4 $bgImg={mainBg}>
                             {/* Course title */}
-                            <FlexBox>
-                                <Typography $mt={0} $size={'xlarge'} $bold>
+                            <FlexBox $mt={31.5} $vertical>
+                                <Typography
+                                    $textAlign="center"
+                                    $size={'xlarge'}
+                                    $bold
+                                >
                                     Certificate of Proficiency
                                 </Typography>
                             </FlexBox>
                             {/* Course Details */}
-                            <FlexBox $vertical $mt={1}>
-                                <Typography $size={'small'} $mt={0}>
+                            <FlexBox $vertical $mt={2}>
+                                <Typography $size={'medium'} $mt={0}>
                                     This is to certify that
                                 </Typography>
                                 <Typography $size={'large'} $mt={0} $bold>
                                     {document.name}
                                 </Typography>
-                                <Typography $size={'small'} $mt={0}>
+                                <Typography $size={'medium'} $mt={0}>
                                     has been tested and found proficient to
                                     qualify for the following award
                                 </Typography>
                                 <Typography $size={'large'} $mt={0} $bold>
                                     Challenge Course Instructor (Level 1)
                                 </Typography>
-                                <Typography $size={'small'} $mt={0}>
+                                <Typography $size={'medium'} $mt={0}>
                                     On the date of
                                 </Typography>
                                 <Typography $size={'large'} $mt={0} $bold>
                                     {issueDate}
                                 </Typography>
-                                <Typography $size={'small'} $mt={0}>
+                                <Typography $size={'medium'} $mt={0}>
                                     All training and assessments are conducted
                                     in the Ministry of Education's Outdoor
                                     Adventure Learning
                                 </Typography>
-                                <Typography $size={'small'} $mt={-1}>
+                                <Typography $size={'medium'} $mt={-1}>
                                     Centres (OALCs) and are based on their local
                                     operating systems, procedures and devices.
                                 </Typography>
-                                <Typography $size={'small'} $mt={-1}>
+                                <Typography $size={'medium'} $mt={-1}>
                                     This certificate is “Site Specific”, and
                                     valid only for purposes of the Ministry of
                                     Education’s OALCs.
                                 </Typography>
-                                <Typography $size={'small'} $mt={0} $bold>
+                                <Typography $size={'medium'} $mt={0} $bold>
                                     Course Date: {courseDate}
                                 </Typography>
-                                <Typography $size={'small'} $mt={-1} $bold>
+                                <Typography $size={'medium'} $mt={-1} $bold>
                                     Certificate No.: {document.serialNumber}
                                 </Typography>
-                                <Typography $size={'small'} $mt={-1} $bold>
+                                <Typography $size={'medium'} $mt={-1} $bold>
                                     Validity is for one (1) year from the above
                                     date.
                                 </Typography>
                             </FlexBox>
-                            <SignatureComponent>
-                                <Line $maxWidth="250px" />
-                                <Typography $size={'medium'} $mt={1} $bold>
-                                    {document.dutyProgrammeOfficerName}
-                                </Typography>
-                                <Typography $size={'medium'} $mt={-1.5} $bold>
-                                    Outward Bound Singapore
-                                </Typography>
-                            </SignatureComponent>
-                        </CardFace>
+                            <AbsoluteBottom>
+                                <SignatureComponent
+                                    signatureSrc={
+                                        commonImagesMap[
+                                            document
+                                                .dutyProgrammeOfficerSignature
+                                        ]
+                                    }
+                                    name={document.dutyProgrammeOfficerName}
+                                    title={document.dutyProgrammeOfficerTitle}
+                                />
+                                <SignatureComponent
+                                    signatureSrc={
+                                        commonImagesMap[
+                                            document.organisationRepSignature
+                                        ]
+                                    }
+                                    name={document.organisationRepName}
+                                    title={document.organisationRepTitle}
+                                />
+                            </AbsoluteBottom>
+                        </A4>
                     }
                     back={
-                        <CardFace
-                            $width={`${CERT_WIDTH}px`}
-                            $height={`${CERT_HEIGHT}px`}
-                            $zIndex={-2}
-                            $vertical
-                            $padding="24px 24px 8px 24px"
-                            $justifyContent="flex-start"
-                        >
+                        <A4>
                             {/* Course title */}
-                            <FlexBox $vertical $spacing={1}>
-                                <Typography $size={'small'} $bold>
+                            <FlexBox $vertical $spacing={3}>
+                                <Typography $size={'medium'} $bold>
                                     This table lists the operating systems and
                                     devices used in the MOE OALCs that this
                                     certificate holder has been trained to
@@ -293,7 +298,7 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                                     </Typography>
                                 </UnorderedList>
                             </FlexBox>
-                        </CardFace>
+                        </A4>
                     }
                 />
                 <FlipInstruction />

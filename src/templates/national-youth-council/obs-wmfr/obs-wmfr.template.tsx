@@ -7,8 +7,8 @@ import { FlippableCard } from 'components/flippable-card/flippable-card'
 import { FlipInstruction } from 'components/flippable-card/flip-instruction'
 import { CardFace } from 'components/card-face'
 
-import backgroundImgFront from '../common-assets/obs-wmfr-front-bg.jpg'
-import backgroundImgBack from '../common-assets/obs-wmfr-back-bg.png'
+import backgroundImgFront from '../common/assets/obs-wmfr-front-bg.jpg'
+import backgroundImgBack from '../common/assets/obs-wmfr-back-bg.png'
 
 import {
     BackgroundImg,
@@ -22,7 +22,7 @@ import {
     SignatureImg,
     SignatureProfileComponent,
 } from './obs-wmfr.components'
-import imagesMap from '../common-assets/__generated__/images-map'
+import imagesMap from '../common/assets/__generated__/images-map'
 
 const CERT_WIDTH = 352
 const CERT_HEIGHT = 230

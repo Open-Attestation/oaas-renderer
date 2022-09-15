@@ -144,6 +144,9 @@ describe('NationalYouthCouncilTechnicalSkillsTemplate', () => {
               -webkit-justify-content: space-between;
               -ms-flex-pack: justify;
               justify-content: space-between;
+              -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+              flex-direction: row;
               left: 2cm;
               right: 2cm;
               bottom: 4.5cm;
@@ -224,7 +227,7 @@ describe('NationalYouthCouncilTechnicalSkillsTemplate', () => {
                   >
                     <img
                       className="c9"
-                      src="trainer-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png"
+                      src="sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png"
                     />
                     <div
                       className="c10"
@@ -233,7 +236,7 @@ describe('NationalYouthCouncilTechnicalSkillsTemplate', () => {
                       className="c11 c3"
                     >
                       <b>
-                        Abdul Haireel Bin Abdul Haleem
+                        Jane Doe
                       </b>
                        | 
                       Trainer

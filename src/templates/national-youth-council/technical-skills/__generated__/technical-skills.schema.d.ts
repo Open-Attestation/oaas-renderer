@@ -19,18 +19,6 @@ export interface NationalYouthCouncilTechnicalSkills {
      */
     courseDate: string
     /**
-     * Name of the trainer
-     */
-    trainerName: string
-    /**
-     * Title of the trainer
-     */
-    trainerTitle: string
-    /**
-     * SHA256 hash of the trainer's signature
-     */
-    trainerSignature: 'trainer-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png'
-    /**
      * Name of the duty programme officer
      */
     dutyProgrammeOfficerName: string
@@ -41,7 +29,19 @@ export interface NationalYouthCouncilTechnicalSkills {
     /**
      * SHA256 hash of the duty programme officer's signature
      */
-    dutyProgrammeOfficerSignature: 'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
+    dutyProgrammeOfficerSignature: 'sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png'
+    /**
+     * Name of the organisation representation
+     */
+    organisationRepName: string
+    /**
+     * Title of the organisation representation
+     */
+    organisationRepTitle: string
+    /**
+     * SHA256 hash of the organisation representation's signature
+     */
+    organisationRepSignature: 'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
     /**
      * Description of the course
      */

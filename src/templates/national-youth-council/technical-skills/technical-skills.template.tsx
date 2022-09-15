@@ -8,14 +8,13 @@ import {
     Typography,
     AbsoluteBottom,
     SignatureComponent,
-} from './technical-skills.components'
+} from '../common/components'
 
 import { DateTime } from 'luxon'
 
-import mainBg from '../common-assets/background.svg'
-import descriptionBg from '../common-assets/description-watermark.png'
-import imagesMap from './__generated__/images-map'
-import commonImagesMap from '../common-assets/__generated__/images-map'
+import mainBg from '../common/assets/background.svg'
+import descriptionBg from '../common/assets/description-watermark.png'
+import commonImagesMap from '../common/assets/__generated__/images-map'
 
 import { descriptions } from './technical-skills.descriptions'
 
@@ -62,11 +61,6 @@ export const NationalYouthCouncilTechnicalSkillsTemplate: FunctionComponent<
                 </FlexBox>
                 <AbsoluteBottom>
                     <SignatureComponent
-                        signatureSrc={imagesMap[document.trainerSignature]}
-                        name={document.trainerName}
-                        title={document.trainerTitle}
-                    />
-                    <SignatureComponent
                         signatureSrc={
                             commonImagesMap[
                                 document.dutyProgrammeOfficerSignature
@@ -74,6 +68,13 @@ export const NationalYouthCouncilTechnicalSkillsTemplate: FunctionComponent<
                         }
                         name={document.dutyProgrammeOfficerName}
                         title={document.dutyProgrammeOfficerTitle}
+                    />
+                    <SignatureComponent
+                        signatureSrc={
+                            commonImagesMap[document.organisationRepSignature]
+                        }
+                        name={document.organisationRepName}
+                        title={document.organisationRepTitle}
                     />
                 </AbsoluteBottom>
             </A4>
