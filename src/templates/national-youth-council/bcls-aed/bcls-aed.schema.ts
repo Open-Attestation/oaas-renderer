@@ -7,7 +7,6 @@ export default {
     type: 'object',
     required: [
         'name',
-        'nric',
         'issueDate',
         'trainerName',
         'ciSignature',
@@ -17,12 +16,6 @@ export default {
         name: {
             type: 'string',
             examples: ['John Wick'],
-            minLength: 1,
-        },
-        nric: {
-            type: 'string',
-            description: 'NRIC of the recipient',
-            examples: ['S0000001A'],
             minLength: 1,
         },
         issueDate: {

@@ -24,19 +24,19 @@ export default {
         courseTitle: {
             type: 'string',
             description: 'Title of the course',
-            example: 'CSA Milestone Programme',
+            examples: ['CSA Milestone Programme'],
             minLength: 1,
         },
         courseStartDate: {
             type: 'string',
             description: 'Start date of course',
-            example: '2021-12-31',
+            examples: ['2021-12-31'],
             format: 'date',
         },
         courseEndDate: {
             type: 'string',
             description: 'End date of course',
-            example: '2022-12-31',
+            examples: ['2022-12-31'],
             format: 'date',
         },
         organisationRepName: {

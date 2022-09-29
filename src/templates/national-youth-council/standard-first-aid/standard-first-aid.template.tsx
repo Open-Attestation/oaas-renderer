@@ -77,9 +77,6 @@ export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
                                     >
                                         {document.name}
                                     </Typography>
-                                    <Typography $mt={0} $size="medium">
-                                        {document.nric}
-                                    </Typography>
                                 </FlexBox>
                                 <Typography
                                     $m={0}

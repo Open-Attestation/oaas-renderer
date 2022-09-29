@@ -101,7 +101,7 @@ describe('NycBclsAedTemplate', () => {
               margin-bottom: 16px;
             }
 
-            .c19 {
+            .c18 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -121,11 +121,11 @@ describe('NycBclsAedTemplate', () => {
               margin-top: 0px;
             }
 
-            .c19 > *:not(:last-child) {
+            .c18 > *:not(:last-child) {
               margin-bottom: 16px;
             }
 
-            .c25 {
+            .c24 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -159,13 +159,6 @@ describe('NycBclsAedTemplate', () => {
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
-            }
-
-            .c11 {
-              font-size: 1em;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: 0px;
               margin-bottom: 0px;
               margin-left: 0px;
               margin-right: 0px;
@@ -173,7 +166,7 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c13 {
+            .c12 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 400;
@@ -184,7 +177,7 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c15 {
+            .c14 {
               font-size: 1em;
               font-style: normal;
               font-weight: 400;
@@ -195,7 +188,7 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c16 {
+            .c15 {
               font-size: 1.25em;
               font-style: normal;
               font-weight: 700;
@@ -205,7 +198,7 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c20 {
+            .c19 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 700;
@@ -215,14 +208,14 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c21 {
+            .c20 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c22 {
+            .c21 {
               font-size: 1em;
               font-style: normal;
               font-weight: 400;
@@ -232,7 +225,7 @@ describe('NycBclsAedTemplate', () => {
               margin-right: 0px;
             }
 
-            .c23 {
+            .c22 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 400;
@@ -250,16 +243,16 @@ describe('NycBclsAedTemplate', () => {
               margin: 0;
             }
 
-            .c12 {
+            .c11 {
               position: relative;
               width: 100%;
             }
 
-            .c12 img {
+            .c11 img {
               width: 100%;
             }
 
-            .c17 {
+            .c16 {
               max-height: 72px;
             }
 
@@ -276,12 +269,12 @@ describe('NycBclsAedTemplate', () => {
               page-break-after: always;
             }
 
-            .c24 {
+            .c23 {
               position: relative;
               width: 100%;
             }
 
-            .c26 {
+            .c25 {
               font-size: 0.75em;
               font-style: normal;
               font-weight: 400;
@@ -289,7 +282,7 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c27 {
+            .c26 {
               font-family: Libre Franklin;
             }
 
@@ -306,7 +299,7 @@ describe('NycBclsAedTemplate', () => {
               -webkit-print-color-adjust: exact;
             }
 
-            .c14 {
+            .c13 {
               background: white;
               position: relative;
               width: 500px;
@@ -319,7 +312,7 @@ describe('NycBclsAedTemplate', () => {
               -webkit-print-color-adjust: exact;
             }
 
-            .c18 {
+            .c17 {
               display: block;
               border-bottom: 1px solid black;
               width: 100%;
@@ -361,7 +354,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             @media print {
-              .c24 {
+              .c23 {
                 display: none;
               }
             }
@@ -397,23 +390,18 @@ describe('NycBclsAedTemplate', () => {
                         >
                           John Doe
                         </p>
-                        <p
-                          className="c10 c9"
-                        >
-                          nric-1
-                        </p>
                       </div>
                       <p
-                        className="c11 c9"
+                        className="c10 c9"
                       >
                         Is certified as a BCLS + AED Provider Accredited by SRFAC
                       </p>
                     </div>
                     <div
-                      className="c12"
+                      className="c11"
                     >
                       <p
-                        className="c13 c9"
+                        className="c12 c9"
                       >
                         Date issued: 
                         31/12/2020
@@ -427,10 +415,10 @@ describe('NycBclsAedTemplate', () => {
                 </div>
                 <div>
                   <div
-                    className="c3 c14"
+                    className="c3 c13"
                   >
                     <p
-                      className="c15 c9"
+                      className="c14 c9"
                     >
                       The holder of this card has successfully completed the course requirements
                     </p>
@@ -438,36 +426,36 @@ describe('NycBclsAedTemplate', () => {
                       className="c0"
                     >
                       <p
-                        className="c16 c9"
+                        className="c15 c9"
                       >
                         <img
                           alt="ci signature"
-                          className="c17"
+                          className="c16"
                           src="svg-stub"
                         />
                       </p>
                       <div
-                        className="c18"
+                        className="c17"
                       />
                       <div
-                        className="c19"
+                        className="c18"
                       >
                         <div
                           className="c0"
                         >
                           <p
-                            className="c20 c9"
+                            className="c19 c9"
                           >
                             trainer-1
                           </p>
                           <p
-                            className="c21 c9"
+                            className="c20 c9"
                           >
                             Chief Instructor
                           </p>
                         </div>
                         <p
-                          className="c22 c9"
+                          className="c21 c9"
                         >
                           Certificate is valid till
                            
@@ -476,7 +464,7 @@ describe('NycBclsAedTemplate', () => {
                       </div>
                     </div>
                     <p
-                      className="c23 c9"
+                      className="c22 c9"
                     >
                       S/N: 
                       serial-number-1
@@ -485,10 +473,10 @@ describe('NycBclsAedTemplate', () => {
                 </div>
               </div>
               <div
-                className="c24"
+                className="c23"
               >
                 <div
-                  className="c25"
+                  className="c24"
                 >
                   <img
                     alt="card flip icon"
@@ -496,7 +484,7 @@ describe('NycBclsAedTemplate', () => {
                     width="20"
                   />
                   <p
-                    className="c26 c27"
+                    className="c25 c26"
                   >
                     Click on the card to reveal the other side
                   </p>

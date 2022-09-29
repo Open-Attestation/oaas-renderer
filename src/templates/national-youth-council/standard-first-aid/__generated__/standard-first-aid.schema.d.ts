@@ -8,10 +8,6 @@
 export interface NationalYouthCouncilStandardFirstAid {
     name: string
     /**
-     * NRIC of the recipient
-     */
-    nric: string
-    /**
      * Issuance date of the certificate
      */
     issueDate: string

@@ -27,13 +27,13 @@ export default {
         courseTitle: {
             type: 'string',
             description: 'Title of the course',
-            example: 'Challenge Rope Course',
+            examples: ['Challenge Rope Course'],
             minLength: 1,
         },
         courseDate: {
             type: 'string',
             description: 'Date of the course',
-            example: '2022-05-10',
+            examples: ['2022-05-10'],
             format: 'date',
         },
         dutyProgrammeOfficerName: {
