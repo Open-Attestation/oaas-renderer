@@ -431,7 +431,7 @@ describe('NycBclsAedTemplate', () => {
                         <img
                           alt="ci signature"
                           className="c16"
-                          src="svg-stub"
+                          src="farah-binte-ja-afar-signature&bcb9a2d20c8b72e7b5372df3e518a0528c15b4cdddc92025b06fd5fc986e1e20.png"
                         />
                       </p>
                       <div
