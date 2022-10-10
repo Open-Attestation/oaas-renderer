@@ -5,13 +5,7 @@ export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
     $id: 'NationalYouthCouncil/BclsAed',
     type: 'object',
-    required: [
-        'name',
-        'issueDate',
-        'trainerName',
-        'ciSignature',
-        'serialNumber',
-    ],
+    required: ['name', 'issueDate', 'ciName', 'ciSignature', 'serialNumber'],
     properties: {
         name: {
             type: 'string',
