@@ -21,9 +21,11 @@
             "description": "Issuance date of the certificate",
             "examples": ["2022-12-31"]
         },
-        "trainerName": {
+        "ciName": {
             "type": "string",
             "description": "Name of trainer",
+            "enum": ["Fazdli Jamal"],
+            "examples": ["Fazdli Jamal"],
             "minLength": 1
         },
         "ciSignature": {

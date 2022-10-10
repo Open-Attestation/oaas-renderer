@@ -143,7 +143,7 @@ export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
                                             $m={0}
                                             $bold
                                         >
-                                            {document.trainerName}
+                                            {document.ciName}
                                         </Typography>
                                         <Typography $size="small" $mt={0}>
                                             Chief Instructor

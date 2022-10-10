@@ -445,7 +445,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                           <p
                             className="c19 c9"
                           >
-                            trainer-1
+                            Fazdli Jamal
                           </p>
                           <p
                             className="c20 c9"

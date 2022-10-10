@@ -24,10 +24,11 @@ export default {
             description: 'Issuance date of the certificate',
             examples: ['2022-12-31'],
         },
-        trainerName: {
+        ciName: {
             type: 'string',
             description: 'Name of trainer',
-            examples: ['Keanu Reeves'],
+            examples: ['Fazdli Jamal'],
+            enum: ['Fazdli Jamal', `Farah Binte Ja'afar`],
             minLength: 1,
         },
         ciSignature: {

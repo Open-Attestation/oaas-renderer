@@ -17,5 +17,5 @@ export const sample: NationalYouthCouncilStandardFirstAidOaDoc = {
         'fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png',
     issueDate: '2020-12-31',
     serialNumber: 'serial-number-1',
-    trainerName: 'trainer-1',
+    ciName: 'Fazdli Jamal',
 }

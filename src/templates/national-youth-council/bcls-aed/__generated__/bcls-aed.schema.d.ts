@@ -14,7 +14,7 @@ export interface NationalYouthCouncilBclsAed {
     /**
      * Name of trainer
      */
-    trainerName: string
+    ciName?: 'Fazdli Jamal' | "Farah Binte Ja'afar"
     /**
      * CI's signature
      */

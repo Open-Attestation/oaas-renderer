@@ -14,7 +14,7 @@ export interface NationalYouthCouncilStandardFirstAid {
     /**
      * Name of trainer
      */
-    trainerName: string
+    ciName?: 'Fazdli Jamal'
     /**
      * CI's signature
      */
