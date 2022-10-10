@@ -21,7 +21,7 @@ export default {
         ciName: {
             type: 'string',
             description: 'Name of trainer',
-            examples: ['Fazdli Jamal'],
+            examples: [`Farah Binte Ja'afar`],
             enum: ['Fazdli Jamal', `Farah Binte Ja'afar`],
             minLength: 1,
         },
