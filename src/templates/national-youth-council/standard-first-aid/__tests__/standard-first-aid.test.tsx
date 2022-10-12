@@ -393,7 +393,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                       <p
                         className="c10 c9"
                       >
-                        Is certified as a Standard First Aid (SFA) Provider Accredited by SRFAC
+                        Is certified as a Standard First Aid (SFA) with CPR (Hands only) + AED Provider Accredited by SRFAC
                       </p>
                     </div>
                     <div

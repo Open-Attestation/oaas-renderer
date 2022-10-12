@@ -85,7 +85,8 @@ export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
                                     $textAlign="center"
                                 >
                                     Is certified as a Standard First Aid (SFA)
-                                    Provider Accredited by SRFAC
+                                    with CPR (Hands only) + AED Provider
+                                    Accredited by SRFAC
                                 </Typography>
                             </FlexBox>
                             {/* Footer container */}
