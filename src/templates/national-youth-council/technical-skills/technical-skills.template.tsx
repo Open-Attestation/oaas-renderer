@@ -59,16 +59,7 @@ export const NationalYouthCouncilTechnicalSkillsTemplate: FunctionComponent<
                         {courseDate}
                     </Typography>
                 </FlexBox>
-                <AbsoluteBottom>
-                    <SignatureComponent
-                        signatureSrc={
-                            commonImagesMap[
-                                document.dutyProgrammeOfficerSignature
-                            ]
-                        }
-                        name={document.dutyProgrammeOfficerName}
-                        title={document.dutyProgrammeOfficerTitle}
-                    />
+                <AbsoluteBottom $flexDirection="row-reverse">
                     <SignatureComponent
                         signatureSrc={
                             commonImagesMap[document.organisationRepSignature]

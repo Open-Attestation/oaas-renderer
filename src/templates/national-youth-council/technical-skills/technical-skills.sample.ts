@@ -10,10 +10,6 @@ export const sample: NationalYouthCouncilTechnicalSkillsOaDoc = {
     name: 'Yeo Yoyo',
     courseTitle: 'Challenge Rope Course',
     courseDate: '2022-09-28',
-    dutyProgrammeOfficerName: 'Jane Doe',
-    dutyProgrammeOfficerTitle: 'Trainer',
-    dutyProgrammeOfficerSignature:
-        'sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png',
     organisationRepName: 'Nicholas Conceicao',
     organisationRepTitle: 'Executive Director',
     organisationRepSignature:

@@ -144,9 +144,9 @@ describe('NationalYouthCouncilTechnicalSkillsTemplate', () => {
               -webkit-justify-content: space-between;
               -ms-flex-pack: justify;
               justify-content: space-between;
-              -webkit-flex-direction: row;
-              -ms-flex-direction: row;
-              flex-direction: row;
+              -webkit-flex-direction: row-reverse;
+              -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
               left: 2cm;
               right: 2cm;
               bottom: 4.5cm;
@@ -218,35 +218,6 @@ describe('NationalYouthCouncilTechnicalSkillsTemplate', () => {
                 <div
                   className="c8"
                 >
-                  <div
-                    style={
-                      Object {
-                        "width": 250,
-                      }
-                    }
-                  >
-                    <img
-                      className="c9"
-                      src="sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png"
-                    />
-                    <div
-                      className="c10"
-                    />
-                    <p
-                      className="c11 c3"
-                    >
-                      <b>
-                        Jane Doe
-                      </b>
-                       | 
-                      Trainer
-                    </p>
-                    <p
-                      className="c12 c3"
-                    >
-                      Outward Bound Singapore
-                    </p>
-                  </div>
                   <div
                     style={
                       Object {

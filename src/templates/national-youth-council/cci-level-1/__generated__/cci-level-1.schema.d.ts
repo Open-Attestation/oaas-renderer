@@ -16,18 +16,6 @@ export interface NationalYouthCouncilCciLevel_1 {
      */
     courseStartDate: string
     /**
-     * Name of the duty programme officer
-     */
-    dutyProgrammeOfficerName: string
-    /**
-     * Title of the duty programme officer
-     */
-    dutyProgrammeOfficerTitle: string
-    /**
-     * SHA256 hash of the duty programme officer's signature
-     */
-    dutyProgrammeOfficerSignature: 'sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png'
-    /**
      * Certificate number
      */
     serialNumber: string

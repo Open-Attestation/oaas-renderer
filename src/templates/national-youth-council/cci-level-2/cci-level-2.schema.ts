@@ -9,9 +9,6 @@ export default {
         'name',
         'courseStartDate',
         'courseEndDate',
-        'dutyProgrammeOfficerName',
-        'dutyProgrammeOfficerTitle',
-        'dutyProgrammeOfficerSignature',
         'serialNumber',
         'organisationRepSignature',
         'organisationRepName',
@@ -34,29 +31,6 @@ export default {
             format: 'date',
             description: 'Course date',
             examples: ['2022-11-30'],
-        },
-        dutyProgrammeOfficerName: {
-            type: 'string',
-            description: 'Name of the duty programme officer',
-            examples: ['Abdul Haireel Bin Abdul Haleem'],
-            minLength: 1,
-        },
-        dutyProgrammeOfficerTitle: {
-            type: 'string',
-            description: 'Title of the duty programme officer',
-            examples: ['Trainer'],
-            minLength: 1,
-        },
-        dutyProgrammeOfficerSignature: {
-            type: 'string',
-            description:
-                "SHA256 hash of the duty programme officer's signature",
-            enum: commonAssets.getEnumValues([
-                'sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png',
-            ]),
-            examples: commonAssets.getEnumValues([
-                'sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png',
-            ]),
         },
         serialNumber: {
             type: 'string',

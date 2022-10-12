@@ -94,16 +94,7 @@ export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
                             Validity is for three (3) year from the above date.
                         </Typography>
                     </FlexBox>
-                    <AbsoluteBottom>
-                        <SignatureComponent
-                            signatureSrc={
-                                commonImagesMap[
-                                    document.dutyProgrammeOfficerSignature
-                                ]
-                            }
-                            name={document.dutyProgrammeOfficerName}
-                            title={document.dutyProgrammeOfficerTitle}
-                        />
+                    <AbsoluteBottom $flexDirection="row-reverse">
                         <SignatureComponent
                             signatureSrc={
                                 commonImagesMap[
