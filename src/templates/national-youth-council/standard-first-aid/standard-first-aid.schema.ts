@@ -38,6 +38,7 @@ export default {
         serialNumber: {
             type: 'string',
             description: 'Certificate number',
+            examples: ['OBSSFA20XX/XXX'],
             minLength: 1,
         },
     },

@@ -466,7 +466,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                       className="c22 c9"
                     >
                       S/N: 
-                      serial-number-1
+                      OBSSFA2022/001
                     </p>
                   </div>
                 </div>
