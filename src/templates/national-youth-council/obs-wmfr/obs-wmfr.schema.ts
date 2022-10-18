@@ -9,9 +9,9 @@ export default {
         'name',
         'issueDate',
         'serialNumber',
-        'issuingOfficerName',
-        'issuingOfficerPosition',
-        'issuingOfficerSignature',
+        'ExecDirName',
+        'ExecDirPosition',
+        'ExecDirSignature',
     ],
     properties: {
         name: {
@@ -31,19 +31,21 @@ export default {
             examples: ['OBSWMFR20XX/XXX'],
             minLength: 1,
         },
-        issuingOfficerName: {
+        ExecDirName: {
             type: 'string',
             description: 'Name of the issuing officer',
+            enum: ['Nicholas Conceicao'],
             examples: ['Nicholas Conceicao'],
             minLength: 1,
         },
-        issuingOfficerPosition: {
+        ExecDirPosition: {
             type: 'string',
             description: 'Position of the issuing officer',
+            enum: ['Executive Director'],
             examples: ['Executive Director'],
             minLength: 1,
         },
-        issuingOfficerSignature: {
+        ExecDirSignature: {
             type: 'string',
             description: "Image hash value of the issuing officer's signature",
             enum: getEnumValues([

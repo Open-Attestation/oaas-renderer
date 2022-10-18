@@ -18,13 +18,13 @@ export interface NationalYouthCouncilObsWmfr {
     /**
      * Name of the issuing officer
      */
-    issuingOfficerName: string
+    ExecDirName: 'Nicholas Conceicao'
     /**
      * Position of the issuing officer
      */
-    issuingOfficerPosition: string
+    ExecDirPosition: 'Executive Director'
     /**
      * Image hash value of the issuing officer's signature
      */
-    issuingOfficerSignature: 'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
+    ExecDirSignature: 'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
 }

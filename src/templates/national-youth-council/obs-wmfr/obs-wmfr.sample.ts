@@ -10,9 +10,9 @@ export const sample: NationalYouthCouncilObsWmfrOaDoc = {
     name: 'John Doe',
     serialNumber: 'OBSWMFR20XX/XXX',
     issueDate: '2022-12-31',
-    issuingOfficerName: 'Nicholas Conceicao',
-    issuingOfficerPosition: 'Executive Director',
-    issuingOfficerSignature:
+    ExecDirName: 'Nicholas Conceicao',
+    ExecDirPosition: 'Executive Director',
+    ExecDirSignature:
         'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
     issuers: [
         {

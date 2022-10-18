@@ -88,17 +88,15 @@ export const NationalYouthCouncilObsWmfrTemplate: FunctionComponent<
                             <SignatureComponent>
                                 <SignatureImg
                                     src={`${
-                                        imagesMap[
-                                            document.issuingOfficerSignature
-                                        ]
+                                        imagesMap[document.ExecDirSignature]
                                     }`}
                                     alt="Issuing officer signature"
                                 />
                             </SignatureComponent>
                             <SignatureProfileComponent>
-                                {document.issuingOfficerName}
+                                {document.ExecDirName}
                                 <br />
-                                {document.issuingOfficerPosition}
+                                {document.ExecDirPosition}
                                 <br />
                                 Outward Bound Singapore
                             </SignatureProfileComponent>
