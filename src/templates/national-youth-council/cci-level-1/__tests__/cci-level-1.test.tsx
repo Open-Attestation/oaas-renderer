@@ -374,7 +374,8 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                   <p
                     className="c11 c5"
                   >
-                    Validity is for one (1) year from the above date.
+                    Certificate is valid till 
+                    30 Dec 2023
                   </p>
                 </div>
                 <div
