@@ -2,4 +2,4 @@
   publish = "build/"
 
   # Default build command.
-  command = "export REACT_APP_RENDERER_VERSION=national-youth-council_v0.0.37; yarn build national-youth-council"
+  command = "export REACT_APP_RENDERER_VERSION=national-youth-council_v0.0.38; yarn build national-youth-council"
