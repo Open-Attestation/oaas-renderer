@@ -38,7 +38,7 @@
         "yarn": "^1.22.19"
     },
     "scripts": {
-        "dev": "node src/__development__/prepare.js; concurrently \"BROWSER=none react-app-rewired start\" \"PORT=3001 IS_PREVIEW_APP=true react-app-rewired start\"",
+        "dev": "ts-node --project src/__development__/tsconfig.json src/__development__/prepare.ts && concurrently \"BROWSER=none react-app-rewired start\" \"PORT=3001 IS_PREVIEW_APP=true react-app-rewired start\"",
         "build": "run() { ISSUER_ID=$1 react-app-rewired build; }; run",
         "test": "react-scripts test --watchAll=false",
         "test:watch": "react-scripts test",

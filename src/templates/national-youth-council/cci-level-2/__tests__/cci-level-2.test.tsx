@@ -479,7 +479,17 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                             className="c24"
                           >
                             <li>
-                              ISC - SmartSnapTM
+                              ISC - SmartSnap
+                              <span
+                                style={
+                                  Object {
+                                    "fontSize": "0.5em",
+                                    "verticalAlign": "super",
+                                  }
+                                }
+                              >
+                                TM
+                              </span>
                             </li>
                             <li>
                               Saferoller®
@@ -507,7 +517,17 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                             className="c24"
                           >
                             <li>
-                              ISC - SmartSnapTM
+                              ISC - SmartSnap
+                              <span
+                                style={
+                                  Object {
+                                    "fontSize": "0.5em",
+                                    "verticalAlign": "super",
+                                  }
+                                }
+                              >
+                                TM
+                              </span>
                             </li>
                             <li>
                               Saferoller®
@@ -619,6 +639,57 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                           >
                             <li>
                               Traditional top rope belay
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          className="c22"
+                        >
+                          Abseil
+                        </td>
+                        <td
+                          className="c23"
+                        >
+                          <ul
+                            className="c24"
+                          >
+                            <li>
+                              Static abseil rig with back up belay set up
+                            </li>
+                          </ul>
+                        </td>
+                        <td
+                          className="c23"
+                        >
+                          <ul
+                            className="c24"
+                          >
+                            <li>
+                              Static abseil rig with back up belay set up
+                            </li>
+                          </ul>
+                        </td>
+                        <td
+                          className="c23"
+                        >
+                          <ul
+                            className="c24"
+                          >
+                            <li>
+                              N.A
+                            </li>
+                          </ul>
+                        </td>
+                        <td
+                          className="c23"
+                        >
+                          <ul
+                            className="c24"
+                          >
+                            <li>
+                              Static abseil rig with back up belay set up
                             </li>
                           </ul>
                         </td>

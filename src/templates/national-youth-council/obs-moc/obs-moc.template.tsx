@@ -67,7 +67,9 @@ export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
                         {document.courseTitle}
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1}>
-                        {courseStartDate} - {courseEndDate}
+                        {courseStartDate === courseEndDate
+                            ? courseStartDate
+                            : `${courseStartDate} - ${courseEndDate}`}
                     </Typography>
                 </FlexBox>
                 <AbsoluteBottom $flexDirection="row-reverse">

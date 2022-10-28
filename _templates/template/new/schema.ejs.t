@@ -27,19 +27,19 @@ export default {
         courseTitle: {
             type: 'string',
             description: 'Title of the course',
-            example: 'CSA Milestone Programme',
+            examples: ['CSA Milestone Programme'],
             minLength: 1,
         },
         courseStartDate: {
             type: 'string',
             description: 'Start date of course',
-            example: '2022-05-10',
+            examples: ['2022-05-10'],
             format: 'date',
         },
         courseEndDate: {
             type: 'string',
             description: 'End date of course',
-            example: '2022-06-03',
+            examples: ['2022-06-03'],
             format: 'date',
         },
         presentedBy: {
@@ -49,7 +49,7 @@ export default {
                 type: 'string',
                 description:
                     'organization or entity that is presenting the award',
-                example: 'Cyber Security Agency of Singapore (CSA)',
+                examples: ['Cyber Security Agency of Singapore (CSA)'],
             },
         },
         signatureOne: {
@@ -59,23 +59,22 @@ export default {
                 name: {
                     type: 'string',
                     description: 'owner of signature',
-                    example: 'Betsie Chacko',
+                    examples: ['Betsie Chacko'],
                 },
                 title: {
                     type: 'string',
                     description: 'title of owner of signature',
-                    example: 'Associate Director',
+                    examples: ['Associate Director'],
                 },
                 organization: {
                     type: 'string',
                     description: 'organization of owner of signature',
-                    example: 'CISA International',
+                    examples: ['CISA International'],
                 },
                 signatureHash: {
                     type: 'string',
                     description: "Hash of the signature's image file",
-                    example:
-                        '7645fe871778d34c1daed13a12f2b3fe68555325fd7bdea3973a54399027eeab',
+                    examples: ['7645fe871778d34c1daed13a12f2b3fe68555325fd7bdea3973a54399027eeab'],
                 },
             },
             additionalProperties: false,
@@ -87,23 +86,22 @@ export default {
                 name: {
                     type: 'string',
                     description: 'owner of signature',
-                    example: 'Betsie Chacko',
+                    examples: ['Betsie Chacko'],
                 },
                 title: {
                     type: 'string',
                     description: 'title of owner of signature',
-                    example: 'Associate Director',
+                    examples: ['Associate Director'],
                 },
                 organization: {
                     type: 'string',
                     description: 'organization of owner of signature',
-                    example: 'CISA International',
+                    examples: ['CISA International'],
                 },
                 signatureHash: {
                     type: 'string',
                     description: "Hash of the signature's image file",
-                    example:
-                        '7645fe871778d34c1daed13a12f2b3fe68555325fd7bdea3973a54399027eeab',
+                    examples: ['7645fe871778d34c1daed13a12f2b3fe68555325fd7bdea3973a54399027eeab'],
                 },
             },
             additionalProperties: false,

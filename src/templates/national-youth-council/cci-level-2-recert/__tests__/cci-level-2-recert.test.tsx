@@ -1,14 +1,14 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilCciLevel_1Template } from '../cci-level-1.template'
+import { NationalYouthCouncilCciLevel_2RecertTemplate } from '../cci-level-2-recert.template'
 import { render, screen } from '@testing-library/react'
-import { sample } from '../cci-level-1.sample'
+import { sample } from '../cci-level-2-recert.sample'
 
-describe('NationalYouthCouncilCciLevel_1Template', () => {
+describe('NationalYouthCouncilCciLevel_2RecertTemplate', () => {
     it('should match snapshot', () => {
         const tree = renderer
             .create(
-                <NationalYouthCouncilCciLevel_1Template
+                <NationalYouthCouncilCciLevel_2RecertTemplate
                     document={sample}
                     handleObfuscation={() => void 0}
                 />
@@ -41,9 +41,9 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               display: -ms-flexbox;
               display: flex;
               width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
+              -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+              flex-direction: row;
               -webkit-align-items: center;
               -webkit-box-align: center;
               -ms-flex-align: center;
@@ -52,7 +52,6 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               -webkit-justify-content: center;
               -ms-flex-pack: center;
               justify-content: center;
-              margin-top: 252px;
             }
 
             .c6 {
@@ -174,6 +173,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               font-size: 1.5em;
               font-style: normal;
               font-weight: 700;
+              margin-top: 280px;
               text-align: center;
             }
 
@@ -332,7 +332,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                   <p
                     className="c8 c5"
                   >
-                    Challenge Course Instructor (Level 1)
+                    Challenge Course Instructor (Level 2 Recertification)
                   </p>
                   <p
                     className="c7 c5"
@@ -375,7 +375,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                     className="c11 c5"
                   >
                     Certificate is valid till 
-                    30 Dec 2023
+                    30 Dec 2025
                   </p>
                 </div>
                 <div
@@ -707,8 +707,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                     <li
                       className="c25 c5"
                     >
-                      This certificate shall remain valid for a period of one (1) year from the date of this certificate.
-                       
+                      This certificate shall remain valid for a period of three (3) years from the date of this certificate.
                     </li>
                     <li
                       className="c25 c5"
@@ -729,7 +728,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
 
     test('should render recipient name', () => {
         render(
-            <NationalYouthCouncilCciLevel_1Template
+            <NationalYouthCouncilCciLevel_2RecertTemplate
                 document={sample}
                 handleObfuscation={() => void 0}
             />

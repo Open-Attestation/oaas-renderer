@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilCciLevel_2OaDoc } from './cci-level-2.types'
+import { NationalYouthCouncilCciLevel_1RecertOaDoc } from './cci-level-1-recert.types'
+// import styled from 'styled-components'
 import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
 
@@ -13,7 +14,7 @@ import {
     TableData,
     RowHeader,
     UnorderedList,
-} from './cci-level-2.components'
+} from './cci-level-1-recert.components'
 
 import { A4 } from 'components/paper-size'
 import {
@@ -24,8 +25,10 @@ import {
 import commonImagesMap from '../common/assets/__generated__/images-map'
 import mainBg from '../common/assets/background.svg'
 
-export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
-    TemplateProps<NationalYouthCouncilCciLevel_2OaDoc> & { className?: string }
+export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
+    TemplateProps<NationalYouthCouncilCciLevel_1RecertOaDoc> & {
+        className?: string
+    }
 > = ({ document, className = '' }) => {
     const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMMM yyyy'
@@ -35,7 +38,7 @@ export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
     )
 
     const validTillDate = DateTime.fromISO(document.courseEndDate)
-        .plus({ years: 3 })
+        .plus({ years: 1 })
         .minus({ days: 1 })
     const validTillDateString = validTillDate.toFormat('dd MMM yyyy')
 
@@ -51,13 +54,8 @@ export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
             <Root $vertical>
                 <A4 $bgImg={mainBg}>
                     {/* Course title */}
-                    <FlexBox>
-                        <Typography
-                            $mt={35}
-                            $size={'xlarge'}
-                            $bold
-                            $textAlign="center"
-                        >
+                    <FlexBox $mt={31.5} $vertical>
+                        <Typography $textAlign="center" $size={'xlarge'} $bold>
                             Certificate of Proficiency
                         </Typography>
                     </FlexBox>
@@ -74,7 +72,8 @@ export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
                             the following award
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            Challenge Course Instructor (Level 2)
+                            Challenge Course Instructor (Level 1
+                            Recertification)
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             On the date of
@@ -168,6 +167,9 @@ export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
                                     <RowHeader>Zipline</RowHeader>
                                     <TableData>
                                         <UnorderedList>
+                                            <li>
+                                                TRUBLUE{tradeMarkSymbol} Zipline
+                                            </li>
                                             <li>Mini-Zip with Roperoller®</li>
                                         </UnorderedList>
                                     </TableData>
@@ -256,8 +258,8 @@ export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
                             </Typography>
                             <Typography as="li" $bold $size={'medium'} $my={2}>
                                 This certificate shall remain valid for a period
-                                of three (3) years from the date of this
-                                certificate.
+                                of one (1) year from the date of this
+                                certificate.{' '}
                             </Typography>
                             <Typography as="li" $bold $size={'medium'} $my={2}>
                                 An expired certificate shall be deemed invalid.

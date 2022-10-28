@@ -1,14 +1,14 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilCciLevel_1Template } from '../cci-level-1.template'
+import { NationalYouthCouncilCciLevel_1RecertTemplate } from '../cci-level-1-recert.template'
 import { render, screen } from '@testing-library/react'
-import { sample } from '../cci-level-1.sample'
+import { sample } from '../cci-level-1-recert.sample'
 
-describe('NationalYouthCouncilCciLevel_1Template', () => {
+describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
     it('should match snapshot', () => {
         const tree = renderer
             .create(
-                <NationalYouthCouncilCciLevel_1Template
+                <NationalYouthCouncilCciLevel_1RecertTemplate
                     document={sample}
                     handleObfuscation={() => void 0}
                 />
@@ -332,7 +332,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                   <p
                     className="c8 c5"
                   >
-                    Challenge Course Instructor (Level 1)
+                    Challenge Course Instructor (Level 1 Recertification)
                   </p>
                   <p
                     className="c7 c5"
@@ -548,6 +548,20 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                             className="c24"
                           >
                             <li>
+                              TRUBLUE
+                              <span
+                                style={
+                                  Object {
+                                    "fontSize": "0.5em",
+                                    "verticalAlign": "super",
+                                  }
+                                }
+                              >
+                                TM
+                              </span>
+                               Zipline
+                            </li>
+                            <li>
                               Mini-Zip with Roperoller®
                             </li>
                           </ul>
@@ -729,7 +743,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
 
     test('should render recipient name', () => {
         render(
-            <NationalYouthCouncilCciLevel_1Template
+            <NationalYouthCouncilCciLevel_1RecertTemplate
                 document={sample}
                 handleObfuscation={() => void 0}
             />

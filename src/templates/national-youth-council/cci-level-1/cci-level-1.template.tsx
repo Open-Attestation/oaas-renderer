@@ -39,6 +39,11 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
         .plus({ years: 1 })
         .minus({ days: 1 })
     const validTillDateString = validTillDate.toFormat('dd MMM yyyy')
+
+    const tradeMarkSymbol = (
+        <span style={{ verticalAlign: 'super', fontSize: '0.5em' }}>TM</span>
+    )
+
     return (
         <>
             <Helmet>
@@ -134,7 +139,9 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                                     </TableData>
                                     <TableData>
                                         <UnorderedList>
-                                            <li>ISC - SmartSnapTM</li>
+                                            <li>
+                                                ISC - SmartSnap{tradeMarkSymbol}
+                                            </li>
                                             <li>Saferoller®</li>
                                         </UnorderedList>
                                     </TableData>
@@ -146,7 +153,9 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                                     </TableData>
                                     <TableData>
                                         <UnorderedList>
-                                            <li>ISC - SmartSnapTM</li>
+                                            <li>
+                                                ISC - SmartSnap{tradeMarkSymbol}
+                                            </li>
                                             <li>Saferoller®</li>
                                         </UnorderedList>
                                     </TableData>
@@ -196,6 +205,38 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                                     <TableData>
                                         <UnorderedList>
                                             <li>Traditional top rope belay</li>
+                                        </UnorderedList>
+                                    </TableData>
+                                </tr>
+                                <tr>
+                                    <RowHeader>Abseil</RowHeader>
+                                    <TableData>
+                                        <UnorderedList>
+                                            <li>
+                                                Static abseil rig with back up
+                                                belay set up
+                                            </li>
+                                        </UnorderedList>
+                                    </TableData>
+                                    <TableData>
+                                        <UnorderedList>
+                                            <li>
+                                                Static abseil rig with back up
+                                                belay set up
+                                            </li>
+                                        </UnorderedList>
+                                    </TableData>
+                                    <TableData>
+                                        <UnorderedList>
+                                            <li>N.A</li>
+                                        </UnorderedList>
+                                    </TableData>
+                                    <TableData>
+                                        <UnorderedList>
+                                            <li>
+                                                Static abseil rig with back up
+                                                belay set up
+                                            </li>
                                         </UnorderedList>
                                     </TableData>
                                 </tr>

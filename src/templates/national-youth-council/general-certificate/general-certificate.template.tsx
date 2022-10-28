@@ -55,7 +55,9 @@ export const NationalYouthCouncilGeneralCertificateTemplate: FunctionComponent<
                         {document.courseTitle}
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1}>
-                        {startDate} - {endDate}
+                        {startDate === endDate
+                            ? startDate
+                            : `${startDate} - ${endDate}`}
                     </Typography>
                 </FlexBox>
                 <AbsoluteBottom $flexDirection="row-reverse">

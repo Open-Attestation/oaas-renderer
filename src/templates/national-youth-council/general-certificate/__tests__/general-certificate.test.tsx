@@ -207,9 +207,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
                 <p
                   className="c6 c3"
                 >
-                  31 Dec 2021
-                   - 
-                  31 Dec 2022
+                  31 Dec 2021 - 31 Dec 2022
                 </p>
               </div>
               <div

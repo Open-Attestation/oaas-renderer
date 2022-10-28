@@ -4,18 +4,16 @@ import {
     FrameConnector,
     HostActionsHandler,
 } from '@govtechsg/decentralized-renderer-react-components'
+import { capitalCase } from 'change-case'
 import React, { useCallback, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import styled from 'styled-components'
 
 // @ts-ignore
-import * as samples from './samples'
+import { samples } from './samples'
 
 interface AppProps {
-    documents: {
-        name: string
-        document: any
-    }[]
+    issuerDocuments: Record<string, any>
 }
 
 const TemplatesContainer = styled.div``
@@ -107,7 +105,7 @@ const ListContainer = styled.ul`
 `
 
 export const App: React.FunctionComponent<AppProps> = ({
-    documents,
+    issuerDocuments,
 }): React.ReactElement => {
     const [toFrame, setToFrame] = useState<HostActionsHandler>()
     const [height, setHeight] = useState(50)
@@ -115,6 +113,7 @@ export const App: React.FunctionComponent<AppProps> = ({
         []
     )
     const [document, setDocument] = useState<{ name: string; document: any }>()
+
     const [selectedTemplate, setSelectedTemplate] = useState<string>('')
     const fn = useCallback((toFrame: HostActionsHandler) => {
         // wrap into a function otherwise toFrame function will be executed
@@ -161,6 +160,34 @@ export const App: React.FunctionComponent<AppProps> = ({
         }
     }, [selectedTemplate, toFrame])
 
+    const issuerIds = Object.keys(issuerDocuments)
+    const documentMenu = issuerIds.map((issuerId) => {
+        return (
+            <div key={issuerId}>
+                <h3>{capitalCase(issuerId)}</h3>
+                {Object.keys(issuerDocuments[issuerId]).map((sampleName) => {
+                    const d = issuerDocuments[issuerId][sampleName]
+                    return (
+                        <div
+                            key={sampleName}
+                            className={`document ${
+                                document?.document === d ? 'active' : ''
+                            }`}
+                            onClick={() =>
+                                setDocument({
+                                    document: d,
+                                    name: sampleName,
+                                })
+                            }
+                        >
+                            {sampleName}
+                        </div>
+                    )
+                })}
+            </div>
+        )
+    })
+
     return (
         <div>
             <ActionsContainer>
@@ -186,25 +213,13 @@ export const App: React.FunctionComponent<AppProps> = ({
                     >
                         Documents
                     </div>
-                    {documents.length === 0 && (
+                    {Object.keys(issuerDocuments).length === 0 && (
                         <div>
                             Please configure the application and provide at
                             least one document
                         </div>
                     )}
-                    {documents.map((d, index) => {
-                        return (
-                            <div
-                                key={index}
-                                className={`document ${
-                                    document === d ? 'active' : ''
-                                }`}
-                                onClick={() => setDocument(d)}
-                            >
-                                {d.name}
-                            </div>
-                        )
-                    })}
+                    {documentMenu}
                 </DocumentsContainer>
                 {!document && (
                     <div
@@ -274,13 +289,8 @@ export const App: React.FunctionComponent<AppProps> = ({
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
-const documents = Object.keys(samples).map((key) => ({
-    name: key,
-    document: samples[key as keyof typeof samples],
-}))
-
 root.render(
     <React.StrictMode>
-        <App documents={documents} />
+        <App issuerDocuments={samples} />
     </React.StrictMode>
 )

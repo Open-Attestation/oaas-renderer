@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilCciLevel_2OaDoc } from './cci-level-2.types'
+import { NationalYouthCouncilCciLevel_2RecertOaDoc } from './cci-level-2-recert.types'
 import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
 
@@ -13,7 +13,7 @@ import {
     TableData,
     RowHeader,
     UnorderedList,
-} from './cci-level-2.components'
+} from './cci-level-2-recert.components'
 
 import { A4 } from 'components/paper-size'
 import {
@@ -24,8 +24,10 @@ import {
 import commonImagesMap from '../common/assets/__generated__/images-map'
 import mainBg from '../common/assets/background.svg'
 
-export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
-    TemplateProps<NationalYouthCouncilCciLevel_2OaDoc> & { className?: string }
+export const NationalYouthCouncilCciLevel_2RecertTemplate: FunctionComponent<
+    TemplateProps<NationalYouthCouncilCciLevel_2RecertOaDoc> & {
+        className?: string
+    }
 > = ({ document, className = '' }) => {
     const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMMM yyyy'
@@ -74,7 +76,8 @@ export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
                             the following award
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            Challenge Course Instructor (Level 2)
+                            Challenge Course Instructor (Level 2
+                            Recertification)
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             On the date of

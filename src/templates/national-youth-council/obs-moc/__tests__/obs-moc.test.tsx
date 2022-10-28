@@ -220,9 +220,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
                   <p
                     className="c6 c3"
                   >
-                    28 Sep 2022
-                     - 
-                    03 Oct 2022
+                    28 Sep 2022 - 03 Oct 2022
                   </p>
                 </div>
                 <div
