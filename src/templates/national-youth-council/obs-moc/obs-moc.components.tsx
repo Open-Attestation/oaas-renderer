@@ -20,3 +20,10 @@ export const DescriptionComponent = styled.div`
     justify-content: center;
     display: flex;
 `
+export const GroupImg = styled.img`
+    display: block;
+    max-width: 100%;
+    max-height: 29.7cm;
+    width: auto;
+    height: auto;
+`

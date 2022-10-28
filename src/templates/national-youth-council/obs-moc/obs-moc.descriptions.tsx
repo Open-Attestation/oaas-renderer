@@ -2,7 +2,7 @@ import { OrderedList } from './obs-moc.components'
 import { Typography } from '../common/components'
 
 export const descriptions: { [key: string]: JSX.Element } = {
-    'challenge-rope-course': (
+    moc: (
         <>
             <Typography $m={0} $textAlign="center" $size="xlarge" $bold>
                 National Outdoor Adventure Education Masterplan

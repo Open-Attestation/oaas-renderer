@@ -9,7 +9,7 @@ import {
     AbsoluteBottom,
     SignatureComponent,
 } from '../common/components'
-import { DescriptionComponent } from './obs-moc.components'
+import { DescriptionComponent, GroupImg } from './obs-moc.components'
 
 import { DateTime } from 'luxon'
 
@@ -28,7 +28,6 @@ export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
     const courseEndDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMM yyyy'
     )
-    const image = `data:image;base64, ${document.groupPhoto}`
     return (
         <>
             <Helmet>
@@ -64,7 +63,9 @@ export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
                         $mt={1}
                         $textAlign={'center'}
                     >
-                        {document.courseTitle}
+                        A mentally and physically challenging expeditionary
+                        Outward Bound Course as part of the National Outdoor
+                        Adventure Education Masterplan
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1}>
                         {courseStartDate === courseEndDate
@@ -85,13 +86,13 @@ export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
 
             <A4 $bgImg={descriptionBg}>
                 <DescriptionComponent>
-                    <div>{descriptions[document.courseDescription]}</div>
+                    <div>{descriptions['moc']}</div>
                 </DescriptionComponent>
             </A4>
 
             <A4 $bgImg={descriptionBg}>
                 <FlexBox $alignItems="center" $vertical>
-                    <img src={image} />
+                    <GroupImg src={document.groupPhoto} />
                 </FlexBox>
             </A4>
         </>

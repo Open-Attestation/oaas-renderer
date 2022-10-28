@@ -7,10 +7,8 @@ export default {
     type: 'object',
     required: [
         'name',
-        'courseTitle',
         'courseStartDate',
         'courseEndDate',
-        'courseDescription',
         'organisationRepSignature',
         'organisationRepName',
         'organisationRepTitle',
@@ -21,14 +19,6 @@ export default {
             type: 'string',
             description: 'Name of the awardee',
             examples: ['Yeo Yoyo'],
-            minLength: 1,
-        },
-        courseTitle: {
-            type: 'string',
-            description: 'Title of the course',
-            examples: [
-                'A mentally and physically challenging expeditionary Outward Bound Course as part of the National Outdoor Adventure Education Masterplan',
-            ],
             minLength: 1,
         },
         courseStartDate: {
@@ -65,12 +55,6 @@ export default {
             examples: commonAssets.getEnumValues([
                 'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
             ]),
-        },
-        courseDescription: {
-            type: 'string',
-            description: 'Description of the course',
-            examples: ['national-outdoor-adventure-education-masterplan'],
-            minLength: 1,
         },
         groupPhoto: {
             type: 'string',
