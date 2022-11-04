@@ -1,27 +1,21 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilCciLevel_1TrainerOaDoc } from './cci-level-1-trainer.types'
-// import styled from 'styled-components'
-import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
-
+import { A4 } from 'components/paper-size'
 import { DateTime } from 'luxon'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
 
+import commonImagesMap from '../common/assets/__generated__/images-map'
+import { Typography } from '../common/components'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 import {
     Root,
-    UnorderedList,
     UnorderedDashList,
+    UnorderedList,
 } from './cci-level-1-trainer.components'
+import { NationalYouthCouncilCciLevel_1TrainerOaDoc } from './cci-level-1-trainer.types'
 
-import { A4 } from 'components/paper-size'
-import {
-    Typography,
-    AbsoluteBottom,
-    SignatureComponent,
-} from '../common/components'
-import commonImagesMap from '../common/assets/__generated__/images-map'
-import mainBg from '../common/assets/background.svg'
-
+// import styled from 'styled-components'
 export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilCciLevel_1TrainerOaDoc> & {
         className?: string
@@ -42,18 +36,27 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
     return (
         <>
             <Helmet>
-                <title>national-youth-council - cci-level-1</title>
+                <title>national-youth-council - cci-level-1-trainer</title>
             </Helmet>
             <Root $vertical>
-                <A4 $bgImg={mainBg}>
-                    {/* Course title */}
-                    <FlexBox $mt={31.5} $vertical>
+                <ObsCertMainPage
+                    title={
                         <Typography $textAlign="center" $size={'xlarge'} $bold>
                             Certificate of Appointment
                         </Typography>
-                    </FlexBox>
-                    {/* Course Details */}
-                    <FlexBox $vertical $mt={2}>
+                    }
+                    signatures={[
+                        {
+                            signatureSrc:
+                                commonImagesMap[
+                                    document.organisationRepSignature
+                                ],
+                            name: document.organisationRepName,
+                            title: document.organisationRepTitle,
+                        },
+                    ]}
+                >
+                    <FlexBox $vertical>
                         <Typography $size={'medium'} $mt={0}>
                             This is to certify that
                         </Typography>
@@ -118,18 +121,7 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
                             Certificate is valid till {validTillDateString}
                         </Typography>
                     </FlexBox>
-                    <AbsoluteBottom $flexDirection="row-reverse">
-                        <SignatureComponent
-                            signatureSrc={
-                                commonImagesMap[
-                                    document.organisationRepSignature
-                                ]
-                            }
-                            name={document.organisationRepName}
-                            title={document.organisationRepTitle}
-                        />
-                    </AbsoluteBottom>
-                </A4>
+                </ObsCertMainPage>
                 <A4>
                     {/* Course title */}
                     <FlexBox $vertical $alignItems={'flex-start'} $spacing={1}>
@@ -163,7 +155,7 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             five hundred (500) hours of
                                             experience delivering CCI Level 1
@@ -177,7 +169,7 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             forty (40) hours of related
                                             professional training
@@ -205,7 +197,7 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             hundred and fifty (150) hours of
                                             experience delivering CCI or ropes
@@ -217,7 +209,7 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             forty (40) hours of related
                                             professional training; and
@@ -228,7 +220,7 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             pass a practical revalidation
                                             assessment.

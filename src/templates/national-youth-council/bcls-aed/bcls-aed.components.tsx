@@ -3,10 +3,10 @@ import { makeTypography } from 'components/typography/makeTypography'
 import styled from 'styled-components'
 
 const TYPOGRAPHY_FONT_SIZES = {
-    small: '0.75em',
-    medium: '1em',
-    large: '1.25em',
-    xlarge: '1.5em',
+    small: '12px',
+    medium: '16px',
+    large: '20px',
+    xlarge: '24px',
 } as const
 export const Typography = styled(makeTypography(TYPOGRAPHY_FONT_SIZES))`
     font-family: 'Libre Franklin';

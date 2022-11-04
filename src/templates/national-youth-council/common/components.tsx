@@ -3,10 +3,10 @@ import { Line } from 'components/line'
 import styled from 'styled-components'
 
 export const TYPOGRAPHY_FONT_SIZES = {
-    small: '0.65em',
-    medium: '0.8em',
-    large: '1em',
-    xlarge: '1.5em',
+    small: '10px',
+    medium: '12px',
+    large: '16px',
+    xlarge: '24px',
 } as const
 export const Typography = styled(makeTypography(TYPOGRAPHY_FONT_SIZES))`
     font-family: 'Libre Franklin';
@@ -31,15 +31,16 @@ const SignatureImg = styled.img`
     margin: 0 auto;
 `
 
+export interface SignatureComponentProps {
+    signatureSrc: string
+    name: string
+    title: string
+}
 export const SignatureComponent = ({
     signatureSrc,
     name,
     title,
-}: {
-    signatureSrc: string
-    name: string
-    title: string
-}) => (
+}: SignatureComponentProps) => (
     <div style={{ width: 250 }}>
         <SignatureImg src={signatureSrc} />
         <Line $color="#808041" />

@@ -14,13 +14,9 @@ import {
 } from './cci-level-2-trainer.components'
 
 import { A4 } from 'components/paper-size'
-import {
-    Typography,
-    AbsoluteBottom,
-    SignatureComponent,
-} from '../common/components'
+import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
-import mainBg from '../common/assets/background.svg'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 
 export const NationalYouthCouncilCciLevel_2TrainerTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilCciLevel_2TrainerOaDoc> & {
@@ -42,18 +38,27 @@ export const NationalYouthCouncilCciLevel_2TrainerTemplate: FunctionComponent<
     return (
         <>
             <Helmet>
-                <title>national-youth-council - cci-level-2</title>
+                <title>national-youth-council - cci-level-2-trainer</title>
             </Helmet>
             <Root $vertical>
-                <A4 $bgImg={mainBg}>
-                    {/* Course title */}
-                    <FlexBox $mt={31.5} $vertical>
+                <ObsCertMainPage
+                    title={
                         <Typography $textAlign="center" $size={'xlarge'} $bold>
                             Certificate of Appointment
                         </Typography>
-                    </FlexBox>
-                    {/* Course Details */}
-                    <FlexBox $vertical $mt={2}>
+                    }
+                    signatures={[
+                        {
+                            signatureSrc:
+                                commonImagesMap[
+                                    document.organisationRepSignature
+                                ],
+                            name: document.organisationRepName,
+                            title: document.organisationRepTitle,
+                        },
+                    ]}
+                >
+                    <FlexBox $vertical>
                         <Typography $size={'medium'} $mt={0}>
                             This is to certify that
                         </Typography>
@@ -111,20 +116,8 @@ export const NationalYouthCouncilCciLevel_2TrainerTemplate: FunctionComponent<
                             Certificate is valid till {validTillDateString}
                         </Typography>
                     </FlexBox>
-                    <AbsoluteBottom $flexDirection="row-reverse">
-                        <SignatureComponent
-                            signatureSrc={
-                                commonImagesMap[
-                                    document.organisationRepSignature
-                                ]
-                            }
-                            name={document.organisationRepName}
-                            title={document.organisationRepTitle}
-                        />
-                    </AbsoluteBottom>
-                </A4>
+                </ObsCertMainPage>
                 <A4>
-                    {/* Course title */}
                     <FlexBox $vertical $alignItems={'flex-start'} $spacing={1}>
                         <Typography $size={'medium'} $bold $italic>
                             This certificate does not grant the holder any form
@@ -156,7 +149,7 @@ export const NationalYouthCouncilCciLevel_2TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             five hundred (500) hours of
                                             experience delivering CCI Level 1 or
@@ -170,7 +163,7 @@ export const NationalYouthCouncilCciLevel_2TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             forty (40) hours of related
                                             professional training
@@ -198,7 +191,7 @@ export const NationalYouthCouncilCciLevel_2TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             hundred and fifty (150) hours of
                                             experience delivering CCI or ropes
@@ -210,7 +203,7 @@ export const NationalYouthCouncilCciLevel_2TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             forty (40) hours of related
                                             professional training; and
@@ -221,7 +214,7 @@ export const NationalYouthCouncilCciLevel_2TrainerTemplate: FunctionComponent<
                                             as="span"
                                             $bold
                                             $italic
-                                            $size={'large'}
+                                            $size={'medium'}
                                         >
                                             pass a practical revalidation
                                             assessment.

@@ -145,7 +145,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c8 {
-              font-size: 1.25em;
+              font-size: 20px;
               font-style: normal;
               font-weight: 700;
               margin-top: 16px;
@@ -155,7 +155,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c10 {
-              font-size: 1em;
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
@@ -167,7 +167,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c12 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 8px;
@@ -178,7 +178,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c14 {
-              font-size: 1em;
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
@@ -189,7 +189,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c15 {
-              font-size: 1.25em;
+              font-size: 20px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
@@ -199,7 +199,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c19 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               margin-top: 8px;
@@ -209,14 +209,14 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c20 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
             .c21 {
-              font-size: 1em;
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
@@ -226,7 +226,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c22 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               width: 100%;
@@ -275,7 +275,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c25 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-left: 8px;

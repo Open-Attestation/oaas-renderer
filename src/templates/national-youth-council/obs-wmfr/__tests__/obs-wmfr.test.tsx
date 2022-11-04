@@ -88,7 +88,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
             }
 
             .c16 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-left: 8px;

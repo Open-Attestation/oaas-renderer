@@ -154,7 +154,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c8 {
-              font-size: 1.25em;
+              font-size: 20px;
               font-style: normal;
               font-weight: 700;
               margin-top: 16px;
@@ -164,7 +164,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c10 {
-              font-size: 1em;
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
@@ -176,7 +176,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c12 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 8px;
@@ -187,7 +187,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c14 {
-              font-size: 1em;
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
@@ -198,7 +198,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c15 {
-              font-size: 1.25em;
+              font-size: 20px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
@@ -208,7 +208,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c19 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               margin-top: 8px;
@@ -218,14 +218,14 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c20 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
             .c21 {
-              font-size: 1em;
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
@@ -235,7 +235,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c22 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               width: 100%;
@@ -274,7 +274,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c25 {
-              font-size: 0.75em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-left: 8px;

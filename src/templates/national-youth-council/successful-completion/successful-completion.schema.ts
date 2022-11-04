@@ -3,13 +3,13 @@ import * as commonAssets from '../common/assets/__generated__/images-enum-values
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: 'NationalYouthCouncil/TechnicalSkills',
+    $id: 'NationalYouthCouncil/SuccessfulCompletion',
     type: 'object',
     required: [
         'name',
-        'courseTitle',
-        'courseDate',
-        'courseDescription',
+        'courseStartDate',
+        'courseEndDate',
+        'serialNumber',
         'organisationRepSignature',
         'organisationRepName',
         'organisationRepTitle',
@@ -17,21 +17,26 @@ export default {
     properties: {
         name: {
             type: 'string',
-            description: 'Name of the awardee',
-            examples: ['Yeo Yoyo'],
+            examples: ['John Wick'],
             minLength: 1,
         },
-        courseTitle: {
+        courseEndDate: {
             type: 'string',
-            description: 'Title of the course',
-            examples: ['Challenge Rope Course'],
-            minLength: 1,
-        },
-        courseDate: {
-            type: 'string',
-            description: 'Date of the course',
-            examples: ['2022-05-10'],
             format: 'date',
+            description: 'Issuance date of the certificate',
+            examples: ['2022-12-31'],
+        },
+        courseStartDate: {
+            type: 'string',
+            format: 'date',
+            description: 'Course start date',
+            examples: ['2022-11-30'],
+        },
+        serialNumber: {
+            type: 'string',
+            description: 'Certificate number',
+            examples: ['OBSBCLS20XX/XXX'],
+            minLength: 1,
         },
         organisationRepName: {
             type: 'string',
@@ -55,12 +60,6 @@ export default {
             examples: commonAssets.getEnumValues([
                 'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
             ]),
-        },
-        courseDescription: {
-            type: 'string',
-            description: 'Description of the course',
-            examples: ['challenge-rope-course'],
-            minLength: 1,
         },
     },
     additionalProperties: false,

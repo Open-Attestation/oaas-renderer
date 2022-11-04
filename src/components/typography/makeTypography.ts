@@ -2,10 +2,10 @@ import { applyMarginAndPaddings, MarginAndPaddingProps } from 'components/utils'
 import styled from 'styled-components'
 
 const TYPOGRAPHY_FONT_SIZES = {
-    small: '0.5em',
-    medium: '0.75em',
-    large: '1.25em',
-    xlarge: '1.5em',
+    small: '10px',
+    medium: '12px',
+    large: '16px',
+    xlarge: '24px',
 } as const
 
 interface TypographyProps {
@@ -15,6 +15,7 @@ interface TypographyProps {
     $width?: string
     $maxWidth?: string
     $textAlign?: 'center' | 'left' | 'right' | 'justify'
+    $textDecoration?: 'overline' | 'line-through' | 'underline'
     $color?: string
 }
 
@@ -35,5 +36,7 @@ export const makeTypography = <
         ${({ $maxWidth }) => ($maxWidth ? `max-width: ${$maxWidth};` : '')}
         ${({ $textAlign }) => ($textAlign ? `text-align: ${$textAlign};` : '')}
         ${({ $color }) => ($color ? `color: ${$color};` : '')}
+        ${({ $textDecoration }) =>
+            $textDecoration ? `text-decoration: ${$textDecoration};` : ''}
     `
 }

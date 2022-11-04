@@ -3,17 +3,12 @@ import { NationalYouthCouncilGeneralCertificateOaDoc } from './general-certifica
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
-import { A4 } from 'components/paper-size'
 
 import { DateTime } from 'luxon'
 
-import mainBg from '../common/assets/background.svg'
-import {
-    Typography,
-    AbsoluteBottom,
-    SignatureComponent,
-} from '../common/components'
+import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 
 export const NationalYouthCouncilGeneralCertificateTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilGeneralCertificateOaDoc> & {
@@ -31,17 +26,23 @@ export const NationalYouthCouncilGeneralCertificateTemplate: FunctionComponent<
             <Helmet>
                 <title>national-youth-council - generate-certificate</title>
             </Helmet>
-            {/* Page 1: Certificate */}
-            <A4 $bgImg={mainBg}>
-                {/* Course title */}
-                <FlexBox $mt={29.5} $vertical>
+            <ObsCertMainPage
+                title={
                     <Typography $textAlign="center" $size={'xlarge'} $bold>
                         Certificate of <br />
                         Completion
                     </Typography>
-                </FlexBox>
-                {/* Course Details */}
-                <FlexBox $mt={2} $vertical>
+                }
+                signatures={[
+                    {
+                        signatureSrc:
+                            commonImagesMap[document.organisationRepSignature],
+                        name: document.organisationRepName,
+                        title: document.organisationRepTitle,
+                    },
+                ]}
+            >
+                <FlexBox $vertical>
                     <Typography $size={'large'} $mt={0}>
                         This is to certify that
                     </Typography>
@@ -60,16 +61,7 @@ export const NationalYouthCouncilGeneralCertificateTemplate: FunctionComponent<
                             : `${startDate} - ${endDate}`}
                     </Typography>
                 </FlexBox>
-                <AbsoluteBottom $flexDirection="row-reverse">
-                    <SignatureComponent
-                        signatureSrc={
-                            commonImagesMap[document.organisationRepSignature]
-                        }
-                        name={document.organisationRepName}
-                        title={document.organisationRepTitle}
-                    />
-                </AbsoluteBottom>
-            </A4>
+            </ObsCertMainPage>
         </>
     )
 }

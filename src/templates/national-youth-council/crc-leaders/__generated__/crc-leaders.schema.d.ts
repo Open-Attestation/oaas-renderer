@@ -5,19 +5,16 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface NationalYouthCouncilTechnicalSkills {
-    /**
-     * Name of the awardee
-     */
+export interface NationalYouthCouncilCrcLeaders {
     name: string
     /**
-     * Title of the course
+     * Issuance date of the certificate
      */
-    courseTitle: string
+    courseEndDate: string
     /**
-     * Date of the course
+     * Course start date
      */
-    courseDate: string
+    courseStartDate: string
     /**
      * Name of the organisation representation
      */
@@ -30,8 +27,4 @@ export interface NationalYouthCouncilTechnicalSkills {
      * SHA256 hash of the organisation representation's signature
      */
     organisationRepSignature: 'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png'
-    /**
-     * Description of the course
-     */
-    courseDescription: string
 }

@@ -1,23 +1,17 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilObsMocOaDoc } from './obs-moc.types'
-import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
 import { A4 } from 'components/paper-size'
-import {
-    Typography,
-    AbsoluteBottom,
-    SignatureComponent,
-} from '../common/components'
-import { DescriptionComponent, GroupImg } from './obs-moc.components'
-
 import { DateTime } from 'luxon'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
 
-import mainBg from '../common/assets/background.svg'
-import descriptionBg from '../common/assets/description-watermark.png'
 import commonImagesMap from '../common/assets/__generated__/images-map'
-
+import descriptionBg from '../common/assets/description-watermark.png'
+import { Typography } from '../common/components'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { DescriptionComponent, GroupImg } from './obs-moc.components'
 import { descriptions } from './obs-moc.descriptions'
+import { NationalYouthCouncilObsMocOaDoc } from './obs-moc.types'
 
 export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilObsMocOaDoc> & { className?: string }
@@ -36,18 +30,23 @@ export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
                     Education Masterplan
                 </title>
             </Helmet>
-
-            {/* Page 1: Certificate */}
-            <A4 $bgImg={mainBg}>
-                {/* Course title */}
-                <FlexBox $mt={29.5} $vertical>
+            <ObsCertMainPage
+                title={
                     <Typography $textAlign="center" $size={'xlarge'} $bold>
                         Certificate of <br />
                         Participation
                     </Typography>
-                </FlexBox>
-                {/* Course Details */}
-                <FlexBox $mt={2} $vertical>
+                }
+                signatures={[
+                    {
+                        signatureSrc:
+                            commonImagesMap[document.organisationRepSignature],
+                        name: document.organisationRepName,
+                        title: document.organisationRepTitle,
+                    },
+                ]}
+            >
+                <FlexBox $vertical>
                     <Typography $size={'large'} $mt={0}>
                         This is to certify that
                     </Typography>
@@ -73,16 +72,7 @@ export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
                             : `${courseStartDate} - ${courseEndDate}`}
                     </Typography>
                 </FlexBox>
-                <AbsoluteBottom $flexDirection="row-reverse">
-                    <SignatureComponent
-                        signatureSrc={
-                            commonImagesMap[document.organisationRepSignature]
-                        }
-                        name={document.organisationRepName}
-                        title={document.organisationRepTitle}
-                    />
-                </AbsoluteBottom>
-            </A4>
+            </ObsCertMainPage>
 
             <A4 $bgImg={descriptionBg}>
                 <DescriptionComponent>

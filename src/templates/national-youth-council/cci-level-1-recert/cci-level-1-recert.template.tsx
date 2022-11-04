@@ -17,13 +17,9 @@ import {
 } from './cci-level-1-recert.components'
 
 import { A4 } from 'components/paper-size'
-import {
-    Typography,
-    AbsoluteBottom,
-    SignatureComponent,
-} from '../common/components'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
-import mainBg from '../common/assets/background.svg'
 
 export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilCciLevel_1RecertOaDoc> & {
@@ -49,18 +45,27 @@ export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
     return (
         <>
             <Helmet>
-                <title>national-youth-council - cci-level-1</title>
+                <title>national-youth-council - cci-level-1-recert</title>
             </Helmet>
             <Root $vertical>
-                <A4 $bgImg={mainBg}>
-                    {/* Course title */}
-                    <FlexBox $mt={31.5} $vertical>
+                <ObsCertMainPage
+                    title={
                         <Typography $textAlign="center" $size={'xlarge'} $bold>
                             Certificate of Proficiency
                         </Typography>
-                    </FlexBox>
-                    {/* Course Details */}
-                    <FlexBox $vertical $mt={2}>
+                    }
+                    signatures={[
+                        {
+                            signatureSrc:
+                                commonImagesMap[
+                                    document.organisationRepSignature
+                                ],
+                            name: document.organisationRepName,
+                            title: document.organisationRepTitle,
+                        },
+                    ]}
+                >
+                    <FlexBox $vertical>
                         <Typography $size={'medium'} $mt={0}>
                             This is to certify that
                         </Typography>
@@ -103,20 +108,8 @@ export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
                             Certificate is valid till {validTillDateString}
                         </Typography>
                     </FlexBox>
-                    <AbsoluteBottom $flexDirection="row-reverse">
-                        <SignatureComponent
-                            signatureSrc={
-                                commonImagesMap[
-                                    document.organisationRepSignature
-                                ]
-                            }
-                            name={document.organisationRepName}
-                            title={document.organisationRepTitle}
-                        />
-                    </AbsoluteBottom>
-                </A4>
+                </ObsCertMainPage>
                 <A4>
-                    {/* Course title */}
                     <FlexBox $vertical $spacing={3}>
                         <Typography $size={'medium'} $bold>
                             This table lists the operating systems and devices

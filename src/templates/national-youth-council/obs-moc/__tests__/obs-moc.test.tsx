@@ -17,7 +17,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
 
         expect(tree).toMatchInlineSnapshot(`
             Array [
-              .c1 {
+              .c5 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -34,27 +34,6 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               -webkit-justify-content: center;
               -ms-flex-pack: center;
               justify-content: center;
-              margin-top: 236px;
-            }
-
-            .c4 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              margin-top: 16px;
             }
 
             .c0 {
@@ -71,7 +50,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               z-index: initial;
             }
 
-            .c11 {
+            .c12 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -81,89 +60,126 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             }
 
             .c2 {
-              font-size: 1.5em;
+              font-size: 24px;
               font-style: normal;
               font-weight: 700;
               text-align: center;
             }
 
-            .c5 {
-              font-size: 1em;
+            .c6 {
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c6 {
-              font-size: 1.5em;
+            .c7 {
+              font-size: 24px;
               font-style: normal;
               font-weight: 700;
-              margin-top: 8px;
-            }
-
-            .c7 {
-              font-size: 1em;
-              font-style: normal;
-              font-weight: 400;
               margin-top: 8px;
             }
 
             .c8 {
-              font-size: 1.5em;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 8px;
+            }
+
+            .c9 {
+              font-size: 24px;
               font-style: normal;
               font-weight: 700;
               margin-top: 8px;
               text-align: center;
             }
 
-            .c12 {
-              font-size: 0.8em;
+            .c14 {
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 8px;
               text-align: center;
-              color: #808041;
             }
 
-            .c13 {
-              font-size: 0.8em;
+            .c15 {
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               margin-top: -12px;
               text-align: center;
-              color: #808041;
             }
 
             .c3 {
               font-family: 'Libre Franklin';
             }
 
-            .c9 {
-              position: absolute;
+            .c11 {
+              width: 100%;
+              height: 100px;
+              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+
+            .c13 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
-              -webkit-align-items: flex-end;
-              -webkit-box-align: flex-end;
-              -ms-flex-align: flex-end;
-              align-items: flex-end;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-flex: 1;
+              -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+              flex-grow: 1;
+              color: #808041;
+            }
+
+            .c1 {
+              position: relative;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              margin-top: 241px;
+              height: 90px;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+            }
+
+            .c4 {
+              position: relative;
+              display: block;
+              height: 360px;
+              padding-top: 16px;
+              padding-bottom: 16px;
+            }
+
+            .c10 {
+              position: relative;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              height: 214px;
               -webkit-box-pack: justify;
               -webkit-justify-content: space-between;
               -ms-flex-pack: justify;
               justify-content: space-between;
-              -webkit-flex-direction: row-reverse;
-              -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse;
-              left: 2cm;
-              right: 2cm;
-              bottom: 4.5cm;
-            }
-
-            .c10 {
-              display: block;
-              width: 200px;
-              margin: 0 auto;
+              -webkit-align-items: start;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: start;
             }
 
             @media print {
@@ -186,46 +202,53 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
                 <div
                   className="c1"
                 >
-                  <p
-                    className="c2 c3"
-                  >
-                    Certificate of 
-                    <br />
-                    Participation
-                  </p>
+                  <div>
+                    <p
+                      className="c2 c3"
+                    >
+                      Certificate of 
+                      <br />
+                      Participation
+                    </p>
+                  </div>
                 </div>
                 <div
                   className="c4"
                 >
-                  <p
-                    className="c5 c3"
+                  <div
+                    className="c5"
                   >
-                    This is to certify that
-                  </p>
-                  <p
-                    className="c6 c3"
-                  >
-                    Yeo Yoyo
-                  </p>
-                  <p
-                    className="c7 c3"
-                  >
-                    has completed
-                  </p>
-                  <p
-                    className="c8 c3"
-                  >
-                    A mentally and physically challenging expeditionary Outward Bound Course as part of the National Outdoor Adventure Education Masterplan
-                  </p>
-                  <p
-                    className="c6 c3"
-                  >
-                    28 Sep 2022 - 03 Oct 2022
-                  </p>
+                    <p
+                      className="c6 c3"
+                    >
+                      This is to certify that
+                    </p>
+                    <p
+                      className="c7 c3"
+                    >
+                      Yeo Yoyo
+                    </p>
+                    <p
+                      className="c8 c3"
+                    >
+                      has completed
+                    </p>
+                    <p
+                      className="c9 c3"
+                    >
+                      A mentally and physically challenging expeditionary Outward Bound Course as part of the National Outdoor Adventure Education Masterplan
+                    </p>
+                    <p
+                      className="c7 c3"
+                    >
+                      28 Sep 2022 - 03 Oct 2022
+                    </p>
+                  </div>
                 </div>
                 <div
-                  className="c9"
+                  className="c10"
                 >
+                  <div />
                   <div
                     style={
                       Object {
@@ -233,27 +256,29 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
                       }
                     }
                   >
-                    <img
-                      className="c10"
-                      src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
-                    />
                     <div
                       className="c11"
                     />
-                    <p
-                      className="c12 c3"
+                    <div
+                      className="c12"
+                    />
+                    <div
+                      className="c13"
                     >
-                      <b>
-                        Nicholas Conceicao
-                      </b>
-                       | 
-                      Executive Director
-                    </p>
-                    <p
-                      className="c13 c3"
-                    >
-                      Outward Bound Singapore
-                    </p>
+                      <p
+                        className="c14 c3"
+                      >
+                        <b>
+                          Nicholas Conceicao
+                        </b>
+                         | Executive Director
+                      </p>
+                      <p
+                        className="c15 c3"
+                      >
+                        Outward Bound Singapore
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>,
@@ -272,7 +297,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             }
 
             .c2 {
-              font-size: 1.5em;
+              font-size: 24px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
@@ -283,7 +308,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             }
 
             .c4 {
-              font-size: 0.8em;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
             }
@@ -293,7 +318,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             }
 
             .c5 {
-              font-size: 0.8em;
+              font-size: 12px;
               font-family: 'Libre Franklin';
             }
 
