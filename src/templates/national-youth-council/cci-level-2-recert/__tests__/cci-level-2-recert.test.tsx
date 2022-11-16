@@ -485,19 +485,6 @@ describe('NationalYouthCouncilCciLevel_2RecertTemplate', () => {
                             className="c25"
                           >
                             <li>
-                              ISC - SmartSnap
-                              <span
-                                style={
-                                  Object {
-                                    "fontSize": "0.5em",
-                                    "verticalAlign": "super",
-                                  }
-                                }
-                              >
-                                TM
-                              </span>
-                            </li>
-                            <li>
                               Saferoller®
                             </li>
                           </ul>
@@ -522,19 +509,6 @@ describe('NationalYouthCouncilCciLevel_2RecertTemplate', () => {
                           <ul
                             className="c25"
                           >
-                            <li>
-                              ISC - SmartSnap
-                              <span
-                                style={
-                                  Object {
-                                    "fontSize": "0.5em",
-                                    "verticalAlign": "super",
-                                  }
-                                }
-                              >
-                                TM
-                              </span>
-                            </li>
                             <li>
                               Saferoller®
                             </li>

@@ -12,10 +12,6 @@ export interface NationalYouthCouncilCciLevel_2Trainer {
      */
     courseEndDate: string
     /**
-     * Course start date
-     */
-    courseStartDate: string
-    /**
      * Name of the organisation representation
      */
     organisationRepName: string

@@ -1,14 +1,14 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilBitSoftSkillsTemplate } from '../bit-soft-skills.template'
+import { NationalYouthCouncilBitSummaryCertificateTemplate } from '../bit-summary-certificate.template'
 import { render, screen } from '@testing-library/react'
-import { sample } from '../bit-soft-skills.sample'
+import { sample } from '../bit-summary-certificate.sample'
 
-describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
+describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
     it('should match snapshot', () => {
         const tree = renderer
             .create(
-                <NationalYouthCouncilBitSoftSkillsTemplate
+                <NationalYouthCouncilBitSummaryCertificateTemplate
                     document={sample}
                     handleObfuscation={() => void 0}
                 />
@@ -35,7 +35,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               justify-content: center;
             }
 
-            .c18 {
+            .c7 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -54,11 +54,11 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               justify-content: center;
             }
 
-            .c18 > *:not(:last-child) {
+            .c7 > *:not(:last-child) {
               margin-bottom: 24px;
             }
 
-            .c19 {
+            .c8 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -77,11 +77,34 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               justify-content: center;
             }
 
-            .c19 > *:not(:last-child) {
+            .c8 > *:not(:last-child) {
+              margin-bottom: 16px;
+            }
+
+            .c22 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
+            .c22 > *:not(:last-child) {
               margin-bottom: 8px;
             }
 
-            .c21 {
+            .c24 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -100,7 +123,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               justify-content: center;
             }
 
-            .c21 > *:not(:last-child) {
+            .c24 > *:not(:last-child) {
               margin-bottom: 0px;
             }
 
@@ -118,7 +141,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               z-index: initial;
             }
 
-            .c17 {
+            .c21 {
               background: white;
               position: relative;
               width: 21cm;
@@ -132,7 +155,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               z-index: initial;
             }
 
-            .c13 {
+            .c17 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -150,36 +173,63 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               text-align: center;
             }
 
-            .c7 {
+            .c9 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              margin-right: 0px;
+            }
+
+            .c10 {
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              margin-right: 0px;
+            }
+
+            .c11 {
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              margin-right: 0px;
+              text-align: center;
+            }
+
+            .c12 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c8 {
-              font-size: 24px;
+            .c13 {
+              font-size: 12px;
               font-style: normal;
-              font-weight: 700;
+              font-weight: 400;
               margin-top: 0px;
+              margin-bottom: 0px;
             }
 
-            .c9 {
-              font-size: 24px;
+            .c14 {
+              font-size: 12px;
               font-style: normal;
-              font-weight: 700;
+              font-weight: 400;
               margin-top: 0px;
-              text-align: center;
+              margin-bottom: 0px;
+              width: 100%;
+              text-align: left;
             }
 
-            .c10 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-            }
-
-            .c15 {
+            .c19 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -187,7 +237,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               text-align: center;
             }
 
-            .c16 {
+            .c20 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -195,13 +245,13 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               text-align: center;
             }
 
-            .c20 {
+            .c23 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
             }
 
-            .c23 {
+            .c26 {
               font-size: 10px;
               font-style: italic;
               font-weight: 400;
@@ -211,27 +261,18 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               margin-right: 0px;
             }
 
-            .c24 {
-              font-size: 24px;
+            .c27 {
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
               margin-bottom: 0px;
               margin-left: 0px;
               margin-right: 0px;
+              text-align: center;
             }
 
-            .c27 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              margin-left: 0px;
-              margin-right: 0px;
-            }
-
-            .c28 {
+            .c30 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -239,7 +280,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               text-align: left;
             }
 
-            .c30 {
+            .c32 {
               font-size: 12px;
               font-style: italic;
               font-weight: 400;
@@ -251,7 +292,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c12 {
+            .c16 {
               width: 100%;
               height: 100px;
               background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
@@ -260,7 +301,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               background-repeat: no-repeat;
             }
 
-            .c14 {
+            .c18 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -301,7 +342,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               padding-bottom: 16px;
             }
 
-            .c11 {
+            .c15 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -322,7 +363,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               min-width: 500px;
             }
 
-            .c25 {
+            .c28 {
               width: 100%;
               border: none;
               border-collapse: collapse;
@@ -331,23 +372,23 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               text-align: start;
             }
 
-            .c25 td {
+            .c28 td {
               vertical-align: top;
             }
 
-            .c26 {
+            .c29 {
               white-space: nowrap;
               padding-right: 24px;
             }
 
-            .c29 {
+            .c31 {
               padding-left: 0px;
               margin-left: 18px;
               margin-top: 0px;
               margin-bottom: 0px;
             }
 
-            .c22 {
+            .c25 {
               width: auto;
             }
 
@@ -362,7 +403,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
             }
 
             @media print {
-              .c17 {
+              .c21 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
@@ -384,7 +425,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                     <p
                       className="c4 c5"
                     >
-                      Certificate of Successful
+                      Certificate of
                       <br />
                       Completion
                     </p>
@@ -394,44 +435,60 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                   className="c6"
                 >
                   <div
-                    className="c0"
+                    className="c7"
                   >
-                    <p
-                      className="c7 c5"
+                    <div
+                      className="c8"
                     >
-                      is awarded to
-                    </p>
-                    <p
-                      className="c8 c5"
+                      <p
+                        className="c9 c5"
+                      >
+                        has successfully completed the
+                      </p>
+                      <p
+                        className="c10 c5"
+                      >
+                        John Doe
+                      </p>
+                      <p
+                        className="c9 c5"
+                      >
+                        has successfully completed the
+                      </p>
+                      <p
+                        className="c11 c5"
+                      >
+                        Outward Bound Singapore:
+                        <br />
+                        Basic Instructor Training Programme
+                        <br />
+                        (Professional Development)
+                      </p>
+                    </div>
+                    <div
+                      className="c0"
                     >
-                      John Doe
-                    </p>
+                      <p
+                        className="c12 c5"
+                      >
+                        The Basic Instructor Training (BIT) is a core part of the requirement for an Instructor to be Operational (competent to lead and conduct OBS courses). The 6 months training programme incorporates the following outdoor skills and competencies: Facilitation skills; Organisational skills; Instructional skills; Technical Activity skills; Safety and Risk skills; Environmental skills; Field Deployment, History, Philosophy, Typology of OAE, Trends and Issues.
+                      </p>
+                      <p
+                        className="c13 c5"
+                      >
+                        The Trainee Instructors are also assessed in the following areas: Skills Assessment (Trek, Life Saving and Kayak); OBS Training Safety Regulation; and OBS 5 days Expeditionary Course. Upon completion of the BIT programme, the Trainee Instructor will be deemed competent as OBS Instructor and be assigned to conduct OBS courses independently and any other operational duties.
+                      </p>
+                    </div>
                     <p
-                      className="c7 c5"
+                      className="c14 c5"
                     >
-                      For successfully completing the
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      Outward Bound Singapore:
-                      <br />
-                      Soft Skills Programme
-                    </p>
-                    <p
-                      className="c7 c5"
-                    >
-                      On the date of
-                    </p>
-                    <p
-                      className="c10 c5"
-                    >
+                      Operational Date: 
                       10 May 2022
                     </p>
                   </div>
                 </div>
                 <div
-                  className="c11"
+                  className="c15"
                 >
                   <div />
                   <div
@@ -442,16 +499,16 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                     }
                   >
                     <div
-                      className="c12"
+                      className="c16"
                     />
                     <div
-                      className="c13"
+                      className="c17"
                     />
                     <div
-                      className="c14"
+                      className="c18"
                     >
                       <p
-                        className="c15 c5"
+                        className="c19 c5"
                       >
                         <b>
                           Nicholas Conceicao
@@ -459,7 +516,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                          | Executive Director
                       </p>
                       <p
-                        className="c16 c5"
+                        className="c20 c5"
                       >
                         Outward Bound Singapore
                       </p>
@@ -468,46 +525,53 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                 </div>
               </div>
               <div
-                className="c17"
+                className="c21"
               >
                 <div
-                  className="c18"
+                  className="c7"
                 >
                   <div
-                    className="c19"
+                    className="c22"
                   >
                     <p
-                      className="c20 c5"
+                      className="c23 c5"
                     >
                       Brick Wall Model of Core Competencies for Effective Outdoor Leadership
                     </p>
                     <div
-                      className="c21"
+                      className="c24"
                     >
                       <img
                         alt="brick wall model"
-                        className="c22"
+                        className="c25"
                         src="brick-wall-model.png"
                       />
                       <p
-                        className="c23 c5"
+                        className="c26 c5"
                       >
                         Priest, S. & Gass, M. (2018). Effective Leadership in Adventure Programming (3rd ed.). Human Kinetics
                       </p>
                     </div>
                   </div>
-                  <p
-                    className="c24 c5"
-                  >
-                    Soft Skills Modules
-                  </p>
+                  <div>
+                    <p
+                      className="c10 c5"
+                    >
+                      Basic Instructor Training Modules
+                    </p>
+                    <p
+                      className="c27 c5"
+                    >
+                      Competencies and Assessments Required to be Operational
+                    </p>
+                  </div>
                   <table
-                    className="c25"
+                    className="c28"
                   >
                     <tbody>
                       <tr>
                         <td
-                          className="c26"
+                          className="c29"
                         >
                           Soft Skills 1a&1b 
                         </td>
@@ -517,7 +581,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c29"
                         >
                           Soft Skills 2
                         </td>
@@ -527,7 +591,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c29"
                         >
                           Soft Skills 3
                         </td>
@@ -537,7 +601,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c29"
                         >
                           Soft Skills 4
                         </td>
@@ -547,7 +611,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c29"
                         >
                           Soft Skills 5a&5b
                         </td>
@@ -557,7 +621,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c29"
                         >
                           Soft Skills 6&7 
                         </td>
@@ -568,34 +632,34 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                     </tbody>
                   </table>
                   <div
-                    className="c19"
+                    className="c22"
                   >
                     <p
-                      className="c27 c5"
+                      className="c12 c5"
                     >
                       The Soft Skills Programme is one of the trainings that is required for Trainee Instructors to turn operational. The modules covered in the programme allows the staff to gain knowledge, skills and attitude required to conduct a safe and quality Outward Bound Singapore Course.
                     </p>
                     <div>
                       <p
-                        className="c28 c5"
+                        className="c30 c5"
                       >
                         Programme materials and content is largely referenced from the following sources:
                       </p>
                       <ol
-                        className="c29"
+                        className="c31"
                       >
                         <li
-                          className="c30 c5"
+                          className="c32 c5"
                         >
                           Priest, S. & Gass, M. (2018). Effective Leadership in Adventure Programming (3rd ed.). Human Kinetics
                         </li>
                         <li
-                          className="c30 c5"
+                          className="c32 c5"
                         >
                           Jacobson, M. & Ruddy, M. (2004). Open to Outcome: A Practical Guide for Facilitating & Teaching Experiential Reflection. Wood ‘N’ Barnes Publishing
                         </li>
                         <li
-                          className="c30 c5"
+                          className="c32 c5"
                         >
                           Mark Collard (2014). Serious Fun: Your Step-by-Step Guide to Learning Remarkably Fun Programs That Make A Difference. playmeo
                         </li>
@@ -610,7 +674,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
 
     test('should render recipient name', () => {
         render(
-            <NationalYouthCouncilBitSoftSkillsTemplate
+            <NationalYouthCouncilBitSummaryCertificateTemplate
                 document={sample}
                 handleObfuscation={() => void 0}
             />

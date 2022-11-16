@@ -9,7 +9,6 @@ export const sample: NationalYouthCouncilCciLevel_1TrainerOaDoc = {
     },
     name: 'John Doe',
     courseEndDate: '2022-12-31',
-    courseStartDate: '2022-11-30',
     organisationRepName: 'Nicholas Conceicao',
     organisationRepTitle: 'Executive Director',
     organisationRepSignature:

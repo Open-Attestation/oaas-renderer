@@ -5,12 +5,15 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface NationalYouthCouncilCciLevel_1Trainer {
+export interface NationalYouthCouncilBitSummaryCertificate {
+    /**
+     * Name of awardee
+     */
     name: string
     /**
-     * Issuance date of the certificate
+     * Date of issue
      */
-    courseEndDate: string
+    issueDate: string
     /**
      * Name of the organisation representation
      */

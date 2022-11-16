@@ -3,26 +3,27 @@ import * as commonAssets from '../common/assets/__generated__/images-enum-values
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: 'NationalYouthCouncil/CciLevel_2Trainer',
+    $id: 'NationalYouthCouncil/BitSummaryCertificate',
     type: 'object',
     required: [
         'name',
-        'courseEndDate',
-        'organisationRepSignature',
+        'issueDate',
         'organisationRepName',
         'organisationRepTitle',
+        'organisationRepSignature',
     ],
     properties: {
         name: {
             type: 'string',
-            examples: ['John Wick'],
+            description: 'Name of awardee',
+            examples: ['Thong Yong Jie Andre'],
             minLength: 1,
         },
-        courseEndDate: {
+        issueDate: {
             type: 'string',
+            description: 'Date of issue',
+            examples: ['2022-05-10'],
             format: 'date',
-            description: 'Issuance date of the certificate',
-            examples: ['2022-12-31'],
         },
         organisationRepName: {
             type: 'string',

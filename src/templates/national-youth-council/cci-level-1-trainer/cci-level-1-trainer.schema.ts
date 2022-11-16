@@ -7,7 +7,6 @@ export default {
     type: 'object',
     required: [
         'name',
-        'courseStartDate',
         'courseEndDate',
         'organisationRepSignature',
         'organisationRepName',
@@ -24,12 +23,6 @@ export default {
             format: 'date',
             description: 'Issuance date of the certificate',
             examples: ['2022-12-31'],
-        },
-        courseStartDate: {
-            type: 'string',
-            format: 'date',
-            description: 'Course start date',
-            examples: ['2022-11-30'],
         },
         organisationRepName: {
             type: 'string',

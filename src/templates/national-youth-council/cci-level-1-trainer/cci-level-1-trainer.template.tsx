@@ -24,9 +24,6 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
     const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMMM yyyy'
     )
-    const courseDate = DateTime.fromISO(document.courseStartDate).toFormat(
-        'dd MMMM yyyy'
-    )
 
     const validTillDate = DateTime.fromISO(document.courseEndDate)
         .plus({ years: 3 })
@@ -114,9 +111,6 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
                                 </Typography>
                             </li>
                         </ul>
-                        <Typography $size={'medium'} $mt={0} $bold>
-                            Course Date: {courseDate}
-                        </Typography>
                         <Typography $size={'medium'} $mt={-1} $bold>
                             Certificate is valid till {validTillDateString}
                         </Typography>

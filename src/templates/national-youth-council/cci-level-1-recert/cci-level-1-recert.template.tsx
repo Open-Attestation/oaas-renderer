@@ -38,10 +38,6 @@ export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
         .minus({ days: 1 })
     const validTillDateString = validTillDate.toFormat('dd MMM yyyy')
 
-    const tradeMarkSymbol = (
-        <span style={{ verticalAlign: 'super', fontSize: '0.5em' }}>TM</span>
-    )
-
     return (
         <>
             <Helmet>
@@ -135,9 +131,6 @@ export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
                                     </TableData>
                                     <TableData>
                                         <UnorderedList>
-                                            <li>
-                                                ISC - SmartSnap{tradeMarkSymbol}
-                                            </li>
                                             <li>Saferoller®</li>
                                         </UnorderedList>
                                     </TableData>
@@ -149,9 +142,6 @@ export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
                                     </TableData>
                                     <TableData>
                                         <UnorderedList>
-                                            <li>
-                                                ISC - SmartSnap{tradeMarkSymbol}
-                                            </li>
                                             <li>Saferoller®</li>
                                         </UnorderedList>
                                     </TableData>
@@ -160,9 +150,6 @@ export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
                                     <RowHeader>Zipline</RowHeader>
                                     <TableData>
                                         <UnorderedList>
-                                            <li>
-                                                TRUBLUE{tradeMarkSymbol} Zipline
-                                            </li>
                                             <li>Mini-Zip with Roperoller®</li>
                                         </UnorderedList>
                                     </TableData>

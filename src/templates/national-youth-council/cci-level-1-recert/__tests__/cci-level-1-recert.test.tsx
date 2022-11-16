@@ -485,19 +485,6 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
                             className="c25"
                           >
                             <li>
-                              ISC - SmartSnap
-                              <span
-                                style={
-                                  Object {
-                                    "fontSize": "0.5em",
-                                    "verticalAlign": "super",
-                                  }
-                                }
-                              >
-                                TM
-                              </span>
-                            </li>
-                            <li>
                               Saferoller®
                             </li>
                           </ul>
@@ -523,19 +510,6 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
                             className="c25"
                           >
                             <li>
-                              ISC - SmartSnap
-                              <span
-                                style={
-                                  Object {
-                                    "fontSize": "0.5em",
-                                    "verticalAlign": "super",
-                                  }
-                                }
-                              >
-                                TM
-                              </span>
-                            </li>
-                            <li>
                               Saferoller®
                             </li>
                           </ul>
@@ -553,20 +527,6 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
                           <ul
                             className="c25"
                           >
-                            <li>
-                              TRUBLUE
-                              <span
-                                style={
-                                  Object {
-                                    "fontSize": "0.5em",
-                                    "verticalAlign": "super",
-                                  }
-                                }
-                              >
-                                TM
-                              </span>
-                               Zipline
-                            </li>
                             <li>
                               Mini-Zip with Roperoller®
                             </li>

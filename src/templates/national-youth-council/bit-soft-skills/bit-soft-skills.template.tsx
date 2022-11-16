@@ -154,7 +154,7 @@ export const NationalYouthCouncilBitSoftSkillsTemplate: FunctionComponent<
                             </tbody>
                         </Table>
                         <FlexBox $vertical $spacing={1}>
-                            <Typography>
+                            <Typography $m={0}>
                                 The Soft Skills Programme is one of the
                                 trainings that is required for Trainee
                                 Instructors to turn operational. The modules

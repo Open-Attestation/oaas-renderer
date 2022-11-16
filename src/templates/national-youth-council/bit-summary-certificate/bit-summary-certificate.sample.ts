@@ -1,14 +1,14 @@
 import { v2 } from '@govtechsg/open-attestation'
-import { NationalYouthCouncilCciLevel_2TrainerOaDoc } from './cci-level-2-trainer.types'
+import { NationalYouthCouncilBitSummaryCertificateOaDoc } from './bit-summary-certificate.types'
 
-export const sample: NationalYouthCouncilCciLevel_2TrainerOaDoc = {
+export const sample: NationalYouthCouncilBitSummaryCertificateOaDoc = {
     $template: {
-        name: 'national-youth-council/cci-level-2-trainer',
+        name: 'national-youth-council/bit-summary-certificate',
         type: v2.TemplateType.EmbeddedRenderer,
         url: 'http://localhost:3000',
     },
     name: 'John Doe',
-    courseEndDate: '2022-12-31',
+    issueDate: '2022-05-10',
     organisationRepName: 'Nicholas Conceicao',
     organisationRepTitle: 'Executive Director',
     organisationRepSignature:
