@@ -1772,10 +1772,29 @@
     lru-cache "^6.0.0"
     rdf-canonize "^3.0.0"
 
-"@govtechsg/open-attestation@^6.2.0", "@govtechsg/open-attestation@^6.5.1":
+"@govtechsg/open-attestation@^6.2.0":
   version "6.5.1"
   resolved "https://registry.npmjs.org/@govtechsg/open-attestation/-/open-attestation-6.5.1.tgz"
   integrity sha512-rId128iZSh9sUGhBfp6sPFNxGkP7BIKlu4gIXcnGTQ6NDsPipvfuoog2Y6y4ny3Q+XFtXQJUkWxHYT0YctCd0w==
+  dependencies:
+    "@govtechsg/jsonld" "^0.1.0"
+    ajv "^8.6.2"
+    ajv-formats "^2.1.0"
+    cross-fetch "^3.1.5"
+    debug "^4.3.2"
+    ethers "^5.4.3"
+    flatley "^5.2.0"
+    js-base64 "^3.6.1"
+    js-sha3 "^0.8.0"
+    lodash "^4.17.21"
+    runtypes "^6.3.2"
+    uuid "^8.3.2"
+    validator "^13.7.0"
+
+"@govtechsg/open-attestation@^6.5.2":
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/@govtechsg/open-attestation/-/open-attestation-6.5.2.tgz#b909b3bdce0150b84f3b2f27b29b9c5b50275c09"
+  integrity sha512-RurVBAspA+G56ZjAd+rY9UpQWFV/anAI2o9XhW37v/NKxAvs0ej4LfSAYtft/nLRYqAe9WyUAa7VFLjwOjC9KQ==
   dependencies:
     "@govtechsg/jsonld" "^0.1.0"
     ajv "^8.6.2"
