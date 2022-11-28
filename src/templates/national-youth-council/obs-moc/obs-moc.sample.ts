@@ -16,7 +16,7 @@ export const sample: NationalYouthCouncilObsMocOaDoc = {
     organisationRepTitle: 'Executive Director',
     organisationRepSignature:
         'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
-    groupPhoto: image,
+    groupPhoto_image: image,
     issuers: [
         {
             name: 'institute of blockchain',

@@ -12,7 +12,7 @@ export default {
         'organisationRepSignature',
         'organisationRepName',
         'organisationRepTitle',
-        'groupPhoto',
+        'groupPhoto_image',
     ],
     properties: {
         name: {
@@ -56,7 +56,7 @@ export default {
                 'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
             ]),
         },
-        groupPhoto: {
+        groupPhoto_image: {
             type: 'string',
             description: 'Group photo',
             examples: ['photo.png'],

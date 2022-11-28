@@ -82,7 +82,7 @@ export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
 
             <A4 $bgImg={descriptionBg}>
                 <FlexBox $alignItems="center" $vertical>
-                    <GroupImg src={document.groupPhoto} />
+                    <GroupImg src={document.groupPhoto_image} />
                 </FlexBox>
             </A4>
         </>

@@ -33,5 +33,5 @@ export interface NationalYouthCouncilObsMoc {
     /**
      * Group photo
      */
-    groupPhoto: string
+    groupPhoto_image: string
 }
