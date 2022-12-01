@@ -18,4 +18,4 @@ const headersContent = [
     `    Content-Security-Policy: ${csp}`,
 ].join('\n')
 
-writeFileSync(path.join(PUBLIC_DIR, '__headers'), headersContent)
+writeFileSync(path.join(PUBLIC_DIR, '_headers'), headersContent)
