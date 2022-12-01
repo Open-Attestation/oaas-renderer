@@ -1,6 +1,7 @@
 const cspList = [
     "default-src 'none'",
     "style-src 'unsafe-inline' fonts.googleapis.com",
+    'font-src fonts.gstatic.com',
     "img-src 'self' data:",
     'frame-ancestors *.verify.gov verify.gov',
 ]
