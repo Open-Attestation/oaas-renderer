@@ -272,20 +272,35 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               text-align: center;
             }
 
-            .c30 {
+            .c28 {
               font-size: 12px;
               font-style: normal;
-              font-weight: 400;
+              font-weight: 700;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              margin-right: 0px;
               width: 100%;
               text-align: left;
             }
 
+            .c31 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              -webkit-text-decoration: underline;
+              text-decoration: underline;
+            }
+
             .c32 {
               font-size: 12px;
-              font-style: italic;
+              font-style: normal;
               font-weight: 400;
-              margin-top: 16px;
-              margin-bottom: 16px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              margin-right: 0px;
+              width: 100%;
             }
 
             .c5 {
@@ -363,7 +378,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               min-width: 500px;
             }
 
-            .c28 {
+            .c29 {
               width: 100%;
               border: none;
               border-collapse: collapse;
@@ -372,20 +387,13 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               text-align: start;
             }
 
-            .c28 td {
+            .c29 td {
               vertical-align: top;
             }
 
-            .c29 {
+            .c30 {
               white-space: nowrap;
               padding-right: 24px;
-            }
-
-            .c31 {
-              padding-left: 0px;
-              margin-left: 18px;
-              margin-top: 0px;
-              margin-bottom: 0px;
             }
 
             .c25 {
@@ -443,7 +451,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                       <p
                         className="c9 c5"
                       >
-                        has successfully completed the
+                        This is to certify that
                       </p>
                       <p
                         className="c10 c5"
@@ -565,107 +573,192 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                       Competencies and Assessments Required to be Operational
                     </p>
                   </div>
-                  <table
-                    className="c28"
-                  >
-                    <tbody>
-                      <tr>
-                        <td
-                          className="c29"
-                        >
-                          Soft Skills 1a&1b 
-                        </td>
-                        <td>
-                          Evidence, Philosophy, History, Professional Ethics, Trends and Issues
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          className="c29"
-                        >
-                          Soft Skills 2
-                        </td>
-                        <td>
-                          OBS Learning Methodology
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          className="c29"
-                        >
-                          Soft Skills 3
-                        </td>
-                        <td>
-                          Program Development and Introduction
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          className="c29"
-                        >
-                          Soft Skills 4
-                        </td>
-                        <td>
-                          Facilitation Skills, Organizational Skills, Instructional Skills, Communication and Conditional Leadership
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          className="c29"
-                        >
-                          Soft Skills 5a&5b
-                        </td>
-                        <td>
-                          Games Familiarisation and Leadership
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          className="c29"
-                        >
-                          Soft Skills 6&7 
-                        </td>
-                        <td>
-                          Problem Solving, Decision Making & Sound Judgement Social Psychology and Group Management
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div>
+                    <p
+                      className="c28 c5"
+                    >
+                      Facilitation, Organisational, Safety and Risk Skills Training
+                    </p>
+                    <table
+                      className="c29"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            className="c30"
+                          >
+                            Soft Skills 1a&1b
+                             
+                          </td>
+                          <td>
+                            Evidence, Philosophy, History, Professional Ethics, Trends and Issues
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            className="c30"
+                          >
+                            Soft Skills 2
+                          </td>
+                          <td>
+                            OBS Learning Methodology
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            className="c30"
+                          >
+                            Soft Skills 3
+                          </td>
+                          <td>
+                            Program Development and Introduction
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            className="c30"
+                          >
+                            Soft Skills 4
+                          </td>
+                          <td>
+                            Facilitation Skills, Organizational Skills, Instructional Skills, Communication and Conditional Leadership
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            className="c30"
+                          >
+                            Soft Skills 5a&5b
+                          </td>
+                          <td>
+                            Games Familiarisation and Leadership
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            className="c30"
+                          >
+                            Soft Skills 6&7 
+                          </td>
+                          <td>
+                            Problem Solving, Decision Making & Sound Judgement Social Psychology and Group Management
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p
+                      className="c9 c5"
+                    >
+                      OBS - WSHC, Risk Analysis and Management System and bizSAFE Level 2
+                    </p>
+                    <p
+                      className="c9 c5"
+                    >
+                      Outward Bound Singapore, Wilderness Medical First Responder
+                    </p>
+                    <p
+                      className="c9 c5"
+                    >
+                      Singapore Resuscitation & First Aid Council, Basic Cardiac Life Support and AED Certification
+                    </p>
+                    <p
+                      className="c9 c5"
+                    >
+                      Participate in OBS 21 Days Classic Challenge Course
+                    </p>
+                  </div>
                   <div
-                    className="c22"
+                    style={
+                      Object {
+                        "display": "block",
+                        "width": "100%",
+                      }
+                    }
                   >
                     <p
-                      className="c12 c5"
+                      className="c28 c5"
                     >
-                      The Soft Skills Programme is one of the trainings that is required for Trainee Instructors to turn operational. The modules covered in the programme allows the staff to gain knowledge, skills and attitude required to conduct a safe and quality Outward Bound Singapore Course.
+                      Technical Activity and Environmental Skills Training
                     </p>
-                    <div>
-                      <p
-                        className="c30 c5"
+                    <p
+                      className="c9 c5"
+                    >
+                      <span
+                        className="c31 c5"
                       >
-                        Programme materials and content is largely referenced from the following sources:
-                      </p>
-                      <ol
-                        className="c31"
-                      >
-                        <li
-                          className="c32 c5"
-                        >
-                          Priest, S. & Gass, M. (2018). Effective Leadership in Adventure Programming (3rd ed.). Human Kinetics
-                        </li>
-                        <li
-                          className="c32 c5"
-                        >
-                          Jacobson, M. & Ruddy, M. (2004). Open to Outcome: A Practical Guide for Facilitating & Teaching Experiential Reflection. Wood ‘N’ Barnes Publishing
-                        </li>
-                        <li
-                          className="c32 c5"
-                        >
-                          Mark Collard (2014). Serious Fun: Your Step-by-Step Guide to Learning Remarkably Fun Programs That Make A Difference. playmeo
-                        </li>
-                      </ol>
-                    </div>
+                        Land Activities Training
+                      </span>
+                      <br />
+                      Leave No Trace, Trainer Course
+                      <br />
+                      Outward Bound Singapore, Campcraft and Navigation Training
+                    </p>
                   </div>
+                  <p
+                    className="c32 c5"
+                  >
+                    <span
+                      className="c31 c5"
+                    >
+                      Water Activities Training
+                    </span>
+                    <br />
+                    Maritime & Port Authority of Singapore, Powered Pleasure Craft Driving License
+                    <br />
+                    Singapore Canoe Federation, Kayak Proficiency 1, 2, 3 Star
+                    <br />
+                    Singapore Sailing Federation, Dinghy Sailing Level 1
+                    <br />
+                    Singapore Life Saving Society, Life Saving Level 1, 2, 3 and Bronze Medallion
+                    <br />
+                    Outward Bound Singapore, Open Water Life Saving
+                     
+                    <br />
+                    Operations Familiarisation & Boat Handling (OBS Area of Operations in Pulau Ubin) 
+                    <br />
+                    Outward Bound Singapore, Coastal Navigation
+                    <br />
+                  </p>
+                  <p
+                    className="c32 c5"
+                  >
+                    <span
+                      className="c31 c5"
+                    >
+                      Height Activities Training
+                    </span>
+                    <br />
+                    Singapore Mountaineering Federation, Sports Climbing Level 1 & 2
+                    <br />
+                    Singapore Mountaineering Federation, Abseil Proficiency Level 1 & 2
+                    <br />
+                    Outward Bound Singapore, Abseil Dispatch and Rescue
+                    <br />
+                    Outward Bound Singapore, Challenge Ropes Course Familiarisation (Camp 1 and Camp 2 Height Elements)
+                    <br />
+                    Outward Bound Singapore, Challenge Ropes Course Basic (Camp 1 and Camp 2 Height Element Troubleshooting and Aerial Rescue)
+                    <br />
+                  </p>
+                  <p
+                    className="c32 c5"
+                  >
+                    <span
+                      className="c31 c5"
+                    >
+                      Basic Instructor Training Summative Assessment
+                    </span>
+                    <br />
+                    Training Safety Regulation Exam 
+                    <br />
+                    Skills Assessment (Trek, Life Saving and Kayak)
+                    <br />
+                    Course Observation (5 Days)
+                    <br />
+                    Course Co-instruction (10 Days)
+                    <br />
+                    Course Assessment (15 Days)
+                    <br />
+                  </p>
                 </div>
               </div>
             </div>
