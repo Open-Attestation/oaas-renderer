@@ -14,9 +14,12 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
         <HelmetProvider>
-            <Helmet>
-                <meta http-equiv="Content-Security-Policy" content={csp} />
-            </Helmet>
+            {/* Only use meta headers in dev mode, prod mode will put csp content into headers */}
+            {process.env.NODE_ENV === 'development' ? (
+                <Helmet>
+                    <meta http-equiv="Content-Security-Policy" content={csp} />
+                </Helmet>
+            ) : undefined}
             <FramedDocumentRenderer templateRegistry={registry} />
         </HelmetProvider>
     </React.StrictMode>

@@ -1,7 +1,8 @@
 const cspList = [
     "default-src 'none'",
-    "style-src 'unsafe-inline'",
+    "style-src 'unsafe-inline' fonts.googleapis.com",
     "img-src 'self' data:",
+    'frame-ancestors *.verify.gov verify.gov',
 ]
 
 // so that hot reloading works
