@@ -4,7 +4,7 @@
 yarn process:images
 yarn process:schemas
 yarn process:headers
-git add public/__headers
+git add public/_headers
 git add src/**/*/__generated__/*
 yarn lint-staged
 yarn typecheck
