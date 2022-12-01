@@ -4,7 +4,7 @@ const cspList = [
     "style-src 'self' 'unsafe-inline' fonts.googleapis.com",
     'font-src fonts.gstatic.com',
     "img-src 'self' data:",
-    "script-src-elem 'self'",
+    "script-src-elem 'self' 'unsafe-inline'",
     'frame-ancestors *.verify.gov verify.gov',
 ]
 
