@@ -1,2 +1,6 @@
 /samples/*
   Access-Control-Allow-Origin: https://www.verify.gov.sg
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
