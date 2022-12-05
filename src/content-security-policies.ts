@@ -5,7 +5,6 @@ const cspList = [
     'font-src fonts.gstatic.com',
     "img-src 'self' data:",
     "script-src-elem 'self' 'unsafe-inline'",
-    'frame-ancestors *.verify.gov.sg verify.gov.sg',
 ]
 
 // so that hot reloading works
