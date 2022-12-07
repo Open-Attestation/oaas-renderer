@@ -69,6 +69,7 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
               font-family: 'Libre Franklin';
               font-size: 0.8em;
               text-align: center;
+              table-layout: fixed;
             }
 
             .c22 {
@@ -432,6 +433,19 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                   <table
                     className="c21"
                   >
+                    <colgroup>
+                      <col
+                        style={
+                          Object {
+                            "width": 58,
+                          }
+                        }
+                      />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
                     <tbody>
                       <tr>
                         <th
@@ -658,7 +672,7 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                             className="c25"
                           >
                             <li>
-                              N.A
+                              Static abseil rig with back up belay set up
                             </li>
                           </ul>
                         </td>

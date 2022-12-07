@@ -12,6 +12,7 @@ export const Table = styled.table`
     font-family: 'Libre Franklin';
     font-size: 0.8em;
     text-align: center;
+    table-layout: fixed;
 `
 
 export const Header = styled.th`
