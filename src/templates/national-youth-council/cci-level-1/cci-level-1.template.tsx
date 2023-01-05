@@ -110,6 +110,13 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                             has been trained to operate.
                         </Typography>
                         <Table>
+                            <colgroup>
+                                <col style={{ width: 58 }} />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
                             <tbody>
                                 <tr>
                                     <Header></Header>
@@ -211,7 +218,10 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                                     </TableData>
                                     <TableData>
                                         <UnorderedList>
-                                            <li>N.A</li>
+                                            <li>
+                                                Static abseil rig with back up
+                                                belay set up
+                                            </li>
                                         </UnorderedList>
                                     </TableData>
                                     <TableData>

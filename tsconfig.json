@@ -15,7 +15,7 @@
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react-jsx",
-        "baseUrl": "src" // for absolute imports
+        "baseUrl": "src"
     },
     "include": ["src", "src/__development__"]
 }
