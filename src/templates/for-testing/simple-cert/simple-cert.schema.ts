@@ -29,12 +29,18 @@ export default {
             description: 'Start date of course',
             examples: ['2022-05-10'],
             format: 'date',
+            formatMaximum: {
+                $data: '1/courseEndDate',
+            },
         },
         courseEndDate: {
             type: 'string',
             description: 'End date of course',
             examples: ['2022-06-03'],
             format: 'date',
+            formatMinimum: {
+                $data: '1/courseStartDate',
+            },
         },
         serialNumber: {
             type: 'string',
