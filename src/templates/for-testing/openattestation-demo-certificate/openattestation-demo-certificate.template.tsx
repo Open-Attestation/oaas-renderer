@@ -3,7 +3,7 @@ import { TemplateProps } from '@govtechsg/decentralized-renderer-react-component
 import { ForTestingOpenattestationDemoCertificateOaDoc } from './openattestation-demo-certificate.types'
 import styled from 'styled-components'
 import { Helmet } from 'react-helmet-async'
-import oaLogoSrc from './assets/oa.svg'
+import oaLogoSrc from '../common/assets/oa.svg'
 
 const TemplateContainer = styled.div`
     pre {
