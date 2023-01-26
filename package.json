@@ -24,7 +24,7 @@
         "json-schema-to-typescript": "^11.0.2",
         "lint-staged": "^13.1.0",
         "luxon": "^3.1.1",
-        "prettier": "^2.8.0",
+        "prettier": "^2.8.1",
         "react": "^18.2.0",
         "react-app-rewired": "^2.2.1",
         "react-dom": "^18.2.0",
@@ -38,7 +38,7 @@
         "yarn": "^1.22.19"
     },
     "scripts": {
-        "dev": "ts-node --project src/__development__/tsconfig.json src/__development__/prepare.ts && concurrently \"BROWSER=none react-app-rewired start\" \"PORT=3001 IS_PREVIEW_APP=true react-app-rewired start\"",
+        "dev": "ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__development__/prepare.ts && concurrently \"BROWSER=none react-app-rewired start\" \"PORT=3001 IS_PREVIEW_APP=true react-app-rewired start\"",
         "build": "run() { ISSUER_ID=$1 react-app-rewired build; }; run",
         "test": "react-scripts test --watchAll=false",
         "test:watch": "react-scripts test",
@@ -47,9 +47,9 @@
         "lint:fix": "eslint ./src --fix",
         "lint-staged": "lint-staged",
         "typecheck": "tsc --noEmit",
-        "process:schemas": "npx ts-node src/__internal__/process-schemas.ts && npx prettier --write src/**/__generated__/*.schema.{json,d.ts}",
-        "process:images": "npx ts-node src/__internal__/process-to-hash-images.ts && npx prettier --write src/**/__generated__/*[!.d].ts",
-        "process:headers": "npx ts-node src/__internal__/process-headers.ts",
+        "process:schemas": "npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-schemas.ts && npx prettier --write src/**/__generated__/*.schema.{json,d.ts}",
+        "process:images": "npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-to-hash-images.ts && npx prettier --write src/**/__generated__/*[!.d].ts",
+        "process:headers": "npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-headers.ts",
         "new:template": "run() { npx hygen template new --issuerId $1 --docType $2; yarn process:schemas; }; run",
         "prepare": "husky install"
     },
@@ -76,7 +76,8 @@
         "change-case": "^4.1.2",
         "concurrently": "^7.6.0",
         "cz-conventional-changelog": "3.3.0",
-        "jest-styled-components": "^7.1.0"
+        "jest-styled-components": "^7.1.0",
+        "tsconfig-paths": "^4.1.2"
     },
     "jest": {
         "moduleNameMapper": {

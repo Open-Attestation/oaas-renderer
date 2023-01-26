@@ -6,7 +6,9 @@ import fs from 'fs'
 import path from 'path'
 import { compileFromFile } from 'json-schema-to-typescript'
 
-const ajv = new Ajv()
+const ajv = new Ajv({
+    $data: true,
+})
 addFormats(ajv)
 
 const GENERATED_FOLDER_NAME = '__generated__'

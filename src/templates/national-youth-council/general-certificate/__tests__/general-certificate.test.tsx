@@ -213,7 +213,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
                   <p
                     className="c7 c3"
                   >
-                    John Doe
+                    JOHN DOE
                   </p>
                   <p
                     className="c8 c3"
@@ -223,12 +223,12 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
                   <p
                     className="c7 c3"
                   >
-                     CSA Milestone Programme
+                     CSA MILESTONE PROGRAMME
                   </p>
                   <p
                     className="c7 c3"
                   >
-                    31 Dec 2021 - 31 Dec 2022
+                    31 December 2021 - 01 December 2022
                   </p>
                 </div>
               </div>
@@ -279,6 +279,6 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('John Doe')).toBeTruthy()
+        expect(screen.getByText('JOHN DOE')).toBeTruthy()
     })
 })

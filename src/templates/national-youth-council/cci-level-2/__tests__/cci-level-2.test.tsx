@@ -325,7 +325,7 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                     <p
                       className="c8 c5"
                     >
-                      John Doe
+                      JOHN DOE
                     </p>
                     <p
                       className="c7 c5"
@@ -335,7 +335,7 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                     <p
                       className="c8 c5"
                     >
-                      Challenge Course Instructor (Level 2)
+                      CHALLENGE COURSE INSTRUCTOR (LEVEL 2)
                     </p>
                     <p
                       className="c7 c5"
@@ -366,7 +366,7 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                       className="c10 c5"
                     >
                       Course Date: 
-                      30 November 2022
+                      30 November - 31 December 2022
                     </p>
                     <p
                       className="c11 c5"
@@ -727,6 +727,6 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('John Doe')).toBeTruthy()
+        expect(screen.getByText('JOHN DOE')).toBeTruthy()
     })
 })

@@ -44,10 +44,16 @@ const FrameContainer = styled.div`
     display: flex;
 `
 const DocumentsContainer = styled.div`
+    position: relative;
+
     width: 300px;
-    min-width: 300px;
-    max-width: 300px;
-    padding: 0.5rem;
+    padding: 8px;
+
+    &.collapsed {
+        position: absolute;
+        width: 0;
+        left: 100%;
+    }
 
     .document {
         cursor: pointer;
@@ -160,6 +166,8 @@ export const App: React.FunctionComponent<AppProps> = ({
         }
     }, [selectedTemplate, toFrame])
 
+    const [collapsed, setCollapsed] = useState(false)
+
     const issuerIds = Object.keys(issuerDocuments)
     const documentMenu = issuerIds.map((issuerId) => {
         return (
@@ -203,8 +211,15 @@ export const App: React.FunctionComponent<AppProps> = ({
                     Print
                 </button>
             </ActionsContainer>
+            <button
+                onClick={() => {
+                    setCollapsed((collapsed) => !collapsed)
+                }}
+            >
+                {collapsed ? 'Open menu' : 'Close menu'}
+            </button>
             <FrameContainer>
-                <DocumentsContainer>
+                <DocumentsContainer className={collapsed ? 'collapsed' : ''}>
                     <div
                         style={{
                             textAlign: 'center',

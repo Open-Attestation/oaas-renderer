@@ -33,14 +33,14 @@
         "organisationRepName": {
             "type": "string",
             "description": "Name of the organisation representation",
-            "examples": ["Nicholas Conceicao"],
-            "minLength": 1
+            "enum": ["Nicholas Conceicao"],
+            "examples": ["Nicholas Conceicao"]
         },
         "organisationRepTitle": {
             "type": "string",
             "description": "Title of the organisation representation",
-            "examples": ["Executive Director"],
-            "minLength": 1
+            "enum": ["Executive Director"],
+            "examples": ["Executive Director"]
         },
         "organisationRepSignature": {
             "type": "string",

@@ -20,17 +20,20 @@ import { A4 } from 'components/paper-size'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
+import { formatCourseDatefor } from '../common/utils'
 
 export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilCciLevel_1RecertOaDoc> & {
         className?: string
     }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMMM yyyy'
     )
-    const courseDate = DateTime.fromISO(document.courseStartDate).toFormat(
-        'dd MMMM yyyy'
+    const courseDate = formatCourseDatefor(
+        document.courseStartDate,
+        document.courseEndDate
     )
 
     const validTillDate = DateTime.fromISO(document.courseEndDate)
@@ -66,15 +69,15 @@ export const NationalYouthCouncilCciLevel_1RecertTemplate: FunctionComponent<
                             This is to certify that
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            {document.name}
+                            {name}
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             has been tested and found proficient to qualify for
                             the following award
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            Challenge Course Instructor (Level 1
-                            Recertification)
+                            CHALLENGE COURSE INSTRUCTOR (LEVEL 1
+                            RECERTIFICATION)
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             On the date of

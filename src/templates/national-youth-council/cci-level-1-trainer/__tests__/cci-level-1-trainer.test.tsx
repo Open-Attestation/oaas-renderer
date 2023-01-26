@@ -316,7 +316,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
                     <p
                       className="c8 c5"
                     >
-                      John Doe
+                      JOHN DOE
                     </p>
                     <p
                       className="c7 c5"
@@ -343,7 +343,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
                     <p
                       className="c8 c5"
                     >
-                      Challenge Course Instructor (Level 1) Trainer
+                      CHALLENGE COURSE INSTRUCTOR (LEVEL 1) TRAINER
                     </p>
                     <p
                       className="c7 c5"
@@ -538,6 +538,6 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('John Doe')).toBeTruthy()
+        expect(screen.getByText('JOHN DOE')).toBeTruthy()
     })
 })

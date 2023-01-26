@@ -21,6 +21,7 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
         className?: string
     }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMMM yyyy'
     )
@@ -58,7 +59,7 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
                             This is to certify that
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            {document.name}
+                            {name}
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             Has successfully fulfilled{' '}
@@ -69,7 +70,7 @@ export const NationalYouthCouncilCciLevel_1TrainerTemplate: FunctionComponent<
                             is hereby appointed as a
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            Challenge Course Instructor (Level 1) Trainer
+                            CHALLENGE COURSE INSTRUCTOR (LEVEL 1) TRAINER
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             On the date of
