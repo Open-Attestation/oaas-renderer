@@ -12,6 +12,7 @@ import { A4 } from 'components/paper-size'
 import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { formatCourseDatefor } from '../common/utils'
 
 export const NationalYouthCouncilCrcBasicTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilCrcBasicOaDoc> & { className?: string }
@@ -19,8 +20,10 @@ export const NationalYouthCouncilCrcBasicTemplate: FunctionComponent<
     const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMMM yyyy'
     )
-    const courseDate = DateTime.fromISO(document.courseStartDate).toFormat(
-        'dd MMMM yyyy'
+
+    const courseDate = formatCourseDatefor(
+        document.courseStartDate,
+        document.courseEndDate
     )
 
     return (

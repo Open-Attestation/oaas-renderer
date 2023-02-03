@@ -250,9 +250,8 @@ describe('NationalYouthCouncilSuccessfulCompletionTemplate', () => {
                   <p
                     className="c10 c3"
                   >
-                    Course Date:
-                     
-                    30 Nov 2022 - 31 Dec 2022
+                    Course Date: 
+                    30 November - 31 December 2022
                   </p>
                   <p
                     className="c6 c3"

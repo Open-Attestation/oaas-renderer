@@ -338,7 +338,7 @@ describe('NationalYouthCouncilCrcEitTemplate', () => {
                       className="c11 c5"
                     >
                       Course Date: 
-                      30 November 2022
+                      30 November - 31 December 2022
                     </p>
                   </div>
                 </div>
