@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react'
-import { NationalYouthCouncilSuccessfulCompletionOaDoc } from './successful-completion.types'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
+import { NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationOaDoc } from './bizsafe-level-2-risk-management-outdoor-adventure-education.types'
+import styled from 'styled-components'
 import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
 
@@ -9,11 +10,12 @@ import commonImagesMap from '../common/assets/__generated__/images-map'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 import { formatCourseDatefor } from '../common/utils'
 
-export const NationalYouthCouncilSuccessfulCompletionTemplate: FunctionComponent<
-    TemplateProps<NationalYouthCouncilSuccessfulCompletionOaDoc> & {
+export const NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationTemplate: FunctionComponent<
+    TemplateProps<NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationOaDoc> & {
         className?: string
     }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const courseDate = formatCourseDatefor(
         document.courseStartDate,
         document.courseEndDate
@@ -45,7 +47,7 @@ export const NationalYouthCouncilSuccessfulCompletionTemplate: FunctionComponent
                         is awarded to
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1} $italic>
-                        {document.name}
+                        {name}
                     </Typography>
                     <Typography $size={'medium'} $mt={1}>
                         for successful completion of the

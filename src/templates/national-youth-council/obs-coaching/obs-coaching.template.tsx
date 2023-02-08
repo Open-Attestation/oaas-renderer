@@ -21,15 +21,16 @@ const TemplateContainer = styled.div`
 export const NationalYouthCouncilObsCoachingTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilObsCoachingOaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const issueDate = DateTime.fromISO(document.issueDate).toFormat(
-        'dd MMM yyyy'
+        'dd MMMM yyyy'
     )
     const expiryDate = DateTime.fromISO(document.issueDate)
         .plus({
             days: -1,
             years: Number(document.validityDurationInYears),
         })
-        .toFormat('dd MMM yyyy')
+        .toFormat('dd MMMM yyyy')
     return (
         <>
             <Helmet>
@@ -61,7 +62,7 @@ export const NationalYouthCouncilObsCoachingTemplate: FunctionComponent<
                             This is to certify that
                         </Typography>
                         <Typography $size={'xlarge'} $bold $mt={1}>
-                            {document.name}
+                            {name}
                         </Typography>
                         <Typography $size={'large'} $mt={1}>
                             is appointed as a

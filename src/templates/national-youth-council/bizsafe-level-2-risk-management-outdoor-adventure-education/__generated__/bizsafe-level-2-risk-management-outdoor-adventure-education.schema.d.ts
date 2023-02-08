@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface NationalYouthCouncilSuccessfulCompletion {
+export interface NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducation {
     name: string
     /**
      * Issuance date of the certificate

@@ -378,7 +378,7 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
                       className="c11 c5"
                     >
                       Certificate is valid till 
-                      30 Dec 2023
+                      30 December 2023
                     </p>
                   </div>
                 </div>

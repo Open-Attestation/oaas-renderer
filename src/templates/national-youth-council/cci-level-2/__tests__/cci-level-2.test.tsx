@@ -378,7 +378,7 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                       className="c11 c5"
                     >
                       Certificate is valid till 
-                      30 Dec 2025
+                      30 December 2025
                     </p>
                   </div>
                 </div>

@@ -17,6 +17,7 @@ import { formatCourseDatefor } from '../common/utils'
 export const NationalYouthCouncilCrcBasicTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilCrcBasicOaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMMM yyyy'
     )
@@ -54,7 +55,7 @@ export const NationalYouthCouncilCrcBasicTemplate: FunctionComponent<
                             This is to certify that
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            {document.name}
+                            {name}
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             has been tested and found proficient to qualify for

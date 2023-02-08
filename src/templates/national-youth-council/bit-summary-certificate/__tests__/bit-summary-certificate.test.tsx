@@ -456,7 +456,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                       <p
                         className="c10 c5"
                       >
-                        John Doe
+                        JOHN DOE
                       </p>
                       <p
                         className="c9 c5"
@@ -772,6 +772,6 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('John Doe')).toBeTruthy()
+        expect(screen.getByText('JOHN DOE')).toBeTruthy()
     })
 })

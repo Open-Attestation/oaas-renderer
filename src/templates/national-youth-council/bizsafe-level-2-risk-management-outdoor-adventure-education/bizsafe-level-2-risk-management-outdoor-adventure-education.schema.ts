@@ -4,7 +4,7 @@ import { makeEnumString } from 'utils/json-schema-utils'
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: 'NationalYouthCouncil/SuccessfulCompletion',
+    $id: 'NationalYouthCouncil/BizsafeLevel_2RiskManagementOutdoorAdventureEducation',
     type: 'object',
     required: [
         'name',

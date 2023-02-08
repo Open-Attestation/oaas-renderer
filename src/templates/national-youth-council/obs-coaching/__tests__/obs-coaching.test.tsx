@@ -237,7 +237,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
                     <p
                       className="c8 c4"
                     >
-                      Abdul Haireel Bin Abdul Haleem
+                      ABDUL HAIREEL BIN ABDUL HALEEM
                     </p>
                     <p
                       className="c9 c4"
@@ -259,14 +259,14 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
                     <p
                       className="c10 c4"
                     >
-                      01 Jan 2022
+                      01 January 2022
                     </p>
                     <p
                       className="c11 c4"
                     >
                       Certificate is valid till 
                       <b>
-                        31 Dec 2023
+                        31 December 2023
                       </b>
                       <br />
                       Certificate #: 
@@ -322,7 +322,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('Abdul Haireel Bin Abdul Haleem')).toBeTruthy()
+        expect(screen.getByText('ABDUL HAIREEL BIN ABDUL HALEEM')).toBeTruthy()
     })
 
     test('given an issue date and validity duration(in years), should render expiry date by adding validity duration minus 1 day', () => {
@@ -340,6 +340,6 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
             exact: false,
         })
 
-        expect(element.textContent).toContain('31 Dec 2023')
+        expect(element.textContent).toContain('31 December 2023')
     })
 })

@@ -23,6 +23,7 @@ export const NationalYouthCouncilBitCampcraftAndNavigationTemplate: FunctionComp
         className?: string
     }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const issueDate = DateTime.fromISO(document.issueDate).toFormat(
         'dd MMMM yyyy'
     )
@@ -64,7 +65,7 @@ export const NationalYouthCouncilBitCampcraftAndNavigationTemplate: FunctionComp
                             is awarded to
                         </Typography>
                         <Typography $size={'xlarge'} $mt={0} $bold>
-                            {document.name}
+                            {name}
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             For successfully completing the

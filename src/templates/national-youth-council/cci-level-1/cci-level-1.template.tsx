@@ -37,7 +37,7 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
     const validTillDate = DateTime.fromISO(document.courseEndDate)
         .plus({ years: 1 })
         .minus({ days: 1 })
-    const validTillDateString = validTillDate.toFormat('dd MMM yyyy')
+    const validTillDateString = validTillDate.toFormat('dd MMMM yyyy')
 
     return (
         <>
