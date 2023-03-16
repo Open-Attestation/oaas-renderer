@@ -1,26 +1,24 @@
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import { FlexBox } from 'components/flexbox'
 import { A4 } from 'components/paper-size'
-import { DateTime } from 'luxon'
-import React, { FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 import commonImagesMap from '../common/assets/__generated__/images-map'
 import descriptionBg from '../common/assets/description-watermark.png'
 import { Typography } from '../common/components'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
-import { DescriptionComponent, GroupImg } from './obs-moc.components'
 import { descriptions } from './obs-moc.descriptions'
 import { NationalYouthCouncilObsMocOaDoc } from './obs-moc.types'
+import { formatCourseDatefor } from '../common/utils'
 
 export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilObsMocOaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
-    const courseStartDate = DateTime.fromISO(document.courseStartDate).toFormat(
-        'dd MMM yyyy'
-    )
-    const courseEndDate = DateTime.fromISO(document.courseEndDate).toFormat(
-        'dd MMM yyyy'
+    const name = document.name.toUpperCase()
+    const courseDate = formatCourseDatefor(
+        document.courseStartDate,
+        document.courseEndDate
     )
     return (
         <>
@@ -51,7 +49,7 @@ export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
                         This is to certify that
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1}>
-                        {document.name}
+                        {name}
                     </Typography>
                     <Typography $size={'large'} $mt={1}>
                         has completed
@@ -67,23 +65,13 @@ export const NationalYouthCouncilObsMocTemplate: FunctionComponent<
                         Adventure Education Masterplan
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1}>
-                        {courseStartDate === courseEndDate
-                            ? courseStartDate
-                            : `${courseStartDate} - ${courseEndDate}`}
+                        {courseDate}
                     </Typography>
                 </FlexBox>
             </ObsCertMainPage>
 
             <A4 $bgImg={descriptionBg}>
-                <DescriptionComponent>
-                    <div>{descriptions['moc']}</div>
-                </DescriptionComponent>
-            </A4>
-
-            <A4 $bgImg={descriptionBg}>
-                <FlexBox $alignItems="center" $vertical>
-                    <GroupImg src={document.groupPhoto_image} />
-                </FlexBox>
+                <div>{descriptions['moc']}</div>
             </A4>
         </>
     )

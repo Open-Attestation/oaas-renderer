@@ -34,4 +34,8 @@ export interface NationalYouthCouncilObsMoc {
      * Group photo
      */
     groupPhoto_image: string
+    /**
+     * Group name of the Watch
+     */
+    watchName: string
 }

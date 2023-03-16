@@ -22,8 +22,31 @@ export const DescriptionComponent = styled.div`
 `
 export const GroupImg = styled.img`
     display: block;
-    max-width: 100%;
-    max-height: 29.7cm;
+    height: 15cm;
     width: auto;
+`
+
+export const WatchNameComponent = styled.div`
+    position: absolute;
+    bottom: 36px;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: left;
+    color: #000000;
+`
+
+export const ObsLogoImg = styled.img`
+    position: absolute;
+    bottom: 36px;
+    right: 80px;
+    display: block;
+    width: 9.5cm;
     height: auto;
 `

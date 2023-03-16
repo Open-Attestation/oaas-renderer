@@ -14,6 +14,7 @@ export default {
         'organisationRepName',
         'organisationRepTitle',
         'groupPhoto_image',
+        'watchName',
     ],
     properties: {
         name: {
@@ -59,6 +60,12 @@ export default {
             type: 'string',
             description: 'Group photo',
             examples: ['photo.png'],
+            minLength: 1,
+        },
+        watchName: {
+            type: 'string',
+            description: 'Group name of the Watch',
+            examples: ['Watch Name'],
             minLength: 1,
         },
     },
