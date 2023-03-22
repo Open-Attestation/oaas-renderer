@@ -1,4 +1,5 @@
 import { TemplateRegistry } from '@govtechsg/decentralized-renderer-react-components'
+import { nationalYouthCouncilBitSummaryCertificateFeb_2023Templates } from './bit-summary-certificate-feb-2023'
 import { nationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationTemplates } from './bizsafe-level-2-risk-management-outdoor-adventure-education'
 import { nationalYouthCouncilObsCoachingTemplates } from './obs-coaching'
 import { nationalYouthCouncilBitSummaryCertificateTemplates } from './bit-summary-certificate'
@@ -20,6 +21,8 @@ import { nationalYouthCouncilStandardFirstAidTemplates } from './standard-first-
 import { nationalYouthCouncilBclsAedTemplates } from './bcls-aed'
 
 export const registry: TemplateRegistry<any> = {
+    'national-youth-council/bit-summary-certificate-feb-2023':
+        nationalYouthCouncilBitSummaryCertificateFeb_2023Templates,
     'national-youth-council/bizsafe-level-2-risk-management-outdoor-adventure-education':
         nationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationTemplates,
     'national-youth-council/obs-coaching':
