@@ -308,7 +308,7 @@ export const NationalYouthCouncilBitSummaryCertificateFeb_2023Template: Function
                             <br />
                             Course Observation (5 Days)
                             <br />
-                            Course Co-instruction (10 Days)
+                            Course Co-instruction (15 Days)
                             <br />
                             Course Assessment (15 Days)
                             <br />
