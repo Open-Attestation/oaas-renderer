@@ -25,15 +25,11 @@ export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
     TemplateProps<NationalYouthCouncilCciLevel_2OaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
     const name = document.name.toUpperCase()
-    const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
+    const issueDate = DateTime.fromISO(document.issueDate).toFormat(
         'dd MMMM yyyy'
     )
-    const courseDate = formatCourseDatefor(
-        document.courseStartDate,
-        document.courseEndDate
-    )
 
-    const validTillDate = DateTime.fromISO(document.courseEndDate)
+    const validTillDate = DateTime.fromISO(document.issueDate)
         .plus({ years: 3 })
         .minus({ days: 1 })
     const validTillDateString = validTillDate.toFormat('dd MMMM yyyy')
@@ -94,9 +90,6 @@ export const NationalYouthCouncilCciLevel_2Template: FunctionComponent<
                             for purposes of the Ministry of Education’s OALCs.
                         </Typography>
                         <Typography $size={'medium'} $mt={0} $bold>
-                            Course Date: {courseDate}
-                        </Typography>
-                        <Typography $size={'medium'} $mt={-1} $bold>
                             Certificate No.: {document.serialNumber}
                         </Typography>
                         <Typography $size={'medium'} $mt={-1} $bold>

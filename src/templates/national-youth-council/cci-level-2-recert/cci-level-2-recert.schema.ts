@@ -8,8 +8,7 @@ export default {
     type: 'object',
     required: [
         'name',
-        'courseStartDate',
-        'courseEndDate',
+        'issueDate',
         'serialNumber',
         'organisationRepSignature',
         'organisationRepName',
@@ -21,17 +20,11 @@ export default {
             examples: ['John Wick'],
             minLength: 1,
         },
-        courseEndDate: {
+        issueDate: {
             type: 'string',
             format: 'date',
             description: 'Issuance date of the certificate',
             examples: ['2022-12-31'],
-        },
-        courseStartDate: {
-            type: 'string',
-            format: 'date',
-            description: 'Course date',
-            examples: ['2022-11-30'],
         },
         serialNumber: {
             type: 'string',

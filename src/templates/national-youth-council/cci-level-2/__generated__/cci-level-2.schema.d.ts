@@ -10,11 +10,7 @@ export interface NationalYouthCouncilCciLevel_2 {
     /**
      * Issuance date of the certificate
      */
-    courseEndDate: string
-    /**
-     * Course date
-     */
-    courseStartDate: string
+    issueDate: string
     /**
      * Certificate number
      */
