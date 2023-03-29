@@ -365,6 +365,12 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                     <p
                       className="c10 c5"
                     >
+                      Course Date: 
+                      30 November - 31 December 2022
+                    </p>
+                    <p
+                      className="c11 c5"
+                    >
                       Certificate No.: 
                       1
                     </p>
