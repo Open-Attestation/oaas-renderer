@@ -308,9 +308,10 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             }
 
             .c3 {
-              font-size: 12px;
+              font-size: 16px;
               font-style: normal;
               font-weight: 400;
+              text-align: justify;
             }
 
             .c2 {
@@ -318,7 +319,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             }
 
             .c4 {
-              font-size: 12px;
+              font-size: 16px;
               font-family: 'Libre Franklin';
             }
 
