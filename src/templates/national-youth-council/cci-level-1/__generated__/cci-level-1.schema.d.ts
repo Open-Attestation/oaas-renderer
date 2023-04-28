@@ -10,11 +10,7 @@ export interface NationalYouthCouncilCciLevel_1 {
     /**
      * Issuance date of the certificate
      */
-    courseEndDate: string
-    /**
-     * Course start date
-     */
-    courseStartDate: string
+    issueDate: string
     /**
      * Certificate number
      */
@@ -22,11 +18,11 @@ export interface NationalYouthCouncilCciLevel_1 {
     /**
      * Name of the organisation representation
      */
-    organisationRepName: string
+    organisationRepName: 'Nicholas Conceicao'
     /**
      * Title of the organisation representation
      */
-    organisationRepTitle: string
+    organisationRepTitle: 'Executive Director'
     /**
      * SHA256 hash of the organisation representation's signature
      */

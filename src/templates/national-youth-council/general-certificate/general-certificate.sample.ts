@@ -10,7 +10,7 @@ export const sample: NationalYouthCouncilGeneralCertificateOaDoc = {
     name: 'John Doe',
     courseTitle: ' CSA Milestone Programme',
     courseStartDate: '2021-12-31',
-    courseEndDate: '2022-12-31',
+    courseEndDate: '2022-12-01',
     issuers: [
         {
             name: 'institute of blockchain',

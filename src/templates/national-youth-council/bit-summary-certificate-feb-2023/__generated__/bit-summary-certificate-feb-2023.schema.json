@@ -1,51 +1,38 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "NationalYouthCouncil/SuccessfulCompletion",
+    "$id": "NationalYouthCouncil/BitSummaryCertificateFeb_2023",
     "type": "object",
     "required": [
         "name",
-        "courseStartDate",
-        "courseEndDate",
-        "serialNumber",
-        "organisationRepSignature",
+        "issueDate",
         "organisationRepName",
-        "organisationRepTitle"
+        "organisationRepTitle",
+        "organisationRepSignature"
     ],
     "properties": {
         "name": {
             "type": "string",
-            "examples": ["John Wick"],
+            "description": "Name of awardee",
+            "examples": ["Thong Yong Jie Andre"],
             "minLength": 1
         },
-        "courseEndDate": {
+        "issueDate": {
             "type": "string",
-            "format": "date",
-            "description": "Issuance date of the certificate",
-            "examples": ["2022-12-31"]
-        },
-        "courseStartDate": {
-            "type": "string",
-            "format": "date",
-            "description": "Course start date",
-            "examples": ["2022-11-30"]
-        },
-        "serialNumber": {
-            "type": "string",
-            "description": "Certificate number",
-            "examples": ["OBSBCLS20XX/XXX"],
-            "minLength": 1
+            "description": "Date of issue",
+            "examples": ["2022-05-10"],
+            "format": "date"
         },
         "organisationRepName": {
             "type": "string",
             "description": "Name of the organisation representation",
-            "examples": ["Nicholas Conceicao"],
-            "minLength": 1
+            "enum": ["Nicholas Conceicao"],
+            "examples": ["Nicholas Conceicao"]
         },
         "organisationRepTitle": {
             "type": "string",
             "description": "Title of the organisation representation",
-            "examples": ["Executive Director"],
-            "minLength": 1
+            "enum": ["Executive Director"],
+            "examples": ["Executive Director"]
         },
         "organisationRepSignature": {
             "type": "string",

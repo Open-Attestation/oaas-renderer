@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface NationalYouthCouncilSuccessfulCompletion {
+export interface NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducation {
     name: string
     /**
      * Issuance date of the certificate
@@ -22,11 +22,11 @@ export interface NationalYouthCouncilSuccessfulCompletion {
     /**
      * Name of the organisation representation
      */
-    organisationRepName: string
+    organisationRepName: 'Nicholas Conceicao'
     /**
      * Title of the organisation representation
      */
-    organisationRepTitle: string
+    organisationRepTitle: 'Executive Director'
     /**
      * SHA256 hash of the organisation representation's signature
      */

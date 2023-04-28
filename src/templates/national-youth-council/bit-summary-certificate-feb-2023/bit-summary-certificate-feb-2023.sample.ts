@@ -1,16 +1,14 @@
 import { v2 } from '@govtechsg/open-attestation'
-import { NationalYouthCouncilSuccessfulCompletionOaDoc } from './successful-completion.types'
+import { NationalYouthCouncilBitSummaryCertificateFeb_2023OaDoc } from './bit-summary-certificate-feb-2023.types'
 
-export const sample: NationalYouthCouncilSuccessfulCompletionOaDoc = {
+export const sample: NationalYouthCouncilBitSummaryCertificateFeb_2023OaDoc = {
     $template: {
-        name: 'national-youth-council/successful-completion',
+        name: 'national-youth-council/bit-summary-certificate-feb-2023',
         type: v2.TemplateType.EmbeddedRenderer,
         url: 'http://localhost:3000',
     },
     name: 'John Doe',
-    courseEndDate: '2022-12-31',
-    courseStartDate: '2022-11-30',
-    serialNumber: 'serial-number-1',
+    issueDate: '2022-05-10',
     organisationRepName: 'Nicholas Conceicao',
     organisationRepTitle: 'Executive Director',
     organisationRepSignature:

@@ -20,21 +20,20 @@ import { A4 } from 'components/paper-size'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
+import { formatCourseDatefor } from '../common/utils'
 
 export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
     TemplateProps<NationalYouthCouncilCciLevel_1OaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
-    const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
-        'dd MMMM yyyy'
-    )
-    const courseDate = DateTime.fromISO(document.courseStartDate).toFormat(
+    const name = document.name.toUpperCase()
+    const issueDate = DateTime.fromISO(document.issueDate).toFormat(
         'dd MMMM yyyy'
     )
 
-    const validTillDate = DateTime.fromISO(document.courseEndDate)
+    const validTillDate = DateTime.fromISO(document.issueDate)
         .plus({ years: 1 })
         .minus({ days: 1 })
-    const validTillDateString = validTillDate.toFormat('dd MMM yyyy')
+    const validTillDateString = validTillDate.toFormat('dd MMMM yyyy')
 
     return (
         <>
@@ -64,14 +63,14 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                             This is to certify that
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            {document.name}
+                            {name}
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             has been tested and found proficient to qualify for
                             the following award
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            Challenge Course Instructor (Level 1)
+                            CHALLENGE COURSE INSTRUCTOR (LEVEL 1)
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             On the date of
@@ -92,9 +91,6 @@ export const NationalYouthCouncilCciLevel_1Template: FunctionComponent<
                             for purposes of the Ministry of Education’s OALCs.
                         </Typography>
                         <Typography $size={'medium'} $mt={0} $bold>
-                            Course Date: {courseDate}
-                        </Typography>
-                        <Typography $size={'medium'} $mt={-1} $bold>
                             Certificate No.: {document.serialNumber}
                         </Typography>
                         <Typography $size={'medium'} $mt={-1} $bold>

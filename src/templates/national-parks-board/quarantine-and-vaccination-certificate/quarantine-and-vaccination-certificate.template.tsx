@@ -10,6 +10,8 @@ import { DateTime } from 'luxon'
 import logoImgSrc from './animal-vet-service-logo.jpg'
 import addressImgSrc from './animal-vet-service-address.png'
 import { sentenceCase } from 'change-case'
+import { QRCodeSVG } from 'qrcode.react'
+import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
 
 const TemplateContainer = styled.div`
     font-family: Arial, Helvetica, sans-serif;
@@ -53,6 +55,25 @@ const Address = styled.img`
     height: auto;
 `
 
+const QRCodeContainer = styled.div`
+    position: relative;
+    top: 24px;
+
+    width: 272px;
+    height: 272px;
+    border: 1px solid #bebebe;
+`
+
+const QRCode = styled.div`
+    position: relative;
+    top: 8px;
+    left: 8px;
+
+    width: 256px;
+    height: 256px;
+    background-color: #ccc;
+`
+
 const formatDate = (dateStr: string, full = false) =>
     // full -> 10 October 2021
     DateTime.fromISO(dateStr).toFormat(!full ? 'dd/MM/yyyy' : 'dd LLLL yyyy')
@@ -62,6 +83,8 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
         className?: string
     }
 > = ({ document, className = '' }) => {
+    const qrPayload = retrieveQrAttachmentPayload(document)
+
     return (
         <>
             <Helmet>
@@ -225,6 +248,17 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                                 </tbody>
                             </table>
                         </TableContainer>
+                    </FlexBox>
+                </A4>
+                <A4>
+                    <FlexBox $vertical $spacing={5}>
+                        Present QR code for official authority to scan for
+                        verification
+                        <QRCodeContainer>
+                            <QRCode>
+                                <QRCodeSVG value={qrPayload} size={256} />
+                            </QRCode>
+                        </QRCodeContainer>
                     </FlexBox>
                 </A4>
             </TemplateContainer>

@@ -13,15 +13,18 @@ import { A4 } from 'components/paper-size'
 import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { formatCourseDatefor } from '../common/utils'
 
 export const NationalYouthCouncilCrcLeadersTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilCrcLeadersOaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const issueDate = DateTime.fromISO(document.courseEndDate).toFormat(
         'dd MMMM yyyy'
     )
-    const courseDate = DateTime.fromISO(document.courseStartDate).toFormat(
-        'dd MMMM yyyy'
+    const courseDate = formatCourseDatefor(
+        document.courseStartDate,
+        document.courseEndDate
     )
 
     return (
@@ -52,7 +55,7 @@ export const NationalYouthCouncilCrcLeadersTemplate: FunctionComponent<
                             This is to certify that
                         </Typography>
                         <Typography $size={'large'} $mt={0} $bold>
-                            {document.name}
+                            {name}
                         </Typography>
                         <Typography $size={'medium'} $mt={0}>
                             has been tested and found proficient to qualify for

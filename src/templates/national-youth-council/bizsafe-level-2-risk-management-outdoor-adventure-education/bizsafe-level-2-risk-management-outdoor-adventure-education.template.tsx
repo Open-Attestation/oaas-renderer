@@ -1,25 +1,24 @@
 import React, { FunctionComponent } from 'react'
-import { NationalYouthCouncilSuccessfulCompletionOaDoc } from './successful-completion.types'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
+import { NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationOaDoc } from './bizsafe-level-2-risk-management-outdoor-adventure-education.types'
+import styled from 'styled-components'
 import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
-
-import { DateTime } from 'luxon'
 
 import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { formatCourseDatefor } from '../common/utils'
 
-export const NationalYouthCouncilSuccessfulCompletionTemplate: FunctionComponent<
-    TemplateProps<NationalYouthCouncilSuccessfulCompletionOaDoc> & {
+export const NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationTemplate: FunctionComponent<
+    TemplateProps<NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationOaDoc> & {
         className?: string
     }
 > = ({ document, className = '' }) => {
-    const startDate = DateTime.fromISO(document.courseStartDate).toFormat(
-        'dd MMM yyyy'
-    )
-    const endDate = DateTime.fromISO(document.courseEndDate).toFormat(
-        'dd MMM yyyy'
+    const name = document.name.toUpperCase()
+    const courseDate = formatCourseDatefor(
+        document.courseStartDate,
+        document.courseEndDate
     )
     return (
         <>
@@ -48,7 +47,7 @@ export const NationalYouthCouncilSuccessfulCompletionTemplate: FunctionComponent
                         is awarded to
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1} $italic>
-                        {document.name}
+                        {name}
                     </Typography>
                     <Typography $size={'medium'} $mt={1}>
                         for successful completion of the
@@ -66,10 +65,7 @@ export const NationalYouthCouncilSuccessfulCompletionTemplate: FunctionComponent
                         (Recognised by the Workplace Safety and Health Council)
                     </Typography>
                     <Typography $size={'large'} $mt={1}>
-                        Course Date:{' '}
-                        {startDate === endDate
-                            ? startDate
-                            : `${startDate} - ${endDate}`}
+                        Course Date: {courseDate}
                     </Typography>
                     <Typography $size={'medium'} $mt={0}>
                         Serial No: {document.serialNumber}

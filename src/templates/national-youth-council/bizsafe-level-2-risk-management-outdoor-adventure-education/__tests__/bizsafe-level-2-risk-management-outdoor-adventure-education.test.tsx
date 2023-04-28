@@ -1,14 +1,14 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilSuccessfulCompletionTemplate } from '../successful-completion.template'
+import { NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationTemplate } from '../bizsafe-level-2-risk-management-outdoor-adventure-education.template'
 import { render, screen } from '@testing-library/react'
-import { sample } from '../successful-completion.sample'
+import { sample } from '../bizsafe-level-2-risk-management-outdoor-adventure-education.sample'
 
-describe('NationalYouthCouncilSuccessfulCompletionTemplate', () => {
+describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationTemplate', () => {
     it('should match snapshot', () => {
         const tree = renderer
             .create(
-                <NationalYouthCouncilSuccessfulCompletionTemplate
+                <NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationTemplate
                     document={sample}
                     handleObfuscation={() => void 0}
                 />
@@ -228,7 +228,7 @@ describe('NationalYouthCouncilSuccessfulCompletionTemplate', () => {
                   <p
                     className="c7 c3"
                   >
-                    John Doe
+                    JOHN DOE
                   </p>
                   <p
                     className="c8 c3"
@@ -250,9 +250,8 @@ describe('NationalYouthCouncilSuccessfulCompletionTemplate', () => {
                   <p
                     className="c10 c3"
                   >
-                    Course Date:
-                     
-                    30 Nov 2022 - 31 Dec 2022
+                    Course Date: 
+                    30 November - 31 December 2022
                   </p>
                   <p
                     className="c6 c3"
@@ -304,11 +303,11 @@ describe('NationalYouthCouncilSuccessfulCompletionTemplate', () => {
 
     test('should render recipient name', () => {
         render(
-            <NationalYouthCouncilSuccessfulCompletionTemplate
+            <NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationTemplate
                 document={sample}
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('John Doe')).toBeTruthy()
+        expect(screen.getByText('JOHN DOE')).toBeTruthy()
     })
 })

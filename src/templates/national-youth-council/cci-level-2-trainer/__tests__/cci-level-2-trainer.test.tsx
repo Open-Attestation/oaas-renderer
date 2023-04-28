@@ -316,7 +316,7 @@ describe('NationalYouthCouncilCciLevel_2TrainerTemplate', () => {
                     <p
                       className="c8 c5"
                     >
-                      John Doe
+                      JOHN DOE
                     </p>
                     <p
                       className="c7 c5"
@@ -342,7 +342,7 @@ describe('NationalYouthCouncilCciLevel_2TrainerTemplate', () => {
                     <p
                       className="c8 c5"
                     >
-                      Challenge Course Instructor (Level 2) Trainer
+                      CHALLENGE COURSE INSTRUCTOR (LEVEL 2) TRAINER
                     </p>
                     <p
                       className="c7 c5"
@@ -389,7 +389,7 @@ describe('NationalYouthCouncilCciLevel_2TrainerTemplate', () => {
                       className="c10 c5"
                     >
                       Certificate is valid till 
-                      30 Dec 2025
+                      30 December 2025
                     </p>
                   </div>
                 </div>
@@ -530,6 +530,6 @@ describe('NationalYouthCouncilCciLevel_2TrainerTemplate', () => {
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('John Doe')).toBeTruthy()
+        expect(screen.getByText('JOHN DOE')).toBeTruthy()
     })
 })
