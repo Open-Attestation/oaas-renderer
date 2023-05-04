@@ -21,7 +21,8 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
             .c1 {
               background: white;
               position: relative;
-              width: 21cm;
+              max-width: 21cm;
+              min-width: 456px;
               min-height: 29.7cm;
               padding: 2cm;
               margin: 0 auto;
@@ -55,23 +56,23 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
               margin-bottom: 40px;
             }
 
-            .c3 {
+            .c7 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
               width: 100%;
-              -webkit-flex-direction: row;
-              -ms-flex-direction: row;
-              flex-direction: row;
-              -webkit-align-items: flex-end;
-              -webkit-box-align: flex-end;
-              -ms-flex-align: flex-end;
-              align-items: flex-end;
-              -webkit-box-pack: justify;
-              -webkit-justify-content: space-between;
-              -ms-flex-pack: justify;
-              justify-content: space-between;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
             }
 
             .c0 {
@@ -86,9 +87,10 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
               margin-bottom: 0px;
               margin-left: 0px;
               margin-right: 0px;
+              text-align: center;
             }
 
-            .c8 {
+            .c11 {
               font-size: 15px;
               font-style: normal;
               font-weight: 400;
@@ -101,7 +103,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
               text-align: center;
             }
 
-            .c9 {
+            .c12 {
               font-size: 15px;
               font-style: normal;
               font-weight: 700;
@@ -110,24 +112,6 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
               margin-left: 0px;
               margin-right: 0px;
               width: 100%;
-            }
-
-            .c7 {
-              width: 100%;
-              font-size: 15px;
-            }
-
-            .c7 table {
-              width: 90%;
-            }
-
-            .c7 table tbody tr td {
-              padding: 4px 0px 4px 0px;
-              width: 50%;
-            }
-
-            .c7 table tbody tr td:first-child {
-              font-weight: bold;
             }
 
             .c4 {
@@ -140,7 +124,49 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
               height: auto;
             }
 
+            .c3 {
+              width: 100%;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              gap: 32px;
+              -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+              justify-content: space-between;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+            }
+
+            .c8 {
+              width: 100%;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              line-height: 22.5px;
+              padding: 4px 0px;
+            }
+
+            .c9 {
+              width: 50%;
+              font-weight: bold;
+            }
+
             .c10 {
+              width: 50%;
+            }
+
+            .c13 {
               position: relative;
               top: 24px;
               width: 272px;
@@ -148,7 +174,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
               border: 1px solid #bebebe;
             }
 
-            .c11 {
+            .c14 {
               position: relative;
               top: 8px;
               left: 8px;
@@ -164,6 +190,32 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                 break-inside: avoid;
                 -webkit-break-before: always;
                 break-before: always;
+                width: 21cm;
+                min-height: 29.7cm;
+              }
+            }
+
+            @media only screen and (max-width:768px) {
+              .c3 {
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+              }
+            }
+
+            @media only screen and (max-width:768px) {
+              .c8 {
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
               }
             }
 
@@ -197,85 +249,135 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                   <div
                     className="c7"
                   >
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>
-                            Name of Animal:
-                          </td>
-                          <td>
-                            KOBE
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Microchip Number:
-                          </td>
-                          <td>
-                            900 111 881 990 863
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Species:
-                          </td>
-                          <td>
-                            Dog
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Breed:
-                          </td>
-                          <td>
-                            Shiba Inu
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Date of Birth:
-                          </td>
-                          <td>
-                            14 October 2021
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Sex:
-                          </td>
-                          <td>
-                            Male
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Colour:
-                          </td>
-                          <td>
-                            White
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Country of Export:
-                          </td>
-                          <td>
-                            China
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Name of Owner
-                          </td>
-                          <td>
-                            CHAN ZI ANG
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Name of Animal:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        KOBE
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Microchip Number:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        900 111 881 990 863
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Species:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        Dog
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Breed:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        Shiba Inu
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Date of Birth:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        14 October 2021
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Sex:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        Male
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Colour:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        White
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Country of Export:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        China
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Name of Owner:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        CHAN ZI ANG
+                      </div>
+                    </div>
                   </div>
                   <p
-                    className="c8"
+                    className="c11"
                   >
                     THIS IS TO CERTIFY THAT THE ANIMAL DETAILED ABOVE HAS COMPLETED THE MANDATORY POST ARRIVAL QUARANTINE OF
                      
@@ -305,65 +407,97 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                     IN SINGAPORE
                   </p>
                   <p
-                    className="c9"
+                    className="c12"
                   >
                     DETAILS OF RABIES VACCINATION (IF APPLICABLE)
                   </p>
                   <div
                     className="c7"
                   >
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>
-                            Manufacturer/Vaccination Name/Brand:
-                          </td>
-                          <td>
-                            MERIAL RABISIN R
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Date of Vaccination:
-                          </td>
-                          <td>
-                            13 September 2022
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Duration of validity:
-                          </td>
-                          <td>
-                            1 Year
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Batch/Lot number:
-                          </td>
-                          <td>
-                            L489157
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Batch/Lot expiry:
-                          </td>
-                          <td>
-                            02 December 2023
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Veterinarian:
-                          </td>
-                          <td>
-                            Clarissa Frany Francisco, DVM
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Manufacturer/Vaccination Name/Brand:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        MERIAL RABISIN R
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Date of Vaccination:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        13 September 2022
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Duration of validity:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        1 Year
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Batch/Lot number:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        L489157
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Batch/Lot expiry:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        02 December 2023
+                      </div>
+                    </div>
+                    <div
+                      className="c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        Veterinarian:
+                      </div>
+                      <div
+                        className="c10"
+                      >
+                        Clarissa Frany Francisco, DVM
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -375,10 +509,10 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                 >
                   Present QR code for official authority to scan for verification
                   <div
-                    className="c10"
+                    className="c13"
                   >
                     <div
-                      className="c11"
+                      className="c14"
                     >
                       <svg
                         height={256}
