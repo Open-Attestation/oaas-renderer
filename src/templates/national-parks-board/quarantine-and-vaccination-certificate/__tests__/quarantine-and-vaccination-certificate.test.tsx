@@ -22,7 +22,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
               background: white;
               position: relative;
               max-width: 21cm;
-              min-width: 456px;
+              min-width: 320px;
               min-height: 29.7cm;
               padding: 2cm;
               margin: 0 auto;
@@ -183,6 +183,12 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
               background-color: #ccc;
             }
 
+            @media only screen and (max-width:768px) {
+              .c1 {
+                padding: 24px;
+              }
+            }
+
             @media print {
               .c1 {
                 border: none;
@@ -192,6 +198,18 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                 break-before: always;
                 width: 21cm;
                 min-height: 29.7cm;
+              }
+            }
+
+            @media only screen and (max-width:768px) {
+              .c4 {
+                width: 187px;
+              }
+            }
+
+            @media only screen and (max-width:768px) {
+              .c5 {
+                width: 307px;
               }
             }
 

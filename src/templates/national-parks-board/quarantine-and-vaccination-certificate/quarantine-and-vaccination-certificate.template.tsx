@@ -3,7 +3,7 @@ import { TemplateProps } from '@govtechsg/decentralized-renderer-react-component
 import { NationalParksBoardQuarantineAndVaccinationCertificateOaDoc } from './quarantine-and-vaccination-certificate.types'
 import styled from 'styled-components'
 import { Helmet } from 'react-helmet-async'
-import { A4R } from 'components/paper-size'
+import { A4R, size } from 'components/paper-size'
 import { FlexBox } from 'components/flexbox'
 import { makeTypography } from 'components/typography/makeTypography'
 import { DateTime } from 'luxon'
@@ -28,14 +28,19 @@ const Typography = makeTypography({
 const Logo = styled.img`
     width: 4.94cm;
     height: auto;
+    @media only screen and (max-width: ${size.tablet}) {
+        width: 187px;
+    }
 `
 
 const Address = styled.img`
     width: 8.54cm;
     height: auto;
+    @media only screen and (max-width: ${size.tablet}) {
+        width: 307px;
+    }
 `
 
-// logo widths: 456px and 430px
 const LogoFlex = styled.div`
     width: 100%;
     display: flex;
@@ -43,7 +48,7 @@ const LogoFlex = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: ${size.tablet}) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -56,7 +61,7 @@ const DetailsFlex = styled.div`
     flex-direction: row;
     line-height: 22.5px;
     padding: 4px 0px;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: ${size.tablet}) {
         flex-direction: column;
     }
 `
@@ -130,7 +135,7 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                 id="national-parks-board-quarantine-and-vaccination-certificate"
                 ref={ref}
             >
-                <A4R $minWidth="456px">
+                <A4R>
                     <FlexBox $vertical $spacing={5}>
                         <LogoFlex>
                             <Logo src={logoImgSrc} />
@@ -273,7 +278,7 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                     )}
                 </A4R>
                 {showQrOnNextPage && (
-                    <A4R $minWidth="456px">
+                    <A4R>
                         <FlexBox $vertical $spacing={5}>
                             Present QR code for official authority to scan for
                             verification
