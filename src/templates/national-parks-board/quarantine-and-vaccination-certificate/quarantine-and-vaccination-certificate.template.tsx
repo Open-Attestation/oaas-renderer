@@ -181,7 +181,7 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                             </DetailsFlex>
                             <DetailsFlex>
                                 <Col1>Name of Owner:</Col1>
-                                <Col2>{document.ownerName}</Col2>
+                                <Col2>{document.name}</Col2>
                             </DetailsFlex>
                         </FlexBox>
                         <Typography $textAlign="center" $m={0} $px={3}>

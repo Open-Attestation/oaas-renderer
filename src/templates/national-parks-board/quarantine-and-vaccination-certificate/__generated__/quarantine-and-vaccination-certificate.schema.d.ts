@@ -41,7 +41,7 @@ export interface NationalParksBoardQuarantineAndVaccinationCertificate {
     /**
      * Name of owner
      */
-    ownerName: string
+    name: string
     quarantine: {
         numOfDays: number
         /**

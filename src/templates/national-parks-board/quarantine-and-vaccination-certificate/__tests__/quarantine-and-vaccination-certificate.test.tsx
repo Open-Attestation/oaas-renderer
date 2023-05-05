@@ -573,7 +573,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                         colour: 'White',
                         exportCountry: 'China',
                         microchipNumber: '900 111 881 990 863',
-                        ownerName: 'CHAN ZI ANG',
+                        name: 'CHAN ZI ANG',
                         quarantine: {
                             endDate: '2023-12-31',
                             startDate: '2023-12-20',

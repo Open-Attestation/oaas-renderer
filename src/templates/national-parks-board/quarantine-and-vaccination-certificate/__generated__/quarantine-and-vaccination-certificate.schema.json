@@ -11,7 +11,7 @@
         "sex",
         "colour",
         "exportCountry",
-        "ownerName",
+        "name",
         "quarantine"
     ],
     "properties": {
@@ -63,7 +63,7 @@
             "examples": ["China"],
             "minLength": 1
         },
-        "ownerName": {
+        "name": {
             "type": "string",
             "description": "Name of owner",
             "examples": ["CHAN ZI ANG"],

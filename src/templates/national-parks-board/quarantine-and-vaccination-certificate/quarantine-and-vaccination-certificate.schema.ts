@@ -18,7 +18,7 @@ export default {
         'sex',
         'colour',
         'exportCountry',
-        'ownerName',
+        'name',
         'quarantine',
     ],
     properties: {
@@ -37,7 +37,7 @@ export default {
         ),
         colour: makeRequiredString('Color of animal', 'White'),
         exportCountry: makeRequiredString('Country of export', 'China'),
-        ownerName: makeRequiredString('Name of owner', 'CHAN ZI ANG'),
+        name: makeRequiredString('Name of owner', 'CHAN ZI ANG'),
         quarantine: {
             type: 'object',
             required: ['numOfDays', 'startDate', 'endDate'],
@@ -74,7 +74,10 @@ export default {
                     'MERIAL RABISIN R'
                 ),
                 date: makeDateType('Date of vaccination', '2022-09-13'),
-                validityDuration: makeRequiredString('Duration of validity', '1 Year'),
+                validityDuration: makeRequiredString(
+                    'Duration of validity',
+                    '1 Year'
+                ),
                 batch: {
                     type: 'object',
                     required: ['number', 'expiry'],
