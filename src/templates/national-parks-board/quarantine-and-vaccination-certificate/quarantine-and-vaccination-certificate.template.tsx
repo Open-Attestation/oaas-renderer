@@ -265,7 +265,7 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                         <FlexBox
                             $vertical
                             $spacing={5}
-                            style={{ marginTop: '48px' }}
+                            style={{ marginTop: '48px', marginBottom: '24px' }}
                         >
                             Present QR code for official authority to scan for
                             verification
