@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useRef, useState } from 'react'
+import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import { NationalParksBoardQuarantineAndVaccinationCertificateOaDoc } from './quarantine-and-vaccination-certificate.types'
 import styled from 'styled-components'
@@ -26,19 +26,13 @@ const Typography = makeTypography({
 })
 
 const Logo = styled.img`
-    width: 4.94cm;
-    height: auto;
-    @media only screen and (max-width: ${size.tablet}) {
-        width: 187px;
-    }
+    width: 187px;
+    height: 101px;
 `
 
 const Address = styled.img`
-    width: 8.54cm;
-    height: auto;
-    @media only screen and (max-width: ${size.tablet}) {
-        width: 307px;
-    }
+    width: 307px;
+    height: 74px;
 `
 
 const LogoFlex = styled.div`
@@ -76,22 +70,29 @@ const Col2 = styled.div`
 `
 
 const QRCodeContainer = styled.div`
-    position: relative;
-    top: 24px;
-
-    width: 272px;
-    height: 272px;
     border: 1px solid #bebebe;
+    padding: 8px;
+    margin-top: 24px;
 `
 
 const QRCode = styled.div`
-    position: relative;
-    top: 8px;
-    left: 8px;
-
-    width: 256px;
-    height: 256px;
+    max-width: 256px;
+    max-height: 256px;
     background-color: #ccc;
+`
+
+const AppearWhenSmallerThanMobile = styled.div`
+    display: none;
+    @media only screen and (max-width: ${size.tablet}) {
+        display: block;
+    }
+`
+
+const AppearWhenBiggerThanMobile = styled.div`
+    display: block;
+    @media only screen and (max-width: ${size.tablet}) {
+        display: none;
+    }
 `
 
 const formatDate = (dateStr: string, full = false) =>
@@ -103,24 +104,7 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
         className?: string
     }
 > = ({ document, className = '' }) => {
-    const [templateWidth, setTemplateWidth] = useState(-1)
     const qrPayload = retrieveQrAttachmentPayload(document)
-    const ref = useRef<HTMLDivElement>(null)
-
-    useEffect(() => {
-        const handleWindowResize = () => {
-            if (!ref.current) return
-            setTemplateWidth(ref.current.clientWidth)
-        }
-
-        window.addEventListener('resize', handleWindowResize)
-
-        return () => {
-            window.removeEventListener('resize', handleWindowResize)
-        }
-    }, [])
-
-    const showQrOnNextPage = templateWidth === -1 || templateWidth > 700
 
     return (
         <>
@@ -133,7 +117,6 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
             <TemplateContainer
                 className={className}
                 id="national-parks-board-quarantine-and-vaccination-certificate"
-                ref={ref}
             >
                 <A4R>
                     <FlexBox $vertical $spacing={5}>
@@ -261,7 +244,7 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                             </DetailsFlex>
                         </FlexBox>
                     </FlexBox>
-                    {!showQrOnNextPage && (
+                    <AppearWhenSmallerThanMobile>
                         <FlexBox
                             $vertical
                             $spacing={5}
@@ -275,9 +258,9 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                                 </QRCode>
                             </QRCodeContainer>
                         </FlexBox>
-                    )}
+                    </AppearWhenSmallerThanMobile>
                 </A4R>
-                {showQrOnNextPage && (
+                <AppearWhenBiggerThanMobile>
                     <A4R>
                         <FlexBox $vertical $spacing={5}>
                             Present QR code for official authority to scan for
@@ -289,7 +272,7 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                             </QRCodeContainer>
                         </FlexBox>
                     </A4R>
-                )}
+                </AppearWhenBiggerThanMobile>
             </TemplateContainer>
         </>
     )

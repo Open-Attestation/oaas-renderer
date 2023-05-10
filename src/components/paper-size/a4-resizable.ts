@@ -15,8 +15,8 @@ export const A4R = styled.div<{
     position: relative;
     max-width: 21cm;
     min-width: ${size.mobile};
-    min-height: 29.7cm;
     padding: 2cm;
+    min-height: 29.7cm;
     margin: 0 auto;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -25,6 +25,7 @@ export const A4R = styled.div<{
     z-index: ${({ $zIndex }) => $zIndex ?? 'initial'};
 
     @media only screen and (max-width: ${size.tablet}) {
+        min-height: 1894px;
         padding: 24px;
     }
 
@@ -34,5 +35,6 @@ export const A4R = styled.div<{
         break-before: always;
         width: 21cm;
         min-height: 29.7cm;
+        padding: 2cm;
     }
 `
