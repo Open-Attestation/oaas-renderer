@@ -1,0 +1,155 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "NationalParksBoard/QuarantineAndVaccinationCertificate",
+    "type": "object",
+    "required": [
+        "animalName",
+        "microchipNumber",
+        "species",
+        "breed",
+        "birthDate",
+        "sex",
+        "colour",
+        "exportCountry",
+        "name",
+        "quarantine"
+    ],
+    "properties": {
+        "animalName": {
+            "type": "string",
+            "description": "Name of animal",
+            "examples": ["KOBE"],
+            "minLength": 1
+        },
+        "microchipNumber": {
+            "type": "string",
+            "description": "Microchip of animal",
+            "examples": ["900 111 881 990 863"],
+            "minLength": 1
+        },
+        "species": {
+            "type": "string",
+            "description": "Species of animal",
+            "examples": ["Dog"],
+            "minLength": 1
+        },
+        "breed": {
+            "type": "string",
+            "description": "Breed of animal",
+            "examples": ["Shiba Inu"],
+            "minLength": 1
+        },
+        "birthDate": {
+            "type": "string",
+            "description": "Date of birth of animal",
+            "examples": ["2021-10-14"],
+            "format": "date"
+        },
+        "sex": {
+            "type": "string",
+            "description": "Sex of animal",
+            "enum": ["male", "female"],
+            "examples": ["male"]
+        },
+        "colour": {
+            "type": "string",
+            "description": "Color of animal",
+            "examples": ["White"],
+            "minLength": 1
+        },
+        "exportCountry": {
+            "type": "string",
+            "description": "Country of export",
+            "examples": ["China"],
+            "minLength": 1
+        },
+        "name": {
+            "type": "string",
+            "description": "Name of owner",
+            "examples": ["CHAN ZI ANG"],
+            "minLength": 1
+        },
+        "quarantine": {
+            "type": "object",
+            "required": ["numOfDays", "startDate", "endDate"],
+            "properties": {
+                "numOfDays": {
+                    "type": "number",
+                    "description": "",
+                    "examples": [11],
+                    "minimum": 0
+                },
+                "startDate": {
+                    "type": "string",
+                    "description": "Start date of quarantine in YYYY-MM-DD",
+                    "examples": ["2023-12-21"],
+                    "format": "date"
+                },
+                "endDate": {
+                    "type": "string",
+                    "description": "End date of quarantine in YYYY-MM-DD (inclusive)",
+                    "examples": ["2023-12-31"],
+                    "format": "date"
+                }
+            },
+            "additionalProperties": false
+        },
+        "rabiesVaccination": {
+            "type": "object",
+            "required": [
+                "manufacturer",
+                "date",
+                "validityDuration",
+                "batch",
+                "veterinarian"
+            ],
+            "properties": {
+                "manufacturer": {
+                    "type": "string",
+                    "description": "Manufacturer of vaccine",
+                    "examples": ["MERIAL RABISIN R"],
+                    "minLength": 1
+                },
+                "date": {
+                    "type": "string",
+                    "description": "Date of vaccination",
+                    "examples": ["2022-09-13"],
+                    "format": "date"
+                },
+                "validityDuration": {
+                    "type": "string",
+                    "description": "Duration of validity",
+                    "examples": ["1 Year"],
+                    "minLength": 1
+                },
+                "batch": {
+                    "type": "object",
+                    "required": ["number", "expiry"],
+                    "properties": {
+                        "number": {
+                            "type": "string",
+                            "description": "Batch number",
+                            "examples": ["L489157"],
+                            "minLength": 1
+                        },
+                        "expiry": {
+                            "type": "string",
+                            "description": "Expiry of batch",
+                            "examples": ["2023-12-31"],
+                            "format": "date"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "veterinarian": {
+                    "type": "string",
+                    "description": "Veterinarian that administered vaccine",
+                    "examples": ["Clarissa Frany Francisco, DVM"],
+                    "minLength": 1
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
