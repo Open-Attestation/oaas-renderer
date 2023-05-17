@@ -80,7 +80,7 @@ export const DescriptionComponent = styled.div`
     top: 427px;
     right: 73px;
 
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -98,7 +98,7 @@ export const ProgrammeComponent = styled.div`
 
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@ export const SigneeOneDetailsComponent = styled.div`
     top: 678px;
     right: 367px;
 
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -130,7 +130,7 @@ export const SigneeTwoDetailsComponent = styled.div`
     top: 678px;
     right: 64px;
 
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -150,8 +150,6 @@ export const SigneeOneSignatureComponent = styled.div`
     align-items: flex-end;
     justify-content: center;
     display: flex;
-
-    //background-color: lightblue;
 `
 export const SigneeOneSignatureImg = styled.img`
     display: block;
@@ -180,7 +178,7 @@ export const DateOfIssueComponent = styled.div`
     bottom: 8px;
     left: 8px;
 
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

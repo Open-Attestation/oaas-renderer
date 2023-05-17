@@ -28,6 +28,7 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
         className?: string
     }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const issueDate = formatCourseDatefor(
         document.issueDate,
         document.issueDate
@@ -35,6 +36,10 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
     return (
         <>
             <Helmet>
+                <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700"
+                ></link>
                 <title>
                     govtech-digital-academy -
                     certificate-of-completion-2-signees
@@ -46,7 +51,7 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
                 <ProudlyPresentedComponent>
                     PROUDLY PRESENTED TO
                 </ProudlyPresentedComponent>
-                <NameComponent>{document.name}</NameComponent>
+                <NameComponent>{name}</NameComponent>
                 <DescriptionComponent>
                     for achieving the assesment requirements and learnings of
                     <br />
@@ -65,29 +70,29 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
                 </ProgrammeComponent>
                 <SigneeOneSignatureComponent>
                     <SigneeOneSignatureImg
-                        src={document.signeeOne.signature_image}
+                        src={document.signeeOneSignature_image}
                         alt="Signature of signee one"
                     />
                 </SigneeOneSignatureComponent>
                 <SigneeOneDetailsComponent>
-                    {document.signeeOne.name}, {document.signeeOne.designation}
+                    {document.signeeOneName}, {document.signeeOneDesignation}
                     <br />
-                    {document.signeeOne.division}
+                    {document.signeeOneDivision}
                     <br />
-                    {document.signeeOne.organisation}
+                    {document.signeeOneOrganisation}
                 </SigneeOneDetailsComponent>
                 <SigneeTwoSignatureComponent>
                     <SigneeTwoSignatureImg
-                        src={`${imagesMap[document.signeeTwo.signature]}`}
+                        src={`${imagesMap[document.signeeTwoSignature]}`}
                         alt="Signature of signee two"
                     />
                 </SigneeTwoSignatureComponent>
                 <SigneeTwoDetailsComponent>
-                    {document.signeeTwo.name}, {document.signeeTwo.designation}
+                    {document.signeeTwoName}, {document.signeeTwoDesignation}
                     <br />
-                    {document.signeeTwo.division}
+                    {document.signeeTwoDivision}
                     <br />
-                    {document.signeeTwo.organisation}
+                    {document.signeeTwoOrganisation}
                 </SigneeTwoDetailsComponent>
                 <DateOfIssueComponent>
                     Date of Issue: {issueDate}

@@ -18,48 +18,44 @@ export interface GovtechDigitalAcademyCertificateOfCompletion_2Signees {
      * Date of issue
      */
     issueDate: string
-    signeeOne: {
-        /**
-         * Name of signee one
-         */
-        name: string
-        /**
-         * Designation of signee one
-         */
-        designation: string
-        /**
-         * Division of signee one
-         */
-        division: string
-        /**
-         * Organisation of signee one
-         */
-        organisation: string
-        /**
-         * Signature of signee one
-         */
-        signature_image: string
-    }
-    signeeTwo: {
-        /**
-         * Name of signee two
-         */
-        name: 'Sahas Sankaran'
-        /**
-         * Designation of signee two
-         */
-        designation: 'Director'
-        /**
-         * Division of signee two
-         */
-        division: 'GovTech Digital Academy'
-        /**
-         * Organisation of signee two
-         */
-        organisation: 'Government Technology Agency'
-        /**
-         * SHA256 hash of the signee two's signature
-         */
-        signature: 'sahas-sankaran-signature&d83beb8b8fe3c9a7efba8b80a693c4d58d33e4e94f1f4b556f13769742f861b9.svg'
-    }
+    /**
+     * Name of signee one
+     */
+    signeeOneName: string
+    /**
+     * Designation of signee one
+     */
+    signeeOneDesignation: string
+    /**
+     * Division of signee one
+     */
+    signeeOneDivision: string
+    /**
+     * Organisation of signee one
+     */
+    signeeOneOrganisation: string
+    /**
+     * Signature of signee one
+     */
+    signeeOneSignature_image: string
+    /**
+     * Name of signee two
+     */
+    signeeTwoName: 'Sahas Sankaran'
+    /**
+     * Designation of signee two
+     */
+    signeeTwoDesignation: 'Director'
+    /**
+     * Division of signee two
+     */
+    signeeTwoDivision: 'GovTech Digital Academy'
+    /**
+     * Organisation of signee two
+     */
+    signeeTwoOrganisation: 'Government Technology Agency'
+    /**
+     * SHA256 hash of the signee two's signature
+     */
+    signeeTwoSignature: 'sahas-sankaran-signature&d83beb8b8fe3c9a7efba8b80a693c4d58d33e4e94f1f4b556f13769742f861b9.svg'
 }

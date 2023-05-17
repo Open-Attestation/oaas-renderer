@@ -10,25 +10,21 @@ export const sample: GovtechDigitalAcademyCertificateOfCompletion_2SigneesOaDoc 
             type: v2.TemplateType.EmbeddedRenderer,
             url: 'http://localhost:3000',
         },
-        name: 'Thong Yong Jie Andre',
+        name: 'THONG YONG JIE ANDRE',
         programmeTitle:
             ' Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop',
         issueDate: '2022-05-10',
-        signeeOne: {
-            name: 'Betsie Chacko',
-            designation: 'Associate Director',
-            division: 'GovTech Digital Academy',
-            organisation: 'Government Technology Agency',
-            signature_image: signatureOne,
-        },
-        signeeTwo: {
-            name: 'Sahas Sankaran',
-            designation: 'Director',
-            division: 'GovTech Digital Academy',
-            organisation: 'Government Technology Agency',
-            signature:
-                'sahas-sankaran-signature&d83beb8b8fe3c9a7efba8b80a693c4d58d33e4e94f1f4b556f13769742f861b9.svg',
-        },
+        signeeOneName: 'Betsie Chacko',
+        signeeOneDesignation: 'Associate Director',
+        signeeOneDivision: 'GovTech Digital Academy',
+        signeeOneOrganisation: 'Government Technology Agency',
+        signeeOneSignature_image: signatureOne,
+        signeeTwoName: 'Sahas Sankaran',
+        signeeTwoDesignation: 'Director',
+        signeeTwoDivision: 'GovTech Digital Academy',
+        signeeTwoOrganisation: 'Government Technology Agency',
+        signeeTwoSignature:
+            'sahas-sankaran-signature&d83beb8b8fe3c9a7efba8b80a693c4d58d33e4e94f1f4b556f13769742f861b9.svg',
         issuers: [
             {
                 name: 'institute of blockchain',

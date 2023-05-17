@@ -122,7 +122,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               height: 150px;
               top: 427px;
               right: 73px;
-              font-family: 'Nunito';
+              font-family: 'Montserrat';
               font-style: normal;
               font-weight: 400;
               font-size: 16px;
@@ -148,7 +148,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               right: 73px;
               font-family: 'Montserrat';
               font-style: normal;
-              font-weight: 700;
+              font-weight: 600;
               font-size: 16px;
               display: -webkit-box;
               display: -webkit-flex;
@@ -175,7 +175,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               height: 59px;
               top: 678px;
               right: 367px;
-              font-family: 'Nunito';
+              font-family: 'Montserrat';
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
@@ -199,7 +199,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               height: 59px;
               top: 678px;
               right: 64px;
-              font-family: 'Nunito';
+              font-family: 'Montserrat';
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
@@ -275,7 +275,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               position: absolute;
               bottom: 8px;
               left: 8px;
-              font-family: 'Nunito';
+              font-family: 'Montserrat';
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
@@ -314,7 +314,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               <div
                 className="c4"
               >
-                Thong Yong Jie Andre
+                THONG YONG JIE ANDRE
               </div>
               <div
                 className="c5"
@@ -393,6 +393,6 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('Thong Yong Jie Andre')).toBeTruthy()
+        expect(screen.getByText('THONG YONG JIE ANDRE')).toBeTruthy()
     })
 })
