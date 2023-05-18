@@ -9,6 +9,8 @@ import {
     CertificateComponent,
     DateOfIssueComponent,
     DescriptionComponent,
+    InfoContainer,
+    ForAchievingComponent,
     NameComponent,
     OfCompletionComponent,
     ProgrammeComponent,
@@ -19,6 +21,7 @@ import {
     SigneeTwoDetailsComponent,
     SigneeTwoSignatureComponent,
     SigneeTwoSignatureImg,
+    YourCommitmentComponent,
 } from './certificate-of-completion-2-signees.components'
 import imagesMap from '../common/assets/__generated__/images-map'
 import { formatCourseDatefor } from '../common/utils'
@@ -38,7 +41,7 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
             <Helmet>
                 <link
                     rel="stylesheet"
-                    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700"
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700"
                 ></link>
                 <title>
                     govtech-digital-academy -
@@ -52,22 +55,24 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
                     PROUDLY PRESENTED TO
                 </ProudlyPresentedComponent>
                 <NameComponent>{name}</NameComponent>
-                <DescriptionComponent>
-                    for achieving the assesment requirements and learnings of
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    Your commitment to continuing professional development has
-                    <br />
-                    helped advance digital transformation across and beyond the
-                    <br />
-                    Public Service.
-                </DescriptionComponent>
-                <ProgrammeComponent>
-                    {document.programmeTitle}
-                </ProgrammeComponent>
+                <InfoContainer>
+                    <ForAchievingComponent>
+                        for achieving the assesment requirements and learnings
+                        of
+                    </ForAchievingComponent>
+                    <ProgrammeComponent>
+                        {document.programmeTitle}
+                    </ProgrammeComponent>
+                    <YourCommitmentComponent>
+                        Your commitment to continuing professional development
+                        has
+                        <br />
+                        helped advance digital transformation across and beyond
+                        the
+                        <br />
+                        Public Service.
+                    </YourCommitmentComponent>
+                </InfoContainer>
                 <SigneeOneSignatureComponent>
                     <SigneeOneSignatureImg
                         src={document.signeeOneSignature_image}

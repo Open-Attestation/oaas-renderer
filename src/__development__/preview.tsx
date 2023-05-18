@@ -287,7 +287,6 @@ export const App: React.FunctionComponent<AppProps> = ({
                             onConnected={fn}
                             style={{
                                 margin: 'auto',
-                                maxWidth: '1120px',
                                 border: '0',
                                 width: '100%',
                                 height: `${height}px`,

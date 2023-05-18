@@ -2,4 +2,4 @@
   publish = "build/"
 
   # Default build command.
-  command = "export REACT_APP_RENDERER_VERSION=govtech-digital-academy_v0.0.1; CI=false yarn build govtech-digital-academy"
+  command = "export REACT_APP_RENDERER_VERSION=govtech-digital-academy_v0.0.2; CI=false yarn build govtech-digital-academy"

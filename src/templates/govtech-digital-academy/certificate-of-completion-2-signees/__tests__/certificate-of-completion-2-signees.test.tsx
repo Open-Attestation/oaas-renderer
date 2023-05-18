@@ -32,72 +32,64 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
 
             .c1 {
               position: absolute;
-              width: 316px;
-              height: 54px;
-              top: 172px;
-              right: 190px;
-              font-family: 'Montserrat';
-              font-style: normal;
-              font-weight: 600;
-              font-size: 44px;
-              line-height: 54px;
-              text-align: center;
-              -webkit-letter-spacing: 0.048em;
-              -moz-letter-spacing: 0.048em;
-              -ms-letter-spacing: 0.048em;
-              letter-spacing: 0.048em;
-              color: #000000;
-            }
-
-            .c2 {
-              position: absolute;
-              width: 320px;
-              height: 39px;
-              top: 219px;
-              right: 188px;
-              font-family: 'Montserrat';
-              font-style: normal;
-              font-weight: 600;
-              font-size: 32px;
-              line-height: 39px;
-              text-align: center;
-              -webkit-letter-spacing: 0.05em;
-              -moz-letter-spacing: 0.05em;
-              -ms-letter-spacing: 0.05em;
-              letter-spacing: 0.05em;
-              color: #9c7945;
-            }
-
-            .c3 {
-              position: absolute;
-              width: 206px;
-              height: 18px;
-              top: 280px;
-              right: 246px;
+              width: 372px;
+              height: 66px;
+              left: 552.39px;
+              top: 185.43px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 700;
-              font-size: 15px;
-              line-height: 18px;
-              text-align: center;
+              font-size: 54px;
+              line-height: 66px;
               -webkit-letter-spacing: 0.01em;
               -moz-letter-spacing: 0.01em;
               -ms-letter-spacing: 0.01em;
               letter-spacing: 0.01em;
-              color: #a8a8a8;
+              text-align: center;
+              color: #2b2c2b;
+            }
+
+            .c2 {
+              position: absolute;
+              width: 364px;
+              height: 50px;
+              left: 556.32px;
+              top: 235.21px;
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 41px;
+              line-height: 50px;
+              text-align: center;
+              color: #9d7a45;
+            }
+
+            .c3 {
+              position: absolute;
+              width: 244px;
+              height: 22px;
+              left: 617.78px;
+              top: 317.19px;
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 22px;
+              color: #a9a8a8;
             }
 
             .c4 {
               position: absolute;
               width: 558px;
               height: 54px;
-              top: 350px;
+              top: 357px;
               right: 73px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 700;
               font-size: 24px;
-              line-height: 29px;
+              line-height: 110%;
+              text-align: center;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -119,52 +111,30 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
             .c5 {
               position: absolute;
               width: 558px;
-              height: 150px;
-              top: 427px;
-              right: 73px;
+              left: 463px;
+              top: 420px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 400;
-              font-size: 16px;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
+              font-size: 17px;
+              line-height: 125%;
               text-align: center;
+              -webkit-letter-spacing: -0.01em;
+              -moz-letter-spacing: -0.01em;
+              -ms-letter-spacing: -0.01em;
+              letter-spacing: -0.01em;
+              color: #2b2c2b;
             }
 
             .c6 {
-              position: absolute;
-              width: 558px;
-              height: 68px;
-              top: 448px;
-              right: 73px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 600;
-              font-size: 16px;
+              padding: 14px 0;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
               text-align: center;
               color: #000000;
             }
@@ -173,12 +143,13 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               position: absolute;
               width: 259px;
               height: 59px;
-              top: 678px;
+              top: 677.36px;
               right: 367px;
               font-family: 'Montserrat';
               font-style: normal;
-              font-weight: 400;
-              font-size: 14px;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 110%;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -191,30 +162,29 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               -ms-flex-align: center;
               align-items: center;
               text-align: center;
+              -webkit-letter-spacing: -0.01em;
+              -moz-letter-spacing: -0.01em;
+              -ms-letter-spacing: -0.01em;
+              letter-spacing: -0.01em;
             }
 
             .c12 {
               position: absolute;
               width: 259px;
-              height: 59px;
-              top: 678px;
-              right: 64px;
+              height: 51px;
+              left: 771.84px;
+              top: 677.36px;
               font-family: 'Montserrat';
               font-style: normal;
-              font-weight: 400;
-              font-size: 14px;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 110%;
               text-align: center;
+              -webkit-letter-spacing: -0.01em;
+              -moz-letter-spacing: -0.01em;
+              -ms-letter-spacing: -0.01em;
+              letter-spacing: -0.01em;
+              color: #000000;
             }
 
             .c7 {
@@ -319,22 +289,25 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               <div
                 className="c5"
               >
-                for achieving the assesment requirements and learnings of
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                Your commitment to continuing professional development has
-                <br />
-                helped advance digital transformation across and beyond the
-                <br />
-                Public Service.
-              </div>
-              <div
-                className="c6"
-              >
-                 Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop
+                <div
+                  className=""
+                >
+                  for achieving the assesment requirements and learnings of
+                </div>
+                <div
+                  className="c6"
+                >
+                   Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop
+                </div>
+                <div
+                  className=""
+                >
+                  Your commitment to continuing professional development has
+                  <br />
+                  helped advance digital transformation across and beyond the
+                  <br />
+                  Public Service.
+                </div>
               </div>
               <div
                 className="c7"
