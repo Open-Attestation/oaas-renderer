@@ -126,7 +126,7 @@ export const SigneeOneDetailsComponent = styled.div`
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 110%;
     display: flex;
     flex-direction: column;
@@ -144,7 +144,7 @@ export const SigneeTwoDetailsComponent = styled.div`
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 110%;
 
     text-align: center;

@@ -148,7 +148,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 500;
-              font-size: 15px;
+              font-size: 12px;
               line-height: 110%;
               display: -webkit-box;
               display: -webkit-flex;
@@ -177,7 +177,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 500;
-              font-size: 15px;
+              font-size: 12px;
               line-height: 110%;
               text-align: center;
               -webkit-letter-spacing: -0.01em;
