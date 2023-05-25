@@ -131,10 +131,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               font-style: normal;
               font-weight: 600;
               padding: 14px 0;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
+              display: block;
               text-align: center;
               color: #000000;
             }
@@ -292,7 +289,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
                 <div
                   className=""
                 >
-                  for achieving the assesment requirements and learnings of
+                  for achieving the assessment requirements and learnings of
                 </div>
                 <div
                   className="c6"

@@ -112,7 +112,7 @@ export const ProgrammeComponent = styled.div`
     font-style: normal;
     font-weight: 600;
     padding: 14px 0;
-    display: flex;
+    display: block;
     text-align: center;
     color: #000000;
 `
