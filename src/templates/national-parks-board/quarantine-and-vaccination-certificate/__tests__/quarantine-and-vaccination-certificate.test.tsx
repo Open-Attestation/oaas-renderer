@@ -334,12 +334,12 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                       <div
                         className="c9"
                       >
-                        Date of Birth:
+                        Month/Year of Birth:
                       </div>
                       <div
                         className="c10"
                       >
-                        14 October 2021
+                        December 2023
                       </div>
                     </div>
                     <div
@@ -615,7 +615,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                             url: 'http://localhost:3000',
                         },
                         animalName: 'KOBE',
-                        birthDate: '2021-10-14',
+                        monthYearOfBirth: '12-2023',
                         species: 'Dog',
                         breed: 'Shiba Inu',
                         colour: 'White',
@@ -663,8 +663,8 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
         describe('non quarentine dates into something like 14 October 2021 format', () => {
             test('birthdate', () => {
                 renderTemplate()
-                expect(screen.queryByText('2021-10-14')).toBeFalsy()
-                expect(screen.getByText('14 October 2021')).toBeTruthy()
+                expect(screen.queryByText('12-2023')).toBeFalsy()
+                expect(screen.getByText('December 2023')).toBeTruthy()
             })
 
             test('date of vaccination', () => {

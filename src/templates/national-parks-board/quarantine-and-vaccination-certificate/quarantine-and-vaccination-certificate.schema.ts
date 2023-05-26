@@ -14,7 +14,7 @@ export default {
         'microchipNumber',
         'species',
         'breed',
-        'birthDate',
+        'monthYearOfBirth',
         'sex',
         'colour',
         'exportCountry',
@@ -29,7 +29,12 @@ export default {
         ),
         species: makeRequiredString('Species of animal', 'Dog'),
         breed: makeRequiredString('Breed of animal', 'Shiba Inu'),
-        birthDate: makeDateType('Date of birth of animal', '2021-10-14'),
+        monthYearOfBirth: {
+            type: 'string',
+            description: 'Birth month and year of the animal',
+            examples: ['12-2023'],
+            format: 'MM-YYYY',
+        },
         sex: makeEnumString(
             'Sex of animal',
             ['male', 'female'] as const,

@@ -99,6 +99,17 @@ const formatDate = (dateStr: string, full = false) =>
     // full -> 10 October 2021
     DateTime.fromISO(dateStr).toFormat(!full ? 'dd/MM/yyyy' : 'dd LLLL yyyy')
 
+const formatBirthDate = (dateStr: string) => {
+    const year = parseInt(dateStr.split('-')[1])
+    const month = parseInt(dateStr.split('-')[0])
+    const date = new Date(year, month - 1)
+
+    return date.toLocaleDateString('en-GB', {
+        month: 'long',
+        year: 'numeric',
+    })
+}
+
 export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: FunctionComponent<
     TemplateProps<NationalParksBoardQuarantineAndVaccinationCertificateOaDoc> & {
         className?: string
@@ -145,9 +156,9 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                                 <Col2>{document.breed}</Col2>
                             </DetailsFlex>
                             <DetailsFlex>
-                                <Col1>Date of Birth:</Col1>
+                                <Col1>Month/Year of Birth:</Col1>
                                 <Col2>
-                                    {formatDate(document.birthDate, true)}
+                                    {formatBirthDate(document.monthYearOfBirth)}
                                 </Col2>
                             </DetailsFlex>
                             <DetailsFlex>

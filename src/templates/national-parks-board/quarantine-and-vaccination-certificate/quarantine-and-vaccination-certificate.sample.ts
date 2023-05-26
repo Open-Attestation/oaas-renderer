@@ -9,7 +9,7 @@ export const sample: NationalParksBoardQuarantineAndVaccinationCertificateOaDoc 
             url: 'http://localhost:3000',
         },
         animalName: 'KOBE',
-        birthDate: '2021-10-14',
+        monthYearOfBirth: '12-2023',
         species: 'Dog',
         breed: 'Shiba Inu',
         colour: 'White',
