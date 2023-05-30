@@ -134,6 +134,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               display: block;
               text-align: center;
               color: #000000;
+              white-space: pre-line;
             }
 
             .c9 {
@@ -294,7 +295,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
                 <div
                   className="c6"
                 >
-                   Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop
+                  Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop
                 </div>
                 <div
                   className=""

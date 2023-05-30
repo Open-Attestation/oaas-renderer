@@ -115,6 +115,7 @@ export const ProgrammeComponent = styled.div`
     display: block;
     text-align: center;
     color: #000000;
+    white-space: pre-line;
 `
 export const SigneeOneDetailsComponent = styled.div`
     position: absolute;
