@@ -7,7 +7,7 @@
         "microchipNumber",
         "species",
         "breed",
-        "birthDate",
+        "monthYearOfBirth",
         "sex",
         "colour",
         "exportCountry",
@@ -39,11 +39,11 @@
             "examples": ["Shiba Inu"],
             "minLength": 1
         },
-        "birthDate": {
+        "monthYearOfBirth": {
             "type": "string",
-            "description": "Date of birth of animal",
-            "examples": ["2021-10-14"],
-            "format": "date"
+            "description": "Birth month and year of the animal",
+            "examples": ["12-2023"],
+            "format": "MM-YYYY"
         },
         "sex": {
             "type": "string",

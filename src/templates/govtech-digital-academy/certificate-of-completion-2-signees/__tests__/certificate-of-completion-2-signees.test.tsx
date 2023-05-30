@@ -289,7 +289,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
                 <div
                   className=""
                 >
-                  for achieving the assessment requirements and learnings of
+                  for achieving the requirements and learnings of
                 </div>
                 <div
                   className="c6"

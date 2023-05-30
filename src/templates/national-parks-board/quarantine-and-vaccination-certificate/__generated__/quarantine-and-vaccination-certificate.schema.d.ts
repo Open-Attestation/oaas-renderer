@@ -23,9 +23,9 @@ export interface NationalParksBoardQuarantineAndVaccinationCertificate {
      */
     breed: string
     /**
-     * Date of birth of animal
+     * Birth month and year of the animal
      */
-    birthDate: string
+    monthYearOfBirth: string
     /**
      * Sex of animal
      */

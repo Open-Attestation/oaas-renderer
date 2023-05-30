@@ -57,8 +57,7 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
                 <NameComponent>{name}</NameComponent>
                 <InfoContainer>
                     <ForAchievingComponent>
-                        for achieving the assessment requirements and learnings
-                        of
+                        for achieving the requirements and learnings of
                     </ForAchievingComponent>
                     <ProgrammeComponent>
                         {document.programmeTitle}
