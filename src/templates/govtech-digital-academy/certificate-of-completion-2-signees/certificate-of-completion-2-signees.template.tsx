@@ -36,6 +36,7 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
         document.issueDate,
         document.issueDate
     )
+    const programmeTitle = decodeURIComponent(document.programmeTitle)
     return (
         <>
             <Helmet>
@@ -59,9 +60,7 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
                     <ForAchievingComponent>
                         for achieving the requirements and learnings of
                     </ForAchievingComponent>
-                    <ProgrammeComponent>
-                        {document.programmeTitle}
-                    </ProgrammeComponent>
+                    <ProgrammeComponent>{programmeTitle}</ProgrammeComponent>
                     <YourCommitmentComponent>
                         Your commitment to continuing professional development
                         has
