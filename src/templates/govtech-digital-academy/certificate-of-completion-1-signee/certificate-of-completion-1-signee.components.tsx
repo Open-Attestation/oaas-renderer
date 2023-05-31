@@ -101,29 +101,11 @@ export const ProgrammeComponent = styled.div`
     color: #000000;
     white-space: pre-line;
 `
-export const SigneeOneDetailsComponent = styled.div`
-    position: absolute;
-    width: 259px;
-    height: 59px;
-    top: 677.36px;
-    right: 367px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 110%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.01em;
-`
-export const SigneeTwoDetailsComponent = styled.div`
+export const SigneeDetailsComponent = styled.div`
     position: absolute;
     width: 259px;
     height: 51px;
-    left: 771.84px;
+    left: 610.84px;
     top: 677.36px;
 
     font-family: 'Montserrat';
@@ -137,36 +119,19 @@ export const SigneeTwoDetailsComponent = styled.div`
 
     color: #000000;
 `
-export const SigneeOneSignatureComponent = styled.div`
+export const SigneeSignatureComponent = styled.div`
     position: absolute;
     width: 259px;
     height: 85px;
     top: 588px;
-    right: 367px;
+    right: 224px;
 
     text-align: center;
     align-items: flex-end;
     justify-content: center;
     display: flex;
 `
-export const SigneeOneSignatureImg = styled.img`
-    display: block;
-    max-width: 259px;
-    max-height: 85px;
-`
-export const SigneeTwoSignatureComponent = styled.div`
-    position: absolute;
-    width: 259px;
-    height: 85px;
-    top: 588px;
-    right: 64px;
-
-    text-align: center;
-    align-items: flex-end;
-    justify-content: center;
-    display: flex;
-`
-export const SigneeTwoSignatureImg = styled.img`
+export const SigneeSignatureImg = styled.img`
     display: block;
     max-width: 259px;
     max-height: 85px;
