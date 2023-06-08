@@ -41,7 +41,7 @@ describe('NycBclsAedTemplate', () => {
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
-              width: 500px;
+              width: auto;
               -webkit-flex-direction: column;
               -ms-flex-direction: column;
               flex-direction: column;
@@ -263,11 +263,16 @@ describe('NycBclsAedTemplate', () => {
             .c2 {
               position: relative;
               width: 500px;
+              height: 350px;
             }
 
-            .c2 > *:first-child {
+            .c2 .card-face {
+              width: 500px;
+              height: 350px;
+            }
+
+            .c2 .card-face:first-child {
               page-break-after: always;
-              z-index: 1;
             }
 
             .c23 {
@@ -288,10 +293,10 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c4 {
+              width: calc(100% - 1px);
+              height: calc(100% - 1px);
               background: white;
               position: relative;
-              width: 500px;
-              height: 350px;
               padding: 24px 24px 8px 24px;
               box-sizing: border-box;
               border: 1px solid #ccc;
@@ -301,10 +306,10 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c13 {
+              width: calc(100% - 1px);
+              height: calc(100% - 1px);
               background: white;
               position: relative;
-              width: 500px;
-              height: 350px;
               padding: 56px 24px 4px 24px;
               box-sizing: border-box;
               border: 1px solid #ccc;
@@ -327,9 +332,6 @@ describe('NycBclsAedTemplate', () => {
                 -webkit-transform-style: preserve-3d;
                 -ms-transform-style: preserve-3d;
                 transform-style: preserve-3d;
-                -webkit-transform: rotateY(0deg);
-                -ms-transform: rotateY(0deg);
-                transform: rotateY(0deg);
                 -webkit-transition: -webkit-transform 0.5s ease-in-out 0s;
                 -webkit-transition: transform 0.5s ease-in-out 0s;
                 transition: transform 0.5s ease-in-out 0s;
@@ -342,15 +344,21 @@ describe('NycBclsAedTemplate', () => {
                 transform: rotateY(180deg);
               }
 
-              .c2 > *:last-child {
+              .c2 .card-face {
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                -webkit-transform: scaleX(-1) translateZ(-1px);
-                -ms-transform: scaleX(-1) translateZ(-1px);
-                transform: scaleX(-1) translateZ(-1px);
+                -webkit-backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+              }
+
+              .c2 .card-face:last-child {
+                -webkit-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                transform: rotateY(180deg);
               }
             }
 
@@ -367,7 +375,9 @@ describe('NycBclsAedTemplate', () => {
                 className="c2"
                 onClick={[Function]}
               >
-                <div>
+                <div
+                  className="card-face"
+                >
                   <div
                     className="c3 c4"
                   >
@@ -414,7 +424,9 @@ describe('NycBclsAedTemplate', () => {
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="card-face"
+                >
                   <div
                     className="c3 c13"
                   >

@@ -8,6 +8,7 @@ describe('FlippableCard', () => {
                 front="i am the front of the card"
                 back="i am the back of the card"
                 widthInPx={500}
+                heightInPx={500}
             />
         )
 
