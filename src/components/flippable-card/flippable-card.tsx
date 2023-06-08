@@ -13,6 +13,7 @@ const Root = styled.div<{
     > * {
         :first-child {
             page-break-after: always;
+            z-index: 1;
         }
     }
 

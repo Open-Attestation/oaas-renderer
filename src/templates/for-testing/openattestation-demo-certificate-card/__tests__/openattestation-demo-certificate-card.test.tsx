@@ -193,6 +193,7 @@ describe('ForTestingOpenattestationDemoCertificateCardTemplate', () => {
 
             .c2 > *:first-child {
               page-break-after: always;
+              z-index: 1;
             }
 
             .c8 {

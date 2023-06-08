@@ -266,6 +266,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
 
             .c2 > *:first-child {
               page-break-after: always;
+              z-index: 1;
             }
 
             .c23 {

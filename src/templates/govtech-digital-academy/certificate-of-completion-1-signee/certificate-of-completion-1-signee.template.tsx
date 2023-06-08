@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { GovtechDigitalAcademyCertificateOfCompletion_2SigneesOaDoc } from './certificate-of-completion-2-signees.types'
+import { GovtechDigitalAcademyCertificateOfCompletion_1SigneeOaDoc } from './certificate-of-completion-1-signee.types'
 import { Helmet } from 'react-helmet-async'
 import { A4Landscape } from 'components/paper-size/a4-landscape'
-import landscapeBg from '../common/assets/COC_2sign_150dpi.png'
+import landscapeBg from '../common/assets/COC_1sign_150dpi.png'
 import {
     CertificateComponent,
     DateOfIssueComponent,
@@ -13,19 +13,16 @@ import {
     OfCompletionComponent,
     ProgrammeComponent,
     ProudlyPresentedComponent,
-    SigneeOneDetailsComponent,
-    SigneeOneSignatureComponent,
-    SigneeOneSignatureImg,
-    SigneeTwoDetailsComponent,
-    SigneeTwoSignatureComponent,
-    SigneeTwoSignatureImg,
+    SigneeDetailsComponent,
+    SigneeSignatureComponent,
+    SigneeSignatureImg,
     YourCommitmentComponent,
-} from './certificate-of-completion-2-signees.components'
+} from './certificate-of-completion-1-signee.components'
 import imagesMap from '../common/assets/__generated__/images-map'
 import { formatCourseDatefor } from '../common/utils'
 
-export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: FunctionComponent<
-    TemplateProps<GovtechDigitalAcademyCertificateOfCompletion_2SigneesOaDoc> & {
+export const GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate: FunctionComponent<
+    TemplateProps<GovtechDigitalAcademyCertificateOfCompletion_1SigneeOaDoc> & {
         className?: string
     }
 > = ({ document, className = '' }) => {
@@ -72,32 +69,19 @@ export const GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate: Func
                         Public Service.
                     </YourCommitmentComponent>
                 </InfoContainer>
-                <SigneeOneSignatureComponent>
-                    <SigneeOneSignatureImg
-                        src={document.signeeOneSignature_image}
-                        alt="Signature of signee one"
-                    />
-                </SigneeOneSignatureComponent>
-                <SigneeOneDetailsComponent>
-                    {document.signeeOneName}, {document.signeeOneDesignation}
-                    <br />
-                    {document.signeeOneDivision}
-                    <br />
-                    {document.signeeOneOrganisation}
-                </SigneeOneDetailsComponent>
-                <SigneeTwoSignatureComponent>
-                    <SigneeTwoSignatureImg
-                        src={`${imagesMap[document.signeeTwoSignature]}`}
+                <SigneeSignatureComponent>
+                    <SigneeSignatureImg
+                        src={`${imagesMap[document.signeeSignature]}`}
                         alt="Signature of signee two"
                     />
-                </SigneeTwoSignatureComponent>
-                <SigneeTwoDetailsComponent>
-                    {document.signeeTwoName}, {document.signeeTwoDesignation}
+                </SigneeSignatureComponent>
+                <SigneeDetailsComponent>
+                    {document.signeeName}, {document.signeeDivision}
                     <br />
-                    {document.signeeTwoDivision}
+                    {document.signeeDivision}
                     <br />
-                    {document.signeeTwoOrganisation}
-                </SigneeTwoDetailsComponent>
+                    {document.signeeOrganisation}
+                </SigneeDetailsComponent>
                 <DateOfIssueComponent>
                     Date of Issue: {issueDate}
                 </DateOfIssueComponent>

@@ -12,7 +12,7 @@ export const sample: GovtechDigitalAcademyCertificateOfCompletion_2SigneesOaDoc 
         },
         name: 'THONG YONG JIE ANDRE',
         programmeTitle:
-            ' Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop',
+            'Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop',
         issueDate: '2022-05-10',
         signeeOneName: 'Betsie Chacko',
         signeeOneDesignation: 'Associate Director',
