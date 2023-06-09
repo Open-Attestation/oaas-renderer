@@ -45,10 +45,9 @@ export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
             <Root $justifyContent="center" $vertical>
                 <FlippableCard
                     widthInPx={CERT_WIDTH}
+                    heightInPx={CERT_HEIGHT}
                     front={
                         <CardFace
-                            $width={`${CERT_WIDTH}px`}
-                            $height={`${CERT_HEIGHT}px`}
                             $vertical
                             $justifyContent="space-between"
                             $padding="24px 24px 8px 24px"
@@ -108,8 +107,6 @@ export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
                     }
                     back={
                         <CardFace
-                            $width={`${CERT_WIDTH}px`}
-                            $height={`${CERT_HEIGHT}px`}
                             $vertical
                             $justifyContent="space-between"
                             $padding="56px 24px 4px 24px"

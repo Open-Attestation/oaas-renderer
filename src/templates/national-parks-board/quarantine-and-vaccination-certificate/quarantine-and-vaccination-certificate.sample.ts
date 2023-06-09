@@ -9,13 +9,13 @@ export const sample: NationalParksBoardQuarantineAndVaccinationCertificateOaDoc 
             url: 'http://localhost:3000',
         },
         animalName: 'KOBE',
-        birthDate: '2021-10-14',
+        monthYearOfBirth: '12-2023',
         species: 'Dog',
         breed: 'Shiba Inu',
         colour: 'White',
         exportCountry: 'China',
         microchipNumber: '900 111 881 990 863',
-        ownerName: 'CHAN ZI ANG',
+        name: 'CHAN ZI ANG',
         quarantine: {
             endDate: '2023-12-31',
             startDate: '2023-12-20',
@@ -35,6 +35,13 @@ export const sample: NationalParksBoardQuarantineAndVaccinationCertificateOaDoc 
         issuers: [
             {
                 name: 'institute of blockchain',
+            },
+        ],
+        attachments: [
+            {
+                filename: 'qrpayload.txt',
+                type: 'text/plain',
+                data: 'aHR0cHM6Ly9hY3Rpb24ub3BlbmF0dGVzdGF0aW9uLmNvbS8/cT0lN0IlMjJ0eXBlJTIyOiUyMkRPQ1VNRU5UJTIyLCUyMnBheWxvYWQlMjI6JTdCJTIydXJpJTIyOiUyMmh0dHBzOi8vdHJhbnNpZW50LXN0b3JhZ2UtZGV2Lm9hLmdvdi5zZy9uYXRpb25hbC1wYXJrcy1ib2FyZC9xdWFyYW50aW5lLWFuZC12YWNjaW5hdGlvbi1jZXJ0aWZpY2F0ZS81Y2VkNjZiYi0wZjYyLTQ1YTMtOTgyYy0xNGY1MzE1NmFjOTQlMjIsJTIycGVybWl0dGVkQWN0aW9ucyUyMjolNUIlMjJWSUVXJTIyJTVELCUyMnJlZGlyZWN0JTIyOiUyMmh0dHBzOi8vZGV2LnZlcmlmeS5nb3Yuc2cvdmVyaWZ5JTIyJTdEJTdEIyU3QiUyMmtleSUyMjolMjJhYzdlNjRhOTMzZmM0MTRhNTViNjRjMzFkNzRkOGRjYWQzNDIzZmU0M2FkM2E3ODg2MWU3NzgzYTU3M2YxYzUzJTIyJTdE',
             },
         ],
     }
