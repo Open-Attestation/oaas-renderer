@@ -76,7 +76,7 @@ export const GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate: Funct
                     />
                 </SigneeSignatureComponent>
                 <SigneeDetailsComponent>
-                    {document.signeeName}, {document.signeeDivision}
+                    {document.signeeName}, {document.signeeDesignation}
                     <br />
                     {document.signeeDivision}
                     <br />

@@ -10,7 +10,7 @@ export const sample: NationalParksBoardQuarantineAndVaccinationCertificateOaDoc 
         },
         animalName: 'KOBE',
         monthYearOfBirth: '12-2023',
-        species: 'Dog',
+        species: 'CANINE',
         breed: 'Shiba Inu',
         colour: 'White',
         exportCountry: 'China',
@@ -21,7 +21,7 @@ export const sample: NationalParksBoardQuarantineAndVaccinationCertificateOaDoc 
             startDate: '2023-12-20',
             numOfDays: 11,
         },
-        sex: 'male',
+        sex: 'MALE',
         rabiesVaccination: {
             manufacturer: 'MERIAL RABISIN R',
             batch: {

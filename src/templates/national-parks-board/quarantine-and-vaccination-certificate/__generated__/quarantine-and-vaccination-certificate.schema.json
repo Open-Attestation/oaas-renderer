@@ -30,8 +30,8 @@
         "species": {
             "type": "string",
             "description": "Species of animal",
-            "examples": ["Dog"],
-            "minLength": 1
+            "enum": ["CANINE", "FELINE"],
+            "examples": ["CANINE"]
         },
         "breed": {
             "type": "string",
@@ -48,8 +48,13 @@
         "sex": {
             "type": "string",
             "description": "Sex of animal",
-            "enum": ["male", "female"],
-            "examples": ["male"]
+            "enum": [
+                "MALE",
+                "MALE (NEUTERED)",
+                "FEMALE",
+                "FEMALE (STERILISED)"
+            ],
+            "examples": ["MALE"]
         },
         "colour": {
             "type": "string",
