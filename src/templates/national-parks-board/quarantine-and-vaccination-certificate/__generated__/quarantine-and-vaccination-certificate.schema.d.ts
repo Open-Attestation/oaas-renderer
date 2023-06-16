@@ -17,7 +17,7 @@ export interface NationalParksBoardQuarantineAndVaccinationCertificate {
     /**
      * Species of animal
      */
-    species: string
+    species: 'CANINE' | 'FELINE'
     /**
      * Breed of animal
      */
@@ -29,7 +29,7 @@ export interface NationalParksBoardQuarantineAndVaccinationCertificate {
     /**
      * Sex of animal
      */
-    sex: 'male' | 'female'
+    sex: 'MALE' | 'MALE (NEUTERED)' | 'FEMALE' | 'FEMALE (STERILISED)'
     /**
      * Color of animal
      */

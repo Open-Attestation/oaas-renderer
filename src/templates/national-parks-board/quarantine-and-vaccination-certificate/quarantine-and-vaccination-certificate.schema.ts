@@ -27,7 +27,11 @@ export default {
             'Microchip of animal',
             '900 111 881 990 863'
         ),
-        species: makeRequiredString('Species of animal', 'Dog'),
+        species: makeEnumString(
+            'Species of animal',
+            ['CANINE', 'FELINE'] as const,
+            'CANINE'
+        ),
         breed: makeRequiredString('Breed of animal', 'Shiba Inu'),
         monthYearOfBirth: {
             type: 'string',
@@ -37,8 +41,13 @@ export default {
         },
         sex: makeEnumString(
             'Sex of animal',
-            ['male', 'female'] as const,
-            'male'
+            [
+                'MALE',
+                'MALE (NEUTERED)',
+                'FEMALE',
+                'FEMALE (STERILISED)',
+            ] as const,
+            'MALE'
         ),
         colour: makeRequiredString('Color of animal', 'White'),
         exportCountry: makeRequiredString('Country of export', 'China'),

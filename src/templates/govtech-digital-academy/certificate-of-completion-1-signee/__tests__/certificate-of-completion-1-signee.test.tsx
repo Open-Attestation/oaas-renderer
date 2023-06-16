@@ -265,7 +265,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               >
                 Sahas Sankaran
                 , 
-                GovTech Digital Academy
+                Director
                 <br />
                 GovTech Digital Academy
                 <br />
