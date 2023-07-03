@@ -4,23 +4,23 @@ import { TemplateProps } from '@govtechsg/decentralized-renderer-react-component
 import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
 
-import { DateTime } from 'luxon'
-
 import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { formatCourseDatefor } from '../common/utils'
 
 export const NationalYouthCouncilGeneralCertificateTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilGeneralCertificateOaDoc> & {
         className?: string
     }
 > = ({ document, className = '' }) => {
-    const startDate = DateTime.fromISO(document.courseStartDate).toFormat(
-        'dd MMM yyyy'
+    const name = document.name.toUpperCase()
+    const courseTitle = document.courseTitle.toUpperCase()
+    const courseDate = formatCourseDatefor(
+        document.courseStartDate,
+        document.courseEndDate
     )
-    const endDate = DateTime.fromISO(document.courseEndDate).toFormat(
-        'dd MMM yyyy'
-    )
+
     return (
         <>
             <Helmet>
@@ -47,18 +47,16 @@ export const NationalYouthCouncilGeneralCertificateTemplate: FunctionComponent<
                         This is to certify that
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1}>
-                        {document.name}
+                        {name}
                     </Typography>
                     <Typography $size={'large'} $mt={1}>
                         has completed
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1}>
-                        {document.courseTitle}
+                        {courseTitle}
                     </Typography>
                     <Typography $size={'xlarge'} $bold $mt={1}>
-                        {startDate === endDate
-                            ? startDate
-                            : `${startDate} - ${endDate}`}
+                        {courseDate}
                     </Typography>
                 </FlexBox>
             </ObsCertMainPage>

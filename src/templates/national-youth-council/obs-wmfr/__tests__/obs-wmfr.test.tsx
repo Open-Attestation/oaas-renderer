@@ -19,9 +19,15 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
             .c2 {
               position: relative;
               width: 352px;
+              height: 230px;
             }
 
-            .c2 > *:first-child {
+            .c2 .card-face {
+              width: 352px;
+              height: 230px;
+            }
+
+            .c2 .card-face:first-child {
               page-break-after: always;
             }
 
@@ -44,26 +50,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               justify-content: center;
             }
 
-            .c3 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: 352px;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
-            .c15 {
+            .c14 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -82,12 +69,12 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               justify-content: center;
             }
 
-            .c14 {
+            .c13 {
               position: relative;
               width: 100%;
             }
 
-            .c16 {
+            .c15 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -95,15 +82,15 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               text-align: center;
             }
 
-            .c17 {
+            .c16 {
               font-family: Libre Franklin;
             }
 
-            .c4 {
+            .c3 {
+              width: calc(100% - 1px);
+              height: calc(100% - 1px);
               background: white;
               position: relative;
-              width: 352px;
-              height: 230px;
               padding: 16px;
               box-sizing: border-box;
               border: 1px solid #ccc;
@@ -116,7 +103,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               min-width: 500px;
             }
 
-            .c5 {
+            .c4 {
               max-width: 100%;
               height: auto;
               position: absolute;
@@ -125,7 +112,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               border: 1px solid #ccc;
             }
 
-            .c6 {
+            .c5 {
               position: absolute;
               top: 16px;
               width: 320px;
@@ -154,7 +141,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               color: #ffffff;
             }
 
-            .c7 {
+            .c6 {
               position: absolute;
               top: 108px;
               width: 314px;
@@ -183,7 +170,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               color: #ffffff;
             }
 
-            .c8 {
+            .c7 {
               position: absolute;
               bottom: 31px;
               right: 10px;
@@ -208,7 +195,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               color: #ffffff;
             }
 
-            .c9 {
+            .c8 {
               position: absolute;
               bottom: 10px;
               right: 10px;
@@ -233,7 +220,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               color: #ffffff;
             }
 
-            .c10 {
+            .c9 {
               position: absolute;
               bottom: 8px;
               left: 8px;
@@ -258,7 +245,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               color: #000000;
             }
 
-            .c11 {
+            .c10 {
               position: absolute;
               width: 352px;
               height: 115px;
@@ -278,7 +265,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               display: flex;
             }
 
-            .c12 {
+            .c11 {
               display: block;
               max-width: 162px;
               max-height: 89px;
@@ -286,7 +273,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               height: auto;
             }
 
-            .c13 {
+            .c12 {
               position: absolute;
               top: 117px;
               width: 336px;
@@ -324,9 +311,6 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                 -webkit-transform-style: preserve-3d;
                 -ms-transform-style: preserve-3d;
                 transform-style: preserve-3d;
-                -webkit-transform: rotateY(0deg);
-                -ms-transform: rotateY(0deg);
-                transform: rotateY(0deg);
                 -webkit-transition: -webkit-transform 0.5s ease-in-out 0s;
                 -webkit-transition: transform 0.5s ease-in-out 0s;
                 transition: transform 0.5s ease-in-out 0s;
@@ -339,20 +323,26 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                 transform: rotateY(180deg);
               }
 
-              .c2 > *:last-child {
+              .c2 .card-face {
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                -webkit-transform: scaleX(-1) translateZ(-1px);
-                -ms-transform: scaleX(-1) translateZ(-1px);
-                transform: scaleX(-1) translateZ(-1px);
+                -webkit-backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+              }
+
+              .c2 .card-face:last-child {
+                -webkit-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                transform: rotateY(180deg);
               }
             }
 
             @media print {
-              .c14 {
+              .c13 {
                 display: none;
               }
             }
@@ -364,21 +354,23 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                 className="c2"
                 onClick={[Function]}
               >
-                <div>
+                <div
+                  className="card-face"
+                >
                   <div
-                    className="c3 c4"
+                    className="c0 c3"
                   >
                     <img
-                      className="c5"
+                      className="c4"
                       src="obs-wmfr-front-bg.jpg"
                     />
                     <div
-                      className="c6"
+                      className="c5"
                     >
                       John Doe
                     </div>
                     <div
-                      className="c7"
+                      className="c6"
                     >
                       Successfully completed
                       <br />
@@ -387,44 +379,46 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                       (WMFR)
                     </div>
                     <div
-                      className="c8"
+                      className="c7"
                     >
                       S/N: 
                       OBSWMFR20XX/XXX
                     </div>
                     <div
-                      className="c9"
+                      className="c8"
                     >
                       DATE OF ISSUE: 
                       31/12/2022
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="card-face"
+                >
                   <div
-                    className="c3 c4"
+                    className="c0 c3"
                   >
                     <img
-                      className="c5"
+                      className="c4"
                       src="obs-wmfr-back-bg.png"
                     />
                     <div
-                      className="c10"
+                      className="c9"
                     >
                       Valid till 
                       30 Dec 2024
                     </div>
                     <div
-                      className="c11"
+                      className="c10"
                     >
                       <img
                         alt="Issuing officer signature"
-                        className="c12"
+                        className="c11"
                         src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
                       />
                     </div>
                     <div
-                      className="c13"
+                      className="c12"
                     >
                       Nicholas Conceicao
                       <br />
@@ -436,10 +430,10 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                 </div>
               </div>
               <div
-                className="c14"
+                className="c13"
               >
                 <div
-                  className="c15"
+                  className="c14"
                 >
                   <img
                     alt="card flip icon"
@@ -447,7 +441,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                     width="20"
                   />
                   <p
-                    className="c16 c17"
+                    className="c15 c16"
                   >
                     Click on the card to reveal the other side
                   </p>

@@ -40,7 +40,7 @@ describe('ForTestingOpenattestationDemoCertificateCardTemplate', () => {
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
-              width: 500px;
+              width: auto;
               -webkit-flex-direction: column;
               -ms-flex-direction: column;
               flex-direction: column;
@@ -143,6 +143,64 @@ describe('ForTestingOpenattestationDemoCertificateCardTemplate', () => {
               justify-content: center;
             }
 
+            .c4 {
+              width: calc(100% - 1px);
+              height: calc(100% - 1px);
+              background: white;
+              position: relative;
+              padding: 24px 24px 8px 24px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 16px;
+              z-index: 0;
+              -webkit-print-color-adjust: exact;
+            }
+
+            .c13 {
+              width: calc(100% - 1px);
+              height: calc(100% - 1px);
+              background: white;
+              position: relative;
+              padding: 56px 24px 4px 24px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 16px;
+              z-index: 0;
+              -webkit-print-color-adjust: exact;
+            }
+
+            .c18 {
+              position: relative;
+              width: 100%;
+            }
+
+            .c20 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-left: 8px;
+              text-align: center;
+            }
+
+            .c21 {
+              font-family: Libre Franklin;
+            }
+
+            .c2 {
+              position: relative;
+              width: 500px;
+              height: 350px;
+            }
+
+            .c2 .card-face {
+              width: 500px;
+              height: 350px;
+            }
+
+            .c2 .card-face:first-child {
+              page-break-after: always;
+            }
+
             .c8 {
               font-size: 20px;
               font-style: normal;
@@ -228,56 +286,10 @@ describe('ForTestingOpenattestationDemoCertificateCardTemplate', () => {
               min-width: 500px;
             }
 
-            .c2 {
-              position: relative;
-              width: 500px;
-            }
-
-            .c2 > *:first-child {
-              page-break-after: always;
-            }
-
-            .c18 {
-              position: relative;
-              width: 100%;
-            }
-
-            .c20 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-left: 8px;
-              text-align: center;
-            }
-
-            .c21 {
-              font-family: Libre Franklin;
-            }
-
-            .c4 {
-              background: white;
-              position: relative;
-              width: 500px;
-              height: 350px;
-              padding: 24px 24px 8px 24px;
-              box-sizing: border-box;
-              border: 1px solid #ccc;
-              border-radius: 16px;
-              z-index: 0;
-              -webkit-print-color-adjust: exact;
-            }
-
-            .c13 {
-              background: white;
-              position: relative;
-              width: 500px;
-              height: 350px;
-              padding: 56px 24px 4px 24px;
-              box-sizing: border-box;
-              border: 1px solid #ccc;
-              border-radius: 16px;
-              z-index: 0;
-              -webkit-print-color-adjust: exact;
+            @media print {
+              .c18 {
+                display: none;
+              }
             }
 
             @media not print {
@@ -285,9 +297,6 @@ describe('ForTestingOpenattestationDemoCertificateCardTemplate', () => {
                 -webkit-transform-style: preserve-3d;
                 -ms-transform-style: preserve-3d;
                 transform-style: preserve-3d;
-                -webkit-transform: rotateY(0deg);
-                -ms-transform: rotateY(0deg);
-                transform: rotateY(0deg);
                 -webkit-transition: -webkit-transform 0.5s ease-in-out 0s;
                 -webkit-transition: transform 0.5s ease-in-out 0s;
                 transition: transform 0.5s ease-in-out 0s;
@@ -300,21 +309,21 @@ describe('ForTestingOpenattestationDemoCertificateCardTemplate', () => {
                 transform: rotateY(180deg);
               }
 
-              .c2 > *:last-child {
+              .c2 .card-face {
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                -webkit-transform: scaleX(-1) translateZ(-1px);
-                -ms-transform: scaleX(-1) translateZ(-1px);
-                transform: scaleX(-1) translateZ(-1px);
+                -webkit-backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
               }
-            }
 
-            @media print {
-              .c18 {
-                display: none;
+              .c2 .card-face:last-child {
+                -webkit-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                transform: rotateY(180deg);
               }
             }
 
@@ -325,7 +334,9 @@ describe('ForTestingOpenattestationDemoCertificateCardTemplate', () => {
                 className="c2"
                 onClick={[Function]}
               >
-                <div>
+                <div
+                  className="card-face"
+                >
                   <div
                     className="c3 c4"
                     style={
@@ -377,7 +388,9 @@ describe('ForTestingOpenattestationDemoCertificateCardTemplate', () => {
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="card-face"
+                >
                   <div
                     className="c3 c13"
                   >

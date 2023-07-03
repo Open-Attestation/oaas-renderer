@@ -6,8 +6,16 @@ import fs from 'fs'
 import path from 'path'
 import { compileFromFile } from 'json-schema-to-typescript'
 
-const ajv = new Ajv()
+const ajv = new Ajv({
+    $data: true,
+})
 addFormats(ajv)
+
+// Define a custom format for MM-YYYY
+ajv.addFormat('MM-YYYY', {
+    type: 'string',
+    validate: /^(0[1-9]|10|11|12)-\d{4}$/, // Regular expression for MM-YYYY format
+})
 
 const GENERATED_FOLDER_NAME = '__generated__'
 const filenames = glob.sync('src/**/*.schema.ts')

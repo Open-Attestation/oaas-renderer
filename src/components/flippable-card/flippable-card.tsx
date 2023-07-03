@@ -4,21 +4,24 @@ import styled from 'styled-components'
 
 const Root = styled.div<{
     $widthInPx: number
+    $heightInPx: number
     $timeToFlipInSecs?: number
 }>`
     position: relative;
-
     width: ${({ $widthInPx }) => $widthInPx}px;
+    height: ${({ $heightInPx }) => $heightInPx}px;
 
-    > * {
+    .card-face {
         :first-child {
             page-break-after: always;
         }
+
+        width: ${({ $widthInPx }) => $widthInPx}px;
+        height: ${({ $heightInPx }) => $heightInPx}px;
     }
 
     @media not print {
         transform-style: preserve-3d;
-        transform: rotateY(0deg);
 
         transition: transform
             ${({ $timeToFlipInSecs }) => $timeToFlipInSecs ?? 0.5}s ease-in-out
@@ -30,14 +33,17 @@ const Root = styled.div<{
             transform: rotateY(180deg);
         }
 
-        > * {
+        .card-face {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+
             :last-child {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                transform: scaleX(-1) translateZ(-1px);
+                transform: rotateY(180deg);
             }
         }
     }
@@ -45,11 +51,13 @@ const Root = styled.div<{
 
 interface FlippableCardParams {
     widthInPx: number
+    heightInPx: number
     front: ReactNode
     back: ReactNode
 }
 export const FlippableCard: React.FC<FlippableCardParams> = ({
     widthInPx,
+    heightInPx,
     front,
     back,
 }) => {
@@ -62,11 +70,12 @@ export const FlippableCard: React.FC<FlippableCardParams> = ({
     return (
         <Root
             $widthInPx={widthInPx}
+            $heightInPx={heightInPx}
             className={flip ? 'flip' : ''}
             onClick={handleClick}
         >
-            <div>{front}</div>
-            <div>{back}</div>
+            <div className="card-face">{front}</div>
+            <div className="card-face">{back}</div>
         </Root>
     )
 }

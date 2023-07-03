@@ -46,13 +46,9 @@ export const NationalYouthCouncilObsWmfrTemplate: FunctionComponent<
             <Root $vertical>
                 <FlippableCard
                     widthInPx={CERT_WIDTH}
+                    heightInPx={CERT_HEIGHT}
                     front={
-                        <CardFace
-                            $width={`${CERT_WIDTH}px`}
-                            $height={`${CERT_HEIGHT}px`}
-                            $zIndex={-2}
-                            $vertical
-                        >
+                        <CardFace $zIndex={-2} $vertical>
                             <BackgroundImg
                                 src={backgroundImgFront}
                             ></BackgroundImg>
@@ -73,12 +69,7 @@ export const NationalYouthCouncilObsWmfrTemplate: FunctionComponent<
                         </CardFace>
                     }
                     back={
-                        <CardFace
-                            $width={`${CERT_WIDTH}px`}
-                            $height={`${CERT_HEIGHT}px`}
-                            $zIndex={-2}
-                            $vertical
-                        >
+                        <CardFace $zIndex={-2} $vertical>
                             <BackgroundImg
                                 src={backgroundImgBack}
                             ></BackgroundImg>

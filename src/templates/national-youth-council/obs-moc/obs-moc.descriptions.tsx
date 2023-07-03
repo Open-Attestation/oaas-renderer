@@ -8,7 +8,7 @@ export const descriptions: { [key: string]: JSX.Element } = {
                 National Outdoor Adventure Education Masterplan
             </Typography>
 
-            <Typography>
+            <Typography $size="large" $textAlign="justify">
                 The National Outdoor Adventure Education Masterplan is a joint
                 initiative by the Ministry of Education and Ministry of Culture,
                 Community and Youth to strengthen our youth's self-efficacy,
@@ -16,7 +16,7 @@ export const descriptions: { [key: string]: JSX.Element } = {
                 the future, the Masterplan aims to:
             </Typography>
 
-            <OrderedList>
+            <OrderedList $size="large">
                 <li>
                     Build <b>confidence</b> and <b>resilience</b> through rugged
                     outdoor living
@@ -35,7 +35,7 @@ export const descriptions: { [key: string]: JSX.Element } = {
                 </li>
             </OrderedList>
 
-            <Typography>
+            <Typography $size="large" $textAlign="justify">
                 Under the Masterplan, youths have the opportunity to attend at
                 least three cohort camps from primary to secondary school. The
                 youth's outdoor education experience will culminate in an

@@ -1,25 +1,21 @@
 import './styles.css'
 
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
+import { CardFace } from 'components/card-face'
+import { FlexBox } from 'components/flexbox'
+import { FlipInstruction } from 'components/flippable-card/flip-instruction'
+import { FlippableCard } from 'components/flippable-card/flippable-card'
 import { DateTime } from 'luxon'
 import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
 
+import obsLogoSrc from '../common/assets/oa.svg'
 import {
     FooterContainer,
     LogoImage,
-    SignatureImage,
-    Typography,
     Root,
+    Typography,
 } from './openattestation-demo-certificate-card.components'
-
-import { Helmet } from 'react-helmet-async'
-import { FlippableCard } from 'components/flippable-card/flippable-card'
-import { FlipInstruction } from 'components/flippable-card/flip-instruction'
-import { CardFace } from 'components/card-face'
-import { FlexBox } from 'components/flexbox'
-import { Line } from 'components/line'
-
-import obsLogoSrc from '../common/assets/oa.svg'
 import { ForTestingOpenattestationDemoCertificateCardOaDoc } from './openattestation-demo-certificate-card.types'
 
 const CERT_WIDTH = 500
@@ -46,10 +42,9 @@ export const ForTestingOpenattestationDemoCertificateCardTemplate: FunctionCompo
             <Root $justifyContent="center" $vertical>
                 <FlippableCard
                     widthInPx={CERT_WIDTH}
+                    heightInPx={CERT_HEIGHT}
                     front={
                         <CardFace
-                            $width={`${CERT_WIDTH}px`}
-                            $height={`${CERT_HEIGHT}px`}
                             $vertical
                             $justifyContent="space-between"
                             $padding="24px 24px 8px 24px"
@@ -108,8 +103,6 @@ export const ForTestingOpenattestationDemoCertificateCardTemplate: FunctionCompo
                     }
                     back={
                         <CardFace
-                            $width={`${CERT_WIDTH}px`}
-                            $height={`${CERT_HEIGHT}px`}
                             $vertical
                             $justifyContent="space-between"
                             $padding="56px 24px 4px 24px"

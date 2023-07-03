@@ -3,7 +3,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import mainBg from '../assets/background.svg'
-import { SignatureComponent, SignatureComponentProps } from './signature'
 
 const Header = styled.div`
     position: relative;
@@ -21,13 +20,6 @@ const Body = styled.div`
     height: ${392 - paddingBody * 2}px;
     padding-top: ${paddingBody}px;
     padding-bottom: ${paddingBody}px;
-`
-const Footer = styled.div`
-    position: relative;
-    display: flex;
-    height: 214px;
-    justify-content: space-between;
-    align-items: start;
 `
 
 export const OaCertMainPage: React.FC<{

@@ -18,6 +18,7 @@ export const NationalYouthCouncilBitSummaryCertificateTemplate: FunctionComponen
         className?: string
     }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const issueDate = DateTime.fromISO(document.issueDate).toFormat(
         'dd MMMM yyyy'
     )
@@ -60,7 +61,7 @@ export const NationalYouthCouncilBitSummaryCertificateTemplate: FunctionComponen
                                 This is to certify that
                             </Typography>
                             <Typography $size={'xlarge'} $m={0} $bold>
-                                {document.name}
+                                {name}
                             </Typography>
                             <Typography $size="medium" $m={0}>
                                 has successfully completed the

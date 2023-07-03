@@ -1,5 +1,6 @@
 import { JSONSchema } from 'json-schema-to-typescript'
 import * as commonAssets from '../common/assets/__generated__/images-enum-values'
+import { makeEnumString } from 'utils/json-schema-utils'
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
@@ -31,18 +32,16 @@ export default {
             description: 'Course start date',
             examples: ['2022-11-30'],
         },
-        organisationRepName: {
-            type: 'string',
-            description: 'Name of the organisation representation',
-            examples: ['Nicholas Conceicao'],
-            minLength: 1,
-        },
-        organisationRepTitle: {
-            type: 'string',
-            description: 'Title of the organisation representation',
-            examples: ['Executive Director'],
-            minLength: 1,
-        },
+        organisationRepName: makeEnumString(
+            'Name of the organisation representation',
+            ['Nicholas Conceicao'] as const,
+            'Nicholas Conceicao'
+        ),
+        organisationRepTitle: makeEnumString(
+            'Title of the organisation representation',
+            ['Executive Director'] as const,
+            'Executive Director'
+        ),
         organisationRepSignature: {
             type: 'string',
             description:

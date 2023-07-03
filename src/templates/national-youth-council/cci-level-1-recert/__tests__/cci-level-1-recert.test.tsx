@@ -325,7 +325,7 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
                     <p
                       className="c8 c5"
                     >
-                      John Doe
+                      JOHN DOE
                     </p>
                     <p
                       className="c7 c5"
@@ -335,7 +335,7 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
                     <p
                       className="c8 c5"
                     >
-                      Challenge Course Instructor (Level 1 Recertification)
+                      CHALLENGE COURSE INSTRUCTOR (LEVEL 1 RECERTIFICATION)
                     </p>
                     <p
                       className="c7 c5"
@@ -365,12 +365,6 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
                     <p
                       className="c10 c5"
                     >
-                      Course Date: 
-                      30 November 2022
-                    </p>
-                    <p
-                      className="c11 c5"
-                    >
                       Certificate No.: 
                       1
                     </p>
@@ -378,7 +372,7 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
                       className="c11 c5"
                     >
                       Certificate is valid till 
-                      30 Dec 2023
+                      30 December 2023
                     </p>
                   </div>
                 </div>
@@ -728,6 +722,6 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('John Doe')).toBeTruthy()
+        expect(screen.getByText('JOHN DOE')).toBeTruthy()
     })
 })
