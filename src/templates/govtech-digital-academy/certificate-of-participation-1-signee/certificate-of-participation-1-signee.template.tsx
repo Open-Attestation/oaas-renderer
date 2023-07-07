@@ -3,7 +3,7 @@ import { TemplateProps } from '@govtechsg/decentralized-renderer-react-component
 import { GovtechDigitalAcademyCertificateOfParticipation_1SigneeOaDoc } from './certificate-of-participation-1-signee.types'
 import { Helmet } from 'react-helmet-async'
 import { A4Landscape } from 'components/paper-size/a4-landscape'
-import landscapeBg from '../common/assets/COC_1sign_150dpi.png'
+import landscapeBg from '../common/assets/COP_1sign_150dpi.png'
 import {
     CertificateComponent,
     DateOfIssueComponent,

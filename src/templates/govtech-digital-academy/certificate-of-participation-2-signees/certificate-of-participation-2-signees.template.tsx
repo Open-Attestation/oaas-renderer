@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async'
 import imagesMap from '../common/assets/__generated__/images-map'
 import { formatCourseDatefor } from '../common/utils'
 import { A4Landscape } from 'components/paper-size/a4-landscape'
-import landscapeBg from '../common/assets/COC_2sign_150dpi.png'
+import landscapeBg from '../common/assets/COP_2sign_150dpi.png'
 import {
     CertificateComponent,
     DateOfIssueComponent,

@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const CertificateComponent = styled.div`
     position: absolute;
-    width: 372px;
+    width: 380px;
     height: 66px;
-    left: 552.39px;
-    top: 185.43px;
+    left: 548px;
+    top: 184px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -21,15 +21,15 @@ export const CertificateComponent = styled.div`
 
 export const OfParticipationComponent = styled.div`
     position: absolute;
-    width: 409px;
-    height: 50px;
-    left: 556.32px;
-    top: 235.21px;
+    width: 388px;
+    height: 53px;
+    left: 545px;
+    top: 236px;
 
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
-    font-size: 41px;
+    font-weight: 600;
+    font-size: 36px;
     line-height: 50px;
     /* identical to box height */
 
@@ -41,8 +41,8 @@ export const ProudlyPresentedComponent = styled.div`
     position: absolute;
     width: 244px;
     height: 22px;
-    left: 617.78px;
-    top: 317.19px;
+    left: 617px;
+    top: 316px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -81,7 +81,7 @@ export const InfoContainer = styled.div`
 
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 17px;
     line-height: 125%;
 
@@ -135,33 +135,41 @@ export const SigneeSignatureImg = styled.img`
     max-width: 259px;
     max-height: 85px;
 `
-export const PartnerLogoComponent = styled.div`
+export const PartnerComponent = styled.div`
     position: absolute;
-    width: 320px;
-    height: 135px;
-    bottom: 43px;
-    left: 8px;
-
-    flex-direction: row;
-    align-items: flex-start;
-    display: flex;
-
-    background-color: lightblue;
-`
-export const PartnerLogoImg = styled.img`
-    display: block;
-    max-width: 259px;
-    max-height: 85px;
-`
-export const DateOfIssueComponent = styled.div`
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
+    top: 575px;
+    left: 48px;
 
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: left;
+    color: #ffffff;
+`
+export const PartnerLogoComponent = styled.div`
+    position: absolute;
+    width: 280px;
+    height: 100px;
+    top: 602px;
+    left: 48px;
+
+    background-size: contain;
+`
+export const PartnerLogoImg = styled.img`
+    display: block;
+    max-width: 280px;
+    max-height: 100px;
+`
+export const DateOfIssueComponent = styled.div`
+    position: absolute;
+    top: 731px;
+    left: 48px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
     text-align: left;
     color: #ffffff;
 `
