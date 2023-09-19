@@ -1,0 +1,7 @@
+@import-normalize; /* bring in normalize.css styles */
+
+html,
+body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
