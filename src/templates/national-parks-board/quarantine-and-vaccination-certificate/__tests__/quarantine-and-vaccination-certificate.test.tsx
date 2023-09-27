@@ -311,7 +311,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                       <div
                         className="c10"
                       >
-                        Dog
+                        CANINE
                       </div>
                     </div>
                     <div
@@ -339,7 +339,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                       <div
                         className="c10"
                       >
-                        December 2023
+                        DECEMBER 2023
                       </div>
                     </div>
                     <div
@@ -353,7 +353,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                       <div
                         className="c10"
                       >
-                        Male
+                        MALE
                       </div>
                     </div>
                     <div
@@ -462,7 +462,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                       <div
                         className="c10"
                       >
-                        13 September 2022
+                        13 SEPTEMBER 2022
                       </div>
                     </div>
                     <div
@@ -504,7 +504,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                       <div
                         className="c10"
                       >
-                        02 December 2023
+                        02 DECEMBER 2023
                       </div>
                     </div>
                     <div
@@ -616,7 +616,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                         },
                         animalName: 'KOBE',
                         monthYearOfBirth: '12-2023',
-                        species: 'Dog',
+                        species: 'CANINE',
                         breed: 'Shiba Inu',
                         colour: 'White',
                         exportCountry: 'China',
@@ -627,7 +627,7 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                             startDate: '2023-12-20',
                             numOfDays: 11,
                         },
-                        sex: 'male',
+                        sex: 'MALE',
                         rabiesVaccination: {
                             manufacturer: 'MERIAL RABISIN R',
                             batch: {
@@ -664,19 +664,19 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
             test('birthdate', () => {
                 renderTemplate()
                 expect(screen.queryByText('12-2023')).toBeFalsy()
-                expect(screen.getByText('December 2023')).toBeTruthy()
+                expect(screen.getByText('DECEMBER 2023')).toBeTruthy()
             })
 
             test('date of vaccination', () => {
                 renderTemplate()
                 expect(screen.queryByText('13-09-2022')).toBeFalsy()
-                expect(screen.getByText('13 September 2022')).toBeTruthy()
+                expect(screen.getByText('13 SEPTEMBER 2022')).toBeTruthy()
             })
 
             test('Batch/Lot expiry', () => {
                 renderTemplate()
                 expect(screen.queryByText('02-12-2023')).toBeFalsy()
-                expect(screen.getByText('02 December 2023')).toBeTruthy()
+                expect(screen.getByText('02 DECEMBER 2023')).toBeTruthy()
             })
         })
     })

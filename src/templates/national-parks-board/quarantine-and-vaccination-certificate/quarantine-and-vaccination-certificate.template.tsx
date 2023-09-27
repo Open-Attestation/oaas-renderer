@@ -97,17 +97,21 @@ const AppearWhenBiggerThanMobile = styled.div`
 
 const formatDate = (dateStr: string, full = false) =>
     // full -> 10 October 2021
-    DateTime.fromISO(dateStr).toFormat(!full ? 'dd/MM/yyyy' : 'dd LLLL yyyy')
+    DateTime.fromISO(dateStr)
+        .toFormat(!full ? 'dd/MM/yyyy' : 'dd LLLL yyyy')
+        .toUpperCase()
 
 const formatBirthDate = (dateStr: string) => {
     const year = parseInt(dateStr.split('-')[1])
     const month = parseInt(dateStr.split('-')[0])
     const date = new Date(year, month - 1)
 
-    return date.toLocaleDateString('en-GB', {
-        month: 'long',
-        year: 'numeric',
-    })
+    return date
+        .toLocaleDateString('en-GB', {
+            month: 'long',
+            year: 'numeric',
+        })
+        .toUpperCase()
 }
 
 export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: FunctionComponent<
@@ -163,7 +167,7 @@ export const NationalParksBoardQuarantineAndVaccinationCertificateTemplate: Func
                             </DetailsFlex>
                             <DetailsFlex>
                                 <Col1>Sex:</Col1>
-                                <Col2>{sentenceCase(document.sex)}</Col2>
+                                <Col2>{document.sex}</Col2>
                             </DetailsFlex>
                             <DetailsFlex>
                                 <Col1>Colour:</Col1>

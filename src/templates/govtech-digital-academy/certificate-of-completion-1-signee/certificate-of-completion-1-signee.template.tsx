@@ -72,11 +72,11 @@ export const GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate: Funct
                 <SigneeSignatureComponent>
                     <SigneeSignatureImg
                         src={`${imagesMap[document.signeeSignature]}`}
-                        alt="Signature of signee two"
+                        alt="Signature of signee"
                     />
                 </SigneeSignatureComponent>
                 <SigneeDetailsComponent>
-                    {document.signeeName}, {document.signeeDivision}
+                    {document.signeeName}, {document.signeeDesignation}
                     <br />
                     {document.signeeDivision}
                     <br />
