@@ -2,4 +2,4 @@
   publish = "build/"
 
   # Default build command.
-  command = "export REACT_APP_RENDERER_VERSION=singapore-judicial-college_v0.0.0; CI=false yarn build singapore-judicial-college"
+  command = "export REACT_APP_RENDERER_VERSION=singapore-judicial-college_v0.0.1; CI=false yarn build singapore-judicial-college"
