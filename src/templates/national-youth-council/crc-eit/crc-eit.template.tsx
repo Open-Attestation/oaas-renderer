@@ -102,7 +102,7 @@ export const NationalYouthCouncilCrcEitTemplate: FunctionComponent<
                                 transform: 'translateX(-50%)',
                             }}
                         >
-                            Course Modules – 24 Training hours
+                            Course Modules – 36 Training hours
                         </Typography>
                         <Typography $size={'small'}>
                             The curriculum for the ECC Instructor Training
