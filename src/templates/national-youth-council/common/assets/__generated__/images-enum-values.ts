@@ -7,7 +7,7 @@ const enumValues = [
     'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
     'sample-signature&a2693ac50a6b39568d13114834a66c9568dc4b51ede88592ef4516b46960c204.png',
 ] as const
-type EnumValue = (typeof enumValues)[number]
+type EnumValue = typeof enumValues[number]
 
 /**
  * Gets the possible image hash values that can be used as enum values
