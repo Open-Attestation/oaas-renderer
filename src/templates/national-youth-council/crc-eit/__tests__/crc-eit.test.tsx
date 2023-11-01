@@ -395,7 +395,7 @@ describe('NationalYouthCouncilCrcEitTemplate', () => {
                       }
                     }
                   >
-                    Course Modules – 36 Training hours
+                    Course Modules – 32 Training hours
                   </p>
                   <p
                     className="c21 c5"
