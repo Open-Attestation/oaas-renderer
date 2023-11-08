@@ -1,5 +1,4 @@
 import { JSONSchema } from 'json-schema-to-typescript'
-import { sampleProfileImage } from './sample-profile-image'
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',

@@ -23,6 +23,8 @@ const Root = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 24px 0px;
 `
 
 const CardsContainer = styled.div`

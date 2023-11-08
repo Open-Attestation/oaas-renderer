@@ -146,6 +146,7 @@ describe('TrustdocsDemoLicenseToVerifyTemplate', () => {
               -webkit-box-align: center;
               -ms-flex-align: center;
               align-items: center;
+              padding: 24px 0px;
             }
 
             .c1 {
