@@ -444,7 +444,7 @@ describe('NycBclsAedTemplate', () => {
                         <img
                           alt="ci signature"
                           className="c16"
-                          src="farah-binte-ja-afar-signature&bcb9a2d20c8b72e7b5372df3e518a0528c15b4cdddc92025b06fd5fc986e1e20.png"
+                          src="jaffar-ali-signature&acd83f1fde2dd3fbddb93bcd870370fd3e273e0675019b4b42ada360e8cdfec4.jpg"
                         />
                       </p>
                       <div
@@ -459,7 +459,7 @@ describe('NycBclsAedTemplate', () => {
                           <p
                             className="c19 c9"
                           >
-                            Farah Binte Ja'afar
+                            Jaffar Ali
                           </p>
                           <p
                             className="c20 c9"
