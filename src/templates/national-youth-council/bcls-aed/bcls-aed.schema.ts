@@ -21,19 +21,19 @@ export default {
         ciName: {
             type: 'string',
             description: 'Name of trainer',
-            examples: [`Farah Binte Ja'afar`],
-            enum: ['Fazdli Jamal', `Farah Binte Ja'afar`],
+            examples: [`Jaffar Ali`],
+            enum: ['Fazdli Jamal', `Jaffar Ali`],
             minLength: 1,
         },
         ciSignature: {
             type: 'string',
             description: "CI's signature",
             enum: getEnumValues([
-                'farah-binte-ja-afar-signature&bcb9a2d20c8b72e7b5372df3e518a0528c15b4cdddc92025b06fd5fc986e1e20.png',
+                'jaffar-ali-signature&acd83f1fde2dd3fbddb93bcd870370fd3e273e0675019b4b42ada360e8cdfec4.jpg',
                 'fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png',
             ]),
             examples: getEnumValues([
-                'farah-binte-ja-afar-signature&bcb9a2d20c8b72e7b5372df3e518a0528c15b4cdddc92025b06fd5fc986e1e20.png',
+                'jaffar-ali-signature&acd83f1fde2dd3fbddb93bcd870370fd3e273e0675019b4b42ada360e8cdfec4.jpg',
             ]),
         },
         serialNumber: {
