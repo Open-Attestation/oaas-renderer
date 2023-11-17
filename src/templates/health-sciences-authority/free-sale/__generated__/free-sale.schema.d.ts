@@ -37,7 +37,7 @@ export interface HealthSciencesAuthorityFreeSale {
     /**
      * file name of uploaded image
      */
-    signature_image?: string
+    signature_image: string
     /**
      * designation of Signee
      */

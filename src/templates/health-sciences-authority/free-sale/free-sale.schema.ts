@@ -13,7 +13,7 @@ export default {
         'distributorName',
         'distributorAddress',
         'dateOfIssue',
-        'signature',
+        'signature_image',
         'designationOfSignee',
         'productName',
         'brandName',
