@@ -185,7 +185,7 @@ export const TrustdocsDemoLicenseToVerifyTemplate: FunctionComponent<
                                             src={document.profile_image}
                                             alt="Profile Image"
                                         />
-                                        <Name>{'{Your Name}'}</Name>
+                                        <Name>{document.name}</Name>
                                         <div>
                                             has been assessed to be capable of
                                             verifying TrustDocs.
