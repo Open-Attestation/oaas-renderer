@@ -386,7 +386,7 @@ describe('TrustdocsDemoLicenseToVerifyTemplate', () => {
                           <div
                             className="c12"
                           >
-                            24 Nov 2023
+                            24 November 2023
                           </div>
                         </div>
                       </div>
@@ -424,7 +424,7 @@ describe('TrustdocsDemoLicenseToVerifyTemplate', () => {
                         <div
                           className="c12"
                         >
-                          23 Nov 2023
+                          23 November 2023
                         </div>
                       </div>
                       <div>

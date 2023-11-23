@@ -195,7 +195,7 @@ export const TrustdocsDemoLicenseToVerifyTemplate: FunctionComponent<
                                         label="Valid till"
                                         value={DateTime.fromISO(
                                             document.validTill
-                                        ).toFormat('dd MMM yyyy')}
+                                        ).toFormat('dd MMMM yyyy')}
                                     />
                                 </FlexBox>
                                 <FlexBox
@@ -218,7 +218,7 @@ export const TrustdocsDemoLicenseToVerifyTemplate: FunctionComponent<
                                     label="Issued on"
                                     value={DateTime.fromISO(
                                         document.issuedOn
-                                    ).toFormat('dd MMM yyyy')}
+                                    ).toFormat('dd MMMM yyyy')}
                                 />
                                 <LabelValue
                                     label="Country of assessment"
