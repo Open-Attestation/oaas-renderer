@@ -8,8 +8,12 @@
         "products",
         "meansOfTransport",
         "vesselNameFlightNumber",
+        "containerNo",
+        "sealNo",
         "etd",
         "placeOfDispatch",
+        "shippingMarks",
+        "remarks",
         "originAndProvenence",
         "destination",
         "attestation",
@@ -106,13 +110,11 @@
         },
         "containerNo": {
             "type": "string",
-            "description": "Container No.",
-            "minLength": 1
+            "description": "Container No."
         },
         "sealNo": {
             "type": "string",
-            "description": "Seal No.",
-            "minLength": 1
+            "description": "Seal No."
         },
         "etd": {
             "type": "string",
@@ -128,20 +130,19 @@
         },
         "shippingMarks": {
             "type": "string",
-            "description": "Shipping Marks",
-            "minLength": 1
+            "description": "Shipping Marks"
         },
         "remarks": {
             "type": "string",
-            "description": "Shipping Marks",
-            "minLength": 1
+            "description": "Shipping Marks"
         },
         "originAndProvenence": {
             "type": "object",
             "required": [
                 "nameAddressOfManufacturer",
                 "processingPremiseLicenseNo",
-                "nameAddressOfConsignor"
+                "nameAddressOfConsignor",
+                "dateOfInspection"
             ],
             "properties": {
                 "nameAddressOfManufacturer": {
@@ -169,7 +170,7 @@
                 "dateOfInspection": {
                     "type": "string",
                     "description": "Date of inspection in YYYY-MM-DD",
-                    "examples": [""],
+                    "examples": ["2023-11-01"],
                     "format": "date"
                 }
             },
@@ -180,6 +181,7 @@
             "required": [
                 "countryRegionOfDestination",
                 "nameAddressOfConsigee",
+                "importPermitNo",
                 "purpose"
             ],
             "properties": {
@@ -199,8 +201,7 @@
                 },
                 "importPermitNo": {
                     "type": "string",
-                    "description": "Import Permit No.",
-                    "minLength": 1
+                    "description": "Import Permit No."
                 },
                 "purpose": {
                     "type": "string",

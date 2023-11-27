@@ -1213,6 +1213,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                           >
                             Date of inspection:
                           </div>
+                          01/11/2023
                         </div>
                       </div>
                     </div>
@@ -1871,7 +1872,8 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                           >
                             Date of inspection:
                           </div>
-                          <br />
+                          01/11/2023
+                          01/11/2023
                         </div>
                       </div>
                     </div>

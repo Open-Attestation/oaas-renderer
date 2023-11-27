@@ -11,8 +11,12 @@ export default {
         'products',
         'meansOfTransport',
         'vesselNameFlightNumber',
+        'containerNo',
+        'sealNo',
         'etd',
         'placeOfDispatch',
+        'shippingMarks',
+        'remarks',
         'originAndProvenence',
         'destination',
         'attestation',
@@ -86,12 +90,10 @@ export default {
         containerNo: {
             type: 'string',
             description: 'Container No.',
-            minLength: 1,
         },
         sealNo: {
             type: 'string',
             description: 'Seal No.',
-            minLength: 1,
         },
         etd: makeDateType(
             'Estimated time of departure in YYYY-MM-DD',
@@ -101,12 +103,10 @@ export default {
         shippingMarks: {
             type: 'string',
             description: 'Shipping Marks',
-            minLength: 1,
         },
         remarks: {
             type: 'string',
             description: 'Shipping Marks',
-            minLength: 1,
         },
         originAndProvenence: {
             type: 'object',
@@ -114,6 +114,7 @@ export default {
                 'nameAddressOfManufacturer',
                 'processingPremiseLicenseNo',
                 'nameAddressOfConsignor',
+                'dateOfInspection',
             ],
             properties: {
                 nameAddressOfManufacturer: makeRequiredString(
@@ -130,7 +131,7 @@ export default {
                 ),
                 dateOfInspection: makeDateType(
                     'Date of inspection in YYYY-MM-DD',
-                    ''
+                    '2023-11-01'
                 ),
             },
             additionalProperties: false,
@@ -140,6 +141,7 @@ export default {
             required: [
                 'countryRegionOfDestination',
                 'nameAddressOfConsigee',
+                'importPermitNo',
                 'purpose',
             ],
             properties: {
@@ -154,7 +156,6 @@ export default {
                 importPermitNo: {
                     type: 'string',
                     description: 'Import Permit No.',
-                    minLength: 1,
                 },
                 purpose: makeRequiredString('Purpose', 'HUMAN CONSUMPTION'),
             },
@@ -182,7 +183,6 @@ export default {
             examples: ['signature.png'],
             minLength: 1,
         },
-        ///
     },
     additionalProperties: false,
 } as JSONSchema

@@ -24,6 +24,8 @@ export const sample: SingaporeFoodAgencyExportHealthCertificateOaDoc = {
     ],
     meansOfTransport: 'SEA',
     vesselNameFlightNumber: 'RITA V. 043N',
+    containerNo: '',
+    sealNo: '',
     etd: '2023-11-05',
     placeOfDispatch: 'Singapore',
     shippingMarks: '',
@@ -34,11 +36,13 @@ export const sample: SingaporeFoodAgencyExportHealthCertificateOaDoc = {
         processingPremiseLicenseNo: 'PL02G1661',
         nameAddressOfConsignor:
             'CONSIGNORXXX INDUSTRIES INTERNATIONAL PTE LTD\n1 PIONEER SECTOR WALK\nSINGAPORE 627896',
+        dateOfInspection: '2023-11-01',
     },
     destination: {
         countryRegionOfDestination: 'PHILIPINES',
         nameAddressOfConsigee:
             'CONSIGNEEXXX TRADING CORPORATION\n711 ELCANO STREET, SAN NICOLAS MANILA 1006\nPHILIPPINES',
+        importPermitNo: '',
         purpose: 'HUMAN CONSUMPTION',
     },
     attestation: {
