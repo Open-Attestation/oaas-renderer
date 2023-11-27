@@ -1,0 +1,247 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "SingaporeFoodAgency/ExportHealthCertificate",
+    "type": "object",
+    "required": [
+        "certificateNumber",
+        "exportingCountry",
+        "products",
+        "meansOfTransport",
+        "vesselNameFlightNumber",
+        "etd",
+        "placeOfDispatch",
+        "originAndProvenence",
+        "destination",
+        "attestation",
+        "issuedInSingaporeDate",
+        "signeeName",
+        "signeeSignature_image"
+    ],
+    "properties": {
+        "certificateNumber": {
+            "type": "string",
+            "description": "Certificate Number",
+            "examples": ["EH2312287"],
+            "minLength": 1
+        },
+        "exportingCountry": {
+            "type": "string",
+            "description": "Exporting Country",
+            "examples": ["SINGAPORE"],
+            "enum": ["SINGAPORE"]
+        },
+        "products": {
+            "type": "array",
+            "maxItems": 5,
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "description",
+                    "brand",
+                    "codeOrBatchNoOrLotNo",
+                    "numberAndTypeOfPackages",
+                    "netWeight",
+                    "productionDate",
+                    "expiryDate"
+                ],
+                "properties": {
+                    "description": {
+                        "type": "string",
+                        "description": "Product description",
+                        "examples": ["INSTANT FULL CREAM MILK POWDER"],
+                        "minLength": 1
+                    },
+                    "brand": {
+                        "type": "string",
+                        "description": "Product brand",
+                        "examples": ["AMPEC"],
+                        "minLength": 1
+                    },
+                    "codeOrBatchNoOrLotNo": {
+                        "type": "string",
+                        "description": "Product Code/Batch No./ Lot No.",
+                        "examples": ["NIL / REG9466"],
+                        "minLength": 1
+                    },
+                    "numberAndTypeOfPackages": {
+                        "type": "string",
+                        "description": "Number & Type of Packages",
+                        "examples": ["25(KGM) X 999(BAG)"],
+                        "minLength": 1
+                    },
+                    "netWeight": {
+                        "type": "string",
+                        "description": "Net weight(Gross Weight)",
+                        "examples": ["24975(KGM)"],
+                        "minLength": 1
+                    },
+                    "productionDate": {
+                        "type": "string",
+                        "description": "Production date in YYYY-MM-DD",
+                        "examples": ["2023-10-19"],
+                        "format": "date"
+                    },
+                    "expiryDate": {
+                        "type": "string",
+                        "description": "Expiry date in YYYY-MM-DD",
+                        "examples": ["2025-10-19"],
+                        "format": "date"
+                    }
+                }
+            }
+        },
+        "meansOfTransport": {
+            "type": "string",
+            "description": "Means of Transport",
+            "examples": ["SEA"],
+            "minLength": 1
+        },
+        "vesselNameFlightNumber": {
+            "type": "string",
+            "description": "Vessel Name/Flight Number",
+            "examples": ["RITA V. 043N"],
+            "minLength": 1
+        },
+        "containerNo": {
+            "type": "string",
+            "description": "Container No.",
+            "minLength": 1
+        },
+        "sealNo": {
+            "type": "string",
+            "description": "Seal No.",
+            "minLength": 1
+        },
+        "etd": {
+            "type": "string",
+            "description": "Estimated time of departure in YYYY-MM-DD",
+            "examples": ["2023-11-05"],
+            "format": "date"
+        },
+        "placeOfDispatch": {
+            "type": "string",
+            "description": "Place of Dispatch",
+            "examples": ["Singapore"],
+            "minLength": 1
+        },
+        "shippingMarks": {
+            "type": "string",
+            "description": "Shipping Marks",
+            "minLength": 1
+        },
+        "remarks": {
+            "type": "string",
+            "description": "Shipping Marks",
+            "minLength": 1
+        },
+        "originAndProvenence": {
+            "type": "object",
+            "required": [
+                "nameAddressOfManufacturer",
+                "processingPremiseLicenseNo",
+                "nameAddressOfConsignor"
+            ],
+            "properties": {
+                "nameAddressOfManufacturer": {
+                    "type": "string",
+                    "description": "Name and Address of Manufacturer",
+                    "examples": [
+                        "PHILIPINES\nNO 21 TUAS AVE 12\nSINGAPORE 639040"
+                    ],
+                    "minLength": 1
+                },
+                "processingPremiseLicenseNo": {
+                    "type": "string",
+                    "description": "Processing Premise License No.",
+                    "examples": ["PL02G1661"],
+                    "minLength": 1
+                },
+                "nameAddressOfConsignor": {
+                    "type": "string",
+                    "description": "Name and Address of Consignor",
+                    "examples": [
+                        "CONSIGNORXXX INDUSTRIES INTERNATIONAL PTE LTD\n1 PIONEER SECTOR WALK\nSINGAPORE 627896"
+                    ],
+                    "minLength": 1
+                },
+                "dateOfInspection": {
+                    "type": "string",
+                    "description": "Date of inspection in YYYY-MM-DD",
+                    "examples": [""],
+                    "format": "date"
+                }
+            },
+            "additionalProperties": false
+        },
+        "destination": {
+            "type": "object",
+            "required": [
+                "countryRegionOfDestination",
+                "nameAddressOfConsigee",
+                "purpose"
+            ],
+            "properties": {
+                "countryRegionOfDestination": {
+                    "type": "string",
+                    "description": "Country/Region of Destination",
+                    "examples": ["PHILIPINES"],
+                    "minLength": 1
+                },
+                "nameAddressOfConsigee": {
+                    "type": "string",
+                    "description": "Name and Address of Consignee",
+                    "examples": [
+                        "CONSIGNEEXXX TRADING CORPORATION\n711 ELCANO STREET, SAN NICOLAS MANILA 1006\nPHILIPPINES"
+                    ],
+                    "minLength": 1
+                },
+                "importPermitNo": {
+                    "type": "string",
+                    "description": "Import Permit No.",
+                    "minLength": 1
+                },
+                "purpose": {
+                    "type": "string",
+                    "description": "Purpose",
+                    "examples": ["HUMAN CONSUMPTION"],
+                    "minLength": 1
+                }
+            },
+            "additionalProperties": false
+        },
+        "attestation": {
+            "type": "object",
+            "required": ["laboratoryResults"],
+            "properties": {
+                "laboratoryResults": {
+                    "type": "string",
+                    "description": "Laboratory results",
+                    "examples": ["<Laboratory results>"],
+                    "minLength": 1
+                }
+            },
+            "additionalProperties": false
+        },
+        "issuedInSingaporeDate": {
+            "type": "string",
+            "description": "Issued in Singapore date in YYYY-MM-DD",
+            "examples": ["2023-10-31"],
+            "format": "date"
+        },
+        "signeeName": {
+            "type": "string",
+            "description": "Name of signee",
+            "examples": ["Mr LIM TONG PENG"],
+            "minLength": 1
+        },
+        "signeeSignature_image": {
+            "type": "string",
+            "description": "Signature of signee",
+            "examples": ["signature.png"],
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}
