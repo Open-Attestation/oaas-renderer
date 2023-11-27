@@ -8,7 +8,7 @@ export const sample: TrustdocsDemoLicenseToVerifyOaDoc = {
         type: v2.TemplateType.EmbeddedRenderer,
         url: 'http://localhost:3000',
     },
-    name: '{Your Name}',
+    name: 'Tan Chen Chen',
     profile_image: sampleProfileImage,
     issuedOn: '2023-11-23',
     validTill: '2023-11-24',
@@ -20,5 +20,5 @@ export const sample: TrustdocsDemoLicenseToVerifyOaDoc = {
         },
     ],
     qrCodeValue:
-        'https://www.trustdocs.gov.sg/verify?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fstorage.demo.trustdocs.gov.sg%2Fdemo.trustdoc%22%7D%7D',
+        'https://www.trustdocs.gov.sg/verify?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fstorage.demo.trustdocs.gov.sg%2Ftanchenchen.trustdoc%22%7D%7D',
 }
