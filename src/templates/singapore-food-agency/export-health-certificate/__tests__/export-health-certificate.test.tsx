@@ -408,7 +408,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
               -webkit-align-self: stretch;
               -ms-flex-item-align: stretch;
               align-self: stretch;
-              font-size: 10px;
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               line-height: 150%;
@@ -606,6 +606,24 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
               align-self: stretch;
             }
 
+            .c39 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              padding: 0px 32px;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: flex-start;
+              -webkit-box-align: flex-start;
+              -ms-flex-align: flex-start;
+              align-items: flex-start;
+              -webkit-align-self: stretch;
+              -ms-flex-item-align: stretch;
+              align-self: stretch;
+            }
+
             .c37 {
               display: -webkit-box;
               display: -webkit-flex;
@@ -637,7 +655,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
-              padding-left: 22px;
+              padding-left: 32px;
               -webkit-align-items: flex-start;
               -webkit-box-align: flex-start;
               -ms-flex-align: flex-start;
@@ -646,13 +664,13 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
               -webkit-align-self: stretch;
               -ms-flex-item-align: stretch;
               align-self: stretch;
-              font-size: 11px;
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               line-height: 125%;
             }
 
-            .c39 {
+            .c40 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -844,7 +862,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         <div
                           style={
                             Object {
-                              "width": "22px",
+                              "width": "14px",
                             }
                           }
                         >
@@ -1510,7 +1528,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         <div
                           style={
                             Object {
-                              "width": "22px",
+                              "width": "14px",
                             }
                           }
                         >
@@ -1560,7 +1578,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         <div
                           style={
                             Object {
-                              "width": "22px",
+                              "width": "14px",
                             }
                           }
                         >
@@ -1575,10 +1593,11 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                       <div
                         className="c38"
                       >
+                        ITEM 
                         1
                       </div>
                       <div
-                        className="c36"
+                        className="c39"
                       >
                         <div
                           style={
@@ -1592,7 +1611,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         INSTANT FULL CREAM MILK POWDER
                       </div>
                       <div
-                        className="c36"
+                        className="c39"
                       >
                         <div
                           style={
@@ -1606,7 +1625,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         AMPEC
                       </div>
                       <div
-                        className="c36"
+                        className="c39"
                       >
                         <div
                           style={
@@ -1620,7 +1639,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         NIL / REG9466
                       </div>
                       <div
-                        className="c36"
+                        className="c39"
                       >
                         <div
                           style={
@@ -1634,7 +1653,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         25(KGM) X 999(BAG)
                       </div>
                       <div
-                        className="c36"
+                        className="c39"
                       >
                         <div
                           style={
@@ -1648,7 +1667,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         24975(KGM
                       </div>
                       <div
-                        className="c36"
+                        className="c39"
                       >
                         <div
                           style={
@@ -1662,7 +1681,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         19/10/2023
                       </div>
                       <div
-                        className="c36"
+                        className="c39"
                       >
                         <div
                           style={
@@ -1803,7 +1822,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         <div
                           style={
                             Object {
-                              "width": "22px",
+                              "width": "14px",
                             }
                           }
                         >
@@ -1886,7 +1905,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         <div
                           style={
                             Object {
-                              "width": "22px",
+                              "width": "14px",
                             }
                           }
                         >
@@ -1966,7 +1985,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         <div
                           style={
                             Object {
-                              "width": "22px",
+                              "width": "14px",
                             }
                           }
                         >
@@ -1978,7 +1997,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         className="c23"
                       >
                         <div
-                          className="c39"
+                          className="c40"
                         >
                           I, the undersigned, certify that:
                           <br />
@@ -1994,7 +2013,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         }
                       >
                         <div
-                          className="c39"
+                          className="c40"
                         >
                           the consignment is found to be fit for human consumption based on the laboratory analysis of the above-mentioned consignment.
                           <br />
@@ -2030,7 +2049,7 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
                         31/10/2023
                       </div>
                       <div
-                        className="c39"
+                        className="c40"
                         style={
                           Object {
                             "paddingTop": "24px",
