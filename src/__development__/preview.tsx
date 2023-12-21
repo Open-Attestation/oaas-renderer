@@ -35,7 +35,7 @@ const ActionsContainer = styled.div`
         cursor: pointer;
         border: 0;
     }
-    button: hover {
+    button:hover {
         background-color: #2b6cb0;
     }
 `
@@ -50,9 +50,7 @@ const DocumentsContainer = styled.div`
     padding: 8px;
 
     &.collapsed {
-        position: absolute;
-        width: 0;
-        left: 100%;
+        display: none;
     }
 
     .document {
@@ -181,12 +179,13 @@ export const App: React.FunctionComponent<AppProps> = ({
                             className={`document ${
                                 document?.document === d ? 'active' : ''
                             }`}
-                            onClick={() =>
+                            onClick={() => {
                                 setDocument({
                                     document: d,
                                     name: sampleName,
                                 })
-                            }
+                                window.scrollTo(0, 0)
+                            }}
                         >
                             {sampleName}
                         </div>

@@ -164,6 +164,33 @@ describe('SingaporeJudicialCollegeCertificateOfCompletionTemplate', () => {
 
             .c9 {
               position: absolute;
+              width: 171px;
+              height: 85px;
+              bottom: 131px;
+              right: 130px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c10 {
+              display: block;
+              max-width: 171px;
+              max-height: 85px;
+            }
+
+            .c11 {
+              position: absolute;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -182,7 +209,7 @@ describe('SingaporeJudicialCollegeCertificateOfCompletionTemplate', () => {
               padding-right: 131px;
             }
 
-            .c10 {
+            .c12 {
               position: relative;
               color: #145080;
               text-align: center;
@@ -193,7 +220,7 @@ describe('SingaporeJudicialCollegeCertificateOfCompletionTemplate', () => {
               line-height: 140%;
             }
 
-            .c11 {
+            .c13 {
               position: relative;
               color: #145080;
               text-align: center;
@@ -266,13 +293,22 @@ describe('SingaporeJudicialCollegeCertificateOfCompletionTemplate', () => {
               <div
                 className="c9"
               >
-                <div
+                <img
+                  alt="Signature of signee"
                   className="c10"
+                  src="sample-signature&cacfb1e1c1af263245b1925f10eab6cb6bf675111478bb91e54ecd250482ce7c.png"
+                />
+              </div>
+              <div
+                className="c11"
+              >
+                <div
+                  className="c12"
                 >
-                  07 SEPTEMBER 2022
+                  08 SEPTEMBER 2022
                 </div>
                 <div
-                  className="c11"
+                  className="c13"
                 >
                   Sundaresh Menon
                   <br />

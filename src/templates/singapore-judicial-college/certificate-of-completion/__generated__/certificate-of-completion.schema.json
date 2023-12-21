@@ -2,7 +2,16 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "SingaporeJudicialCollege/CertificateOfCompletion",
     "type": "object",
-    "required": ["name", "courseTitle", "courseStartDate", "courseEndDate"],
+    "required": [
+        "name",
+        "courseTitle",
+        "courseStartDate",
+        "courseEndDate",
+        "issuanceDate",
+        "signeeName",
+        "signeeDesignation",
+        "signeeSignature"
+    ],
     "properties": {
         "name": {
             "type": "string",
@@ -35,6 +44,37 @@
             "formatMinimum": {
                 "$data": "1/courseStartDate"
             }
+        },
+        "issuanceDate": {
+            "type": "string",
+            "description": "Issuance date of certificate",
+            "examples": ["2022-06-04"],
+            "format": "date",
+            "formatMinimum": {
+                "$data": "1/courseEndDate"
+            }
+        },
+        "signeeName": {
+            "type": "string",
+            "description": "Name of signee",
+            "enum": ["Sundaresh Menon"],
+            "examples": ["Sundaresh Menon"]
+        },
+        "signeeDesignation": {
+            "type": "string",
+            "description": "Designation of signee",
+            "enum": ["Chief Justice"],
+            "examples": ["Chief Justice"]
+        },
+        "signeeSignature": {
+            "type": "string",
+            "description": "SHA256 hash of the signee's signature",
+            "enum": [
+                "sample-signature&cacfb1e1c1af263245b1925f10eab6cb6bf675111478bb91e54ecd250482ce7c.png"
+            ],
+            "examples": [
+                "sample-signature&cacfb1e1c1af263245b1925f10eab6cb6bf675111478bb91e54ecd250482ce7c.png"
+            ]
         }
     },
     "additionalProperties": false
