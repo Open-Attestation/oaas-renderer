@@ -9,7 +9,6 @@ import { makeTypography } from 'components/typography/makeTypography'
 import { DateTime } from 'luxon'
 import logoImgSrc from './animal-vet-service-logo.jpg'
 import addressImgSrc from './animal-vet-service-address.png'
-import { sentenceCase } from 'change-case'
 import { QRCodeSVG } from 'qrcode.react'
 import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
 

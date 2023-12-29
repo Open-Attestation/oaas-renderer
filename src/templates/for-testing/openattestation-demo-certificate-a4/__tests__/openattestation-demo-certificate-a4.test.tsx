@@ -16,7 +16,7 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c5 {
+            .c6 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -35,39 +35,39 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
               justify-content: center;
             }
 
-            .c2 {
+            .c3 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
               text-align: center;
             }
 
-            .c6 {
+            .c7 {
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c7 {
+            .c8 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
               margin-top: 8px;
             }
 
-            .c8 {
+            .c9 {
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 8px;
             }
 
-            .c3 {
+            .c4 {
               font-family: 'Libre Franklin';
             }
 
-            .c0 {
+            .c1 {
               background: white;
               position: relative;
               width: 21cm;
@@ -81,7 +81,7 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
               z-index: initial;
             }
 
-            .c1 {
+            .c2 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -99,7 +99,7 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
               align-items: center;
             }
 
-            .c4 {
+            .c5 {
               position: relative;
               display: block;
               height: 360px;
@@ -107,13 +107,32 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
               padding-bottom: 16px;
             }
 
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
+            }
+
             @media print {
-              .c0 {
+              .c1 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
                 -webkit-break-before: always;
                 break-before: always;
+              }
+            }
+
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: 1152px;
               }
             }
 
@@ -123,47 +142,51 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
               <div
                 className="c1"
               >
-                <div>
-                  <p
-                    className="c2 c3"
-                  >
-                    Certificate of 
-                    <br />
-                    Completion
-                  </p>
+                <div
+                  className="c2"
+                >
+                  <div>
+                    <p
+                      className="c3 c4"
+                    >
+                      Certificate of 
+                      <br />
+                      Completion
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div
-                className="c4"
-              >
                 <div
                   className="c5"
                 >
-                  <p
-                    className="c6 c3"
+                  <div
+                    className="c6"
                   >
-                    This is to certify that
-                  </p>
-                  <p
-                    className="c7 c3"
-                  >
-                    John Doe
-                  </p>
-                  <p
-                    className="c8 c3"
-                  >
-                    has completed
-                  </p>
-                  <p
-                    className="c7 c3"
-                  >
-                    OpenAttestation Demo
-                  </p>
-                  <p
-                    className="c7 c3"
-                  >
-                    16 Jan 2023
-                  </p>
+                    <p
+                      className="c7 c4"
+                    >
+                      This is to certify that
+                    </p>
+                    <p
+                      className="c8 c4"
+                    >
+                      John Doe
+                    </p>
+                    <p
+                      className="c9 c4"
+                    >
+                      has completed
+                    </p>
+                    <p
+                      className="c8 c4"
+                    >
+                      OpenAttestation Demo
+                    </p>
+                    <p
+                      className="c8 c4"
+                    >
+                      16 Jan 2023
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

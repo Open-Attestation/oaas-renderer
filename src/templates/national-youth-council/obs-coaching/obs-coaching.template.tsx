@@ -75,7 +75,7 @@ export const NationalYouthCouncilObsCoachingTemplate: FunctionComponent<
                         >
                             Outward Bound Singapore:
                             <br />
-                            Dinghy Sailing Coach
+                            {document.courseTitle}
                         </Typography>
                         <Typography $size={'large'} $mt={1}>
                             On the date of

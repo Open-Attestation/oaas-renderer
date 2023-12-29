@@ -14,8 +14,8 @@ export const sample: NationalYouthCouncilBclsAedOaDoc = {
         },
     ],
     ciSignature:
-        'farah-binte-ja-afar-signature&bcb9a2d20c8b72e7b5372df3e518a0528c15b4cdddc92025b06fd5fc986e1e20.png',
+        'jaffar-ali-signature&acd83f1fde2dd3fbddb93bcd870370fd3e273e0675019b4b42ada360e8cdfec4.jpg',
     issueDate: '2020-12-31',
     serialNumber: 'serial-number-1',
-    ciName: `Farah Binte Ja'afar`,
+    ciName: `Jaffar Ali`,
 }

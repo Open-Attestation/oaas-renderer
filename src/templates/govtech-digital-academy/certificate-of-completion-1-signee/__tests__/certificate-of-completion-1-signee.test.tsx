@@ -255,7 +255,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
                 className="c7"
               >
                 <img
-                  alt="Signature of signee two"
+                  alt="Signature of signee"
                   className="c8"
                   src="svg-stub"
                 />

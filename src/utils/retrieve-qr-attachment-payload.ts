@@ -7,10 +7,7 @@ export function retrieveQrAttachmentPayload(
     if (document.attachments) {
         for (const attachment of document.attachments) {
             if (attachment.filename === 'qrpayload.txt') {
-                const decodedPayloadlink = decodeURI(
-                    Buffer.from(attachment.data, 'base64').toString()
-                )
-                return decodedPayloadlink
+                return Buffer.from(attachment.data, 'base64').toString()
             }
         }
     }
