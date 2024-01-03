@@ -6,7 +6,7 @@ export const calculateTransformScale = (
 ): number =>
     Math.min(viewportWidth * 0.951219881846154, documentWidth) / documentWidth
 
-export const useTransformScale = (documentWidth: number) => {
+export const useShrinkToViewport = (documentWidth: number) => {
     const [transformScale, setTransformScale] = useState<number>(
         calculateTransformScale(window.innerWidth, documentWidth)
     )
