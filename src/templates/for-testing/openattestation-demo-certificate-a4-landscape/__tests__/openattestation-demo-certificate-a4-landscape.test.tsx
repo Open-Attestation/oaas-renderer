@@ -106,7 +106,7 @@ describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
               -webkit-transform-origin: top left;
               -ms-transform-origin: top left;
               transform-origin: top left;
-              height: 691.911063843814px;
+              height: 692px;
             }
 
             @media print {
@@ -124,7 +124,7 @@ describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
                 -webkit-transform: scale(1);
                 -ms-transform: scale(1);
                 transform: scale(1);
-                height: 778.583px;
+                height: 779px;
               }
             }
 
