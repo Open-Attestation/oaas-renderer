@@ -2,7 +2,10 @@ import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import { GovtechDigitalAcademyCertificateOfCompletion_1SigneeOaDoc } from './certificate-of-completion-1-signee.types'
 import { Helmet } from 'react-helmet-async'
-import { A4Landscape } from 'components/paper-size/a4-landscape'
+import {
+    A4Landscape,
+    A4LandscapeWidthPx,
+} from 'components/paper-size/a4-landscape'
 import landscapeBg from '../common/assets/COC_1sign_150dpi.png'
 import {
     CertificateComponent,
@@ -20,6 +23,11 @@ import {
 } from './certificate-of-completion-1-signee.components'
 import imagesMap from '../common/assets/__generated__/images-map'
 import { formatCourseDatefor } from '../common/utils'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+
+const documentWidth = A4LandscapeWidthPx
+const documentHeight = 778.583
 
 export const GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate: FunctionComponent<
     TemplateProps<GovtechDigitalAcademyCertificateOfCompletion_1SigneeOaDoc> & {
@@ -35,6 +43,7 @@ export const GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate: Funct
         /\\n/g,
         '\n'
     )
+    const transformScale = useShrinkToViewport(documentWidth)
     return (
         <>
             <Helmet>
@@ -47,45 +56,52 @@ export const GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate: Funct
                     certificate-of-completion-2-signees
                 </title>
             </Helmet>
-            <A4Landscape $bgImg={landscapeBg}>
-                <CertificateComponent>CERTIFICATE</CertificateComponent>
-                <OfCompletionComponent>OF COMPLETION</OfCompletionComponent>
-                <ProudlyPresentedComponent>
-                    PROUDLY PRESENTED TO
-                </ProudlyPresentedComponent>
-                <NameComponent>{name}</NameComponent>
-                <InfoContainer>
-                    <ForAchievingComponent>
-                        for achieving the requirements and learnings of
-                    </ForAchievingComponent>
-                    <ProgrammeComponent>{programmeTitle}</ProgrammeComponent>
-                    <YourCommitmentComponent>
-                        Your commitment to continuing professional development
-                        has
+            <ScalableDocument
+                $scale={transformScale}
+                $documentHeight={documentHeight}
+            >
+                <A4Landscape $bgImg={landscapeBg}>
+                    <CertificateComponent>CERTIFICATE</CertificateComponent>
+                    <OfCompletionComponent>OF COMPLETION</OfCompletionComponent>
+                    <ProudlyPresentedComponent>
+                        PROUDLY PRESENTED TO
+                    </ProudlyPresentedComponent>
+                    <NameComponent>{name}</NameComponent>
+                    <InfoContainer>
+                        <ForAchievingComponent>
+                            for achieving the requirements and learnings of
+                        </ForAchievingComponent>
+                        <ProgrammeComponent>
+                            {programmeTitle}
+                        </ProgrammeComponent>
+                        <YourCommitmentComponent>
+                            Your commitment to continuing professional
+                            development has
+                            <br />
+                            helped advance digital transformation across and
+                            beyond the
+                            <br />
+                            Public Service.
+                        </YourCommitmentComponent>
+                    </InfoContainer>
+                    <SigneeSignatureComponent>
+                        <SigneeSignatureImg
+                            src={`${imagesMap[document.signeeSignature]}`}
+                            alt="Signature of signee"
+                        />
+                    </SigneeSignatureComponent>
+                    <SigneeDetailsComponent>
+                        {document.signeeName}, {document.signeeDesignation}
                         <br />
-                        helped advance digital transformation across and beyond
-                        the
+                        {document.signeeDivision}
                         <br />
-                        Public Service.
-                    </YourCommitmentComponent>
-                </InfoContainer>
-                <SigneeSignatureComponent>
-                    <SigneeSignatureImg
-                        src={`${imagesMap[document.signeeSignature]}`}
-                        alt="Signature of signee"
-                    />
-                </SigneeSignatureComponent>
-                <SigneeDetailsComponent>
-                    {document.signeeName}, {document.signeeDesignation}
-                    <br />
-                    {document.signeeDivision}
-                    <br />
-                    {document.signeeOrganisation}
-                </SigneeDetailsComponent>
-                <DateOfIssueComponent>
-                    Date of Issue: {issueDate}
-                </DateOfIssueComponent>
-            </A4Landscape>
+                        {document.signeeOrganisation}
+                    </SigneeDetailsComponent>
+                    <DateOfIssueComponent>
+                        Date of Issue: {issueDate}
+                    </DateOfIssueComponent>
+                </A4Landscape>
+            </ScalableDocument>
         </>
     )
 }

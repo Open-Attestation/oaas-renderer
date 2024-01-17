@@ -16,7 +16,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c0 {
+            .c1 {
               background: white;
               position: relative;
               width: 29cm;
@@ -30,7 +30,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               z-index: initial;
             }
 
-            .c1 {
+            .c2 {
               position: absolute;
               width: 372px;
               height: 66px;
@@ -49,7 +49,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               color: #2b2c2b;
             }
 
-            .c2 {
+            .c3 {
               position: absolute;
               width: 364px;
               height: 50px;
@@ -64,7 +64,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               color: #9d7a45;
             }
 
-            .c3 {
+            .c4 {
               position: absolute;
               width: 244px;
               height: 22px;
@@ -78,7 +78,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               color: #a9a8a8;
             }
 
-            .c4 {
+            .c5 {
               position: absolute;
               width: 558px;
               height: 54px;
@@ -108,7 +108,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               color: #000000;
             }
 
-            .c5 {
+            .c6 {
               position: absolute;
               width: 558px;
               left: 463px;
@@ -126,7 +126,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               color: #2b2c2b;
             }
 
-            .c6 {
+            .c7 {
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 600;
@@ -137,7 +137,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               white-space: pre-line;
             }
 
-            .c9 {
+            .c10 {
               position: absolute;
               width: 259px;
               height: 51px;
@@ -156,7 +156,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               color: #000000;
             }
 
-            .c7 {
+            .c8 {
               position: absolute;
               width: 259px;
               height: 85px;
@@ -177,13 +177,13 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               display: flex;
             }
 
-            .c8 {
+            .c9 {
               display: block;
               max-width: 259px;
               max-height: 85px;
             }
 
-            .c10 {
+            .c11 {
               position: absolute;
               bottom: 8px;
               left: 8px;
@@ -195,13 +195,32 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               color: #ffffff;
             }
 
+            .c0 {
+              -webkit-transform: scale(0.8886799016210397);
+              -ms-transform: scale(0.8886799016210397);
+              transform: scale(0.8886799016210397);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 692px;
+            }
+
             @media print {
-              .c0 {
+              .c1 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
                 -webkit-break-before: always;
                 break-before: always;
+              }
+            }
+
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: 779px;
               }
             }
 
@@ -211,71 +230,75 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               <div
                 className="c1"
               >
-                CERTIFICATE
-              </div>
-              <div
-                className="c2"
-              >
-                OF COMPLETION
-              </div>
-              <div
-                className="c3"
-              >
-                PROUDLY PRESENTED TO
-              </div>
-              <div
-                className="c4"
-              >
-                THONG YONG JIE ANDRE
-              </div>
-              <div
-                className="c5"
-              >
                 <div
-                  className=""
+                  className="c2"
                 >
-                  for achieving the requirements and learnings of
+                  CERTIFICATE
+                </div>
+                <div
+                  className="c3"
+                >
+                  OF COMPLETION
+                </div>
+                <div
+                  className="c4"
+                >
+                  PROUDLY PRESENTED TO
+                </div>
+                <div
+                  className="c5"
+                >
+                  THONG YONG JIE ANDRE
                 </div>
                 <div
                   className="c6"
                 >
-                  Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop
+                  <div
+                    className=""
+                  >
+                    for achieving the requirements and learnings of
+                  </div>
+                  <div
+                    className="c7"
+                  >
+                    Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Your commitment to continuing professional development has
+                    <br />
+                    helped advance digital transformation across and beyond the
+                    <br />
+                    Public Service.
+                  </div>
                 </div>
                 <div
-                  className=""
-                >
-                  Your commitment to continuing professional development has
-                  <br />
-                  helped advance digital transformation across and beyond the
-                  <br />
-                  Public Service.
-                </div>
-              </div>
-              <div
-                className="c7"
-              >
-                <img
-                  alt="Signature of signee"
                   className="c8"
-                  src="svg-stub"
-                />
-              </div>
-              <div
-                className="c9"
-              >
-                Sahas Sankaran
-                , 
-                Director
-                <br />
-                GovTech Digital Academy
-                <br />
-                Government Technology Agency
-              </div>
-              <div
-                className="c10"
-              >
-                Date of Issue: 
-                10 May 2022
+                >
+                  <img
+                    alt="Signature of signee"
+                    className="c9"
+                    src="svg-stub"
+                  />
+                </div>
+                <div
+                  className="c10"
+                >
+                  Sahas Sankaran
+                  , 
+                  Director
+                  <br />
+                  GovTech Digital Academy
+                  <br />
+                  Government Technology Agency
+                </div>
+                <div
+                  className="c11"
+                >
+                  Date of Issue: 
+                  10 May 2022
+                </div>
               </div>
             </div>
         `)
