@@ -6,163 +6,131 @@ import { Helmet } from 'react-helmet-async'
 
 import {
     Root,
-    LogoImage,
+    SRFACLogoImage,
     Typography,
-    FooterContainer,
-    SignatureImage,
 } from './standard-first-aid.components'
-import obsLogoSrc from '../common/assets/obs-logo.png'
-import obstcLogoSrc from '../common/assets/obstc-logo.png'
 import { DateTime } from 'luxon'
 
-import { FlippableCard } from 'components/flippable-card/flippable-card'
-import { FlipInstruction } from 'components/flippable-card/flip-instruction'
-import { CardFace } from 'components/card-face'
-import { Line } from 'components/line'
 import { FlexBox } from 'components/flexbox'
 import imagesMap from '../common/assets/__generated__/images-map'
-
-const CERT_WIDTH = 500
-const CERT_HEIGHT = 350
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import srfacLogoSrc from '../common/assets/srfac-logo.png'
 
 export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilStandardFirstAidOaDoc> & {
         className?: string
     }
 > = ({ document, className = '' }) => {
-    const issueDate = DateTime.fromISO(document.issueDate)
-    const issueDateString = issueDate.toFormat('dd/MM/yyyy')
+    const name = document.name.toUpperCase()
+    const issueDate = DateTime.fromISO(document.issueDate).toFormat(
+        'dd MMMM yyyy'
+    )
 
     const validTillDate = DateTime.fromISO(document.issueDate)
         .plus({ years: 2 })
         .minus({ days: 1 })
-    const validTillDateString = validTillDate.toFormat('dd MMM yyyy')
+    const validTillDateString = validTillDate.toFormat('dd MMMM yyyy')
     return (
         <>
             <Helmet>
                 <title>national-youth-council - standard-first-aid</title>
             </Helmet>
-            <Root $justifyContent="center" $vertical>
-                <FlippableCard
-                    widthInPx={CERT_WIDTH}
-                    heightInPx={CERT_HEIGHT}
-                    front={
-                        <CardFace
-                            $vertical
-                            $justifyContent="space-between"
-                            $padding="24px 24px 8px 24px"
-                        >
-                            {/* Header container */}
-                            <FlexBox
-                                $spacing={1}
-                                $justifyContent="flex-start"
-                                $width="100%"
-                            >
-                                <LogoImage
-                                    src={obsLogoSrc}
-                                    alt="Outward Bound School Logo"
-                                    $imgHeight="70px"
-                                />
-                            </FlexBox>
-                            {/* Center container */}
-                            <FlexBox $vertical $spacing={2}>
-                                <FlexBox $vertical>
-                                    <Typography
-                                        $mb={0}
-                                        $m={0}
-                                        $mt={2}
-                                        $size="large"
-                                        $bold
-                                    >
-                                        {document.name}
-                                    </Typography>
-                                </FlexBox>
-                                <Typography
-                                    $m={0}
-                                    $size="medium"
-                                    $maxWidth="312px"
-                                    $textAlign="center"
-                                >
-                                    Is certified as a Standard First Aid (SFA)
-                                    with CPR (Hands only) + AED Provider
-                                    Accredited by SRFAC
-                                </Typography>
-                            </FlexBox>
-                            {/* Footer container */}
-                            <FooterContainer>
-                                <Typography
-                                    $size="small"
-                                    $textAlign="center"
-                                    $m={0}
-                                    $mt={1}
-                                >
-                                    Date issued: {issueDateString}
-                                </Typography>
-                                <img
-                                    src={obstcLogoSrc}
-                                    alt="OUTWARD BOUND SINGAPORE LIFE SUPPORTING TRAINING CENTRE"
-                                />
-                            </FooterContainer>
-                        </CardFace>
-                    }
-                    back={
-                        <CardFace
-                            $vertical
-                            $justifyContent="space-between"
-                            $padding="56px 24px 4px 24px"
-                        >
-                            {/* Header container */}
+            <Root $vertical>
+                <ObsCertMainPage
+                    title={
+                        <>
                             <Typography
-                                $size="medium"
+                                $mt={0}
+                                $mb={0}
                                 $textAlign="center"
-                                $m={0}
+                                $size={'xlarge'}
+                                $bold
                             >
-                                The holder of this card has successfully
-                                completed the course requirements
+                                STANDARD FIRST AID
                             </Typography>
-                            {/* Center container */}
-                            <FlexBox $vertical>
-                                <Typography $size="large" $m={0} $mb={1} $bold>
-                                    <SignatureImage
-                                        src={`${
-                                            imagesMap[document.ciSignature]
-                                        }`}
-                                        alt="ci signature"
-                                    />
-                                </Typography>
-                                <Line $maxWidth="162px" />
-                                <FlexBox $vertical $spacing={2} $mt={0}>
-                                    <FlexBox $vertical>
-                                        <Typography
-                                            $size="small"
-                                            $mt={1}
-                                            $m={0}
-                                            $bold
-                                        >
-                                            {document.ciName}
-                                        </Typography>
-                                        <Typography $size="small" $mt={0}>
-                                            Chief Instructor
-                                        </Typography>
-                                    </FlexBox>
-                                    <Typography $size="medium" $m={0}>
-                                        Certificate is valid till{' '}
-                                        {validTillDateString}
-                                    </Typography>
-                                </FlexBox>
-                            </FlexBox>
-                            {/* Footer */}
                             <Typography
-                                $size="small"
-                                $textAlign="left"
-                                $width="100%"
+                                $mt={0}
+                                $mb={0}
+                                $textAlign="center"
+                                $size={'small'}
                             >
-                                S/N: {document.serialNumber}
+                                With CPR (Hands Only) and AED Provider
                             </Typography>
-                        </CardFace>
+                        </>
                     }
-                />
-                <FlipInstruction />
+                    signatures={[
+                        {
+                            signatureSrc: imagesMap[document.ciSignature],
+
+                            name: document.ciName,
+                            title: 'Chief Instructor',
+                            location: 'Life Support Training Centre',
+                        },
+                    ]}
+                >
+                    <FlexBox $vertical>
+                        <Typography $size={'medium'} $mt={0} $bold>
+                            <br />
+                            {name}
+                        </Typography>
+                        <Typography $size={'small'} $mt={-1.0}>
+                            Is Certified as a Provider of
+                        </Typography>
+                        <Typography
+                            $textAlign="center"
+                            $size="medium"
+                            $mt={0}
+                            $bold
+                        >
+                            STANDARD FIRST AID (SFA), and
+                        </Typography>
+                        <Typography
+                            $textAlign="center"
+                            $size="medium"
+                            $mt={-1}
+                            $bold
+                        >
+                            With CARDIOPULMONARY RESUSCITATION (CPR) – HANDS
+                            ONLY, and
+                        </Typography>
+                        <Typography
+                            $textAlign="center"
+                            $size="medium"
+                            $mt={-1}
+                            $bold
+                        >
+                            AUTOMATED EXTERNAL DEFIBRILLATION (AED)
+                        </Typography>
+                        <Typography
+                            $textAlign="center"
+                            $size="medium"
+                            $mt={-1}
+                            $bold
+                        >
+                            PROVIDER
+                        </Typography>
+                        <Typography $size={'small'} $mt={0}>
+                            On
+                        </Typography>
+                        <Typography $size={'medium'} $mt={0} $bold>
+                            {issueDate}
+                        </Typography>
+                        <Typography $size={'small'} $mt={-1} $bold>
+                            Certificate No.: {document.certificateNumber}
+                        </Typography>
+                        <Typography $size={'small'} $mt={0} $bold>
+                            Certificate is valid till {validTillDateString}
+                        </Typography>
+                        <Typography $size={'small'} $mt={0}>
+                            <br />
+                            Accredited by
+                        </Typography>
+                        <SRFACLogoImage
+                            src={`${srfacLogoSrc}`}
+                            alt="SRFAC Logo"
+                        />
+                    </FlexBox>
+                </ObsCertMainPage>
             </Root>
         </>
     )

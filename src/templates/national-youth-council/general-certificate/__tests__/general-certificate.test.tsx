@@ -35,7 +35,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               justify-content: center;
             }
 
-            .c11 {
+            .c12 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -72,7 +72,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               margin-top: 8px;
             }
 
-            .c13 {
+            .c14 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -80,7 +80,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               text-align: center;
             }
 
-            .c14 {
+            .c15 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -106,16 +106,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               z-index: initial;
             }
 
-            .c10 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c12 {
+            .c13 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -128,6 +119,32 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               -ms-flex-positive: 1;
               flex-grow: 1;
               color: #808041;
+            }
+
+            .c10 {
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c11 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
             }
 
             .c1 {
@@ -245,15 +262,21 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
                 >
                   <div
                     className="c10"
-                  />
-                  <div
-                    className="c11"
-                  />
+                  >
+                    <img
+                      alt="Signature of signee"
+                      className="c11"
+                      src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                    />
+                  </div>
                   <div
                     className="c12"
+                  />
+                  <div
+                    className="c13"
                   >
                     <p
-                      className="c13 c3"
+                      className="c14 c3"
                     >
                       <b>
                         Nicholas Conceicao
@@ -261,7 +284,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
                        | Executive Director
                     </p>
                     <p
-                      className="c14 c3"
+                      className="c15 c3"
                     >
                       Outward Bound Singapore
                     </p>

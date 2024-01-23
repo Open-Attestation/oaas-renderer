@@ -194,6 +194,11 @@ export const HealthSciencesAuthorityFreeSaleTemplate: FunctionComponent<
                         </Text>
                         <div>
                             <img
+                                style={{
+                                    height: '48px',
+                                    width: 'auto',
+                                    maxWidth: '200px',
+                                }}
                                 src={document.signature_image}
                                 alt="signature"
                             />

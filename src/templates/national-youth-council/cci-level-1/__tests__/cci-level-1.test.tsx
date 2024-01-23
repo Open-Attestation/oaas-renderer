@@ -35,7 +35,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               justify-content: center;
             }
 
-            .c19 {
+            .c20 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -54,7 +54,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               justify-content: center;
             }
 
-            .c19 > *:not(:last-child) {
+            .c20 > *:not(:last-child) {
               margin-bottom: 24px;
             }
 
@@ -62,7 +62,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               min-width: 500px;
             }
 
-            .c21 {
+            .c22 {
               width: 100%;
               border: 1px solid black;
               border-collapse: collapse;
@@ -72,22 +72,22 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               table-layout: fixed;
             }
 
-            .c22 {
+            .c23 {
               border: 1px solid black;
             }
 
-            .c23 {
+            .c24 {
               border: 1px solid black;
               font-weight: bold;
             }
 
-            .c24 {
+            .c25 {
               border: 1px solid black;
               font-style: italic;
               text-align: left;
             }
 
-            .c25 {
+            .c26 {
               padding-left: 0px;
               margin-left: 18px;
               margin-top: 0px;
@@ -108,7 +108,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               z-index: initial;
             }
 
-            .c18 {
+            .c19 {
               background: white;
               position: relative;
               width: 21cm;
@@ -122,7 +122,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               z-index: initial;
             }
 
-            .c14 {
+            .c15 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -173,7 +173,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               margin-top: -8px;
             }
 
-            .c16 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -181,7 +181,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               text-align: center;
             }
 
-            .c17 {
+            .c18 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -189,13 +189,13 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               text-align: center;
             }
 
-            .c20 {
+            .c21 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
             }
 
-            .c26 {
+            .c27 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -207,16 +207,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c13 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c15 {
+            .c16 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -229,6 +220,32 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
               -ms-flex-positive: 1;
               flex-grow: 1;
               color: #808041;
+            }
+
+            .c13 {
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c14 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
             }
 
             .c3 {
@@ -285,7 +302,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
             }
 
             @media print {
-              .c18 {
+              .c19 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
@@ -389,15 +406,21 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                   >
                     <div
                       className="c13"
-                    />
-                    <div
-                      className="c14"
-                    />
+                    >
+                      <img
+                        alt="Signature of signee"
+                        className="c14"
+                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                      />
+                    </div>
                     <div
                       className="c15"
+                    />
+                    <div
+                      className="c16"
                     >
                       <p
-                        className="c16 c5"
+                        className="c17 c5"
                       >
                         <b>
                           Nicholas Conceicao
@@ -405,7 +428,7 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                          | Executive Director
                       </p>
                       <p
-                        className="c17 c5"
+                        className="c18 c5"
                       >
                         Outward Bound Singapore
                       </p>
@@ -414,18 +437,18 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                 </div>
               </div>
               <div
-                className="c18"
+                className="c19"
               >
                 <div
-                  className="c19"
+                  className="c20"
                 >
                   <p
-                    className="c20 c5"
+                    className="c21 c5"
                   >
                     This table lists the operating systems and devices used in the MOE OALCs that this certificate holder has been trained to operate.
                   </p>
                   <table
-                    className="c21"
+                    className="c22"
                   >
                     <colgroup>
                       <col
@@ -443,40 +466,40 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                     <tbody>
                       <tr>
                         <th
-                          className="c22"
+                          className="c23"
                         />
                         <th
-                          className="c22"
+                          className="c23"
                         >
                           Labrador OALC
                         </th>
                         <th
-                          className="c22"
+                          className="c23"
                         >
                           Jalan Bahtera OALC
                         </th>
                         <th
-                          className="c22"
+                          className="c23"
                         >
                           Dairy Farm OALC
                         </th>
                         <th
-                          className="c22"
+                          className="c23"
                         >
                           Changi Coast OALC
                         </th>
                       </tr>
                       <tr>
                         <td
-                          className="c23"
+                          className="c24"
                         >
                           Tower Circuit
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Edelrid - Smart Belay
@@ -487,10 +510,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Saferoller®
@@ -498,10 +521,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Edelrid - Smart Belay
@@ -512,10 +535,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Saferoller®
@@ -525,15 +548,15 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c23"
+                          className="c24"
                         >
                           Zipline
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Mini-Zip with Roperoller®
@@ -541,10 +564,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Traditional Zipline
@@ -555,10 +578,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Mini-Zip with Saferoller®
@@ -566,10 +589,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Traditional Zipline
@@ -579,15 +602,15 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c23"
+                          className="c24"
                         >
                           Belay
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Traditional top rope belay
@@ -598,10 +621,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Traditional top rope belay
@@ -609,10 +632,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Traditional top rope belay
@@ -620,10 +643,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Traditional top rope belay
@@ -633,15 +656,15 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c23"
+                          className="c24"
                         >
                           Abseil
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Static abseil rig with back up belay set up
@@ -649,10 +672,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Static abseil rig with back up belay set up
@@ -660,10 +683,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Static abseil rig with back up belay set up
@@ -671,10 +694,10 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                           </ul>
                         </td>
                         <td
-                          className="c24"
+                          className="c25"
                         >
                           <ul
-                            className="c25"
+                            className="c26"
                           >
                             <li>
                               Static abseil rig with back up belay set up
@@ -685,26 +708,26 @@ describe('NationalYouthCouncilCciLevel_1Template', () => {
                     </tbody>
                   </table>
                   <ul
-                    className="c25"
+                    className="c26"
                   >
                     <li
-                      className="c26 c5"
+                      className="c27 c5"
                     >
                       This certificate is only valid for purposes of the abovementioned systems and devices at MOE OALCs and does not grant the holder any form of certification to operate or conduct activities at any other premises.
                     </li>
                     <li
-                      className="c26 c5"
+                      className="c27 c5"
                     >
                       This certificate shall remain valid for a period of one (1) year from the date of this certificate.
                        
                     </li>
                     <li
-                      className="c26 c5"
+                      className="c27 c5"
                     >
                       An expired certificate shall be deemed invalid.
                     </li>
                     <li
-                      className="c26 c5"
+                      className="c27 c5"
                     >
                       Any person holding an expired certificate shall be given three (3) months’ grace period from the date of expiry to complete the recertification process.
                     </li>

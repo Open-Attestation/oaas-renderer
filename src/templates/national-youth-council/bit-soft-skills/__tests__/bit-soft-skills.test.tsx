@@ -35,29 +35,6 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               justify-content: center;
             }
 
-            .c18 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
-            .c18 > *:not(:last-child) {
-              margin-bottom: 24px;
-            }
-
             .c19 {
               display: -webkit-box;
               display: -webkit-flex;
@@ -78,10 +55,10 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
             }
 
             .c19 > *:not(:last-child) {
-              margin-bottom: 8px;
+              margin-bottom: 24px;
             }
 
-            .c21 {
+            .c20 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -100,7 +77,30 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               justify-content: center;
             }
 
-            .c21 > *:not(:last-child) {
+            .c20 > *:not(:last-child) {
+              margin-bottom: 8px;
+            }
+
+            .c22 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
+            .c22 > *:not(:last-child) {
               margin-bottom: 0px;
             }
 
@@ -118,7 +118,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               z-index: initial;
             }
 
-            .c17 {
+            .c18 {
               background: white;
               position: relative;
               width: 21cm;
@@ -132,7 +132,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               z-index: initial;
             }
 
-            .c13 {
+            .c14 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -179,7 +179,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               margin-top: 0px;
             }
 
-            .c15 {
+            .c16 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -187,7 +187,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               text-align: center;
             }
 
-            .c16 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -195,13 +195,13 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               text-align: center;
             }
 
-            .c20 {
+            .c21 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
             }
 
-            .c23 {
+            .c24 {
               font-size: 10px;
               font-style: italic;
               font-weight: 400;
@@ -211,20 +211,10 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               margin-right: 0px;
             }
 
-            .c24 {
+            .c25 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              margin-left: 0px;
-              margin-right: 0px;
-            }
-
-            .c27 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
               margin-top: 0px;
               margin-bottom: 0px;
               margin-left: 0px;
@@ -235,11 +225,21 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              margin-right: 0px;
+            }
+
+            .c29 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
               width: 100%;
               text-align: left;
             }
 
-            .c30 {
+            .c31 {
               font-size: 12px;
               font-style: italic;
               font-weight: 400;
@@ -251,16 +251,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c12 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c14 {
+            .c15 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -273,6 +264,32 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               -ms-flex-positive: 1;
               flex-grow: 1;
               color: #808041;
+            }
+
+            .c12 {
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c13 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
             }
 
             .c3 {
@@ -322,7 +339,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               min-width: 500px;
             }
 
-            .c25 {
+            .c26 {
               width: 100%;
               border: none;
               border-collapse: collapse;
@@ -331,23 +348,23 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               text-align: start;
             }
 
-            .c25 td {
+            .c26 td {
               vertical-align: top;
             }
 
-            .c26 {
+            .c27 {
               white-space: nowrap;
               padding-right: 24px;
             }
 
-            .c29 {
+            .c30 {
               padding-left: 0px;
               margin-left: 18px;
               margin-top: 0px;
               margin-bottom: 0px;
             }
 
-            .c22 {
+            .c23 {
               width: auto;
             }
 
@@ -362,7 +379,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
             }
 
             @media print {
-              .c17 {
+              .c18 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
@@ -443,15 +460,21 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                   >
                     <div
                       className="c12"
-                    />
-                    <div
-                      className="c13"
-                    />
+                    >
+                      <img
+                        alt="Signature of signee"
+                        className="c13"
+                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                      />
+                    </div>
                     <div
                       className="c14"
+                    />
+                    <div
+                      className="c15"
                     >
                       <p
-                        className="c15 c5"
+                        className="c16 c5"
                       >
                         <b>
                           Nicholas Conceicao
@@ -459,7 +482,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                          | Executive Director
                       </p>
                       <p
-                        className="c16 c5"
+                        className="c17 c5"
                       >
                         Outward Bound Singapore
                       </p>
@@ -468,46 +491,46 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                 </div>
               </div>
               <div
-                className="c17"
+                className="c18"
               >
                 <div
-                  className="c18"
+                  className="c19"
                 >
                   <div
-                    className="c19"
+                    className="c20"
                   >
                     <p
-                      className="c20 c5"
+                      className="c21 c5"
                     >
                       Brick Wall Model of Core Competencies for Effective Outdoor Leadership
                     </p>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       <img
                         alt="brick wall model"
-                        className="c22"
+                        className="c23"
                         src="brick-wall-model.png"
                       />
                       <p
-                        className="c23 c5"
+                        className="c24 c5"
                       >
                         Priest, S. & Gass, M. (2018). Effective Leadership in Adventure Programming (3rd ed.). Human Kinetics
                       </p>
                     </div>
                   </div>
                   <p
-                    className="c24 c5"
+                    className="c25 c5"
                   >
                     Soft Skills Modules
                   </p>
                   <table
-                    className="c25"
+                    className="c26"
                   >
                     <tbody>
                       <tr>
                         <td
-                          className="c26"
+                          className="c27"
                         >
                           Soft Skills 1a&1b 
                         </td>
@@ -517,7 +540,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c27"
                         >
                           Soft Skills 2
                         </td>
@@ -527,7 +550,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c27"
                         >
                           Soft Skills 3
                         </td>
@@ -537,7 +560,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c27"
                         >
                           Soft Skills 4
                         </td>
@@ -547,7 +570,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c27"
                         >
                           Soft Skills 5a&5b
                         </td>
@@ -557,7 +580,7 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                       </tr>
                       <tr>
                         <td
-                          className="c26"
+                          className="c27"
                         >
                           Soft Skills 6&7 
                         </td>
@@ -568,34 +591,34 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
                     </tbody>
                   </table>
                   <div
-                    className="c19"
+                    className="c20"
                   >
                     <p
-                      className="c27 c5"
+                      className="c28 c5"
                     >
                       The Soft Skills Programme is one of the trainings that is required for Trainee Instructors to turn operational. The modules covered in the programme allows the staff to gain knowledge, skills and attitude required to conduct a safe and quality Outward Bound Singapore Course.
                     </p>
                     <div>
                       <p
-                        className="c28 c5"
+                        className="c29 c5"
                       >
                         Programme materials and content is largely referenced from the following sources:
                       </p>
                       <ol
-                        className="c29"
+                        className="c30"
                       >
                         <li
-                          className="c30 c5"
+                          className="c31 c5"
                         >
                           Priest, S. & Gass, M. (2018). Effective Leadership in Adventure Programming (3rd ed.). Human Kinetics
                         </li>
                         <li
-                          className="c30 c5"
+                          className="c31 c5"
                         >
                           Jacobson, M. & Ruddy, M. (2004). Open to Outcome: A Practical Guide for Facilitating & Teaching Experiential Reflection. Wood ‘N’ Barnes Publishing
                         </li>
                         <li
-                          className="c30 c5"
+                          className="c31 c5"
                         >
                           Mark Collard (2014). Serious Fun: Your Step-by-Step Guide to Learning Remarkably Fun Programs That Make A Difference. playmeo
                         </li>

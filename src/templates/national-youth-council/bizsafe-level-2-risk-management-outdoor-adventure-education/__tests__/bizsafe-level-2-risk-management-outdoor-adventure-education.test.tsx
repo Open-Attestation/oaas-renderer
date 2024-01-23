@@ -35,7 +35,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               justify-content: center;
             }
 
-            .c13 {
+            .c14 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -87,7 +87,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               margin-top: 8px;
             }
 
-            .c15 {
+            .c16 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -95,7 +95,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               text-align: center;
             }
 
-            .c16 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -121,16 +121,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               z-index: initial;
             }
 
-            .c12 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c14 {
+            .c15 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -143,6 +134,32 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               -ms-flex-positive: 1;
               flex-grow: 1;
               color: #808041;
+            }
+
+            .c12 {
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c13 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
             }
 
             .c1 {
@@ -274,15 +291,21 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
                 >
                   <div
                     className="c12"
-                  />
-                  <div
-                    className="c13"
-                  />
+                  >
+                    <img
+                      alt="Signature of signee"
+                      className="c13"
+                      src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                    />
+                  </div>
                   <div
                     className="c14"
+                  />
+                  <div
+                    className="c15"
                   >
                     <p
-                      className="c15 c3"
+                      className="c16 c3"
                     >
                       <b>
                         Nicholas Conceicao
@@ -290,7 +313,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
                        | Executive Director
                     </p>
                     <p
-                      className="c16 c3"
+                      className="c17 c3"
                     >
                       Outward Bound Singapore
                     </p>

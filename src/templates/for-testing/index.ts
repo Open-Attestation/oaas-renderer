@@ -1,4 +1,5 @@
 import { TemplateRegistry } from '@govtechsg/decentralized-renderer-react-components'
+import { forTestingOpenattestationDemoCertificateA4LandscapeTemplates } from './openattestation-demo-certificate-a4-landscape'
 import { forTestingMultipleImagesCertificateTemplates } from './multiple-images-certificate'
 import { forTestingOpenattestationDemoCertificateA4Templates } from './openattestation-demo-certificate-a4'
 import { forTestingOpenattestationDemoCertificateCardTemplates } from './openattestation-demo-certificate-card'
@@ -7,6 +8,8 @@ import { forTestingSimpleCert_2Templates } from './simple-cert-2'
 import { forTestingSimpleCertTemplates } from './simple-cert'
 
 export const registry: TemplateRegistry<any> = {
+    'for-testing/openattestation-demo-certificate-a4-landscape':
+        forTestingOpenattestationDemoCertificateA4LandscapeTemplates,
     'for-testing/multiple-images-certificate':
         forTestingMultipleImagesCertificateTemplates,
     'for-testing/openattestation-demo-certificate-a4':

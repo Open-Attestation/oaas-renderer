@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+export const A4LandscapeWidthPx = 1096.063
+
 export const A4Landscape = styled.div<{
     $bgImg?: string
     $zIndex?: number
