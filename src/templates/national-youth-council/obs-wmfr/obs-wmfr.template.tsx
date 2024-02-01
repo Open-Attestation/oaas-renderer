@@ -3,40 +3,25 @@ import { TemplateProps } from '@govtechsg/decentralized-renderer-react-component
 import { NationalYouthCouncilObsWmfrOaDoc } from './obs-wmfr.types'
 import { DateTime } from 'luxon'
 import { Helmet } from 'react-helmet-async'
-import { FlippableCard } from 'components/flippable-card/flippable-card'
-import { FlipInstruction } from 'components/flippable-card/flip-instruction'
-import { CardFace } from 'components/card-face'
 
-import backgroundImgFront from '../common/assets/obs-wmfr-front-bg.jpg'
-import backgroundImgBack from '../common/assets/obs-wmfr-back-bg.png'
-
-import {
-    BackgroundImg,
-    Root,
-    NameComponent,
-    CourseComponent,
-    SerialNumberComponent,
-    DateOfIssueComponent,
-    DateOfExpiryComponent,
-    SignatureComponent,
-    SignatureImg,
-    SignatureProfileComponent,
-} from './obs-wmfr.components'
+import { Root } from './obs-wmfr.components'
 import imagesMap from '../common/assets/__generated__/images-map'
-
-const CERT_WIDTH = 352
-const CERT_HEIGHT = 230
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { Typography } from '../common/components'
+import { FlexBox } from 'components/flexbox'
 
 export const NationalYouthCouncilObsWmfrTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilObsWmfrOaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
+    const name = document.name.toUpperCase()
     const issueDate = DateTime.fromISO(document.issueDate).toFormat(
-        'dd/MM/yyyy'
+        'dd MMMM yyyy'
     )
-    const expiryDate = DateTime.fromISO(document.issueDate)
+
+    const validTillDate = DateTime.fromISO(document.issueDate)
         .plus({ years: 2 })
         .minus({ days: 1 })
-        .toFormat('dd MMM yyyy')
+    const validTillDateString = validTillDate.toFormat('dd MMMM yyyy')
 
     return (
         <>
@@ -44,57 +29,77 @@ export const NationalYouthCouncilObsWmfrTemplate: FunctionComponent<
                 <title>national-youth-council - obs-wmfr</title>
             </Helmet>
             <Root $vertical>
-                <FlippableCard
-                    widthInPx={CERT_WIDTH}
-                    heightInPx={CERT_HEIGHT}
-                    front={
-                        <CardFace $zIndex={-2} $vertical>
-                            <BackgroundImg
-                                src={backgroundImgFront}
-                            ></BackgroundImg>
-                            <NameComponent>{document.name}</NameComponent>
-                            <CourseComponent>
-                                Successfully completed
-                                <br />
-                                Wilderness Medical First Responder
-                                <br />
-                                (WMFR)
-                            </CourseComponent>
-                            <SerialNumberComponent>
-                                S/N: {document.serialNumber}
-                            </SerialNumberComponent>
-                            <DateOfIssueComponent>
-                                DATE OF ISSUE: {issueDate}
-                            </DateOfIssueComponent>
-                        </CardFace>
+                <ObsCertMainPage
+                    title={
+                        <Typography
+                            $mt={0}
+                            $mb={0}
+                            $textAlign="center"
+                            $size={'xlarge'}
+                            $bold
+                        >
+                            WILDERNESS MEDICAL FIRST RESPONDER
+                        </Typography>
                     }
-                    back={
-                        <CardFace $zIndex={-2} $vertical>
-                            <BackgroundImg
-                                src={backgroundImgBack}
-                            ></BackgroundImg>
-                            <DateOfExpiryComponent>
-                                Valid till {expiryDate}
-                            </DateOfExpiryComponent>
-                            <SignatureComponent>
-                                <SignatureImg
-                                    src={`${
-                                        imagesMap[document.ExecDirSignature]
-                                    }`}
-                                    alt="Issuing officer signature"
-                                />
-                            </SignatureComponent>
-                            <SignatureProfileComponent>
-                                {document.ExecDirName}
-                                <br />
-                                {document.ExecDirPosition}
-                                <br />
-                                Outward Bound Singapore
-                            </SignatureProfileComponent>
-                        </CardFace>
-                    }
-                />
-                <FlipInstruction />
+                    signatures={[
+                        {
+                            signatureSrc: imagesMap[document.ExecDirSignature],
+
+                            name: document.ExecDirName,
+                            title: 'Executive Director',
+                        },
+                    ]}
+                >
+                    <FlexBox $vertical>
+                        <Typography $size={'large'} $mt={0} $bold>
+                            <br />
+                            {name}
+                        </Typography>
+                        <Typography $size={'small'} $mt={-1.0}>
+                            Is Certified as a
+                        </Typography>
+                        <Typography
+                            $textAlign="center"
+                            $size="large"
+                            $mt={0}
+                            $bold
+                        >
+                            WILDERNESS MEDICAL FIRST RESPONDER (WMFR)
+                        </Typography>
+                        <Typography $size={'small'} $mt={-1.0}>
+                            On
+                        </Typography>
+                        <Typography $size={'large'} $mt={0} $bold>
+                            {issueDate}
+                        </Typography>
+                        <Typography $size={'small'} $mt={-1.0}>
+                            Conducted by
+                        </Typography>
+                        <Typography
+                            $textAlign="center"
+                            $size="large"
+                            $mt={0}
+                            $bold
+                        >
+                            OUTWARD BOUND SINGAPORE
+                        </Typography>
+                        <Typography
+                            $textAlign="center"
+                            $size="large"
+                            $mt={0}
+                            $bold
+                        >
+                            MEDICAL SERVICES & TRAINING
+                        </Typography>
+                        <Typography $size={'small'} $mt={0} $bold>
+                            <br />
+                            Certificate No.: {document.certificateNumber}
+                        </Typography>
+                        <Typography $size={'small'} $mt={0} $bold>
+                            Certificate is valid till {validTillDateString}
+                        </Typography>
+                    </FlexBox>
+                </ObsCertMainPage>
             </Root>
         </>
     )

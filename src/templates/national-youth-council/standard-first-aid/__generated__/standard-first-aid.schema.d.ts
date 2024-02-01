@@ -14,13 +14,15 @@ export interface NationalYouthCouncilStandardFirstAid {
     /**
      * Name of trainer
      */
-    ciName: 'Fazdli Jamal'
+    ciName: 'Fazdli Jamal' | 'Jaffar Ali'
     /**
      * CI's signature
      */
-    ciSignature: 'fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png'
+    ciSignature:
+        | 'fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png'
+        | 'jaffar-ali-signature&8b44a84d49ccd38fea996c652df243b8ab2b1debebdfc32049373e64c3d46807.png'
     /**
      * Certificate number
      */
-    serialNumber: string
+    certificateNumber: string
 }

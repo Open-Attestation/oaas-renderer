@@ -42,6 +42,7 @@
     "scripts": {
         "dev": "ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__development__/prepare.ts && concurrently \"BROWSER=none react-app-rewired start\" \"PORT=3001 IS_PREVIEW_APP=true react-app-rewired start\"",
         "build": "run() { ISSUER_ID=$1 react-app-rewired build; }; run",
+        "build:deploy": "yarn build $AGENCY_NAME",
         "test": "react-scripts test --watchAll=false",
         "test:watch": "react-scripts test",
         "eject": "react-scripts eject",

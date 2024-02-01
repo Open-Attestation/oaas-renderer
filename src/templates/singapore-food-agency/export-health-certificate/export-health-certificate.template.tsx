@@ -44,6 +44,7 @@ import {
     MobileProductComponent,
     MobileProductComponentIndex,
     MobileAttestationText,
+    MobileProductFieldComponent,
 } from './export-health-certificate.components'
 import logoImgSrc from './sfa_logo.png'
 import { QRCodeSVG } from 'qrcode.react'
@@ -101,9 +102,9 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
     const mobileProducts = document.products.map((product, index) => (
         <MobileProductComponent>
             <MobileProductComponentIndex>
-                {index + 1}
+                ITEM {index + 1}
             </MobileProductComponentIndex>
-            <MobileFieldComponent>
+            <MobileProductFieldComponent>
                 <div
                     style={{
                         fontWeight: '700',
@@ -112,8 +113,8 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                     Product Description
                 </div>
                 {product.description}
-            </MobileFieldComponent>
-            <MobileFieldComponent>
+            </MobileProductFieldComponent>
+            <MobileProductFieldComponent>
                 <div
                     style={{
                         fontWeight: '700',
@@ -122,8 +123,8 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                     Brand
                 </div>
                 {product.brand}
-            </MobileFieldComponent>
-            <MobileFieldComponent>
+            </MobileProductFieldComponent>
+            <MobileProductFieldComponent>
                 <div
                     style={{
                         fontWeight: '700',
@@ -132,8 +133,8 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                     Product Code/ Batch No./ Lot No.
                 </div>
                 {product.codeOrBatchNoOrLotNo}
-            </MobileFieldComponent>
-            <MobileFieldComponent>
+            </MobileProductFieldComponent>
+            <MobileProductFieldComponent>
                 <div
                     style={{
                         fontWeight: '700',
@@ -142,8 +143,8 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                     Number & Type of Packages
                 </div>
                 {product.numberAndTypeOfPackages}
-            </MobileFieldComponent>
-            <MobileFieldComponent>
+            </MobileProductFieldComponent>
+            <MobileProductFieldComponent>
                 <div
                     style={{
                         fontWeight: '700',
@@ -152,8 +153,8 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                     Net weight (Gross Weight)
                 </div>
                 {product.netWeight}
-            </MobileFieldComponent>
-            <MobileFieldComponent>
+            </MobileProductFieldComponent>
+            <MobileProductFieldComponent>
                 <div
                     style={{
                         fontWeight: '700',
@@ -162,8 +163,8 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                     Production Date
                 </div>
                 {formatDate(product.productionDate)}
-            </MobileFieldComponent>
-            <MobileFieldComponent>
+            </MobileProductFieldComponent>
+            <MobileProductFieldComponent>
                 <div
                     style={{
                         fontWeight: '700',
@@ -172,7 +173,7 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                     Expiry Date
                 </div>
                 {formatDate(product.expiryDate)}
-            </MobileFieldComponent>
+            </MobileProductFieldComponent>
         </MobileProductComponent>
     ))
 
@@ -261,7 +262,7 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                             </CertifyingAgencySection>
                             <IdentificationProductsTitleSection>
                                 <TitleComponent>
-                                    <div style={{ width: '22px' }}>II.</div>
+                                    <div style={{ width: '14px' }}>II.</div>
                                     IDENTIFICATION OF THE PRODUCTS
                                 </TitleComponent>
                             </IdentificationProductsTitleSection>
@@ -636,7 +637,7 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                             </LogoSection>
                             <CertifyingAgencySection>
                                 <TitleComponent>
-                                    <div style={{ width: '22px' }}>I.</div>
+                                    <div style={{ width: '14px' }}>I.</div>
                                     CERTIFYING AGENCY
                                 </TitleComponent>
                                 <CertifyingAgencySectionFields>
@@ -664,7 +665,7 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                             </CertifyingAgencySection>
                             <IdentificationProductsTitleSection>
                                 <TitleComponent>
-                                    <div style={{ width: '22px' }}>II.</div>
+                                    <div style={{ width: '14px' }}>II.</div>
                                     IDENTIFICATION OF THE PRODUCTS
                                 </TitleComponent>
                             </IdentificationProductsTitleSection>
@@ -757,7 +758,7 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                             </IdentificationProductsTransportSection>
                             <SectionWithTitleAndFields>
                                 <TitleComponent>
-                                    <div style={{ width: '22px' }}>III.</div>
+                                    <div style={{ width: '14px' }}>III.</div>
                                     ORIGIN AND PROVENENCE OF THE PRODUCTS
                                 </TitleComponent>
                                 <SectionContainerWithTitleAndFields>
@@ -816,7 +817,7 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                             </SectionWithTitleAndFields>
                             <SectionWithTitleAndFields>
                                 <TitleComponent>
-                                    <div style={{ width: '22px' }}>IV.</div>
+                                    <div style={{ width: '14px' }}>IV.</div>
                                     DESTINATION OF THE PRODUCTS
                                 </TitleComponent>
                                 <SectionContainerWithTitleAndFields>
@@ -873,7 +874,7 @@ export const SingaporeFoodAgencyExportHealthCertificateTemplate: FunctionCompone
                             </SectionWithTitleAndFields>
                             <SectionWithTitleAndFields>
                                 <TitleComponent>
-                                    <div style={{ width: '22px' }}>V.</div>
+                                    <div style={{ width: '14px' }}>V.</div>
                                     ATTESTATION
                                 </TitleComponent>
                                 <AttestationContainer>

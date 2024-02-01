@@ -210,7 +210,7 @@ export const AttestationContainer = styled.div`
     gap: 4px;
     align-self: stretch;
 
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -329,6 +329,13 @@ export const MobileFieldComponent = styled.div`
     align-items: flex-start;
     align-self: stretch;
 `
+export const MobileProductFieldComponent = styled.div`
+    display: flex;
+    padding: 0px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+`
 export const MobileProductComponent = styled.div`
     display: flex;
     padding: 8px;
@@ -348,12 +355,12 @@ export const MobileProductComponent = styled.div`
 `
 export const MobileProductComponentIndex = styled.div`
     display: flex;
-    padding-left: 22px;
+    padding-left: 32px;
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
 
-    font-size: 11px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: 125%;

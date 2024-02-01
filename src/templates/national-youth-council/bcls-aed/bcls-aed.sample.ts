@@ -14,8 +14,8 @@ export const sample: NationalYouthCouncilBclsAedOaDoc = {
         },
     ],
     ciSignature:
-        'jaffar-ali-signature&acd83f1fde2dd3fbddb93bcd870370fd3e273e0675019b4b42ada360e8cdfec4.jpg',
+        'jaffar-ali-signature&8b44a84d49ccd38fea996c652df243b8ab2b1debebdfc32049373e64c3d46807.png',
     issueDate: '2020-12-31',
-    serialNumber: 'serial-number-1',
+    certificateNumber: 'OBSBCLS-2024-001',
     ciName: `Jaffar Ali`,
 }

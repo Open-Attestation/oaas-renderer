@@ -30,7 +30,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               z-index: initial;
             }
 
-            .c14 {
+            .c15 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -83,7 +83,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               text-align: center;
             }
 
-            .c16 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -91,7 +91,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               text-align: center;
             }
 
-            .c17 {
+            .c18 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -103,16 +103,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c13 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c15 {
+            .c16 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -125,6 +116,32 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               -ms-flex-positive: 1;
               flex-grow: 1;
               color: #808041;
+            }
+
+            .c13 {
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c14 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
             }
 
             .c2 {
@@ -287,15 +304,21 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
                   >
                     <div
                       className="c13"
-                    />
-                    <div
-                      className="c14"
-                    />
+                    >
+                      <img
+                        alt="Signature of signee"
+                        className="c14"
+                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                      />
+                    </div>
                     <div
                       className="c15"
+                    />
+                    <div
+                      className="c16"
                     >
                       <p
-                        className="c16 c4"
+                        className="c17 c4"
                       >
                         <b>
                           Nicholas Conceicao
@@ -303,7 +326,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
                          | Executive Director
                       </p>
                       <p
-                        className="c17 c4"
+                        className="c18 c4"
                       >
                         Outward Bound Singapore
                       </p>

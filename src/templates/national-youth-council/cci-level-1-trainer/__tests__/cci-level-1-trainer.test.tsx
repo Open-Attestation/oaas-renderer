@@ -35,7 +35,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               justify-content: center;
             }
 
-            .c18 {
+            .c19 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -54,7 +54,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               justify-content: center;
             }
 
-            .c18 > *:not(:last-child) {
+            .c19 > *:not(:last-child) {
               margin-bottom: 8px;
             }
 
@@ -72,7 +72,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               z-index: initial;
             }
 
-            .c17 {
+            .c18 {
               background: white;
               position: relative;
               width: 21cm;
@@ -86,7 +86,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               z-index: initial;
             }
 
-            .c13 {
+            .c14 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -130,7 +130,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               margin-top: -8px;
             }
 
-            .c15 {
+            .c16 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -138,7 +138,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               text-align: center;
             }
 
-            .c16 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -146,13 +146,13 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               text-align: center;
             }
 
-            .c19 {
+            .c20 {
               font-size: 12px;
               font-style: italic;
               font-weight: 700;
             }
 
-            .c21 {
+            .c22 {
               font-size: 12px;
               font-style: italic;
               font-weight: 700;
@@ -164,16 +164,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c12 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c14 {
+            .c15 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -186,6 +177,32 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               -ms-flex-positive: 1;
               flex-grow: 1;
               color: #808041;
+            }
+
+            .c12 {
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c13 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
             }
 
             .c3 {
@@ -235,14 +252,14 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               min-width: 500px;
             }
 
-            .c20 {
+            .c21 {
               padding-left: 0px;
               margin-left: 18px;
               margin-top: 0px;
               margin-bottom: 0px;
             }
 
-            .c22 {
+            .c23 {
               list-style-type: none;
               padding-left: 0px;
               margin-left: 18px;
@@ -250,17 +267,17 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c22 li {
+            .c23 li {
               text-indent: 5px;
               margin-top: 10px;
             }
 
-            .c22 li:before {
+            .c23 li:before {
               content: '-';
               text-indent: 5px;
             }
 
-            .c22 li span {
+            .c23 li span {
               position: relative;
               left: 20px;
             }
@@ -276,7 +293,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
             }
 
             @media print {
-              .c17 {
+              .c18 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
@@ -414,15 +431,21 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
                   >
                     <div
                       className="c12"
-                    />
-                    <div
-                      className="c13"
-                    />
+                    >
+                      <img
+                        alt="Signature of signee"
+                        className="c13"
+                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                      />
+                    </div>
                     <div
                       className="c14"
+                    />
+                    <div
+                      className="c15"
                     >
                       <p
-                        className="c15 c5"
+                        className="c16 c5"
                       >
                         <b>
                           Nicholas Conceicao
@@ -430,7 +453,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
                          | Executive Director
                       </p>
                       <p
-                        className="c16 c5"
+                        className="c17 c5"
                       >
                         Outward Bound Singapore
                       </p>
@@ -439,46 +462,46 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
                 </div>
               </div>
               <div
-                className="c17"
+                className="c18"
               >
                 <div
-                  className="c18"
+                  className="c19"
                 >
                   <p
-                    className="c19 c5"
+                    className="c20 c5"
                   >
                     This certificate does not grant the holder any form of license to operate at other premises unless otherwise accepted and endorsed by the premise owners
                   </p>
                   <p
-                    className="c19 c5"
+                    className="c20 c5"
                   >
                     This certificate shall remain valid for a period of three (3) years.
                   </p>
                   <p
-                    className="c19 c5"
+                    className="c20 c5"
                   >
                     To revalidate at CCI (Level 1) Trainer, the Trainer shall hold a valid certificate and either:
                   </p>
                   <ul
-                    className="c20"
+                    className="c21"
                   >
                     <li
-                      className="c21 c5"
+                      className="c22 c5"
                     >
                       Provide a portfolio within the preceding three (3) years documenting
                       <ul
-                        className="c22"
+                        className="c23"
                       >
                         <li>
                           <span
-                            className="c19 c5"
+                            className="c20 c5"
                           >
                             five hundred (500) hours of experience delivering CCI Level 1 certification courses, with the last course delivered not more than one (1) year ago; and
                           </span>
                         </li>
                         <li>
                           <span
-                            className="c19 c5"
+                            className="c20 c5"
                           >
                             forty (40) hours of related professional training
                           </span>
@@ -487,37 +510,37 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
                     </li>
                   </ul>
                   <p
-                    className="c19 c5"
+                    className="c20 c5"
                   >
                     OR
                   </p>
                   <ul
-                    className="c20"
+                    className="c21"
                   >
                     <li
-                      className="c21 c5"
+                      className="c22 c5"
                     >
                       Provide a portfolio within the preceding three (3) years documenting
                       <ul
-                        className="c22"
+                        className="c23"
                       >
                         <li>
                           <span
-                            className="c19 c5"
+                            className="c20 c5"
                           >
                             hundred and fifty (150) hours of experience delivering CCI or ropes course-related training; and
                           </span>
                         </li>
                         <li>
                           <span
-                            className="c19 c5"
+                            className="c20 c5"
                           >
                             forty (40) hours of related professional training; and
                           </span>
                         </li>
                         <li>
                           <span
-                            className="c19 c5"
+                            className="c20 c5"
                           >
                             pass a practical revalidation assessment.
                           </span>

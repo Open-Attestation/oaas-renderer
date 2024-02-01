@@ -81,7 +81,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               margin-bottom: 16px;
             }
 
-            .c22 {
+            .c23 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -100,11 +100,11 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               justify-content: center;
             }
 
-            .c22 > *:not(:last-child) {
+            .c23 > *:not(:last-child) {
               margin-bottom: 8px;
             }
 
-            .c24 {
+            .c25 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -123,7 +123,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               justify-content: center;
             }
 
-            .c24 > *:not(:last-child) {
+            .c25 > *:not(:last-child) {
               margin-bottom: 0px;
             }
 
@@ -141,7 +141,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               z-index: initial;
             }
 
-            .c21 {
+            .c22 {
               background: white;
               position: relative;
               width: 21cm;
@@ -155,7 +155,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               z-index: initial;
             }
 
-            .c17 {
+            .c18 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -229,7 +229,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               text-align: left;
             }
 
-            .c19 {
+            .c20 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -237,7 +237,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               text-align: center;
             }
 
-            .c20 {
+            .c21 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -245,13 +245,13 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               text-align: center;
             }
 
-            .c23 {
+            .c24 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
             }
 
-            .c26 {
+            .c27 {
               font-size: 10px;
               font-style: italic;
               font-weight: 400;
@@ -261,7 +261,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               margin-right: 0px;
             }
 
-            .c27 {
+            .c28 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -272,7 +272,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               text-align: center;
             }
 
-            .c28 {
+            .c29 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -284,7 +284,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               text-align: left;
             }
 
-            .c31 {
+            .c32 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -292,7 +292,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               text-decoration: underline;
             }
 
-            .c32 {
+            .c33 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -307,16 +307,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c16 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c18 {
+            .c19 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -329,6 +320,32 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               -ms-flex-positive: 1;
               flex-grow: 1;
               color: #808041;
+            }
+
+            .c16 {
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c17 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
             }
 
             .c3 {
@@ -378,7 +395,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               min-width: 500px;
             }
 
-            .c29 {
+            .c30 {
               width: 100%;
               border: none;
               border-collapse: collapse;
@@ -387,16 +404,16 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
               text-align: start;
             }
 
-            .c29 td {
+            .c30 td {
               vertical-align: top;
             }
 
-            .c30 {
+            .c31 {
               white-space: nowrap;
               padding-right: 24px;
             }
 
-            .c25 {
+            .c26 {
               width: auto;
             }
 
@@ -411,7 +428,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
             }
 
             @media print {
-              .c21 {
+              .c22 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
@@ -508,15 +525,21 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                   >
                     <div
                       className="c16"
-                    />
-                    <div
-                      className="c17"
-                    />
+                    >
+                      <img
+                        alt="Signature of signee"
+                        className="c17"
+                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                      />
+                    </div>
                     <div
                       className="c18"
+                    />
+                    <div
+                      className="c19"
                     >
                       <p
-                        className="c19 c5"
+                        className="c20 c5"
                       >
                         <b>
                           Nicholas Conceicao
@@ -524,7 +547,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                          | Executive Director
                       </p>
                       <p
-                        className="c20 c5"
+                        className="c21 c5"
                       >
                         Outward Bound Singapore
                       </p>
@@ -533,29 +556,29 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                 </div>
               </div>
               <div
-                className="c21"
+                className="c22"
               >
                 <div
                   className="c7"
                 >
                   <div
-                    className="c22"
+                    className="c23"
                   >
                     <p
-                      className="c23 c5"
+                      className="c24 c5"
                     >
                       Brick Wall Model of Core Competencies for Effective Outdoor Leadership
                     </p>
                     <div
-                      className="c24"
+                      className="c25"
                     >
                       <img
                         alt="brick wall model"
-                        className="c25"
+                        className="c26"
                         src="brick-wall-model.png"
                       />
                       <p
-                        className="c26 c5"
+                        className="c27 c5"
                       >
                         Priest, S. & Gass, M. (2018). Effective Leadership in Adventure Programming (3rd ed.). Human Kinetics
                       </p>
@@ -568,24 +591,24 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                       Basic Instructor Training Modules
                     </p>
                     <p
-                      className="c27 c5"
+                      className="c28 c5"
                     >
                       Competencies and Assessments Required to be Operational
                     </p>
                   </div>
                   <div>
                     <p
-                      className="c28 c5"
+                      className="c29 c5"
                     >
                       Facilitation, Organisational, Safety and Risk Skills Training
                     </p>
                     <table
-                      className="c29"
+                      className="c30"
                     >
                       <tbody>
                         <tr>
                           <td
-                            className="c30"
+                            className="c31"
                           >
                             Soft Skills 1a&1b
                              
@@ -596,7 +619,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                         </tr>
                         <tr>
                           <td
-                            className="c30"
+                            className="c31"
                           >
                             Soft Skills 2
                           </td>
@@ -606,7 +629,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                         </tr>
                         <tr>
                           <td
-                            className="c30"
+                            className="c31"
                           >
                             Soft Skills 3
                           </td>
@@ -616,7 +639,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                         </tr>
                         <tr>
                           <td
-                            className="c30"
+                            className="c31"
                           >
                             Soft Skills 4
                           </td>
@@ -626,7 +649,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                         </tr>
                         <tr>
                           <td
-                            className="c30"
+                            className="c31"
                           >
                             Soft Skills 5a&5b
                           </td>
@@ -636,7 +659,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                         </tr>
                         <tr>
                           <td
-                            className="c30"
+                            className="c31"
                           >
                             Soft Skills 6&7 
                           </td>
@@ -676,7 +699,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                     }
                   >
                     <p
-                      className="c28 c5"
+                      className="c29 c5"
                     >
                       Technical Activity and Environmental Skills Training
                     </p>
@@ -684,7 +707,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                       className="c9 c5"
                     >
                       <span
-                        className="c31 c5"
+                        className="c32 c5"
                       >
                         Land Activities Training
                       </span>
@@ -695,10 +718,10 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                     </p>
                   </div>
                   <p
-                    className="c32 c5"
+                    className="c33 c5"
                   >
                     <span
-                      className="c31 c5"
+                      className="c32 c5"
                     >
                       Water Activities Training
                     </span>
@@ -720,10 +743,10 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                     <br />
                   </p>
                   <p
-                    className="c32 c5"
+                    className="c33 c5"
                   >
                     <span
-                      className="c31 c5"
+                      className="c32 c5"
                     >
                       Height Activities Training
                     </span>
@@ -740,10 +763,10 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
                     <br />
                   </p>
                   <p
-                    className="c32 c5"
+                    className="c33 c5"
                   >
                     <span
-                      className="c31 c5"
+                      className="c32 c5"
                     >
                       Basic Instructor Training Summative Assessment
                     </span>

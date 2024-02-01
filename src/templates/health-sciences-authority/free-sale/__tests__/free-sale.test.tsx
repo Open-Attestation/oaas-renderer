@@ -298,9 +298,11 @@ describe('HealthSciencesAuthorityFreeSaleTemplate', () => {
                   style={
                     Object {
                       "bottom": "34px",
+                      "height": "93px",
                       "marginTop": "8px",
                       "position": "absolute",
                       "right": "225px",
+                      "width": "92px",
                     }
                   }
                 />
@@ -972,9 +974,11 @@ describe('HealthSciencesAuthorityFreeSaleTemplate', () => {
                   style={
                     Object {
                       "bottom": "34px",
+                      "height": "93px",
                       "marginTop": "8px",
                       "position": "absolute",
                       "right": "225px",
+                      "width": "92px",
                     }
                   }
                 />

@@ -35,7 +35,7 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               justify-content: center;
             }
 
-            .c19 {
+            .c20 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -72,7 +72,7 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               z-index: initial;
             }
 
-            .c18 {
+            .c19 {
               background: white;
               position: relative;
               width: 21cm;
@@ -86,7 +86,7 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               z-index: initial;
             }
 
-            .c14 {
+            .c15 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -139,7 +139,7 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               margin-top: 0px;
             }
 
-            .c16 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -147,7 +147,7 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               text-align: center;
             }
 
-            .c17 {
+            .c18 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -155,19 +155,19 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               text-align: center;
             }
 
-            .c20 {
+            .c21 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
             }
 
-            .c21 {
+            .c22 {
               font-size: 10px;
               font-style: normal;
               font-weight: 400;
             }
 
-            .c22 {
+            .c23 {
               font-size: 10px;
               font-style: normal;
               font-weight: 700;
@@ -175,7 +175,7 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               text-decoration: underline;
             }
 
-            .c23 {
+            .c24 {
               font-size: 10px;
               font-style: normal;
               font-weight: 700;
@@ -185,16 +185,7 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c13 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c15 {
+            .c16 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -207,6 +198,32 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               -ms-flex-positive: 1;
               flex-grow: 1;
               color: #808041;
+            }
+
+            .c13 {
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c14 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
             }
 
             .c3 {
@@ -263,7 +280,7 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
             }
 
             @media print {
-              .c18 {
+              .c19 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
@@ -355,15 +372,21 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
                   >
                     <div
                       className="c13"
-                    />
-                    <div
-                      className="c14"
-                    />
+                    >
+                      <img
+                        alt="Signature of signee"
+                        className="c14"
+                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                      />
+                    </div>
                     <div
                       className="c15"
+                    />
+                    <div
+                      className="c16"
                     >
                       <p
-                        className="c16 c5"
+                        className="c17 c5"
                       >
                         <b>
                           Nicholas Conceicao
@@ -371,7 +394,7 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
                          | Executive Director
                       </p>
                       <p
-                        className="c17 c5"
+                        className="c18 c5"
                       >
                         Outward Bound Singapore
                       </p>
@@ -380,13 +403,13 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
                 </div>
               </div>
               <div
-                className="c18"
+                className="c19"
               >
                 <div
-                  className="c19"
+                  className="c20"
                 >
                   <p
-                    className="c20 c5"
+                    className="c21 c5"
                     style={
                       Object {
                         "left": "50%",
@@ -398,67 +421,67 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
                     Course Modules – 32 Training hours
                   </p>
                   <p
-                    className="c21 c5"
+                    className="c22 c5"
                   >
                     The curriculum for the OBS Challenge Ropes Course (Leader) level programme aims to provide experienced practitioners with a wider range of rope skills and knowledge on rescue equipment and techniques. Practitioners are trained to independently apply recovery and rescue techniques in situations where a casualty is in distress (either bringing the casualty back onto the activity tower or to the ground) while maintaining different anchor points for both self and the casualty. This includes executing set-ups for Horizontal and Vertical Rescues.
                   </p>
                   <p
-                    className="c22 c5"
+                    className="c23 c5"
                   >
                     1) Risk Analysis & Management System (RAMS)
                   </p>
                   <p
-                    className="c21 c5"
+                    className="c22 c5"
                   >
                     Able to explain and apply various RAMS processes to OBS Challenge Rope Courses activities.
                   </p>
                   <p
-                    className="c22 c5"
+                    className="c23 c5"
                   >
                     2) Equipment and Hardware
                   </p>
                   <p
-                    className="c21 c5"
+                    className="c22 c5"
                   >
                     Able to explain the usage, purpose, care and maintenance of different types of safety equipment, CRC hardware and Personal Protective Equipment.
                   </p>
                   <p
-                    className="c22 c5"
+                    className="c23 c5"
                   >
                     3) Rigging of Outward Bound Singapore Ropes Courses
                   </p>
                   <p
-                    className="c21 c5"
+                    className="c22 c5"
                   >
                     Able to set and rig up all OBS CRC activities independently.
                   </p>
                   <p
-                    className="c22 c5"
+                    className="c23 c5"
                   >
                     4) Identification of Parts of a Ropes Course and their Critical Application
                   </p>
                   <p
-                    className="c21 c5"
+                    className="c22 c5"
                   >
                     Able to identify components of a ropes course and select correct applications for safe loading of a person on a dynamic or static belay.
                   </p>
                   <p
-                    className="c22 c5"
+                    className="c23 c5"
                   >
                     5) Ascend and Descend Techniques (using prussic)
                   </p>
                   <p
-                    className="c21 c5"
+                    className="c22 c5"
                   >
                     Able to perform ascending and descending on ropes using prussic and tapes.
                   </p>
                   <p
-                    className="c22 c5"
+                    className="c23 c5"
                   >
                     6) Aerial Rescue (Vertical and Horizontal Rescues)
                   </p>
                   <p
-                    className="c21 c5"
+                    className="c22 c5"
                   >
                     Able to apply concept of Escalation Model and the principles of:
                     <br />
@@ -469,32 +492,32 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
                     Able to independently execute safe and timely aerial rescue techniques to reduce any form of suspension trauma situations. Rescue includes self and others.
                   </p>
                   <p
-                    className="c22 c5"
+                    className="c23 c5"
                   >
                     7) Group Management and Supervision
                   </p>
                   <p
-                    className="c21 c5"
+                    className="c22 c5"
                   >
                     Able to lead safe and quality conduct of CRC activities in all OBS premises, including mood setting, safety briefing, group management, applying appropriate leadership skills, facilitating learning outcomes and continuously apply risk assessment in their supervision to ensure safety of participants when participating in any CRC activities.
                   </p>
                   <p
-                    className="c22 c5"
+                    className="c23 c5"
                   >
                     8) CRC Operating Systems
                   </p>
                   <p
-                    className="c21 c5"
+                    className="c22 c5"
                   >
                     Able to explain and apply various CRC operating systems.
                   </p>
                   <p
-                    className="c23 c5"
+                    className="c24 c5"
                   >
                     This certificate does not grant the holder any form of license to operate at other premises unless otherwise accepted and endorsed by the premise owners.
                   </p>
                   <p
-                    className="c23 c5"
+                    className="c24 c5"
                   >
                     This certificate shall remain valid for the period that the holder is an Operational instructional staff of OBS.
                   </p>

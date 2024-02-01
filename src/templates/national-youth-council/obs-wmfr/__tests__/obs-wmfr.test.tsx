@@ -16,21 +16,6 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c2 {
-              position: relative;
-              width: 352px;
-              height: 230px;
-            }
-
-            .c2 .card-face {
-              width: 352px;
-              height: 230px;
-            }
-
-            .c2 .card-face:first-child {
-              page-break-after: always;
-            }
-
             .c0 {
               display: -webkit-box;
               display: -webkit-flex;
@@ -50,181 +35,92 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               justify-content: center;
             }
 
-            .c14 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: row;
-              -ms-flex-direction: row;
-              flex-direction: row;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
-            .c13 {
-              position: relative;
-              width: 100%;
-            }
-
-            .c15 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-left: 8px;
-              text-align: center;
-            }
-
-            .c16 {
-              font-family: Libre Franklin;
-            }
-
-            .c3 {
-              width: calc(100% - 1px);
-              height: calc(100% - 1px);
-              background: white;
-              position: relative;
-              padding: 16px;
-              box-sizing: border-box;
-              border: 1px solid #ccc;
-              border-radius: 16px;
-              z-index: -2;
-              -webkit-print-color-adjust: exact;
-            }
-
             .c1 {
               min-width: 500px;
             }
 
-            .c4 {
-              max-width: 100%;
-              height: auto;
-              position: absolute;
-              z-index: -1;
-              border-radius: 16px;
+            .c2 {
+              background: white;
+              position: relative;
+              width: 21cm;
+              min-height: 29.7cm;
+              padding: 2cm;
+              margin: 0 auto;
+              box-sizing: border-box;
               border: 1px solid #ccc;
+              background-size: cover;
+              background-image: url('background.svg');
+              z-index: initial;
             }
 
-            .c5 {
-              position: absolute;
-              top: 16px;
-              width: 320px;
-              height: 68px;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              font-family: 'Libre Franklin';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 18px;
-              line-height: 22px;
-              text-align: center;
-              color: #ffffff;
+            .c14 {
+              display: block;
+              border-bottom: 1px solid #808041;
+              width: 100%;
+              max-width: 100%;
+              margin-top: 0px;
+              margin-bottom: 0px;
             }
 
-            .c6 {
-              position: absolute;
-              top: 108px;
-              width: 314px;
-              height: 66px;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              font-family: 'Libre Franklin';
+            .c4 {
+              font-size: 24px;
               font-style: normal;
               font-weight: 700;
-              font-size: 18px;
-              line-height: 22px;
+              margin-top: 0px;
+              margin-bottom: 0px;
               text-align: center;
-              color: #ffffff;
             }
 
             .c7 {
-              position: absolute;
-              bottom: 31px;
-              right: 10px;
-              height: 13px;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              font-family: 'Libre Franklin';
+              font-size: 16px;
               font-style: normal;
               font-weight: 700;
-              font-size: 11px;
-              line-height: 13px;
-              text-align: right;
-              color: #ffffff;
+              margin-top: 0px;
             }
 
             .c8 {
-              position: absolute;
-              bottom: 10px;
-              right: 10px;
-              height: 13px;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              font-family: 'Libre Franklin';
+              font-size: 10px;
               font-style: normal;
-              font-weight: 700;
-              font-size: 11px;
-              line-height: 13px;
-              text-align: right;
-              color: #ffffff;
+              font-weight: 400;
+              margin-top: -8px;
             }
 
             .c9 {
-              position: absolute;
-              bottom: 8px;
-              left: 8px;
-              height: 13px;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              text-align: center;
+            }
+
+            .c10 {
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+            }
+
+            .c16 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 8px;
+              text-align: center;
+            }
+
+            .c17 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -12px;
+              text-align: center;
+            }
+
+            .c5 {
+              font-family: 'Libre Franklin';
+            }
+
+            .c15 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -232,24 +128,16 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               -webkit-flex-direction: column;
               -ms-flex-direction: column;
               flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              font-family: 'Libre Franklin';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 11px;
-              line-height: 13px;
-              text-align: left;
-              color: #000000;
+              -webkit-box-flex: 1;
+              -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+              flex-grow: 1;
+              color: #808041;
             }
 
-            .c10 {
-              position: absolute;
-              width: 352px;
-              height: 115px;
-              top: 0px;
+            .c12 {
+              width: 250px;
+              height: 100px;
               text-align: center;
               -webkit-align-items: flex-end;
               -webkit-box-align: flex-end;
@@ -265,85 +153,64 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               display: flex;
             }
 
-            .c11 {
+            .c13 {
               display: block;
-              max-width: 162px;
-              max-height: 89px;
+              max-width: 100%;
+              max-height: 100%;
               width: auto;
               height: auto;
             }
 
-            .c12 {
-              position: absolute;
-              top: 117px;
-              width: 336px;
-              height: 51px;
+            .c3 {
+              position: relative;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
+              margin-top: 241px;
+              height: 90px;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
               -webkit-align-items: center;
               -webkit-box-align: center;
               -ms-flex-align: center;
               align-items: center;
-              font-family: 'Libre Franklin';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 14px;
-              line-height: 17px;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              text-align: center;
-              color: #000000;
             }
 
-            @media not print {
-              .c2 {
-                -webkit-transform-style: preserve-3d;
-                -ms-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-                -webkit-transition: -webkit-transform 0.5s ease-in-out 0s;
-                -webkit-transition: transform 0.5s ease-in-out 0s;
-                transition: transform 0.5s ease-in-out 0s;
-                cursor: pointer;
-              }
+            .c6 {
+              position: relative;
+              display: block;
+              height: 360px;
+              padding-top: 16px;
+              padding-bottom: 16px;
+            }
 
-              .c2.flip {
-                -webkit-transform: rotateY(180deg);
-                -ms-transform: rotateY(180deg);
-                transform: rotateY(180deg);
-              }
-
-              .c2 .card-face {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                -webkit-backface-visibility: hidden;
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-              }
-
-              .c2 .card-face:last-child {
-                -webkit-transform: rotateY(180deg);
-                -ms-transform: rotateY(180deg);
-                transform: rotateY(180deg);
-              }
+            .c11 {
+              position: relative;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              height: 214px;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+              justify-content: space-between;
+              -webkit-align-items: start;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: start;
             }
 
             @media print {
-              .c13 {
-                display: none;
+              .c2 {
+                border: none;
+                -webkit-break-inside: avoid;
+                break-inside: avoid;
+                -webkit-break-before: always;
+                break-before: always;
               }
             }
 
@@ -352,99 +219,121 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
             >
               <div
                 className="c2"
-                onClick={[Function]}
               >
                 <div
-                  className="card-face"
+                  className="c3"
                 >
-                  <div
-                    className="c0 c3"
-                  >
-                    <img
-                      className="c4"
-                      src="obs-wmfr-front-bg.jpg"
-                    />
-                    <div
-                      className="c5"
+                  <div>
+                    <p
+                      className="c4 c5"
                     >
-                      John Doe
-                    </div>
-                    <div
-                      className="c6"
-                    >
-                      Successfully completed
-                      <br />
-                      Wilderness Medical First Responder
-                      <br />
-                      (WMFR)
-                    </div>
-                    <div
-                      className="c7"
-                    >
-                      S/N: 
-                      OBSWMFR20XX/XXX
-                    </div>
-                    <div
-                      className="c8"
-                    >
-                      DATE OF ISSUE: 
-                      31/12/2022
-                    </div>
+                      WILDERNESS MEDICAL FIRST RESPONDER
+                    </p>
                   </div>
                 </div>
                 <div
-                  className="card-face"
+                  className="c6"
                 >
                   <div
-                    className="c0 c3"
+                    className="c0"
                   >
-                    <img
-                      className="c4"
-                      src="obs-wmfr-back-bg.png"
-                    />
-                    <div
-                      className="c9"
+                    <p
+                      className="c7 c5"
                     >
-                      Valid till 
-                      30 Dec 2024
-                    </div>
+                      <br />
+                      JOHN DOE
+                    </p>
+                    <p
+                      className="c8 c5"
+                    >
+                      Is Certified as a
+                    </p>
+                    <p
+                      className="c9 c5"
+                    >
+                      WILDERNESS MEDICAL FIRST RESPONDER (WMFR)
+                    </p>
+                    <p
+                      className="c8 c5"
+                    >
+                      On
+                    </p>
+                    <p
+                      className="c7 c5"
+                    >
+                      31 December 2022
+                    </p>
+                    <p
+                      className="c8 c5"
+                    >
+                      Conducted by
+                    </p>
+                    <p
+                      className="c9 c5"
+                    >
+                      OUTWARD BOUND SINGAPORE
+                    </p>
+                    <p
+                      className="c9 c5"
+                    >
+                      MEDICAL SERVICES & TRAINING
+                    </p>
+                    <p
+                      className="c10 c5"
+                    >
+                      <br />
+                      Certificate No.: 
+                      OBSWMFR-2024-001
+                    </p>
+                    <p
+                      className="c10 c5"
+                    >
+                      Certificate is valid till 
+                      30 December 2024
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className="c11"
+                >
+                  <div />
+                  <div
+                    style={
+                      Object {
+                        "width": 250,
+                      }
+                    }
+                  >
                     <div
-                      className="c10"
+                      className="c12"
                     >
                       <img
-                        alt="Issuing officer signature"
-                        className="c11"
+                        alt="Signature of signee"
+                        className="c13"
                         src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
                       />
                     </div>
                     <div
-                      className="c12"
+                      className="c14"
+                    />
+                    <div
+                      className="c15"
                     >
-                      Nicholas Conceicao
-                      <br />
-                      Executive Director
-                      <br />
-                      Outward Bound Singapore
+                      <p
+                        className="c16 c5"
+                      >
+                        <b>
+                          Nicholas Conceicao
+                        </b>
+                         | Executive Director
+                      </p>
+                      <p
+                        className="c17 c5"
+                      >
+                        Outward Bound Singapore
+                      </p>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div
-                className="c13"
-              >
-                <div
-                  className="c14"
-                >
-                  <img
-                    alt="card flip icon"
-                    src="icon-cardflip.svg"
-                    width="20"
-                  />
-                  <p
-                    className="c15 c16"
-                  >
-                    Click on the card to reveal the other side
-                  </p>
                 </div>
               </div>
             </div>
@@ -458,6 +347,6 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('John Doe')).toBeTruthy()
+        expect(screen.getByText('JOHN DOE')).toBeTruthy()
     })
 })
