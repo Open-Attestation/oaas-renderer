@@ -162,6 +162,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             }
 
             .c12 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;
@@ -250,8 +251,6 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
@@ -260,8 +259,6 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 

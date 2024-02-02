@@ -122,8 +122,6 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 

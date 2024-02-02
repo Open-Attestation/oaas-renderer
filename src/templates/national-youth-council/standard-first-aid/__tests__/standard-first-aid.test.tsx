@@ -183,6 +183,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c18 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;
@@ -266,8 +267,6 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
@@ -325,22 +324,17 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                       <p
                         className="c11 c6"
                       >
-                        STANDARD FIRST AID (SFA), and
+                        STANDARD FIRST AID (SFA)
                       </p>
                       <p
                         className="c12 c6"
                       >
-                        With CARDIOPULMONARY RESUSCITATION (CPR) – HANDS ONLY, and
+                        With CARDIOPULMONARY RESUSCITATION (CPR) – HANDS ONLY
                       </p>
                       <p
                         className="c12 c6"
                       >
-                        AUTOMATED EXTERNAL DEFIBRILLATION (AED)
-                      </p>
-                      <p
-                        className="c12 c6"
-                      >
-                        PROVIDER
+                        and AUTOMATED EXTERNAL DEFIBRILLATION (AED)
                       </p>
                       <p
                         className="c13 c6"

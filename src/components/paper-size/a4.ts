@@ -20,6 +20,5 @@ export const A4 = styled.div<{ $bgImg?: string; $zIndex?: number }>`
     @media print {
         border: none;
         break-inside: avoid;
-        break-before: always;
     }
 `

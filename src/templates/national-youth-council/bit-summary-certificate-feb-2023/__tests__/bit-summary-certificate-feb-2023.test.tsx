@@ -323,6 +323,7 @@ describe('NationalYouthCouncilBitSummaryCertificateFeb_2023Template', () => {
             }
 
             .c17 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;
@@ -432,8 +433,6 @@ describe('NationalYouthCouncilBitSummaryCertificateFeb_2023Template', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
@@ -442,8 +441,6 @@ describe('NationalYouthCouncilBitSummaryCertificateFeb_2023Template', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 

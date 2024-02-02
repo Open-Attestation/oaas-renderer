@@ -13,6 +13,7 @@ const SignatureWordingContainer = styled.div<{
 `
 
 export const SignatureContainer = styled.div`
+    margin-bottom: 2px;
     width: 250px;
     height: 100px;
     text-align: center;

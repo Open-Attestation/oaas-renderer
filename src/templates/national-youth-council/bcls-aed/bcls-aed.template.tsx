@@ -81,7 +81,7 @@ export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
                                 $mt={0}
                                 $bold
                             >
-                                BASIC CARDIAC LIFE SUPPORT +
+                                BASIC CARDIAC LIFE SUPPORT (BCLS) +
                             </Typography>
                             <Typography
                                 $textAlign="center"
@@ -89,7 +89,7 @@ export const NationalYouthCouncilBclsAedTemplate: FunctionComponent<
                                 $mt={-1}
                                 $bold
                             >
-                                AUTOMATED EXTERNAL DEFIBRILLATION
+                                AUTOMATED EXTERNAL DEFIBRILLATOR (AED)
                             </Typography>
                             <Typography $size={'small'} $mt={0}>
                                 On

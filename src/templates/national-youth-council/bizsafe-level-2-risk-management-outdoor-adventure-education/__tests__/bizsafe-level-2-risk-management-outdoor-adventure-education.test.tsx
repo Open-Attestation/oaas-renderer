@@ -137,6 +137,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
             }
 
             .c13 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;
@@ -220,8 +221,6 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 

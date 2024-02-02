@@ -23,6 +23,5 @@ export const A4Landscape = styled.div<{
     @media print {
         border: none;
         break-inside: avoid;
-        break-before: always;
     }
 `

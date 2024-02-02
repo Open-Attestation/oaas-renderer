@@ -28,7 +28,7 @@ export default {
             type: 'string',
             description: 'Name of trainer',
             examples: [`Jaffar Ali`],
-            enum: ['Fazdli Jamal', `Jaffar Ali`],
+            enum: [`Jaffar Ali`, 'Fazdli Jamal'],
             minLength: 1,
         },
         ciSignature: {
@@ -36,9 +36,11 @@ export default {
             description: "CI's signature",
             enum: getEnumValues([
                 'jaffar-ali-signature&8b44a84d49ccd38fea996c652df243b8ab2b1debebdfc32049373e64c3d46807.png',
+                'fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png',
             ]),
             examples: getEnumValues([
                 'jaffar-ali-signature&8b44a84d49ccd38fea996c652df243b8ab2b1debebdfc32049373e64c3d46807.png',
+                'fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png',
             ]),
         },
         certificateNumber: {

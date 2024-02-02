@@ -175,6 +175,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c17 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;
@@ -258,8 +259,6 @@ describe('NycBclsAedTemplate', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
@@ -312,12 +311,12 @@ describe('NycBclsAedTemplate', () => {
                       <p
                         className="c10 c6"
                       >
-                        BASIC CARDIAC LIFE SUPPORT +
+                        BASIC CARDIAC LIFE SUPPORT (BCLS) +
                       </p>
                       <p
                         className="c11 c6"
                       >
-                        AUTOMATED EXTERNAL DEFIBRILLATION
+                        AUTOMATED EXTERNAL DEFIBRILLATOR (AED)
                       </p>
                       <p
                         className="c12 c6"

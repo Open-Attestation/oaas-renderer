@@ -223,6 +223,7 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
             }
 
             .c14 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;
@@ -306,8 +307,6 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
@@ -316,8 +315,6 @@ describe('NationalYouthCouncilCciLevel_2Template', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
