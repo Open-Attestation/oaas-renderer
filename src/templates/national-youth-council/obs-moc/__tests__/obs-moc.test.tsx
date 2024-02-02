@@ -16,8 +16,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            Array [
-              .c5 {
+            .c6 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -36,7 +35,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               justify-content: center;
             }
 
-            .c0 {
+            .c1 {
               background: white;
               position: relative;
               width: 21cm;
@@ -50,7 +49,21 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               z-index: initial;
             }
 
-            .c13 {
+            .c18 {
+              background: white;
+              position: relative;
+              width: 21cm;
+              min-height: 29.7cm;
+              padding: 2cm;
+              margin: 0 auto;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              background-size: cover;
+              background-image: url('description-watermark.png');
+              z-index: initial;
+            }
+
+            .c14 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -59,46 +72,38 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c2 {
+            .c3 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
               text-align: center;
             }
 
-            .c6 {
+            .c7 {
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c7 {
+            .c8 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
               margin-top: 8px;
             }
 
-            .c8 {
+            .c9 {
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 8px;
             }
 
-            .c9 {
+            .c10 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
-              margin-top: 8px;
-              text-align: center;
-            }
-
-            .c15 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
               margin-top: 8px;
               text-align: center;
             }
@@ -106,16 +111,42 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             .c16 {
               font-size: 12px;
               font-style: normal;
+              font-weight: 400;
+              margin-top: 8px;
+              text-align: center;
+            }
+
+            .c17 {
+              font-size: 12px;
+              font-style: normal;
               font-weight: 700;
               margin-top: -12px;
               text-align: center;
             }
 
-            .c3 {
+            .c19 {
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              margin-right: 0px;
+              text-align: center;
+            }
+
+            .c20 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              text-align: justify;
+            }
+
+            .c4 {
               font-family: 'Libre Franklin';
             }
 
-            .c14 {
+            .c15 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -130,7 +161,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               color: #808041;
             }
 
-            .c11 {
+            .c12 {
               width: 250px;
               height: 100px;
               text-align: center;
@@ -148,7 +179,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               display: flex;
             }
 
-            .c12 {
+            .c13 {
               display: block;
               max-width: 100%;
               max-height: 100%;
@@ -156,7 +187,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               height: auto;
             }
 
-            .c1 {
+            .c2 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -174,7 +205,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               align-items: center;
             }
 
-            .c4 {
+            .c5 {
               position: relative;
               display: block;
               height: 360px;
@@ -182,7 +213,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               padding-bottom: 16px;
             }
 
-            .c10 {
+            .c11 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -199,29 +230,58 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               align-items: start;
             }
 
+            .c21 {
+              font-size: 16px;
+              font-family: 'Libre Franklin';
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
+            }
+
             @media print {
-              .c0 {
+              .c1 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
             @media print {
+              .c18 {
+                border: none;
+                -webkit-break-inside: avoid;
+                break-inside: avoid;
+              }
+            }
 
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
+              }
             }
 
             <div
-                className="c0"
+              className="c0"
+            >
+              <div
+                className="c1"
               >
                 <div
-                  className="c1"
+                  className="c2"
                 >
                   <div>
                     <p
-                      className="c2 c3"
+                      className="c3 c4"
                     >
                       Certificate of 
                       <br />
@@ -230,40 +290,40 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
                   </div>
                 </div>
                 <div
-                  className="c4"
+                  className="c5"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     <p
-                      className="c6 c3"
+                      className="c7 c4"
                     >
                       This is to certify that
                     </p>
                     <p
-                      className="c7 c3"
+                      className="c8 c4"
                     >
                       YEO YOYO
                     </p>
                     <p
-                      className="c8 c3"
+                      className="c9 c4"
                     >
                       has completed
                     </p>
                     <p
-                      className="c9 c3"
+                      className="c10 c4"
                     >
                       A mentally and physically challenging expeditionary Outward Bound Course as part of the National Outdoor Adventure Education Masterplan
                     </p>
                     <p
-                      className="c7 c3"
+                      className="c8 c4"
                     >
                       28 September - 03 October 2022
                     </p>
                   </div>
                 </div>
                 <div
-                  className="c10"
+                  className="c11"
                 >
                   <div />
                   <div
@@ -274,22 +334,22 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
                     }
                   >
                     <div
-                      className="c11"
+                      className="c12"
                     >
                       <img
                         alt="Signature of signee"
-                        className="c12"
+                        className="c13"
                         src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
                       />
                     </div>
                     <div
-                      className="c13"
+                      className="c14"
                     />
                     <div
-                      className="c14"
+                      className="c15"
                     >
                       <p
-                        className="c15 c3"
+                        className="c16 c4"
                       >
                         <b>
                           Nicholas Conceicao
@@ -297,85 +357,30 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
                          | Executive Director
                       </p>
                       <p
-                        className="c16 c3"
+                        className="c17 c4"
                       >
                         Outward Bound Singapore
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>,
-              .c0 {
-              background: white;
-              position: relative;
-              width: 21cm;
-              min-height: 29.7cm;
-              padding: 2cm;
-              margin: 0 auto;
-              box-sizing: border-box;
-              border: 1px solid #ccc;
-              background-size: cover;
-              background-image: url('description-watermark.png');
-              z-index: initial;
-            }
-
-            .c1 {
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              margin-left: 0px;
-              margin-right: 0px;
-              text-align: center;
-            }
-
-            .c3 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              text-align: justify;
-            }
-
-            .c2 {
-              font-family: 'Libre Franklin';
-            }
-
-            .c4 {
-              font-size: 16px;
-              font-family: 'Libre Franklin';
-            }
-
-            @media print {
-
-            }
-
-            @media print {
-              .c0 {
-                border: none;
-                -webkit-break-inside: avoid;
-                break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
-              }
-            }
-
-            <div
-                className="c0"
+              </div>
+              <div
+                className="c18"
               >
                 <div>
                   <p
-                    className="c1 c2"
+                    className="c19 c4"
                   >
                     National Outdoor Adventure Education Masterplan
                   </p>
                   <p
-                    className="c3 c2"
+                    className="c20 c4"
                   >
                     The National Outdoor Adventure Education Masterplan is a joint initiative by the Ministry of Education and Ministry of Culture, Community and Youth to strengthen our youth's self-efficacy, resilience and social cohesion. To help our youths prepare for the future, the Masterplan aims to:
                   </p>
                   <ol
-                    className="c4"
+                    className="c21"
                   >
                     <li>
                       Build 
@@ -412,13 +417,13 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
                     </li>
                   </ol>
                   <p
-                    className="c3 c2"
+                    className="c20 c4"
                   >
                     Under the Masterplan, youths have the opportunity to attend at least three cohort camps from primary to secondary school. The youth's outdoor education experience will culminate in an Outward Bound Course for Secondary 3 students.
                   </p>
                 </div>
-              </div>,
-            ]
+              </div>
+            </div>
         `)
     })
 

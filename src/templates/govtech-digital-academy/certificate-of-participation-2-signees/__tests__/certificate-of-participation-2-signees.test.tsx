@@ -293,8 +293,6 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
@@ -303,7 +301,7 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
                 -webkit-transform: scale(1);
                 -ms-transform: scale(1);
                 transform: scale(1);
-                height: 779px;
+                height: auto;
               }
             }
 

@@ -16,7 +16,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c0 {
+            .c1 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -35,11 +35,11 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               justify-content: center;
             }
 
-            .c1 {
+            .c2 {
               min-width: 500px;
             }
 
-            .c2 {
+            .c3 {
               background: white;
               position: relative;
               width: 21cm;
@@ -53,7 +53,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               z-index: initial;
             }
 
-            .c14 {
+            .c15 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -62,7 +62,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c4 {
+            .c5 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
@@ -71,21 +71,21 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               text-align: center;
             }
 
-            .c7 {
+            .c8 {
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
             }
 
-            .c8 {
+            .c9 {
               font-size: 10px;
               font-style: normal;
               font-weight: 400;
               margin-top: -8px;
             }
 
-            .c9 {
+            .c10 {
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
@@ -93,14 +93,14 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               text-align: center;
             }
 
-            .c10 {
+            .c11 {
               font-size: 10px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
             }
 
-            .c16 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -108,7 +108,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               text-align: center;
             }
 
-            .c17 {
+            .c18 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -116,11 +116,11 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               text-align: center;
             }
 
-            .c5 {
+            .c6 {
               font-family: 'Libre Franklin';
             }
 
-            .c15 {
+            .c16 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -135,7 +135,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               color: #808041;
             }
 
-            .c12 {
+            .c13 {
               width: 250px;
               height: 100px;
               text-align: center;
@@ -153,7 +153,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               display: flex;
             }
 
-            .c13 {
+            .c14 {
               display: block;
               max-width: 100%;
               max-height: 100%;
@@ -161,7 +161,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               height: auto;
             }
 
-            .c3 {
+            .c4 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -179,7 +179,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               align-items: center;
             }
 
-            .c6 {
+            .c7 {
               position: relative;
               display: block;
               height: 360px;
@@ -187,7 +187,7 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               padding-bottom: 16px;
             }
 
-            .c11 {
+            .c12 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -204,134 +204,155 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               align-items: start;
             }
 
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
+            }
+
             @media print {
-              .c2 {
+              .c3 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
+              }
+            }
+
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
               }
             }
 
             <div
-              className="c0 c1"
+              className="c0"
             >
               <div
-                className="c2"
+                className="c1 c2"
               >
                 <div
                   className="c3"
                 >
-                  <div>
-                    <p
-                      className="c4 c5"
-                    >
-                      WILDERNESS MEDICAL FIRST RESPONDER
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
                   <div
-                    className="c0"
+                    className="c4"
                   >
-                    <p
-                      className="c7 c5"
-                    >
-                      <br />
-                      JOHN DOE
-                    </p>
-                    <p
-                      className="c8 c5"
-                    >
-                      Is Certified as a
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      WILDERNESS MEDICAL FIRST RESPONDER (WMFR)
-                    </p>
-                    <p
-                      className="c8 c5"
-                    >
-                      On
-                    </p>
-                    <p
-                      className="c7 c5"
-                    >
-                      31 December 2022
-                    </p>
-                    <p
-                      className="c8 c5"
-                    >
-                      Conducted by
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      OUTWARD BOUND SINGAPORE
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      MEDICAL SERVICES & TRAINING
-                    </p>
-                    <p
-                      className="c10 c5"
-                    >
-                      <br />
-                      Certificate No.: 
-                      OBSWMFR-2024-001
-                    </p>
-                    <p
-                      className="c10 c5"
-                    >
-                      Certificate is valid till 
-                      30 December 2024
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="c11"
-                >
-                  <div />
-                  <div
-                    style={
-                      Object {
-                        "width": 250,
-                      }
-                    }
-                  >
-                    <div
-                      className="c12"
-                    >
-                      <img
-                        alt="Signature of signee"
-                        className="c13"
-                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
-                      />
+                    <div>
+                      <p
+                        className="c5 c6"
+                      >
+                        WILDERNESS MEDICAL FIRST RESPONDER
+                      </p>
                     </div>
+                  </div>
+                  <div
+                    className="c7"
+                  >
                     <div
-                      className="c14"
-                    />
-                    <div
-                      className="c15"
+                      className="c1"
                     >
                       <p
-                        className="c16 c5"
+                        className="c8 c6"
                       >
-                        <b>
-                          Nicholas Conceicao
-                        </b>
-                         | Executive Director
+                        <br />
+                        JOHN DOE
                       </p>
                       <p
-                        className="c17 c5"
+                        className="c9 c6"
                       >
-                        Outward Bound Singapore
+                        Is Certified as a
                       </p>
+                      <p
+                        className="c10 c6"
+                      >
+                        WILDERNESS MEDICAL FIRST RESPONDER (WMFR)
+                      </p>
+                      <p
+                        className="c9 c6"
+                      >
+                        On
+                      </p>
+                      <p
+                        className="c8 c6"
+                      >
+                        31 December 2022
+                      </p>
+                      <p
+                        className="c9 c6"
+                      >
+                        Conducted by
+                      </p>
+                      <p
+                        className="c10 c6"
+                      >
+                        OUTWARD BOUND SINGAPORE
+                      </p>
+                      <p
+                        className="c10 c6"
+                      >
+                        MEDICAL SERVICES & TRAINING
+                      </p>
+                      <p
+                        className="c11 c6"
+                      >
+                        <br />
+                        Certificate No.: 
+                        OBSWMFR-2024-001
+                      </p>
+                      <p
+                        className="c11 c6"
+                      >
+                        Certificate is valid till 
+                        30 December 2024
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className="c12"
+                  >
+                    <div />
+                    <div
+                      style={
+                        Object {
+                          "width": 250,
+                        }
+                      }
+                    >
+                      <div
+                        className="c13"
+                      >
+                        <img
+                          alt="Signature of signee"
+                          className="c14"
+                          src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                        />
+                      </div>
+                      <div
+                        className="c15"
+                      />
+                      <div
+                        className="c16"
+                      >
+                        <p
+                          className="c17 c6"
+                        >
+                          <b>
+                            Nicholas Conceicao
+                          </b>
+                           | Executive Director
+                        </p>
+                        <p
+                          className="c18 c6"
+                        >
+                          Outward Bound Singapore
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

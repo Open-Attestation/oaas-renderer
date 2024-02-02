@@ -17,7 +17,7 @@ describe('NycBclsAedTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c0 {
+            .c1 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -36,7 +36,7 @@ describe('NycBclsAedTemplate', () => {
               justify-content: center;
             }
 
-            .c4 {
+            .c5 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
@@ -45,70 +45,70 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c7 {
+            .c8 {
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
             }
 
-            .c8 {
+            .c9 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: -8px;
-            }
-
-            .c9 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              text-align: center;
             }
 
             .c10 {
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
-              margin-top: -8px;
+              margin-top: 0px;
               text-align: center;
             }
 
             .c11 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -8px;
+              text-align: center;
+            }
+
+            .c12 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c12 {
+            .c13 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
               margin-top: -8px;
             }
 
-            .c13 {
+            .c14 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
             }
 
-            .c5 {
+            .c6 {
               font-family: 'Libre Franklin';
             }
 
-            .c14 {
+            .c15 {
               max-height: 72px;
             }
 
-            .c1 {
+            .c2 {
               min-width: 500px;
             }
 
-            .c2 {
+            .c3 {
               background: white;
               position: relative;
               width: 21cm;
@@ -122,7 +122,7 @@ describe('NycBclsAedTemplate', () => {
               z-index: initial;
             }
 
-            .c18 {
+            .c19 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -131,7 +131,7 @@ describe('NycBclsAedTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c20 {
+            .c21 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -139,7 +139,7 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c22 {
+            .c23 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -147,7 +147,7 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c23 {
+            .c24 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -155,11 +155,11 @@ describe('NycBclsAedTemplate', () => {
               text-align: center;
             }
 
-            .c21 {
+            .c22 {
               font-family: 'Libre Franklin';
             }
 
-            .c19 {
+            .c20 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -174,7 +174,7 @@ describe('NycBclsAedTemplate', () => {
               color: #808041;
             }
 
-            .c16 {
+            .c17 {
               width: 250px;
               height: 100px;
               text-align: center;
@@ -192,7 +192,7 @@ describe('NycBclsAedTemplate', () => {
               display: flex;
             }
 
-            .c17 {
+            .c18 {
               display: block;
               max-width: 100%;
               max-height: 100%;
@@ -200,7 +200,7 @@ describe('NycBclsAedTemplate', () => {
               height: auto;
             }
 
-            .c3 {
+            .c4 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -218,7 +218,7 @@ describe('NycBclsAedTemplate', () => {
               align-items: center;
             }
 
-            .c6 {
+            .c7 {
               position: relative;
               display: block;
               height: 360px;
@@ -226,7 +226,7 @@ describe('NycBclsAedTemplate', () => {
               padding-bottom: 16px;
             }
 
-            .c15 {
+            .c16 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -243,145 +243,166 @@ describe('NycBclsAedTemplate', () => {
               align-items: start;
             }
 
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
+            }
+
             @media print {
-              .c2 {
+              .c3 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
+              }
+            }
+
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
               }
             }
 
             <div
-              className="c0 c1"
+              className="c0"
             >
               <div
-                className="c2"
+                className="c1 c2"
               >
                 <div
                   className="c3"
                 >
-                  <div>
-                    <p
-                      className="c4 c5"
-                    >
-                      BCLS & AED
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
                   <div
-                    className="c0"
+                    className="c4"
                   >
-                    <p
-                      className="c7 c5"
-                    >
-                      <br />
-                      JOHN DOE
-                    </p>
-                    <p
-                      className="c8 c5"
-                    >
-                      Is Certified as a Provider of
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      BASIC CARDIAC LIFE SUPPORT +
-                    </p>
-                    <p
-                      className="c10 c5"
-                    >
-                      AUTOMATED EXTERNAL DEFIBRILLATION
-                    </p>
-                    <p
-                      className="c11 c5"
-                    >
-                      On
-                    </p>
-                    <p
-                      className="c7 c5"
-                    >
-                      31 December 2020
-                    </p>
-                    <p
-                      className="c12 c5"
-                    >
-                      Certificate No.: 
-                      OBSBCLS-2024-001
-                    </p>
-                    <p
-                      className="c13 c5"
-                    >
-                      Certificate is valid till 
-                      30 December 2022
-                    </p>
-                    <p
-                      className="c11 c5"
-                    >
-                      <br />
-                      Accredited by
-                    </p>
-                    <img
-                      alt="SRFAC Logo"
-                      className="c14"
-                      src="srfac-logo.png"
-                    />
+                    <div>
+                      <p
+                        className="c5 c6"
+                      >
+                        BCLS & AED
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  className="c15"
-                >
-                  <div />
                   <div
-                    style={
-                      Object {
-                        "width": 250,
-                      }
-                    }
+                    className="c7"
                   >
                     <div
-                      className="c16"
+                      className="c1"
                     >
+                      <p
+                        className="c8 c6"
+                      >
+                        <br />
+                        JOHN DOE
+                      </p>
+                      <p
+                        className="c9 c6"
+                      >
+                        Is Certified as a Provider of
+                      </p>
+                      <p
+                        className="c10 c6"
+                      >
+                        BASIC CARDIAC LIFE SUPPORT +
+                      </p>
+                      <p
+                        className="c11 c6"
+                      >
+                        AUTOMATED EXTERNAL DEFIBRILLATION
+                      </p>
+                      <p
+                        className="c12 c6"
+                      >
+                        On
+                      </p>
+                      <p
+                        className="c8 c6"
+                      >
+                        31 December 2020
+                      </p>
+                      <p
+                        className="c13 c6"
+                      >
+                        Certificate No.: 
+                        OBSBCLS-2024-001
+                      </p>
+                      <p
+                        className="c14 c6"
+                      >
+                        Certificate is valid till 
+                        30 December 2022
+                      </p>
+                      <p
+                        className="c12 c6"
+                      >
+                        <br />
+                        Accredited by
+                      </p>
                       <img
-                        alt="Signature of signee"
-                        className="c17"
-                        src="jaffar-ali-signature&8b44a84d49ccd38fea996c652df243b8ab2b1debebdfc32049373e64c3d46807.png"
+                        alt="SRFAC Logo"
+                        className="c15"
+                        src="srfac-logo.png"
                       />
                     </div>
+                  </div>
+                  <div
+                    className="c16"
+                  >
+                    <div />
                     <div
-                      className="c18"
-                    />
-                    <div
-                      className="c19"
+                      style={
+                        Object {
+                          "width": 250,
+                        }
+                      }
                     >
-                      <p
-                        className="c20 c21"
+                      <div
+                        className="c17"
                       >
-                        <b>
-                          Jaffar Ali
-                        </b>
-                      </p>
-                      <p
-                        className="c22 c21"
+                        <img
+                          alt="Signature of signee"
+                          className="c18"
+                          src="jaffar-ali-signature&8b44a84d49ccd38fea996c652df243b8ab2b1debebdfc32049373e64c3d46807.png"
+                        />
+                      </div>
+                      <div
+                        className="c19"
+                      />
+                      <div
+                        className="c20"
                       >
-                        Chief Instructor
-                      </p>
-                      <p
-                        className="c22 c21"
-                      >
-                        <b>
-                          Life Support Training Centre
-                        </b>
-                      </p>
-                      <p
-                        className="c23 c21"
-                      >
-                        Outward Bound Singapore
-                      </p>
+                        <p
+                          className="c21 c22"
+                        >
+                          <b>
+                            Jaffar Ali
+                          </b>
+                        </p>
+                        <p
+                          className="c23 c22"
+                        >
+                          Chief Instructor
+                        </p>
+                        <p
+                          className="c23 c22"
+                        >
+                          <b>
+                            Life Support Training Centre
+                          </b>
+                        </p>
+                        <p
+                          className="c24 c22"
+                        >
+                          Outward Bound Singapore
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const A4LandscapeWidthPx = 1096.063
+export const A4LandscapeHeightPx = 778.583
 
 export const A4Landscape = styled.div<{
     $bgImg?: string
@@ -22,6 +23,5 @@ export const A4Landscape = styled.div<{
     @media print {
         border: none;
         break-inside: avoid;
-        break-before: always;
     }
 `
