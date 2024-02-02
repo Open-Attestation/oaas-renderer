@@ -16,7 +16,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c0 {
+            .c1 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -35,7 +35,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               justify-content: center;
             }
 
-            .c19 {
+            .c20 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -54,11 +54,11 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               justify-content: center;
             }
 
-            .c19 > *:not(:last-child) {
+            .c20 > *:not(:last-child) {
               margin-bottom: 8px;
             }
 
-            .c2 {
+            .c3 {
               background: white;
               position: relative;
               width: 21cm;
@@ -72,7 +72,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               z-index: initial;
             }
 
-            .c18 {
+            .c19 {
               background: white;
               position: relative;
               width: 21cm;
@@ -86,7 +86,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               z-index: initial;
             }
 
-            .c14 {
+            .c15 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -95,42 +95,42 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c4 {
+            .c5 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
               text-align: center;
             }
 
-            .c7 {
+            .c8 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c8 {
+            .c9 {
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
             }
 
-            .c9 {
+            .c10 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: -8px;
             }
 
-            .c10 {
+            .c11 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
               margin-top: -8px;
             }
 
-            .c16 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -138,7 +138,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               text-align: center;
             }
 
-            .c17 {
+            .c18 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -146,13 +146,13 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               text-align: center;
             }
 
-            .c20 {
+            .c21 {
               font-size: 12px;
               font-style: italic;
               font-weight: 700;
             }
 
-            .c22 {
+            .c23 {
               font-size: 12px;
               font-style: italic;
               font-weight: 700;
@@ -160,11 +160,11 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               margin-bottom: 16px;
             }
 
-            .c5 {
+            .c6 {
               font-family: 'Libre Franklin';
             }
 
-            .c15 {
+            .c16 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -179,7 +179,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               color: #808041;
             }
 
-            .c12 {
+            .c13 {
               width: 250px;
               height: 100px;
               text-align: center;
@@ -197,7 +197,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               display: flex;
             }
 
-            .c13 {
+            .c14 {
               display: block;
               max-width: 100%;
               max-height: 100%;
@@ -205,7 +205,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               height: auto;
             }
 
-            .c3 {
+            .c4 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -223,7 +223,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               align-items: center;
             }
 
-            .c6 {
+            .c7 {
               position: relative;
               display: block;
               height: 360px;
@@ -231,7 +231,7 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               padding-bottom: 16px;
             }
 
-            .c11 {
+            .c12 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -248,18 +248,18 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               align-items: start;
             }
 
-            .c1 {
+            .c2 {
               min-width: 500px;
             }
 
-            .c21 {
+            .c22 {
               padding-left: 0px;
               margin-left: 18px;
               margin-top: 0px;
               margin-bottom: 0px;
             }
 
-            .c23 {
+            .c24 {
               list-style-type: none;
               padding-left: 0px;
               margin-left: 18px;
@@ -267,23 +267,33 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c23 li {
+            .c24 li {
               text-indent: 5px;
               margin-top: 10px;
             }
 
-            .c23 li:before {
+            .c24 li:before {
               content: '-';
               text-indent: 5px;
             }
 
-            .c23 li span {
+            .c24 li span {
               position: relative;
               left: 20px;
             }
 
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
+            }
+
             @media print {
-              .c2 {
+              .c3 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
@@ -293,261 +303,274 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
             }
 
             @media print {
-              .c18 {
+              .c19 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
                 -webkit-break-before: always;
                 break-before: always;
+              }
+            }
+
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
               }
             }
 
             <div
-              className="c0 c1"
+              className="c0"
             >
               <div
-                className="c2"
+                className="c1 c2"
               >
                 <div
                   className="c3"
                 >
-                  <div>
-                    <p
-                      className="c4 c5"
-                    >
-                      Certificate of Appointment
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
                   <div
-                    className="c0"
+                    className="c4"
                   >
-                    <p
-                      className="c7 c5"
+                    <div>
+                      <p
+                        className="c5 c6"
+                      >
+                        Certificate of Appointment
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className="c7"
+                  >
+                    <div
+                      className="c1"
                     >
-                      This is to certify that
-                    </p>
-                    <p
-                      className="c8 c5"
-                    >
-                      JOHN DOE
-                    </p>
-                    <p
-                      className="c7 c5"
-                    >
-                      Has successfully fulfilled
-                       
-                      <span
-                        style={
-                          Object {
-                            "fontWeight": "bold",
+                      <p
+                        className="c8 c6"
+                      >
+                        This is to certify that
+                      </p>
+                      <p
+                        className="c9 c6"
+                      >
+                        JOHN DOE
+                      </p>
+                      <p
+                        className="c8 c6"
+                      >
+                        Has successfully fulfilled
+                         
+                        <span
+                          style={
+                            Object {
+                              "fontWeight": "bold",
+                            }
                           }
-                        }
+                        >
+                          104
+                        </span>
+                         
+                        hours of qualification training and
+                      </p>
+                      <p
+                        className="c10 c6"
                       >
-                        104
-                      </span>
-                       
-                      hours of qualification training and
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      is hereby appointed as a
-                    </p>
-                    <p
-                      className="c8 c5"
-                    >
-                      CHALLENGE COURSE INSTRUCTOR (LEVEL 1) TRAINER
-                    </p>
-                    <p
-                      className="c7 c5"
-                    >
-                      On the date of
-                    </p>
-                    <p
-                      className="c8 c5"
-                    >
-                      31 December 2022
-                    </p>
-                    <p
-                      className="c7 c5"
-                    >
-                      The training curriculum includes risk management, course delivery and rescue principles & techniques that
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      are relevant to the conduct of a safe and quality CCI Level 1 course.
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      The process includes supervised on-the-job training and assessment involving:
-                    </p>
-                    <ul>
-                      <li>
-                        <p
-                          className="c9 c5"
-                        >
-                          Completing a PPE Verifier Course (8 hours) and 2-day Accelerated CCI Lv1 Certification Course (16 hours)
-                        </p>
-                      </li>
-                      <li>
-                        <p
-                          className="c9 c5"
-                        >
-                          Observing one (1) CCI Level 1 Certification course (40 hours)
-                        </p>
-                      </li>
-                      <li>
-                        <p
-                          className="c9 c5"
-                        >
-                          Co-instructing one (1) CCI Level 1 Certification course (40 hours)
-                        </p>
-                      </li>
-                    </ul>
-                    <p
-                      className="c10 c5"
-                    >
-                      Certificate is valid till 
-                      30 December 2025
-                    </p>
+                        is hereby appointed as a
+                      </p>
+                      <p
+                        className="c9 c6"
+                      >
+                        CHALLENGE COURSE INSTRUCTOR (LEVEL 1) TRAINER
+                      </p>
+                      <p
+                        className="c8 c6"
+                      >
+                        On the date of
+                      </p>
+                      <p
+                        className="c9 c6"
+                      >
+                        31 December 2022
+                      </p>
+                      <p
+                        className="c8 c6"
+                      >
+                        The training curriculum includes risk management, course delivery and rescue principles & techniques that
+                      </p>
+                      <p
+                        className="c10 c6"
+                      >
+                        are relevant to the conduct of a safe and quality CCI Level 1 course.
+                      </p>
+                      <p
+                        className="c10 c6"
+                      >
+                        The process includes supervised on-the-job training and assessment involving:
+                      </p>
+                      <ul>
+                        <li>
+                          <p
+                            className="c10 c6"
+                          >
+                            Completing a PPE Verifier Course (8 hours) and 2-day Accelerated CCI Lv1 Certification Course (16 hours)
+                          </p>
+                        </li>
+                        <li>
+                          <p
+                            className="c10 c6"
+                          >
+                            Observing one (1) CCI Level 1 Certification course (40 hours)
+                          </p>
+                        </li>
+                        <li>
+                          <p
+                            className="c10 c6"
+                          >
+                            Co-instructing one (1) CCI Level 1 Certification course (40 hours)
+                          </p>
+                        </li>
+                      </ul>
+                      <p
+                        className="c11 c6"
+                      >
+                        Certificate is valid till 
+                        30 December 2025
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  className="c11"
-                >
-                  <div />
                   <div
-                    style={
-                      Object {
-                        "width": 250,
-                      }
-                    }
+                    className="c12"
                   >
+                    <div />
                     <div
-                      className="c12"
+                      style={
+                        Object {
+                          "width": 250,
+                        }
+                      }
                     >
-                      <img
-                        alt="Signature of signee"
+                      <div
                         className="c13"
-                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                      >
+                        <img
+                          alt="Signature of signee"
+                          className="c14"
+                          src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                        />
+                      </div>
+                      <div
+                        className="c15"
                       />
-                    </div>
-                    <div
-                      className="c14"
-                    />
-                    <div
-                      className="c15"
-                    >
-                      <p
-                        className="c16 c5"
+                      <div
+                        className="c16"
                       >
-                        <b>
-                          Nicholas Conceicao
-                        </b>
-                         | Executive Director
-                      </p>
-                      <p
-                        className="c17 c5"
-                      >
-                        Outward Bound Singapore
-                      </p>
+                        <p
+                          className="c17 c6"
+                        >
+                          <b>
+                            Nicholas Conceicao
+                          </b>
+                           | Executive Director
+                        </p>
+                        <p
+                          className="c18 c6"
+                        >
+                          Outward Bound Singapore
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                className="c18"
-              >
                 <div
                   className="c19"
                 >
-                  <p
-                    className="c20 c5"
+                  <div
+                    className="c20"
                   >
-                    This certificate does not grant the holder any form of license to operate at other premises unless otherwise accepted and endorsed by the premise owners
-                  </p>
-                  <p
-                    className="c20 c5"
-                  >
-                    This certificate shall remain valid for a period of three (3) years.
-                  </p>
-                  <p
-                    className="c20 c5"
-                  >
-                    To revalidate at CCI (Level 1) Trainer, the Trainer shall hold a valid certificate and either:
-                  </p>
-                  <ul
-                    className="c21"
-                  >
-                    <li
-                      className="c22 c5"
+                    <p
+                      className="c21 c6"
                     >
-                      Provide a portfolio within the preceding three (3) years documenting
-                      <ul
-                        className="c23"
-                      >
-                        <li>
-                          <span
-                            className="c20 c5"
-                          >
-                            five hundred (500) hours of experience delivering CCI Level 1 certification courses, with the last course delivered not more than one (1) year ago; and
-                          </span>
-                        </li>
-                        <li>
-                          <span
-                            className="c20 c5"
-                          >
-                            forty (40) hours of related professional training
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <p
-                    className="c20 c5"
-                  >
-                    OR
-                  </p>
-                  <ul
-                    className="c21"
-                  >
-                    <li
-                      className="c22 c5"
+                      This certificate does not grant the holder any form of license to operate at other premises unless otherwise accepted and endorsed by the premise owners
+                    </p>
+                    <p
+                      className="c21 c6"
                     >
-                      Provide a portfolio within the preceding three (3) years documenting
-                      <ul
-                        className="c23"
+                      This certificate shall remain valid for a period of three (3) years.
+                    </p>
+                    <p
+                      className="c21 c6"
+                    >
+                      To revalidate at CCI (Level 1) Trainer, the Trainer shall hold a valid certificate and either:
+                    </p>
+                    <ul
+                      className="c22"
+                    >
+                      <li
+                        className="c23 c6"
                       >
-                        <li>
-                          <span
-                            className="c20 c5"
-                          >
-                            hundred and fifty (150) hours of experience delivering CCI or ropes course-related training; and
-                          </span>
-                        </li>
-                        <li>
-                          <span
-                            className="c20 c5"
-                          >
-                            forty (40) hours of related professional training; and
-                          </span>
-                        </li>
-                        <li>
-                          <span
-                            className="c20 c5"
-                          >
-                            pass a practical revalidation assessment.
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                        Provide a portfolio within the preceding three (3) years documenting
+                        <ul
+                          className="c24"
+                        >
+                          <li>
+                            <span
+                              className="c21 c6"
+                            >
+                              five hundred (500) hours of experience delivering CCI Level 1 certification courses, with the last course delivered not more than one (1) year ago; and
+                            </span>
+                          </li>
+                          <li>
+                            <span
+                              className="c21 c6"
+                            >
+                              forty (40) hours of related professional training
+                            </span>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <p
+                      className="c21 c6"
+                    >
+                      OR
+                    </p>
+                    <ul
+                      className="c22"
+                    >
+                      <li
+                        className="c23 c6"
+                      >
+                        Provide a portfolio within the preceding three (3) years documenting
+                        <ul
+                          className="c24"
+                        >
+                          <li>
+                            <span
+                              className="c21 c6"
+                            >
+                              hundred and fifty (150) hours of experience delivering CCI or ropes course-related training; and
+                            </span>
+                          </li>
+                          <li>
+                            <span
+                              className="c21 c6"
+                            >
+                              forty (40) hours of related professional training; and
+                            </span>
+                          </li>
+                          <li>
+                            <span
+                              className="c21 c6"
+                            >
+                              pass a practical revalidation assessment.
+                            </span>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

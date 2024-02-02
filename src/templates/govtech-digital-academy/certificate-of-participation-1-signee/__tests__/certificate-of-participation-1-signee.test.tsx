@@ -247,7 +247,7 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_1SigneeTemplate', () =
                 -webkit-transform: scale(1);
                 -ms-transform: scale(1);
                 transform: scale(1);
-                height: 779px;
+                height: auto;
               }
             }
 

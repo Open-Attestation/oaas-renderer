@@ -11,7 +11,6 @@ export const ScalableDocument = styled.div<{
 
     @media print {
         transform: scale(1);
-        height: ${({ $documentHeight }) =>
-            `${Math.ceil($documentHeight)}px` ?? 'auto'};
+        height: auto;
     }
 `

@@ -16,7 +16,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c1 {
+            .c2 {
               background: white;
               position: relative;
               width: 21cm;
@@ -30,7 +30,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               z-index: initial;
             }
 
-            .c15 {
+            .c16 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -39,35 +39,35 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c3 {
+            .c4 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
               text-align: center;
             }
 
-            .c7 {
+            .c8 {
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c8 {
+            .c9 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
-              margin-top: 8px;
-            }
-
-            .c9 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
               margin-top: 8px;
             }
 
             .c10 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 8px;
+            }
+
+            .c11 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
@@ -75,16 +75,8 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               text-align: center;
             }
 
-            .c11 {
+            .c12 {
               font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: 8px;
-              text-align: center;
-            }
-
-            .c17 {
-              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 8px;
@@ -94,16 +86,24 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
             .c18 {
               font-size: 12px;
               font-style: normal;
+              font-weight: 400;
+              margin-top: 8px;
+              text-align: center;
+            }
+
+            .c19 {
+              font-size: 12px;
+              font-style: normal;
               font-weight: 700;
               margin-top: -12px;
               text-align: center;
             }
 
-            .c4 {
+            .c5 {
               font-family: 'Libre Franklin';
             }
 
-            .c16 {
+            .c17 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -118,7 +118,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               color: #808041;
             }
 
-            .c13 {
+            .c14 {
               width: 250px;
               height: 100px;
               text-align: center;
@@ -136,7 +136,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               display: flex;
             }
 
-            .c14 {
+            .c15 {
               display: block;
               max-width: 100%;
               max-height: 100%;
@@ -144,7 +144,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               height: auto;
             }
 
-            .c2 {
+            .c3 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -162,7 +162,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               align-items: center;
             }
 
-            .c5 {
+            .c6 {
               position: relative;
               display: block;
               height: 360px;
@@ -170,7 +170,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               padding-bottom: 16px;
             }
 
-            .c12 {
+            .c13 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -187,7 +187,7 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               align-items: start;
             }
 
-            .c6 {
+            .c7 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -206,6 +206,16 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               justify-content: center;
             }
 
+            .c1 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
+            }
+
             .c0 pre {
               background-color: lightgray;
               overflow-wrap: anywhere;
@@ -213,12 +223,21 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
             }
 
             @media print {
-              .c1 {
+              .c2 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
                 -webkit-break-before: always;
                 break-before: always;
+              }
+            }
+
+            @media print {
+              .c1 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
               }
             }
 
@@ -232,104 +251,108 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
                 <div
                   className="c2"
                 >
-                  <div>
-                    <p
-                      className="c3 c4"
-                    >
-                      Certificate of Appointment
-                    </p>
+                  <div
+                    className="c3"
+                  >
+                    <div>
+                      <p
+                        className="c4 c5"
+                      >
+                        Certificate of Appointment
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  className="c5"
-                >
                   <div
                     className="c6"
                   >
-                    <p
-                      className="c7 c4"
-                    >
-                      This is to certify that
-                    </p>
-                    <p
-                      className="c8 c4"
-                    >
-                      ABDUL HAIREEL BIN ABDUL HALEEM
-                    </p>
-                    <p
-                      className="c9 c4"
-                    >
-                      is appointed as a
-                    </p>
-                    <p
-                      className="c10 c4"
-                    >
-                      Outward Bound Singapore:
-                      <br />
-                      Dinghy Sailing Coach
-                    </p>
-                    <p
-                      className="c9 c4"
-                    >
-                      On the date of
-                    </p>
-                    <p
-                      className="c10 c4"
-                    >
-                      01 January 2022
-                    </p>
-                    <p
-                      className="c11 c4"
-                    >
-                      Certificate is valid till 
-                      <b>
-                        31 December 2023
-                      </b>
-                      <br />
-                      Certificate #: 
-                      DSL1-2022-001
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="c12"
-                >
-                  <div />
-                  <div
-                    style={
-                      Object {
-                        "width": 250,
-                      }
-                    }
-                  >
                     <div
-                      className="c13"
-                    >
-                      <img
-                        alt="Signature of signee"
-                        className="c14"
-                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
-                      />
-                    </div>
-                    <div
-                      className="c15"
-                    />
-                    <div
-                      className="c16"
+                      className="c7"
                     >
                       <p
-                        className="c17 c4"
+                        className="c8 c5"
                       >
+                        This is to certify that
+                      </p>
+                      <p
+                        className="c9 c5"
+                      >
+                        ABDUL HAIREEL BIN ABDUL HALEEM
+                      </p>
+                      <p
+                        className="c10 c5"
+                      >
+                        is appointed as a
+                      </p>
+                      <p
+                        className="c11 c5"
+                      >
+                        Outward Bound Singapore:
+                        <br />
+                        Dinghy Sailing Coach
+                      </p>
+                      <p
+                        className="c10 c5"
+                      >
+                        On the date of
+                      </p>
+                      <p
+                        className="c11 c5"
+                      >
+                        01 January 2022
+                      </p>
+                      <p
+                        className="c12 c5"
+                      >
+                        Certificate is valid till 
                         <b>
-                          Nicholas Conceicao
+                          31 December 2023
                         </b>
-                         | Executive Director
+                        <br />
+                        Certificate #: 
+                        DSL1-2022-001
                       </p>
-                      <p
-                        className="c18 c4"
+                    </div>
+                  </div>
+                  <div
+                    className="c13"
+                  >
+                    <div />
+                    <div
+                      style={
+                        Object {
+                          "width": 250,
+                        }
+                      }
+                    >
+                      <div
+                        className="c14"
                       >
-                        Outward Bound Singapore
-                      </p>
+                        <img
+                          alt="Signature of signee"
+                          className="c15"
+                          src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                        />
+                      </div>
+                      <div
+                        className="c16"
+                      />
+                      <div
+                        className="c17"
+                      >
+                        <p
+                          className="c18 c5"
+                        >
+                          <b>
+                            Nicholas Conceicao
+                          </b>
+                           | Executive Director
+                        </p>
+                        <p
+                          className="c19 c5"
+                        >
+                          Outward Bound Singapore
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

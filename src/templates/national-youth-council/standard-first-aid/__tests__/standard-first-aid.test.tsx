@@ -16,7 +16,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c0 {
+            .c1 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -35,11 +35,11 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               justify-content: center;
             }
 
-            .c1 {
+            .c2 {
               min-width: 500px;
             }
 
-            .c4 {
+            .c5 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
@@ -48,7 +48,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               text-align: center;
             }
 
-            .c6 {
+            .c7 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -57,66 +57,66 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               text-align: center;
             }
 
-            .c8 {
+            .c9 {
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
             }
 
-            .c9 {
+            .c10 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: -8px;
-            }
-
-            .c10 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              text-align: center;
             }
 
             .c11 {
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
-              margin-top: -8px;
+              margin-top: 0px;
               text-align: center;
             }
 
             .c12 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -8px;
+              text-align: center;
+            }
+
+            .c13 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c13 {
+            .c14 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
               margin-top: -8px;
             }
 
-            .c14 {
+            .c15 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
             }
 
-            .c5 {
+            .c6 {
               font-family: 'Libre Franklin';
             }
 
-            .c15 {
+            .c16 {
               max-height: 72px;
             }
 
-            .c2 {
+            .c3 {
               background: white;
               position: relative;
               width: 21cm;
@@ -130,7 +130,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               z-index: initial;
             }
 
-            .c19 {
+            .c20 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -139,7 +139,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c21 {
+            .c22 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -147,7 +147,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               text-align: center;
             }
 
-            .c23 {
+            .c24 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -155,7 +155,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               text-align: center;
             }
 
-            .c24 {
+            .c25 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -163,11 +163,11 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               text-align: center;
             }
 
-            .c22 {
+            .c23 {
               font-family: 'Libre Franklin';
             }
 
-            .c20 {
+            .c21 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -182,7 +182,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               color: #808041;
             }
 
-            .c17 {
+            .c18 {
               width: 250px;
               height: 100px;
               text-align: center;
@@ -200,7 +200,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               display: flex;
             }
 
-            .c18 {
+            .c19 {
               display: block;
               max-width: 100%;
               max-height: 100%;
@@ -208,7 +208,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               height: auto;
             }
 
-            .c3 {
+            .c4 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -226,7 +226,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               align-items: center;
             }
 
-            .c7 {
+            .c8 {
               position: relative;
               display: block;
               height: 360px;
@@ -234,7 +234,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               padding-bottom: 16px;
             }
 
-            .c16 {
+            .c17 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -251,8 +251,18 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               align-items: start;
             }
 
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
+            }
+
             @media print {
-              .c2 {
+              .c3 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
@@ -261,150 +271,163 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               }
             }
 
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
+              }
+            }
+
             <div
-              className="c0 c1"
+              className="c0"
             >
               <div
-                className="c2"
+                className="c1 c2"
               >
                 <div
                   className="c3"
                 >
-                  <div>
-                    <p
-                      className="c4 c5"
-                    >
-                      STANDARD FIRST AID
-                    </p>
-                    <p
-                      className="c6 c5"
-                    >
-                      With CPR (Hands Only) and AED Provider
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="c7"
-                >
                   <div
-                    className="c0"
+                    className="c4"
                   >
-                    <p
-                      className="c8 c5"
-                    >
-                      <br />
-                      JOHN DOE
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      Is Certified as a Provider of
-                    </p>
-                    <p
-                      className="c10 c5"
-                    >
-                      STANDARD FIRST AID (SFA), and
-                    </p>
-                    <p
-                      className="c11 c5"
-                    >
-                      With CARDIOPULMONARY RESUSCITATION (CPR) – HANDS ONLY, and
-                    </p>
-                    <p
-                      className="c11 c5"
-                    >
-                      AUTOMATED EXTERNAL DEFIBRILLATION (AED)
-                    </p>
-                    <p
-                      className="c11 c5"
-                    >
-                      PROVIDER
-                    </p>
-                    <p
-                      className="c12 c5"
-                    >
-                      On
-                    </p>
-                    <p
-                      className="c8 c5"
-                    >
-                      31 December 2020
-                    </p>
-                    <p
-                      className="c13 c5"
-                    >
-                      Certificate No.: 
-                      OBSSFA-2024-001
-                    </p>
-                    <p
-                      className="c14 c5"
-                    >
-                      Certificate is valid till 
-                      30 December 2022
-                    </p>
-                    <p
-                      className="c12 c5"
-                    >
-                      <br />
-                      Accredited by
-                    </p>
-                    <img
-                      alt="SRFAC Logo"
-                      className="c15"
-                      src="srfac-logo.png"
-                    />
+                    <div>
+                      <p
+                        className="c5 c6"
+                      >
+                        STANDARD FIRST AID
+                      </p>
+                      <p
+                        className="c7 c6"
+                      >
+                        With CPR (Hands Only) and AED Provider
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  className="c16"
-                >
-                  <div />
                   <div
-                    style={
-                      Object {
-                        "width": 250,
-                      }
-                    }
+                    className="c8"
                   >
                     <div
-                      className="c17"
+                      className="c1"
                     >
+                      <p
+                        className="c9 c6"
+                      >
+                        <br />
+                        JOHN DOE
+                      </p>
+                      <p
+                        className="c10 c6"
+                      >
+                        Is Certified as a Provider of
+                      </p>
+                      <p
+                        className="c11 c6"
+                      >
+                        STANDARD FIRST AID (SFA), and
+                      </p>
+                      <p
+                        className="c12 c6"
+                      >
+                        With CARDIOPULMONARY RESUSCITATION (CPR) – HANDS ONLY, and
+                      </p>
+                      <p
+                        className="c12 c6"
+                      >
+                        AUTOMATED EXTERNAL DEFIBRILLATION (AED)
+                      </p>
+                      <p
+                        className="c12 c6"
+                      >
+                        PROVIDER
+                      </p>
+                      <p
+                        className="c13 c6"
+                      >
+                        On
+                      </p>
+                      <p
+                        className="c9 c6"
+                      >
+                        31 December 2020
+                      </p>
+                      <p
+                        className="c14 c6"
+                      >
+                        Certificate No.: 
+                        OBSSFA-2024-001
+                      </p>
+                      <p
+                        className="c15 c6"
+                      >
+                        Certificate is valid till 
+                        30 December 2022
+                      </p>
+                      <p
+                        className="c13 c6"
+                      >
+                        <br />
+                        Accredited by
+                      </p>
                       <img
-                        alt="Signature of signee"
-                        className="c18"
-                        src="fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png"
+                        alt="SRFAC Logo"
+                        className="c16"
+                        src="srfac-logo.png"
                       />
                     </div>
+                  </div>
+                  <div
+                    className="c17"
+                  >
+                    <div />
                     <div
-                      className="c19"
-                    />
-                    <div
-                      className="c20"
+                      style={
+                        Object {
+                          "width": 250,
+                        }
+                      }
                     >
-                      <p
-                        className="c21 c22"
+                      <div
+                        className="c18"
                       >
-                        <b>
-                          Fazdli Jamal
-                        </b>
-                      </p>
-                      <p
-                        className="c23 c22"
+                        <img
+                          alt="Signature of signee"
+                          className="c19"
+                          src="fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png"
+                        />
+                      </div>
+                      <div
+                        className="c20"
+                      />
+                      <div
+                        className="c21"
                       >
-                        Chief Instructor
-                      </p>
-                      <p
-                        className="c23 c22"
-                      >
-                        <b>
-                          Life Support Training Centre
-                        </b>
-                      </p>
-                      <p
-                        className="c24 c22"
-                      >
-                        Outward Bound Singapore
-                      </p>
+                        <p
+                          className="c22 c23"
+                        >
+                          <b>
+                            Fazdli Jamal
+                          </b>
+                        </p>
+                        <p
+                          className="c24 c23"
+                        >
+                          Chief Instructor
+                        </p>
+                        <p
+                          className="c24 c23"
+                        >
+                          <b>
+                            Life Support Training Centre
+                          </b>
+                        </p>
+                        <p
+                          className="c25 c23"
+                        >
+                          Outward Bound Singapore
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

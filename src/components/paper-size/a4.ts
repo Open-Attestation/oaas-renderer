@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const A4WidthPx = 793.7008
+export const A4HeightPx = 1152
+export const A4HeightPx2Pages = 2261
+
 export const A4 = styled.div<{ $bgImg?: string; $zIndex?: number }>`
     background: white;
     position: relative;
