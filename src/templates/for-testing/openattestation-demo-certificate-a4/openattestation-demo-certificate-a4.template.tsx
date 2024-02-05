@@ -9,11 +9,11 @@ import { Typography } from '../common/components'
 import { OaCertMainPage } from '../common/oa-cert-main-page/oa-cert-main-page'
 import { ForTestingOpenattestationDemoCertificateA4OaDoc } from './openattestation-demo-certificate-a4.types'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
-import { A4WidthPx } from 'components/paper-size/a4'
+import { A4HeightPx, A4WidthPx } from 'components/paper-size/a4'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 
 const documentWidth = A4WidthPx
-const documentHeight = 1152
+const documentHeight = A4HeightPx
 
 export const ForTestingOpenattestationDemoCertificateA4Template: FunctionComponent<
     TemplateProps<ForTestingOpenattestationDemoCertificateA4OaDoc> & {

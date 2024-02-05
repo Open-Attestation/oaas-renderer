@@ -4,6 +4,7 @@ import { GovtechDigitalAcademyCertificateOfCompletion_1SigneeOaDoc } from './cer
 import { Helmet } from 'react-helmet-async'
 import {
     A4Landscape,
+    A4LandscapeHeightPx,
     A4LandscapeWidthPx,
 } from 'components/paper-size/a4-landscape'
 import landscapeBg from '../common/assets/COC_1sign_150dpi.png'
@@ -27,7 +28,7 @@ import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 
 const documentWidth = A4LandscapeWidthPx
-const documentHeight = 778.583
+const documentHeight = A4LandscapeHeightPx
 
 export const GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate: FunctionComponent<
     TemplateProps<GovtechDigitalAcademyCertificateOfCompletion_1SigneeOaDoc> & {

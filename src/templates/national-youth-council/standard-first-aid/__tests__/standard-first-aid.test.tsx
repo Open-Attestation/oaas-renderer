@@ -16,490 +16,414 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c0 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
-            .c3 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: justify;
-              -webkit-justify-content: space-between;
-              -ms-flex-pack: justify;
-              justify-content: space-between;
-            }
-
-            .c5 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: 100%;
-              -webkit-flex-direction: row;
-              -ms-flex-direction: row;
-              flex-direction: row;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: start;
-              -webkit-justify-content: flex-start;
-              -ms-flex-pack: start;
-              justify-content: flex-start;
-            }
-
-            .c5 > *:not(:last-child) {
-              margin-right: 8px;
-            }
-
-            .c7 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
-            .c7 > *:not(:last-child) {
-              margin-bottom: 16px;
-            }
-
-            .c18 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              margin-top: 0px;
-            }
-
-            .c18 > *:not(:last-child) {
-              margin-bottom: 16px;
-            }
-
-            .c24 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: row;
-              -ms-flex-direction: row;
-              flex-direction: row;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
             .c1 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
+            .c2 {
               min-width: 500px;
             }
 
-            .c6 {
-              width: auto;
-              height: 70px;
-              margin: 0;
-            }
-
-            .c8 {
-              font-size: 20px;
+            .c5 {
+              font-size: 24px;
               font-style: normal;
               font-weight: 700;
-              margin-top: 16px;
+              margin-top: 0px;
               margin-bottom: 0px;
-              margin-left: 0px;
-              margin-right: 0px;
+              text-align: center;
             }
 
-            .c10 {
-              font-size: 16px;
+            .c7 {
+              font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
               margin-bottom: 0px;
-              margin-left: 0px;
-              margin-right: 0px;
-              max-width: 312px;
+              text-align: center;
+            }
+
+            .c9 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+            }
+
+            .c10 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: -8px;
+            }
+
+            .c11 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
               text-align: center;
             }
 
             .c12 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -8px;
+              text-align: center;
+            }
+
+            .c13 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
-              margin-top: 8px;
-              margin-bottom: 0px;
-              margin-left: 0px;
-              margin-right: 0px;
-              text-align: center;
+              margin-top: 0px;
             }
 
             .c14 {
-              font-size: 16px;
+              font-size: 12px;
               font-style: normal;
-              font-weight: 400;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              margin-left: 0px;
-              margin-right: 0px;
-              text-align: center;
+              font-weight: 700;
+              margin-top: -8px;
             }
 
             .c15 {
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              margin-bottom: 8px;
-              margin-left: 0px;
-              margin-right: 0px;
-            }
-
-            .c19 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
-              margin-top: 8px;
-              margin-bottom: 0px;
-              margin-left: 0px;
-              margin-right: 0px;
-            }
-
-            .c20 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
               margin-top: 0px;
             }
 
-            .c21 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              margin-left: 0px;
-              margin-right: 0px;
-            }
-
-            .c22 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              width: 100%;
-              text-align: left;
-            }
-
-            .c9 {
+            .c6 {
               font-family: 'Libre Franklin';
-            }
-
-            .c11 {
-              position: relative;
-              width: 100%;
-            }
-
-            .c11 img {
-              width: 100%;
             }
 
             .c16 {
               max-height: 72px;
             }
 
-            .c2 {
+            .c3 {
+              background: white;
               position: relative;
-              width: 500px;
-              height: 350px;
+              width: 21cm;
+              min-height: 29.7cm;
+              padding: 2cm;
+              margin: 0 auto;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              background-size: cover;
+              background-image: url('background.svg');
+              z-index: initial;
             }
 
-            .c2 .card-face {
-              width: 500px;
-              height: 350px;
-            }
-
-            .c2 .card-face:first-child {
-              page-break-after: always;
-            }
-
-            .c23 {
-              position: relative;
+            .c20 {
+              display: block;
+              border-bottom: 1px solid #808041;
               width: 100%;
+              max-width: 100%;
+              margin-top: 0px;
+              margin-bottom: 0px;
+            }
+
+            .c22 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 8px;
+              text-align: center;
+            }
+
+            .c24 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: -12px;
+              text-align: center;
             }
 
             .c25 {
               font-size: 12px;
               font-style: normal;
-              font-weight: 400;
-              margin-left: 8px;
+              font-weight: 700;
+              margin-top: -12px;
               text-align: center;
             }
 
-            .c26 {
-              font-family: Libre Franklin;
+            .c23 {
+              font-family: 'Libre Franklin';
+            }
+
+            .c21 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-flex: 1;
+              -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+              flex-grow: 1;
+              color: #808041;
+            }
+
+            .c18 {
+              margin-bottom: 2px;
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c19 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
             }
 
             .c4 {
-              width: calc(100% - 1px);
-              height: calc(100% - 1px);
-              background: white;
               position: relative;
-              padding: 24px 24px 8px 24px;
-              box-sizing: border-box;
-              border: 1px solid #ccc;
-              border-radius: 16px;
-              z-index: 0;
-              -webkit-print-color-adjust: exact;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              margin-top: 241px;
+              height: 90px;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
             }
 
-            .c13 {
-              width: calc(100% - 1px);
-              height: calc(100% - 1px);
-              background: white;
+            .c8 {
               position: relative;
-              padding: 56px 24px 4px 24px;
-              box-sizing: border-box;
-              border: 1px solid #ccc;
-              border-radius: 16px;
-              z-index: 0;
-              -webkit-print-color-adjust: exact;
+              display: block;
+              height: 360px;
+              padding-top: 16px;
+              padding-bottom: 16px;
             }
 
             .c17 {
-              display: block;
-              border-bottom: 1px solid black;
-              width: 100%;
-              max-width: 162px;
-              margin-top: 0px;
-              margin-bottom: 0px;
+              position: relative;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              height: 214px;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+              justify-content: space-between;
+              -webkit-align-items: start;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: start;
             }
 
-            @media not print {
-              .c2 {
-                -webkit-transform-style: preserve-3d;
-                -ms-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-                -webkit-transition: -webkit-transform 0.5s ease-in-out 0s;
-                -webkit-transition: transform 0.5s ease-in-out 0s;
-                transition: transform 0.5s ease-in-out 0s;
-                cursor: pointer;
-              }
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
+            }
 
-              .c2.flip {
-                -webkit-transform: rotateY(180deg);
-                -ms-transform: rotateY(180deg);
-                transform: rotateY(180deg);
-              }
-
-              .c2 .card-face {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                -webkit-backface-visibility: hidden;
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-              }
-
-              .c2 .card-face:last-child {
-                -webkit-transform: rotateY(180deg);
-                -ms-transform: rotateY(180deg);
-                transform: rotateY(180deg);
+            @media print {
+              .c3 {
+                border: none;
+                -webkit-break-inside: avoid;
+                break-inside: avoid;
               }
             }
 
             @media print {
-              .c23 {
-                display: none;
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
               }
             }
 
             <div
-              className="c0 c1"
+              className="c0"
             >
               <div
-                className="c2"
-                onClick={[Function]}
+                className="c1 c2"
               >
                 <div
-                  className="card-face"
+                  className="c3"
                 >
                   <div
-                    className="c3 c4"
+                    className="c4"
+                  >
+                    <div>
+                      <p
+                        className="c5 c6"
+                      >
+                        STANDARD FIRST AID
+                      </p>
+                      <p
+                        className="c7 c6"
+                      >
+                        With CPR (Hands Only) and AED Provider
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className="c8"
                   >
                     <div
-                      className="c5"
-                    >
-                      <img
-                        alt="Outward Bound School Logo"
-                        className="c6"
-                        src="obs-logo.png"
-                      />
-                    </div>
-                    <div
-                      className="c7"
-                    >
-                      <div
-                        className="c0"
-                      >
-                        <p
-                          className="c8 c9"
-                        >
-                          John Doe
-                        </p>
-                      </div>
-                      <p
-                        className="c10 c9"
-                      >
-                        Is certified as a Standard First Aid (SFA) with CPR (Hands only) + AED Provider Accredited by SRFAC
-                      </p>
-                    </div>
-                    <div
-                      className="c11"
+                      className="c1"
                     >
                       <p
-                        className="c12 c9"
+                        className="c9 c6"
                       >
-                        Date issued: 
-                        31/12/2020
+                        <br />
+                        JOHN DOE
+                      </p>
+                      <p
+                        className="c10 c6"
+                      >
+                        Is Certified as a Provider of
+                      </p>
+                      <p
+                        className="c11 c6"
+                      >
+                        STANDARD FIRST AID (SFA)
+                      </p>
+                      <p
+                        className="c12 c6"
+                      >
+                        With CARDIOPULMONARY RESUSCITATION (CPR) – HANDS ONLY
+                      </p>
+                      <p
+                        className="c12 c6"
+                      >
+                        and AUTOMATED EXTERNAL DEFIBRILLATION (AED)
+                      </p>
+                      <p
+                        className="c13 c6"
+                      >
+                        On
+                      </p>
+                      <p
+                        className="c9 c6"
+                      >
+                        31 December 2020
+                      </p>
+                      <p
+                        className="c14 c6"
+                      >
+                        Certificate No.: 
+                        OBSSFA-2024-001
+                      </p>
+                      <p
+                        className="c15 c6"
+                      >
+                        Certificate is valid till 
+                        30 December 2022
+                      </p>
+                      <p
+                        className="c13 c6"
+                      >
+                        <br />
+                        Accredited by
                       </p>
                       <img
-                        alt="OUTWARD BOUND SINGAPORE LIFE SUPPORTING TRAINING CENTRE"
-                        src="obstc-logo.png"
+                        alt="SRFAC Logo"
+                        className="c16"
+                        src="srfac-logo.png"
                       />
                     </div>
                   </div>
-                </div>
-                <div
-                  className="card-face"
-                >
                   <div
-                    className="c3 c13"
+                    className="c17"
                   >
-                    <p
-                      className="c14 c9"
-                    >
-                      The holder of this card has successfully completed the course requirements
-                    </p>
+                    <div />
                     <div
-                      className="c0"
+                      style={
+                        Object {
+                          "width": 250,
+                        }
+                      }
                     >
-                      <p
-                        className="c15 c9"
-                      >
-                        <img
-                          alt="ci signature"
-                          className="c16"
-                          src="fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png"
-                        />
-                      </p>
-                      <div
-                        className="c17"
-                      />
                       <div
                         className="c18"
                       >
-                        <div
-                          className="c0"
-                        >
-                          <p
-                            className="c19 c9"
-                          >
-                            Fazdli Jamal
-                          </p>
-                          <p
-                            className="c20 c9"
-                          >
-                            Chief Instructor
-                          </p>
-                        </div>
+                        <img
+                          alt="Signature of signee"
+                          className="c19"
+                          src="fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png"
+                        />
+                      </div>
+                      <div
+                        className="c20"
+                      />
+                      <div
+                        className="c21"
+                      >
                         <p
-                          className="c21 c9"
+                          className="c22 c23"
                         >
-                          Certificate is valid till
-                           
-                          30 Dec 2022
+                          <b>
+                            Fazdli Jamal
+                          </b>
+                        </p>
+                        <p
+                          className="c24 c23"
+                        >
+                          Chief Instructor
+                        </p>
+                        <p
+                          className="c24 c23"
+                        >
+                          <b>
+                            Life Support Training Centre
+                          </b>
+                        </p>
+                        <p
+                          className="c25 c23"
+                        >
+                          Outward Bound Singapore
                         </p>
                       </div>
                     </div>
-                    <p
-                      className="c22 c9"
-                    >
-                      S/N: 
-                      OBSSFA2022/001
-                    </p>
                   </div>
-                </div>
-              </div>
-              <div
-                className="c23"
-              >
-                <div
-                  className="c24"
-                >
-                  <img
-                    alt="card flip icon"
-                    src="icon-cardflip.svg"
-                    width="20"
-                  />
-                  <p
-                    className="c25 c26"
-                  >
-                    Click on the card to reveal the other side
-                  </p>
                 </div>
               </div>
             </div>
@@ -513,6 +437,6 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                 handleObfuscation={() => void 0}
             />
         )
-        expect(screen.getByText('John Doe')).toBeTruthy()
+        expect(screen.getByText('JOHN DOE')).toBeTruthy()
     })
 })

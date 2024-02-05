@@ -6,6 +6,7 @@ import imagesMap from '../common/assets/__generated__/images-map'
 import { formatCourseDatefor } from '../common/utils'
 import {
     A4Landscape,
+    A4LandscapeHeightPx,
     A4LandscapeWidthPx,
 } from 'components/paper-size/a4-landscape'
 import landscapeBg from '../common/assets/COP_2sign_150dpi.png'
@@ -32,7 +33,7 @@ import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 
 const documentWidth = A4LandscapeWidthPx
-const documentHeight = 778.583
+const documentHeight = A4LandscapeHeightPx
 
 export const GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate: FunctionComponent<
     TemplateProps<GovtechDigitalAcademyCertificateOfParticipation_2SigneesOaDoc> & {

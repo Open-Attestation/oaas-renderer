@@ -4,7 +4,7 @@ export const CertificateComponent = styled.div`
     position: absolute;
     width: 380px;
     height: 66px;
-    left: 548px;
+    left: 568px;
     top: 184px;
 
     font-family: 'Montserrat';
@@ -23,7 +23,7 @@ export const OfParticipationComponent = styled.div`
     position: absolute;
     width: 388px;
     height: 53px;
-    left: 545px;
+    left: 563px;
     top: 236px;
 
     font-family: 'Montserrat';
@@ -41,7 +41,7 @@ export const ProudlyPresentedComponent = styled.div`
     position: absolute;
     width: 244px;
     height: 22px;
-    left: 617px;
+    left: 628px;
     top: 316px;
 
     font-family: 'Montserrat';
@@ -58,8 +58,8 @@ export const NameComponent = styled.div`
     position: absolute;
     width: 558px;
     height: 54px;
-    top: 357px;
-    right: 73px;
+    top: 363px;
+    right: 87px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -76,8 +76,8 @@ export const NameComponent = styled.div`
 export const InfoContainer = styled.div`
     position: absolute;
     width: 558px;
-    left: 463px;
-    top: 420px;
+    left: 476px;
+    top: 427px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -104,8 +104,8 @@ export const SigneeOneDetailsComponent = styled.div`
     position: absolute;
     width: 259px;
     height: 59px;
-    top: 677.36px;
-    right: 367px;
+    top: 691.36px;
+    right: 384px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -122,8 +122,8 @@ export const SigneeTwoDetailsComponent = styled.div`
     position: absolute;
     width: 259px;
     height: 51px;
-    left: 771.84px;
-    top: 677.36px;
+    left: 787.84px;
+    top: 691.36px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -140,8 +140,8 @@ export const SigneeOneSignatureComponent = styled.div`
     position: absolute;
     width: 259px;
     height: 85px;
-    top: 588px;
-    right: 367px;
+    top: 602px;
+    right: 384px;
 
     text-align: center;
     align-items: flex-end;
@@ -157,8 +157,8 @@ export const SigneeTwoSignatureComponent = styled.div`
     position: absolute;
     width: 259px;
     height: 85px;
-    top: 588px;
-    right: 64px;
+    top: 602px;
+    right: 75px;
 
     text-align: center;
     align-items: flex-end;
