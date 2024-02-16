@@ -388,7 +388,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                         <img
                           alt="Signature of signee"
                           className="c19"
-                          src="fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png"
+                          src="fazdli-jamal-signature&09fc5bfca94f8c519f9433c611b4fb9ff8cfed316343125469a8addee67c6b06.png"
                         />
                       </div>
                       <div
