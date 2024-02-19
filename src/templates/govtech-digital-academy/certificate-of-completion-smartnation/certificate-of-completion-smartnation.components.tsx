@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const SmartNationLogoComponent = styled.div`
     position: absolute;
-    width: 292.96px;
+    width: 372px;
     height: 66.01px;
     top: 80px;
-    right: 221px;
+    left: 564.39px;
 
     text-align: center;
     align-items: flex-end;
@@ -140,8 +140,8 @@ export const SigneeDetailsComponent = styled.div`
 export const SigneeSignatureComponent = styled.div`
     position: absolute;
     width: 259px;
-    height: 85px;
-    top: 598px;
+    height: 65px;
+    top: 619px;
     right: 236px;
 
     text-align: center;
@@ -151,8 +151,10 @@ export const SigneeSignatureComponent = styled.div`
 `
 export const SigneeSignatureImg = styled.img`
     display: block;
+    width: auto;
+    height: auto;
     max-width: 259px;
-    max-height: 85px;
+    max-height: 65px;
 `
 export const DateOfIssueComponent = styled.div`
     position: absolute;

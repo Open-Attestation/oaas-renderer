@@ -9,6 +9,7 @@ export default {
     required: [
         'name',
         'programmeTitle',
+        'programmeStartDate',
         'issueDate',
         'signeeName',
         'signeeDesignation',
@@ -30,11 +31,23 @@ export default {
             ],
             minLength: 1,
         },
-        issueDate: {
+        programmeStartDate: {
             type: 'string',
             description: 'Date of issue',
             examples: ['2022-05-10'],
             format: 'date',
+            formatMaximum: {
+                $data: '1/issueDate',
+            },
+        },
+        issueDate: {
+            type: 'string',
+            description: 'Date of issue',
+            examples: ['2022-06-03'],
+            format: 'date',
+            formatMinimum: {
+                $data: '1/programmeStartDate',
+            },
         },
         signeeName: makeEnumString(
             'Name of signee',

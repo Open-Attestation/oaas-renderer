@@ -11,7 +11,8 @@ export const sample: GovtechDigitalAcademyCertificateOfCompletionSmartnationOaDo
         name: 'THONG YONG JIE ANDRE',
         programmeTitle:
             'Information & Communications Technology & Smart Systems Sector Milestone Programme (ICTMP)',
-        issueDate: '2022-05-10',
+        programmeStartDate: '2023-10-30',
+        issueDate: '2024-02-21',
         signeeName: 'Joseph Leong',
         signeeDesignation: 'Permanent Secretary',
         signeeOrganisation: 'Smart Nation and Digital Government Group',

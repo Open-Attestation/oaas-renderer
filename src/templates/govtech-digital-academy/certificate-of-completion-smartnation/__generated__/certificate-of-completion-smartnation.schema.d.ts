@@ -17,6 +17,10 @@ export interface GovtechDigitalAcademyCertificateOfCompletionSmartnation {
     /**
      * Date of issue
      */
+    programmeStartDate: string
+    /**
+     * Date of issue
+     */
     issueDate: string
     /**
      * Name of signee

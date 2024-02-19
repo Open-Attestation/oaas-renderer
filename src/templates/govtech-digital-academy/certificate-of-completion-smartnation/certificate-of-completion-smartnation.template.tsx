@@ -48,6 +48,10 @@ export const GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate: Fu
     }
 > = ({ document, className = '' }) => {
     const name = document.name.toUpperCase()
+    const programmeDate = formatCourseDatefor(
+        document.programmeStartDate,
+        document.issueDate
+    )
     const issueDate = formatCourseDatefor(
         document.issueDate,
         document.issueDate
@@ -92,6 +96,9 @@ export const GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate: Fu
                         </ForAchievingComponent>
                         <ProgrammeComponent>
                             {programmeTitle}
+                            <br />
+                            <br />
+                            {programmeDate}
                         </ProgrammeComponent>
                         <YourCommitmentComponent>
                             Your commitment to continuing professional

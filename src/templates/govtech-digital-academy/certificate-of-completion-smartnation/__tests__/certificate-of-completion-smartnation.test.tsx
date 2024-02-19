@@ -42,10 +42,10 @@ describe('GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate', () =
 
             .c2 {
               position: absolute;
-              width: 292.96px;
+              width: 372px;
               height: 66.01px;
               top: 80px;
-              right: 221px;
+              left: 564.39px;
               text-align: center;
               -webkit-align-items: flex-end;
               -webkit-box-align: flex-end;
@@ -196,8 +196,8 @@ describe('GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate', () =
             .c10 {
               position: absolute;
               width: 259px;
-              height: 85px;
-              top: 598px;
+              height: 65px;
+              top: 619px;
               right: 236px;
               text-align: center;
               -webkit-align-items: flex-end;
@@ -216,8 +216,10 @@ describe('GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate', () =
 
             .c11 {
               display: block;
+              width: auto;
+              height: auto;
               max-width: 259px;
-              max-height: 85px;
+              max-height: 65px;
             }
 
             .c13 {
@@ -296,6 +298,9 @@ describe('GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate', () =
                     className="c9"
                   >
                     Information & Communications Technology & Smart Systems Sector Milestone Programme (ICTMP)
+                    <br />
+                    <br />
+                    30 October 2023 - 21 February 2024
                   </div>
                   <div
                     className=""
@@ -329,7 +334,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate', () =
                   className="c13"
                 >
                   Date of Issue: 
-                  10 May 2022
+                  21 February 2024
                 </div>
               </div>
             </div>
