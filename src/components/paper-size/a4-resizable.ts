@@ -10,12 +10,13 @@ export const size = {
 export const A4R = styled.div<{
     $bgImg?: string
     $zIndex?: number
+    $padding?: string
 }>`
     background: white;
     position: relative;
     max-width: 21cm;
     min-width: ${size.mobile};
-    padding: 2cm;
+    padding: ${({ $padding }) => $padding ?? '2cm'};
     min-height: 29.7cm;
     margin: 0 auto;
     box-sizing: border-box;
@@ -32,7 +33,6 @@ export const A4R = styled.div<{
     @media print {
         border: none;
         break-inside: avoid;
-        break-before: always;
         width: 21cm;
         min-height: 29.7cm;
         padding: 2cm;

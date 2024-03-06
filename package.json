@@ -3,6 +3,8 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@dicebear/collection": "^7.1.0",
+        "@dicebear/core": "^7.1.0",
         "@govtechsg/decentralized-renderer-react-components": "^3.8.0",
         "@govtechsg/open-attestation": "^6.5.2",
         "@testing-library/jest-dom": "^5.16.5",
@@ -42,6 +44,7 @@
     "scripts": {
         "dev": "ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__development__/prepare.ts && concurrently \"BROWSER=none react-app-rewired start\" \"PORT=3001 IS_PREVIEW_APP=true react-app-rewired start\"",
         "build": "run() { ISSUER_ID=$1 react-app-rewired build; }; run",
+        "build:deploy": "yarn build $AGENCY_NAME",
         "test": "react-scripts test --watchAll=false",
         "test:watch": "react-scripts test",
         "eject": "react-scripts eject",

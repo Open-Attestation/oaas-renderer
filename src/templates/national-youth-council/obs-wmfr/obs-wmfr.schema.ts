@@ -8,9 +8,8 @@ export default {
     required: [
         'name',
         'issueDate',
-        'serialNumber',
+        'certificateNumber',
         'ExecDirName',
-        'ExecDirPosition',
         'ExecDirSignature',
     ],
     properties: {
@@ -25,10 +24,10 @@ export default {
             examples: ['2022-12-31'],
             format: 'date',
         },
-        serialNumber: {
+        certificateNumber: {
             type: 'string',
-            description: 'Serial number',
-            examples: ['OBSWMFR20XX/XXX'],
+            description: 'Certificate number',
+            examples: ['OBSWMFR-2024-001'],
             minLength: 1,
         },
         ExecDirName: {
@@ -36,13 +35,6 @@ export default {
             description: 'Name of the issuing officer',
             enum: ['Nicholas Conceicao'],
             examples: ['Nicholas Conceicao'],
-            minLength: 1,
-        },
-        ExecDirPosition: {
-            type: 'string',
-            description: 'Position of the issuing officer',
-            enum: ['Executive Director'],
-            examples: ['Executive Director'],
             minLength: 1,
         },
         ExecDirSignature: {

@@ -194,6 +194,11 @@ export const HealthSciencesAuthorityFreeSaleTemplate: FunctionComponent<
                         </Text>
                         <div>
                             <img
+                                style={{
+                                    height: '48px',
+                                    width: 'auto',
+                                    maxWidth: '200px',
+                                }}
                                 src={document.signature_image}
                                 alt="signature"
                             />
@@ -213,6 +218,8 @@ export const HealthSciencesAuthorityFreeSaleTemplate: FunctionComponent<
                         position: 'absolute',
                         right: '225px',
                         bottom: '34px',
+                        height: '93px',
+                        width: '92px',
                     }}
                     src={hsaStamp}
                     alt="HSA stamp"
@@ -292,6 +299,8 @@ export const HealthSciencesAuthorityFreeSaleTemplate: FunctionComponent<
                         position: 'absolute',
                         right: '225px',
                         bottom: '34px',
+                        height: '93px',
+                        width: '92px',
                     }}
                     src={hsaStamp}
                     alt="HSA stamp"

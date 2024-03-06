@@ -8,10 +8,9 @@ export const sample: NationalYouthCouncilObsWmfrOaDoc = {
         url: 'http://localhost:3000',
     },
     name: 'John Doe',
-    serialNumber: 'OBSWMFR20XX/XXX',
+    certificateNumber: 'OBSWMFR-2024-001',
     issueDate: '2022-12-31',
     ExecDirName: 'Nicholas Conceicao',
-    ExecDirPosition: 'Executive Director',
     ExecDirSignature:
         'nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png',
     issuers: [

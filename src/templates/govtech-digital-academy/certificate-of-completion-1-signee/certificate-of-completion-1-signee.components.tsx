@@ -4,7 +4,7 @@ export const CertificateComponent = styled.div`
     position: absolute;
     width: 372px;
     height: 66px;
-    left: 552.39px;
+    left: 564.39px;
     top: 185.43px;
 
     font-family: 'Montserrat';
@@ -23,7 +23,7 @@ export const OfCompletionComponent = styled.div`
     position: absolute;
     width: 364px;
     height: 50px;
-    left: 556.32px;
+    left: 568.32px;
     top: 235.21px;
 
     font-family: 'Montserrat';
@@ -41,7 +41,7 @@ export const ProudlyPresentedComponent = styled.div`
     position: absolute;
     width: 244px;
     height: 22px;
-    left: 617.78px;
+    left: 629.78px;
     top: 317.19px;
 
     font-family: 'Montserrat';
@@ -58,8 +58,8 @@ export const NameComponent = styled.div`
     position: absolute;
     width: 558px;
     height: 54px;
-    top: 357px;
-    right: 73px;
+    top: 365px;
+    right: 85px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -76,8 +76,8 @@ export const NameComponent = styled.div`
 export const InfoContainer = styled.div`
     position: absolute;
     width: 558px;
-    left: 463px;
-    top: 420px;
+    left: 475px;
+    top: 428px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -105,8 +105,8 @@ export const SigneeDetailsComponent = styled.div`
     position: absolute;
     width: 259px;
     height: 51px;
-    left: 610.84px;
-    top: 677.36px;
+    left: 624.84px;
+    top: 692.36px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -123,8 +123,8 @@ export const SigneeSignatureComponent = styled.div`
     position: absolute;
     width: 259px;
     height: 85px;
-    top: 588px;
-    right: 224px;
+    top: 598px;
+    right: 236px;
 
     text-align: center;
     align-items: flex-end;

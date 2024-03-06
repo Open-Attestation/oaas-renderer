@@ -5,7 +5,13 @@ export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
     $id: 'NationalYouthCouncil/StandardFirstAid',
     type: 'object',
-    required: ['name', 'issueDate', 'ciName', 'ciSignature', 'serialNumber'],
+    required: [
+        'name',
+        'issueDate',
+        'ciName',
+        'ciSignature',
+        'certificateNumber',
+    ],
     properties: {
         name: {
             type: 'string',
@@ -21,7 +27,7 @@ export default {
         ciName: {
             type: 'string',
             description: 'Name of trainer',
-            enum: ['Fazdli Jamal'],
+            enum: ['Fazdli Jamal', 'Jaffar Ali'],
             examples: ['Fazdli Jamal'],
             minLength: 1,
         },
@@ -29,16 +35,18 @@ export default {
             type: 'string',
             description: "CI's signature",
             enum: getEnumValues([
-                'fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png',
+                'fazdli-jamal-signature&09fc5bfca94f8c519f9433c611b4fb9ff8cfed316343125469a8addee67c6b06.png',
+                'jaffar-ali-signature&3d805f88bf49b640f6498c0e5335806289c24ee9533c7b79b08f3a5e454f1be4.png',
             ]),
             examples: getEnumValues([
-                'fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png',
+                'fazdli-jamal-signature&09fc5bfca94f8c519f9433c611b4fb9ff8cfed316343125469a8addee67c6b06.png',
+                'jaffar-ali-signature&3d805f88bf49b640f6498c0e5335806289c24ee9533c7b79b08f3a5e454f1be4.png',
             ]),
         },
-        serialNumber: {
+        certificateNumber: {
             type: 'string',
             description: 'Certificate number',
-            examples: ['OBSSFA20XX/XXX'],
+            examples: ['OBSSFA-2024-001'],
             minLength: 1,
         },
     },

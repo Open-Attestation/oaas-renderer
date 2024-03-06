@@ -43,7 +43,7 @@ export const HealthSciencesAuthorityMethodValidationForChemicalTestingTemplate: 
                     method-validation-for-chemical-testing
                 </title>
             </Helmet>
-            <A4Landscape $bgImg={landscapeBg} $padding="1px 32px 1px 39px">
+            <A4Landscape $bgImg={landscapeBg} $padding="1px 37px 1px 40px">
                 <ContentDivComponent>
                     <TitleDivComponent>
                         <CertificateOfAttendanceComponent>

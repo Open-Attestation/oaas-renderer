@@ -16,7 +16,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c0 {
+            .c1 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -35,7 +35,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               justify-content: center;
             }
 
-            .c18 {
+            .c20 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -54,31 +54,8 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               justify-content: center;
             }
 
-            .c18 > *:not(:last-child) {
+            .c20 > *:not(:last-child) {
               margin-bottom: 24px;
-            }
-
-            .c19 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
-            .c19 > *:not(:last-child) {
-              margin-bottom: 8px;
             }
 
             .c21 {
@@ -101,10 +78,33 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
             }
 
             .c21 > *:not(:last-child) {
+              margin-bottom: 8px;
+            }
+
+            .c23 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
+            .c23 > *:not(:last-child) {
               margin-bottom: 0px;
             }
 
-            .c2 {
+            .c3 {
               background: white;
               position: relative;
               width: 21cm;
@@ -118,7 +118,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               z-index: initial;
             }
 
-            .c17 {
+            .c19 {
               background: white;
               position: relative;
               width: 21cm;
@@ -132,7 +132,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               z-index: initial;
             }
 
-            .c13 {
+            .c15 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -141,7 +141,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c4 {
+            .c5 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
@@ -150,17 +150,10 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               text-align: center;
             }
 
-            .c7 {
+            .c8 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
-              margin-top: 0px;
-            }
-
-            .c8 {
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 700;
               margin-top: 0px;
             }
 
@@ -169,17 +162,24 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
-              text-align: center;
             }
 
             .c10 {
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              text-align: center;
+            }
+
+            .c11 {
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
               margin-top: 0px;
             }
 
-            .c15 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -187,7 +187,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               text-align: center;
             }
 
-            .c16 {
+            .c18 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -195,13 +195,13 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               text-align: center;
             }
 
-            .c20 {
+            .c22 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
             }
 
-            .c23 {
+            .c25 {
               font-size: 10px;
               font-style: italic;
               font-weight: 400;
@@ -211,7 +211,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               margin-right: 0px;
             }
 
-            .c24 {
+            .c26 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
@@ -222,7 +222,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               text-align: center;
             }
 
-            .c26 {
+            .c28 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -234,7 +234,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               text-decoration: underline;
             }
 
-            .c27 {
+            .c29 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -244,7 +244,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               margin-right: 0px;
             }
 
-            .c29 {
+            .c31 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -254,20 +254,11 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               margin-right: 0px;
             }
 
-            .c5 {
+            .c6 {
               font-family: 'Libre Franklin';
             }
 
-            .c12 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c14 {
+            .c16 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -282,7 +273,34 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               color: #808041;
             }
 
-            .c3 {
+            .c13 {
+              margin-bottom: 2px;
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c14 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
+            }
+
+            .c4 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -300,7 +318,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               align-items: center;
             }
 
-            .c6 {
+            .c7 {
               position: relative;
               display: block;
               height: 360px;
@@ -308,7 +326,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               padding-bottom: 16px;
             }
 
-            .c11 {
+            .c12 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -325,17 +343,17 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               align-items: start;
             }
 
-            .c1 {
+            .c2 {
               min-width: 500px;
               font-family: 'Libre Franklin';
               font-size: 12px;
             }
 
-            .c25 {
+            .c27 {
               list-style-type: none;
             }
 
-            .c25 > li:before {
+            .c27 > li:before {
               content: counter(list-item) ')';
               display: inline-block;
               min-width: 12px;
@@ -345,17 +363,17 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               font-weight: 800;
             }
 
-            .c25 > li:not(:last-child) {
+            .c27 > li:not(:last-child) {
               margin-bottom: 8px;
             }
 
-            .c28 {
+            .c30 {
               list-style-type: none;
               margin: 0;
               padding-left: 16px;
             }
 
-            .c28 > li:before {
+            .c30 > li:before {
               content: counter(list-item) ')';
               display: inline-block;
               min-width: 20px;
@@ -364,305 +382,330 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               text-align: right;
             }
 
-            .c22 {
+            .c24 {
               width: auto;
             }
 
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
+            }
+
             @media print {
-              .c2 {
+              .c3 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
             @media print {
-              .c17 {
+              .c19 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
+              }
+            }
+
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
               }
             }
 
             <div
-              className="c0 c1"
+              className="c0"
             >
               <div
-                className="c2"
+                className="c1 c2"
               >
                 <div
                   className="c3"
                 >
-                  <div>
-                    <p
-                      className="c4 c5"
-                    >
-                      Certificate of Successful
-                      <br />
-                      Completion
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
                   <div
-                    className="c0"
+                    className="c4"
                   >
-                    <p
-                      className="c7 c5"
-                    >
-                      is awarded to
-                    </p>
-                    <p
-                      className="c8 c5"
-                    >
-                      JOHN DOE
-                    </p>
-                    <p
-                      className="c7 c5"
-                    >
-                      For successfully completing the
-                    </p>
-                    <p
-                      className="c9 c5"
-                    >
-                      Outward Bound Singapore:
-                      <br />
-                      Campcraft and Navigation Training
-                    </p>
-                    <p
-                      className="c7 c5"
-                    >
-                      On the date of
-                    </p>
-                    <p
-                      className="c10 c5"
-                    >
-                      10 May 2022
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="c11"
-                >
-                  <div />
-                  <div
-                    style={
-                      Object {
-                        "width": 250,
-                      }
-                    }
-                  >
-                    <div
-                      className="c12"
-                    />
-                    <div
-                      className="c13"
-                    />
-                    <div
-                      className="c14"
-                    >
+                    <div>
                       <p
-                        className="c15 c5"
+                        className="c5 c6"
                       >
-                        <b>
-                          Nicholas Conceicao
-                        </b>
-                         | Executive Director
-                      </p>
-                      <p
-                        className="c16 c5"
-                      >
-                        Outward Bound Singapore
+                        Certificate of Successful
+                        <br />
+                        Completion
                       </p>
                     </div>
                   </div>
+                  <div
+                    className="c7"
+                  >
+                    <div
+                      className="c1"
+                    >
+                      <p
+                        className="c8 c6"
+                      >
+                        is awarded to
+                      </p>
+                      <p
+                        className="c9 c6"
+                      >
+                        JOHN DOE
+                      </p>
+                      <p
+                        className="c8 c6"
+                      >
+                        For successfully completing the
+                      </p>
+                      <p
+                        className="c10 c6"
+                      >
+                        Outward Bound Singapore:
+                        <br />
+                        Campcraft and Navigation Training
+                      </p>
+                      <p
+                        className="c8 c6"
+                      >
+                        On the date of
+                      </p>
+                      <p
+                        className="c11 c6"
+                      >
+                        10 May 2022
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className="c12"
+                  >
+                    <div />
+                    <div
+                      style={
+                        Object {
+                          "width": 250,
+                        }
+                      }
+                    >
+                      <div
+                        className="c13"
+                      >
+                        <img
+                          alt="Signature of signee"
+                          className="c14"
+                          src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                        />
+                      </div>
+                      <div
+                        className="c15"
+                      />
+                      <div
+                        className="c16"
+                      >
+                        <p
+                          className="c17 c6"
+                        >
+                          <b>
+                            Nicholas Conceicao
+                          </b>
+                           | Executive Director
+                        </p>
+                        <p
+                          className="c18 c6"
+                        >
+                          Outward Bound Singapore
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div
-                className="c17"
-              >
                 <div
-                  className="c18"
+                  className="c19"
                 >
                   <div
-                    className="c19"
+                    className="c20"
                   >
-                    <p
-                      className="c20 c5"
-                    >
-                      Brick Wall Model of Core Competencies for Effective Outdoor Leadership
-                    </p>
                     <div
                       className="c21"
                     >
-                      <img
-                        alt="brick wall model"
-                        className="c22"
-                        src="brick-wall-model.png"
-                      />
                       <p
-                        className="c23 c5"
+                        className="c22 c6"
                       >
-                        Priest, S. & Gass, M. (2018). Effective Leadership in Adventure Programming (3rd ed.). Human Kinetics
+                        Brick Wall Model of Core Competencies for Effective Outdoor Leadership
                       </p>
-                    </div>
-                  </div>
-                  <div>
-                    <p
-                      className="c24 c5"
-                    >
-                      Campcraft & Navigation Modules
-                    </p>
-                    <div
-                      className="c19"
-                    >
-                      <ol
-                        className="c25"
-                        style={
-                          Object {
-                            "padding": 0,
-                          }
-                        }
+                      <div
+                        className="c23"
                       >
-                        <li>
-                          <span
-                            className="c26 c5"
-                          >
-                            Navigation
-                          </span>
-                          <p
-                            className="c27 c5"
-                          >
-                            Gain the knowledge and skill to conduct basic navigation lessons to OBS participants.
-                          </p>
-                        </li>
-                        <li>
-                          <span
-                            className="c26 c5"
-                          >
-                            Risk Analysis and Management Systems
-                          </span>
-                          <p
-                            className="c27 c5"
-                          >
-                            Develop proficiency in application of risk management to Land Expedition activities.
-                          </p>
-                        </li>
-                        <li>
-                          <span
-                            className="c26 c5"
-                          >
-                            Knots and Lashings
-                          </span>
-                          <p
-                            className="c27 c5"
-                          >
-                            Identify and be able to tie the following:
-                          </p>
-                          <ol
-                            className="c28"
-                          >
-                            <li>
-                              Overhand knots
-                            </li>
-                            <li>
-                              Figure 8 knots
-                            </li>
-                            <li>
-                              Reef knot
-                            </li>
-                            <li>
-                              Fisherman knots
-                            </li>
-                            <li>
-                              Hitches (Clove, Half, Mooring & Taut line)
-                            </li>
-                            <li>
-                              Lashings (Square, Tripod and Round)
-                            </li>
-                            <li>
-                              Bowline
-                            </li>
-                            <li>
-                              Alpine Butterfly
-                            </li>
-                            <li>
-                              Sheet bend
-                            </li>
-                            <li>
-                              Sheepshank
-                            </li>
-                          </ol>
-                        </li>
-                        <li>
-                          <span
-                            className="c26 c5"
-                          >
-                            Campsite Selection & Shelter Building
-                          </span>
-                          <p
-                            className="c27 c5"
-                          >
-                            Analyse campsite suitability and appropriate shelter with considerations of space, ground type and foliage density.
-                          </p>
-                        </li>
-                        <li>
-                          <span
-                            className="c26 c5"
-                          >
-                            Field Hygiene
-                          </span>
-                          <p
-                            className="c27 c5"
-                          >
-                            Gain knowledge on the advice needed for participants to be able to maintain proper personal and cooking hygiene in the field.
-                          </p>
-                        </li>
-                        <li>
-                          <span
-                            className="c26 c5"
-                          >
-                            Expedition Management
-                          </span>
-                          <p
-                            className="c27 c5"
-                          >
-                            Gain knowledge and skills to conduct a safe and quality land expedition.
-                          </p>
-                          <ul>
-                            <li>
-                              Group management during trekking
-                            </li>
-                            <li>
-                              Incident management for
-                              <ul>
-                                <li>
-                                  Inclement weather
-                                </li>
-                                <li>
-                                  Animal attack (Bee/Hornet/Boars/Dogs/Monkeys/Snakes)
-                                </li>
-                                <li>
-                                  Unable to locate current location
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ol>
+                        <img
+                          alt="brick wall model"
+                          className="c24"
+                          src="brick-wall-model.png"
+                        />
+                        <p
+                          className="c25 c6"
+                        >
+                          Priest, S. & Gass, M. (2018). Effective Leadership in Adventure Programming (3rd ed.). Human Kinetics
+                        </p>
+                      </div>
                     </div>
+                    <div>
+                      <p
+                        className="c26 c6"
+                      >
+                        Campcraft & Navigation Modules
+                      </p>
+                      <div
+                        className="c21"
+                      >
+                        <ol
+                          className="c27"
+                          style={
+                            Object {
+                              "padding": 0,
+                            }
+                          }
+                        >
+                          <li>
+                            <span
+                              className="c28 c6"
+                            >
+                              Navigation
+                            </span>
+                            <p
+                              className="c29 c6"
+                            >
+                              Gain the knowledge and skill to conduct basic navigation lessons to OBS participants.
+                            </p>
+                          </li>
+                          <li>
+                            <span
+                              className="c28 c6"
+                            >
+                              Risk Analysis and Management Systems
+                            </span>
+                            <p
+                              className="c29 c6"
+                            >
+                              Develop proficiency in application of risk management to Land Expedition activities.
+                            </p>
+                          </li>
+                          <li>
+                            <span
+                              className="c28 c6"
+                            >
+                              Knots and Lashings
+                            </span>
+                            <p
+                              className="c29 c6"
+                            >
+                              Identify and be able to tie the following:
+                            </p>
+                            <ol
+                              className="c30"
+                            >
+                              <li>
+                                Overhand knots
+                              </li>
+                              <li>
+                                Figure 8 knots
+                              </li>
+                              <li>
+                                Reef knot
+                              </li>
+                              <li>
+                                Fisherman knots
+                              </li>
+                              <li>
+                                Hitches (Clove, Half, Mooring & Taut line)
+                              </li>
+                              <li>
+                                Lashings (Square, Tripod and Round)
+                              </li>
+                              <li>
+                                Bowline
+                              </li>
+                              <li>
+                                Alpine Butterfly
+                              </li>
+                              <li>
+                                Sheet bend
+                              </li>
+                              <li>
+                                Sheepshank
+                              </li>
+                            </ol>
+                          </li>
+                          <li>
+                            <span
+                              className="c28 c6"
+                            >
+                              Campsite Selection & Shelter Building
+                            </span>
+                            <p
+                              className="c29 c6"
+                            >
+                              Analyse campsite suitability and appropriate shelter with considerations of space, ground type and foliage density.
+                            </p>
+                          </li>
+                          <li>
+                            <span
+                              className="c28 c6"
+                            >
+                              Field Hygiene
+                            </span>
+                            <p
+                              className="c29 c6"
+                            >
+                              Gain knowledge on the advice needed for participants to be able to maintain proper personal and cooking hygiene in the field.
+                            </p>
+                          </li>
+                          <li>
+                            <span
+                              className="c28 c6"
+                            >
+                              Expedition Management
+                            </span>
+                            <p
+                              className="c29 c6"
+                            >
+                              Gain knowledge and skills to conduct a safe and quality land expedition.
+                            </p>
+                            <ul>
+                              <li>
+                                Group management during trekking
+                              </li>
+                              <li>
+                                Incident management for
+                                <ul>
+                                  <li>
+                                    Inclement weather
+                                  </li>
+                                  <li>
+                                    Animal attack (Bee/Hornet/Boars/Dogs/Monkeys/Snakes)
+                                  </li>
+                                  <li>
+                                    Unable to locate current location
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                    <p
+                      className="c31 c6"
+                    >
+                      The curriculum for Campcraft and Navigation aims to provide a list of competency modules to be delivered in the training. The skills and knowledge in the modules will enable participants to conduct a safe and quality OBS Courses (e.g. 5 Days MOE-OBS programme, PSOEB programme, etc.) This include competencies in map reading and basic orientation skills, introduction to knots and lashings and how to tie the respective knots and lashes as well as its characteristics, camp-craftsmanship and managing field hygiene, introducing to shelter building and its application to different location/campsites and application of risk assessment management. Participants will also be exposed to an introduction to the 7 principles of Leave No Trace (LNT) as well as night navigation.
+                    </p>
                   </div>
-                  <p
-                    className="c29 c5"
-                  >
-                    The curriculum for Campcraft and Navigation aims to provide a list of competency modules to be delivered in the training. The skills and knowledge in the modules will enable participants to conduct a safe and quality OBS Courses (e.g. 5 Days MOE-OBS programme, PSOEB programme, etc.) This include competencies in map reading and basic orientation skills, introduction to knots and lashings and how to tie the respective knots and lashes as well as its characteristics, camp-craftsmanship and managing field hygiene, introducing to shelter building and its application to different location/campsites and application of risk assessment management. Participants will also be exposed to an introduction to the 7 principles of Leave No Trace (LNT) as well as night navigation.
-                  </p>
                 </div>
               </div>
             </div>
