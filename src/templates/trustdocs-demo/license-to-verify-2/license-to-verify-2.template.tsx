@@ -10,7 +10,7 @@ import trustdocsLogoImage from '../license-to-verify/trustdocs-logo.svg'
 import { TrustdocsDemoLicenseToVerify_2OaDoc } from './license-to-verify-2.types'
 import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
 import { createAvatar } from '@dicebear/core'
-import { lorelei } from '@dicebear/collection'
+import { croodlesNeutral } from '@dicebear/collection'
 
 const Root = styled.div`
     background: white;
@@ -124,6 +124,9 @@ const ProfileImagePlaceholder = styled.img`
     height: 160px;
 
     margin-bottom: 32px;
+
+    background: #eee;
+    border-radius: 4px;
 `
 
 const Name = styled.div`
@@ -160,7 +163,7 @@ export const TrustdocsDemoLicenseToVerify_2Template: FunctionComponent<
     const qrPayload = retrieveQrAttachmentPayload(document)
 
     const svg = useMemo(() => {
-        const avatar = createAvatar(lorelei, {
+        const avatar = createAvatar(croodlesNeutral, {
             seed: document.name,
             // ... other options
         })
