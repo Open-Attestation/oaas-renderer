@@ -7,9 +7,8 @@ export const sample: TrustdocsDemoLicenseToVerify_2OaDoc = {
         type: v2.TemplateType.EmbeddedRenderer,
         url: 'http://localhost:3000',
     },
-    name: 'Tan Chen Chen',
+    name: 'Ram',
     issuedOn: '2023-11-23',
-    validTill: '2023-11-24',
     issuers: [
         {
             name: 'institute of blockchain',

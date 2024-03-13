@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useMemo } from 'react'
+import React, { FunctionComponent, useEffect, useState } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import styled from 'styled-components'
 import { Helmet } from 'react-helmet-async'
@@ -11,6 +11,8 @@ import { TrustdocsDemoLicenseToVerify_2OaDoc } from './license-to-verify-2.types
 import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
 import { createAvatar } from '@dicebear/core'
 import { croodlesNeutral } from '@dicebear/collection'
+import HouseForFace from './house-for-face.svg'
+import DummyQrImage from './dummy-qr.png'
 
 const Root = styled.div`
     background: white;
@@ -107,7 +109,7 @@ const ContentContainer = styled.div`
     justify-content: space-between;
 `
 
-const QRPlaceHolder = styled(QRCodeSVG)`
+const QRPlaceHolder = styled.div`
     width: calc(175px - 24px);
     height: calc(175px - 24px);
     background: white;
@@ -117,15 +119,21 @@ const QRPlaceHolder = styled(QRCodeSVG)`
     border: 4px solid #afecef;
     box-sizing: content-box;
     border-radius: 8px;
+
+    > * {
+        width: 100%;
+        height: 100%;
+    }
 `
 
 const ProfileImagePlaceholder = styled.img`
-    width: 151.638px;
+    width: 160px;
     height: 160px;
 
     margin-bottom: 32px;
 
-    background: #eee;
+    background: url(${HouseForFace});
+    background-size: cover;
     border-radius: 4px;
 `
 
@@ -161,14 +169,24 @@ export const TrustdocsDemoLicenseToVerify_2Template: FunctionComponent<
     TemplateProps<TrustdocsDemoLicenseToVerify_2OaDoc> & { className?: string }
 > = ({ document, className = '' }) => {
     const qrPayload = retrieveQrAttachmentPayload(document)
+    // defaults to a blank avatar
+    const [avatar, setAvatar] = useState<string>(
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='0' height='0'%3E%3C/svg%3E"
+    )
 
-    const svg = useMemo(() => {
+    useEffect(() => {
         const avatar = createAvatar(croodlesNeutral, {
             seed: document.name,
-            // ... other options
         })
-        return avatar.toDataUriSync()
+        ;(async () => {
+            setAvatar(await avatar.png().toDataUri())
+        })()
     }, [document.name])
+
+    const issuedOnDate = DateTime.fromISO(document.issuedOn)
+    const validTillDate = issuedOnDate.plus({
+        years: 1,
+    })
 
     return (
         <>
@@ -198,7 +216,7 @@ export const TrustdocsDemoLicenseToVerify_2Template: FunctionComponent<
                                 <FlexBox $vertical $spacing={2}>
                                     <FlexBox $vertical>
                                         <ProfileImagePlaceholder
-                                            src={svg}
+                                            src={avatar}
                                             alt="Profile Image"
                                         />
                                         <Name>{document.name}</Name>
@@ -209,9 +227,9 @@ export const TrustdocsDemoLicenseToVerify_2Template: FunctionComponent<
                                     </FlexBox>
                                     <LabelValue
                                         label="Valid till"
-                                        value={DateTime.fromISO(
-                                            document.validTill
-                                        ).toFormat('dd MMMM yyyy')}
+                                        value={validTillDate.toFormat(
+                                            'dd MMMM yyyy'
+                                        )}
                                     />
                                 </FlexBox>
                                 <FlexBox
@@ -232,9 +250,9 @@ export const TrustdocsDemoLicenseToVerify_2Template: FunctionComponent<
                             <FlexBox $vertical $spacing={1.5}>
                                 <LabelValue
                                     label="Issued on"
-                                    value={DateTime.fromISO(
-                                        document.issuedOn
-                                    ).toFormat('dd MMMM yyyy')}
+                                    value={issuedOnDate.toFormat(
+                                        'dd MMMM yyyy'
+                                    )}
                                 />
                                 <LabelValue
                                     label="Country of assessment"
@@ -246,7 +264,16 @@ export const TrustdocsDemoLicenseToVerify_2Template: FunctionComponent<
                                 />
                             </FlexBox>
                             <FlexBox $vertical $spacing={0.5}>
-                                <QRPlaceHolder value={qrPayload} />
+                                <QRPlaceHolder>
+                                    {qrPayload ? (
+                                        <QRCodeSVG value={qrPayload} />
+                                    ) : (
+                                        <img
+                                            src={DummyQrImage}
+                                            alt="Dummy QR Code"
+                                        />
+                                    )}
+                                </QRPlaceHolder>
                                 <QRCaption>Scan QR to verify</QRCaption>
                             </FlexBox>
                         </ContentContainer>

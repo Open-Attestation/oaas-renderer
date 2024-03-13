@@ -4,7 +4,7 @@ export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
     $id: 'TrustdocsDemo/LicenseToVerify_2',
     type: 'object',
-    required: ['name', 'issuedOn', 'validTill'],
+    required: ['name', 'issuedOn'],
     properties: {
         name: {
             type: 'string',
@@ -17,18 +17,6 @@ export default {
             description: 'Date of issue',
             examples: ['2024-01-01'],
             format: 'date',
-            formatMaximum: {
-                $data: '1/validTill',
-            },
-        },
-        validTill: {
-            type: 'string',
-            description: 'Last date of validity',
-            examples: ['2024-12-31'],
-            format: 'date',
-            formatMinimum: {
-                $data: '1/issuedOn',
-            },
         },
     },
     additionalProperties: false,

@@ -14,8 +14,4 @@ export interface TrustdocsDemoLicenseToVerify_2 {
      * Date of issue
      */
     issuedOn: string
-    /**
-     * Last date of validity
-     */
-    validTill: string
 }
