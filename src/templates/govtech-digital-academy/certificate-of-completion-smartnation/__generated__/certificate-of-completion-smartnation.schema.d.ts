@@ -38,5 +38,4 @@ export interface GovtechDigitalAcademyCertificateOfCompletionSmartnation {
      * SHA256 hash of the signee's signature
      */
     signeeSignature: 'joseph-leong-signature&6bb7c9981a0e17da0609cf3722b244af0006e585d7dc5a293f2383689303672d.png'
-    [k: string]: unknown
 }

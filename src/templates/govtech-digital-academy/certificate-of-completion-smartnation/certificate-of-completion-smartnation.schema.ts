@@ -75,4 +75,5 @@ export default {
             ]),
         },
     },
+    additionalProperties: false,
 } as JSONSchema
