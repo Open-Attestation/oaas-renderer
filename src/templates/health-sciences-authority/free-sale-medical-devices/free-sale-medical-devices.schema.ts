@@ -18,7 +18,6 @@ export default {
         'signatoryName',
         'signatoryTitle',
         'schedule',
-        'appendix',
     ],
     properties: {
         DateOfIssue: makeDateType('Date of Issue in YYYY-MM-DD', '2023-12-31'),

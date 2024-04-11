@@ -14,8 +14,7 @@
         "signature_image",
         "signatoryName",
         "signatoryTitle",
-        "schedule",
-        "appendix"
+        "schedule"
     ],
     "properties": {
         "DateOfIssue": {
