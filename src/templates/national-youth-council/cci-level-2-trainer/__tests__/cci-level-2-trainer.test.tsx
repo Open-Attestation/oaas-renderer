@@ -214,6 +214,7 @@ describe('NationalYouthCouncilCciLevel_2TrainerTemplate', () => {
             }
 
             .c13 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;

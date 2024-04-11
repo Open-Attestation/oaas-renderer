@@ -19,9 +19,9 @@ describe('HealthSciencesAuthorityMethodValidationForChemicalTestingTemplate', ()
             .c0 {
               background: white;
               position: relative;
-              width: 29cm;
-              height: 20.6cm;
-              padding: 1px 32px 1px 39px;
+              width: 29.7cm;
+              height: 21cm;
+              padding: 1px 37px 1px 40px;
               margin: 0 auto;
               box-sizing: border-box;
               border: 1px solid #ccc;

@@ -223,6 +223,7 @@ describe('NationalYouthCouncilCciLevel_1RecertTemplate', () => {
             }
 
             .c14 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;

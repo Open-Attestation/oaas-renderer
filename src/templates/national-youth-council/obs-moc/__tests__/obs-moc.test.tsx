@@ -162,6 +162,7 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             }
 
             .c12 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;

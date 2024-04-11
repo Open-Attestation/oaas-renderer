@@ -175,6 +175,7 @@ describe('NycBclsAedTemplate', () => {
             }
 
             .c17 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;
@@ -310,12 +311,12 @@ describe('NycBclsAedTemplate', () => {
                       <p
                         className="c10 c6"
                       >
-                        BASIC CARDIAC LIFE SUPPORT +
+                        BASIC CARDIAC LIFE SUPPORT (BCLS) +
                       </p>
                       <p
                         className="c11 c6"
                       >
-                        AUTOMATED EXTERNAL DEFIBRILLATION
+                        AUTOMATED EXTERNAL DEFIBRILLATOR (AED)
                       </p>
                       <p
                         className="c12 c6"
@@ -369,7 +370,7 @@ describe('NycBclsAedTemplate', () => {
                         <img
                           alt="Signature of signee"
                           className="c18"
-                          src="jaffar-ali-signature&8b44a84d49ccd38fea996c652df243b8ab2b1debebdfc32049373e64c3d46807.png"
+                          src="jaffar-ali-signature&3d805f88bf49b640f6498c0e5335806289c24ee9533c7b79b08f3a5e454f1be4.png"
                         />
                       </div>
                       <div

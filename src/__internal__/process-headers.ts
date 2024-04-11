@@ -7,7 +7,7 @@ const PROJECT_DIR = process.env.PWD
 
 if (!PROJECT_DIR)
     throw new Error(
-        'Unable to get project directory, pls only run command via yarn'
+        'Unable to get project directory, pls only run command via npm run'
     )
 
 const PUBLIC_DIR = path.join(PROJECT_DIR, 'public')

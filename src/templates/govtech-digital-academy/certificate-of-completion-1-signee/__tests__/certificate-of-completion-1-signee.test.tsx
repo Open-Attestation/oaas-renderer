@@ -19,8 +19,8 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
             .c1 {
               background: white;
               position: relative;
-              width: 29cm;
-              height: 20.6cm;
+              width: 29.7cm;
+              height: 21cm;
               padding: 2cm;
               margin: 0 auto;
               box-sizing: border-box;
@@ -34,7 +34,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               position: absolute;
               width: 372px;
               height: 66px;
-              left: 552.39px;
+              left: 564.39px;
               top: 185.43px;
               font-family: 'Montserrat';
               font-style: normal;
@@ -53,7 +53,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               position: absolute;
               width: 364px;
               height: 50px;
-              left: 556.32px;
+              left: 568.32px;
               top: 235.21px;
               font-family: 'Montserrat';
               font-style: normal;
@@ -68,7 +68,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               position: absolute;
               width: 244px;
               height: 22px;
-              left: 617.78px;
+              left: 629.78px;
               top: 317.19px;
               font-family: 'Montserrat';
               font-style: normal;
@@ -82,8 +82,8 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               position: absolute;
               width: 558px;
               height: 54px;
-              top: 357px;
-              right: 73px;
+              top: 365px;
+              right: 85px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 700;
@@ -111,8 +111,8 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
             .c6 {
               position: absolute;
               width: 558px;
-              left: 463px;
-              top: 420px;
+              left: 475px;
+              top: 428px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 400;
@@ -141,8 +141,8 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               position: absolute;
               width: 259px;
               height: 51px;
-              left: 610.84px;
-              top: 677.36px;
+              left: 624.84px;
+              top: 692.36px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 500;
@@ -160,8 +160,8 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
               position: absolute;
               width: 259px;
               height: 85px;
-              top: 588px;
-              right: 224px;
+              top: 598px;
+              right: 236px;
               text-align: center;
               -webkit-align-items: flex-end;
               -webkit-box-align: flex-end;
@@ -196,13 +196,13 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_1SigneeTemplate', () => {
             }
 
             .c0 {
-              -webkit-transform: scale(0.8886799016210397);
-              -ms-transform: scale(0.8886799016210397);
-              transform: scale(0.8886799016210397);
+              -webkit-transform: scale(0.8677343468361025);
+              -ms-transform: scale(0.8677343468361025);
+              transform: scale(0.8677343468361025);
               -webkit-transform-origin: top left;
               -ms-transform-origin: top left;
               transform-origin: top left;
-              height: 692px;
+              height: 690px;
             }
 
             @media print {

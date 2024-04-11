@@ -14,11 +14,13 @@ export interface NationalYouthCouncilBclsAed {
     /**
      * Name of trainer
      */
-    ciName: 'Fazdli Jamal' | 'Jaffar Ali'
+    ciName: 'Jaffar Ali' | 'Fazdli Jamal'
     /**
      * CI's signature
      */
-    ciSignature: 'jaffar-ali-signature&8b44a84d49ccd38fea996c652df243b8ab2b1debebdfc32049373e64c3d46807.png'
+    ciSignature:
+        | 'jaffar-ali-signature&3d805f88bf49b640f6498c0e5335806289c24ee9533c7b79b08f3a5e454f1be4.png'
+        | 'fazdli-jamal-signature&09fc5bfca94f8c519f9433c611b4fb9ff8cfed316343125469a8addee67c6b06.png'
     /**
      * Certificate number
      */

@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn process:images
-yarn process:schemas
-yarn process:headers
+npm run process:images
+npm run process:schemas
+npm run process:headers
 git add public/_headers
 git add src/**/*/__generated__/*
-yarn lint-staged
-yarn typecheck
+npm run lint-staged
+npm run typecheck

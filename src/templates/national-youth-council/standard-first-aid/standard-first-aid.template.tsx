@@ -94,7 +94,7 @@ export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
                                 $mt={0}
                                 $bold
                             >
-                                STANDARD FIRST AID (SFA), and
+                                STANDARD FIRST AID (SFA)
                             </Typography>
                             <Typography
                                 $textAlign="center"
@@ -103,7 +103,7 @@ export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
                                 $bold
                             >
                                 With CARDIOPULMONARY RESUSCITATION (CPR) – HANDS
-                                ONLY, and
+                                ONLY
                             </Typography>
                             <Typography
                                 $textAlign="center"
@@ -111,15 +111,7 @@ export const NationalYouthCouncilStandardFirstAidTemplate: FunctionComponent<
                                 $mt={-1}
                                 $bold
                             >
-                                AUTOMATED EXTERNAL DEFIBRILLATION (AED)
-                            </Typography>
-                            <Typography
-                                $textAlign="center"
-                                $size="medium"
-                                $mt={-1}
-                                $bold
-                            >
-                                PROVIDER
+                                and AUTOMATED EXTERNAL DEFIBRILLATION (AED)
                             </Typography>
                             <Typography $size={'small'} $mt={0}>
                                 On

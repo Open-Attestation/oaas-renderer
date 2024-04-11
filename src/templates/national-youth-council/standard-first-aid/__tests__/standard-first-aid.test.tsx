@@ -183,6 +183,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
             }
 
             .c18 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;
@@ -323,22 +324,17 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                       <p
                         className="c11 c6"
                       >
-                        STANDARD FIRST AID (SFA), and
+                        STANDARD FIRST AID (SFA)
                       </p>
                       <p
                         className="c12 c6"
                       >
-                        With CARDIOPULMONARY RESUSCITATION (CPR) – HANDS ONLY, and
+                        With CARDIOPULMONARY RESUSCITATION (CPR) – HANDS ONLY
                       </p>
                       <p
                         className="c12 c6"
                       >
-                        AUTOMATED EXTERNAL DEFIBRILLATION (AED)
-                      </p>
-                      <p
-                        className="c12 c6"
-                      >
-                        PROVIDER
+                        and AUTOMATED EXTERNAL DEFIBRILLATION (AED)
                       </p>
                       <p
                         className="c13 c6"
@@ -392,7 +388,7 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
                         <img
                           alt="Signature of signee"
                           className="c19"
-                          src="fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png"
+                          src="fazdli-jamal-signature&09fc5bfca94f8c519f9433c611b4fb9ff8cfed316343125469a8addee67c6b06.png"
                         />
                       </div>
                       <div

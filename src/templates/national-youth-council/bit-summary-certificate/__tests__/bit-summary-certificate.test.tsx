@@ -323,6 +323,7 @@ describe('NationalYouthCouncilBitSummaryCertificateTemplate', () => {
             }
 
             .c17 {
+              margin-bottom: 2px;
               width: 250px;
               height: 100px;
               text-align: center;

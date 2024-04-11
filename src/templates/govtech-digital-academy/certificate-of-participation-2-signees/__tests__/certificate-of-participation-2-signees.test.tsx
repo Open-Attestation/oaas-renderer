@@ -19,8 +19,8 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
             .c1 {
               background: white;
               position: relative;
-              width: 29cm;
-              height: 20.6cm;
+              width: 29.7cm;
+              height: 21cm;
               padding: 2cm;
               margin: 0 auto;
               box-sizing: border-box;
@@ -34,7 +34,7 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
               position: absolute;
               width: 380px;
               height: 66px;
-              left: 548px;
+              left: 568px;
               top: 184px;
               font-family: 'Montserrat';
               font-style: normal;
@@ -53,7 +53,7 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
               position: absolute;
               width: 388px;
               height: 53px;
-              left: 545px;
+              left: 563px;
               top: 236px;
               font-family: 'Montserrat';
               font-style: normal;
@@ -68,7 +68,7 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
               position: absolute;
               width: 244px;
               height: 22px;
-              left: 617px;
+              left: 628px;
               top: 316px;
               font-family: 'Montserrat';
               font-style: normal;
@@ -82,8 +82,8 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
               position: absolute;
               width: 558px;
               height: 54px;
-              top: 357px;
-              right: 73px;
+              top: 363px;
+              right: 87px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 700;
@@ -111,8 +111,8 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
             .c6 {
               position: absolute;
               width: 558px;
-              left: 463px;
-              top: 420px;
+              left: 476px;
+              top: 427px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 500;
@@ -141,8 +141,8 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
               position: absolute;
               width: 259px;
               height: 59px;
-              top: 677.36px;
-              right: 367px;
+              top: 691.36px;
+              right: 384px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 500;
@@ -170,8 +170,8 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
               position: absolute;
               width: 259px;
               height: 51px;
-              left: 771.84px;
-              top: 677.36px;
+              left: 787.84px;
+              top: 691.36px;
               font-family: 'Montserrat';
               font-style: normal;
               font-weight: 500;
@@ -189,8 +189,8 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
               position: absolute;
               width: 259px;
               height: 85px;
-              top: 588px;
-              right: 367px;
+              top: 602px;
+              right: 384px;
               text-align: center;
               -webkit-align-items: flex-end;
               -webkit-box-align: flex-end;
@@ -216,8 +216,8 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
               position: absolute;
               width: 259px;
               height: 85px;
-              top: 588px;
-              right: 64px;
+              top: 602px;
+              right: 75px;
               text-align: center;
               -webkit-align-items: flex-end;
               -webkit-box-align: flex-end;
@@ -279,13 +279,13 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_2SigneesTemplate', () 
             }
 
             .c0 {
-              -webkit-transform: scale(0.8886799016210397);
-              -ms-transform: scale(0.8886799016210397);
-              transform: scale(0.8886799016210397);
+              -webkit-transform: scale(0.8677343468361025);
+              -ms-transform: scale(0.8677343468361025);
+              transform: scale(0.8677343468361025);
               -webkit-transform-origin: top left;
               -ms-transform-origin: top left;
               transform-origin: top left;
-              height: 692px;
+              height: 690px;
             }
 
             @media print {
