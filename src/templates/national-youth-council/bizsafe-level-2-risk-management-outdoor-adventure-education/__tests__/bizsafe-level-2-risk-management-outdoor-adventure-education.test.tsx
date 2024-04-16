@@ -16,7 +16,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c5 {
+            .c6 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -35,7 +35,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               justify-content: center;
             }
 
-            .c13 {
+            .c15 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -44,35 +44,35 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               margin-bottom: 0px;
             }
 
-            .c2 {
+            .c3 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
               text-align: center;
             }
 
-            .c6 {
+            .c7 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c7 {
+            .c8 {
               font-size: 24px;
               font-style: italic;
               font-weight: 700;
               margin-top: 8px;
             }
 
-            .c8 {
+            .c9 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
               margin-top: 8px;
             }
 
-            .c9 {
+            .c10 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
@@ -80,14 +80,14 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               text-align: center;
             }
 
-            .c10 {
+            .c11 {
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 8px;
             }
 
-            .c15 {
+            .c17 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -95,7 +95,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               text-align: center;
             }
 
-            .c16 {
+            .c18 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -103,11 +103,11 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               text-align: center;
             }
 
-            .c3 {
+            .c4 {
               font-family: 'Libre Franklin';
             }
 
-            .c0 {
+            .c1 {
               background: white;
               position: relative;
               width: 21cm;
@@ -121,16 +121,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               z-index: initial;
             }
 
-            .c12 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c14 {
+            .c16 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -145,7 +136,34 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               color: #808041;
             }
 
-            .c1 {
+            .c13 {
+              margin-bottom: 2px;
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c14 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
+            }
+
+            .c2 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -163,7 +181,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               align-items: center;
             }
 
-            .c4 {
+            .c5 {
               position: relative;
               display: block;
               height: 360px;
@@ -171,7 +189,7 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               padding-bottom: 16px;
             }
 
-            .c11 {
+            .c12 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -188,13 +206,30 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               align-items: start;
             }
 
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
+            }
+
             @media print {
-              .c0 {
+              .c1 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
+              }
+            }
+
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
               }
             }
 
@@ -204,96 +239,106 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducat
               <div
                 className="c1"
               >
-                <div>
-                  <p
-                    className="c2 c3"
-                  >
-                    Certificate of Successful
-                    <br />
-                    Completion
-                  </p>
+                <div
+                  className="c2"
+                >
+                  <div>
+                    <p
+                      className="c3 c4"
+                    >
+                      Certificate of Successful
+                      <br />
+                      Completion
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div
-                className="c4"
-              >
                 <div
                   className="c5"
                 >
-                  <p
-                    className="c6 c3"
+                  <div
+                    className="c6"
                   >
-                    is awarded to
-                  </p>
-                  <p
-                    className="c7 c3"
-                  >
-                    JOHN DOE
-                  </p>
-                  <p
-                    className="c8 c3"
-                  >
-                    for successful completion of the
-                  </p>
-                  <p
-                    className="c9 c3"
-                  >
-                    bizSAFE Level 2 (Risk Management) Course 
-                    <br />
-                    Outdoor & Adventure Education
-                  </p>
-                  <p
-                    className="c10 c3"
-                  >
-                    (Recognised by the Workplace Safety and Health Council)
-                  </p>
-                  <p
-                    className="c10 c3"
-                  >
-                    Course Date: 
-                    30 November - 31 December 2022
-                  </p>
-                  <p
-                    className="c6 c3"
-                  >
-                    Serial No: 
-                    serial-number-1
-                  </p>
+                    <p
+                      className="c7 c4"
+                    >
+                      is awarded to
+                    </p>
+                    <p
+                      className="c8 c4"
+                    >
+                      JOHN DOE
+                    </p>
+                    <p
+                      className="c9 c4"
+                    >
+                      for successful completion of the
+                    </p>
+                    <p
+                      className="c10 c4"
+                    >
+                      bizSAFE Level 2 (Risk Management) Course 
+                      <br />
+                      Outdoor & Adventure Education
+                    </p>
+                    <p
+                      className="c11 c4"
+                    >
+                      (Recognised by the Workplace Safety and Health Council)
+                    </p>
+                    <p
+                      className="c11 c4"
+                    >
+                      Course Date: 
+                      30 November - 31 December 2022
+                    </p>
+                    <p
+                      className="c7 c4"
+                    >
+                      Serial No: 
+                      serial-number-1
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div
-                className="c11"
-              >
-                <div />
                 <div
-                  style={
-                    Object {
-                      "width": 250,
-                    }
-                  }
+                  className="c12"
                 >
+                  <div />
                   <div
-                    className="c12"
-                  />
-                  <div
-                    className="c13"
-                  />
-                  <div
-                    className="c14"
+                    style={
+                      Object {
+                        "width": 250,
+                      }
+                    }
                   >
-                    <p
-                      className="c15 c3"
+                    <div
+                      className="c13"
                     >
-                      <b>
-                        Nicholas Conceicao
-                      </b>
-                       | Executive Director
-                    </p>
-                    <p
-                      className="c16 c3"
+                      <img
+                        alt="Signature of signee"
+                        className="c14"
+                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                      />
+                    </div>
+                    <div
+                      className="c15"
+                    />
+                    <div
+                      className="c16"
                     >
-                      Outward Bound Singapore
-                    </p>
+                      <p
+                        className="c17 c4"
+                      >
+                        <b>
+                          Nicholas Conceicao
+                        </b>
+                         | Executive Director
+                      </p>
+                      <p
+                        className="c18 c4"
+                      >
+                        Outward Bound Singapore
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

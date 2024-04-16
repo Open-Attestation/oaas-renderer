@@ -33,7 +33,6 @@ export const A4R = styled.div<{
     @media print {
         border: none;
         break-inside: avoid;
-        break-before: always;
         width: 21cm;
         min-height: 29.7cm;
         padding: 2cm;

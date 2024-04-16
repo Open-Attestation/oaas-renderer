@@ -11,19 +11,19 @@ export const useShrinkToViewport = (documentWidth: number) => {
         calculateTransformScale(window.innerWidth, documentWidth)
     )
 
-    const handleResize = useCallback(() => {
-        setTransformScale(
-            calculateTransformScale(window.innerWidth, documentWidth)
-        )
-    }, [])
-
     useEffect(() => {
+        const handleResize = () => {
+            setTransformScale(
+                calculateTransformScale(window.innerWidth, documentWidth)
+            )
+        }
+
         window.addEventListener('resize', handleResize)
 
         return () => {
             window.removeEventListener('resize', handleResize)
         }
-    }, [handleResize])
+    }, [documentWidth])
 
     return transformScale
 }

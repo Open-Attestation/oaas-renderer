@@ -3,7 +3,11 @@ import { TemplateProps } from '@govtechsg/decentralized-renderer-react-component
 import { ForTestingOpenattestationDemoCertificateA4LandscapeOaDoc } from './openattestation-demo-certificate-a4-landscape.types'
 import { Helmet } from 'react-helmet-async'
 import landscapeBg from '../common/assets/background-landscape.png'
-import { A4Landscape, A4LandscapeWidthPx } from 'components/paper-size'
+import {
+    A4Landscape,
+    A4LandscapeHeightPx,
+    A4LandscapeWidthPx,
+} from 'components/paper-size'
 import { Header } from './openattestation-demo-certificate-a4-landscape.components'
 import { Typography } from '../common/components'
 import { FlexBox } from 'components/flexbox'
@@ -12,7 +16,7 @@ import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 
 const documentWidth = A4LandscapeWidthPx
-const documentHeight = 778.583
+const documentHeight = A4LandscapeHeightPx
 
 export const ForTestingOpenattestationDemoCertificateA4LandscapeTemplate: FunctionComponent<
     TemplateProps<ForTestingOpenattestationDemoCertificateA4LandscapeOaDoc> & {

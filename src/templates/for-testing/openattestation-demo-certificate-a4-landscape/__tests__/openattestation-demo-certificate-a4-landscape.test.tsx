@@ -19,8 +19,8 @@ describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
             .c1 {
               background: white;
               position: relative;
-              width: 29cm;
-              height: 20.6cm;
+              width: 29.7cm;
+              height: 21cm;
               padding: 2cm;
               margin: 0 auto;
               box-sizing: border-box;
@@ -100,13 +100,13 @@ describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
             }
 
             .c0 {
-              -webkit-transform: scale(0.8886799016210397);
-              -ms-transform: scale(0.8886799016210397);
-              transform: scale(0.8886799016210397);
+              -webkit-transform: scale(0.8677343468361025);
+              -ms-transform: scale(0.8677343468361025);
+              transform: scale(0.8677343468361025);
               -webkit-transform-origin: top left;
               -ms-transform-origin: top left;
               transform-origin: top left;
-              height: 692px;
+              height: 690px;
             }
 
             @media print {
@@ -114,8 +114,6 @@ describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
               }
             }
 
@@ -124,7 +122,7 @@ describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
                 -webkit-transform: scale(1);
                 -ms-transform: scale(1);
                 transform: scale(1);
-                height: 779px;
+                height: auto;
               }
             }
 

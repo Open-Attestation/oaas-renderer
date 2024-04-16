@@ -14,7 +14,7 @@
 ### Install dependencies
 
 ```
-yarn
+npm i
 ```
 
 ### Start dev
@@ -22,7 +22,7 @@ yarn
 Previously in https://github.com/Open-Attestation/decentralized-renderer-react-template, you have to run two processes to start development, it is now reduced into one command
 
 ```
-yarn dev
+npm run dev
 ```
 
 ### Files and organisation
@@ -69,14 +69,14 @@ export const templates = [
 ### Adding a new template
 
 ```
-# for example: yarn new:template govtechSingapore softwareEngineere
-yarn new:template ${issuerId} ${docType}
+# for example: npm run new:template govtechSingapore softwareEngineere
+npm run new:template ${issuerId} ${docType}
 ```
 
 ### `_.schema.ts -> __generated__/*.schema.json + __generated__/*.schema.d.ts`
 
 ```
-yarn process:schemas
+npm run process:schemas
 ```
 
 Defining json schemas are done in typescript to benefit not only from type protection, but also the ability to import values from our ts codebase.
@@ -95,7 +95,7 @@ To hash an image:
 2. run
 
 ```
-yarn process:images
+npm run process:images
 ```
 
 This would generate a few files and can be found in `__generated__`, again, this folder should be where your original source image is.

@@ -218,6 +218,8 @@ export const HealthSciencesAuthorityFreeSaleTemplate: FunctionComponent<
                         position: 'absolute',
                         right: '225px',
                         bottom: '34px',
+                        height: '93px',
+                        width: '92px',
                     }}
                     src={hsaStamp}
                     alt="HSA stamp"
@@ -297,6 +299,8 @@ export const HealthSciencesAuthorityFreeSaleTemplate: FunctionComponent<
                         position: 'absolute',
                         right: '225px',
                         bottom: '34px',
+                        height: '93px',
+                        width: '92px',
                     }}
                     src={hsaStamp}
                     alt="HSA stamp"

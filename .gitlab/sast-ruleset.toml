@@ -1,6 +1,0 @@
-[semgrep]
-  [[semgrep.ruleset]]
-    disable = true
-    [semgrep.ruleset.identifier]
-      type = "eslint_rule_id"
-      value = "security/detect-object-injection"
