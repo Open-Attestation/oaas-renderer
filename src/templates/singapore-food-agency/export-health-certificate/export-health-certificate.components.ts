@@ -257,8 +257,9 @@ export const SignatureContainer = styled.div`
 `
 
 export const SignatureImg = styled.img`
-    width: auto;
-    height: auto;
+    display: block;
+    max-width: 185px;
+    max-height: 92px;
 `
 
 export const SignatureNameComponent = styled.div`

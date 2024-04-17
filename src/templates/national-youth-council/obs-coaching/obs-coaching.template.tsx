@@ -9,6 +9,9 @@ import { FlexBox } from 'components/flexbox'
 
 import commonImagesMap from '../common/assets/__generated__/images-map'
 import { DateTime } from 'luxon'
+import { A4HeightPx, A4WidthPx } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 
 const TemplateContainer = styled.div`
     pre {
@@ -17,6 +20,9 @@ const TemplateContainer = styled.div`
         white-space: break-spaces;
     }
 `
+
+const documentWidth = A4WidthPx
+const documentHeight = A4HeightPx
 
 export const NationalYouthCouncilObsCoachingTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilObsCoachingOaDoc> & { className?: string }
@@ -31,6 +37,8 @@ export const NationalYouthCouncilObsCoachingTemplate: FunctionComponent<
             years: Number(document.validityDurationInYears),
         })
         .toFormat('dd MMMM yyyy')
+
+    const transformScale = useShrinkToViewport(documentWidth)
     return (
         <>
             <Helmet>
@@ -40,61 +48,74 @@ export const NationalYouthCouncilObsCoachingTemplate: FunctionComponent<
                 className={className}
                 id="national-youth-council-obs-coaching"
             >
-                <ObsCertMainPage
-                    title={
-                        <Typography $textAlign="center" $size={'xlarge'} $bold>
-                            Certificate of Appointment
-                        </Typography>
-                    }
-                    signatures={[
-                        {
-                            signatureSrc:
-                                commonImagesMap[
-                                    document.organisationRepSignature
-                                ],
-                            name: document.organisationRepName,
-                            title: document.organisationRepTitle,
-                        },
-                    ]}
+                <ScalableDocument
+                    $scale={transformScale}
+                    $documentHeight={documentHeight}
                 >
-                    <FlexBox $vertical>
-                        <Typography $size={'large'} $mt={0}>
-                            This is to certify that
-                        </Typography>
-                        <Typography $size={'xlarge'} $bold $mt={1}>
-                            {name}
-                        </Typography>
-                        <Typography $size={'large'} $mt={1}>
-                            is appointed as a
-                        </Typography>
-                        <Typography
-                            $size={'xlarge'}
-                            $bold
-                            $mt={1}
-                            $textAlign={'center'}
-                        >
-                            Outward Bound Singapore:
-                            <br />
-                            {document.courseTitle}
-                        </Typography>
-                        <Typography $size={'large'} $mt={1}>
-                            On the date of
-                        </Typography>
-                        <Typography
-                            $size={'xlarge'}
-                            $bold
-                            $mt={1}
-                            $textAlign={'center'}
-                        >
-                            {issueDate}
-                        </Typography>
-                        <Typography $size={'large'} $mt={1} $textAlign="center">
-                            Certificate is valid till <b>{expiryDate}</b>
-                            <br />
-                            Certificate #: {document.certificateNumber}
-                        </Typography>
-                    </FlexBox>
-                </ObsCertMainPage>
+                    <ObsCertMainPage
+                        title={
+                            <Typography
+                                $textAlign="center"
+                                $size={'xlarge'}
+                                $bold
+                            >
+                                Certificate of Appointment
+                            </Typography>
+                        }
+                        signatures={[
+                            {
+                                signatureSrc:
+                                    commonImagesMap[
+                                        document.organisationRepSignature
+                                    ],
+                                name: document.organisationRepName,
+                                title: document.organisationRepTitle,
+                            },
+                        ]}
+                    >
+                        <FlexBox $vertical>
+                            <Typography $size={'large'} $mt={0}>
+                                This is to certify that
+                            </Typography>
+                            <Typography $size={'xlarge'} $bold $mt={1}>
+                                {name}
+                            </Typography>
+                            <Typography $size={'large'} $mt={1}>
+                                is appointed as a
+                            </Typography>
+                            <Typography
+                                $size={'xlarge'}
+                                $bold
+                                $mt={1}
+                                $textAlign={'center'}
+                            >
+                                Outward Bound Singapore:
+                                <br />
+                                {document.courseTitle}
+                            </Typography>
+                            <Typography $size={'large'} $mt={1}>
+                                On the date of
+                            </Typography>
+                            <Typography
+                                $size={'xlarge'}
+                                $bold
+                                $mt={1}
+                                $textAlign={'center'}
+                            >
+                                {issueDate}
+                            </Typography>
+                            <Typography
+                                $size={'large'}
+                                $mt={1}
+                                $textAlign="center"
+                            >
+                                Certificate is valid till <b>{expiryDate}</b>
+                                <br />
+                                Certificate #: {document.certificateNumber}
+                            </Typography>
+                        </FlexBox>
+                    </ObsCertMainPage>
+                </ScalableDocument>
             </TemplateContainer>
         </>
     )

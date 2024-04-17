@@ -15,9 +15,12 @@ import {
     ForSuccessfullyComponent,
     NameComponent,
     SigneeComponent,
+    SigneeSignatureImg,
+    SigneeSignatureComponent,
     SjcComponent,
     SupremeCourtComponent,
 } from './certificate-of-completion.components'
+import imagesMap from '../common/assets/__generated__/images-map'
 
 export const SingaporeJudicialCollegeCertificateOfCompletionTemplate: FunctionComponent<
     TemplateProps<SingaporeJudicialCollegeCertificateOfCompletionOaDoc> & {
@@ -28,7 +31,7 @@ export const SingaporeJudicialCollegeCertificateOfCompletionTemplate: FunctionCo
         document.courseStartDate,
         document.courseEndDate
     )
-    const issueDate = formatCourseDatefor(document.courseEndDate).toUpperCase()
+    const issueDate = formatCourseDatefor(document.issuanceDate).toUpperCase()
     const courseTitle = decodeURIComponent(document.courseTitle).replace(
         /\\n/g,
         '\n'
@@ -70,12 +73,18 @@ export const SingaporeJudicialCollegeCertificateOfCompletionTemplate: FunctionCo
                 <SupremeCourtComponent>
                     SUPREME COURT OF SINGAPORE
                 </SupremeCourtComponent>
+                <SigneeSignatureComponent>
+                    <SigneeSignatureImg
+                        src={`${imagesMap[document.signeeSignature]}`}
+                        alt="Signature of signee"
+                    />
+                </SigneeSignatureComponent>
                 <FooterComponent>
                     <DateComponent>{issueDate}</DateComponent>
                     <SigneeComponent>
-                        Sundaresh Menon
+                        {document.signeeName}
                         <br />
-                        Chief Justice
+                        {document.signeeDesignation}
                         <br />
                         Republic of Singapore
                     </SigneeComponent>

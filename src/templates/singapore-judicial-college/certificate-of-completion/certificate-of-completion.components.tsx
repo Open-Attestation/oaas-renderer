@@ -135,6 +135,26 @@ export const SupremeCourtComponent = styled.div`
     line-height: 140%;
 `
 
+export const SigneeSignatureComponent = styled.div`
+    position: absolute;
+
+    width: 171px;
+    height: 85px;
+    bottom: 131px;
+    right: 130px;
+
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+`
+
+export const SigneeSignatureImg = styled.img`
+    display: block;
+    max-width: 171px;
+    max-height: 85px;
+`
+
 export const FooterComponent = styled.div`
     position: absolute;
     display: flex;

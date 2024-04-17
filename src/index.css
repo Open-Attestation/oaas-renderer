@@ -5,3 +5,9 @@ body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
 }
+
+@media print {
+    body {
+        margin: 0;
+    }
+}

@@ -198,8 +198,6 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
                 width: 21cm;
                 min-height: 29.7cm;
                 padding: 2cm;
