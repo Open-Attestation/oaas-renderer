@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "HealthSciencesAuthority/HsaLicenseCertificate",
+    "type": "object",
+    "required": ["organisationName", "certContent_pdf", "productInfo_pdf"],
+    "properties": {
+        "organisationName": {
+            "type": "string",
+            "description": "Name of Organisation",
+            "examples": ["ABC PTE LTD"],
+            "minLength": 1
+        },
+        "certContent_pdf": {
+            "type": "string",
+            "description": "Certificate content",
+            "examples": ["certificate.pdf"],
+            "minLength": 1
+        },
+        "productInfo_pdf": {
+            "type": "string",
+            "description": "Product information",
+            "examples": ["product.pdf"]
+        }
+    },
+    "additionalProperties": false
+}

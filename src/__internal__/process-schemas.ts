@@ -6,6 +6,8 @@ import fs from 'fs'
 import path from 'path'
 import { compileFromFile } from 'json-schema-to-typescript'
 
+const foldersToSearch = process.argv[2] ? process.argv[2].split(' ') : []
+
 const ajv = new Ajv({
     $data: true,
 })
@@ -18,7 +20,12 @@ ajv.addFormat('MM-YYYY', {
 })
 
 const GENERATED_FOLDER_NAME = '__generated__'
-const filenames = glob.sync('src/**/*.schema.ts')
+
+let filenames = foldersToSearch.flatMap((path) => {
+    return glob.sync(path + '/**/*.schema.ts')
+})
+
+if (!filenames.length) filenames = glob.sync('src/**/*.schema.ts')
 
 void Promise.all(
     filenames.map(async (filepath: string) => {
