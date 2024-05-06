@@ -9,6 +9,12 @@ import { Typography } from '../common/components'
 import commonImagesMap from '../common/assets/__generated__/images-map'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 import { formatCourseDatefor } from '../common/utils'
+import { A4HeightPx, A4WidthPx } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+
+const documentWidth = A4WidthPx
+const documentHeight = A4HeightPx
 
 export const NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationTemplate: FunctionComponent<
     TemplateProps<NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationOaDoc> & {
@@ -20,58 +26,68 @@ export const NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEdu
         document.courseStartDate,
         document.courseEndDate
     )
+
+    const transformScale = useShrinkToViewport(documentWidth)
     return (
         <>
             <Helmet>
                 <title>national-youth-council - successful-completion</title>
             </Helmet>
-            <ObsCertMainPage
-                title={
-                    <Typography $textAlign="center" $size={'xlarge'} $bold>
-                        Certificate of Successful
-                        <br />
-                        Completion
-                    </Typography>
-                }
-                signatures={[
-                    {
-                        signatureSrc:
-                            commonImagesMap[document.organisationRepSignature],
-                        name: document.organisationRepName,
-                        title: document.organisationRepTitle,
-                    },
-                ]}
+            <ScalableDocument
+                $scale={transformScale}
+                $documentHeight={documentHeight}
             >
-                <FlexBox $vertical>
-                    <Typography $size={'medium'} $mt={0}>
-                        is awarded to
-                    </Typography>
-                    <Typography $size={'xlarge'} $bold $mt={1} $italic>
-                        {name}
-                    </Typography>
-                    <Typography $size={'medium'} $mt={1}>
-                        for successful completion of the
-                    </Typography>
-                    <Typography
-                        $size={'xlarge'}
-                        $bold
-                        $mt={1}
-                        $textAlign="center"
-                    >
-                        bizSAFE Level 2 (Risk Management) Course <br></br>
-                        Outdoor & Adventure Education
-                    </Typography>
-                    <Typography $size={'large'} $mt={1}>
-                        (Recognised by the Workplace Safety and Health Council)
-                    </Typography>
-                    <Typography $size={'large'} $mt={1}>
-                        Course Date: {courseDate}
-                    </Typography>
-                    <Typography $size={'medium'} $mt={0}>
-                        Serial No: {document.serialNumber}
-                    </Typography>
-                </FlexBox>
-            </ObsCertMainPage>
+                <ObsCertMainPage
+                    title={
+                        <Typography $textAlign="center" $size={'xlarge'} $bold>
+                            Certificate of Successful
+                            <br />
+                            Completion
+                        </Typography>
+                    }
+                    signatures={[
+                        {
+                            signatureSrc:
+                                commonImagesMap[
+                                    document.organisationRepSignature
+                                ],
+                            name: document.organisationRepName,
+                            title: document.organisationRepTitle,
+                        },
+                    ]}
+                >
+                    <FlexBox $vertical>
+                        <Typography $size={'medium'} $mt={0}>
+                            is awarded to
+                        </Typography>
+                        <Typography $size={'xlarge'} $bold $mt={1} $italic>
+                            {name}
+                        </Typography>
+                        <Typography $size={'medium'} $mt={1}>
+                            for successful completion of the
+                        </Typography>
+                        <Typography
+                            $size={'xlarge'}
+                            $bold
+                            $mt={1}
+                            $textAlign="center"
+                        >
+                            bizSAFE Level 2 (Risk Management) Course <br></br>
+                            Outdoor & Adventure Education
+                        </Typography>
+                        <Typography $size={'large'} $mt={1}>
+                            (Recognised by the Workplace Safety and Health
+                            Council)
+                        </Typography>
+                        <Typography $size={'large'} $mt={1}>
+                            Course Date: {courseDate}
+                        </Typography>
+                        <Typography $size={'medium'} $mt={0}>
+                            Serial No: {document.serialNumber}
+                        </Typography>
+                    </FlexBox>
+                </ObsCertMainPage>
+            </ScalableDocument>
         </>
     )
 }

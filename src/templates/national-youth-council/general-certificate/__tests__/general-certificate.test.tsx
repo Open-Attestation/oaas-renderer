@@ -16,7 +16,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c5 {
+            .c6 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -35,7 +35,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               justify-content: center;
             }
 
-            .c11 {
+            .c13 {
               display: block;
               border-bottom: 1px solid #808041;
               width: 100%;
@@ -44,35 +44,35 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               margin-bottom: 0px;
             }
 
-            .c2 {
+            .c3 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
               text-align: center;
             }
 
-            .c6 {
+            .c7 {
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 0px;
             }
 
-            .c7 {
+            .c8 {
               font-size: 24px;
               font-style: normal;
               font-weight: 700;
               margin-top: 8px;
             }
 
-            .c8 {
+            .c9 {
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
               margin-top: 8px;
             }
 
-            .c13 {
+            .c15 {
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -80,7 +80,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               text-align: center;
             }
 
-            .c14 {
+            .c16 {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -88,11 +88,11 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               text-align: center;
             }
 
-            .c3 {
+            .c4 {
               font-family: 'Libre Franklin';
             }
 
-            .c0 {
+            .c1 {
               background: white;
               position: relative;
               width: 21cm;
@@ -106,16 +106,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               z-index: initial;
             }
 
-            .c10 {
-              width: 100%;
-              height: 100px;
-              background: url('nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png');
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
-
-            .c12 {
+            .c14 {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -130,7 +121,34 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               color: #808041;
             }
 
-            .c1 {
+            .c11 {
+              margin-bottom: 2px;
+              width: 250px;
+              height: 100px;
+              text-align: center;
+              -webkit-align-items: flex-end;
+              -webkit-box-align: flex-end;
+              -ms-flex-align: flex-end;
+              align-items: flex-end;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .c12 {
+              display: block;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
+            }
+
+            .c2 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -148,7 +166,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               align-items: center;
             }
 
-            .c4 {
+            .c5 {
               position: relative;
               display: block;
               height: 360px;
@@ -156,7 +174,7 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               padding-bottom: 16px;
             }
 
-            .c9 {
+            .c10 {
               position: relative;
               display: -webkit-box;
               display: -webkit-flex;
@@ -173,13 +191,30 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               align-items: start;
             }
 
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
+            }
+
             @media print {
-              .c0 {
+              .c1 {
                 border: none;
                 -webkit-break-inside: avoid;
                 break-inside: avoid;
-                -webkit-break-before: always;
-                break-before: always;
+              }
+            }
+
+            @media print {
+              .c0 {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                height: auto;
               }
             }
 
@@ -189,82 +224,92 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               <div
                 className="c1"
               >
-                <div>
-                  <p
-                    className="c2 c3"
-                  >
-                    Certificate of 
-                    <br />
-                    Completion
-                  </p>
+                <div
+                  className="c2"
+                >
+                  <div>
+                    <p
+                      className="c3 c4"
+                    >
+                      Certificate of 
+                      <br />
+                      Completion
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div
-                className="c4"
-              >
                 <div
                   className="c5"
                 >
-                  <p
-                    className="c6 c3"
+                  <div
+                    className="c6"
                   >
-                    This is to certify that
-                  </p>
-                  <p
-                    className="c7 c3"
-                  >
-                    JOHN DOE
-                  </p>
-                  <p
-                    className="c8 c3"
-                  >
-                    has completed
-                  </p>
-                  <p
-                    className="c7 c3"
-                  >
-                     CSA MILESTONE PROGRAMME
-                  </p>
-                  <p
-                    className="c7 c3"
-                  >
-                    31 December 2021 - 01 December 2022
-                  </p>
+                    <p
+                      className="c7 c4"
+                    >
+                      This is to certify that
+                    </p>
+                    <p
+                      className="c8 c4"
+                    >
+                      JOHN DOE
+                    </p>
+                    <p
+                      className="c9 c4"
+                    >
+                      has completed
+                    </p>
+                    <p
+                      className="c8 c4"
+                    >
+                       CSA MILESTONE PROGRAMME
+                    </p>
+                    <p
+                      className="c8 c4"
+                    >
+                      31 December 2021 - 01 December 2022
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div
-                className="c9"
-              >
-                <div />
                 <div
-                  style={
-                    Object {
-                      "width": 250,
-                    }
-                  }
+                  className="c10"
                 >
+                  <div />
                   <div
-                    className="c10"
-                  />
-                  <div
-                    className="c11"
-                  />
-                  <div
-                    className="c12"
+                    style={
+                      Object {
+                        "width": 250,
+                      }
+                    }
                   >
-                    <p
-                      className="c13 c3"
+                    <div
+                      className="c11"
                     >
-                      <b>
-                        Nicholas Conceicao
-                      </b>
-                       | Executive Director
-                    </p>
-                    <p
-                      className="c14 c3"
+                      <img
+                        alt="Signature of signee"
+                        className="c12"
+                        src="nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+                      />
+                    </div>
+                    <div
+                      className="c13"
+                    />
+                    <div
+                      className="c14"
                     >
-                      Outward Bound Singapore
-                    </p>
+                      <p
+                        className="c15 c4"
+                      >
+                        <b>
+                          Nicholas Conceicao
+                        </b>
+                         | Executive Director
+                      </p>
+                      <p
+                        className="c16 c4"
+                      >
+                        Outward Bound Singapore
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

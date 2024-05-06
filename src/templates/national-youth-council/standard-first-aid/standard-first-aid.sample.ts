@@ -14,8 +14,8 @@ export const sample: NationalYouthCouncilStandardFirstAidOaDoc = {
         },
     ],
     ciSignature:
-        'fazdli-jamal-signature&bd3a19338a826f4634b51ec9540cd6c044bda125bc6add929df6ef407b458bb2.png',
+        'fazdli-jamal-signature&09fc5bfca94f8c519f9433c611b4fb9ff8cfed316343125469a8addee67c6b06.png',
     issueDate: '2020-12-31',
-    serialNumber: 'OBSSFA2022/001',
+    certificateNumber: 'OBSSFA-2024-001',
     ciName: 'Fazdli Jamal',
 }

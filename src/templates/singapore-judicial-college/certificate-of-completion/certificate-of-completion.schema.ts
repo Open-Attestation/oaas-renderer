@@ -60,22 +60,22 @@ export default {
         },
         signeeName: makeEnumString(
             'Name of signee',
-            ['Sundaresh Menon'] as const,
-            'Sundaresh Menon'
+            ['Natalie Skead'] as const,
+            'Natalie Skead'
         ),
         signeeDesignation: makeEnumString(
             'Designation of signee',
-            ['Chief Justice'] as const,
-            'Chief Justice'
+            ['Dean'] as const,
+            'Dean'
         ),
         signeeSignature: {
             type: 'string',
             description: "SHA256 hash of the signee's signature",
             enum: commonAssets.getEnumValues([
-                'sample-signature&cacfb1e1c1af263245b1925f10eab6cb6bf675111478bb91e54ecd250482ce7c.png',
+                'natalie-skead-signature&195bd78f3c419e8ec21d3d364f50f703e85d43c401639a628d0119b7cbefd935.png',
             ]),
             examples: commonAssets.getEnumValues([
-                'sample-signature&cacfb1e1c1af263245b1925f10eab6cb6bf675111478bb91e54ecd250482ce7c.png',
+                'natalie-skead-signature&195bd78f3c419e8ec21d3d364f50f703e85d43c401639a628d0119b7cbefd935.png',
             ]),
         },
     },
