@@ -3,7 +3,7 @@ import { SingaporeJudicialCollegeLetterOfAppreciationTemplate } from './letter-o
 export const singaporeJudicialCollegeLetterOfAppreciationTemplates = [
     {
         id: 'singaporeJudicialCollegeLetterOfAppreciation',
-        label: 'Certificate',
+        label: 'Letter',
         template: SingaporeJudicialCollegeLetterOfAppreciationTemplate,
     },
 ]
