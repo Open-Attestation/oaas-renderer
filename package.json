@@ -54,9 +54,10 @@
         "lint-staged": "lint-staged",
         "typecheck": "tsc --noEmit",
         "process:schemas": "npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-schemas.ts && npx prettier --write src/**/__generated__/*.schema.{json,d.ts}",
+        "ci:process:schemas": "run () { npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-schemas.ts \"$1\"; }; run",
         "process:images": "npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-to-hash-images.ts && npx prettier --write src/**/__generated__/*[!.d].ts",
         "process:headers": "npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-headers.ts",
-        "new:template": "run() { npx hygen template new --issuerId $1 --docType $2; npm run process:schemas; }; run",
+        "new:template": "run() { npx hygen template new --issuerId $1 --docType $2; npm run ci:process:schemas \"src/templates/$1/$2\"; }; run",
         "prepare": "husky install"
     },
     "eslintConfig": {
@@ -83,6 +84,7 @@
         "concurrently": "^7.6.0",
         "cz-conventional-changelog": "3.3.0",
         "jest-styled-components": "^7.1.0",
+        "tailwindcss": "^3.4.3",
         "tsconfig-paths": "^4.1.2"
     },
     "jest": {

@@ -141,7 +141,7 @@ export const SigneeSignatureComponent = styled.div`
     width: 171px;
     height: 85px;
     bottom: 131px;
-    right: 130px;
+    right: 143px;
 
     text-align: center;
     align-items: flex-end;
