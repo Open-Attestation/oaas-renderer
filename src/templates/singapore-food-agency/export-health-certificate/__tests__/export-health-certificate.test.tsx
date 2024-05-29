@@ -481,8 +481,9 @@ describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
             }
 
             .c28 {
-              width: auto;
-              height: auto;
+              display: block;
+              max-width: 185px;
+              max-height: 92px;
             }
 
             .c29 {
