@@ -16,6 +16,7 @@ import mainBg from '../common/assets/license-certificate-a4-bg.png'
 import hsaStamp from '../common/assets/hsa-stamp.svg'
 import { Typography } from './hsa-license-certificate.components'
 
+import 'pdfjs-dist/build/pdf.worker.entry'
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.js',
     import.meta.url

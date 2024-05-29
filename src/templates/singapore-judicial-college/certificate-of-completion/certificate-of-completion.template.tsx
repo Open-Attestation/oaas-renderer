@@ -86,7 +86,7 @@ export const SingaporeJudicialCollegeCertificateOfCompletionTemplate: FunctionCo
                         <br />
                         {document.signeeDesignation}
                         <br />
-                        Republic of Singapore
+                        Singapore Judicial College
                     </SigneeComponent>
                 </FooterComponent>
             </A4>

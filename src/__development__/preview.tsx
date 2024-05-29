@@ -41,12 +41,15 @@ const ActionsContainer = styled.div`
 `
 
 const FrameContainer = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px auto;
+
+    &.collapsed {
+        grid-template-columns: auto;
+    }
 `
 const DocumentsContainer = styled.div`
     position: relative;
-
-    width: 300px;
     padding: 8px;
 
     &.collapsed {
@@ -211,29 +214,45 @@ export const App: React.FunctionComponent<AppProps> = ({
                 </button>
             </ActionsContainer>
             <button
+                style={{
+                    position: 'fixed',
+                    width: 'auto',
+                    padding: '8px',
+                    top: 0,
+                }}
                 onClick={() => {
                     setCollapsed((collapsed) => !collapsed)
                 }}
             >
                 {collapsed ? 'Open menu' : 'Close menu'}
             </button>
-            <FrameContainer>
+            <FrameContainer className={collapsed ? 'collapsed' : ''}>
                 <DocumentsContainer className={collapsed ? 'collapsed' : ''}>
-                    <div
+                    <section
                         style={{
-                            textAlign: 'center',
-                            fontWeight: 'bold',
+                            overflow: 'scroll',
+                            height: 'calc(100vh - 100px)',
+                            position: 'fixed',
+                            width: '270px',
+                            paddingBottom: '50px',
                         }}
                     >
-                        Documents
-                    </div>
-                    {Object.keys(issuerDocuments).length === 0 && (
-                        <div>
-                            Please configure the application and provide at
-                            least one document
+                        <div
+                            style={{
+                                textAlign: 'center',
+                                fontWeight: 'bold',
+                            }}
+                        >
+                            Documents
                         </div>
-                    )}
-                    {documentMenu}
+                        {Object.keys(issuerDocuments).length === 0 && (
+                            <div>
+                                Please configure the application and provide at
+                                least one document
+                            </div>
+                        )}
+                        {documentMenu}
+                    </section>
                 </DocumentsContainer>
                 {!document && (
                     <div
