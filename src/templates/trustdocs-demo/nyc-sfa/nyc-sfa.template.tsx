@@ -33,6 +33,10 @@ export const TrustdocsDemoNycSfaTemplate: FunctionComponent<
     return (
         <>
             <Helmet>
+                <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700"
+                ></link>
                 <title>national-youth-council - standard-first-aid</title>
             </Helmet>
             <ScalableDocument
