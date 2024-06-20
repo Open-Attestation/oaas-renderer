@@ -1,0 +1,130 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "HealthSciencesAuthority/FreeSale",
+    "type": "object",
+    "required": [
+        "certNumber",
+        "typeOfMedicinalProduct",
+        "manufacturerName",
+        "manufacturerAddress",
+        "distributorName",
+        "distributorAddress",
+        "dateOfIssue",
+        "signature_image",
+        "designationOfSignee",
+        "productName",
+        "brandName",
+        "intendedUse",
+        "countries",
+        "ingredients"
+    ],
+    "properties": {
+        "certNumber": {
+            "type": "string",
+            "description": "certificate number",
+            "examples": ["MCEL2300000M"],
+            "minLength": 1
+        },
+        "typeOfMedicinalProduct": {
+            "type": "string",
+            "description": "type of medicinal product",
+            "examples": ["Traditional Medicine"],
+            "minLength": 1
+        },
+        "manufacturerName": {
+            "type": "string",
+            "description": "name of manufacturer",
+            "examples": ["Example Company A Pte Ltd"],
+            "minLength": 1
+        },
+        "manufacturerAddress": {
+            "type": "string",
+            "description": "name of manufacturer",
+            "examples": ["123 Canberra, 01-01 Office A, Singapore 123456"],
+            "minLength": 1
+        },
+        "distributorName": {
+            "type": "string",
+            "description": "name of local distributor",
+            "examples": ["Example Company B Pte Ltd"],
+            "minLength": 1
+        },
+        "distributorAddress": {
+            "type": "string",
+            "description": "name of local distributor",
+            "examples": ["123 Canberra, 02-02 Office B, Singapore 123457"],
+            "minLength": 1
+        },
+        "dateOfIssue": {
+            "type": "string",
+            "description": "date of issue",
+            "examples": ["2023-01-01"],
+            "format": "date"
+        },
+        "signature_image": {
+            "type": "string",
+            "description": "file name of uploaded image",
+            "examples": ["signature.png"],
+            "minLength": 1
+        },
+        "designationOfSignee": {
+            "type": "string",
+            "description": "designation of Signee",
+            "examples": ["Regulatory Consultant"],
+            "minLength": 1
+        },
+        "productName": {
+            "type": "string",
+            "description": "product name in english",
+            "examples": ["Aloe balm body care"],
+            "minLength": 1
+        },
+        "brandName": {
+            "type": "string",
+            "description": "brand name",
+            "examples": ["Aloe Balm Body Care"],
+            "minLength": 1
+        },
+        "intendedUse": {
+            "type": "string",
+            "description": "intended use",
+            "examples": ["External use on skin"],
+            "minLength": 1
+        },
+        "countries": {
+            "type": "array",
+            "maxItems": 5,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "description": "country name",
+                "examples": ["SPAIN"]
+            }
+        },
+        "ingredients": {
+            "type": "array",
+            "maxItems": 20,
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["name", "strength"],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "name of ingredient",
+                        "examples": ["Lanolin"],
+                        "minLength": 1
+                    },
+                    "strength": {
+                        "type": "string",
+                        "description": "amount of ingredient",
+                        "examples": ["500mg"],
+                        "minLength": 1
+                    }
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "ForTesting/PdfLetterhead",
+    "type": "object",
+    "required": ["name", "document_pdf"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of awardee",
+            "examples": ["Thong Yong Jie Andre"],
+            "minLength": 1
+        },
+        "document_pdf": {
+            "type": "string",
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}
