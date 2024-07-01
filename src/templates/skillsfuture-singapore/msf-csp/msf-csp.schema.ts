@@ -1,4 +1,9 @@
 import { JSONSchema } from 'json-schema-to-typescript'
+import {
+    makeDateType,
+    makeEnumString,
+    makeRequiredString,
+} from 'utils/json-schema-utils'
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
@@ -6,105 +11,196 @@ export default {
     type: 'object',
     required: [
         'name',
-        'courseTitle',
-        'courseStartDate',
-        'courseEndDate',
-        'presentedBy',
-        'signatureOne',
-        'signatureTwo',
+        'issueDate',
+        'expiryDate',
+        'topSkills',
+        'employmentHistory',
+        'professionalCertifications',
+        'academicQualifications',
     ],
     properties: {
-        name: {
-            type: 'string',
-            description: 'Name of awardee',
-            examples: ['Thong Yong Jie Andre'],
-            minLength: 1,
-        },
-        courseTitle: {
-            type: 'string',
-            description: 'Title of the course',
-            examples: ['CSA Milestone Programme'],
-            minLength: 1,
-        },
-        courseStartDate: {
-            type: 'string',
-            description: 'Start date of course',
-            examples: ['2022-05-10'],
-            format: 'date',
-        },
-        courseEndDate: {
-            type: 'string',
-            description: 'End date of course',
-            examples: ['2022-06-03'],
-            format: 'date',
-        },
-        presentedBy: {
-            type: 'array',
-            description: 'list of presenters jointly presenting the award',
-            items: {
-                type: 'string',
-                description:
-                    'organization or entity that is presenting the award',
-                examples: ['Cyber Security Agency of Singapore (CSA)'],
-            },
-        },
-        signatureOne: {
+        name: makeRequiredString('Registrant name', 'Stella Tan Jia Xin'),
+        issueDate: makeDateType('Date of issue in YYYY-MM-DD', '2025-05-13'),
+        expiryDate: makeDateType('Date of expiry in YYYY-MM-DD', '2025-05-26'),
+        topSkills: {
             type: 'object',
-            required: ['name', 'signatureHash', 'title', 'organization'],
+            required: ['displayOrder', 'skills'],
+            additionalProperties: false,
             properties: {
-                name: {
-                    type: 'string',
-                    description: 'owner of signature',
-                    examples: ['Betsie Chacko'],
+                displayOrder: {
+                    type: 'number',
+                    description:
+                        'Display order on MySkillsFuture Skills Passport',
+                    minimum: 0,
+                    examples: [0],
                 },
-                title: {
-                    type: 'string',
-                    description: 'title of owner of signature',
-                    examples: ['Associate Director'],
-                },
-                organization: {
-                    type: 'string',
-                    description: 'organization of owner of signature',
-                    examples: ['CISA International'],
-                },
-                signatureHash: {
-                    type: 'string',
-                    description: "Hash of the signature's image file",
-                    examples: [
-                        '7645fe871778d34c1daed13a12f2b3fe68555325fd7bdea3973a54399027eeab',
-                    ],
+                skills: {
+                    type: 'array',
+                    items: {
+                        type: 'object',
+                        required: ['type', 'shortName', 'fullName'],
+                        additionalProperties: false,
+                        properties: {
+                            type: makeEnumString(
+                                'Skill Type',
+                                [
+                                    'CERTIFIED',
+                                    'SELF_DECLARED',
+                                    'INFERRED',
+                                ] as const,
+                                'CERTIFIED'
+                            ),
+                            shortName: makeRequiredString(
+                                'Short name of Skill',
+                                'meetings, incentives, conferences an...'
+                            ),
+                            fullName: makeRequiredString(
+                                'Full name of Skill',
+                                'meetings, incentives, conferences and exhibitions'
+                            ),
+                            acquiredFrom: {
+                                type: 'string',
+                                description: 'Source of Skill',
+                                examples: [
+                                    'Bachelor of BA (Honours) in Marketing, University of Singapore, Academic Qualification',
+                                ],
+                            },
+                        },
+                    },
                 },
             },
-            additionalProperties: false,
         },
-        signatureTwo: {
+        employmentHistory: {
             type: 'object',
-            required: ['name', 'signatureHash', 'title', 'organization'],
+            required: ['displayOrder', 'positions'],
+            additionalProperties: false,
             properties: {
-                name: {
-                    type: 'string',
-                    description: 'owner of signature',
-                    examples: ['Betsie Chacko'],
+                displayOrder: {
+                    type: 'number',
+                    description:
+                        'Display order on MySkillsFuture Skills Passport',
+                    minimum: 0,
+                    examples: [1],
                 },
-                title: {
-                    type: 'string',
-                    description: 'title of owner of signature',
-                    examples: ['Associate Director'],
-                },
-                organization: {
-                    type: 'string',
-                    description: 'organization of owner of signature',
-                    examples: ['CISA International'],
-                },
-                signatureHash: {
-                    type: 'string',
-                    description: "Hash of the signature's image file",
-                    examples: [
-                        '7645fe871778d34c1daed13a12f2b3fe68555325fd7bdea3973a54399027eeab',
-                    ],
+                positions: {
+                    type: 'array',
+                    items: {
+                        type: 'object',
+                        required: [
+                            'isVerifiedEmployee',
+                            'position',
+                            'employer',
+                            'period',
+                        ],
+                        additionalProperties: false,
+                        properties: {
+                            isVerifiedEmployee: {
+                                type: 'boolean',
+                            },
+                            position: makeRequiredString(
+                                'Title of position',
+                                'Marketing Manager (Senior Marketing Manager)'
+                            ),
+                            employer: makeRequiredString(
+                                'Name of employer',
+                                'Equinet Academy'
+                            ),
+                            period: makeRequiredString(
+                                'Period of employment',
+                                'Jan 2015 - Present (8 years 8 months)'
+                            ),
+                        },
+                    },
                 },
             },
+        },
+        professionalCertifications: {
+            type: 'object',
+            required: ['displayOrder', 'certifications'],
             additionalProperties: false,
+            properties: {
+                displayOrder: {
+                    type: 'number',
+                    description:
+                        'Display order on MySkillsFuture Skills Passport',
+                    minimum: 0,
+                    examples: [2],
+                },
+                certifications: {
+                    type: 'array',
+                    items: {
+                        type: 'object',
+                        required: [
+                            'isVerified',
+                            'certificateTitle',
+                            'source',
+                            'dateAttained',
+                        ],
+                        properties: {
+                            isVerified: {
+                                type: 'boolean',
+                            },
+                            certificateTitle: makeRequiredString(
+                                'Title of professional certification',
+                                'WSQ Digital Marketing Strategy'
+                            ),
+                            source: makeRequiredString(
+                                'Source of professional certification',
+                                'Equinet Academy'
+                            ),
+                            dateAttained: makeRequiredString(
+                                'Date attained of professional certification',
+                                'May 2014'
+                            ),
+                        },
+                        additionalProperties: false,
+                    },
+                },
+            },
+        },
+        academicQualifications: {
+            type: 'object',
+            required: ['displayOrder', 'qualifications'],
+            additionalProperties: false,
+            properties: {
+                displayOrder: {
+                    type: 'number',
+                    description:
+                        'Display order on MySkillsFuture Skills Passport',
+                    minimum: 0,
+                    examples: [3],
+                },
+                qualifications: {
+                    type: 'array',
+                    items: {
+                        type: 'object',
+                        required: [
+                            'isVerified',
+                            'qualificationTitle',
+                            'source',
+                            'dateAttained',
+                        ],
+                        properties: {
+                            isVerified: {
+                                type: 'boolean',
+                            },
+                            qualificationTitle: makeRequiredString(
+                                'Title of qualification',
+                                'Degree in Social Science'
+                            ),
+                            source: makeRequiredString(
+                                'Source of professional certification',
+                                'National University of Singapore'
+                            ),
+                            dateAttained: makeRequiredString(
+                                'Date attained of academic qualification',
+                                '2010'
+                            ),
+                        },
+                        additionalProperties: false,
+                    },
+                },
+            },
         },
     },
     additionalProperties: false,

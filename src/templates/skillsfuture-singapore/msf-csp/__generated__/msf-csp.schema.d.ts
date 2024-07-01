@@ -7,59 +7,102 @@
 
 export interface SkillsfutureSingaporeMsfCsp {
     /**
-     * Name of awardee
+     * Registrant name
      */
     name: string
     /**
-     * Title of the course
+     * Date of issue in YYYY-MM-DD
      */
-    courseTitle: string
+    issueDate: string
     /**
-     * Start date of course
+     * Date of expiry in YYYY-MM-DD
      */
-    courseStartDate: string
-    /**
-     * End date of course
-     */
-    courseEndDate: string
-    /**
-     * list of presenters jointly presenting the award
-     */
-    presentedBy: string[]
-    signatureOne: {
+    expiryDate: string
+    topSkills: {
         /**
-         * owner of signature
+         * Display order on MySkillsFuture Skills Passport
          */
-        name: string
-        /**
-         * title of owner of signature
-         */
-        title: string
-        /**
-         * organization of owner of signature
-         */
-        organization: string
-        /**
-         * Hash of the signature's image file
-         */
-        signatureHash: string
+        displayOrder: number
+        skills: {
+            /**
+             * Skill Type
+             */
+            type: 'CERTIFIED' | 'SELF_DECLARED' | 'INFERRED'
+            /**
+             * Short name of Skill
+             */
+            shortName: string
+            /**
+             * Full name of Skill
+             */
+            fullName: string
+            /**
+             * Source of Skill
+             */
+            acquiredFrom?: string
+        }[]
     }
-    signatureTwo: {
+    employmentHistory: {
         /**
-         * owner of signature
+         * Display order on MySkillsFuture Skills Passport
          */
-        name: string
+        displayOrder: number
+        positions: {
+            isVerifiedEmployee: boolean
+            /**
+             * Title of position
+             */
+            position: string
+            /**
+             * Name of employer
+             */
+            employer: string
+            /**
+             * Period of employment
+             */
+            period: string
+        }[]
+    }
+    professionalCertifications: {
         /**
-         * title of owner of signature
+         * Display order on MySkillsFuture Skills Passport
          */
-        title: string
+        displayOrder: number
+        certifications: {
+            isVerified: boolean
+            /**
+             * Title of professional certification
+             */
+            certificateTitle: string
+            /**
+             * Source of professional certification
+             */
+            source: string
+            /**
+             * Date attained of professional certification
+             */
+            dateAttained: string
+        }[]
+    }
+    academicQualifications: {
         /**
-         * organization of owner of signature
+         * Display order on MySkillsFuture Skills Passport
          */
-        organization: string
-        /**
-         * Hash of the signature's image file
-         */
-        signatureHash: string
+        displayOrder: number
+        qualifications: {
+            isVerified: boolean
+            /**
+             * Title of qualification
+             */
+            qualificationTitle: string
+            /**
+             * Source of professional certification
+             */
+            source: string
+            /**
+             * Date attained of academic qualification
+             */
+            dateAttained: string
+        }[]
     }
 }

@@ -4,104 +4,240 @@
     "type": "object",
     "required": [
         "name",
-        "courseTitle",
-        "courseStartDate",
-        "courseEndDate",
-        "presentedBy",
-        "signatureOne",
-        "signatureTwo"
+        "issueDate",
+        "expiryDate",
+        "topSkills",
+        "employmentHistory",
+        "professionalCertifications",
+        "academicQualifications"
     ],
     "properties": {
         "name": {
             "type": "string",
-            "description": "Name of awardee",
-            "examples": ["Thong Yong Jie Andre"],
+            "description": "Registrant name",
+            "examples": ["Stella Tan Jia Xin"],
             "minLength": 1
         },
-        "courseTitle": {
+        "issueDate": {
             "type": "string",
-            "description": "Title of the course",
-            "examples": ["CSA Milestone Programme"],
-            "minLength": 1
-        },
-        "courseStartDate": {
-            "type": "string",
-            "description": "Start date of course",
-            "examples": ["2022-05-10"],
+            "description": "Date of issue in YYYY-MM-DD",
+            "examples": ["2025-05-13"],
             "format": "date"
         },
-        "courseEndDate": {
+        "expiryDate": {
             "type": "string",
-            "description": "End date of course",
-            "examples": ["2022-06-03"],
+            "description": "Date of expiry in YYYY-MM-DD",
+            "examples": ["2025-05-26"],
             "format": "date"
         },
-        "presentedBy": {
-            "type": "array",
-            "description": "list of presenters jointly presenting the award",
-            "items": {
-                "type": "string",
-                "description": "organization or entity that is presenting the award",
-                "examples": ["Cyber Security Agency of Singapore (CSA)"]
+        "topSkills": {
+            "type": "object",
+            "required": ["displayOrder", "skills"],
+            "additionalProperties": false,
+            "properties": {
+                "displayOrder": {
+                    "type": "number",
+                    "description": "Display order on MySkillsFuture Skills Passport",
+                    "minimum": 0,
+                    "examples": [0]
+                },
+                "skills": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["type", "shortName", "fullName"],
+                        "additionalProperties": false,
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "description": "Skill Type",
+                                "enum": [
+                                    "CERTIFIED",
+                                    "SELF_DECLARED",
+                                    "INFERRED"
+                                ],
+                                "examples": ["CERTIFIED"]
+                            },
+                            "shortName": {
+                                "type": "string",
+                                "description": "Short name of Skill",
+                                "examples": [
+                                    "meetings, incentives, conferences an..."
+                                ],
+                                "minLength": 1
+                            },
+                            "fullName": {
+                                "type": "string",
+                                "description": "Full name of Skill",
+                                "examples": [
+                                    "meetings, incentives, conferences and exhibitions"
+                                ],
+                                "minLength": 1
+                            },
+                            "acquiredFrom": {
+                                "type": "string",
+                                "description": "Source of Skill",
+                                "examples": [
+                                    "Bachelor of BA (Honours) in Marketing, University of Singapore, Academic Qualification"
+                                ]
+                            }
+                        }
+                    }
+                }
             }
         },
-        "signatureOne": {
+        "employmentHistory": {
             "type": "object",
-            "required": ["name", "signatureHash", "title", "organization"],
+            "required": ["displayOrder", "positions"],
+            "additionalProperties": false,
             "properties": {
-                "name": {
-                    "type": "string",
-                    "description": "owner of signature",
-                    "examples": ["Betsie Chacko"]
+                "displayOrder": {
+                    "type": "number",
+                    "description": "Display order on MySkillsFuture Skills Passport",
+                    "minimum": 0,
+                    "examples": [1]
                 },
-                "title": {
-                    "type": "string",
-                    "description": "title of owner of signature",
-                    "examples": ["Associate Director"]
-                },
-                "organization": {
-                    "type": "string",
-                    "description": "organization of owner of signature",
-                    "examples": ["CISA International"]
-                },
-                "signatureHash": {
-                    "type": "string",
-                    "description": "Hash of the signature's image file",
-                    "examples": [
-                        "7645fe871778d34c1daed13a12f2b3fe68555325fd7bdea3973a54399027eeab"
-                    ]
+                "positions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "isVerifiedEmployee",
+                            "position",
+                            "employer",
+                            "period"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                            "isVerifiedEmployee": {
+                                "type": "boolean"
+                            },
+                            "position": {
+                                "type": "string",
+                                "description": "Title of position",
+                                "examples": [
+                                    "Marketing Manager (Senior Marketing Manager)"
+                                ],
+                                "minLength": 1
+                            },
+                            "employer": {
+                                "type": "string",
+                                "description": "Name of employer",
+                                "examples": ["Equinet Academy"],
+                                "minLength": 1
+                            },
+                            "period": {
+                                "type": "string",
+                                "description": "Period of employment",
+                                "examples": [
+                                    "Jan 2015 - Present (8 years 8 months)"
+                                ],
+                                "minLength": 1
+                            }
+                        }
+                    }
                 }
-            },
-            "additionalProperties": false
+            }
         },
-        "signatureTwo": {
+        "professionalCertifications": {
             "type": "object",
-            "required": ["name", "signatureHash", "title", "organization"],
+            "required": ["displayOrder", "certifications"],
+            "additionalProperties": false,
             "properties": {
-                "name": {
-                    "type": "string",
-                    "description": "owner of signature",
-                    "examples": ["Betsie Chacko"]
+                "displayOrder": {
+                    "type": "number",
+                    "description": "Display order on MySkillsFuture Skills Passport",
+                    "minimum": 0,
+                    "examples": [2]
                 },
-                "title": {
-                    "type": "string",
-                    "description": "title of owner of signature",
-                    "examples": ["Associate Director"]
-                },
-                "organization": {
-                    "type": "string",
-                    "description": "organization of owner of signature",
-                    "examples": ["CISA International"]
-                },
-                "signatureHash": {
-                    "type": "string",
-                    "description": "Hash of the signature's image file",
-                    "examples": [
-                        "7645fe871778d34c1daed13a12f2b3fe68555325fd7bdea3973a54399027eeab"
-                    ]
+                "certifications": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "isVerified",
+                            "certificateTitle",
+                            "source",
+                            "dateAttained"
+                        ],
+                        "properties": {
+                            "isVerified": {
+                                "type": "boolean"
+                            },
+                            "certificateTitle": {
+                                "type": "string",
+                                "description": "Title of professional certification",
+                                "examples": ["WSQ Digital Marketing Strategy"],
+                                "minLength": 1
+                            },
+                            "source": {
+                                "type": "string",
+                                "description": "Source of professional certification",
+                                "examples": ["Equinet Academy"],
+                                "minLength": 1
+                            },
+                            "dateAttained": {
+                                "type": "string",
+                                "description": "Date attained of professional certification",
+                                "examples": ["May 2014"],
+                                "minLength": 1
+                            }
+                        },
+                        "additionalProperties": false
+                    }
                 }
-            },
-            "additionalProperties": false
+            }
+        },
+        "academicQualifications": {
+            "type": "object",
+            "required": ["displayOrder", "qualifications"],
+            "additionalProperties": false,
+            "properties": {
+                "displayOrder": {
+                    "type": "number",
+                    "description": "Display order on MySkillsFuture Skills Passport",
+                    "minimum": 0,
+                    "examples": [3]
+                },
+                "qualifications": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "isVerified",
+                            "qualificationTitle",
+                            "source",
+                            "dateAttained"
+                        ],
+                        "properties": {
+                            "isVerified": {
+                                "type": "boolean"
+                            },
+                            "qualificationTitle": {
+                                "type": "string",
+                                "description": "Title of qualification",
+                                "examples": ["Degree in Social Science"],
+                                "minLength": 1
+                            },
+                            "source": {
+                                "type": "string",
+                                "description": "Source of professional certification",
+                                "examples": [
+                                    "National University of Singapore"
+                                ],
+                                "minLength": 1
+                            },
+                            "dateAttained": {
+                                "type": "string",
+                                "description": "Date attained of academic qualification",
+                                "examples": ["2010"],
+                                "minLength": 1
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                }
+            }
         }
     },
     "additionalProperties": false
