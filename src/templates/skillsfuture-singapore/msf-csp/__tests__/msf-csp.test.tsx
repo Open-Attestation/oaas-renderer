@@ -199,7 +199,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                         className="flex flex-row gap-3 flex-wrap"
                       >
                         <a
-                          data-tooltip-id="tooltip-meetings, incentives, conferences and..."
+                          data-tooltip-id="tooltip-perform industrial audiometric screening"
                         >
                           <div
                             className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
@@ -215,18 +215,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               }
                             />
                             <div>
-                              meetings, incentives, conferences and...
-                            </div>
-                          </div>
-                        </a>
-                        <a
-                          data-tooltip-id="tooltip-Communications channel management with no source"
-                        >
-                          <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
-                          >
-                            <div>
-                              Communications channel management with no source
+                              perform industrial audiometric screening
                             </div>
                           </div>
                         </a>
@@ -236,30 +225,81 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           <div
                             className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
                           >
+                            <img
+                              alt="Checkmark icon"
+                              src="icon-circle-check.png"
+                              style={
+                                Object {
+                                  "height": "16px",
+                                  "width": "16px",
+                                }
+                              }
+                            />
                             <div>
                               Communications channel management
                             </div>
                           </div>
                         </a>
                         <a
-                          data-tooltip-id="tooltip-Communications channel management"
+                          data-tooltip-id="tooltip-Customer loyalty management"
                         >
                           <div
                             className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
                           >
+                            <img
+                              alt="Checkmark icon"
+                              src="icon-circle-check.png"
+                              style={
+                                Object {
+                                  "height": "16px",
+                                  "width": "16px",
+                                }
+                              }
+                            />
                             <div>
-                              Communications channel management
+                              Customer loyalty management
                             </div>
                           </div>
                         </a>
                         <a
-                          data-tooltip-id="tooltip-Communications channel management"
+                          data-tooltip-id="tooltip-meetings, incentives, conferences an..."
                         >
                           <div
                             className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
                           >
+                            <img
+                              alt="Checkmark icon"
+                              src="icon-circle-check.png"
+                              style={
+                                Object {
+                                  "height": "16px",
+                                  "width": "16px",
+                                }
+                              }
+                            />
                             <div>
-                              Communications channel management
+                              meetings, incentives, conferences an...
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          data-tooltip-id="tooltip-perform industrial audiometric screening"
+                        >
+                          <div
+                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                          >
+                            <img
+                              alt="Checkmark icon"
+                              src="icon-circle-check.png"
+                              style={
+                                Object {
+                                  "height": "16px",
+                                  "width": "16px",
+                                }
+                              }
+                            />
+                            <div>
+                              perform industrial audiometric screening
                             </div>
                           </div>
                         </a>
@@ -393,28 +433,6 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             >
                               Aug 2011 - Jun 2015 (3 years 11 months)
                             </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              Employee (Sales & Marketing Executive)
-                            </b>
-                             at 
-                            Tai Hwa (Food manufacturing SME)
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Aug 2011 - Jun 2015 (3 years 11 months)
-                            </div>
                             <div
                               className="flex flex-row"
                             >
@@ -437,28 +455,6 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               >
                                 Verified
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              Employee (Sales & Marketing Executive)
-                            </b>
-                             at 
-                            Tai Hwa (Food manufacturing SME)
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Aug 2011 - Jun 2015 (3 years 11 months)
                             </div>
                           </div>
                         </div>
@@ -525,190 +521,6 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               >
                                 Verified
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              WSQ Digital Marketing Strategy
-                            </b>
-                             from 
-                            Equinet Academy
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              WSQ Digital Marketing Strategy
-                            </b>
-                             from 
-                            Equinet Academy
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              WSQ Digital Marketing Strategy
-                            </b>
-                             from 
-                            Equinet Academy
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              WSQ Digital Marketing Strategy
-                            </b>
-                             from 
-                            Equinet Academy
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              WSQ Digital Marketing Strategy
-                            </b>
-                             from 
-                            Equinet Academy
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              WSQ Digital Marketing Strategy
-                            </b>
-                             from 
-                            Equinet Academy
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              WSQ Digital Marketing Strategy
-                            </b>
-                             from 
-                            Equinet Academy
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              WSQ Digital Marketing Strategy
-                            </b>
-                             from 
-                            Equinet Academy
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
                             </div>
                           </div>
                         </div>
@@ -847,148 +659,10 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             </div>
                           </div>
                         </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              GCE A Level
-                            </b>
-                             from 
-                            SEAB
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                            <div
-                              className="flex flex-row"
-                            >
-                              <div
-                                className="pt-0.5"
-                              >
-                                <img
-                                  alt="Verified icon"
-                                  src="icon-shield-keyhole.png"
-                                  style={
-                                    Object {
-                                      "height": "16px",
-                                      "width": "16px",
-                                    }
-                                  }
-                                />
-                              </div>
-                              <div
-                                className="c5 leading-5"
-                              >
-                                Verified
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              GCE A Level
-                            </b>
-                             from 
-                            SEAB
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                            <div
-                              className="flex flex-row"
-                            >
-                              <div
-                                className="pt-0.5"
-                              >
-                                <img
-                                  alt="Verified icon"
-                                  src="icon-shield-keyhole.png"
-                                  style={
-                                    Object {
-                                      "height": "16px",
-                                      "width": "16px",
-                                    }
-                                  }
-                                />
-                              </div>
-                              <div
-                                className="c5 leading-5"
-                              >
-                                Verified
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="flex flex-col break-inside-avoid"
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <b>
-                              GCE A Level
-                            </b>
-                             from 
-                            SEAB
-                          </div>
-                          <div
-                            className="flex flex-row gap-2 flex-wrap"
-                          >
-                            <div
-                              className="c6"
-                            >
-                              Date attained: 
-                              May 2014
-                            </div>
-                            <div
-                              className="flex flex-row"
-                            >
-                              <div
-                                className="pt-0.5"
-                              >
-                                <img
-                                  alt="Verified icon"
-                                  src="icon-shield-keyhole.png"
-                                  style={
-                                    Object {
-                                      "height": "16px",
-                                      "width": "16px",
-                                    }
-                                  }
-                                />
-                              </div>
-                              <div
-                                className="c5 leading-5"
-                              >
-                                Verified
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                     <div
-                      className="bg-[#F0F3FF] pt-0.5 break-inside-avoid hidden print:block"
+                      className="bg-[#F0F3FF] pt-1 break-inside-avoid hidden print:block"
                     >
                       <div
                         className="px-4 md:px-16"
@@ -1094,44 +768,44 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                   onClick={[Function]}
                 >
                   <div
-                    className="absolute w-full bottom-0 left-0 bg-[#F0F3FF] pt-0.5 print:hidden"
+                    className="absolute w-full bottom-0 left-0 bg-[#F0F3FF] print:hidden"
                   >
                     <div
                       className="px-4 md:px-16"
                     >
                       <div
+                        className="flex flex-row items-center gap-1 py-1 content-center "
+                      >
+                        <img
+                          alt="Info icon"
+                          src="icon-info.png"
+                          style={
+                            Object {
+                              "height": "16px",
+                              "width": "16px",
+                            }
+                          }
+                        />
+                        <div
+                          className="c6 leading-5"
+                        >
+                          Find out more about Career and Skills Passport and its verified information
+                        </div>
+                        <img
+                          alt="Chevron icon"
+                          className="rotate-180"
+                          src="icon-chevron-down.png"
+                          style={
+                            Object {
+                              "height": "16px",
+                              "width": "16px",
+                            }
+                          }
+                        />
+                      </div>
+                      <div
                         className="flex flex-col gap-3 max-w-[666px] mx-auto"
                       >
-                        <div
-                          className="flex flex-row items-center gap-1 content-center "
-                        >
-                          <img
-                            alt="Info icon"
-                            src="icon-info.png"
-                            style={
-                              Object {
-                                "height": "16px",
-                                "width": "16px",
-                              }
-                            }
-                          />
-                          <div
-                            className="c6 leading-5"
-                          >
-                            Find out more about Career and Skills Passport and its verified information
-                          </div>
-                          <img
-                            alt="Chevron icon"
-                            className="rotate-180"
-                            src="icon-chevron-down.png"
-                            style={
-                              Object {
-                                "height": "16px",
-                                "width": "16px",
-                              }
-                            }
-                          />
-                        </div>
                         <div
                           aria-hidden={true}
                           className="rah-static rah-static--height-zero "
@@ -1147,7 +821,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             style={Object {}}
                           >
                             <div
-                              className="flex flex-col gap-3"
+                              className="flex flex-col gap-3 pt-2"
                             >
                               <div
                                 className="flex flex-col px-4 leading-5"

@@ -323,38 +323,38 @@ const RenderFooter = ({
     displayInfo: boolean
 }): JSX.Element => {
     return (
-        <div className="absolute w-full bottom-0 left-0 bg-[#F0F3FF] pt-0.5 print:hidden">
+        <div className="absolute w-full bottom-0 left-0 bg-[#F0F3FF] print:hidden">
             <FooterContentContainer>
+                <div className="flex flex-row items-center gap-1 py-1 content-center ">
+                    <img
+                        style={{
+                            height: '16px',
+                            width: '16px',
+                        }}
+                        src={infoIcon}
+                        alt="Info icon"
+                    />
+                    <TextPlaceholder className="leading-5">
+                        Find out more about Career and Skills Passport and its
+                        verified information
+                    </TextPlaceholder>
+                    <img
+                        className={displayInfo ? '' : 'rotate-180'}
+                        style={{
+                            height: '16px',
+                            width: '16px',
+                        }}
+                        src={chevronDownIcon}
+                        alt="Chevron icon"
+                    />
+                </div>
                 <div className="flex flex-col gap-3 max-w-[666px] mx-auto">
-                    <div className="flex flex-row items-center gap-1 content-center ">
-                        <img
-                            style={{
-                                height: '16px',
-                                width: '16px',
-                            }}
-                            src={infoIcon}
-                            alt="Info icon"
-                        />
-                        <TextPlaceholder className="leading-5">
-                            Find out more about Career and Skills Passport and
-                            its verified information
-                        </TextPlaceholder>
-                        <img
-                            className={displayInfo ? '' : 'rotate-180'}
-                            style={{
-                                height: '16px',
-                                width: '16px',
-                            }}
-                            src={chevronDownIcon}
-                            alt="Chevron icon"
-                        />
-                    </div>
                     <AnimateHeight
                         id="example-panel"
                         duration={500}
                         height={displayInfo ? 'auto' : 0}
                     >
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-3 pt-2">
                             <div className="flex flex-col px-4 leading-5">
                                 <div className="flex flex-row items-center gap-1">
                                     <img
@@ -420,7 +420,7 @@ const RenderFooter = ({
 
 const PrintedFooter = ({}: {}): JSX.Element => {
     return (
-        <div className="bg-[#F0F3FF] pt-0.5 break-inside-avoid hidden print:block">
+        <div className="bg-[#F0F3FF] pt-1 break-inside-avoid hidden print:block">
             <FooterContentContainer>
                 <div className="flex flex-col gap-3 max-w-[666px] mx-auto">
                     <div className="flex flex-row items-center gap-1 content-center ">
