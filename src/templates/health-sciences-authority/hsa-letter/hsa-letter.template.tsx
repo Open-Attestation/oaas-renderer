@@ -34,7 +34,7 @@ export const HealthSciencesAuthorityHsaLetterTemplate: FunctionComponent<
             <div id="health-sciences-authority - hsa-letter">
                 {document.letter_pdf && (
                     <Document
-                        file={`data:application/pdf;base64,${document.letter_pdf}`}
+                        file={document.letter_pdf}
                         loading={<div>Loading...</div>}
                         onLoadSuccess={onDocumentLoadSuccess}
                     >

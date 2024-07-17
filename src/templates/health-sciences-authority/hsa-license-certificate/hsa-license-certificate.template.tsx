@@ -101,8 +101,8 @@ export const HealthSciencesAuthorityHsaLicenseCertificateTemplate: FunctionCompo
                                     <img
                                         style={{
                                             position: 'absolute',
-                                            top: '977px',
-                                            left: '459px',
+                                            top: '945px',
+                                            left: '613px',
                                             height: '94.27px',
                                             width: '95.29px',
                                         }}
@@ -114,40 +114,9 @@ export const HealthSciencesAuthorityHsaLicenseCertificateTemplate: FunctionCompo
                             ))}
                         </Document>
 
-                        <A4 $bgImg={mainBg} $padding="252px 0px 0px 0px">
-                            <div className="flex flex-row justify-center">
-                                <div className="flex flex-col items-center">
-                                    <QRCodeSVG
-                                        value={qrPayload}
-                                        size={215}
-                                        className="p-3.5 bg-white rounded-md"
-                                    />
-                                    <Typography>
-                                        <div className="mt-2 ">
-                                            <b>Scan to verify</b>
-                                            <br />
-                                            This QR code is valid for 5 years
-                                            from the issuance date.
-                                        </div>
-                                    </Typography>
-                                </div>
-                            </div>
-                            <img
-                                style={{
-                                    position: 'absolute',
-                                    top: '977px',
-                                    left: '459px',
-                                    height: '94.27px',
-                                    width: '95.29px',
-                                }}
-                                className="opacity-60"
-                                src={hsaStamp}
-                                alt="HSA stamp"
-                            ></img>
-                        </A4>
                         {document.productInfo_pdf && (
                             <Document
-                                file={`data:application/pdf;base64,${document.productInfo_pdf}`}
+                                file={document.productInfo_pdf}
                                 loading={<></>}
                                 onLoadSuccess={onProductDocumentLoadSuccess}
                             >
@@ -166,8 +135,8 @@ export const HealthSciencesAuthorityHsaLicenseCertificateTemplate: FunctionCompo
                                             <img
                                                 style={{
                                                     position: 'absolute',
-                                                    top: '977px',
-                                                    left: '459px',
+                                                    top: '945px',
+                                                    left: '613px',
                                                     height: '94.27px',
                                                     width: '95.29px',
                                                 }}
@@ -179,6 +148,47 @@ export const HealthSciencesAuthorityHsaLicenseCertificateTemplate: FunctionCompo
                                     ))}
                             </Document>
                         )}
+
+                        <A4 $bgImg={mainBg} $padding="252px 0px 0px 0px">
+                            <div className="flex flex-row justify-center">
+                                <div className="flex flex-col items-center">
+                                    <QRCodeSVG
+                                        value={qrPayload}
+                                        size={188}
+                                        className="p-2 bg-white rounded-md"
+                                    />
+                                    <Typography>
+                                        <div className="mt-2 ">
+                                            <b>
+                                                Scan this QR code to verify a
+                                                printed or PDF version of this
+                                                document.
+                                            </b>
+                                            <br />
+                                            This QR code is valid for 3 years
+                                            from the issuance date.
+                                        </div>
+                                    </Typography>
+                                </div>
+                            </div>
+                            <img
+                                style={{
+                                    position: 'absolute',
+                                    top: '945px',
+                                    left: '613px',
+                                    height: '94.27px',
+                                    width: '95.29px',
+                                }}
+                                className="opacity-60"
+                                src={hsaStamp}
+                                alt="HSA stamp"
+                            ></img>
+                            <Typography>
+                                <div className="absolute bottom-[88px] left-[88px] text-xs">
+                                    {document.certificateNo}
+                                </div>
+                            </Typography>
+                        </A4>
                     </>
                 )}
             </div>

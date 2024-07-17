@@ -11,6 +11,10 @@ export interface HealthSciencesAuthorityHsaLicenseCertificate {
      */
     organisationName: string
     /**
+     * Certificate Number
+     */
+    certificateNo: string
+    /**
      * Certificate content
      */
     certContent_pdf: string

@@ -1,0 +1,244 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "SkillsfutureSingapore/MsfCsp",
+    "type": "object",
+    "required": [
+        "name",
+        "issueDate",
+        "expiryDate",
+        "topSkills",
+        "employmentHistory",
+        "professionalCertifications",
+        "academicQualifications"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Registrant name",
+            "examples": ["Stella Tan Jia Xin"],
+            "minLength": 1
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue in YYYY-MM-DD",
+            "examples": ["2025-05-13"],
+            "format": "date"
+        },
+        "expiryDate": {
+            "type": "string",
+            "description": "Date of expiry in YYYY-MM-DD",
+            "examples": ["2025-05-26"],
+            "format": "date"
+        },
+        "topSkills": {
+            "type": "object",
+            "required": ["displayOrder", "skills"],
+            "additionalProperties": false,
+            "properties": {
+                "displayOrder": {
+                    "type": "number",
+                    "description": "Display order on MySkillsFuture Skills Passport",
+                    "minimum": 0,
+                    "examples": [0]
+                },
+                "skills": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["type", "shortName", "fullName"],
+                        "additionalProperties": false,
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "description": "Skill Type",
+                                "enum": [
+                                    "CERTIFIED",
+                                    "SELF_DECLARED",
+                                    "INFERRED"
+                                ],
+                                "examples": ["CERTIFIED"]
+                            },
+                            "shortName": {
+                                "type": "string",
+                                "description": "Short name of Skill",
+                                "examples": [
+                                    "meetings, incentives, conferences an..."
+                                ],
+                                "minLength": 1
+                            },
+                            "fullName": {
+                                "type": "string",
+                                "description": "Full name of Skill",
+                                "examples": [
+                                    "meetings, incentives, conferences and exhibitions"
+                                ],
+                                "minLength": 1
+                            },
+                            "acquiredFrom": {
+                                "type": "string",
+                                "description": "Source of Skill",
+                                "examples": [
+                                    "Bachelor of BA (Honours) in Marketing, University of Singapore, Academic Qualification"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "employmentHistory": {
+            "type": "object",
+            "required": ["displayOrder", "positions"],
+            "additionalProperties": false,
+            "properties": {
+                "displayOrder": {
+                    "type": "number",
+                    "description": "Display order on MySkillsFuture Skills Passport",
+                    "minimum": 0,
+                    "examples": [1]
+                },
+                "positions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "isVerifiedEmployee",
+                            "position",
+                            "employer",
+                            "period"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                            "isVerifiedEmployee": {
+                                "type": "boolean"
+                            },
+                            "position": {
+                                "type": "string",
+                                "description": "Title of position",
+                                "examples": [
+                                    "Marketing Manager (Senior Marketing Manager)"
+                                ],
+                                "minLength": 1
+                            },
+                            "employer": {
+                                "type": "string",
+                                "description": "Name of employer",
+                                "examples": ["Equinet Academy"],
+                                "minLength": 1
+                            },
+                            "period": {
+                                "type": "string",
+                                "description": "Period of employment",
+                                "examples": [
+                                    "Jan 2015 - Present (8 years 8 months)"
+                                ],
+                                "minLength": 1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "professionalCertifications": {
+            "type": "object",
+            "required": ["displayOrder", "certifications"],
+            "additionalProperties": false,
+            "properties": {
+                "displayOrder": {
+                    "type": "number",
+                    "description": "Display order on MySkillsFuture Skills Passport",
+                    "minimum": 0,
+                    "examples": [2]
+                },
+                "certifications": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "isVerified",
+                            "certificateTitle",
+                            "source",
+                            "dateAttained"
+                        ],
+                        "properties": {
+                            "isVerified": {
+                                "type": "boolean"
+                            },
+                            "certificateTitle": {
+                                "type": "string",
+                                "description": "Title of professional certification",
+                                "examples": ["WSQ Digital Marketing Strategy"],
+                                "minLength": 1
+                            },
+                            "source": {
+                                "type": "string",
+                                "description": "Source of professional certification",
+                                "examples": ["Equinet Academy"],
+                                "minLength": 1
+                            },
+                            "dateAttained": {
+                                "type": "string",
+                                "description": "Date attained of professional certification",
+                                "examples": ["May 2014"],
+                                "minLength": 1
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                }
+            }
+        },
+        "academicQualifications": {
+            "type": "object",
+            "required": ["displayOrder", "qualifications"],
+            "additionalProperties": false,
+            "properties": {
+                "displayOrder": {
+                    "type": "number",
+                    "description": "Display order on MySkillsFuture Skills Passport",
+                    "minimum": 0,
+                    "examples": [3]
+                },
+                "qualifications": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "isVerified",
+                            "qualificationTitle",
+                            "source",
+                            "dateAttained"
+                        ],
+                        "properties": {
+                            "isVerified": {
+                                "type": "boolean"
+                            },
+                            "qualificationTitle": {
+                                "type": "string",
+                                "description": "Title of qualification",
+                                "examples": ["Degree in Social Science"],
+                                "minLength": 1
+                            },
+                            "source": {
+                                "type": "string",
+                                "description": "Source of professional certification",
+                                "examples": [
+                                    "National University of Singapore"
+                                ],
+                                "minLength": 1
+                            },
+                            "dateAttained": {
+                                "type": "string",
+                                "description": "Date attained of academic qualification",
+                                "examples": ["2010"],
+                                "minLength": 1
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}
