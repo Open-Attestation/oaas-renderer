@@ -37,6 +37,7 @@ export interface SignatureComponentProps {
     color?: string
     isSecondary?: boolean
     location?: string
+    date?: string
 }
 export const SignatureComponent = ({
     signatureSrc,
@@ -45,6 +46,7 @@ export const SignatureComponent = ({
     color,
     isSecondary,
     location,
+    date,
 }: SignatureComponentProps) => {
     if (location) {
         return (
@@ -82,6 +84,19 @@ export const SignatureComponent = ({
                     >
                         Outward Bound Singapore
                     </Typography>
+                    {date ? (
+                        <Typography
+                            $size={'medium'}
+                            $textAlign={'center'}
+                            $mt={-1.5}
+                            $color={'black'}
+                        >
+                            <br />
+                            Date: {date}
+                        </Typography>
+                    ) : (
+                        <></>
+                    )}
                 </SignatureWordingContainer>
             </div>
         )
@@ -118,6 +133,19 @@ export const SignatureComponent = ({
                 >
                     Outward Bound Singapore
                 </Typography>
+                {date ? (
+                    <Typography
+                        $size={'medium'}
+                        $textAlign={'center'}
+                        $mt={-1.5}
+                        $color={'black'}
+                    >
+                        <br />
+                        Date: {date}
+                    </Typography>
+                ) : (
+                    <></>
+                )}
             </SignatureWordingContainer>
         </div>
     )

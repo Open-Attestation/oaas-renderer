@@ -29,13 +29,13 @@ export interface SingaporeJudicialCollegeCertificateOfCompletion {
     /**
      * Name of signee
      */
-    signeeName: 'Sundaresh Menon'
+    signeeName: 'Natalie Skead'
     /**
      * Designation of signee
      */
-    signeeDesignation: 'Chief Justice'
+    signeeDesignation: 'Dean'
     /**
      * SHA256 hash of the signee's signature
      */
-    signeeSignature: 'sample-signature&cacfb1e1c1af263245b1925f10eab6cb6bf675111478bb91e54ecd250482ce7c.png'
+    signeeSignature: 'natalie-skead-signature&195bd78f3c419e8ec21d3d364f50f703e85d43c401639a628d0119b7cbefd935.png'
 }
