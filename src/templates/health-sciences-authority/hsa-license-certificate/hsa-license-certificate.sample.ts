@@ -12,6 +12,7 @@ export const sample: HealthSciencesAuthorityHsaLicenseCertificateOaDoc = {
         url: 'http://localhost:3000',
     },
     organisationName: 'ABC PTE LTD',
+    certificateNo: 'MCEL2000999',
     certContent_pdf: sample_certificate,
     productInfo_pdf: sample_product,
     issuers: [
