@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async'
 import bgMsfLogo from '../common/assets/bg-msf-logo.png'
 import msfLogo from '../common/assets/msf-logo.png'
 import shieldIcon from '../common/assets/icon-shield-keyhole.png'
+import shieldCheckmark from '../common/assets/icon-shield-checkmark.png'
 import checkmarkIcon from '../common/assets/icon-circle-check.png'
 import infoIcon from '../common/assets/icon-info.png'
 import chevronDownIcon from '../common/assets/icon-chevron-down.png'
@@ -53,15 +54,15 @@ const RenderHeaderSection = ({
                 src={msfLogo}
                 alt="MySkillsFuture Logo"
             />
-            <H3>Careers and Skills Passport</H3>
+            <H3>Careers & Skills Passport</H3>
             <FormLabel>
                 Issued on {issueDate}
                 <br />
                 Expires on {expiryDate}
             </FormLabel>
-            <div className="flex flex-row py-1 gap-1">
+            <div className="flex flex-row pt-1 pb-4 gap-x-2 items-center flex-wrap">
                 <SubHeading>{recipientName}</SubHeading>
-                <VerifiedIcon />
+                <VerifiedLabel />
             </div>
         </div>
         <div className="flex flex-col">
@@ -96,6 +97,7 @@ const FooterContentContainer = ({
 }: {
     children: React.ReactNode
 }): JSX.Element => <div className="px-4 md:px-16">{children}</div>
+
 const VerifiedIcon = (): JSX.Element => (
     <div className="pt-0.5">
         <img
@@ -103,15 +105,18 @@ const VerifiedIcon = (): JSX.Element => (
                 height: '16px',
                 width: '16px',
             }}
-            src={shieldIcon}
+            src={shieldCheckmark}
             alt="Verified icon"
         />
     </div>
 )
 const VerifiedLabel = (): JSX.Element => (
-    <div className="flex flex-row">
+    <div
+        className={`flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4`}
+    >
         <VerifiedIcon />
-        <TextPrimary className="leading-5">Verified</TextPrimary>
+
+        <div className="text-xs font-semibold tracking-[0.10em]">VERIFIED</div>
     </div>
 )
 
@@ -155,7 +160,7 @@ const PositionItem = (props: PositionType): JSX.Element => {
             <TextPrimary>
                 <b>{props.position}</b> at {props.employer}
             </TextPrimary>
-            <div className="flex flex-row gap-2 flex-wrap">
+            <div className="flex flex-row gap-x-2 flex-wrap items-center">
                 <TextPlaceholder>{props.period}</TextPlaceholder>
                 {showVerifiedLabel && <VerifiedLabel />}
             </div>
@@ -206,7 +211,7 @@ const CertificationItem = (props: CertificationType): JSX.Element => {
             <TextPrimary>
                 <b>{certificateTitle}</b> from {source}
             </TextPrimary>
-            <div className="flex flex-row gap-2 flex-wrap">
+            <div className="flex flex-row gap-x-2 flex-wrap items-center">
                 <TextPlaceholder>Date attained: {dateAttained}</TextPlaceholder>
                 {showVerifiedLabel && <VerifiedLabel />}
             </div>
@@ -276,7 +281,7 @@ const SkillTag = ({ type, shortName, fullName, acquiredFrom }: SkillType) => {
         <>
             <a data-tooltip-id={`tooltip-${shortName}`}>
                 <div
-                    className={`flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5`}
+                    className={`flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5`}
                 >
                     {showCheckmarkIcon && (
                         <img
@@ -288,7 +293,9 @@ const SkillTag = ({ type, shortName, fullName, acquiredFrom }: SkillType) => {
                             alt="Checkmark icon"
                         />
                     )}
-                    <div>{shortName}</div>
+                    <div className="text-ellipsis overflow-hidden min-[320px]:text-nowrap">
+                        {shortName}
+                    </div>
                 </div>
             </a>
             <Tooltip
@@ -325,25 +332,23 @@ const RenderFooter = ({
     return (
         <div className="absolute w-full bottom-0 left-0 bg-[#F0F3FF] print:hidden">
             <FooterContentContainer>
-                <div className="flex flex-row items-center gap-1 py-1 content-center ">
+                <div className="flex flex-row items-start gap-1 py-1 content-center ">
                     <img
-                        style={{
-                            height: '16px',
-                            width: '16px',
-                        }}
+                        className="w-[16px] h-[16px] mt-0.5"
                         src={infoIcon}
                         alt="Info icon"
                     />
+
                     <TextPlaceholder className="leading-5">
-                        Find out more about Career and Skills Passport and its
+                        Find out more about Careers & Skills Passport and its
                         verified information
                     </TextPlaceholder>
                     <img
-                        className={displayInfo ? '' : 'rotate-180'}
-                        style={{
-                            height: '16px',
-                            width: '16px',
-                        }}
+                        className={
+                            displayInfo
+                                ? 'w-[16px] h-[16px] pt-1'
+                                : 'w-[16px] h-[16px] mt-0.5 origin-center rotate-180'
+                        }
                         src={chevronDownIcon}
                         alt="Chevron icon"
                     />
@@ -397,7 +402,7 @@ const RenderFooter = ({
 
                             <div className="flex flex-col px-4 pb-4 leading-5">
                                 <TextPrimary>
-                                    For more information on Career and Skills
+                                    For more information on Careers & Skills
                                     Passport,{' '}
                                     <a
                                         href={
@@ -433,7 +438,7 @@ const PrintedFooter = ({}: {}): JSX.Element => {
                             alt="Info icon"
                         />
                         <TextPlaceholder className="leading-5">
-                            Find out more about Career and Skills Passport and
+                            Find out more about Careers & Skills Passport and
                             its verified information
                         </TextPlaceholder>
                     </div>
@@ -481,7 +486,7 @@ const PrintedFooter = ({}: {}): JSX.Element => {
 
                         <div className="flex flex-col px-4 pb-4 leading-5">
                             <TextPrimary>
-                                For more information on Career and Skills
+                                For more information on Careers & Skills
                                 Passport, please visit
                                 https://www.myskillsfuture.gov.sg/content/portal/en/index.html
                             </TextPrimary>
@@ -495,15 +500,15 @@ const PrintedFooter = ({}: {}): JSX.Element => {
 
 const RenderExpiry = ({ expiryDate }: { expiryDate: string }): JSX.Element => {
     return (
-        <div className="flex flex-row justify-center items-center gap-1 bg-[#D90000] p-1 leading-5 print:hidden">
-            <img
-                style={{
-                    height: '16px',
-                    width: '16px',
-                }}
-                src={alertIcon}
-                alt="Alert icon"
-            />
+        <div className="flex flex-row justify-center items-start gap-1 bg-[#D90000] p-1 leading-5">
+            <div className="pt-0.5 h-[18px]">
+                <img
+                    className="max-w-[16px] max-h-[16px]"
+                    src={alertIcon}
+                    alt="Alert icon"
+                />
+            </div>
+
             <div className="text-white">
                 This document has expired as of {expiryDate}
             </div>
