@@ -95,7 +95,7 @@ export const HealthSciencesAuthorityCertificateForExporterTemplate: FunctionComp
                                                 document.
                                             </b>
                                             <br />
-                                            This QR code is valid for 3 years
+                                            This QR code is valid for 5 years
                                             from the issuance date.
                                         </div>
                                     </Typography>

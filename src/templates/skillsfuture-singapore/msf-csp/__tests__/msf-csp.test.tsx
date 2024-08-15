@@ -69,25 +69,6 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                 className="relative bg-white border border-solid border-slate-200 max-w-[21cm] min-h-[29.7cm]  my-0 mx-auto print:border-none"
               >
                 <div
-                  className="flex flex-row justify-center items-start gap-1 bg-[#D90000] p-1 leading-5"
-                >
-                  <div
-                    className="pt-0.5 h-[18px]"
-                  >
-                    <img
-                      alt="Alert icon"
-                      className="max-w-[16px] max-h-[16px]"
-                      src="icon-alert.png"
-                    />
-                  </div>
-                  <div
-                    className="text-white"
-                  >
-                    This document has expired as of 
-                    26 May 2024
-                  </div>
-                </div>
-                <div
                   className="p-4 md:px-16 md:py-6"
                 >
                   <img
@@ -135,7 +116,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           13 May 2025
                           <br />
                           Expires on 
-                          26 May 2024
+                          26 May 2025
                         </div>
                         <div
                           className="flex flex-row pt-1 pb-4 gap-x-2 items-center flex-wrap"
