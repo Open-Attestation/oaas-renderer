@@ -107,7 +107,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                         <div
                           className="c1"
                         >
-                          Careers and Skills Passport
+                          Careers & Skills Passport
                         </div>
                         <div
                           className="c2"
@@ -119,7 +119,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           26 May 2025
                         </div>
                         <div
-                          className="flex flex-row py-1 gap-1"
+                          className="flex flex-row pt-1 pb-4 gap-x-2 items-center flex-wrap"
                         >
                           <div
                             className="c3"
@@ -127,18 +127,27 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Stella Tan Jia Xin
                           </div>
                           <div
-                            className="pt-0.5"
+                            className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
                           >
-                            <img
-                              alt="Verified icon"
-                              src="icon-shield-keyhole.png"
-                              style={
-                                Object {
-                                  "height": "16px",
-                                  "width": "16px",
+                            <div
+                              className="pt-0.5"
+                            >
+                              <img
+                                alt="Verified icon"
+                                src="icon-shield-checkmark.png"
+                                style={
+                                  Object {
+                                    "height": "16px",
+                                    "width": "16px",
+                                  }
                                 }
-                              }
-                            />
+                              />
+                            </div>
+                            <div
+                              className="text-xs font-semibold tracking-[0.10em]"
+                            >
+                              VERIFIED
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -202,7 +211,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           data-tooltip-id="tooltip-perform industrial audiometric screening"
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
                           >
                             <img
                               alt="Checkmark icon"
@@ -214,7 +223,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 }
                               }
                             />
-                            <div>
+                            <div
+                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                            >
                               perform industrial audiometric screening
                             </div>
                           </div>
@@ -223,7 +234,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           data-tooltip-id="tooltip-Communications channel management"
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
                           >
                             <img
                               alt="Checkmark icon"
@@ -235,7 +246,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 }
                               }
                             />
-                            <div>
+                            <div
+                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                            >
                               Communications channel management
                             </div>
                           </div>
@@ -244,7 +257,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           data-tooltip-id="tooltip-Customer loyalty management"
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
                           >
                             <img
                               alt="Checkmark icon"
@@ -256,7 +269,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 }
                               }
                             />
-                            <div>
+                            <div
+                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                            >
                               Customer loyalty management
                             </div>
                           </div>
@@ -265,7 +280,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           data-tooltip-id="tooltip-meetings, incentives, conferences an..."
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
                           >
                             <img
                               alt="Checkmark icon"
@@ -277,7 +292,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 }
                               }
                             />
-                            <div>
+                            <div
+                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                            >
                               meetings, incentives, conferences an...
                             </div>
                           </div>
@@ -286,7 +303,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           data-tooltip-id="tooltip-perform industrial audiometric screening"
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
                           >
                             <img
                               alt="Checkmark icon"
@@ -298,7 +315,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 }
                               }
                             />
-                            <div>
+                            <div
+                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                            >
                               perform industrial audiometric screening
                             </div>
                           </div>
@@ -336,7 +355,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Equinet Academy
                           </div>
                           <div
-                            className="flex flex-row gap-2 flex-wrap"
+                            className="flex flex-row gap-x-2 flex-wrap items-center"
                           >
                             <div
                               className="c6"
@@ -344,14 +363,14 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               Jan 2015 - Present (8 years 8 months)
                             </div>
                             <div
-                              className="flex flex-row"
+                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
                             >
                               <div
                                 className="pt-0.5"
                               >
                                 <img
                                   alt="Verified icon"
-                                  src="icon-shield-keyhole.png"
+                                  src="icon-shield-checkmark.png"
                                   style={
                                     Object {
                                       "height": "16px",
@@ -361,9 +380,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 />
                               </div>
                               <div
-                                className="c5 leading-5"
+                                className="text-xs font-semibold tracking-[0.10em]"
                               >
-                                Verified
+                                VERIFIED
                               </div>
                             </div>
                           </div>
@@ -381,7 +400,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Tai Hwa (Food manufacturing SME)
                           </div>
                           <div
-                            className="flex flex-row gap-2 flex-wrap"
+                            className="flex flex-row gap-x-2 flex-wrap items-center"
                           >
                             <div
                               className="c6"
@@ -389,14 +408,14 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               Aug 2011 - Jun 2015 (3 years 11 months)
                             </div>
                             <div
-                              className="flex flex-row"
+                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
                             >
                               <div
                                 className="pt-0.5"
                               >
                                 <img
                                   alt="Verified icon"
-                                  src="icon-shield-keyhole.png"
+                                  src="icon-shield-checkmark.png"
                                   style={
                                     Object {
                                       "height": "16px",
@@ -406,9 +425,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 />
                               </div>
                               <div
-                                className="c5 leading-5"
+                                className="text-xs font-semibold tracking-[0.10em]"
                               >
-                                Verified
+                                VERIFIED
                               </div>
                             </div>
                           </div>
@@ -426,7 +445,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Tai Hwa (Food manufacturing SME)
                           </div>
                           <div
-                            className="flex flex-row gap-2 flex-wrap"
+                            className="flex flex-row gap-x-2 flex-wrap items-center"
                           >
                             <div
                               className="c6"
@@ -434,14 +453,14 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               Aug 2011 - Jun 2015 (3 years 11 months)
                             </div>
                             <div
-                              className="flex flex-row"
+                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
                             >
                               <div
                                 className="pt-0.5"
                               >
                                 <img
                                   alt="Verified icon"
-                                  src="icon-shield-keyhole.png"
+                                  src="icon-shield-checkmark.png"
                                   style={
                                     Object {
                                       "height": "16px",
@@ -451,9 +470,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 />
                               </div>
                               <div
-                                className="c5 leading-5"
+                                className="text-xs font-semibold tracking-[0.10em]"
                               >
-                                Verified
+                                VERIFIED
                               </div>
                             </div>
                           </div>
@@ -491,7 +510,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Equinet Academy
                           </div>
                           <div
-                            className="flex flex-row gap-2 flex-wrap"
+                            className="flex flex-row gap-x-2 flex-wrap items-center"
                           >
                             <div
                               className="c6"
@@ -500,14 +519,14 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               May 2014
                             </div>
                             <div
-                              className="flex flex-row"
+                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
                             >
                               <div
                                 className="pt-0.5"
                               >
                                 <img
                                   alt="Verified icon"
-                                  src="icon-shield-keyhole.png"
+                                  src="icon-shield-checkmark.png"
                                   style={
                                     Object {
                                       "height": "16px",
@@ -517,9 +536,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 />
                               </div>
                               <div
-                                className="c5 leading-5"
+                                className="text-xs font-semibold tracking-[0.10em]"
                               >
-                                Verified
+                                VERIFIED
                               </div>
                             </div>
                           </div>
@@ -537,7 +556,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Equinet Academy
                           </div>
                           <div
-                            className="flex flex-row gap-2 flex-wrap"
+                            className="flex flex-row gap-x-2 flex-wrap items-center"
                           >
                             <div
                               className="c6"
@@ -580,7 +599,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             National University of Singapore
                           </div>
                           <div
-                            className="flex flex-row gap-2 flex-wrap"
+                            className="flex flex-row gap-x-2 flex-wrap items-center"
                           >
                             <div
                               className="c6"
@@ -589,14 +608,14 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               2010
                             </div>
                             <div
-                              className="flex flex-row"
+                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
                             >
                               <div
                                 className="pt-0.5"
                               >
                                 <img
                                   alt="Verified icon"
-                                  src="icon-shield-keyhole.png"
+                                  src="icon-shield-checkmark.png"
                                   style={
                                     Object {
                                       "height": "16px",
@@ -606,9 +625,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 />
                               </div>
                               <div
-                                className="c5 leading-5"
+                                className="text-xs font-semibold tracking-[0.10em]"
                               >
-                                Verified
+                                VERIFIED
                               </div>
                             </div>
                           </div>
@@ -626,7 +645,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             SEAB
                           </div>
                           <div
-                            className="flex flex-row gap-2 flex-wrap"
+                            className="flex flex-row gap-x-2 flex-wrap items-center"
                           >
                             <div
                               className="c6"
@@ -635,14 +654,14 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               May 2014
                             </div>
                             <div
-                              className="flex flex-row"
+                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
                             >
                               <div
                                 className="pt-0.5"
                               >
                                 <img
                                   alt="Verified icon"
-                                  src="icon-shield-keyhole.png"
+                                  src="icon-shield-checkmark.png"
                                   style={
                                     Object {
                                       "height": "16px",
@@ -652,9 +671,9 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 />
                               </div>
                               <div
-                                className="c5 leading-5"
+                                className="text-xs font-semibold tracking-[0.10em]"
                               >
-                                Verified
+                                VERIFIED
                               </div>
                             </div>
                           </div>
@@ -686,7 +705,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             <div
                               className="c6 leading-5"
                             >
-                              Find out more about Career and Skills Passport and its verified information
+                              Find out more about Careers & Skills Passport and its verified information
                             </div>
                           </div>
                           <div
@@ -754,7 +773,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               <div
                                 className="c5"
                               >
-                                For more information on Career and Skills Passport, please visit https://www.myskillsfuture.gov.sg/content/portal/en/index.html
+                                For more information on Careers & Skills Passport, please visit https://www.myskillsfuture.gov.sg/content/portal/en/index.html
                               </div>
                             </div>
                           </div>
@@ -774,33 +793,22 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                       className="px-4 md:px-16"
                     >
                       <div
-                        className="flex flex-row items-center gap-1 py-1 content-center "
+                        className="flex flex-row items-start gap-1 py-1 content-center "
                       >
                         <img
                           alt="Info icon"
+                          className="w-[16px] h-[16px] mt-0.5"
                           src="icon-info.png"
-                          style={
-                            Object {
-                              "height": "16px",
-                              "width": "16px",
-                            }
-                          }
                         />
                         <div
                           className="c6 leading-5"
                         >
-                          Find out more about Career and Skills Passport and its verified information
+                          Find out more about Careers & Skills Passport and its verified information
                         </div>
                         <img
                           alt="Chevron icon"
-                          className="rotate-180"
+                          className="w-[16px] h-[16px] mt-0.5 origin-center rotate-180"
                           src="icon-chevron-down.png"
-                          style={
-                            Object {
-                              "height": "16px",
-                              "width": "16px",
-                            }
-                          }
                         />
                       </div>
                       <div
@@ -885,7 +893,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                                 <div
                                   className="c5"
                                 >
-                                  For more information on Career and Skills Passport,
+                                  For more information on Careers & Skills Passport,
                                    
                                   <a
                                     href="https://www.myskillsfuture.gov.sg/content/portal/en/index.html"
