@@ -15,7 +15,7 @@ export const sample: GovtechDigitalAcademyCertificateOfCompletionSmartnationOaDo
         issueDate: '2024-02-21',
         signeeName: 'Joseph Leong',
         signeeDesignation: 'Permanent Secretary',
-        signeeOrganisation: 'Smart Nation and Digital Government Group',
+        signeeOrganisation: 'Smart Nation',
         signeeSignature:
             'joseph-leong-signature&6bb7c9981a0e17da0609cf3722b244af0006e585d7dc5a293f2383689303672d.png',
         issuers: [

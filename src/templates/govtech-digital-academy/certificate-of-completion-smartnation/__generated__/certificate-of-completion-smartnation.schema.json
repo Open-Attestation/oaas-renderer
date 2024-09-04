@@ -60,8 +60,11 @@
         "signeeOrganisation": {
             "type": "string",
             "description": "Organisation of signee",
-            "enum": ["Smart Nation and Digital Government Group"],
-            "examples": ["Smart Nation and Digital Government Group"]
+            "enum": [
+                "Smart Nation",
+                "Smart Nation and Digital Government Group"
+            ],
+            "examples": ["Smart Nation"]
         },
         "signeeSignature": {
             "type": "string",
