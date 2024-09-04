@@ -2,4 +2,4 @@
   publish = "build/"
 
   # Default build command.
-  command = "export REACT_APP_RENDERER_VERSION=for-testing_v0.0.16; CI=false npm run build for-testing"
+  command = "export REACT_APP_RENDERER_VERSION=for-testing_v0.0.17; CI=false npm run build for-testing"

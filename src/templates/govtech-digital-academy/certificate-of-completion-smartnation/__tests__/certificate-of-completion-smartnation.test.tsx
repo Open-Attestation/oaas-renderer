@@ -328,7 +328,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate', () =
                   Permanent Secretary
                   ,
                   <br />
-                  Smart Nation and Digital Government Group
+                  Smart Nation
                 </div>
                 <div
                   className="c13"

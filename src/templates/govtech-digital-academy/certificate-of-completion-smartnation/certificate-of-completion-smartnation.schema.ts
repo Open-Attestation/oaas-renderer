@@ -61,8 +61,11 @@ export default {
         ),
         signeeOrganisation: makeEnumString(
             'Organisation of signee',
-            ['Smart Nation and Digital Government Group'] as const,
-            'Smart Nation and Digital Government Group'
+            [
+                'Smart Nation',
+                'Smart Nation and Digital Government Group',
+            ] as const,
+            'Smart Nation'
         ),
         signeeSignature: {
             type: 'string',
