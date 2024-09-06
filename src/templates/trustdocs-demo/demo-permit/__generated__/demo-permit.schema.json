@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "TrustdocsDemo/DemoPermit",
+    "type": "object",
+    "required": [
+        "name",
+        "effectiveDate",
+        "expiryDate",
+        "addressLineOne",
+        "addressLineTwo"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of recipient",
+            "examples": ["Tan Chen Chen, Orange"],
+            "minLength": 1,
+            "maxLength": 35
+        },
+        "effectiveDate": {
+            "type": "string",
+            "description": "Effective date of permit",
+            "examples": ["2024-08-20"],
+            "format": "date"
+        },
+        "expiryDate": {
+            "type": "string",
+            "description": "Expiry date of permit",
+            "examples": ["2030-04-20"],
+            "format": "date"
+        },
+        "addressLineOne": {
+            "type": "string",
+            "description": "Address line 1",
+            "examples": ["ECLIPSE,"],
+            "minLength": 1,
+            "maxLength": 58
+        },
+        "addressLineTwo": {
+            "type": "string",
+            "description": "Address line 2",
+            "examples": ["1 Fusionopolis View, Singapore, 138577"],
+            "minLength": 1,
+            "maxLength": 58
+        },
+        "logo_image": {
+            "type": "string",
+            "description": "base64 data uri of logo image, but filename if it is excel upload flow",
+            "examples": ["example.png"]
+        }
+    },
+    "additionalProperties": false
+}

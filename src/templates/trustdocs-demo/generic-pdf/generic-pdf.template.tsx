@@ -2,6 +2,7 @@ import React, { FunctionComponent, ReactNode, useState } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import { TrustdocsDemoGenericPdfOaDoc } from './generic-pdf.types'
 import { Helmet } from 'react-helmet-async'
+import 'react-pdf/dist/Page/TextLayer.css'
 
 import 'pdfjs-dist/build/pdf.worker.entry'
 import { Document as PDFDocument, Page, pdfjs } from 'react-pdf'
@@ -30,12 +31,14 @@ export const TrustdocsDemoGenericPdfTemplate: FunctionComponent<
 
     for (let i = 0; i < (numPages ?? 0); i++) {
         renderedPdfPages.push(
-            <Page
-                key={i}
-                loading={<LoadingComponent />}
-                pageNumber={i + 1}
-                width={794}
-            />
+            <div className="border border-gray-200 w-[21cm] h-[29.7cm] overflow-clip">
+                <Page
+                    key={i}
+                    loading={<LoadingComponent />}
+                    pageNumber={i + 1}
+                    width={794}
+                />
+            </div>
         )
     }
 
