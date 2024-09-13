@@ -133,7 +133,7 @@ export const GovtechDigitalAcademyCertificateOfAchievement_2SigneesTemplate: Fun
                                 </div>
                                 <div className="w-[280px] h-[100px] mt-[6px] flex flex-col justify-end">
                                     <img
-                                        className="max-w-[280px] max-h-[100px]"
+                                        className="max-w-[280px] max-h-[100px] object-scale-down"
                                         src={document.partnerLogo_image}
                                         alt="Signature of signee one"
                                     />
@@ -141,7 +141,7 @@ export const GovtechDigitalAcademyCertificateOfAchievement_2SigneesTemplate: Fun
                             </div>
                         )}
                         <div className="absolute h-[19px] bottom-[27px] left-[43px] text-[16px] leading-[19.2px] font-normal text-[#FFFFFF]">
-                            Dates of Issue: {issueDate}
+                            Date of Issue: {issueDate}
                         </div>
                     </A4Landscape>
                 </Typography>

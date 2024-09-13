@@ -106,7 +106,7 @@ export const GovtechDigitalAcademyCertificateOfParticipationV2_1SigneeTemplate: 
                         </div>
 
                         <div className="absolute h-[19px] bottom-[27px] left-[43px] text-[16px] leading-[19.2px] font-normal text-[#FFFFFF]">
-                            Dates of Issue: {issueDate}
+                            Date of Issue: {issueDate}
                         </div>
                     </A4Landscape>
                 </Typography>

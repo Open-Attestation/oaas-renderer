@@ -5,15 +5,7 @@ import { Helmet } from 'react-helmet-async'
 import { addLetterhead } from './add-letterhead'
 import { letterHeadPngBase64 } from './letterhead'
 
-import { pdfjs, Document, Page } from 'react-pdf'
-import 'react-pdf/dist/Page/AnnotationLayer.css'
-import 'react-pdf/dist/Page/TextLayer.css'
-
-import 'pdfjs-dist/build/pdf.worker.entry'
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.js',
-    import.meta.url
-).toString()
+import { ScaleToViewportPage, ScaleToViewportPdfDocument } from 'components/scale-to-viewport-pdf'
 
 export const ForTestingPdfLetterheadTemplate: FunctionComponent<
     TemplateProps<ForTestingPdfLetterheadOaDoc> & { className?: string }
@@ -41,19 +33,17 @@ export const ForTestingPdfLetterheadTemplate: FunctionComponent<
             <Helmet>
                 <title>for-testing - pdf-letterhead</title>
             </Helmet>
-            {(!pdf || !numPages) && <>Rendering...</>}
             <div className={className} id="for-testing-pdf-letterhead">
                 {pdf && (
                     <>
-                        <Document
+                        <ScaleToViewportPdfDocument
                             file={pdf}
-                            loading={<></>}
                             onLoadSuccess={onDocumentLoadSuccess}
                         >
                             {new Array(numPages).fill(1).map((_, i) => (
-                                <Page key={i} pageNumber={i + 1} />
+                                <ScaleToViewportPage key={i} pageNumber={i + 1} />
                             ))}
-                        </Document>
+                        </ScaleToViewportPdfDocument>
                     </>
                 )}
             </div>

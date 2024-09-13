@@ -156,7 +156,7 @@ describe('GovtechDigitalAcademyCertificateOfAchievement_1SigneeTemplate', () => 
                   <div
                     className="absolute h-[19px] bottom-[27px] left-[43px] text-[16px] leading-[19.2px] font-normal text-[#FFFFFF]"
                   >
-                    Dates of Issue: 
+                    Date of Issue: 
                     10 May 2022
                   </div>
                 </div>
