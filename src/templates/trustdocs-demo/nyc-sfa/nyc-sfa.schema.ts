@@ -1,0 +1,53 @@
+import { JSONSchema } from 'json-schema-to-typescript'
+
+import { getEnumValues } from '../common/assets/__generated__/images-enum-values'
+
+export default {
+    $schema: 'http://json-schema.org/draft-07/schema#',
+    $id: 'TrustdocsDemo/NycSfa',
+    type: 'object',
+    required: [
+        'name',
+        'issueDate',
+        'ciName',
+        'ciSignature',
+        'certificateNumber',
+    ],
+    properties: {
+        name: {
+            type: 'string',
+            examples: ['SAMPLE_NAME1'],
+            minLength: 1,
+        },
+        issueDate: {
+            type: 'string',
+            format: 'date',
+            description: 'Issuance date of the certificate',
+            examples: ['2022-12-31'],
+        },
+        ciName: {
+            type: 'string',
+            description: 'Name of trainer',
+            enum: ['Sample_name2'],
+            examples: ['Sample_name2'],
+            minLength: 1,
+        },
+        ciSignature: {
+            type: 'string',
+            description: "CI's signature",
+            enum: getEnumValues([
+                'demo_signature&73dc9d9d6712302c945fbb91d91cc65ef20f6b0d60a0665defbf7d418a506d33.png',
+            ]),
+            examples: getEnumValues([
+                'demo_signature&73dc9d9d6712302c945fbb91d91cc65ef20f6b0d60a0665defbf7d418a506d33.png',
+            ]),
+        },
+        certificateNumber: {
+            type: 'string',
+            description: 'Certificate number',
+            examples: ['XXXXX-0000-000'],
+            minLength: 1,
+        },
+    },
+    additionalProperties: false,
+} as JSONSchema

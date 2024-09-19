@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Govtech/Stack_2024CertificateOfCompletion",
+    "type": "object",
+    "required": [
+        "name",
+        "workshopTitle",
+        "trainerName",
+        "organisation",
+        "signature_image"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of recipient",
+            "examples": ["Tan Chen Chen, Orange"],
+            "minLength": 1,
+            "maxLength": 30
+        },
+        "workshopTitle": {
+            "type": "string",
+            "description": "Workshop's title",
+            "examples": ["Workshop Title"],
+            "minLength": 1,
+            "maxLength": 40
+        },
+        "trainerName": {
+            "type": "string",
+            "description": "Trainer Name",
+            "examples": ["Christopher Tan"],
+            "minLength": 1,
+            "maxLength": 30
+        },
+        "organisation": {
+            "type": "string",
+            "description": "Organisation",
+            "examples": ["Ministry of Magic"],
+            "minLength": 1,
+            "maxLength": 30
+        },
+        "signature_image": {
+            "type": "string",
+            "description": "Filename of signature",
+            "examples": ["signature.png"],
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}

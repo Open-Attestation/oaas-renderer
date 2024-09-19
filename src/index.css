@@ -1,0 +1,17 @@
+@import-normalize; /* bring in normalize.css styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+@media print {
+    body {
+        margin: 0;
+    }
+}
