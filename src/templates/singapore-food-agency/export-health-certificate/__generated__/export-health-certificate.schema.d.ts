@@ -6,563 +6,563 @@
  */
 
 export interface SingaporeFoodAgencyExportHealthCertificate {
-  /**
-   * Certificate Number
-   */
-  certificateNumber: string;
-  /**
-   * Exporting Country
-   */
-  exportingCountry: "SINGAPORE";
-  /**
-   * @minItems 1
-   * @maxItems 5
-   */
-  products:
-    | [
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        },
-        {
-          /**
-           * Product description
-           */
-          description: string;
-          /**
-           * Product brand
-           */
-          brand: string;
-          /**
-           * Product Code/Batch No./ Lot No.
-           */
-          codeOrBatchNoOrLotNo: string;
-          /**
-           * Number & Type of Packages
-           */
-          numberAndTypeOfPackages: string;
-          /**
-           * Net weight(Gross Weight)
-           */
-          netWeight: string;
-          /**
-           * Production date in YYYY-MM-DD
-           */
-          productionDate: string;
-          /**
-           * Expiry date in YYYY-MM-DD
-           */
-          expiryDate: string;
-        }
-      ];
-  /**
-   * Means of Transport
-   */
-  meansOfTransport: string;
-  /**
-   * Vessel Name/Flight Number
-   */
-  vesselNameFlightNumber: string;
-  /**
-   * Container No.
-   */
-  containerNo: string;
-  /**
-   * Seal No.
-   */
-  sealNo: string;
-  /**
-   * Estimated time of departure in YYYY-MM-DD
-   */
-  etd: string;
-  /**
-   * Place of Dispatch
-   */
-  placeOfDispatch: string;
-  /**
-   * Shipping Marks
-   */
-  shippingMarks: string;
-  /**
-   * Shipping Marks
-   */
-  remarks: string;
-  originAndProvenence: {
     /**
-     * Name and Address of Manufacturer
+     * Certificate Number
      */
-    nameAddressOfManufacturer: string;
+    certificateNumber: string
     /**
-     * Processing Premise License No.
+     * Exporting Country
      */
-    processingPremiseLicenseNo: string;
+    exportingCountry: 'SINGAPORE'
     /**
-     * Name and Address of Consignor
+     * @minItems 1
+     * @maxItems 5
      */
-    nameAddressOfConsignor: string;
+    products:
+        | [
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              },
+              {
+                  /**
+                   * Product description
+                   */
+                  description: string
+                  /**
+                   * Product brand
+                   */
+                  brand: string
+                  /**
+                   * Product Code/Batch No./ Lot No.
+                   */
+                  codeOrBatchNoOrLotNo: string
+                  /**
+                   * Number & Type of Packages
+                   */
+                  numberAndTypeOfPackages: string
+                  /**
+                   * Net weight(Gross Weight)
+                   */
+                  netWeight: string
+                  /**
+                   * Production date in YYYY-MM-DD
+                   */
+                  productionDate: string
+                  /**
+                   * Expiry date in YYYY-MM-DD
+                   */
+                  expiryDate: string
+              }
+          ]
     /**
-     * Date of inspection in YYYY-MM-DD
+     * Means of Transport
      */
-    dateOfInspection: string;
-  };
-  destination: {
+    meansOfTransport: string
     /**
-     * Country/Region of Destination
+     * Vessel Name/Flight Number
      */
-    countryRegionOfDestination: string;
+    vesselNameFlightNumber: string
     /**
-     * Name and Address of Consignee
+     * Container No.
      */
-    nameAddressOfConsigee: string;
+    containerNo: string
     /**
-     * Import Permit No.
+     * Seal No.
      */
-    importPermitNo: string;
+    sealNo: string
     /**
-     * Purpose
+     * Estimated time of departure in YYYY-MM-DD
      */
-    purpose: string;
-  };
-  attestation: {
+    etd: string
     /**
-     * Laboratory results
+     * Place of Dispatch
      */
-    laboratoryResults: string;
-  };
-  /**
-   * Issued in Singapore date in YYYY-MM-DD
-   */
-  issuedInSingaporeDate: string;
-  /**
-   * Name of signee
-   */
-  signeeName: string;
-  /**
-   * Signature of signee
-   */
-  signeeSignature_image: string;
+    placeOfDispatch: string
+    /**
+     * Shipping Marks
+     */
+    shippingMarks: string
+    /**
+     * Shipping Marks
+     */
+    remarks: string
+    originAndProvenence: {
+        /**
+         * Name and Address of Manufacturer
+         */
+        nameAddressOfManufacturer: string
+        /**
+         * Processing Premise License No.
+         */
+        processingPremiseLicenseNo: string
+        /**
+         * Name and Address of Consignor
+         */
+        nameAddressOfConsignor: string
+        /**
+         * Date of inspection in YYYY-MM-DD
+         */
+        dateOfInspection: string
+    }
+    destination: {
+        /**
+         * Country/Region of Destination
+         */
+        countryRegionOfDestination: string
+        /**
+         * Name and Address of Consignee
+         */
+        nameAddressOfConsigee: string
+        /**
+         * Import Permit No.
+         */
+        importPermitNo: string
+        /**
+         * Purpose
+         */
+        purpose: string
+    }
+    attestation: {
+        /**
+         * Laboratory results
+         */
+        laboratoryResults: string
+    }
+    /**
+     * Issued in Singapore date in YYYY-MM-DD
+     */
+    issuedInSingaporeDate: string
+    /**
+     * Name of signee
+     */
+    signeeName: string
+    /**
+     * Signature of signee
+     */
+    signeeSignature_image: string
 }

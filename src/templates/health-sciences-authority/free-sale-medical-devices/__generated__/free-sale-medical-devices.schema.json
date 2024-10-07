@@ -20,89 +20,67 @@
         "DateOfIssue": {
             "type": "string",
             "description": "Date of Issue in YYYY-MM-DD",
-            "examples": [
-                "2023-12-31"
-            ],
+            "examples": ["2023-12-31"],
             "format": "date"
         },
         "certificateNumber": {
             "type": "string",
             "description": "Certificate Number",
-            "examples": [
-                "FSC/258/2023"
-            ],
+            "examples": ["FSC/258/2023"],
             "minLength": 1
         },
         "manufacturingSiteName": {
             "type": "string",
             "description": "Manufacturing Site name",
-            "examples": [
-                "GMC INC"
-            ],
+            "examples": ["GMC INC"],
             "minLength": 1
         },
         "manufacturingSiteAddress": {
             "type": "string",
             "description": "Manufacturing Site address",
-            "examples": [
-                "NO.686, SU CHU RD, CHUZHOU, ANHUI, CHINA"
-            ],
+            "examples": ["NO.686, SU CHU RD, CHUZHOU, ANHUI, CHINA"],
             "minLength": 1
         },
         "productOwnerName": {
             "type": "string",
             "description": "Product owner name",
-            "examples": [
-                "ROSSMAX SWISS GMBH"
-            ],
+            "examples": ["ROSSMAX SWISS GMBH"],
             "minLength": 1
         },
         "productOwnerAddress": {
             "type": "string",
             "description": "Product owner address",
-            "examples": [
-                "WIDNAUERSTRASSE 1, CH-9435, HEERBRUGG, SWITZERLAND"
-            ],
+            "examples": ["WIDNAUERSTRASSE 1, CH-9435, HEERBRUGG, SWITZERLAND"],
             "minLength": 1
         },
         "registrantName": {
             "type": "string",
             "description": "Registrant name",
-            "examples": [
-                "BION ADVANCE PTE. LTD"
-            ],
+            "examples": ["BION ADVANCE PTE. LTD"],
             "minLength": 1
         },
         "registrantAddress": {
             "type": "string",
             "description": "Registrant address",
-            "examples": [
-                "35 PIONEER ROAD NORTH, #02-03 SINGAPORE 628475"
-            ],
+            "examples": ["35 PIONEER ROAD NORTH, #02-03 SINGAPORE 628475"],
             "minLength": 1
         },
         "signature_image": {
             "type": "string",
             "description": "Signature of signatory",
-            "examples": [
-                "signature.png"
-            ],
+            "examples": ["signature.png"],
             "minLength": 1
         },
         "signatoryName": {
             "type": "string",
             "description": "Signature of signatory",
-            "examples": [
-                "DR LAKSHMIDEVI BALAKRISHNAN"
-            ],
+            "examples": ["DR LAKSHMIDEVI BALAKRISHNAN"],
             "minLength": 1
         },
         "signatoryTitle": {
             "type": "string",
             "description": "Title of signatory",
-            "examples": [
-                "REGULATORY CONSULTANT"
-            ],
+            "examples": ["REGULATORY CONSULTANT"],
             "minLength": 1
         },
         "schedule": {
@@ -140,26 +118,19 @@
                         "minItems": 1,
                         "items": {
                             "type": "object",
-                            "required": [
-                                "modelOrDescription",
-                                "productNumber"
-                            ],
+                            "required": ["modelOrDescription", "productNumber"],
                             "additionalProperties": false,
                             "properties": {
                                 "modelOrDescription": {
                                     "type": "string",
                                     "description": "Model/ Description",
-                                    "examples": [
-                                        "Rossmax CF155f"
-                                    ],
+                                    "examples": ["Rossmax CF155f"],
                                     "minLength": 1
                                 },
                                 "productNumber": {
                                     "type": "string",
                                     "description": "Product number",
-                                    "examples": [
-                                        "CF155f"
-                                    ],
+                                    "examples": ["CF155f"],
                                     "minLength": 1
                                 }
                             }

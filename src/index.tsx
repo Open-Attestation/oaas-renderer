@@ -1,13 +1,12 @@
 import './index.css'
 
 import { FramedDocumentRenderer } from '@govtechsg/decentralized-renderer-react-components'
+// @ts-ignore
 import { registry } from '__development__/combined-registry'
 import { csp } from 'content-security-policies'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-
-// @ts-ignore
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 

@@ -6,2207 +6,2207 @@
  */
 
 export interface HealthSciencesAuthorityFreeSale {
-  /**
-   * certificate number
-   */
-  certNumber: string;
-  /**
-   * type of medicinal product
-   */
-  typeOfMedicinalProduct: string;
-  /**
-   * name of manufacturer
-   */
-  manufacturerName: string;
-  /**
-   * name of manufacturer
-   */
-  manufacturerAddress: string;
-  /**
-   * name of local distributor
-   */
-  distributorName: string;
-  /**
-   * name of local distributor
-   */
-  distributorAddress: string;
-  /**
-   * date of issue
-   */
-  dateOfIssue: string;
-  /**
-   * file name of uploaded image
-   */
-  signature_image: string;
-  /**
-   * designation of Signee
-   */
-  designationOfSignee: string;
-  /**
-   * product name in english
-   */
-  productName: string;
-  /**
-   * brand name
-   */
-  brandName: string;
-  /**
-   * intended use
-   */
-  intendedUse: string;
-  /**
-   * @minItems 1
-   * @maxItems 5
-   */
-  countries:
-    | [string]
-    | [string, string]
-    | [string, string, string]
-    | [string, string, string, string]
-    | [string, string, string, string, string];
-  /**
-   * @minItems 1
-   * @maxItems 20
-   */
-  ingredients:
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ]
-    | [
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        },
-        {
-          /**
-           * name of ingredient
-           */
-          name: string;
-          /**
-           * amount of ingredient
-           */
-          strength: string;
-        }
-      ];
+    /**
+     * certificate number
+     */
+    certNumber: string
+    /**
+     * type of medicinal product
+     */
+    typeOfMedicinalProduct: string
+    /**
+     * name of manufacturer
+     */
+    manufacturerName: string
+    /**
+     * name of manufacturer
+     */
+    manufacturerAddress: string
+    /**
+     * name of local distributor
+     */
+    distributorName: string
+    /**
+     * name of local distributor
+     */
+    distributorAddress: string
+    /**
+     * date of issue
+     */
+    dateOfIssue: string
+    /**
+     * file name of uploaded image
+     */
+    signature_image: string
+    /**
+     * designation of Signee
+     */
+    designationOfSignee: string
+    /**
+     * product name in english
+     */
+    productName: string
+    /**
+     * brand name
+     */
+    brandName: string
+    /**
+     * intended use
+     */
+    intendedUse: string
+    /**
+     * @minItems 1
+     * @maxItems 5
+     */
+    countries:
+        | [string]
+        | [string, string]
+        | [string, string, string]
+        | [string, string, string, string]
+        | [string, string, string, string, string]
+    /**
+     * @minItems 1
+     * @maxItems 20
+     */
+    ingredients:
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
+        | [
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              },
+              {
+                  /**
+                   * name of ingredient
+                   */
+                  name: string
+                  /**
+                   * amount of ingredient
+                   */
+                  strength: string
+              }
+          ]
 }

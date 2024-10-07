@@ -22,97 +22,73 @@
         "certNumber": {
             "type": "string",
             "description": "certificate number",
-            "examples": [
-                "MCEL2300000M"
-            ],
+            "examples": ["MCEL2300000M"],
             "minLength": 1
         },
         "typeOfMedicinalProduct": {
             "type": "string",
             "description": "type of medicinal product",
-            "examples": [
-                "Traditional Medicine"
-            ],
+            "examples": ["Traditional Medicine"],
             "minLength": 1
         },
         "manufacturerName": {
             "type": "string",
             "description": "name of manufacturer",
-            "examples": [
-                "Example Company A Pte Ltd"
-            ],
+            "examples": ["Example Company A Pte Ltd"],
             "minLength": 1
         },
         "manufacturerAddress": {
             "type": "string",
             "description": "name of manufacturer",
-            "examples": [
-                "123 Canberra, 01-01 Office A, Singapore 123456"
-            ],
+            "examples": ["123 Canberra, 01-01 Office A, Singapore 123456"],
             "minLength": 1
         },
         "distributorName": {
             "type": "string",
             "description": "name of local distributor",
-            "examples": [
-                "Example Company B Pte Ltd"
-            ],
+            "examples": ["Example Company B Pte Ltd"],
             "minLength": 1
         },
         "distributorAddress": {
             "type": "string",
             "description": "name of local distributor",
-            "examples": [
-                "123 Canberra, 02-02 Office B, Singapore 123457"
-            ],
+            "examples": ["123 Canberra, 02-02 Office B, Singapore 123457"],
             "minLength": 1
         },
         "dateOfIssue": {
             "type": "string",
             "description": "date of issue",
-            "examples": [
-                "2023-01-01"
-            ],
+            "examples": ["2023-01-01"],
             "format": "date"
         },
         "signature_image": {
             "type": "string",
             "description": "file name of uploaded image",
-            "examples": [
-                "signature.png"
-            ],
+            "examples": ["signature.png"],
             "minLength": 1
         },
         "designationOfSignee": {
             "type": "string",
             "description": "designation of Signee",
-            "examples": [
-                "Regulatory Consultant"
-            ],
+            "examples": ["Regulatory Consultant"],
             "minLength": 1
         },
         "productName": {
             "type": "string",
             "description": "product name in english",
-            "examples": [
-                "Aloe balm body care"
-            ],
+            "examples": ["Aloe balm body care"],
             "minLength": 1
         },
         "brandName": {
             "type": "string",
             "description": "brand name",
-            "examples": [
-                "Aloe Balm Body Care"
-            ],
+            "examples": ["Aloe Balm Body Care"],
             "minLength": 1
         },
         "intendedUse": {
             "type": "string",
             "description": "intended use",
-            "examples": [
-                "External use on skin"
-            ],
+            "examples": ["External use on skin"],
             "minLength": 1
         },
         "countries": {
@@ -122,9 +98,7 @@
             "items": {
                 "type": "string",
                 "description": "country name",
-                "examples": [
-                    "SPAIN"
-                ]
+                "examples": ["SPAIN"]
             }
         },
         "ingredients": {
@@ -134,25 +108,18 @@
             "items": {
                 "type": "object",
                 "additionalProperties": false,
-                "required": [
-                    "name",
-                    "strength"
-                ],
+                "required": ["name", "strength"],
                 "properties": {
                     "name": {
                         "type": "string",
                         "description": "name of ingredient",
-                        "examples": [
-                            "Lanolin"
-                        ],
+                        "examples": ["Lanolin"],
                         "minLength": 1
                     },
                     "strength": {
                         "type": "string",
                         "description": "amount of ingredient",
-                        "examples": [
-                            "500mg"
-                        ],
+                        "examples": ["500mg"],
                         "minLength": 1
                     }
                 }
