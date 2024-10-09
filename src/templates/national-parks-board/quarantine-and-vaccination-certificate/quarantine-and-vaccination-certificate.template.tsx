@@ -1,16 +1,17 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalParksBoardQuarantineAndVaccinationCertificateOaDoc } from './quarantine-and-vaccination-certificate.types'
-import styled from 'styled-components'
-import { Helmet } from 'react-helmet-async'
-import { A4R, size } from 'components/paper-size'
 import { FlexBox } from 'components/flexbox'
+import { A4R, size } from 'components/paper-size'
 import { makeTypography } from 'components/typography/makeTypography'
 import { DateTime } from 'luxon'
-import logoImgSrc from './animal-vet-service-logo.jpg'
-import addressImgSrc from './animal-vet-service-address.png'
 import { QRCodeSVG } from 'qrcode.react'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
 import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
+
+import addressImgSrc from './animal-vet-service-address.png'
+import logoImgSrc from './animal-vet-service-logo.jpg'
+import { NationalParksBoardQuarantineAndVaccinationCertificateOaDoc } from './quarantine-and-vaccination-certificate.types'
 
 const TemplateContainer = styled.div`
     font-family: Arial, Helvetica, sans-serif;

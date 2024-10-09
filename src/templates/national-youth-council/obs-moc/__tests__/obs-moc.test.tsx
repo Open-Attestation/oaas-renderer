@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilObsMocTemplate } from '../obs-moc.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../obs-moc.sample'
+import { NationalYouthCouncilObsMocTemplate } from '../obs-moc.template'
 
 describe('NationalYouthCouncilObsMocTemplate', () => {
     it('should match snapshot', () => {
@@ -61,6 +62,16 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
               background-size: cover;
               background-image: url('description-watermark.png');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
             }
 
             .c14 {
@@ -234,16 +245,6 @@ describe('NationalYouthCouncilObsMocTemplate', () => {
             .c21 {
               font-size: 16px;
               font-family: 'Libre Franklin';
-            }
-
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 2261px;
             }
 
             @media print {

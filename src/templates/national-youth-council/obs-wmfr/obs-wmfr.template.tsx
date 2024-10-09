@@ -1,17 +1,17 @@
-import { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilObsWmfrOaDoc } from './obs-wmfr.types'
-import { DateTime } from 'luxon'
-import { Helmet } from 'react-helmet-async'
-
-import { Root } from './obs-wmfr.components'
-import imagesMap from '../common/assets/__generated__/images-map'
-import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
-import { Typography } from '../common/components'
 import { FlexBox } from 'components/flexbox'
 import { A4HeightPx, A4WidthPx } from 'components/paper-size'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { DateTime } from 'luxon'
+import { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import imagesMap from '../common/assets/__generated__/images-map'
+import { Typography } from '../common/components'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { Root } from './obs-wmfr.components'
+import { NationalYouthCouncilObsWmfrOaDoc } from './obs-wmfr.types'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx

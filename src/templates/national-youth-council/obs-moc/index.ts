@@ -1,5 +1,5 @@
-import { NationalYouthCouncilObsMocTemplate } from './obs-moc.template'
 import { NationalYouthCouncilObsMocPhotoTemplate } from './obs-moc-photo.template'
+import { NationalYouthCouncilObsMocTemplate } from './obs-moc.template'
 
 export const nationalYouthCouncilObsMocTemplates = [
     {

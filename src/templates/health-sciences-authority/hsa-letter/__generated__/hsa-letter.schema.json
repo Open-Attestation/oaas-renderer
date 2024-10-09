@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "HealthSciencesAuthority/HsaLetter",
+    "type": "object",
+    "required": ["organisationName", "letter_pdf"],
+    "properties": {
+        "organisationName": {
+            "type": "string",
+            "description": "Name of Organisation",
+            "examples": ["ABC PTE LTD"],
+            "minLength": 1
+        },
+        "letter_pdf": {
+            "type": "string",
+            "description": "Letter content",
+            "examples": ["letter.pdf"],
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}

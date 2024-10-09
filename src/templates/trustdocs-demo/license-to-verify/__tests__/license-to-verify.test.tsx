@@ -1,8 +1,8 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { TrustdocsDemoLicenseToVerifyTemplate } from '../license-to-verify.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../license-to-verify.sample'
+import { TrustdocsDemoLicenseToVerifyTemplate } from '../license-to-verify.template'
 
 describe('TrustdocsDemoLicenseToVerifyTemplate', () => {
     it('should match snapshot', () => {

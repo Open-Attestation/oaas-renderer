@@ -8,12 +8,17 @@ export function makeDateType(description: string, example = '2023-12-31') {
     }
 }
 
-export function makeRequiredString(description: string, example: string) {
+export function makeRequiredString(
+    description: string,
+    example: string,
+    maxLength?: number
+) {
     return {
         type: 'string',
         description,
         examples: [example],
         minLength: 1,
+        ...(maxLength !== undefined && { maxLength }),
     }
 }
 

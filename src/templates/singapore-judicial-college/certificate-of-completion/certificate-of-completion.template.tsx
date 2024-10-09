@@ -1,10 +1,11 @@
-import { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { SingaporeJudicialCollegeCertificateOfCompletionOaDoc } from './certificate-of-completion.types'
-import { Helmet } from 'react-helmet-async'
-import { formatCourseDatefor } from '../common/utils'
 import { A4 } from 'components/paper-size'
+import { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import imagesMap from '../common/assets/__generated__/images-map'
 import portraitBg from '../common/assets/sjc_bg.png'
+import { formatCourseDatefor } from '../common/utils'
 import {
     AwardedToComponent,
     CertificateComponent,
@@ -20,7 +21,7 @@ import {
     SjcComponent,
     SupremeCourtComponent,
 } from './certificate-of-completion.components'
-import imagesMap from '../common/assets/__generated__/images-map'
+import { SingaporeJudicialCollegeCertificateOfCompletionOaDoc } from './certificate-of-completion.types'
 
 export const SingaporeJudicialCollegeCertificateOfCompletionTemplate: FunctionComponent<
     TemplateProps<SingaporeJudicialCollegeCertificateOfCompletionOaDoc> & {
@@ -86,7 +87,7 @@ export const SingaporeJudicialCollegeCertificateOfCompletionTemplate: FunctionCo
                         <br />
                         {document.signeeDesignation}
                         <br />
-                        Republic of Singapore
+                        Singapore Judicial College
                     </SigneeComponent>
                 </FooterComponent>
             </A4>

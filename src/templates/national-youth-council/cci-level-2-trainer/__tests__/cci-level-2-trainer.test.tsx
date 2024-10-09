@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilCciLevel_2TrainerTemplate } from '../cci-level-2-trainer.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../cci-level-2-trainer.sample'
+import { NationalYouthCouncilCciLevel_2TrainerTemplate } from '../cci-level-2-trainer.template'
 
 describe('NationalYouthCouncilCciLevel_2TrainerTemplate', () => {
     it('should match snapshot', () => {
@@ -58,40 +59,6 @@ describe('NationalYouthCouncilCciLevel_2TrainerTemplate', () => {
               margin-bottom: 8px;
             }
 
-            .c2 {
-              min-width: 500px;
-            }
-
-            .c22 {
-              padding-left: 0px;
-              margin-left: 18px;
-              margin-top: 0px;
-              margin-bottom: 0px;
-            }
-
-            .c24 {
-              list-style-type: none;
-              padding-left: 0px;
-              margin-left: 18px;
-              margin-top: 0px;
-              margin-bottom: 0px;
-            }
-
-            .c24 li {
-              text-indent: 5px;
-              margin-top: 10px;
-            }
-
-            .c24 li:before {
-              content: '-';
-              text-indent: 5px;
-            }
-
-            .c24 li span {
-              position: relative;
-              left: 20px;
-            }
-
             .c3 {
               background: white;
               position: relative;
@@ -118,6 +85,16 @@ describe('NationalYouthCouncilCciLevel_2TrainerTemplate', () => {
               background-size: cover;
               background-image: url('undefined');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
             }
 
             .c15 {
@@ -283,14 +260,38 @@ describe('NationalYouthCouncilCciLevel_2TrainerTemplate', () => {
               align-items: start;
             }
 
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 2261px;
+            .c2 {
+              min-width: 500px;
+            }
+
+            .c22 {
+              padding-left: 0px;
+              margin-left: 18px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+            }
+
+            .c24 {
+              list-style-type: none;
+              padding-left: 0px;
+              margin-left: 18px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+            }
+
+            .c24 li {
+              text-indent: 5px;
+              margin-top: 10px;
+            }
+
+            .c24 li:before {
+              content: '-';
+              text-indent: 5px;
+            }
+
+            .c24 li span {
+              position: relative;
+              left: 20px;
             }
 
             @media print {

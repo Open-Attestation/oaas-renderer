@@ -1,5 +1,6 @@
 import { JSONSchema } from 'json-schema-to-typescript'
 import { makeEnumString } from 'utils/json-schema-utils'
+
 import * as commonAssets from '../common/assets/__generated__/images-enum-values'
 
 export default {
@@ -61,8 +62,11 @@ export default {
         ),
         signeeOrganisation: makeEnumString(
             'Organisation of signee',
-            ['Smart Nation and Digital Government Group'] as const,
-            'Smart Nation and Digital Government Group'
+            [
+                'Smart Nation',
+                'Smart Nation and Digital Government Group',
+            ] as const,
+            'Smart Nation'
         ),
         signeeSignature: {
             type: 'string',

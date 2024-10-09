@@ -1,16 +1,16 @@
-import React, { FunctionComponent } from 'react'
-import { NationalYouthCouncilGeneralCertificateOaDoc } from './general-certificate.types'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
-
-import { Typography } from '../common/components'
-import commonImagesMap from '../common/assets/__generated__/images-map'
-import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
-import { formatCourseDatefor } from '../common/utils'
 import { A4HeightPx, A4WidthPx } from 'components/paper-size'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import commonImagesMap from '../common/assets/__generated__/images-map'
+import { Typography } from '../common/components'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { formatCourseDatefor } from '../common/utils'
+import { NationalYouthCouncilGeneralCertificateOaDoc } from './general-certificate.types'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx

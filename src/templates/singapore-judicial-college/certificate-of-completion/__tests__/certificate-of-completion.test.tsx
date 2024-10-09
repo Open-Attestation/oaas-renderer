@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { SingaporeJudicialCollegeCertificateOfCompletionTemplate } from '../certificate-of-completion.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../certificate-of-completion.sample'
+import { SingaporeJudicialCollegeCertificateOfCompletionTemplate } from '../certificate-of-completion.template'
 
 describe('SingaporeJudicialCollegeCertificateOfCompletionTemplate', () => {
     it('should match snapshot', () => {
@@ -167,7 +168,7 @@ describe('SingaporeJudicialCollegeCertificateOfCompletionTemplate', () => {
               width: 171px;
               height: 85px;
               bottom: 131px;
-              right: 130px;
+              right: 143px;
               text-align: center;
               -webkit-align-items: flex-end;
               -webkit-box-align: flex-end;
@@ -294,7 +295,7 @@ describe('SingaporeJudicialCollegeCertificateOfCompletionTemplate', () => {
                 <img
                   alt="Signature of signee"
                   className="c10"
-                  src="sample-signature&cacfb1e1c1af263245b1925f10eab6cb6bf675111478bb91e54ecd250482ce7c.png"
+                  src="natalie-skead-signature&195bd78f3c419e8ec21d3d364f50f703e85d43c401639a628d0119b7cbefd935.png"
                 />
               </div>
               <div
@@ -308,11 +309,11 @@ describe('SingaporeJudicialCollegeCertificateOfCompletionTemplate', () => {
                 <div
                   className="c13"
                 >
-                  Sundaresh Menon
+                  Natalie Skead
                   <br />
-                  Chief Justice
+                  Dean
                   <br />
-                  Republic of Singapore
+                  Singapore Judicial College
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
-import styled from 'styled-components'
 import { FlexBox } from 'components/flexbox'
 import { makeTypography } from 'components/typography/makeTypography'
+import styled from 'styled-components'
+
 import cardFlipIconSrc from './icon-cardflip.svg'
 
 const InstructionContainer = styled.div`

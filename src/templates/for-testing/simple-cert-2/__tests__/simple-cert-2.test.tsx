@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { ForTestingSimpleCert_2Template } from '../simple-cert-2.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../simple-cert-2.sample'
+import { ForTestingSimpleCert_2Template } from '../simple-cert-2.template'
 
 describe('ForTestingSimpleCert_2Template', () => {
     it('should match snapshot', () => {
@@ -16,27 +17,12 @@ describe('ForTestingSimpleCert_2Template', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c0 pre {
-              background-color: lightgray;
-              overflow-wrap: anywhere;
-              white-space: break-spaces;
-            }
-
             <div
-              className="c0"
+              className=""
               id="for-testing-simple-cert"
             >
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "border": "1px solid black",
-                    "borderRadius": "10px",
-                    "display": "flex",
-                    "flexDirection": "column",
-                    "padding": "10px",
-                  }
-                }
+                className="border border-solid border-black rounded-lg p-2 flex flex-col items-center"
               >
                 <h1>
                   OAAS VAPT course completion

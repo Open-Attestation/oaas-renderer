@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate } from '../certificate-of-completion-2-signees.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../certificate-of-completion-2-signees.sample'
+import { GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate } from '../certificate-of-completion-2-signees.template'
 
 describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => {
     it('should match snapshot', () => {
@@ -28,6 +29,16 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               background-size: cover;
               background-image: url('COC_2sign_150dpi.png');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(0.8677343468361025);
+              -ms-transform: scale(0.8677343468361025);
+              transform: scale(0.8677343468361025);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 690px;
             }
 
             .c2 {
@@ -249,16 +260,6 @@ describe('GovtechDigitalAcademyCertificateOfCompletion_2SigneesTemplate', () => 
               font-size: 14px;
               text-align: left;
               color: #ffffff;
-            }
-
-            .c0 {
-              -webkit-transform: scale(0.8677343468361025);
-              -ms-transform: scale(0.8677343468361025);
-              transform: scale(0.8677343468361025);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 690px;
             }
 
             @media print {

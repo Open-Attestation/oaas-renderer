@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilCciLevel_1TrainerTemplate } from '../cci-level-1-trainer.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../cci-level-1-trainer.sample'
+import { NationalYouthCouncilCciLevel_1TrainerTemplate } from '../cci-level-1-trainer.template'
 
 describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
     it('should match snapshot', () => {
@@ -84,6 +85,16 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
               background-size: cover;
               background-image: url('undefined');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
             }
 
             .c15 {
@@ -281,16 +292,6 @@ describe('NationalYouthCouncilCciLevel_1TrainerTemplate', () => {
             .c24 li span {
               position: relative;
               left: 20px;
-            }
-
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 2261px;
             }
 
             @media print {

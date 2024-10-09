@@ -1,8 +1,4 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { GovtechDigitalAcademyCertificateOfCompletionSmartnationOaDoc } from './certificate-of-completion-smartnation.types'
-import styled from 'styled-components'
-import { Helmet } from 'react-helmet-async'
 import {
     A4Landscape,
     A4LandscapeHeightPx,
@@ -10,10 +6,13 @@ import {
 } from 'components/paper-size'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
 import imagesMap from '../common/assets/__generated__/images-map'
-import { formatCourseDatefor } from '../common/utils'
 import landscapeBg from '../common/assets/COC_1sign_150dpi_no-logo.png'
 import smartNationLogo from '../common/assets/smart-nation-logo.svg'
+import { formatCourseDatefor } from '../common/utils'
 import {
     CertificateComponent,
     OfCompletionComponent,
@@ -30,14 +29,7 @@ import {
     SmartNationLogoComponent,
     SmartNationLogoImg,
 } from './certificate-of-completion-smartnation.components'
-
-const TemplateContainer = styled.div`
-    pre {
-        background-color: lightgray;
-        overflow-wrap: anywhere;
-        white-space: break-spaces;
-    }
-`
+import { GovtechDigitalAcademyCertificateOfCompletionSmartnationOaDoc } from './certificate-of-completion-smartnation.types'
 
 const documentWidth = A4LandscapeWidthPx
 const documentHeight = A4LandscapeHeightPx

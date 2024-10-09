@@ -1,16 +1,8 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { ForTestingSimpleCert_2OaDoc } from './simple-cert-2.types'
-import styled from 'styled-components'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
 
-const TemplateContainer = styled.div`
-    pre {
-        background-color: lightgray;
-        overflow-wrap: anywhere;
-        white-space: break-spaces;
-    }
-`
+import { ForTestingSimpleCert_2OaDoc } from './simple-cert-2.types'
 
 export const ForTestingSimpleCert_2Template: FunctionComponent<
     TemplateProps<ForTestingSimpleCert_2OaDoc> & { className?: string }
@@ -20,20 +12,8 @@ export const ForTestingSimpleCert_2Template: FunctionComponent<
             <Helmet>
                 <title>for-testing - simple-cert</title>
             </Helmet>
-            <TemplateContainer
-                className={className}
-                id="for-testing-simple-cert"
-            >
-                <div
-                    style={{
-                        border: '1px solid black',
-                        borderRadius: '10px',
-                        padding: '10px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                    }}
-                >
+            <div className={className} id="for-testing-simple-cert">
+                <div className="border border-solid border-black rounded-lg p-2 flex flex-col items-center">
                     <h1>{document.courseTitle}</h1>
                     <p style={{ textAlign: 'center' }}>To reward</p>
                     <h2>{document.name}</h2>
@@ -43,7 +23,7 @@ export const ForTestingSimpleCert_2Template: FunctionComponent<
                     </h2>
                     <p>serial number: {document.serialNumber}</p>
                 </div>
-            </TemplateContainer>
+            </div>
         </>
     )
 }

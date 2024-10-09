@@ -1,17 +1,17 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilObsCoachingOaDoc } from './obs-coaching.types'
-import styled from 'styled-components'
-import { Helmet } from 'react-helmet-async'
-import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
-import { Typography } from '../common/components'
 import { FlexBox } from 'components/flexbox'
-
-import commonImagesMap from '../common/assets/__generated__/images-map'
-import { DateTime } from 'luxon'
 import { A4HeightPx, A4WidthPx } from 'components/paper-size'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { DateTime } from 'luxon'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
+
+import commonImagesMap from '../common/assets/__generated__/images-map'
+import { Typography } from '../common/components'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { NationalYouthCouncilObsCoachingOaDoc } from './obs-coaching.types'
 
 const TemplateContainer = styled.div`
     pre {

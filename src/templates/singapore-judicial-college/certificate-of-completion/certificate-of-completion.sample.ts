@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { SingaporeJudicialCollegeCertificateOfCompletionOaDoc } from './certificate-of-completion.types'
 
 export const sample: SingaporeJudicialCollegeCertificateOfCompletionOaDoc = {
@@ -12,10 +13,10 @@ export const sample: SingaporeJudicialCollegeCertificateOfCompletionOaDoc = {
     courseStartDate: '2022-09-01',
     courseEndDate: '2022-09-07',
     issuanceDate: '2022-09-08',
-    signeeName: 'Sundaresh Menon',
-    signeeDesignation: 'Chief Justice',
+    signeeName: 'Natalie Skead',
+    signeeDesignation: 'Dean',
     signeeSignature:
-        'sample-signature&cacfb1e1c1af263245b1925f10eab6cb6bf675111478bb91e54ecd250482ce7c.png',
+        'natalie-skead-signature&195bd78f3c419e8ec21d3d364f50f703e85d43c401639a628d0119b7cbefd935.png',
     issuers: [
         {
             name: 'institute of blockchain',

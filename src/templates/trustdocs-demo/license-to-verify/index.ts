@@ -3,7 +3,7 @@ import { TrustdocsDemoLicenseToVerifyTemplate } from './license-to-verify.templa
 export const trustdocsDemoLicenseToVerifyTemplates = [
     {
         id: 'trustdocsDemoLicenseToVerify',
-        label: 'Certificate',
+        label: 'License',
         template: TrustdocsDemoLicenseToVerifyTemplate,
     },
 ]

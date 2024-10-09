@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilObsWmfrTemplate } from '../obs-wmfr.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../obs-wmfr.sample'
+import { NationalYouthCouncilObsWmfrTemplate } from '../obs-wmfr.template'
 
 describe('NationalYouthCouncilObsWmfrTemplate', () => {
     it('should match snapshot', () => {
@@ -35,10 +36,6 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               justify-content: center;
             }
 
-            .c2 {
-              min-width: 500px;
-            }
-
             .c3 {
               background: white;
               position: relative;
@@ -51,6 +48,16 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               background-size: cover;
               background-image: url('background.svg');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
             }
 
             .c15 {
@@ -205,14 +212,8 @@ describe('NationalYouthCouncilObsWmfrTemplate', () => {
               align-items: start;
             }
 
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 1152px;
+            .c2 {
+              min-width: 500px;
             }
 
             @media print {
