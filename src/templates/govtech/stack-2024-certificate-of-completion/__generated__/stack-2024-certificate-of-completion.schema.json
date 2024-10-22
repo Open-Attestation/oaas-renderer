@@ -7,7 +7,8 @@
         "workshopTitle",
         "trainerName",
         "organisation",
-        "signature_image"
+        "signature_image",
+        "issueDate"
     ],
     "properties": {
         "name": {
@@ -15,34 +16,40 @@
             "description": "Name of recipient",
             "examples": ["Tan Chen Chen, Orange"],
             "minLength": 1,
-            "maxLength": 30
+            "maxLength": 50
         },
         "workshopTitle": {
             "type": "string",
             "description": "Workshop's title",
             "examples": ["Workshop Title"],
             "minLength": 1,
-            "maxLength": 40
+            "maxLength": 100
         },
         "trainerName": {
             "type": "string",
             "description": "Trainer Name",
             "examples": ["Christopher Tan"],
             "minLength": 1,
-            "maxLength": 30
+            "maxLength": 50
         },
         "organisation": {
             "type": "string",
             "description": "Organisation",
             "examples": ["Ministry of Magic"],
             "minLength": 1,
-            "maxLength": 30
+            "maxLength": 50
         },
         "signature_image": {
             "type": "string",
             "description": "Filename of signature",
             "examples": ["signature.png"],
             "minLength": 1
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2024-11-05"],
+            "format": "date"
         }
     },
     "additionalProperties": false

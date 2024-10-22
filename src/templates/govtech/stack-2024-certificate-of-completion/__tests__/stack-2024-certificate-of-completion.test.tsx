@@ -73,10 +73,10 @@ describe('GovtechStack_2024CertificateOfCompletionTemplate', () => {
                   className="c1"
                 >
                   <div
-                    className="pt-[282.36px]"
+                    className="pt-[258.36px] font-[\\"Lato\\"]"
                   >
                     <div
-                      className="m-auto flex h-[443px] w-[853.35px] flex-col items-center justify-between font-[\\"Lato\\"]"
+                      className="relative m-auto flex h-[467px] w-[853.35px] flex-col items-center justify-between"
                     >
                       <div
                         className="flex flex-col items-center text-center"
@@ -87,9 +87,9 @@ describe('GovtechStack_2024CertificateOfCompletionTemplate', () => {
                           CERTIFICATE OF COMPLETION
                         </div>
                         <div
-                          className="text-nowrap text-[43px] font-bold leading-[51.6px]"
+                          className="text-wrap text-[43px] font-bold leading-[51.6px]"
                         >
-                          TAN CHEN CHEN, ORANGE
+                          VICTORIA-GRACE PENELOPE WESTMINSTER-HUNTINGTON III
                         </div>
                         <div
                           className="mb-[18.72px] mt-[14.28px] w-[800px] border-b-[0.67px] border-t-0 border-solid border-[#231F20]"
@@ -101,12 +101,12 @@ describe('GovtechStack_2024CertificateOfCompletionTemplate', () => {
                             has successfully completed the
                           </div>
                           <div
-                            className="text-nowrap text-[30px] font-bold leading-[36px]"
+                            className="text-wrap text-[30px] font-bold leading-[36px]"
                           >
-                            Workshop Title
+                            Methods in Cognitive Psychology: Understanding Human Behavior Through Machine Learning Analytics
                           </div>
                           <div>
-                            technical workshop at STACK Developer Conference 2024
+                            technical workshop at STACK Developer Conference
                           </div>
                           <div>
                             organised by Government Technology Agency of Singapore ​(GovTech)
@@ -114,7 +114,7 @@ describe('GovtechStack_2024CertificateOfCompletionTemplate', () => {
                         </div>
                       </div>
                       <div
-                        className="flex w-full flex-row items-end justify-between text-nowrap text-[16px] leading-[19.2px]"
+                        className="absolute bottom-[0px] flex w-full flex-row items-end justify-between text-nowrap text-[16px] leading-[19.2px]"
                       >
                         <div
                           className="relative flex items-end"

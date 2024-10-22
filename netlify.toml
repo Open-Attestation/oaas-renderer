@@ -2,4 +2,4 @@
   publish = "build/"
 
   # Default build command.
-  command = "export REACT_APP_RENDERER_VERSION=govtech_v0.0.1; CI=false npm run build govtech"
+  command = "export REACT_APP_RENDERER_VERSION=govtech_v0.0.2; CI=false npm run build govtech"

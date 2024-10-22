@@ -10,11 +10,13 @@ export const sample: GovtechStack_2024CertificateOfCompletionOaDoc = {
         type: v2.TemplateType.EmbeddedRenderer,
         url: 'http://localhost:3000',
     },
-    name: 'Tan Chen Chen, Orange',
+    name: 'Victoria-Grace Penelope Westminster-Huntington III',
     trainerName: 'Christopher Tan',
     organisation: 'Ministry of Magic',
-    workshopTitle: 'Workshop Title',
+    workshopTitle:
+        'Methods in Cognitive Psychology: Understanding Human Behavior Through Machine Learning Analytics',
     signature_image: signature,
+    issueDate: '2024-11-05',
     issuers: [
         {
             name: 'institute of blockchain',

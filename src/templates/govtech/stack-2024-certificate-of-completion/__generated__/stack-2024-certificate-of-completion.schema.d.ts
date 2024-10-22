@@ -26,4 +26,8 @@ export interface GovtechStack_2024CertificateOfCompletion {
      * Filename of signature
      */
     signature_image: string
+    /**
+     * Date of issue
+     */
+    issueDate: string
 }

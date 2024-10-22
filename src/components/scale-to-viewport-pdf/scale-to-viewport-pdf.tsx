@@ -128,10 +128,7 @@ export const ScaleToViewportPage: React.FC<
                 width={width}
                 height={height}
                 loading={<></>}
-            >
-                {' '}
-                /
-            </StyledPage>
+            />
         </ScalableDocumentV2>
     )
 }

@@ -11,28 +11,35 @@ export default {
         'trainerName',
         'organisation',
         'signature_image',
+        'issueDate',
     ],
     properties: {
         name: makeRequiredString(
             'Name of recipient',
             'Tan Chen Chen, Orange',
-            30
+            50
         ),
         workshopTitle: makeRequiredString(
             "Workshop's title",
             'Workshop Title',
-            40
+            100
         ),
-        trainerName: makeRequiredString('Trainer Name', 'Christopher Tan', 30),
+        trainerName: makeRequiredString('Trainer Name', 'Christopher Tan', 50),
         organisation: makeRequiredString(
             'Organisation',
             'Ministry of Magic',
-            30
+            50
         ),
         signature_image: makeRequiredString(
             'Filename of signature',
             'signature.png'
         ),
+        issueDate: {
+            type: 'string',
+            description: 'Date of issue',
+            examples: ['2024-11-05'],
+            format: 'date',
+        },
     },
     additionalProperties: false,
 } as JSONSchema
