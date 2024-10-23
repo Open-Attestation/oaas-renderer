@@ -1,8 +1,8 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { HealthSciencesAuthorityFreeSaleTemplate } from '../free-sale.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../free-sale.sample'
+import { HealthSciencesAuthorityFreeSaleTemplate } from '../free-sale.template'
 
 describe('HealthSciencesAuthorityFreeSaleTemplate', () => {
     it('should match snapshot', () => {

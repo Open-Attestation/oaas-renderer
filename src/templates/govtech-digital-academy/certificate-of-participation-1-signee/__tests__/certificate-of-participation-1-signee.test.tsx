@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { GovtechDigitalAcademyCertificateOfParticipation_1SigneeTemplate } from '../certificate-of-participation-1-signee.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../certificate-of-participation-1-signee.sample'
+import { GovtechDigitalAcademyCertificateOfParticipation_1SigneeTemplate } from '../certificate-of-participation-1-signee.template'
 
 describe('GovtechDigitalAcademyCertificateOfParticipation_1SigneeTemplate', () => {
     it('should match snapshot', () => {
@@ -28,6 +29,28 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_1SigneeTemplate', () =
               background-size: cover;
               background-image: url('COP_1sign_150dpi.png');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(0.8677343468361025);
+              -ms-transform: scale(0.8677343468361025);
+              transform: scale(0.8677343468361025);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 690px;
+            }
+
+            .c11 {
+              position: absolute;
+              top: 575px;
+              left: 48px;
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 17px;
+              text-align: left;
+              color: #ffffff;
             }
 
             .c2 {
@@ -208,28 +231,6 @@ describe('GovtechDigitalAcademyCertificateOfParticipation_1SigneeTemplate', () =
               font-size: 17px;
               text-align: left;
               color: #ffffff;
-            }
-
-            .c11 {
-              position: absolute;
-              top: 575px;
-              left: 48px;
-              font-family: 'Montserrat';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 17px;
-              text-align: left;
-              color: #ffffff;
-            }
-
-            .c0 {
-              -webkit-transform: scale(0.8677343468361025);
-              -ms-transform: scale(0.8677343468361025);
-              transform: scale(0.8677343468361025);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 690px;
             }
 
             @media print {

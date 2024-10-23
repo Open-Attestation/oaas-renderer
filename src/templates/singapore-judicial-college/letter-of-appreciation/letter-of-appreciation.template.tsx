@@ -1,12 +1,13 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { SingaporeJudicialCollegeLetterOfAppreciationOaDoc } from './letter-of-appreciation.types'
-import { Helmet } from 'react-helmet-async'
 import { A4 } from 'components/paper-size'
-import { Title, Typography } from './letter-of-appreciation.components'
-import { formatCourseDatefor } from '../common/utils'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
 import portraitBg from '../common/assets/letter-bg.jpg'
 import signature from '../common/assets/natalie-skead-signature.hash.png'
+import { formatCourseDatefor } from '../common/utils'
+import { Title, Typography } from './letter-of-appreciation.components'
+import { SingaporeJudicialCollegeLetterOfAppreciationOaDoc } from './letter-of-appreciation.types'
 
 export const SingaporeJudicialCollegeLetterOfAppreciationTemplate: FunctionComponent<
     TemplateProps<SingaporeJudicialCollegeLetterOfAppreciationOaDoc> & {

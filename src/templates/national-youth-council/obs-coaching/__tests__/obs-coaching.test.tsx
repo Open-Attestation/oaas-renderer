@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilObsCoachingTemplate } from '../obs-coaching.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../obs-coaching.sample'
+import { NationalYouthCouncilObsCoachingTemplate } from '../obs-coaching.template'
 
 describe('NationalYouthCouncilObsCoachingTemplate', () => {
     it('should match snapshot', () => {
@@ -16,6 +17,25 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
+            .c7 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
             .c2 {
               background: white;
               position: relative;
@@ -28,6 +48,16 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               background-size: cover;
               background-image: url('background.svg');
               z-index: initial;
+            }
+
+            .c1 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
             }
 
             .c16 {
@@ -186,35 +216,6 @@ describe('NationalYouthCouncilObsCoachingTemplate', () => {
               -webkit-box-align: start;
               -ms-flex-align: start;
               align-items: start;
-            }
-
-            .c7 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
-            .c1 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 1152px;
             }
 
             .c0 pre {

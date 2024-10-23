@@ -1,5 +1,5 @@
-import { makeTypography } from 'components/typography/makeTypography'
 import { Line } from 'components/line'
+import { makeTypography } from 'components/typography/makeTypography'
 import styled from 'styled-components'
 
 export const TYPOGRAPHY_FONT_SIZES = {

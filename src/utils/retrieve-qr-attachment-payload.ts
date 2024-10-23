@@ -1,5 +1,6 @@
-import { v2 } from '@govtechsg/open-attestation'
 import { Buffer } from 'buffer'
+
+import { v2 } from '@govtechsg/open-attestation'
 
 export function retrieveQrAttachmentPayload(
     document: v2.OpenAttestationDocument

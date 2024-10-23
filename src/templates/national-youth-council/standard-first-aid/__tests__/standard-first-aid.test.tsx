@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilStandardFirstAidTemplate } from '../standard-first-aid.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../standard-first-aid.sample'
+import { NationalYouthCouncilStandardFirstAidTemplate } from '../standard-first-aid.template'
 
 describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
     it('should match snapshot', () => {
@@ -35,87 +36,6 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               justify-content: center;
             }
 
-            .c2 {
-              min-width: 500px;
-            }
-
-            .c5 {
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              text-align: center;
-            }
-
-            .c7 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              text-align: center;
-            }
-
-            .c9 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-            }
-
-            .c10 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: -8px;
-            }
-
-            .c11 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              text-align: center;
-            }
-
-            .c12 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: -8px;
-              text-align: center;
-            }
-
-            .c13 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: 0px;
-            }
-
-            .c14 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: -8px;
-            }
-
-            .c15 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-            }
-
-            .c6 {
-              font-family: 'Libre Franklin';
-            }
-
-            .c16 {
-              max-height: 72px;
-            }
-
             .c3 {
               background: white;
               position: relative;
@@ -128,6 +48,16 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               background-size: cover;
               background-image: url('background.svg');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
             }
 
             .c20 {
@@ -252,14 +182,85 @@ describe('NationalYouthCouncilStandardFirstAidTemplate', () => {
               align-items: start;
             }
 
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 1152px;
+            .c2 {
+              min-width: 500px;
+            }
+
+            .c5 {
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+            }
+
+            .c7 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+            }
+
+            .c9 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+            }
+
+            .c10 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: -8px;
+            }
+
+            .c11 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              text-align: center;
+            }
+
+            .c12 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -8px;
+              text-align: center;
+            }
+
+            .c13 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 0px;
+            }
+
+            .c14 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -8px;
+            }
+
+            .c15 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+            }
+
+            .c6 {
+              font-family: 'Libre Franklin';
+            }
+
+            .c16 {
+              max-height: 72px;
             }
 
             @media print {

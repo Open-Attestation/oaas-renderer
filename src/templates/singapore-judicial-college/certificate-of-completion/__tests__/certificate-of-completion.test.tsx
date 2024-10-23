@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { SingaporeJudicialCollegeCertificateOfCompletionTemplate } from '../certificate-of-completion.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../certificate-of-completion.sample'
+import { SingaporeJudicialCollegeCertificateOfCompletionTemplate } from '../certificate-of-completion.template'
 
 describe('SingaporeJudicialCollegeCertificateOfCompletionTemplate', () => {
     it('should match snapshot', () => {

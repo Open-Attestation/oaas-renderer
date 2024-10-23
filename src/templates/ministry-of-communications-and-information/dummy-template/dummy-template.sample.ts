@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { MinistryOfCommunicationsAndInformationDummyTemplateOaDoc } from './dummy-template.types'
 
 export const sample: MinistryOfCommunicationsAndInformationDummyTemplateOaDoc =

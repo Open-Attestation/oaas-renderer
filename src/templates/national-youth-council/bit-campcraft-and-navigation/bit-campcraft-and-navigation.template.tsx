@@ -1,6 +1,8 @@
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import { FlexBox } from 'components/flexbox'
 import { A4, A4HeightPx2Pages, A4WidthPx } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
 import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
@@ -17,8 +19,6 @@ import {
 } from './bit-campcraft-and-navigation.component'
 import { NationalYouthCouncilBitCampcraftAndNavigationOaDoc } from './bit-campcraft-and-navigation.types'
 import brickWallModelImg from './brick-wall-model.png'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx2Pages

@@ -1,8 +1,9 @@
-import glob from 'glob'
 import crypto from 'crypto'
 import fs from 'fs'
 import path from 'path'
+
 import { camelCase } from 'change-case'
+import glob from 'glob'
 
 const TARGET_DIR_NAME = '__generated__'
 const SUPPORTED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'svg'] as const

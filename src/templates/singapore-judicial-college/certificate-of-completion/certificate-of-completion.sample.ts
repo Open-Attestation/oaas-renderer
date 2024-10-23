@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { SingaporeJudicialCollegeCertificateOfCompletionOaDoc } from './certificate-of-completion.types'
 
 export const sample: SingaporeJudicialCollegeCertificateOfCompletionOaDoc = {

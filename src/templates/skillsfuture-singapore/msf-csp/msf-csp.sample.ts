@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { SkillsfutureSingaporeMsfCspOaDoc } from './msf-csp.types'
 
 export const sample: SkillsfutureSingaporeMsfCspOaDoc = {

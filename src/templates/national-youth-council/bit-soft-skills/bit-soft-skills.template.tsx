@@ -1,11 +1,14 @@
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import { FlexBox } from 'components/flexbox'
 import { A4, A4HeightPx2Pages, A4WidthPx } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
 import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 import commonImagesMap from '../common/assets/__generated__/images-map'
+import descriptionBg from '../common/assets/description-watermark.png'
 import { Typography } from '../common/components'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 import {
@@ -17,9 +20,6 @@ import {
 } from './bit-soft-skills.component'
 import { NationalYouthCouncilBitSoftSkillsOaDoc } from './bit-soft-skills.types'
 import brickWallModelImg from './brick-wall-model.png'
-import descriptionBg from '../common/assets/description-watermark.png'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx2Pages

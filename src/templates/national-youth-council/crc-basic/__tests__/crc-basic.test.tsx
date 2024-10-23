@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilCrcBasicTemplate } from '../crc-basic.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../crc-basic.sample'
+import { NationalYouthCouncilCrcBasicTemplate } from '../crc-basic.template'
 
 describe('NationalYouthCouncilCrcBasicTemplate', () => {
     it('should match snapshot', () => {
@@ -54,10 +55,6 @@ describe('NationalYouthCouncilCrcBasicTemplate', () => {
               justify-content: center;
             }
 
-            .c2 {
-              min-width: 500px;
-            }
-
             .c3 {
               background: white;
               position: relative;
@@ -84,6 +81,16 @@ describe('NationalYouthCouncilCrcBasicTemplate', () => {
               background-size: cover;
               background-image: url('undefined');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
             }
 
             .c16 {
@@ -269,14 +276,8 @@ describe('NationalYouthCouncilCrcBasicTemplate', () => {
               align-items: start;
             }
 
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 2261px;
+            .c2 {
+              min-width: 500px;
             }
 
             @media print {

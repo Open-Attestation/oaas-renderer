@@ -1,5 +1,6 @@
 import { FlexBox } from 'components/flexbox'
 import styled from 'styled-components'
+
 import { TYPOGRAPHY_FONT_SIZES } from '../common/components'
 
 export const Root = styled(FlexBox)`

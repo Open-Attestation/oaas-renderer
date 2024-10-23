@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { ForTestingOpenattestationDemoCertificateA4LandscapeTemplate } from '../openattestation-demo-certificate-a4-landscape.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../openattestation-demo-certificate-a4-landscape.sample'
+import { ForTestingOpenattestationDemoCertificateA4LandscapeTemplate } from '../openattestation-demo-certificate-a4-landscape.template'
 
 describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
     it('should match snapshot', () => {
@@ -16,6 +17,25 @@ describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
+            .c5 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
             .c1 {
               background: white;
               position: relative;
@@ -30,22 +50,14 @@ describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
               z-index: initial;
             }
 
-            .c2 {
-              position: relative;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              margin-top: 160px;
-              height: 90px;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
+            .c0 {
+              -webkit-transform: scale(0.8677343468361025);
+              -ms-transform: scale(0.8677343468361025);
+              transform: scale(0.8677343468361025);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 690px;
             }
 
             .c3 {
@@ -80,33 +92,22 @@ describe('ForTestingOpenattestationDemoCertificateA4LandscapeTemplate', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c5 {
+            .c2 {
+              position: relative;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
+              margin-top: 160px;
+              height: 90px;
               -webkit-box-pack: center;
               -webkit-justify-content: center;
               -ms-flex-pack: center;
               justify-content: center;
-            }
-
-            .c0 {
-              -webkit-transform: scale(0.8677343468361025);
-              -ms-transform: scale(0.8677343468361025);
-              transform: scale(0.8677343468361025);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 690px;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
             }
 
             @media print {

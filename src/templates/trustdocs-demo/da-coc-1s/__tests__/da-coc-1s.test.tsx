@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { TrustdocsDemoDaCoc_1sTemplate } from '../da-coc-1s.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../da-coc-1s.sample'
+import { TrustdocsDemoDaCoc_1sTemplate } from '../da-coc-1s.template'
 
 describe('TrustdocsDemoDaCoc_1sTemplate', () => {
     it('should match snapshot', () => {

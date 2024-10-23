@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { GovtechDigitalAcademyCertificateOfAchievement_1SigneeOaDoc } from './certificate-of-achievement-1-signee.types'
 
 export const sample: GovtechDigitalAcademyCertificateOfAchievement_1SigneeOaDoc =

@@ -1,21 +1,22 @@
-import { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { GovtechDigitalAcademyCertificateOfParticipationV2_2SigneesOaDoc } from './certificate-of-participation-v2-2-signees.types'
-import { Helmet } from 'react-helmet-async'
-import imagesMap from '../common/assets/__generated__/images-map'
-import { formatCourseDatefor } from '../common/utils'
 import {
     A4Landscape,
     A4LandscapeHeightPx,
     A4LandscapeWidthPx,
 } from 'components/paper-size/a4-landscape'
-import landscapeBg from '../common/assets/COPv2_2sign_150dpi.png'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import imagesMap from '../common/assets/__generated__/images-map'
+import landscapeBg from '../common/assets/COPv2_2sign_150dpi.png'
+import { formatCourseDatefor } from '../common/utils'
 import {
     OfParticipation,
     Typography,
 } from './certificate-of-participation-v2-2-signees.components'
+import { GovtechDigitalAcademyCertificateOfParticipationV2_2SigneesOaDoc } from './certificate-of-participation-v2-2-signees.types'
 
 const documentWidth = A4LandscapeWidthPx
 const documentHeight = A4LandscapeHeightPx
@@ -133,7 +134,7 @@ export const GovtechDigitalAcademyCertificateOfParticipationV2_2SigneesTemplate:
                                 </div>
                                 <div className="w-[280px] h-[100px] mt-[6px] flex flex-col justify-end">
                                     <img
-                                        className="max-w-[280px] max-h-[100px]"
+                                        className="max-w-[280px] max-h-[100px] object-scale-down"
                                         src={document.partnerLogo_image}
                                         alt="Signature of signee one"
                                     />
@@ -141,7 +142,7 @@ export const GovtechDigitalAcademyCertificateOfParticipationV2_2SigneesTemplate:
                             </div>
                         )}
                         <div className="absolute h-[19px] bottom-[27px] left-[43px] text-[16px] leading-[19.2px] font-normal text-[#FFFFFF]">
-                            Dates of Issue: {issueDate}
+                            Date of Issue: {issueDate}
                         </div>
                     </A4Landscape>
                 </Typography>

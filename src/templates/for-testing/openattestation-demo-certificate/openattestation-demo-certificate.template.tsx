@@ -1,9 +1,10 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { ForTestingOpenattestationDemoCertificateOaDoc } from './openattestation-demo-certificate.types'
-import styled from 'styled-components'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
+
 import oaLogoSrc from '../common/assets/oa.svg'
+import { ForTestingOpenattestationDemoCertificateOaDoc } from './openattestation-demo-certificate.types'
 
 const TemplateContainer = styled.div`
     pre {

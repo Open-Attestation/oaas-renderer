@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilBitSoftSkillsTemplate } from '../bit-soft-skills.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../bit-soft-skills.sample'
+import { NationalYouthCouncilBitSoftSkillsTemplate } from '../bit-soft-skills.template'
 
 describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
     it('should match snapshot', () => {
@@ -130,6 +131,16 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
               background-size: cover;
               background-image: url('description-watermark.png');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
             }
 
             .c15 {
@@ -367,16 +378,6 @@ describe('NationalYouthCouncilBitSoftSkillsTemplate', () => {
 
             .c24 {
               width: auto;
-            }
-
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 2261px;
             }
 
             @media print {

@@ -38,7 +38,6 @@ const buildProcessSchemaCommand = (filenames) => {
 }
 
 module.exports = {
-    '*.{js,jsx,ts,tsx}': 'npm run lint:fix',
     '**/src/templates/**/*.schema.*': [buildProcessSchemaCommand],
-    '*.{js,jsx,ts,tsx,json,css,scss,md}': ['prettier --write'],
+    '*.{js,jsx,ts,tsx}': 'npm run lint:path',
 }

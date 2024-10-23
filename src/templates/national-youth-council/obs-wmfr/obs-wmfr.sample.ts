@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilObsWmfrOaDoc } from './obs-wmfr.types'
 
 export const sample: NationalYouthCouncilObsWmfrOaDoc = {

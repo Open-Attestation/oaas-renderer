@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { TrustdocsDemoDaCoc_1sOaDoc } from './da-coc-1s.types'
 
 export const sample: TrustdocsDemoDaCoc_1sOaDoc = {

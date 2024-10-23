@@ -1,8 +1,8 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilBizsafeLevel_2RiskManagement_2024Template } from '../bizsafe-level-2-risk-management-2024.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../bizsafe-level-2-risk-management-2024.sample'
+import { NationalYouthCouncilBizsafeLevel_2RiskManagement_2024Template } from '../bizsafe-level-2-risk-management-2024.template'
 
 describe('NationalYouthCouncilBizsafeLevel_2RiskManagement_2024Template', () => {
     it('should match snapshot', () => {
@@ -16,6 +16,25 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagement_2024Template', () => 
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
+            .c6 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
             .c1 {
               background: white;
               position: relative;
@@ -198,25 +217,6 @@ describe('NationalYouthCouncilBizsafeLevel_2RiskManagement_2024Template', () => 
               -webkit-box-align: start;
               -ms-flex-align: start;
               align-items: start;
-            }
-
-            .c6 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
             }
 
             @media print {

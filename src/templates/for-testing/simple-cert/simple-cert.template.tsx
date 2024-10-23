@@ -1,8 +1,9 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { ForTestingSimpleCertOaDoc } from './simple-cert.types'
-import styled from 'styled-components'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
+
+import { ForTestingSimpleCertOaDoc } from './simple-cert.types'
 
 const TemplateContainer = styled.div`
     pre {

@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { TrustdocsDemoNycSfaOaDoc } from './nyc-sfa.types'
 
 export const sample: TrustdocsDemoNycSfaOaDoc = {

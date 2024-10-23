@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate } from '../certificate-of-completion-smartnation.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../certificate-of-completion-smartnation.sample'
+import { GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate } from '../certificate-of-completion-smartnation.template'
 
 describe('GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate', () => {
     it('should match snapshot', () => {
@@ -328,7 +329,7 @@ describe('GovtechDigitalAcademyCertificateOfCompletionSmartnationTemplate', () =
                   Permanent Secretary
                   ,
                   <br />
-                  Smart Nation and Digital Government Group
+                  Smart Nation
                 </div>
                 <div
                   className="c13"

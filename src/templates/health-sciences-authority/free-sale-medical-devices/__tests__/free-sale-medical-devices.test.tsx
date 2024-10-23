@@ -1,8 +1,8 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { HealthSciencesAuthorityFreeSaleMedicalDevicesTemplate } from '../free-sale-medical-devices.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../free-sale-medical-devices.sample'
+import { HealthSciencesAuthorityFreeSaleMedicalDevicesTemplate } from '../free-sale-medical-devices.template'
 
 describe('HealthSciencesAuthorityFreeSaleMedicalDevicesTemplate', () => {
     it('should match snapshot', () => {
@@ -42,6 +42,16 @@ describe('HealthSciencesAuthorityFreeSaleMedicalDevicesTemplate', () => {
               background-size: cover;
               background-image: url('undefined');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 4506px;
             }
 
             .c2 {
@@ -617,16 +627,6 @@ describe('HealthSciencesAuthorityFreeSaleMedicalDevicesTemplate', () => {
               align-items: flex-start;
               padding: 0px 0px 0px 20px;
               gap: 8px;
-            }
-
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 4506px;
             }
 
             @media print {
