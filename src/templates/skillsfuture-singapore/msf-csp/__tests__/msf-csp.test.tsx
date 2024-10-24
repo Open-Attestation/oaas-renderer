@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { SkillsfutureSingaporeMsfCspTemplate } from '../msf-csp.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../msf-csp.sample'
+import { SkillsfutureSingaporeMsfCspTemplate } from '../msf-csp.template'
 
 describe('SkillsfutureSingaporeMsfCspTemplate', () => {
     it('should match snapshot', () => {
@@ -66,7 +67,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
               className="c0"
             >
               <div
-                className="relative bg-white border border-solid border-slate-200 max-w-[21cm] min-h-[29.7cm]  my-0 mx-auto print:border-none"
+                className="relative mx-auto my-0 min-h-[29.7cm] max-w-[21cm] border border-solid border-slate-200 bg-white print:border-none"
               >
                 <div
                   className="p-4 md:px-16 md:py-6"
@@ -86,10 +87,10 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                     }
                   />
                   <div
-                    className="flex flex-col gap-8 pb-20 print:pb-0 relative"
+                    className="relative flex flex-col gap-8 pb-20 print:pb-0"
                   >
                     <div
-                      className="flex flex-row justify-between flex-wrap"
+                      className="flex flex-row flex-wrap justify-between"
                     >
                       <div
                         className="flex flex-col"
@@ -119,7 +120,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           26 May 2025
                         </div>
                         <div
-                          className="flex flex-row pt-1 pb-4 gap-x-2 items-center flex-wrap"
+                          className="flex flex-row flex-wrap items-center gap-x-2 pb-4 pt-1"
                         >
                           <div
                             className="c3"
@@ -127,7 +128,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Stella Tan Jia Xin
                           </div>
                           <div
-                            className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
+                            className="flex h-[20px] w-[88px] flex-row items-center gap-1 rounded-[8px] bg-[#D7FFD7] px-2 py-1 leading-4 text-[#007C34]"
                           >
                             <div
                               className="pt-0.5"
@@ -190,10 +191,10 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                       </div>
                     </div>
                     <div
-                      className="flex flex-col gap-4 break-inside-avoid"
+                      className="flex break-inside-avoid flex-col gap-4"
                     >
                       <div
-                        className="flex flex-col break-inside-avoid"
+                        className="flex break-inside-avoid flex-col"
                       >
                         <div
                           className="c4"
@@ -205,13 +206,13 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                         />
                       </div>
                       <div
-                        className="flex flex-row gap-3 flex-wrap"
+                        className="flex flex-row flex-wrap gap-3"
                       >
                         <a
                           data-tooltip-id="tooltip-perform industrial audiometric screening"
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex max-w-[256px] flex-row items-center gap-1 rounded-full bg-[#F0F3FF] px-3 py-1 leading-5 text-[#2A51FE]"
                           >
                             <img
                               alt="Checkmark icon"
@@ -224,7 +225,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               }
                             />
                             <div
-                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                              className="overflow-hidden text-ellipsis min-[320px]:text-nowrap"
                             >
                               perform industrial audiometric screening
                             </div>
@@ -234,7 +235,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           data-tooltip-id="tooltip-Communications channel management"
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex max-w-[256px] flex-row items-center gap-1 rounded-full bg-[#F0F3FF] px-3 py-1 leading-5 text-[#2A51FE]"
                           >
                             <img
                               alt="Checkmark icon"
@@ -247,7 +248,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               }
                             />
                             <div
-                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                              className="overflow-hidden text-ellipsis min-[320px]:text-nowrap"
                             >
                               Communications channel management
                             </div>
@@ -257,7 +258,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           data-tooltip-id="tooltip-Customer loyalty management"
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex max-w-[256px] flex-row items-center gap-1 rounded-full bg-[#F0F3FF] px-3 py-1 leading-5 text-[#2A51FE]"
                           >
                             <img
                               alt="Checkmark icon"
@@ -270,7 +271,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               }
                             />
                             <div
-                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                              className="overflow-hidden text-ellipsis min-[320px]:text-nowrap"
                             >
                               Customer loyalty management
                             </div>
@@ -280,7 +281,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           data-tooltip-id="tooltip-meetings, incentives, conferences an..."
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex max-w-[256px] flex-row items-center gap-1 rounded-full bg-[#F0F3FF] px-3 py-1 leading-5 text-[#2A51FE]"
                           >
                             <img
                               alt="Checkmark icon"
@@ -293,7 +294,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               }
                             />
                             <div
-                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                              className="overflow-hidden text-ellipsis min-[320px]:text-nowrap"
                             >
                               meetings, incentives, conferences an...
                             </div>
@@ -303,7 +304,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           data-tooltip-id="tooltip-perform industrial audiometric screening"
                         >
                           <div
-                            className="flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5"
+                            className="flex max-w-[256px] flex-row items-center gap-1 rounded-full bg-[#F0F3FF] px-3 py-1 leading-5 text-[#2A51FE]"
                           >
                             <img
                               alt="Checkmark icon"
@@ -316,7 +317,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               }
                             />
                             <div
-                              className="text-ellipsis overflow-hidden min-[320px]:text-nowrap"
+                              className="overflow-hidden text-ellipsis min-[320px]:text-nowrap"
                             >
                               perform industrial audiometric screening
                             </div>
@@ -328,7 +329,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                       className="flex flex-col gap-4"
                     >
                       <div
-                        className="flex flex-col break-inside-avoid"
+                        className="flex break-inside-avoid flex-col"
                       >
                         <div
                           className="c4"
@@ -343,7 +344,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                         className="flex flex-col gap-6"
                       >
                         <div
-                          className="flex flex-col break-inside-avoid"
+                          className="flex break-inside-avoid flex-col"
                         >
                           <div
                             className="c5"
@@ -355,7 +356,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Equinet Academy
                           </div>
                           <div
-                            className="flex flex-row gap-x-2 flex-wrap items-center"
+                            className="flex flex-row flex-wrap items-center gap-x-2"
                           >
                             <div
                               className="c6"
@@ -363,7 +364,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               Jan 2015 - Present (8 years 8 months)
                             </div>
                             <div
-                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
+                              className="flex h-[20px] w-[88px] flex-row items-center gap-1 rounded-[8px] bg-[#D7FFD7] px-2 py-1 leading-4 text-[#007C34]"
                             >
                               <div
                                 className="pt-0.5"
@@ -388,7 +389,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           </div>
                         </div>
                         <div
-                          className="flex flex-col break-inside-avoid"
+                          className="flex break-inside-avoid flex-col"
                         >
                           <div
                             className="c5"
@@ -400,7 +401,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Tai Hwa (Food manufacturing SME)
                           </div>
                           <div
-                            className="flex flex-row gap-x-2 flex-wrap items-center"
+                            className="flex flex-row flex-wrap items-center gap-x-2"
                           >
                             <div
                               className="c6"
@@ -408,7 +409,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               Aug 2011 - Jun 2015 (3 years 11 months)
                             </div>
                             <div
-                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
+                              className="flex h-[20px] w-[88px] flex-row items-center gap-1 rounded-[8px] bg-[#D7FFD7] px-2 py-1 leading-4 text-[#007C34]"
                             >
                               <div
                                 className="pt-0.5"
@@ -433,7 +434,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           </div>
                         </div>
                         <div
-                          className="flex flex-col break-inside-avoid"
+                          className="flex break-inside-avoid flex-col"
                         >
                           <div
                             className="c5"
@@ -445,7 +446,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Tai Hwa (Food manufacturing SME)
                           </div>
                           <div
-                            className="flex flex-row gap-x-2 flex-wrap items-center"
+                            className="flex flex-row flex-wrap items-center gap-x-2"
                           >
                             <div
                               className="c6"
@@ -453,7 +454,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               Aug 2011 - Jun 2015 (3 years 11 months)
                             </div>
                             <div
-                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
+                              className="flex h-[20px] w-[88px] flex-row items-center gap-1 rounded-[8px] bg-[#D7FFD7] px-2 py-1 leading-4 text-[#007C34]"
                             >
                               <div
                                 className="pt-0.5"
@@ -483,7 +484,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                       className="flex flex-col gap-4"
                     >
                       <div
-                        className="flex flex-col break-inside-avoid"
+                        className="flex break-inside-avoid flex-col"
                       >
                         <div
                           className="c4"
@@ -498,7 +499,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                         className="flex flex-col gap-6"
                       >
                         <div
-                          className="flex flex-col break-inside-avoid"
+                          className="flex break-inside-avoid flex-col"
                         >
                           <div
                             className="c5"
@@ -510,7 +511,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Equinet Academy
                           </div>
                           <div
-                            className="flex flex-row gap-x-2 flex-wrap items-center"
+                            className="flex flex-row flex-wrap items-center gap-x-2"
                           >
                             <div
                               className="c6"
@@ -519,7 +520,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               May 2014
                             </div>
                             <div
-                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
+                              className="flex h-[20px] w-[88px] flex-row items-center gap-1 rounded-[8px] bg-[#D7FFD7] px-2 py-1 leading-4 text-[#007C34]"
                             >
                               <div
                                 className="pt-0.5"
@@ -544,7 +545,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           </div>
                         </div>
                         <div
-                          className="flex flex-col break-inside-avoid"
+                          className="flex break-inside-avoid flex-col"
                         >
                           <div
                             className="c5"
@@ -556,7 +557,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             Equinet Academy
                           </div>
                           <div
-                            className="flex flex-row gap-x-2 flex-wrap items-center"
+                            className="flex flex-row flex-wrap items-center gap-x-2"
                           >
                             <div
                               className="c6"
@@ -572,7 +573,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                       className="flex flex-col gap-4"
                     >
                       <div
-                        className="flex flex-col break-inside-avoid"
+                        className="flex break-inside-avoid flex-col"
                       >
                         <div
                           className="c4"
@@ -587,7 +588,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                         className="flex flex-col gap-6"
                       >
                         <div
-                          className="flex flex-col break-inside-avoid"
+                          className="flex break-inside-avoid flex-col"
                         >
                           <div
                             className="c5"
@@ -599,7 +600,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             National University of Singapore
                           </div>
                           <div
-                            className="flex flex-row gap-x-2 flex-wrap items-center"
+                            className="flex flex-row flex-wrap items-center gap-x-2"
                           >
                             <div
                               className="c6"
@@ -608,7 +609,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               2010
                             </div>
                             <div
-                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
+                              className="flex h-[20px] w-[88px] flex-row items-center gap-1 rounded-[8px] bg-[#D7FFD7] px-2 py-1 leading-4 text-[#007C34]"
                             >
                               <div
                                 className="pt-0.5"
@@ -633,7 +634,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                           </div>
                         </div>
                         <div
-                          className="flex flex-col break-inside-avoid"
+                          className="flex break-inside-avoid flex-col"
                         >
                           <div
                             className="c5"
@@ -645,7 +646,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                             SEAB
                           </div>
                           <div
-                            className="flex flex-row gap-x-2 flex-wrap items-center"
+                            className="flex flex-row flex-wrap items-center gap-x-2"
                           >
                             <div
                               className="c6"
@@ -654,7 +655,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                               May 2014
                             </div>
                             <div
-                              className="flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4"
+                              className="flex h-[20px] w-[88px] flex-row items-center gap-1 rounded-[8px] bg-[#D7FFD7] px-2 py-1 leading-4 text-[#007C34]"
                             >
                               <div
                                 className="pt-0.5"
@@ -681,16 +682,16 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                       </div>
                     </div>
                     <div
-                      className="bg-[#F0F3FF] pt-1 break-inside-avoid hidden print:block"
+                      className="hidden break-inside-avoid bg-[#F0F3FF] pt-1 print:block"
                     >
                       <div
                         className="px-4 md:px-16"
                       >
                         <div
-                          className="flex flex-col gap-3 max-w-[666px] mx-auto"
+                          className="mx-auto flex max-w-[666px] flex-col gap-3"
                         >
                           <div
-                            className="flex flex-row items-center gap-1 content-center "
+                            className="flex flex-row content-center items-center gap-1"
                           >
                             <img
                               alt="Info icon"
@@ -787,17 +788,17 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                   onClick={[Function]}
                 >
                   <div
-                    className="absolute w-full bottom-0 left-0 bg-[#F0F3FF] print:hidden"
+                    className="absolute bottom-0 left-0 w-full bg-[#F0F3FF] print:hidden"
                   >
                     <div
                       className="px-4 md:px-16"
                     >
                       <div
-                        className="flex flex-row items-start gap-1 py-1 content-center "
+                        className="flex flex-row content-center items-start gap-1 py-1"
                       >
                         <img
                           alt="Info icon"
-                          className="w-[16px] h-[16px] mt-0.5"
+                          className="mt-0.5 h-[16px] w-[16px]"
                           src="icon-info.png"
                         />
                         <div
@@ -812,7 +813,7 @@ describe('SkillsfutureSingaporeMsfCspTemplate', () => {
                         />
                       </div>
                       <div
-                        className="flex flex-col gap-3 max-w-[666px] mx-auto"
+                        className="mx-auto flex max-w-[666px] flex-col gap-3"
                       >
                         <div
                           aria-hidden={true}

@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilBitSummaryCertificateFeb_2023Template } from '../bit-summary-certificate-feb-2023.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../bit-summary-certificate-feb-2023.sample'
+import { NationalYouthCouncilBitSummaryCertificateFeb_2023Template } from '../bit-summary-certificate-feb-2023.template'
 
 describe('NationalYouthCouncilBitSummaryCertificateFeb_2023Template', () => {
     it('should match snapshot', () => {
@@ -153,6 +154,16 @@ describe('NationalYouthCouncilBitSummaryCertificateFeb_2023Template', () => {
               background-size: cover;
               background-image: url('description-watermark.png');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
             }
 
             .c19 {
@@ -416,16 +427,6 @@ describe('NationalYouthCouncilBitSummaryCertificateFeb_2023Template', () => {
 
             .c27 {
               width: auto;
-            }
-
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 2261px;
             }
 
             @media print {

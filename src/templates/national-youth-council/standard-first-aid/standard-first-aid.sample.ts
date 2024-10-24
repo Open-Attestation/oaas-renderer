@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilStandardFirstAidOaDoc } from './standard-first-aid.types'
 
 export const sample: NationalYouthCouncilStandardFirstAidOaDoc = {

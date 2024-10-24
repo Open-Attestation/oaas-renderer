@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilGeneralCertificateTemplate } from '../general-certificate.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../general-certificate.sample'
+import { NationalYouthCouncilGeneralCertificateTemplate } from '../general-certificate.template'
 
 describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
     it('should match snapshot', () => {
@@ -33,6 +34,30 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               -webkit-justify-content: center;
               -ms-flex-pack: center;
               justify-content: center;
+            }
+
+            .c1 {
+              background: white;
+              position: relative;
+              width: 21cm;
+              min-height: 29.7cm;
+              padding: 2cm;
+              margin: 0 auto;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              background-size: cover;
+              background-image: url('background.svg');
+              z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
             }
 
             .c13 {
@@ -90,20 +115,6 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
 
             .c4 {
               font-family: 'Libre Franklin';
-            }
-
-            .c1 {
-              background: white;
-              position: relative;
-              width: 21cm;
-              min-height: 29.7cm;
-              padding: 2cm;
-              margin: 0 auto;
-              box-sizing: border-box;
-              border: 1px solid #ccc;
-              background-size: cover;
-              background-image: url('background.svg');
-              z-index: initial;
             }
 
             .c14 {
@@ -189,16 +200,6 @@ describe('NationalYouthCouncilGeneralCertificateTemplate', () => {
               -webkit-box-align: start;
               -ms-flex-align: start;
               align-items: start;
-            }
-
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 1152px;
             }
 
             @media print {

@@ -1,19 +1,20 @@
-import { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { ForTestingOpenattestationDemoCertificateA4LandscapeOaDoc } from './openattestation-demo-certificate-a4-landscape.types'
-import { Helmet } from 'react-helmet-async'
-import landscapeBg from '../common/assets/background-landscape.png'
+import { FlexBox } from 'components/flexbox'
 import {
     A4Landscape,
     A4LandscapeHeightPx,
     A4LandscapeWidthPx,
 } from 'components/paper-size'
-import { Header } from './openattestation-demo-certificate-a4-landscape.components'
-import { Typography } from '../common/components'
-import { FlexBox } from 'components/flexbox'
-import { DateTime } from 'luxon'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { DateTime } from 'luxon'
+import { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import landscapeBg from '../common/assets/background-landscape.png'
+import { Typography } from '../common/components'
+import { Header } from './openattestation-demo-certificate-a4-landscape.components'
+import { ForTestingOpenattestationDemoCertificateA4LandscapeOaDoc } from './openattestation-demo-certificate-a4-landscape.types'
 
 const documentWidth = A4LandscapeWidthPx
 const documentHeight = A4LandscapeHeightPx

@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { TrustdocsDemoLicenseToVerify_2OaDoc } from './license-to-verify-2.types'
 
 export const sample: TrustdocsDemoLicenseToVerify_2OaDoc = {

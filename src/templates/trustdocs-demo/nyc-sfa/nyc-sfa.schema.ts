@@ -1,4 +1,5 @@
 import { JSONSchema } from 'json-schema-to-typescript'
+
 import { getEnumValues } from '../common/assets/__generated__/images-enum-values'
 
 export default {

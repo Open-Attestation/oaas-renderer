@@ -1,12 +1,13 @@
 import { TemplateRegistry } from '@govtechsg/decentralized-renderer-react-components'
-import { forTestingPdfLetterheadTemplates } from './pdf-letterhead'
-import { forTestingOpenattestationDemoCertificateA4LandscapeTemplates } from './openattestation-demo-certificate-a4-landscape'
+
 import { forTestingMultipleImagesCertificateTemplates } from './multiple-images-certificate'
-import { forTestingOpenattestationDemoCertificateA4Templates } from './openattestation-demo-certificate-a4'
-import { forTestingOpenattestationDemoCertificateCardTemplates } from './openattestation-demo-certificate-card'
 import { forTestingOpenattestationDemoCertificateTemplates } from './openattestation-demo-certificate'
-import { forTestingSimpleCert_2Templates } from './simple-cert-2'
+import { forTestingOpenattestationDemoCertificateA4Templates } from './openattestation-demo-certificate-a4'
+import { forTestingOpenattestationDemoCertificateA4LandscapeTemplates } from './openattestation-demo-certificate-a4-landscape'
+import { forTestingOpenattestationDemoCertificateCardTemplates } from './openattestation-demo-certificate-card'
+import { forTestingPdfLetterheadTemplates } from './pdf-letterhead'
 import { forTestingSimpleCertTemplates } from './simple-cert'
+import { forTestingSimpleCert_2Templates } from './simple-cert-2'
 
 export const registry: TemplateRegistry<any> = {
     'for-testing/pdf-letterhead': forTestingPdfLetterheadTemplates,

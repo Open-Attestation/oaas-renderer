@@ -1,16 +1,17 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { TrustdocsDemoDaCoc_1sOaDoc } from './da-coc-1s.types'
-import { Helmet } from 'react-helmet-async'
-import { formatCourseDatefor } from '../common/utils'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import {
     A4Landscape,
     A4LandscapeHeightPx,
     A4LandscapeWidthPx,
 } from 'components/paper-size'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import imagesMap from '../common/assets/__generated__/images-map'
 import landscapeBg from '../common/assets/COC_1sign_150dpi.png'
+import { formatCourseDatefor } from '../common/utils'
 import {
     CertificateComponent,
     DateOfIssueComponent,
@@ -25,7 +26,7 @@ import {
     SigneeSignatureImg,
     YourCommitmentComponent,
 } from './da-coc-1s.components'
-import imagesMap from '../common/assets/__generated__/images-map'
+import { TrustdocsDemoDaCoc_1sOaDoc } from './da-coc-1s.types'
 
 const documentWidth = A4LandscapeWidthPx
 const documentHeight = A4LandscapeHeightPx

@@ -1,8 +1,9 @@
+import { render } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { SingaporeJudicialCollegeLetterOfAppreciationTemplate } from '../letter-of-appreciation.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../letter-of-appreciation.sample'
+import { SingaporeJudicialCollegeLetterOfAppreciationTemplate } from '../letter-of-appreciation.template'
 
 describe('SingaporeJudicialCollegeLetterOfAppreciationTemplate', () => {
     it('should match snapshot', () => {

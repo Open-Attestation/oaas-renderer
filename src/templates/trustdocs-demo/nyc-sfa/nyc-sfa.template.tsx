@@ -1,16 +1,17 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { TrustdocsDemoNycSfaOaDoc } from './nyc-sfa.types'
-import { Helmet } from 'react-helmet-async'
+import { FlexBox } from 'components/flexbox'
 import { A4HeightPx, A4WidthPx } from 'components/paper-size'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
-import { DateTime } from 'luxon'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
-import { Root, SRFACLogoImage, Typography } from './nyc-sfa.components'
+import { DateTime } from 'luxon'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { ObsCertMainPage } from 'templates/national-youth-council/common/obs-cert-main-page/obs-cert-main-page'
+
 import imagesMap from '../common/assets/__generated__/images-map'
-import { FlexBox } from 'components/flexbox'
 import srfacLogoSrc from '../common/assets/srfac-logo.png'
+import { Root, SRFACLogoImage, Typography } from './nyc-sfa.components'
+import { TrustdocsDemoNycSfaOaDoc } from './nyc-sfa.types'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx

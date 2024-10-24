@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { GovtechDigitalAcademyCertificateOfParticipationV2_1SigneeTemplate } from '../certificate-of-participation-v2-1-signee.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../certificate-of-participation-v2-1-signee.sample'
+import { GovtechDigitalAcademyCertificateOfParticipationV2_1SigneeTemplate } from '../certificate-of-participation-v2-1-signee.template'
 
 describe('GovtechDigitalAcademyCertificateOfParticipationV2_1SigneeTemplate', () => {
     it('should match snapshot', () => {
@@ -156,7 +157,7 @@ describe('GovtechDigitalAcademyCertificateOfParticipationV2_1SigneeTemplate', ()
                   <div
                     className="absolute h-[19px] bottom-[27px] left-[43px] text-[16px] leading-[19.2px] font-normal text-[#FFFFFF]"
                   >
-                    Dates of Issue: 
+                    Date of Issue: 
                     10 May 2022
                   </div>
                 </div>

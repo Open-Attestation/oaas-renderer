@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { GovtechDigitalAcademyCertificateOfCompletionSmartnationOaDoc } from './certificate-of-completion-smartnation.types'
 
 export const sample: GovtechDigitalAcademyCertificateOfCompletionSmartnationOaDoc =

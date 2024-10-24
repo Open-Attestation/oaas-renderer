@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { ForTestingPdfLetterheadOaDoc } from './pdf-letterhead.types'
 
 export const sample: ForTestingPdfLetterheadOaDoc = {

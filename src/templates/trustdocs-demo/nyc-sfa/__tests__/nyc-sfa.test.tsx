@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { TrustdocsDemoNycSfaTemplate } from '../nyc-sfa.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../nyc-sfa.sample'
+import { TrustdocsDemoNycSfaTemplate } from '../nyc-sfa.template'
 
 describe('TrustdocsDemoNycSfaTemplate', () => {
     it('should match snapshot', () => {
@@ -16,6 +17,25 @@ describe('TrustdocsDemoNycSfaTemplate', () => {
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
+            .c1 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              width: auto;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+            }
+
             .c3 {
               background: white;
               position: relative;
@@ -38,106 +58,6 @@ describe('TrustdocsDemoNycSfaTemplate', () => {
               -ms-transform-origin: top left;
               transform-origin: top left;
               height: 1152px;
-            }
-
-            .c1 {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              width: auto;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-            }
-
-            .c2 {
-              min-width: 500px;
-            }
-
-            .c5 {
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              text-align: center;
-            }
-
-            .c7 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              text-align: center;
-            }
-
-            .c9 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-            }
-
-            .c10 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: -8px;
-            }
-
-            .c11 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              text-align: center;
-            }
-
-            .c12 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: -8px;
-              text-align: center;
-            }
-
-            .c13 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: 0px;
-            }
-
-            .c14 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: -8px;
-            }
-
-            .c15 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-            }
-
-            .c6 {
-              font-family: 'Libre Franklin';
-            }
-
-            .c16 {
-              max-height: 72px;
             }
 
             .c20 {
@@ -260,6 +180,87 @@ describe('TrustdocsDemoNycSfaTemplate', () => {
               -webkit-box-align: start;
               -ms-flex-align: start;
               align-items: start;
+            }
+
+            .c2 {
+              min-width: 500px;
+            }
+
+            .c5 {
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+            }
+
+            .c7 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+            }
+
+            .c9 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+            }
+
+            .c10 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: -8px;
+            }
+
+            .c11 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              text-align: center;
+            }
+
+            .c12 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -8px;
+              text-align: center;
+            }
+
+            .c13 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 0px;
+            }
+
+            .c14 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -8px;
+            }
+
+            .c15 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+            }
+
+            .c6 {
+              font-family: 'Libre Franklin';
+            }
+
+            .c16 {
+              max-height: 72px;
             }
 
             @media print {

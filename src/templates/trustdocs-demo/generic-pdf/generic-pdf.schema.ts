@@ -5,8 +5,9 @@ export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
     $id: 'TrustdocsDemo/GenericPdf',
     type: 'object',
-    required: ['input_pdf'],
+    required: ['name', 'input_pdf'],
     properties: {
+        name: makeRequiredString('Name of participant', 'Johnathan Doe'),
         input_pdf: makeRequiredString('input pdf filename', 'input.pdf'),
     },
     additionalProperties: false,

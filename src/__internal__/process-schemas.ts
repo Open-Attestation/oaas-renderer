@@ -1,9 +1,9 @@
-import Ajv from 'ajv'
-import addFormats from 'ajv-formats'
-
-import glob from 'glob'
 import fs from 'fs'
 import path from 'path'
+
+import Ajv from 'ajv'
+import addFormats from 'ajv-formats'
+import glob from 'glob'
 import { compileFromFile } from 'json-schema-to-typescript'
 
 const foldersToSearch = process.argv[2] ? process.argv[2].split(' ') : []

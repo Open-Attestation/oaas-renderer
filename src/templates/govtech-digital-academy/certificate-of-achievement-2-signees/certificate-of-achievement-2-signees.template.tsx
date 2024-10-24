@@ -1,21 +1,22 @@
-import { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { GovtechDigitalAcademyCertificateOfAchievement_2SigneesOaDoc } from './certificate-of-achievement-2-signees.types'
-import { Helmet } from 'react-helmet-async'
-import imagesMap from '../common/assets/__generated__/images-map'
-import { formatCourseDatefor } from '../common/utils'
 import {
     A4Landscape,
     A4LandscapeHeightPx,
     A4LandscapeWidthPx,
 } from 'components/paper-size/a4-landscape'
-import landscapeBg from '../common/assets/COA_150dpi.png'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import imagesMap from '../common/assets/__generated__/images-map'
+import landscapeBg from '../common/assets/COA_150dpi.png'
+import { formatCourseDatefor } from '../common/utils'
 import {
     OfParticipation,
     Typography,
 } from './certificate-of-achievement-2-signees.components'
+import { GovtechDigitalAcademyCertificateOfAchievement_2SigneesOaDoc } from './certificate-of-achievement-2-signees.types'
 
 const documentWidth = A4LandscapeWidthPx
 const documentHeight = A4LandscapeHeightPx
@@ -55,38 +56,38 @@ export const GovtechDigitalAcademyCertificateOfAchievement_2SigneesTemplate: Fun
             >
                 <Typography>
                     <A4Landscape $bgImg={landscapeBg} $padding="0">
-                        <div className="absolute w-[568px] h-[77px] top-[192px] left-[475px] text-[64px] leading-[76.8px] tracking-[0.04em] font-bold text-[#2B2C2B] text-center">
+                        <div className="absolute left-[475px] top-[192px] h-[77px] w-[568px] text-center text-[64px] font-bold leading-[76.8px] tracking-[0.04em] text-[#2B2C2B]">
                             CERTIFICATE
                         </div>
-                        <OfParticipation className="absolute w-[568px] h-[49px] top-[257px] left-[475px] text-[41px] leading-[49.2px] tracking-[0.11em] font-bold text-[#99753E] text-center">
+                        <OfParticipation className="absolute left-[475px] top-[257px] h-[49px] w-[568px] text-center text-[41px] font-bold leading-[49.2px] tracking-[0.11em] text-[#99753E]">
                             OF ACHIEVEMENT
                         </OfParticipation>
-                        <div className="absolute w-[568px] h-[24px] top-[327px] left-[475px] text-[20px] leading-[24px] font-normal text-[#A4A3A3] text-center">
+                        <div className="absolute left-[475px] top-[327px] h-[24px] w-[568px] text-center text-[20px] font-normal leading-[24px] text-[#A4A3A3]">
                             PROUDLY PRESENTED TO
                         </div>
-                        <div className="absolute w-[568px] top-[375px] left-[475px] flex flex-col items-center">
-                            <div className="text-[27px] leading-[32.4px] font-bold text-[#000000] text-center">
+                        <div className="absolute left-[475px] top-[375px] flex w-[568px] flex-col items-center">
+                            <div className="text-center text-[27px] font-bold leading-[32.4px] text-[#000000]">
                                 {name}
                             </div>
-                            <div className="h-[1px] w-[568px] mt-[10px] bg-[#99753E]" />
-                            <div className="h-[20px] mt-[16px] text-[17px] leading-[20.4px] font-normal text-[#000000] text-center">
+                            <div className="mt-[10px] h-[1px] w-[568px] bg-[#99753E]" />
+                            <div className="mt-[16px] h-[20px] text-center text-[17px] font-normal leading-[20.4px] text-[#000000]">
                                 for your active participation in
                             </div>
-                            <div className="mt-[10px] text-[21px] leading-[25.2px] tracking-[0.01em] font-bold text-[#000000] text-center whitespace-pre-line">
+                            <div className="mt-[10px] whitespace-pre-line text-center text-[21px] font-bold leading-[25.2px] tracking-[0.01em] text-[#000000]">
                                 {programmeTitle}
                             </div>
                         </div>
                         <div className="absolute bottom-[68px] right-[73px] flex flex-row gap-[36px]">
-                            <div className="w-[256px] flex flex-col items-center">
-                                <div className="w-[265px] h-[71px] mb-[4px] flex flex-col items-center justify-end">
+                            <div className="flex w-[256px] flex-col items-center">
+                                <div className="mb-[4px] flex h-[71px] w-[265px] flex-col items-center justify-end">
                                     <img
-                                        className="max-w-[265px] max-h-[71px]"
+                                        className="max-h-[71px] max-w-[265px]"
                                         src={document.signeeOneSignature_image}
                                         alt="Signature of signee one"
                                     />
                                 </div>
-                                <div className="h-[1px] w-[265px] mb-[7px] bg-[#99753E]" />
-                                <div className="text-[17px] leading-[17.34px] tracking-[0.01em] font-normal text-[#000000] text-center">
+                                <div className="mb-[7px] h-[1px] w-[265px] bg-[#99753E]" />
+                                <div className="text-center text-[17px] font-normal leading-[17.34px] tracking-[0.01em] text-[#000000]">
                                     <span className="inline-block whitespace-pre-wrap">
                                         {document.signeeOneName},{' '}
                                     </span>
@@ -99,10 +100,10 @@ export const GovtechDigitalAcademyCertificateOfAchievement_2SigneesTemplate: Fun
                                     {document.signeeOneOrganisation}
                                 </div>
                             </div>
-                            <div className="w-[256px] flex flex-col items-center">
-                                <div className="w-[265px] h-[71px] mb-[4px] flex flex-col items-center justify-end">
+                            <div className="flex w-[256px] flex-col items-center">
+                                <div className="mb-[4px] flex h-[71px] w-[265px] flex-col items-center justify-end">
                                     <img
-                                        className="max-w-[265px] max-h-[71px]"
+                                        className="max-h-[71px] max-w-[265px]"
                                         src={`${
                                             imagesMap[
                                                 document.signeeTwoSignature
@@ -111,8 +112,8 @@ export const GovtechDigitalAcademyCertificateOfAchievement_2SigneesTemplate: Fun
                                         alt="Signature of signee two"
                                     />
                                 </div>
-                                <div className="h-[1px] w-[265px] mb-[7px] bg-[#99753E]" />
-                                <div className="text-[17px] leading-[17.34px] tracking-[0.01em] font-normal text-[#000000] text-center">
+                                <div className="mb-[7px] h-[1px] w-[265px] bg-[#99753E]" />
+                                <div className="text-center text-[17px] font-normal leading-[17.34px] tracking-[0.01em] text-[#000000]">
                                     <span className="inline-block whitespace-pre-wrap">
                                         {document.signeeTwoName},{' '}
                                     </span>
@@ -127,21 +128,21 @@ export const GovtechDigitalAcademyCertificateOfAchievement_2SigneesTemplate: Fun
                             </div>
                         </div>
                         {document.partnerLogo_image && (
-                            <div className="absolute top-[589px] left-[48px] flex flex-col items-start">
-                                <div className="text-[19px] leading-[22.8px] font-normal text-[#FFFFFF]">
+                            <div className="absolute left-[48px] top-[589px] flex flex-col items-start">
+                                <div className="text-[19px] font-normal leading-[22.8px] text-[#FFFFFF]">
                                     Partner:
                                 </div>
-                                <div className="w-[280px] h-[100px] mt-[6px] flex flex-col justify-end">
+                                <div className="mt-[6px] flex h-[100px] w-[280px] flex-col justify-end">
                                     <img
-                                        className="max-w-[280px] max-h-[100px]"
+                                        className="max-h-[100px] max-w-[280px] object-scale-down"
                                         src={document.partnerLogo_image}
                                         alt="Signature of signee one"
                                     />
                                 </div>
                             </div>
                         )}
-                        <div className="absolute h-[19px] bottom-[27px] left-[43px] text-[16px] leading-[19.2px] font-normal text-[#FFFFFF]">
-                            Dates of Issue: {issueDate}
+                        <div className="absolute bottom-[27px] left-[43px] h-[19px] text-[16px] font-normal leading-[19.2px] text-[#FFFFFF]">
+                            Date of Issue: {issueDate}
                         </div>
                     </A4Landscape>
                 </Typography>

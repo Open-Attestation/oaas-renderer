@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { TrustdocsDemoDemoPermitOaDoc } from './demo-permit.types'
 import { sfaLogo } from './sfa-logo'
 

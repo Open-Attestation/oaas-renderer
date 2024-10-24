@@ -1,15 +1,17 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { GovtechDigitalAcademyCertificateOfParticipation_2SigneesOaDoc } from './certificate-of-participation-2-signees.types'
-import { Helmet } from 'react-helmet-async'
-import imagesMap from '../common/assets/__generated__/images-map'
-import { formatCourseDatefor } from '../common/utils'
 import {
     A4Landscape,
     A4LandscapeHeightPx,
     A4LandscapeWidthPx,
 } from 'components/paper-size/a4-landscape'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import imagesMap from '../common/assets/__generated__/images-map'
 import landscapeBg from '../common/assets/COP_2sign_150dpi.png'
+import { formatCourseDatefor } from '../common/utils'
 import {
     CertificateComponent,
     DateOfIssueComponent,
@@ -29,8 +31,7 @@ import {
     PartnerLogoComponent,
     PartnerLogoImg,
 } from './certificate-of-participation-2-signees.components'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { GovtechDigitalAcademyCertificateOfParticipation_2SigneesOaDoc } from './certificate-of-participation-2-signees.types'
 
 const documentWidth = A4LandscapeWidthPx
 const documentHeight = A4LandscapeHeightPx

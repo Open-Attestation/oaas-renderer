@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { ForTestingOpenattestationDemoCertificateA4Template } from '../openattestation-demo-certificate-a4.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../openattestation-demo-certificate-a4.sample'
+import { ForTestingOpenattestationDemoCertificateA4Template } from '../openattestation-demo-certificate-a4.template'
 
 describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
     it('should match snapshot', () => {
@@ -33,6 +34,30 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
               -webkit-justify-content: center;
               -ms-flex-pack: center;
               justify-content: center;
+            }
+
+            .c1 {
+              background: white;
+              position: relative;
+              width: 21cm;
+              min-height: 29.7cm;
+              padding: 2cm;
+              margin: 0 auto;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              background-size: cover;
+              background-image: url('background.svg');
+              z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
             }
 
             .c3 {
@@ -67,20 +92,6 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
               font-family: 'Libre Franklin';
             }
 
-            .c1 {
-              background: white;
-              position: relative;
-              width: 21cm;
-              min-height: 29.7cm;
-              padding: 2cm;
-              margin: 0 auto;
-              box-sizing: border-box;
-              border: 1px solid #ccc;
-              background-size: cover;
-              background-image: url('background.svg');
-              z-index: initial;
-            }
-
             .c2 {
               position: relative;
               display: -webkit-box;
@@ -105,16 +116,6 @@ describe('ForTestingOpenattestationDemoCertificateA4Template', () => {
               height: 360px;
               padding-top: 16px;
               padding-bottom: 16px;
-            }
-
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 1152px;
             }
 
             @media print {

@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilCrcLeadersTemplate } from '../crc-leaders.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../crc-leaders.sample'
+import { NationalYouthCouncilCrcLeadersTemplate } from '../crc-leaders.template'
 
 describe('NationalYouthCouncilCrcLeadersTemplate', () => {
     it('should match snapshot', () => {
@@ -54,10 +55,6 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               justify-content: center;
             }
 
-            .c2 {
-              min-width: 500px;
-            }
-
             .c3 {
               background: white;
               position: relative;
@@ -84,6 +81,16 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               background-size: cover;
               background-image: url('undefined');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
             }
 
             .c16 {
@@ -270,14 +277,8 @@ describe('NationalYouthCouncilCrcLeadersTemplate', () => {
               align-items: start;
             }
 
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 2261px;
+            .c2 {
+              min-width: 500px;
             }
 
             @media print {

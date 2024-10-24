@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { TrustdocsDemoGenericPdfOaDoc } from './generic-pdf.types'
 
 const input_pdf =
@@ -10,6 +11,7 @@ export const sample: TrustdocsDemoGenericPdfOaDoc = {
         type: v2.TemplateType.EmbeddedRenderer,
         url: 'http://localhost:3000',
     },
+    name: 'Tan Chen Chen',
     input_pdf,
     issuers: [
         {

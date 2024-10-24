@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import { TYPOGRAPHY_FONT_SIZES } from '../common/components'
 
 export const OrderedList = styled.ol<{

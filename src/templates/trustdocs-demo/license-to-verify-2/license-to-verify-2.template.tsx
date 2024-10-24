@@ -1,18 +1,19 @@
-import React, { FunctionComponent, useEffect, useState } from 'react'
+import { croodlesNeutral } from '@dicebear/collection'
+import { createAvatar } from '@dicebear/core'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import styled from 'styled-components'
-import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
 import { DateTime } from 'luxon'
-import frontCardBackground from '../license-to-verify/bg.svg'
 import { QRCodeSVG } from 'qrcode.react'
-import trustdocsLogoImage from '../license-to-verify/trustdocs-logo.svg'
-import { TrustdocsDemoLicenseToVerify_2OaDoc } from './license-to-verify-2.types'
+import React, { FunctionComponent, useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
 import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
-import { createAvatar } from '@dicebear/core'
-import { croodlesNeutral } from '@dicebear/collection'
-import HouseForFace from './house-for-face.svg'
+
+import frontCardBackground from '../license-to-verify/bg.svg'
+import trustdocsLogoImage from '../license-to-verify/trustdocs-logo.svg'
 import DummyQrImage from './dummy-qr.png'
+import HouseForFace from './house-for-face.svg'
+import { TrustdocsDemoLicenseToVerify_2OaDoc } from './license-to-verify-2.types'
 
 const Root = styled.div`
     background: white;

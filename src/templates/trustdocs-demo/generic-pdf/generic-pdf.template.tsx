@@ -1,23 +1,18 @@
-import React, { FunctionComponent, ReactNode, useState } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { TrustdocsDemoGenericPdfOaDoc } from './generic-pdf.types'
+import {
+    ScaleToViewportPdfDocument,
+    ScaleToViewportPage,
+    DefaultPdfLoadingComponent,
+} from 'components/scale-to-viewport-pdf'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import React, { FunctionComponent, ReactNode, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
-import 'react-pdf/dist/Page/TextLayer.css'
 
-import 'pdfjs-dist/build/pdf.worker.entry'
-import { Document as PDFDocument, Page, pdfjs } from 'react-pdf'
+import { TrustdocsDemoGenericPdfOaDoc } from './generic-pdf.types'
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.js',
-    import.meta.url
-).toString()
-
-function LoadingComponent() {
-    return (
-        <div className="w-[21cm] h-[29.7cm] !bg-gray-100 !border-gray-100 [&>*]:!invisible !pointer-events-none animate-pulse !text-transparent !select-none" />
-    )
-}
-
+// A4
+const INITIAL_PAGE_WIDTH_INCHES = 8.3
+const PIXEL_PER_INCH = 120
 export const TrustdocsDemoGenericPdfTemplate: FunctionComponent<
     TemplateProps<TrustdocsDemoGenericPdfOaDoc> & { className?: string }
 > = ({ document }) => {
@@ -27,18 +22,19 @@ export const TrustdocsDemoGenericPdfTemplate: FunctionComponent<
         setNumPages(numPages)
     }
 
+    const transformScale = useShrinkToViewport(
+        INITIAL_PAGE_WIDTH_INCHES * PIXEL_PER_INCH
+    )
+
     const renderedPdfPages: ReactNode[] = []
 
     for (let i = 0; i < (numPages ?? 0); i++) {
         renderedPdfPages.push(
-            <div className="border border-gray-200 w-[21cm] h-[29.7cm] overflow-clip">
-                <Page
-                    key={i}
-                    loading={<LoadingComponent />}
-                    pageNumber={i + 1}
-                    width={794}
-                />
-            </div>
+            <ScaleToViewportPage
+                key={i}
+                className="mx-auto"
+                pageNumber={i + 1}
+            />
         )
     }
 
@@ -48,13 +44,22 @@ export const TrustdocsDemoGenericPdfTemplate: FunctionComponent<
                 <title>trustdocs - generic-pdf</title>
             </Helmet>
             <div id="trustdocs-demo-generic-pdf">
-                <PDFDocument
-                    loading={<LoadingComponent />}
+                <ScaleToViewportPdfDocument
+                    loading={
+                        <DefaultPdfLoadingComponent
+                            width={
+                                INITIAL_PAGE_WIDTH_INCHES *
+                                PIXEL_PER_INCH *
+                                transformScale
+                            }
+                            height={11.7 * PIXEL_PER_INCH * transformScale}
+                        />
+                    }
                     file={document.input_pdf}
                     onLoadSuccess={onDocumentLoadSuccess}
                 >
                     {renderedPdfPages}
-                </PDFDocument>
+                </ScaleToViewportPdfDocument>
             </div>
         </>
     )

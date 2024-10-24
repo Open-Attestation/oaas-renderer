@@ -1,8 +1,8 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { SingaporeFoodAgencyExportHealthCertificateTemplate } from '../export-health-certificate.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../export-health-certificate.sample'
+import { SingaporeFoodAgencyExportHealthCertificateTemplate } from '../export-health-certificate.template'
 
 describe('SingaporeFoodAgencyExportHealthCertificateTemplate', () => {
     it('should match snapshot', () => {
