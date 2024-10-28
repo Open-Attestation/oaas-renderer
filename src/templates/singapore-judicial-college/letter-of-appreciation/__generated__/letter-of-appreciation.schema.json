@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "SingaporeJudicialCollege/LetterOfAppreciation",
+    "type": "object",
+    "required": ["name", "programmeTitle", "issueDate", "memberGroup"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of recipient",
+            "examples": ["Goh Yihan"],
+            "minLength": 1
+        },
+        "programmeTitle": {
+            "type": "string",
+            "description": "Title of the programme",
+            "examples": ["Courtroom Communication"],
+            "minLength": 1
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2023-12-31"],
+            "format": "date"
+        },
+        "memberGroup": {
+            "type": "string",
+            "description": "Name of group",
+            "examples": ["judiciary"],
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}

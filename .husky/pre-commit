@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run process:images
+npm run process:headers
+git add public/_headers
+npm run lint-staged
+git add src/**/*/__generated__/*
+npm run typecheck

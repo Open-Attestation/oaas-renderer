@@ -1,0 +1,36 @@
+---
+to: src/templates/<%= h.changeCase.paramCase(issuerId) %>/<%= h.changeCase.paramCase(docType) %>/<%= h.changeCase.paramCase(docType) %>.schema.ts
+---
+
+import { JSONSchema } from 'json-schema-to-typescript'
+
+export default {
+    $schema: 'http://json-schema.org/draft-07/schema#',
+    $id: '<%= h.changeCase.pascalCase(issuerId) %>/<%= h.changeCase.pascalCase(docType) %>',
+    type: 'object',
+    required: ['name', 'courseTitle', 'courseStartDate'],
+    properties: {
+        name: {
+            type: 'string',
+            description: 'Name of awardee',
+            examples: ['Thong Yong Jie Andre'],
+            minLength: 1,
+        },
+        courseTitle: {
+            type: 'string',
+            description: 'Title of the course',
+            examples: ['CSA Milestone Programme'],
+            minLength: 1,
+        },
+        courseStartDate: {
+            type: 'string',
+            description: 'Start date of course',
+            examples: ['2022-05-10'],
+            format: 'date',
+        },
+    },
+    additionalProperties: false,
+} as JSONSchema
+
+
+

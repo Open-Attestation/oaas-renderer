@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Mindef/MindefPdf",
+    "type": "object",
+    "required": ["name", "referenceNo", "input_pdf"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of participant",
+            "examples": ["Johnathan Doe"],
+            "minLength": 1
+        },
+        "referenceNo": {
+            "type": "string",
+            "description": "Reference number",
+            "examples": ["Johnathan Doe"],
+            "minLength": 1
+        },
+        "input_pdf": {
+            "type": "string",
+            "description": "input pdf filename",
+            "examples": ["input.pdf"],
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}
