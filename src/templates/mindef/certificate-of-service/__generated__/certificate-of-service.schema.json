@@ -9,7 +9,7 @@
         "signeeName",
         "signeeDesignation",
         "signeeDepartment",
-        "signeSignature_image"
+        "signeeSignature_image"
     ],
     "properties": {
         "name": {
@@ -48,7 +48,7 @@
             "examples": ["Human Resource Shared Services Centre"],
             "minLength": 1
         },
-        "signeSignature_image": {
+        "signeeSignature_image": {
             "type": "string",
             "description": "Signature of signee",
             "examples": ["signature.png"],

@@ -44,7 +44,7 @@ export const MindefCertificateOfServiceTemplate: FunctionComponent<
                                 <div className="mb-[4px] flex h-[71px] w-[265px] flex-col items-center justify-end">
                                     <img
                                         className="max-h-[71px] max-w-[265px]"
-                                        src={document.signeSignature_image}
+                                        src={document.signeeSignature_image}
                                         alt="Signature of signee one"
                                     />
                                 </div>

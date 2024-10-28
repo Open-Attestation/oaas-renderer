@@ -16,7 +16,7 @@ export const sample: MindefCertificateOfServiceOaDoc = {
     signeeName: 'LTC SAMPLE NAME',
     signeeDesignation: 'Head MINDEF/SAF',
     signeeDepartment: 'Human Resource Shared Services Centre',
-    signeSignature_image: signatureOne,
+    signeeSignature_image: signatureOne,
     issuers: [
         {
             name: 'institute of blockchain',

@@ -12,7 +12,7 @@ export default {
         'signeeName',
         'signeeDesignation',
         'signeeDepartment',
-        'signeSignature_image',
+        'signeeSignature_image',
     ],
     properties: {
         name: makeRequiredString('Name of participant', 'Johnathan Doe'),
@@ -27,7 +27,7 @@ export default {
             'Department of signee',
             'Human Resource Shared Services Centre'
         ),
-        signeSignature_image: {
+        signeeSignature_image: {
             type: 'string',
             description: 'Signature of signee',
             examples: ['signature.png'],

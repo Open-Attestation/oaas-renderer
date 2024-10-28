@@ -33,5 +33,5 @@ export interface MindefCertificateOfService {
     /**
      * Signature of signee
      */
-    signeSignature_image: string
+    signeeSignature_image: string
 }
