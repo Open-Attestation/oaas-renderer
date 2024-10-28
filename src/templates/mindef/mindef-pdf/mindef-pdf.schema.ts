@@ -5,10 +5,14 @@ export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
     $id: 'Mindef/MindefPdf',
     type: 'object',
-    required: ['name', 'referenceNo', 'input_pdf'],
+    required: ['name', 'documentName', 'referenceNo', 'input_pdf'],
     properties: {
         name: makeRequiredString('Name of participant', 'Johnathan Doe'),
-        referenceNo: makeRequiredString('Reference number', 'Johnathan Doe'),
+        documentName: makeRequiredString(
+            'Name of this document',
+            'Certificate of service'
+        ),
+        referenceNo: makeRequiredString('Reference number', '0034567'),
         input_pdf: makeRequiredString('input pdf filename', 'input.pdf'),
     },
     additionalProperties: false,

@@ -5,21 +5,33 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface MindefMindefPdf {
+export interface MindefCertificateOfService {
     /**
      * Name of participant
      */
     name: string
     /**
-     * Name of this document
-     */
-    documentName: string
-    /**
      * Reference number
      */
     referenceNo: string
     /**
-     * input pdf filename
+     * Date of Issue
      */
-    input_pdf: string
+    issueDate: string
+    /**
+     * Name of signee
+     */
+    signeeName: string
+    /**
+     * Designation of signee
+     */
+    signeeDesignation: string
+    /**
+     * Department of signee
+     */
+    signeeDepartment: string
+    /**
+     * Signature of signee
+     */
+    signeSignature_image: string
 }

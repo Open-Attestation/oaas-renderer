@@ -12,6 +12,7 @@ export const sample: MindefMindefPdfOaDoc = {
         url: 'http://localhost:3000',
     },
     name: 'Tan Chen Chen',
+    documentName: 'Certificate of Service',
     referenceNo: '123456789',
     input_pdf,
     issuers: [
