@@ -3,11 +3,16 @@ import { makeRequiredString } from 'utils/json-schema-utils'
 
 export default {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: 'TrustdocsDemo/GenericPdf',
+    $id: 'Mindef/MindefPdf',
     type: 'object',
-    required: ['name', 'input_pdf'],
+    required: ['name', 'documentName', 'referenceNo', 'input_pdf'],
     properties: {
         name: makeRequiredString('Name of participant', 'Johnathan Doe'),
+        documentName: makeRequiredString(
+            'Name of this document',
+            'Certificate of service'
+        ),
+        referenceNo: makeRequiredString('Reference number', '0034567'),
         input_pdf: makeRequiredString('input pdf filename', 'input.pdf'),
     },
     additionalProperties: false,

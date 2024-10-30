@@ -75,14 +75,12 @@ export const GovtechStack_2024CertificateOfCompletionTemplate: FunctionComponent
                                 <div className="absolute bottom-[0px] flex w-full flex-row items-end justify-between text-nowrap text-[16px] leading-[19.2px]">
                                     {/* left */}
                                     <div className="relative flex items-end">
-                                        <div className="w-[144.81px]">
-                                            <img
-                                                className="max-w-full"
-                                                src={signature_image}
-                                                alt="signature"
-                                            />
-                                        </div>
-                                        <div>
+                                        <img
+                                            className="max-w-[145px] max-h-[100px]"
+                                            src={signature_image}
+                                            alt="signature"
+                                        />
+                                        <div className="ml-2">
                                             <div className="font-bold">
                                                 {trainerName}
                                             </div>

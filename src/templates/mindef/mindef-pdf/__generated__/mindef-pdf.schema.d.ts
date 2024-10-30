@@ -5,11 +5,19 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface TrustdocsDemoGenericPdf {
+export interface MindefMindefPdf {
     /**
      * Name of participant
      */
     name: string
+    /**
+     * Name of this document
+     */
+    documentName: string
+    /**
+     * Reference number
+     */
+    referenceNo: string
     /**
      * input pdf filename
      */
