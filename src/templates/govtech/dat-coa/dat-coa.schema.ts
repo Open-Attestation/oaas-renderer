@@ -30,7 +30,12 @@ export default {
         ),
         awardType: makeEnumString(
             'Award type',
-            ['Prompt Royale Award', 'VIZtory Award'] as const,
+            [
+                'Prompt Royale Award',
+                'Prompt Royale X Award',
+                'Prompt Royale Open Award',
+                'VIZtory Award',
+            ] as const,
             'Prompt Royale Award'
         ),
         issueDate: {
