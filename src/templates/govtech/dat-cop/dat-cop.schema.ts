@@ -19,7 +19,12 @@ export default {
         name: makeRequiredString('Name of participant', 'Johnathan Doe', 28),
         awardType: makeEnumString(
             'Award type',
-            ['Prompt Royale Award', 'VIZtory Award'] as const,
+            [
+                'Prompt Royale Award',
+                'Prompt Royale X Award',
+                'Prompt Royale Open Award',
+                'VIZtory Award',
+            ] as const,
             'Prompt Royale Award'
         ),
         issueDate: {
