@@ -1,20 +1,18 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilCrcBasicOaDoc } from './crc-basic.types'
-import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
-
-import { DateTime } from 'luxon'
-
-import { Root } from './crc-basic.components'
-
 import { A4, A4HeightPx2Pages, A4WidthPx } from 'components/paper-size'
-import { Typography } from '../common/components'
-import commonImagesMap from '../common/assets/__generated__/images-map'
-import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
-import { formatCourseDatefor } from '../common/utils'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { DateTime } from 'luxon'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import commonImagesMap from '../common/assets/__generated__/images-map'
+import { Typography } from '../common/components'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { formatCourseDatefor } from '../common/utils'
+import { Root } from './crc-basic.components'
+import { NationalYouthCouncilCrcBasicOaDoc } from './crc-basic.types'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx2Pages

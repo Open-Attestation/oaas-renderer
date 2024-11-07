@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { SingaporeJudicialCollegeLetterOfAppreciationOaDoc } from './letter-of-appreciation.types'
 
 export const sample: SingaporeJudicialCollegeLetterOfAppreciationOaDoc = {

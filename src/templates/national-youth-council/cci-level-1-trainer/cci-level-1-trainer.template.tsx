@@ -1,6 +1,8 @@
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import { FlexBox } from 'components/flexbox'
 import { A4, A4HeightPx2Pages, A4WidthPx } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
 import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
@@ -14,8 +16,6 @@ import {
     UnorderedList,
 } from './cci-level-1-trainer.components'
 import { NationalYouthCouncilCciLevel_1TrainerOaDoc } from './cci-level-1-trainer.types'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx2Pages

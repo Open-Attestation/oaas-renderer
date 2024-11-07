@@ -1,20 +1,19 @@
-import React, { FunctionComponent, useEffect, useState } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { HealthSciencesAuthorityCertificateForExporterOaDoc } from './certificate-for-exporter.types'
+import { A4 } from 'components/paper-size'
+import { ScalableDocumentV2 } from 'components/scalable-document-v2/scalable-document-v2'
+import { QRCodeSVG } from 'qrcode.react'
+import React, { FunctionComponent, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
-
 import { pdfjs, Document, Page } from 'react-pdf'
+import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
+
+import hsaStamp from '../common/assets/hsa-stamp.svg'
+import mainBg from '../common/assets/license-certificate-a4-bg.png'
+import { Typography } from './certificate-for-exporter.components'
+import { HealthSciencesAuthorityCertificateForExporterOaDoc } from './certificate-for-exporter.types'
 import 'react-pdf/dist/Page/AnnotationLayer.css'
 import 'react-pdf/dist/Page/TextLayer.css'
-import { A4 } from 'components/paper-size'
-import { QRCodeSVG } from 'qrcode.react'
-import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
-import mainBg from '../common/assets/license-certificate-a4-bg.png'
-import hsaStamp from '../common/assets/hsa-stamp.svg'
-import { Typography } from './certificate-for-exporter.components'
-
 import 'pdfjs-dist/build/pdf.worker.entry'
-import { ScalableDocumentV2 } from 'components/scalable-document-v2/scalable-document-v2'
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.js',
     import.meta.url

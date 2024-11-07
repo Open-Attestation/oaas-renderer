@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { ForTestingOpenattestationDemoCertificateA4OaDoc } from './openattestation-demo-certificate-a4.types'
 
 export const sample: ForTestingOpenattestationDemoCertificateA4OaDoc = {

@@ -1,6 +1,8 @@
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import { FlexBox } from 'components/flexbox'
 import { A4, A4HeightPx2Pages, A4WidthPx } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
 import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
@@ -12,8 +14,6 @@ import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page
 import { NationalYouthCouncilBitSummaryCertificateFeb_2023OaDoc } from './bit-summary-certificate-feb-2023.types'
 import { BrickWallModel, Root, RowHeader, Table } from './bit-summary.component'
 import brickWallModelImg from './brick-wall-model.png'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx2Pages

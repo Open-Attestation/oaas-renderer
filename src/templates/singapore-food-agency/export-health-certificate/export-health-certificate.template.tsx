@@ -1,10 +1,12 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { SingaporeFoodAgencyExportHealthCertificateOaDoc } from './export-health-certificate.types'
-import styled from 'styled-components'
-import { Helmet } from 'react-helmet-async'
 import { A4R } from 'components/paper-size'
 import { DateTime } from 'luxon'
+import { QRCodeSVG } from 'qrcode.react'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
+import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
+
 import {
     Logo,
     LogoSection,
@@ -46,9 +48,8 @@ import {
     MobileAttestationText,
     MobileProductFieldComponent,
 } from './export-health-certificate.components'
+import { SingaporeFoodAgencyExportHealthCertificateOaDoc } from './export-health-certificate.types'
 import logoImgSrc from './sfa_logo.png'
-import { QRCodeSVG } from 'qrcode.react'
-import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
 
 export function formatDate(date: string): string {
     if (!date) {

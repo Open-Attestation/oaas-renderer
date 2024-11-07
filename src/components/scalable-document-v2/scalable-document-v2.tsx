@@ -25,10 +25,13 @@ export const useViewportWidth = () => {
     return width
 }
 
-function debounce<T extends (...args: unknown[]) => void>(fn: T, duration: number): T {
-    let timeout: NodeJS.Timeout;
+function debounce<T extends (...args: unknown[]) => void>(
+    fn: T,
+    duration: number
+): T {
+    let timeout: NodeJS.Timeout
     return ((...args: unknown[]) => {
-        clearTimeout(timeout);
+        clearTimeout(timeout)
         timeout = setTimeout(() => {
             fn(...args)
         }, duration)
@@ -63,9 +66,9 @@ export const ScalableDocumentV2: React.FC<{ children: React.ReactNode }> = ({
     const ref = useRef<HTMLDivElement>(null)
     const [originalDimensions, setOriginalDimensions] = useState<
         | {
-            width: number
-            height: number
-        }
+              width: number
+              height: number
+          }
         | undefined
     >()
 

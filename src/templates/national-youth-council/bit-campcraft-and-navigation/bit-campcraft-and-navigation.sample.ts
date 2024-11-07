@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilBitCampcraftAndNavigationOaDoc } from './bit-campcraft-and-navigation.types'
 
 export const sample: NationalYouthCouncilBitCampcraftAndNavigationOaDoc = {

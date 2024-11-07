@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilBitSoftSkillsOaDoc } from './bit-soft-skills.types'
 
 export const sample: NationalYouthCouncilBitSoftSkillsOaDoc = {

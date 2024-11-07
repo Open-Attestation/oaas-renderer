@@ -18,7 +18,7 @@ const marginsAndPaddings = [
 ] as const
 
 export type MarginAndPaddingProps = {
-    [key in typeof marginsAndPaddings[number]]?: number
+    [key in (typeof marginsAndPaddings)[number]]?: number
 }
 
 const DIRECTIONS_MAP = {

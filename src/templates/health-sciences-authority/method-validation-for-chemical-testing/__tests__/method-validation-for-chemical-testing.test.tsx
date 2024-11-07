@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { HealthSciencesAuthorityMethodValidationForChemicalTestingTemplate } from '../method-validation-for-chemical-testing.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../method-validation-for-chemical-testing.sample'
+import { HealthSciencesAuthorityMethodValidationForChemicalTestingTemplate } from '../method-validation-for-chemical-testing.template'
 
 describe('HealthSciencesAuthorityMethodValidationForChemicalTestingTemplate', () => {
     it('should match snapshot', () => {

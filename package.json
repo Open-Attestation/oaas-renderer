@@ -28,7 +28,6 @@
         "lint-staged": "^13.1.0",
         "luxon": "^3.1.1",
         "pdf-lib": "^1.17.1",
-        "prettier": "^2.8.1",
         "qrcode.react": "^3.1.0",
         "react": "^18.2.0",
         "react-animate-height": "^3.2.3",
@@ -53,21 +52,57 @@
         "eject": "react-scripts eject",
         "lint": "eslint ./src",
         "lint:fix": "eslint ./src --fix",
+        "lint:path": "eslint --fix",
         "lint-staged": "lint-staged",
         "typecheck": "tsc --noEmit",
         "process:schemas": "npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-schemas.ts && npx prettier --write src/**/__generated__/*.schema.{json,d.ts}",
         "ci:process:schemas": "run () { npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-schemas.ts \"$1\"; }; run",
         "process:images": "npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-to-hash-images.ts && npx prettier --write src/**/__generated__/*[!.d].ts",
         "process:headers": "npx ts-node --project src/__development__/tsconfig.json -r tsconfig-paths/register src/__internal__/process-headers.ts",
-        "new:template": "run() { npx hygen template new --issuerId $1 --docType $2; npm run ci:process:schemas \"src/templates/$1/$2\"; }; run",
+        "new:template": "run() { npx hygen template new --issuerId $1 --docType $2 && npm run ci:process:schemas \"src/templates/$1/$2\" && npm run lint:path \"src/templates/$1/$2\" && npm run lint:path \"src/templates/$1/index.ts\"; }; run",
         "prepare": "husky install"
     },
     "eslintConfig": {
+        "ignorePatterns": [
+            "**/*/__development__/*",
+            "**/*/__generated__/*"
+        ],
+        "plugins": [
+            "prettier"
+        ],
         "extends": [
             "react-app",
             "react-app/jest",
             "prettier"
-        ]
+        ],
+        "rules": {
+            "react/jsx-pascal-case": "off",
+            "eqeqeq": "error",
+            "import/order": [
+                "warn",
+                {
+                    "groups": [
+                        "builtin",
+                        "external",
+                        "internal",
+                        [
+                            "sibling",
+                            "parent"
+                        ],
+                        "index",
+                        "unknown"
+                    ],
+                    "newlines-between": "always",
+                    "alphabetize": {
+                        "order": "asc",
+                        "caseInsensitive": true
+                    }
+                }
+            ],
+            "prettier/prettier": "error",
+            "arrow-body-style": "off",
+            "prefer-arrow-callback": "off"
+        }
     },
     "browserslist": {
         "production": [
@@ -87,7 +122,9 @@
         "change-case": "^4.1.2",
         "concurrently": "^7.6.0",
         "cz-conventional-changelog": "3.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
         "jest-styled-components": "^7.1.0",
+        "prettier": "^2.8.0",
         "react-router": "^6.23.1",
         "react-router-dom": "^6.23.1",
         "tailwindcss": "^3.4.3",

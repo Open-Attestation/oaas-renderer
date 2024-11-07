@@ -1,4 +1,5 @@
 import { TemplateRegistry } from '@govtechsg/decentralized-renderer-react-components'
+
 import { ministryOfCommunicationsAndInformationDummyTemplateTemplates } from './dummy-template'
 
 export const registry: TemplateRegistry<any> = {

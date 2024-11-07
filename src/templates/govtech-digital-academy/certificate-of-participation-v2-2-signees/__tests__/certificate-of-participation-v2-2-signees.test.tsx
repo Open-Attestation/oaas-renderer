@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { GovtechDigitalAcademyCertificateOfParticipationV2_2SigneesTemplate } from '../certificate-of-participation-v2-2-signees.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../certificate-of-participation-v2-2-signees.sample'
+import { GovtechDigitalAcademyCertificateOfParticipationV2_2SigneesTemplate } from '../certificate-of-participation-v2-2-signees.template'
 
 describe('GovtechDigitalAcademyCertificateOfParticipationV2_2SigneesTemplate', () => {
     it('should match snapshot', () => {

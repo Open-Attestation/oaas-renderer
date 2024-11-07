@@ -1,16 +1,17 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { TrustdocsDemoNparksQvacOaDoc } from './nparks-qvac.types'
-import { Helmet } from 'react-helmet-async'
-import { makeTypography } from 'components/typography/makeTypography'
-import styled from 'styled-components'
-import { A4R, size } from 'components/paper-size'
-import { DateTime } from 'luxon'
-import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
 import { FlexBox } from 'components/flexbox'
-import logoImgSrc from '../common/assets/animal-vet-service-logo.jpg'
-import addressImgSrc from '../common/assets/animal-vet-service-address.png'
+import { A4R, size } from 'components/paper-size'
+import { makeTypography } from 'components/typography/makeTypography'
+import { DateTime } from 'luxon'
 import { QRCodeSVG } from 'qrcode.react'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
+import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
+
+import addressImgSrc from '../common/assets/animal-vet-service-address.png'
+import logoImgSrc from '../common/assets/animal-vet-service-logo.jpg'
+import { TrustdocsDemoNparksQvacOaDoc } from './nparks-qvac.types'
 
 const TemplateContainer = styled.div`
     font-family: Arial, Helvetica, sans-serif;

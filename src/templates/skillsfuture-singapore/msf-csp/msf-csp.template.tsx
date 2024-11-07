@@ -1,15 +1,22 @@
-import React, { FunctionComponent, useState } from 'react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { SkillsfutureSingaporeMsfCspOaDoc } from './msf-csp.types'
+import { DateTime } from 'luxon'
+import { QRCodeSVG } from 'qrcode.react'
+import React, { FunctionComponent, useState } from 'react'
+import AnimateHeight from 'react-animate-height'
 import { Helmet } from 'react-helmet-async'
+import { Tooltip } from 'react-tooltip'
+import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
+
 import bgMsfLogo from '../common/assets/bg-msf-logo.png'
-import msfLogo from '../common/assets/msf-logo.png'
-import shieldIcon from '../common/assets/icon-shield-keyhole.png'
-import shieldCheckmark from '../common/assets/icon-shield-checkmark.png'
+import alertIcon from '../common/assets/icon-alert.png'
+import chevronDownIcon from '../common/assets/icon-chevron-down.png'
 import checkmarkIcon from '../common/assets/icon-circle-check.png'
 import infoIcon from '../common/assets/icon-info.png'
-import chevronDownIcon from '../common/assets/icon-chevron-down.png'
-import alertIcon from '../common/assets/icon-alert.png'
+import shieldCheckmark from '../common/assets/icon-shield-checkmark.png'
+import shieldIcon from '../common/assets/icon-shield-keyhole.png'
+import msfLogo from '../common/assets/msf-logo.png'
+import { SkillsfutureSingaporeMsfCsp } from './__generated__/msf-csp.schema'
 import {
     FormLabel,
     H3,
@@ -19,15 +26,10 @@ import {
     TextPrimary,
     Typography,
 } from './msf-csp.components'
-import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
-import { QRCodeSVG } from 'qrcode.react'
-import { DateTime } from 'luxon'
-import { Tooltip } from 'react-tooltip'
-import AnimateHeight from 'react-animate-height'
-import { SkillsfutureSingaporeMsfCsp } from './__generated__/msf-csp.schema'
+import { SkillsfutureSingaporeMsfCspOaDoc } from './msf-csp.types'
 
 const SectionHeader = ({ headerText }: { headerText: string }) => (
-    <div className="flex flex-col break-inside-avoid">
+    <div className="flex break-inside-avoid flex-col">
         <H5>{headerText}</H5>
         <div className="h-px bg-[#C6C6C6]" />
     </div>
@@ -44,7 +46,7 @@ const RenderHeaderSection = ({
     expiryDate: string
     qrPayload: string
 }) => (
-    <div className="flex flex-row justify-between flex-wrap">
+    <div className="flex flex-row flex-wrap justify-between">
         <div className="flex flex-col">
             <img
                 style={{
@@ -60,7 +62,7 @@ const RenderHeaderSection = ({
                 <br />
                 Expires on {expiryDate}
             </FormLabel>
-            <div className="flex flex-row pt-1 pb-4 gap-x-2 items-center flex-wrap">
+            <div className="flex flex-row flex-wrap items-center gap-x-2 pb-4 pt-1">
                 <SubHeading>{recipientName}</SubHeading>
                 <VerifiedLabel />
             </div>
@@ -82,7 +84,7 @@ const PageContainer = ({
 }: {
     children: React.ReactNode
 }): JSX.Element => (
-    <div className="relative bg-white border border-solid border-slate-200 max-w-[21cm] min-h-[29.7cm]  my-0 mx-auto print:border-none">
+    <div className="relative mx-auto my-0 min-h-[29.7cm] max-w-[21cm] border border-solid border-slate-200 bg-white print:border-none">
         {children}
     </div>
 )
@@ -112,7 +114,7 @@ const VerifiedIcon = (): JSX.Element => (
 )
 const VerifiedLabel = (): JSX.Element => (
     <div
-        className={`flex flex-row items-center gap-1 rounded-[8px] px-2 py-1 w-[88px] h-[20px] bg-[#D7FFD7] text-[#007C34] leading-4`}
+        className={`flex h-[20px] w-[88px] flex-row items-center gap-1 rounded-[8px] bg-[#D7FFD7] px-2 py-1 leading-4 text-[#007C34]`}
     >
         <VerifiedIcon />
 
@@ -130,9 +132,9 @@ const RenderTopCertifiedSkills = (props: {
 
     if (skills.length > 0) {
         return (
-            <div className="flex flex-col gap-4 break-inside-avoid">
+            <div className="flex break-inside-avoid flex-col gap-4">
                 <SectionHeader headerText={'Top certified skills'} />
-                <div className="flex flex-row gap-3 flex-wrap">
+                <div className="flex flex-row flex-wrap gap-3">
                     {skills.map((skill, index) => (
                         <SkillTag
                             shortName={skill.shortName}
@@ -156,11 +158,11 @@ type PositionType = PositionsType[0]
 const PositionItem = (props: PositionType): JSX.Element => {
     const showVerifiedLabel = props.isVerifiedEmployee
     return (
-        <div className="flex flex-col break-inside-avoid">
+        <div className="flex break-inside-avoid flex-col">
             <TextPrimary>
                 <b>{props.position}</b> at {props.employer}
             </TextPrimary>
-            <div className="flex flex-row gap-x-2 flex-wrap items-center">
+            <div className="flex flex-row flex-wrap items-center gap-x-2">
                 <TextPlaceholder>{props.period}</TextPlaceholder>
                 {showVerifiedLabel && <VerifiedLabel />}
             </div>
@@ -192,13 +194,6 @@ const RenderEmploymentHistory = (props: { positions: PositionsType }) => {
     return <></>
 }
 
-type CertificationItemProps = {
-    title: string
-    source: string
-    dateAttained: string
-    showVerifiedLabel: boolean
-}
-
 type CertificationsType =
     SkillsfutureSingaporeMsfCsp['professionalCertifications']['certifications']
 type CertificationType = CertificationsType[0]
@@ -207,11 +202,11 @@ const CertificationItem = (props: CertificationType): JSX.Element => {
     const { certificateTitle, source, dateAttained, isVerified } = props
     const showVerifiedLabel = isVerified
     return (
-        <div className="flex flex-col break-inside-avoid">
+        <div className="flex break-inside-avoid flex-col">
             <TextPrimary>
                 <b>{certificateTitle}</b> from {source}
             </TextPrimary>
-            <div className="flex flex-row gap-x-2 flex-wrap items-center">
+            <div className="flex flex-row flex-wrap items-center gap-x-2">
                 <TextPlaceholder>Date attained: {dateAttained}</TextPlaceholder>
                 {showVerifiedLabel && <VerifiedLabel />}
             </div>
@@ -281,7 +276,7 @@ const SkillTag = ({ type, shortName, fullName, acquiredFrom }: SkillType) => {
         <>
             <a data-tooltip-id={`tooltip-${shortName}`}>
                 <div
-                    className={`flex flex-row items-center gap-1 rounded-full px-3 py-1 max-w-[256px] bg-[#F0F3FF] text-[#2A51FE] leading-5`}
+                    className={`flex max-w-[256px] flex-row items-center gap-1 rounded-full bg-[#F0F3FF] px-3 py-1 leading-5 text-[#2A51FE]`}
                 >
                     {showCheckmarkIcon && (
                         <img
@@ -293,7 +288,7 @@ const SkillTag = ({ type, shortName, fullName, acquiredFrom }: SkillType) => {
                             alt="Checkmark icon"
                         />
                     )}
-                    <div className="text-ellipsis overflow-hidden min-[320px]:text-nowrap">
+                    <div className="overflow-hidden text-ellipsis min-[320px]:text-nowrap">
                         {shortName}
                     </div>
                 </div>
@@ -314,7 +309,7 @@ const SkillTag = ({ type, shortName, fullName, acquiredFrom }: SkillType) => {
                     <div>
                         Skill acquired from
                         <br />
-                        <ul className="mx-0 my-0 pl-5 pr-0 py-0">
+                        <ul className="mx-0 my-0 py-0 pl-5 pr-0">
                             <li className="leading-5">{acquiredFrom}</li>
                         </ul>
                     </div>
@@ -330,11 +325,11 @@ const RenderFooter = ({
     displayInfo: boolean
 }): JSX.Element => {
     return (
-        <div className="absolute w-full bottom-0 left-0 bg-[#F0F3FF] print:hidden">
+        <div className="absolute bottom-0 left-0 w-full bg-[#F0F3FF] print:hidden">
             <FooterContentContainer>
-                <div className="flex flex-row items-start gap-1 py-1 content-center ">
+                <div className="flex flex-row content-center items-start gap-1 py-1">
                     <img
-                        className="w-[16px] h-[16px] mt-0.5"
+                        className="mt-0.5 h-[16px] w-[16px]"
                         src={infoIcon}
                         alt="Info icon"
                     />
@@ -353,7 +348,7 @@ const RenderFooter = ({
                         alt="Chevron icon"
                     />
                 </div>
-                <div className="flex flex-col gap-3 max-w-[666px] mx-auto">
+                <div className="mx-auto flex max-w-[666px] flex-col gap-3">
                     <AnimateHeight
                         id="example-panel"
                         duration={500}
@@ -423,12 +418,12 @@ const RenderFooter = ({
     )
 }
 
-const PrintedFooter = ({}: {}): JSX.Element => {
+const PrintedFooter = (): JSX.Element => {
     return (
-        <div className="bg-[#F0F3FF] pt-1 break-inside-avoid hidden print:block">
+        <div className="hidden break-inside-avoid bg-[#F0F3FF] pt-1 print:block">
             <FooterContentContainer>
-                <div className="flex flex-col gap-3 max-w-[666px] mx-auto">
-                    <div className="flex flex-row items-center gap-1 content-center ">
+                <div className="mx-auto flex max-w-[666px] flex-col gap-3">
+                    <div className="flex flex-row content-center items-center gap-1">
                         <img
                             style={{
                                 height: '16px',
@@ -500,10 +495,10 @@ const PrintedFooter = ({}: {}): JSX.Element => {
 
 const RenderExpiry = ({ expiryDate }: { expiryDate: string }): JSX.Element => {
     return (
-        <div className="flex flex-row justify-center items-start gap-1 bg-[#D90000] p-1 leading-5">
-            <div className="pt-0.5 h-[18px]">
+        <div className="flex flex-row items-start justify-center gap-1 bg-[#D90000] p-1 leading-5">
+            <div className="h-[18px] pt-0.5">
                 <img
-                    className="max-w-[16px] max-h-[16px]"
+                    className="max-h-[16px] max-w-[16px]"
                     src={alertIcon}
                     alt="Alert icon"
                 />
@@ -594,6 +589,8 @@ export const SkillsfutureSingaporeMsfCspTemplate: FunctionComponent<
                 />
             )
         }
+
+        return undefined
     })
 
     return (
@@ -621,7 +618,7 @@ export const SkillsfutureSingaporeMsfCspTemplate: FunctionComponent<
                             src={bgMsfLogo}
                             alt="MySkillsFuture Logo"
                         ></img>
-                        <div className="flex flex-col gap-8 pb-20 print:pb-0 relative">
+                        <div className="relative flex flex-col gap-8 pb-20 print:pb-0">
                             <RenderHeaderSection
                                 recipientName={document.name}
                                 issueDate={issueDateStr}

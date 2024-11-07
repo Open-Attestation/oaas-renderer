@@ -1,5 +1,6 @@
 import { JSONSchema } from 'json-schema-to-typescript'
 import { makeEnumString } from 'utils/json-schema-utils'
+
 import * as commonAssets from '../common/assets/__generated__/images-enum-values'
 
 export default {

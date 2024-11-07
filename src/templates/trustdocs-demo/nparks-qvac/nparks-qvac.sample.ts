@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { TrustdocsDemoNparksQvacOaDoc } from './nparks-qvac.types'
 
 export const sample: TrustdocsDemoNparksQvacOaDoc = {

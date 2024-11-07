@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilGeneralCertificateOaDoc } from './general-certificate.types'
 
 export const sample: NationalYouthCouncilGeneralCertificateOaDoc = {

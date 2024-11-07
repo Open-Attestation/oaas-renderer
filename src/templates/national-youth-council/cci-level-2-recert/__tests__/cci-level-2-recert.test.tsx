@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { NationalYouthCouncilCciLevel_2RecertTemplate } from '../cci-level-2-recert.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../cci-level-2-recert.sample'
+import { NationalYouthCouncilCciLevel_2RecertTemplate } from '../cci-level-2-recert.template'
 
 describe('NationalYouthCouncilCciLevel_2RecertTemplate', () => {
     it('should match snapshot', () => {
@@ -58,42 +59,6 @@ describe('NationalYouthCouncilCciLevel_2RecertTemplate', () => {
               margin-bottom: 24px;
             }
 
-            .c2 {
-              min-width: 500px;
-            }
-
-            .c23 {
-              width: 100%;
-              border: 1px solid black;
-              border-collapse: collapse;
-              font-family: 'Libre Franklin';
-              font-size: 0.8em;
-              text-align: center;
-              table-layout: fixed;
-            }
-
-            .c24 {
-              border: 1px solid black;
-            }
-
-            .c25 {
-              border: 1px solid black;
-              font-weight: bold;
-            }
-
-            .c26 {
-              border: 1px solid black;
-              font-style: italic;
-              text-align: left;
-            }
-
-            .c27 {
-              padding-left: 0px;
-              margin-left: 18px;
-              margin-top: 0px;
-              margin-bottom: 0px;
-            }
-
             .c3 {
               background: white;
               position: relative;
@@ -120,6 +85,16 @@ describe('NationalYouthCouncilCciLevel_2RecertTemplate', () => {
               background-size: cover;
               background-image: url('undefined');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 2261px;
             }
 
             .c16 {
@@ -292,14 +267,40 @@ describe('NationalYouthCouncilCciLevel_2RecertTemplate', () => {
               align-items: start;
             }
 
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 2261px;
+            .c2 {
+              min-width: 500px;
+            }
+
+            .c23 {
+              width: 100%;
+              border: 1px solid black;
+              border-collapse: collapse;
+              font-family: 'Libre Franklin';
+              font-size: 0.8em;
+              text-align: center;
+              table-layout: fixed;
+            }
+
+            .c24 {
+              border: 1px solid black;
+            }
+
+            .c25 {
+              border: 1px solid black;
+              font-weight: bold;
+            }
+
+            .c26 {
+              border: 1px solid black;
+              font-style: italic;
+              text-align: left;
+            }
+
+            .c27 {
+              padding-left: 0px;
+              margin-left: 18px;
+              margin-top: 0px;
+              margin-bottom: 0px;
             }
 
             @media print {

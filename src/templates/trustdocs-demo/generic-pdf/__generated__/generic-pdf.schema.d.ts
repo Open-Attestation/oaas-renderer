@@ -7,6 +7,10 @@
 
 export interface TrustdocsDemoGenericPdf {
     /**
+     * Name of participant
+     */
+    name: string
+    /**
      * input pdf filename
      */
     input_pdf: string

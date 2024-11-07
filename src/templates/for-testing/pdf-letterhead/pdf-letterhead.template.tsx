@@ -1,11 +1,14 @@
-import { FunctionComponent, useEffect, useState } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { ForTestingPdfLetterheadOaDoc } from './pdf-letterhead.types'
+import {
+    ScaleToViewportPage,
+    ScaleToViewportPdfDocument,
+} from 'components/scale-to-viewport-pdf'
+import { FunctionComponent, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
+
 import { addLetterhead } from './add-letterhead'
 import { letterHeadPngBase64 } from './letterhead'
-
-import { ScaleToViewportPage, ScaleToViewportPdfDocument } from 'components/scale-to-viewport-pdf'
+import { ForTestingPdfLetterheadOaDoc } from './pdf-letterhead.types'
 
 export const ForTestingPdfLetterheadTemplate: FunctionComponent<
     TemplateProps<ForTestingPdfLetterheadOaDoc> & { className?: string }
@@ -41,7 +44,10 @@ export const ForTestingPdfLetterheadTemplate: FunctionComponent<
                             onLoadSuccess={onDocumentLoadSuccess}
                         >
                             {new Array(numPages).fill(1).map((_, i) => (
-                                <ScaleToViewportPage key={i} pageNumber={i + 1} />
+                                <ScaleToViewportPage
+                                    key={i}
+                                    pageNumber={i + 1}
+                                />
                             ))}
                         </ScaleToViewportPdfDocument>
                     </>

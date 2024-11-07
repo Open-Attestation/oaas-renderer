@@ -1,12 +1,13 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { HealthSciencesAuthorityFreeSaleOaDoc } from './free-sale.types'
-import styled from 'styled-components'
-import { Helmet } from 'react-helmet-async'
 import { A4 } from 'components/paper-size'
+import { DateTime } from 'luxon'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
+
 import mainBg from '../common/assets/freesale-a4-bg.png'
 import hsaStamp from '../common/assets/hsa-stamp.svg'
-import { DateTime } from 'luxon'
+import { HealthSciencesAuthorityFreeSaleOaDoc } from './free-sale.types'
 
 const MainDiv = styled.div`
     // A4 has a 2cm padding

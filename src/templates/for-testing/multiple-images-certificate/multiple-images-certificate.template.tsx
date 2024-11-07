@@ -1,8 +1,9 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { ForTestingMultipleImagesCertificateOaDoc } from './multiple-images-certificate.types'
-import styled from 'styled-components'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
+
+import { ForTestingMultipleImagesCertificateOaDoc } from './multiple-images-certificate.types'
 
 const TemplateContainer = styled.div`
     img {

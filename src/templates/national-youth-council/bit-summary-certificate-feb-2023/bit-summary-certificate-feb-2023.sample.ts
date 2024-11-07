@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilBitSummaryCertificateFeb_2023OaDoc } from './bit-summary-certificate-feb-2023.types'
 
 export const sample: NationalYouthCouncilBitSummaryCertificateFeb_2023OaDoc = {

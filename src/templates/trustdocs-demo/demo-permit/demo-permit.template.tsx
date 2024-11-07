@@ -1,11 +1,12 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { TrustdocsDemoDemoPermitOaDoc } from './demo-permit.types'
-import { Helmet } from 'react-helmet-async'
-import logo from './logo.png'
-import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
-import { QRCodeSVG } from 'qrcode.react'
 import { ScalableDocumentV2 } from 'components/scalable-document-v2/scalable-document-v2'
+import { QRCodeSVG } from 'qrcode.react'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
+
+import { TrustdocsDemoDemoPermitOaDoc } from './demo-permit.types'
+import logo from './logo.png'
 
 export const TrustdocsDemoDemoPermitTemplate: FunctionComponent<
     TemplateProps<TrustdocsDemoDemoPermitOaDoc> & { className?: string }

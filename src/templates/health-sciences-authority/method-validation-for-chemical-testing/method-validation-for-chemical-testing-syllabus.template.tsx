@@ -1,8 +1,11 @@
-import { FunctionComponent } from 'react'
+/* eslint-disable jsx-a11y/alt-text */
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { HealthSciencesAuthorityMethodValidationForChemicalTestingOaDoc } from './method-validation-for-chemical-testing.types'
-import { Helmet } from 'react-helmet-async'
 import { A4 } from 'components/paper-size'
+import { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import ellipseFilled from '../common/assets/ellipse-filled.svg'
+import ellipseOutline from '../common/assets/ellipse-outline.svg'
 import {
     SyllabusContentDivComponent,
     SyllabusSectionDivComponent,
@@ -12,8 +15,7 @@ import {
     SyllabusSubListDivComponent,
     SyllabusCourseTitleComponent,
 } from './method-validation-for-chemical-testing.components'
-import ellipseFilled from '../common/assets/ellipse-filled.svg'
-import ellipseOutline from '../common/assets/ellipse-outline.svg'
+import { HealthSciencesAuthorityMethodValidationForChemicalTestingOaDoc } from './method-validation-for-chemical-testing.types'
 
 export const HealthSciencesAuthorityMethodValidationForChemicalTestingSyllabusTemplate: FunctionComponent<
     TemplateProps<HealthSciencesAuthorityMethodValidationForChemicalTestingOaDoc> & {

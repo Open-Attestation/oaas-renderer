@@ -25,5 +25,9 @@ export const A4 = styled.div<{
     @media print {
         border: none;
         break-inside: avoid;
+
+        @page {
+            size: portrait;
+        }
     }
 `

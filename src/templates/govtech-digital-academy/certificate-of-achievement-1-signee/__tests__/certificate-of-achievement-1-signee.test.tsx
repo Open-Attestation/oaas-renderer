@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { GovtechDigitalAcademyCertificateOfAchievement_1SigneeTemplate } from '../certificate-of-achievement-1-signee.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../certificate-of-achievement-1-signee.sample'
+import { GovtechDigitalAcademyCertificateOfAchievement_1SigneeTemplate } from '../certificate-of-achievement-1-signee.template'
 
 describe('GovtechDigitalAcademyCertificateOfAchievement_1SigneeTemplate', () => {
     it('should match snapshot', () => {

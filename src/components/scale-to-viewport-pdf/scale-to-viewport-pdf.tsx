@@ -1,5 +1,5 @@
+import { ScalableDocumentV2 } from 'components/scalable-document-v2/scalable-document-v2'
 import React, { createContext, useContext, useState } from 'react'
-
 import {
     Document as PDFDocument,
     DocumentProps,
@@ -8,11 +8,10 @@ import {
     PageProps,
 } from 'react-pdf'
 import { DocumentCallback } from 'react-pdf/dist/cjs/shared/types'
-import { ScalableDocumentV2 } from 'components/scalable-document-v2/scalable-document-v2'
+import styled from 'styled-components'
 
 import 'react-pdf/dist/Page/TextLayer.css'
 import 'pdfjs-dist/build/pdf.worker.entry'
-import styled from 'styled-components'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.js',
@@ -129,10 +128,7 @@ export const ScaleToViewportPage: React.FC<
                 width={width}
                 height={height}
                 loading={<></>}
-            >
-                {' '}
-                /
-            </StyledPage>
+            />
         </ScalableDocumentV2>
     )
 }

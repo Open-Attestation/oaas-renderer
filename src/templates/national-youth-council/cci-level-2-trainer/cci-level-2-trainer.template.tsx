@@ -1,24 +1,21 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilCciLevel_2TrainerOaDoc } from './cci-level-2-trainer.types'
-// import styled from 'styled-components'
-import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
-
+import { A4, A4HeightPx2Pages, A4WidthPx } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
 
+import commonImagesMap from '../common/assets/__generated__/images-map'
+import { Typography } from '../common/components'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 import {
     Root,
     UnorderedList,
     UnorderedDashList,
 } from './cci-level-2-trainer.components'
-
-import { A4, A4HeightPx2Pages, A4WidthPx } from 'components/paper-size'
-import { Typography } from '../common/components'
-import commonImagesMap from '../common/assets/__generated__/images-map'
-import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { NationalYouthCouncilCciLevel_2TrainerOaDoc } from './cci-level-2-trainer.types'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx2Pages

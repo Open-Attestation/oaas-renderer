@@ -1,23 +1,21 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilStandardFirstAidOaDoc } from './standard-first-aid.types'
-// import styled from 'styled-components'
+import { FlexBox } from 'components/flexbox'
+import { A4HeightPx, A4WidthPx } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { DateTime } from 'luxon'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
 
+import imagesMap from '../common/assets/__generated__/images-map'
+import srfacLogoSrc from '../common/assets/srfac-logo.png'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
 import {
     Root,
     SRFACLogoImage,
     Typography,
 } from './standard-first-aid.components'
-import { DateTime } from 'luxon'
-
-import { FlexBox } from 'components/flexbox'
-import imagesMap from '../common/assets/__generated__/images-map'
-import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
-import srfacLogoSrc from '../common/assets/srfac-logo.png'
-import { A4HeightPx, A4WidthPx } from 'components/paper-size'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { NationalYouthCouncilStandardFirstAidOaDoc } from './standard-first-aid.types'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx

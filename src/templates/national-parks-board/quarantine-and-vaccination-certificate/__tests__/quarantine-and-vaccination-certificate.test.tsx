@@ -18,21 +18,6 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
             .toJSON()
 
         expect(tree).toMatchInlineSnapshot(`
-            .c1 {
-              background: white;
-              position: relative;
-              max-width: 21cm;
-              min-width: 320px;
-              padding: 2cm;
-              min-height: 29.7cm;
-              margin: 0 auto;
-              box-sizing: border-box;
-              border: 1px solid #ccc;
-              background-size: cover;
-              background-image: url('undefined');
-              z-index: initial;
-            }
-
             .c2 {
               display: -webkit-box;
               display: -webkit-flex;
@@ -73,6 +58,21 @@ describe('NationalParksBoardQuarantineAndVaccinationCertificateTemplate', () => 
               -webkit-justify-content: center;
               -ms-flex-pack: center;
               justify-content: center;
+            }
+
+            .c1 {
+              background: white;
+              position: relative;
+              max-width: 21cm;
+              min-width: 320px;
+              padding: 2cm;
+              min-height: 29.7cm;
+              margin: 0 auto;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              background-size: cover;
+              background-image: url('undefined');
+              z-index: initial;
             }
 
             .c0 {

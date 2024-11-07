@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilCrcBasicOaDoc } from './crc-basic.types'
 
 export const sample: NationalYouthCouncilCrcBasicOaDoc = {

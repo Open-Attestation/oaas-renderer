@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { TrustdocsDemoLicenseToVerifyOaDoc } from './license-to-verify.types'
 import { sampleProfileImage } from './sample-profile-image'
 

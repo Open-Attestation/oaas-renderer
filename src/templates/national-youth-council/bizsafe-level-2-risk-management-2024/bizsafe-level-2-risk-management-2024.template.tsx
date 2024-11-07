@@ -1,16 +1,16 @@
-import { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { NationalYouthCouncilBizsafeLevel_2RiskManagement_2024OaDoc } from './bizsafe-level-2-risk-management-2024.types'
-import { Helmet } from 'react-helmet-async'
-import { formatCourseDatefor } from '../common/utils'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import { FlexBox } from 'components/flexbox'
 import { A4HeightPx, A4WidthPx } from 'components/paper-size'
 import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
-import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
-import { Typography } from '../common/components'
-import commonImagesMap from '../common/assets/__generated__/images-map'
-import { FlexBox } from 'components/flexbox'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
+import { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import commonImagesMap from '../common/assets/__generated__/images-map'
+import { Typography } from '../common/components'
+import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
+import { NationalYouthCouncilBizsafeLevel_2RiskManagement_2024OaDoc } from './bizsafe-level-2-risk-management-2024.types'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx

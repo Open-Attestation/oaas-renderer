@@ -1,8 +1,12 @@
-import { FunctionComponent, useState } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { HealthSciencesAuthorityHsaLetterOaDoc } from './hsa-letter.types'
+import {
+    ScaleToViewportPage,
+    ScaleToViewportPdfDocument,
+} from 'components/scale-to-viewport-pdf'
+import { FunctionComponent, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { ScaleToViewportPage, ScaleToViewportPdfDocument } from 'components/scale-to-viewport-pdf'
+
+import { HealthSciencesAuthorityHsaLetterOaDoc } from './hsa-letter.types'
 
 export const HealthSciencesAuthorityHsaLetterTemplate: FunctionComponent<
     TemplateProps<HealthSciencesAuthorityHsaLetterOaDoc> & {
@@ -34,7 +38,7 @@ export const HealthSciencesAuthorityHsaLetterTemplate: FunctionComponent<
                         {Array(numPages)
                             .fill(0)
                             .map((_, i) => (
-                                <ScaleToViewportPage pageNumber={i + 1}/>
+                                <ScaleToViewportPage pageNumber={i + 1} />
                             ))}
                     </ScaleToViewportPdfDocument>
                 )}

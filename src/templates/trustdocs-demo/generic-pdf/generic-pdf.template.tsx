@@ -1,20 +1,17 @@
-import React, { FunctionComponent, ReactNode, useState } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { TrustdocsDemoGenericPdfOaDoc } from './generic-pdf.types'
-import { Helmet } from 'react-helmet-async'
-import 'react-pdf/dist/Page/TextLayer.css'
-
-import 'pdfjs-dist/build/pdf.worker.entry'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import {
     ScaleToViewportPdfDocument,
     ScaleToViewportPage,
     DefaultPdfLoadingComponent,
 } from 'components/scale-to-viewport-pdf'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
+import React, { FunctionComponent, ReactNode, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import { TrustdocsDemoGenericPdfOaDoc } from './generic-pdf.types'
 
 // A4
 const INITIAL_PAGE_WIDTH_INCHES = 8.3
-const INITIAL_PAGE_HEIGHT_INCHES = 11.7
 const PIXEL_PER_INCH = 120
 export const TrustdocsDemoGenericPdfTemplate: FunctionComponent<
     TemplateProps<TrustdocsDemoGenericPdfOaDoc> & { className?: string }

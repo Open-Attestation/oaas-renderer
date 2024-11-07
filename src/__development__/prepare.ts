@@ -1,8 +1,9 @@
 // DO NOT TOUCH! This is only used during development!
 import { writeFileSync } from 'fs'
-import glob from 'glob'
 import path from 'path'
+
 import { camelCase } from 'change-case'
+import glob from 'glob'
 
 const PROJECT_DIR = path.join(__dirname, '../../')
 const DEVELOPMENT_DIR = __dirname

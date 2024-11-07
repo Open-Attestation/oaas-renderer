@@ -5,16 +5,16 @@ import {
     A4LandscapeHeightPx,
     A4LandscapeWidthPx,
 } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 import landscapeBg from '../common/assets/landscape-bg.png'
 import obsLogo from '../common/assets/obs-logo-with-tagline.png'
+import { formatCourseDatefor } from '../common/utils'
 import { GroupImg, ObsLogoImg, WatchNameComponent } from './obs-moc.components'
 import { NationalYouthCouncilObsMocOaDoc } from './obs-moc.types'
-import { formatCourseDatefor } from '../common/utils'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 
 const documentWidth = A4LandscapeWidthPx
 const documentHeight = A4LandscapeHeightPx

@@ -1,18 +1,17 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 // DO NOT TOUCH! This is only used during development!
+import useUrlState from '@ahooksjs/use-url-state'
 import {
     FrameActions,
     FrameConnector,
     HostActionsHandler,
 } from '@govtechsg/decentralized-renderer-react-components'
+import { useFuzzySearchList, Highlight } from '@nozbe/microfuzz/react'
 import { capitalCase } from 'change-case'
 import React, { useCallback, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import styled from 'styled-components'
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import useUrlState from '@ahooksjs/use-url-state'
-
-import { useFuzzySearchList, Highlight } from '@nozbe/microfuzz/react'
+import styled from 'styled-components'
 
 // @ts-ignore
 import { samples } from './samples'
@@ -67,7 +66,8 @@ const DocumentsContainer = styled.div`
         background-color: #ebf8ff;
         border-top: 4px solid #4299e2;
         margin-bottom: 0.5rem;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        box-shadow:
+            0 4px 6px -1px rgba(0, 0, 0, 0.1),
             0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
     .document.active {
@@ -201,7 +201,7 @@ export const App: React.FunctionComponent<AppProps> = ({
             documentType: string
         }[] = []
 
-        Object.entries(issuerDocuments).map(([issuerId, documents]) => {
+        Object.entries(issuerDocuments).forEach(([issuerId, documents]) => {
             Object.keys(documents).forEach((documentType) => {
                 items.push({
                     issuerId,
@@ -265,6 +265,7 @@ export const App: React.FunctionComponent<AppProps> = ({
             <div
                 style={{
                     position: 'fixed',
+                    zIndex: 999,
                     top: 0,
                 }}
             >

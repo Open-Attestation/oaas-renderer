@@ -36,78 +36,6 @@ describe('NycBclsAedTemplate', () => {
               justify-content: center;
             }
 
-            .c5 {
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              text-align: center;
-            }
-
-            .c8 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-            }
-
-            .c9 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: -8px;
-            }
-
-            .c10 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-              text-align: center;
-            }
-
-            .c11 {
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: -8px;
-              text-align: center;
-            }
-
-            .c12 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 400;
-              margin-top: 0px;
-            }
-
-            .c13 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: -8px;
-            }
-
-            .c14 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-              margin-top: 0px;
-            }
-
-            .c6 {
-              font-family: 'Libre Franklin';
-            }
-
-            .c15 {
-              max-height: 72px;
-            }
-
-            .c2 {
-              min-width: 500px;
-            }
-
             .c3 {
               background: white;
               position: relative;
@@ -120,6 +48,16 @@ describe('NycBclsAedTemplate', () => {
               background-size: cover;
               background-image: url('background.svg');
               z-index: initial;
+            }
+
+            .c0 {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              height: 1152px;
             }
 
             .c19 {
@@ -244,14 +182,76 @@ describe('NycBclsAedTemplate', () => {
               align-items: start;
             }
 
-            .c0 {
-              -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-              transform: scale(1);
-              -webkit-transform-origin: top left;
-              -ms-transform-origin: top left;
-              transform-origin: top left;
-              height: 1152px;
+            .c5 {
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+            }
+
+            .c8 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+            }
+
+            .c9 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: -8px;
+            }
+
+            .c10 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+              text-align: center;
+            }
+
+            .c11 {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -8px;
+              text-align: center;
+            }
+
+            .c12 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 0px;
+            }
+
+            .c13 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -8px;
+            }
+
+            .c14 {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: 0px;
+            }
+
+            .c6 {
+              font-family: 'Libre Franklin';
+            }
+
+            .c15 {
+              max-height: 72px;
+            }
+
+            .c2 {
+              min-width: 500px;
             }
 
             @media print {

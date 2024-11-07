@@ -1,12 +1,13 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { TrustdocsDemoLicenseToVerifyOaDoc } from './license-to-verify.types'
-import styled from 'styled-components'
-import { Helmet } from 'react-helmet-async'
 import { FlexBox } from 'components/flexbox'
 import { DateTime } from 'luxon'
-import frontCardBackground from './bg.svg'
 import { QRCodeSVG } from 'qrcode.react'
+import React, { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
+
+import frontCardBackground from './bg.svg'
+import { TrustdocsDemoLicenseToVerifyOaDoc } from './license-to-verify.types'
 import trustdocsLogoImage from './trustdocs-logo.svg'
 
 const Root = styled.div`

@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { MinistryOfCommunicationsAndInformationDummyTemplateTemplate } from '../dummy-template.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../dummy-template.sample'
+import { MinistryOfCommunicationsAndInformationDummyTemplateTemplate } from '../dummy-template.template'
 
 describe('MinistryOfCommunicationsAndInformationDummyTemplateTemplate', () => {
     it('should match snapshot', () => {
