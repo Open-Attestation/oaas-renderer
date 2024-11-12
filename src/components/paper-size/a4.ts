@@ -28,6 +28,7 @@ export const A4 = styled.div<{
 
         @page {
             size: portrait;
+            margin: 0;
         }
     }
 `
