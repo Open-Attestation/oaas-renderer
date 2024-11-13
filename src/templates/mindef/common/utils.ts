@@ -2,8 +2,7 @@ import { DateTime } from 'luxon'
 
 export function formatCourseDatefor(
     courseStartDate: string,
-    courseEndDate: string,
-    separator: string = '-'
+    courseEndDate: string
 ): string {
     const startDateTime = DateTime.fromISO(courseStartDate)
     const endDateTime = DateTime.fromISO(courseEndDate)
@@ -20,18 +19,18 @@ export function formatCourseDatefor(
     ) {
         const start = startDateTime.toFormat('dd')
         const end = endDateTime.toFormat('dd MMMM yyyy')
-        return `${start} ${separator} ${end}`
+        return `${start} - ${end}`
     }
 
     // Format when dates have the same year
     if (startDateTime.year === endDateTime.year) {
         const start = startDateTime.toFormat('dd MMMM')
         const end = endDateTime.toFormat('dd MMMM yyyy')
-        return `${start} ${separator} ${end}`
+        return `${start} - ${end}`
     }
 
     const start = startDateTime.toFormat('dd MMMM yyyy')
     const end = endDateTime.toFormat('dd MMMM yyyy')
 
-    return `${start} ${separator} ${end}`
+    return `${start} - ${end}`
 }

@@ -21,7 +21,11 @@ export interface GovtechDatCoa {
     /**
      * Award type
      */
-    awardType: 'Prompt Royale Award' | 'VIZtory Award'
+    awardType:
+        | 'Prompt Royale Award'
+        | 'Prompt Royale X Award'
+        | 'Prompt Royale Open Award'
+        | 'VIZtory Award'
     /**
      * Date of issue
      */
