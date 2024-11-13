@@ -1,7 +1,8 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { ForTestingSimpleCert_2OaDoc } from './simple-cert-2.types'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
+
+import { ForTestingSimpleCert_2OaDoc } from './simple-cert-2.types'
 
 export const ForTestingSimpleCert_2Template: FunctionComponent<
     TemplateProps<ForTestingSimpleCert_2OaDoc> & { className?: string }

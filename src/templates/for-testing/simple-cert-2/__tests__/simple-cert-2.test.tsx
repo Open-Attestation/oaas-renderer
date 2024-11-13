@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { ForTestingSimpleCert_2Template } from '../simple-cert-2.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../simple-cert-2.sample'
+import { ForTestingSimpleCert_2Template } from '../simple-cert-2.template'
 
 describe('ForTestingSimpleCert_2Template', () => {
     it('should match snapshot', () => {

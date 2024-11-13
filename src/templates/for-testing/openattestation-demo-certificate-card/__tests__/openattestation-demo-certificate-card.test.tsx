@@ -1,8 +1,9 @@
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import renderer from 'react-test-renderer'
-import { ForTestingOpenattestationDemoCertificateCardTemplate } from '../openattestation-demo-certificate-card.template'
-import { render, screen } from '@testing-library/react'
+
 import { sample } from '../openattestation-demo-certificate-card.sample'
+import { ForTestingOpenattestationDemoCertificateCardTemplate } from '../openattestation-demo-certificate-card.template'
 
 describe('ForTestingOpenattestationDemoCertificateCardTemplate', () => {
     it('should match snapshot', () => {

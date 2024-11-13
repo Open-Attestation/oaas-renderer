@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Govtech/DatCop",
+    "type": "object",
+    "required": [
+        "name",
+        "awardType",
+        "issueDate",
+        "signeeName",
+        "signeeDesignation",
+        "signeeSignature"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of participant",
+            "examples": ["Johnathan Doe"],
+            "minLength": 1,
+            "maxLength": 28
+        },
+        "awardType": {
+            "type": "string",
+            "description": "Award type",
+            "enum": [
+                "Prompt Royale Award",
+                "Prompt Royale X Award",
+                "Prompt Royale Open Award",
+                "VIZtory Award"
+            ],
+            "examples": ["Prompt Royale Award"]
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2024-11-15"],
+            "format": "date"
+        },
+        "signeeName": {
+            "type": "string",
+            "description": "Name of signee",
+            "enum": ["Chang Sau Sheong"],
+            "examples": ["Chang Sau Sheong"]
+        },
+        "signeeDesignation": {
+            "type": "string",
+            "description": "Designation of signee",
+            "enum": ["DEPUTY CHIEF EXECUTIVE"],
+            "examples": ["DEPUTY CHIEF EXECUTIVE"]
+        },
+        "signeeSignature": {
+            "type": "string",
+            "description": "SHA256 hash of the signee's signature",
+            "enum": [
+                "chang-sau-sheong-signature&9b31b9f05b81bc64dfd2a9ecb412ed43297da93bf7c8708407954d1ac855ad96.png"
+            ],
+            "examples": [
+                "chang-sau-sheong-signature&9b31b9f05b81bc64dfd2a9ecb412ed43297da93bf7c8708407954d1ac855ad96.png"
+            ]
+        }
+    },
+    "additionalProperties": false
+}

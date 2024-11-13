@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationOaDoc } from './bizsafe-level-2-risk-management-outdoor-adventure-education.types'
 
 export const sample: NationalYouthCouncilBizsafeLevel_2RiskManagementOutdoorAdventureEducationOaDoc =

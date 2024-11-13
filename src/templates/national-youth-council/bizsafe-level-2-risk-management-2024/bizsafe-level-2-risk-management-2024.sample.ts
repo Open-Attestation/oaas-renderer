@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilBizsafeLevel_2RiskManagement_2024OaDoc } from './bizsafe-level-2-risk-management-2024.types'
 
 export const sample: NationalYouthCouncilBizsafeLevel_2RiskManagement_2024OaDoc =

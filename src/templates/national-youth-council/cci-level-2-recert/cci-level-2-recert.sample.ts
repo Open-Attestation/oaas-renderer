@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { NationalYouthCouncilCciLevel_2RecertOaDoc } from './cci-level-2-recert.types'
 
 export const sample: NationalYouthCouncilCciLevel_2RecertOaDoc = {

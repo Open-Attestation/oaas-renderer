@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "HealthSciencesAuthority/CertificateForExporter",
+    "type": "object",
+    "required": ["organisationName", "certificateNo", "certContent_pdf"],
+    "properties": {
+        "organisationName": {
+            "type": "string",
+            "description": "Name of Organisation",
+            "examples": ["ABC PTE LTD"],
+            "minLength": 1
+        },
+        "certificateNo": {
+            "type": "string",
+            "description": "Certificate Number",
+            "examples": ["MCEL2000999"],
+            "minLength": 1
+        },
+        "certContent_pdf": {
+            "type": "string",
+            "description": "Certificate content",
+            "examples": ["certificate.pdf"],
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}

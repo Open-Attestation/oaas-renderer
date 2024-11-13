@@ -33,7 +33,9 @@ export interface GovtechDigitalAcademyCertificateOfCompletionSmartnation {
     /**
      * Organisation of signee
      */
-    signeeOrganisation: 'Smart Nation and Digital Government Group'
+    signeeOrganisation:
+        | 'Smart Nation'
+        | 'Smart Nation and Digital Government Group'
     /**
      * SHA256 hash of the signee's signature
      */

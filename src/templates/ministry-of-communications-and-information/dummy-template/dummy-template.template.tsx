@@ -1,8 +1,9 @@
-import React, { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { MinistryOfCommunicationsAndInformationDummyTemplateOaDoc } from './dummy-template.types'
-import styled from 'styled-components'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
+import styled from 'styled-components'
+
+import { MinistryOfCommunicationsAndInformationDummyTemplateOaDoc } from './dummy-template.types'
 
 const TemplateContainer = styled.div`
     pre {

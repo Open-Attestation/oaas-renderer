@@ -1,12 +1,14 @@
-import { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { HealthSciencesAuthorityFreeSaleMedicalDevicesOaDoc } from './free-sale-medical-devices.types'
-import { Helmet } from 'react-helmet-async'
 import { A4, A4HeightPx4Pages, A4WidthPx } from 'components/paper-size'
-import mainBg from '../common/assets/medicaldevice-a4-bg.png'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
+import { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
 import hsaStamp from '../common/assets/hsa-stamp.svg'
 import hsaLogo from '../common/assets/logo-hsa.svg'
+import mainBg from '../common/assets/medicaldevice-a4-bg.png'
 import {
     Pg1MainDiv,
     Pg1MainDivItem,
@@ -47,8 +49,7 @@ import {
     Pg1InfoFieldDetailsDivItemValue,
     Pg1InfoFieldsDiv,
 } from './free-sale-medical-devices.components'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { HealthSciencesAuthorityFreeSaleMedicalDevicesOaDoc } from './free-sale-medical-devices.types'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx4Pages

@@ -1,22 +1,19 @@
 import './styles.css'
 
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
+import { FlexBox } from 'components/flexbox'
+import { A4HeightPx, A4WidthPx } from 'components/paper-size'
+import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
 import { FunctionComponent } from 'react'
-
-import { SRFACLogoImage, Typography, Root } from './bcls-aed.components'
-
 import { Helmet } from 'react-helmet-async'
-import { FlexBox } from 'components/flexbox'
 
-import srfacLogoSrc from '../common/assets/srfac-logo.png'
 import imagesMap from '../common/assets/__generated__/images-map'
-
-import { NationalYouthCouncilBclsAedOaDoc } from './bcls-aed.types'
+import srfacLogoSrc from '../common/assets/srfac-logo.png'
 import { ObsCertMainPage } from '../common/obs-cert-main-page/obs-cert-main-page'
-import { A4HeightPx, A4WidthPx } from 'components/paper-size'
-import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
-import { ScalableDocument } from 'components/scalable-document/ScalableDocument'
+import { SRFACLogoImage, Typography, Root } from './bcls-aed.components'
+import { NationalYouthCouncilBclsAedOaDoc } from './bcls-aed.types'
 
 const documentWidth = A4WidthPx
 const documentHeight = A4HeightPx

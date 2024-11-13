@@ -1,5 +1,5 @@
-import { OrderedList } from './obs-moc.components'
 import { Typography } from '../common/components'
+import { OrderedList } from './obs-moc.components'
 
 export const descriptions: { [key: string]: JSX.Element } = {
     moc: (

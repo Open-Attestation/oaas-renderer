@@ -1,8 +1,10 @@
-import { FunctionComponent } from 'react'
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
-import { HealthSciencesAuthorityMethodValidationForChemicalTestingOaDoc } from './method-validation-for-chemical-testing.types'
-import { Helmet } from 'react-helmet-async'
 import { A4Landscape } from 'components/paper-size'
+import { FunctionComponent } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+import landscapeBg from '../common/assets/HSA_bg_2X.png'
+import { formatCourseDatefor } from '../common/utils'
 import {
     CertificateOfAttendanceComponent,
     TitleDivComponent,
@@ -18,8 +20,7 @@ import {
     SigneeSignatureComponent,
     SigneeSignatureImg,
 } from './method-validation-for-chemical-testing.components'
-import landscapeBg from '../common/assets/HSA_bg_2X.png'
-import { formatCourseDatefor } from '../common/utils'
+import { HealthSciencesAuthorityMethodValidationForChemicalTestingOaDoc } from './method-validation-for-chemical-testing.types'
 
 export const HealthSciencesAuthorityMethodValidationForChemicalTestingTemplate: FunctionComponent<
     TemplateProps<HealthSciencesAuthorityMethodValidationForChemicalTestingOaDoc> & {

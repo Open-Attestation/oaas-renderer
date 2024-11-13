@@ -1,4 +1,5 @@
 import { v2 } from '@govtechsg/open-attestation'
+
 import { SingaporeFoodAgencyExportHealthCertificateOaDoc } from './export-health-certificate.types'
 
 const signature =
