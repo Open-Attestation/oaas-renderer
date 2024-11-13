@@ -44,7 +44,13 @@ export default {
         assessorName: makeRequiredString('Name of assessor', 'TrustDocs demo'),
         countryOfAssessment: makeEnumString(
             'Contry of assessment',
-            ['Singapore'] as const,
+            [
+                'Singapore',
+                'Malaysia',
+                'Australia',
+                'Vietnam',
+                'Zimbabwe',
+            ] as const,
             'Singapore'
         ),
     },

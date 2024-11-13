@@ -29,5 +29,10 @@ export interface TrustdocsDemoLicenseToVerifyTrial {
     /**
      * Contry of assessment
      */
-    countryOfAssessment: 'Singapore'
+    countryOfAssessment:
+        | 'Singapore'
+        | 'Malaysia'
+        | 'Australia'
+        | 'Vietnam'
+        | 'Zimbabwe'
 }

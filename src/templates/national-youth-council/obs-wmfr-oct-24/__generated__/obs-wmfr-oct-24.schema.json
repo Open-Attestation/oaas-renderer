@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "NationalYouthCouncil/ObsWmfrOct_24",
+    "type": "object",
+    "required": [
+        "name",
+        "issueDate",
+        "courseDate",
+        "courseCode",
+        "certificateNumber",
+        "ExecDirName",
+        "ExecDirSignature"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "examples": ["John Wick"],
+            "minLength": 1
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2022-12-31"],
+            "format": "date"
+        },
+        "courseDate": {
+            "type": "string",
+            "description": "Course date of the certificate",
+            "examples": ["01-02 September 2024"]
+        },
+        "courseCode": {
+            "type": "string",
+            "description": "Course code",
+            "examples": ["MST-WMFR-2024-001"]
+        },
+        "certificateNumber": {
+            "type": "string",
+            "description": "Certificate number",
+            "examples": ["OBSWMFR-2024-001"],
+            "minLength": 1
+        },
+        "ExecDirName": {
+            "type": "string",
+            "description": "Name of the issuing officer",
+            "enum": ["Nicholas Conceicao", "Dr Ng Yih Yng"],
+            "examples": ["Nicholas Conceicao"],
+            "minLength": 1
+        },
+        "ExecDirSignature": {
+            "type": "string",
+            "description": "Image hash value of the issuing officer's signature",
+            "enum": [
+                "nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png",
+                "dr-yih-yng-signature&87961f1e6b1874d14eb157e78a680108cef21cfba862592973d5445b9d4d7495.png"
+            ],
+            "examples": [
+                "nicholas-signature&1e6ebedbff42703518a83c1b296744c55f071f9147ec19c8ebae88794ab3f120.png"
+            ]
+        }
+    },
+    "additionalProperties": false
+}
