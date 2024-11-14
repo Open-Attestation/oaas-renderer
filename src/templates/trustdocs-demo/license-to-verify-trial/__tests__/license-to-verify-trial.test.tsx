@@ -463,22 +463,10 @@ describe('TrustdocsDemoLicenseToVerifyTrialTemplate', () => {
                       <div
                         className="c17"
                       >
-                        <svg
-                          height={128}
-                          viewBox="0 0 25 25"
-                          width={128}
-                        >
-                          <path
-                            d="M0,0 h25v25H0z"
-                            fill="#FFFFFF"
-                            shapeRendering="crispEdges"
-                          />
-                          <path
-                            d="M0 0h7v1H0zM9 0h1v1H9zM11 0h1v1H11zM18,0 h7v1H18zM0 1h1v1H0zM6 1h1v1H6zM11 1h1v1H11zM15 1h2v1H15zM18 1h1v1H18zM24,1 h1v1H24zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM8 2h2v1H8zM11 2h1v1H11zM15 2h1v1H15zM18 2h1v1H18zM20 2h3v1H20zM24,2 h1v1H24zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM8 3h1v1H8zM11 3h5v1H11zM18 3h1v1H18zM20 3h3v1H20zM24,3 h1v1H24zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM8 4h1v1H8zM12 4h1v1H12zM14 4h1v1H14zM16 4h1v1H16zM18 4h1v1H18zM20 4h3v1H20zM24,4 h1v1H24zM0 5h1v1H0zM6 5h1v1H6zM8 5h1v1H8zM10 5h1v1H10zM12 5h2v1H12zM15 5h1v1H15zM18 5h1v1H18zM24,5 h1v1H24zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18,6 h7v1H18zM8 7h1v1H8zM11 7h2v1H11zM14 7h2v1H14zM0 8h1v1H0zM2 8h5v1H2zM9 8h1v1H9zM12 8h4v1H12zM18 8h5v1H18zM3 9h1v1H3zM5 9h1v1H5zM8 9h2v1H8zM12 9h1v1H12zM19 9h1v1H19zM21 9h2v1H21zM1 10h4v1H1zM6 10h3v1H6zM11 10h2v1H11zM15 10h3v1H15zM19 10h2v1H19zM23,10 h2v1H23zM3 11h1v1H3zM8 11h1v1H8zM11 11h1v1H11zM14 11h1v1H14zM17 11h1v1H17zM24,11 h1v1H24zM1 12h4v1H1zM6 12h1v1H6zM8 12h1v1H8zM12 12h7v1H12zM20 12h1v1H20zM22 12h1v1H22zM0 13h4v1H0zM7 13h4v1H7zM13 13h1v1H13zM16 13h1v1H16zM19 13h1v1H19zM21 13h1v1H21zM0 14h1v1H0zM2 14h1v1H2zM4 14h1v1H4zM6 14h2v1H6zM9 14h4v1H9zM14 14h5v1H14zM22,14 h3v1H22zM0 15h1v1H0zM3 15h2v1H3zM8 15h1v1H8zM11 15h1v1H11zM14 15h2v1H14zM18 15h1v1H18zM21 15h1v1H21zM24,15 h1v1H24zM0 16h1v1H0zM3 16h2v1H3zM6 16h1v1H6zM10 16h5v1H10zM16,16 h9v1H16zM8 17h1v1H8zM12 17h1v1H12zM14 17h3v1H14zM20 17h2v1H20zM23,17 h2v1H23zM0 18h7v1H0zM10 18h1v1H10zM12 18h1v1H12zM16 18h1v1H16zM18 18h1v1H18zM20 18h2v1H20zM23,18 h2v1H23zM0 19h1v1H0zM6 19h1v1H6zM8 19h1v1H8zM11 19h1v1H11zM16 19h1v1H16zM20 19h1v1H20zM23,19 h2v1H23zM0 20h1v1H0zM2 20h3v1H2zM6 20h1v1H6zM8 20h2v1H8zM11 20h10v1H11zM0 21h1v1H0zM2 21h3v1H2zM6 21h1v1H6zM8 21h2v1H8zM11 21h3v1H11zM15 21h1v1H15zM17 21h2v1H17zM20 21h2v1H20zM23,21 h2v1H23zM0 22h1v1H0zM2 22h3v1H2zM6 22h1v1H6zM8 22h2v1H8zM14 22h2v1H14zM24,22 h1v1H24zM0 23h1v1H0zM6 23h1v1H6zM10 23h1v1H10zM15 23h4v1H15zM20 23h1v1H20zM24,23 h1v1H24zM0 24h7v1H0zM8 24h1v1H8zM10 24h1v1H10zM12 24h4v1H12zM17 24h2v1H17zM23,24 h2v1H23z"
-                            fill="#000000"
-                            shapeRendering="crispEdges"
-                          />
-                        </svg>
+                        <img
+                          alt="Dummy QR Code"
+                          src="dummy-qr.png"
+                        />
                       </div>
                       <div
                         className="c18"
