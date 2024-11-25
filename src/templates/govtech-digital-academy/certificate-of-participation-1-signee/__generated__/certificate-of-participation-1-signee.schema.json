@@ -74,5 +74,6 @@
             "examples": ["partnerlogo.png"],
             "minLength": 1
         }
-    }
+    },
+    "additionalProperties": false
 }

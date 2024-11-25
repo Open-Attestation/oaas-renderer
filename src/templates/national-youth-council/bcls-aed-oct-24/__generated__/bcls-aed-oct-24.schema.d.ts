@@ -31,5 +31,4 @@ export interface NationalYouthCouncilBclsAedOct_24 {
      * Certificate number
      */
     certificateNumber: string
-    [k: string]: unknown
 }

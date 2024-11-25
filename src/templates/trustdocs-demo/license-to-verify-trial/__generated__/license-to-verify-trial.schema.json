@@ -50,7 +50,13 @@
         "countryOfAssessment": {
             "type": "string",
             "description": "Contry of assessment",
-            "enum": ["Singapore"],
+            "enum": [
+                "Singapore",
+                "Malaysia",
+                "Australia",
+                "Vietnam",
+                "Zimbabwe"
+            ],
             "examples": ["Singapore"]
         }
     },

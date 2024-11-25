@@ -9,6 +9,7 @@ import styled from 'styled-components'
 import { retrieveQrAttachmentPayload } from 'utils/retrieve-qr-attachment-payload'
 
 import frontCardBackground from './bg.svg'
+import DummyQrImage from './dummy-qr.png'
 import { TrustdocsDemoLicenseToVerifyTrialOaDoc } from './license-to-verify-trial.types'
 import trustdocsLogoImage from './trustdocs-logo.svg'
 
@@ -260,7 +261,14 @@ export const TrustdocsDemoLicenseToVerifyTrialTemplate: FunctionComponent<
                                 </FlexBox>
                                 <FlexBox $vertical $spacing={0.5}>
                                     <QRPlaceHolder>
-                                        <QRCodeSVG value={qrPayload} />
+                                        {qrPayload ? (
+                                            <QRCodeSVG value={qrPayload} />
+                                        ) : (
+                                            <img
+                                                src={DummyQrImage}
+                                                alt="Dummy QR Code"
+                                            />
+                                        )}
                                     </QRPlaceHolder>
                                     <QRCaption>Scan QR to verify</QRCaption>
                                 </FlexBox>

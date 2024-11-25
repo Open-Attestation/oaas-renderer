@@ -58,5 +58,6 @@
             "examples": ["OBSBCLS-2024-001"],
             "minLength": 1
         }
-    }
+    },
+    "additionalProperties": false
 }
