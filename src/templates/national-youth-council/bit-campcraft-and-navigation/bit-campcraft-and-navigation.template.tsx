@@ -99,7 +99,7 @@ export const NationalYouthCouncilBitCampcraftAndNavigationTemplate: FunctionComp
                             </Typography>
                         </FlexBox>
                     </ObsCertMainPage>
-                    <A4 $bgImg={descriptionBg}>
+                    <A4 $bgImg={descriptionBg} $padding="1cm 2cm 0px 2cm">
                         <FlexBox $vertical $spacing={3}>
                             <FlexBox $vertical $spacing={1}>
                                 <Typography $bold>
