@@ -26,11 +26,14 @@ export interface NationalYouthCouncilStandardFirstAidOct_24 {
     /**
      * Name of trainer
      */
-    ciName: 'Darvin Bin Rozali'
+    ciName: 'Jaffar Ali' | 'Fazdli Jamal' | 'Darvin Bin Rozali'
     /**
      * CI's signature
      */
-    ciSignature: 'darvin-bin-rozali-signature&88b24e2878675c1939b90322909ee5d40e1a36648fce0c29cb8ded459eb2d3b6.png'
+    ciSignature:
+        | 'jaffar-ali-signature&3d805f88bf49b640f6498c0e5335806289c24ee9533c7b79b08f3a5e454f1be4.png'
+        | 'fazdli-jamal-signature&09fc5bfca94f8c519f9433c611b4fb9ff8cfed316343125469a8addee67c6b06.png'
+        | 'darvin-bin-rozali-signature&88b24e2878675c1939b90322909ee5d40e1a36648fce0c29cb8ded459eb2d3b6.png'
     /**
      * Certificate number
      */
