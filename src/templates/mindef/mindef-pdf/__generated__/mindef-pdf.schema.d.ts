@@ -13,7 +13,12 @@ export interface MindefMindefPdf {
     /**
      * Name of this document
      */
-    documentName: string
+    documentName:
+        | 'Certificate of Service Package'
+        | 'Certificate of Service'
+        | 'Transcript'
+        | 'Testimonial'
+        | 'Transcript and Testimonial'
     /**
      * Reference number
      */

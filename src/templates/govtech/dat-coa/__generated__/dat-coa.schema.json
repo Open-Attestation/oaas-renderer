@@ -33,7 +33,12 @@
         "awardType": {
             "type": "string",
             "description": "Award type",
-            "enum": ["Prompt Royale Award", "VIZtory Award"],
+            "enum": [
+                "Prompt Royale Award",
+                "Prompt Royale X Award",
+                "Prompt Royale Open Award",
+                "VIZtory Award"
+            ],
             "examples": ["Prompt Royale Award"]
         },
         "issueDate": {
