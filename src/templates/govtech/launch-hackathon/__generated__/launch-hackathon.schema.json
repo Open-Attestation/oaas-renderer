@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Govtech/LaunchHackathon",
+    "type": "object",
+    "required": [
+        "name",
+        "programmeTitle",
+        "awardTitle",
+        "awardDescription",
+        "issueDate",
+        "signeeName",
+        "signeeDesignation",
+        "signeeSignature_image",
+        "partnershipLogo_image"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of participant",
+            "examples": ["Johnathan Doe"],
+            "minLength": 1,
+            "maxLength": 31
+        },
+        "programmeTitle": {
+            "type": "string",
+            "description": "Title of the programme",
+            "examples": ["GovTech X OpenAI Hackathon 2024"],
+            "minLength": 1,
+            "maxLength": 71
+        },
+        "awardTitle": {
+            "type": "string",
+            "description": "Title of the award",
+            "examples": ["First Place"],
+            "minLength": 1,
+            "maxLength": 31
+        },
+        "awardDescription": {
+            "type": "string",
+            "description": "Description of the award",
+            "examples": [
+                "In recognition of your outstanding achievement in the GovTech X OpenAI Hackathon 2024, organised by the GovTech and OpenAI for developers."
+            ],
+            "minLength": 1,
+            "maxLength": 207
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2024-11-22"],
+            "format": "date"
+        },
+        "signeeName": {
+            "type": "string",
+            "description": "Name of signee",
+            "examples": ["Chang Sau Sheong"],
+            "minLength": 1,
+            "maxLength": 39
+        },
+        "signeeDesignation": {
+            "type": "string",
+            "description": "Designation of signee",
+            "examples": ["Deputy Chief Executive, GovTech"],
+            "minLength": 1,
+            "maxLength": 39
+        },
+        "signeeSignature_image": {
+            "type": "string",
+            "description": "Sigature of signee",
+            "examples": ["signature.png"],
+            "minLength": 1
+        },
+        "partnershipLogo_image": {
+            "type": "string",
+            "description": "Image of the partnership logo",
+            "examples": ["logo.png"],
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}

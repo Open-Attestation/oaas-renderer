@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GovtechDigitalAcademy/CertificateOfAchievementSmartnation",
+    "type": "object",
+    "required": [
+        "name",
+        "programmeTitle",
+        "programmeStartDate",
+        "programmeEndDate",
+        "signeeName",
+        "signeeDesignation",
+        "signeeOrganisation",
+        "signeeSignature"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of participant",
+            "examples": ["Tan Chen Chen"],
+            "minLength": 1,
+            "maxLength": 100
+        },
+        "programmeTitle": {
+            "type": "string",
+            "description": "Title of the programme",
+            "examples": ["TechUp Run 3"],
+            "minLength": 1,
+            "maxLength": 100
+        },
+        "programmeStartDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2024-10-28"],
+            "format": "date",
+            "formatMaximum": {
+                "$data": "1/programmeEndDate"
+            }
+        },
+        "programmeEndDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2024-11-22"],
+            "format": "date",
+            "formatMinimum": {
+                "$data": "1/programmeStartDate"
+            }
+        },
+        "signeeName": {
+            "type": "string",
+            "description": "Name of signee",
+            "enum": ["Joseph Leong"],
+            "examples": ["Joseph Leong"]
+        },
+        "signeeDesignation": {
+            "type": "string",
+            "description": "Designation of signee",
+            "enum": ["Permanent Secretary"],
+            "examples": ["Permanent Secretary"]
+        },
+        "signeeOrganisation": {
+            "type": "string",
+            "description": "Organisation of signee",
+            "enum": [
+                "Ministry of Digital Development and Information, Smart Nation, and Cybersecurity"
+            ],
+            "examples": [
+                "Ministry of Digital Development and Information, Smart Nation, and Cybersecurity"
+            ]
+        },
+        "signeeSignature": {
+            "type": "string",
+            "description": "SHA256 hash of the signee's signature",
+            "enum": [
+                "joseph-leong-coa-signature&3f58615390f610d16d0dfdfb330cad21194eb768780cec807924ce66a321f821.png"
+            ],
+            "examples": [
+                "joseph-leong-coa-signature&3f58615390f610d16d0dfdfb330cad21194eb768780cec807924ce66a321f821.png"
+            ]
+        }
+    },
+    "additionalProperties": false
+}

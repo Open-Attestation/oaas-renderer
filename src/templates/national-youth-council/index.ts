@@ -1,6 +1,7 @@
 import { TemplateRegistry } from '@govtechsg/decentralized-renderer-react-components'
 
 import { nationalYouthCouncilBclsAedTemplates } from './bcls-aed'
+import { nationalYouthCouncilBclsAedOct_24Templates } from './bcls-aed-oct-24'
 import { nationalYouthCouncilBitCampcraftAndNavigationTemplates } from './bit-campcraft-and-navigation'
 import { nationalYouthCouncilBitSoftSkillsTemplates } from './bit-soft-skills'
 import { nationalYouthCouncilBitSummaryCertificateTemplates } from './bit-summary-certificate'
@@ -20,9 +21,17 @@ import { nationalYouthCouncilGeneralCertificateTemplates } from './general-certi
 import { nationalYouthCouncilObsCoachingTemplates } from './obs-coaching'
 import { nationalYouthCouncilObsMocTemplates } from './obs-moc'
 import { nationalYouthCouncilObsWmfrTemplates } from './obs-wmfr'
+import { nationalYouthCouncilObsWmfrOct_24Templates } from './obs-wmfr-oct-24'
 import { nationalYouthCouncilStandardFirstAidTemplates } from './standard-first-aid'
+import { nationalYouthCouncilStandardFirstAidOct_24Templates } from './standard-first-aid-oct-24'
 
 export const registry: TemplateRegistry<any> = {
+    'national-youth-council/obs-wmfr-oct-24':
+        nationalYouthCouncilObsWmfrOct_24Templates,
+    'national-youth-council/bcls-aed-oct-24':
+        nationalYouthCouncilBclsAedOct_24Templates,
+    'national-youth-council/standard-first-aid-oct-24':
+        nationalYouthCouncilStandardFirstAidOct_24Templates,
     'national-youth-council/bizsafe-level-2-risk-management-2024':
         nationalYouthCouncilBizsafeLevel_2RiskManagement_2024Templates,
     'national-youth-council/bit-summary-certificate-feb-2023':

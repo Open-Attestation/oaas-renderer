@@ -76,4 +76,5 @@ export default {
             minLength: 1,
         },
     },
+    additionalProperties: false,
 } as JSONSchema

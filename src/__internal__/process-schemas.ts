@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-import Ajv from 'ajv'
+import Ajv, { Schema } from 'ajv'
 import addFormats from 'ajv-formats'
 import glob from 'glob'
 import { compileFromFile } from 'json-schema-to-typescript'
@@ -62,6 +62,8 @@ void Promise.all(
             console.error(error)
         }
 
+        assertExplicitNoAdditionalProperties(filepath, schema)
+
         const jsonSchemaString = JSON.stringify(schema, undefined, 4)
         fs.writeFileSync(targetSchemaFilepath, jsonSchemaString)
 
@@ -74,3 +76,37 @@ void Promise.all(
         fs.writeFileSync(targetTsFilepath, ts)
     })
 )
+
+export function assertExplicitNoAdditionalProperties(
+    filepath: string,
+    schema: Schema
+) {
+    // we only care about objects
+    if (typeof schema !== 'object' || schema === null) {
+        return
+    }
+
+    if ('type' in schema && schema.type === 'object') {
+        if (
+            schema.additionalProperties === undefined ||
+            schema.additionalProperties
+        ) {
+            throw new Error(
+                `All objects in JSON Schema (${filepath}) MUST EXPILICLY SET "additionalProperties: false"`
+            )
+        }
+    }
+
+    const keys = Object.keys(schema)
+    for (const key of keys) {
+        const value = schema[key]
+
+        if (Array.isArray(value)) {
+            for (const item of value) {
+                assertExplicitNoAdditionalProperties(filepath, item)
+            }
+        } else {
+            assertExplicitNoAdditionalProperties(filepath, value)
+        }
+    }
+}
