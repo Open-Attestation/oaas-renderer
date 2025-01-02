@@ -54,10 +54,10 @@ export const GovtechLaunchCertificateTemplate: FunctionComponent<
             <ScalableDocumentV2>
                 <A4Landscape $bgImg={landscapeBg} $padding="0">
                     <div className="absolute w-[944px] h-[59px] top-[170px] left-[90px] text-[48px] font-extrabold text-[#1E2A4C] font-['Poppins']">
-                        {document.certificateTitle}
+                        {document.programmeTitle}
                     </div>
                     <div className="absolute w-[944px] h-[42px] top-[220px] left-[90px] text-[28px] text-[#1E2A4C] font-['Poppins']">
-                        {document.certificateSubtitle}
+                        {document.programmeSubtitle}
                     </div>
                     <div className="absolute w-[944px] h-[78px] top-[252px] left-[90px] text-[52px] font-bold ordinal text-[#00A6E3] font-['Poppins']">
                         {ConvertToSuperscriptJSX(document.awardTitle)}

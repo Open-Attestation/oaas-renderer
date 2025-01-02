@@ -13,8 +13,8 @@ export const sample: GovtechLaunchCertificateOaDoc = {
         url: 'http://localhost:3000',
     },
     name: 'Saurabh Jaiswal',
-    certificateTitle: 'LAUNCH! Your Vote Contest 2024',
-    certificateSubtitle: 'Whole-of-Government Most Voted Hackathon Team',
+    programmeTitle: 'LAUNCH! Your Vote Contest 2024',
+    programmeSubtitle: 'Whole-of-Government Most Voted Hackathon Team',
     awardTitle: '1st Place',
     awardDescription:
         'In recognition of your exceptional achievement in the LAUNCH! Hackathon sprint organised by GovTech Singapore for public officers.',

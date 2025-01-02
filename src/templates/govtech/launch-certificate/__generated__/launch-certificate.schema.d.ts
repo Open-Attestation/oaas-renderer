@@ -13,11 +13,11 @@ export interface GovtechLaunchCertificate {
     /**
      * Title of the programme
      */
-    certificateTitle: string
+    programmeTitle: string
     /**
      * Subtitle of the programme
      */
-    certificateSubtitle: string
+    programmeSubtitle: string
     /**
      * Title of the award
      */

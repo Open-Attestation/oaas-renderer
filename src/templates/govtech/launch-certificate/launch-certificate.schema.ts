@@ -7,8 +7,8 @@ export default {
     type: 'object',
     required: [
         'name',
-        'certificateTitle',
-        'certificateSubtitle',
+        'programmeTitle',
+        'programmeSubtitle',
         'awardTitle',
         'awardDescription',
         'issueDate',
@@ -19,17 +19,17 @@ export default {
     ],
     properties: {
         name: makeRequiredString('Name of participant', 'Johnathan Doe', 31),
-        certificateTitle: makeRequiredString(
+        programmeTitle: makeRequiredString(
             'Title of the programme',
             'LAUNCH! Your Vote Contest 2024',
             35
         ),
-        certificateSubtitle: makeRequiredString(
+        programmeSubtitle: makeRequiredString(
             'Subtitle of the programme',
             'Whole-of-Government Most Voted Hackathon Team',
             55
         ),
-        awardTitle: makeRequiredString('Title of the award', '1st place', 31),
+        awardTitle: makeRequiredString('Title of the award', '1st Place', 31),
         awardDescription: makeRequiredString(
             'Description of the award',
             'In recognition of your exceptional achievement in the LAUNCH! Hackathon sprint organised by GovTech Singapore for public officers.',
