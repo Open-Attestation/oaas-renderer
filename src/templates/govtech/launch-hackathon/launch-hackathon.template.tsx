@@ -68,9 +68,9 @@ export const GovtechLaunchHackathonTemplate: FunctionComponent<
                     <div className="absolute w-[185px] h-[22px] top-[664px] left-[470px] text-[18px] text-center text-[#FFFFFF] font-['Montserrat']">
                         Jointly organised by:
                     </div>
-                    <div className="absolute w-[480px] h-[75px] top-[705px] left-[324px] text-center content-end">
+                    <div className="absolute w-[450px] h-[72px] top-[705px] left-[335px] text-center content-end">
                         <img
-                            className="max-w-[480px] max-h-[75px]"
+                            className="max-w-[450px] max-h-[72px]"
                             src={document.partnershipLogo_image}
                             alt="signature"
                         />
