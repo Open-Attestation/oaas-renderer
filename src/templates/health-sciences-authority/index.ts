@@ -5,12 +5,15 @@ import { healthSciencesAuthorityFreeSaleTemplates } from './free-sale'
 import { healthSciencesAuthorityFreeSaleMedicalDevicesTemplates } from './free-sale-medical-devices'
 import { healthSciencesAuthorityHsaLetterTemplates } from './hsa-letter'
 import { healthSciencesAuthorityHsaLicenseCertificateTemplates } from './hsa-license-certificate'
+import { healthSciencesAuthorityHsaShareCertificateTemplates } from './hsa-share-certificate'
 import { healthSciencesAuthorityHsaShareCertificate_1yExpiryTemplates } from './hsa-share-certificate-1y-expiry'
 import { healthSciencesAuthorityHsaShareCertificate_3yExpiryTemplates } from './hsa-share-certificate-3y-expiry'
 import { healthSciencesAuthorityHsaShareCertificateNoExpiryTemplates } from './hsa-share-certificate-no-expiry'
 import { healthSciencesAuthorityMethodValidationForChemicalTestingTemplates } from './method-validation-for-chemical-testing'
 
 export const registry: TemplateRegistry<any> = {
+    'health-sciences-authority/hsa-share-certificate':
+        healthSciencesAuthorityHsaShareCertificateTemplates,
     'health-sciences-authority/hsa-share-certificate-no-expiry':
         healthSciencesAuthorityHsaShareCertificateNoExpiryTemplates,
     'health-sciences-authority/hsa-share-certificate-3y-expiry':

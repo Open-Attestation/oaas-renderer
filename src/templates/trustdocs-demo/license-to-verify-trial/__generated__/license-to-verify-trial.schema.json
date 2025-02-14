@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "TrustdocsDemo/LicenseToVerifyTrial",
+    "type": "object",
+    "required": [
+        "name",
+        "profile_image",
+        "issuedOnDate",
+        "validTillDate",
+        "assessorName",
+        "countryOfAssessment"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of recipient",
+            "examples": ["{Your Name}"],
+            "minLength": 1
+        },
+        "profile_image": {
+            "type": "string",
+            "description": "Filename of the profile image",
+            "examples": ["photo.png"],
+            "minLength": 1
+        },
+        "issuedOnDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2024-11-20"],
+            "format": "date",
+            "formatMaximum": {
+                "$data": "1/validTillDate"
+            }
+        },
+        "validTillDate": {
+            "type": "string",
+            "description": "Date of expiry",
+            "examples": ["2024-12-31"],
+            "format": "date",
+            "formatMinimum": {
+                "$data": "1/issuedOnDate"
+            }
+        },
+        "assessorName": {
+            "type": "string",
+            "description": "Name of assessor",
+            "examples": ["TrustDocs demo"],
+            "minLength": 1
+        },
+        "countryOfAssessment": {
+            "type": "string",
+            "description": "Contry of assessment",
+            "enum": [
+                "Singapore",
+                "Malaysia",
+                "Australia",
+                "Vietnam",
+                "Zimbabwe"
+            ],
+            "examples": ["Singapore"]
+        }
+    },
+    "additionalProperties": false
+}

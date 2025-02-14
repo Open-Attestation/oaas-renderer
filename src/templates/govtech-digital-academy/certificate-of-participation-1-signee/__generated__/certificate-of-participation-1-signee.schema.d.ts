@@ -42,5 +42,4 @@ export interface GovtechDigitalAcademyCertificateOfParticipation_1Signee {
      * Logo of partner
      */
     partnerLogo_image: string
-    [k: string]: unknown
 }

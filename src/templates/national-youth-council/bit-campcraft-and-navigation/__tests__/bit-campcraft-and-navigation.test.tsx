@@ -124,7 +124,7 @@ describe('NationalYouthCouncilBitCampcraftAndNavigationTemplate', () => {
               position: relative;
               width: 21cm;
               min-height: 29.7cm;
-              padding: 2cm;
+              padding: 1cm 2cm 0px 2cm;
               margin: 0 auto;
               box-sizing: border-box;
               border: 1px solid #ccc;
