@@ -71,13 +71,22 @@ export const GovtechDigitalAcademyCertificateOfAchievement_1SigneeV2Template: Fu
                             </div>
                             <div className="h-[1px] w-[568px] mt-[10px] bg-[#99753E]" />
                             <div className="h-[20px] mt-[16px] text-[17px] leading-[20.4px] font-normal text-[#000000] text-center">
-                                for your active participation in
+                                for achieving the requirements and learnings of
                             </div>
                             <div className="mt-[10px] text-[21px] leading-[25.2px] tracking-[0.01em] font-bold text-[#000000] text-center whitespace-pre-line">
                                 {programmeTitle}
                             </div>
+                            <div className="mt-[12px] h-[20px] text-center text-[17px] font-normal leading-[20.4px] text-[#000000]">
+                                Your commitment to continuing professional
+                                development has
+                                <br />
+                                helped advance digital transformation across and
+                                beyond the
+                                <br />
+                                Public Service.
+                            </div>
                         </div>
-                        <div className="absolute bottom-[68px] right-[80px] flex flex-row gap-[36px]">
+                        <div className="absolute bottom-[48px] right-[80px] flex flex-row gap-[36px]">
                             <div className="w-[568px] flex flex-col items-center">
                                 <div className="w-[265px] h-[71px] mb-[4px] flex flex-col items-center justify-end">
                                     <img
