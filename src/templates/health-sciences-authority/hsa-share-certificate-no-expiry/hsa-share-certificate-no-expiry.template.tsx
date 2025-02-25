@@ -1,11 +1,10 @@
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import {
-    ScaleToViewportPage,
-    ScaleToViewportPdfDocument,
     DefaultPdfLoadingComponent,
-} from 'components/scale-to-viewport-pdf'
+    ScaleToViewportPdfDocumentV2,
+} from 'components/scale-to-viewport-pdf-v2'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
-import React, { FunctionComponent, ReactNode, useState } from 'react'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 import { HealthSciencesAuthorityHsaShareCertificateNoExpiryOaDoc } from './hsa-share-certificate-no-expiry.types'
@@ -19,27 +18,9 @@ export const HealthSciencesAuthorityHsaShareCertificateNoExpiryTemplate: Functio
         className?: string
     }
 > = ({ document }) => {
-    const [numPages, setNumPages] = useState<number>()
-
-    function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
-        setNumPages(numPages)
-    }
-
     const transformScale = useShrinkToViewport(
         INITIAL_PAGE_WIDTH_INCHES * PIXEL_PER_INCH
     )
-
-    const renderedPdfPages: ReactNode[] = []
-
-    for (let i = 0; i < (numPages ?? 0); i++) {
-        renderedPdfPages.push(
-            <ScaleToViewportPage
-                key={i}
-                className="mx-auto"
-                pageNumber={i + 1}
-            />
-        )
-    }
 
     return (
         <>
@@ -53,7 +34,7 @@ export const HealthSciencesAuthorityHsaShareCertificateNoExpiryTemplate: Functio
                 ></link>
             </Helmet>
             <div id="hsa-share-certificate-1y-expiry">
-                <ScaleToViewportPdfDocument
+                <ScaleToViewportPdfDocumentV2
                     loading={
                         <DefaultPdfLoadingComponent
                             width={
@@ -65,10 +46,7 @@ export const HealthSciencesAuthorityHsaShareCertificateNoExpiryTemplate: Functio
                         />
                     }
                     file={document.pdfContent_pdf}
-                    onLoadSuccess={onDocumentLoadSuccess}
-                >
-                    {renderedPdfPages}
-                </ScaleToViewportPdfDocument>
+                />
             </div>
         </>
     )

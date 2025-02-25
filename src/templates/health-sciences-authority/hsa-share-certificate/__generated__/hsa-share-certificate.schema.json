@@ -9,7 +9,7 @@
         "signatoryName",
         "signatoryDesignation",
         "agencyName",
-        "validUntil",
+        "expireOn",
         "pdfContent_pdf"
     ],
     "properties": {
@@ -49,7 +49,7 @@
             "enum": ["Health Sciences Authority"],
             "examples": ["Health Sciences Authority"]
         },
-        "validUntil": {
+        "expireOn": {
             "type": "string",
             "description": "Expiry date of permit",
             "examples": ["2030-04-20"],

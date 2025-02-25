@@ -1,13 +1,12 @@
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import {
-    ScaleToViewportPage,
-    ScaleToViewportPdfDocument,
+    ScaleToViewportPdfDocumentV2,
     DefaultPdfLoadingComponent,
-} from 'components/scale-to-viewport-pdf'
+} from 'components/scale-to-viewport-pdf-v2'
 import { SoftExpiredBanner } from 'components/soft-expired-banner/soft-expired-banner'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
-import React, { FunctionComponent, ReactNode, useState } from 'react'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 import { HealthSciencesAuthorityHsaShareCertificateOaDoc } from './hsa-share-certificate.types'
@@ -21,29 +20,11 @@ export const HealthSciencesAuthorityHsaShareCertificateTemplate: FunctionCompone
         className?: string
     }
 > = ({ document }) => {
-    const [numPages, setNumPages] = useState<number>()
-
-    function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
-        setNumPages(numPages)
-    }
-
     const transformScale = useShrinkToViewport(
         INITIAL_PAGE_WIDTH_INCHES * PIXEL_PER_INCH
     )
 
-    const renderedPdfPages: ReactNode[] = []
-
-    for (let i = 0; i < (numPages ?? 0); i++) {
-        renderedPdfPages.push(
-            <ScaleToViewportPage
-                key={i}
-                className="mx-auto"
-                pageNumber={i + 1}
-            />
-        )
-    }
-
-    const expiryDate = DateTime.fromISO(document.validUntil, {
+    const expiryDate = DateTime.fromISO(document.expireOn, {
         zone: 'Asia/Singapore',
     })
     const isExpired =
@@ -62,7 +43,7 @@ export const HealthSciencesAuthorityHsaShareCertificateTemplate: FunctionCompone
             <div id="health-sciences-authority-hsa-share-certificate">
                 {isExpired && <SoftExpiredBanner />}
                 {!isExpired && (
-                    <ScaleToViewportPdfDocument
+                    <ScaleToViewportPdfDocumentV2
                         loading={
                             <DefaultPdfLoadingComponent
                                 width={
@@ -74,10 +55,7 @@ export const HealthSciencesAuthorityHsaShareCertificateTemplate: FunctionCompone
                             />
                         }
                         file={document.pdfContent_pdf}
-                        onLoadSuccess={onDocumentLoadSuccess}
-                    >
-                        {renderedPdfPages}
-                    </ScaleToViewportPdfDocument>
+                    ></ScaleToViewportPdfDocumentV2>
                 )}
             </div>
         </>

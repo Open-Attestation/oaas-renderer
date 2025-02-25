@@ -33,7 +33,7 @@ export interface HealthSciencesAuthorityHsaShareCertificate {
     /**
      * Expiry date of permit
      */
-    validUntil: string
+    expireOn: string
     /**
      * input pdf filename or base64 encoded string
      */

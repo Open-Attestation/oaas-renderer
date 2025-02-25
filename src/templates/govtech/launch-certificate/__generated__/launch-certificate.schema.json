@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Govtech/LaunchCertificate",
+    "type": "object",
+    "required": [
+        "name",
+        "programmeTitle",
+        "programmeSubtitle",
+        "awardTitle",
+        "awardDescription",
+        "issueDate",
+        "signeeName",
+        "signeeDesignation",
+        "signeeSignature_image",
+        "partnershipLogo_image"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of participant",
+            "examples": ["Johnathan Doe"],
+            "minLength": 1,
+            "maxLength": 31
+        },
+        "programmeTitle": {
+            "type": "string",
+            "description": "Title of the programme",
+            "examples": ["LAUNCH! Your Vote Contest 2024"],
+            "minLength": 1,
+            "maxLength": 35
+        },
+        "programmeSubtitle": {
+            "type": "string",
+            "description": "Subtitle of the programme",
+            "examples": ["Whole-of-Government Most Voted Hackathon Team"],
+            "minLength": 1,
+            "maxLength": 55
+        },
+        "awardTitle": {
+            "type": "string",
+            "description": "Title of the award",
+            "examples": ["1st Place"],
+            "minLength": 1,
+            "maxLength": 31
+        },
+        "awardDescription": {
+            "type": "string",
+            "description": "Description of the award",
+            "examples": [
+                "In recognition of your exceptional achievement in the LAUNCH! Hackathon sprint organised by GovTech Singapore for public officers."
+            ],
+            "minLength": 1,
+            "maxLength": 246
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2024-11-15"],
+            "format": "date"
+        },
+        "signeeName": {
+            "type": "string",
+            "description": "Name of signee",
+            "examples": ["Chang Sau Sheong"],
+            "minLength": 1,
+            "maxLength": 42
+        },
+        "signeeDesignation": {
+            "type": "string",
+            "description": "Designation of signee",
+            "examples": ["Deputy Chief Executive, GovTech"],
+            "minLength": 1,
+            "maxLength": 42
+        },
+        "signeeSignature_image": {
+            "type": "string",
+            "description": "Sigature of signee",
+            "examples": ["signature.png"],
+            "minLength": 1
+        },
+        "partnershipLogo_image": {
+            "type": "string",
+            "description": "Image of the partnership logo",
+            "examples": ["logo.png"],
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}

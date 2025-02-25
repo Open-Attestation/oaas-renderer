@@ -16,7 +16,7 @@ export default {
         'signatoryName',
         'signatoryDesignation',
         'agencyName',
-        'validUntil',
+        'expireOn',
         'pdfContent_pdf',
     ],
     properties: {
@@ -45,7 +45,7 @@ export default {
             ['Health Sciences Authority'] as const,
             'Health Sciences Authority'
         ),
-        validUntil: makeDateType('Expiry date of permit', '2030-04-20'),
+        expireOn: makeDateType('Expiry date of permit', '2030-04-20'),
         pdfContent_pdf: makeRequiredString(
             'input pdf filename or base64 encoded string',
             'input.pdf'

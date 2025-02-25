@@ -13,8 +13,14 @@
         "documentName": {
             "type": "string",
             "description": "Name of this document",
-            "examples": ["Certificate of service"],
-            "minLength": 1
+            "enum": [
+                "Certificate of Service Package",
+                "Certificate of Service",
+                "Transcript",
+                "Testimonial",
+                "Transcript and Testimonial"
+            ],
+            "examples": ["Certificate of Service Package"]
         },
         "referenceNo": {
             "type": "string",

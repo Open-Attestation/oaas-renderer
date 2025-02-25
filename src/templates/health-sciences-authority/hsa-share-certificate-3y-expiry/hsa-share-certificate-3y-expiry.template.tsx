@@ -1,13 +1,12 @@
 import { TemplateProps } from '@govtechsg/decentralized-renderer-react-components'
 import {
-    ScaleToViewportPage,
-    ScaleToViewportPdfDocument,
     DefaultPdfLoadingComponent,
-} from 'components/scale-to-viewport-pdf'
+    ScaleToViewportPdfDocumentV2,
+} from 'components/scale-to-viewport-pdf-v2'
 import { SoftExpiredBanner } from 'components/soft-expired-banner/soft-expired-banner'
 import { useShrinkToViewport } from 'hooks/useShrinkToViewport'
 import { DateTime } from 'luxon'
-import { FunctionComponent, ReactNode, useState } from 'react'
+import { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 import { HealthSciencesAuthorityHsaShareCertificate_3yExpiryOaDoc } from './hsa-share-certificate-3y-expiry.types'
@@ -21,27 +20,9 @@ export const HealthSciencesAuthorityHsaShareCertificate_3yExpiryTemplate: Functi
         className?: string
     }
 > = ({ document }) => {
-    const [numPages, setNumPages] = useState<number>()
-
-    function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
-        setNumPages(numPages)
-    }
-
     const transformScale = useShrinkToViewport(
         INITIAL_PAGE_WIDTH_INCHES * PIXEL_PER_INCH
     )
-
-    const renderedPdfPages: ReactNode[] = []
-
-    for (let i = 0; i < (numPages ?? 0); i++) {
-        renderedPdfPages.push(
-            <ScaleToViewportPage
-                key={i}
-                className="mx-auto"
-                pageNumber={i + 1}
-            />
-        )
-    }
 
     const expiryDate = DateTime.fromISO(document.validUntil, {
         zone: 'Asia/Singapore',
@@ -64,7 +45,7 @@ export const HealthSciencesAuthorityHsaShareCertificate_3yExpiryTemplate: Functi
             <div id="hsa-share-certificate-3y-expiry">
                 {isExpired && <SoftExpiredBanner />}
                 {!isExpired && (
-                    <ScaleToViewportPdfDocument
+                    <ScaleToViewportPdfDocumentV2
                         loading={
                             <DefaultPdfLoadingComponent
                                 width={
@@ -76,10 +57,7 @@ export const HealthSciencesAuthorityHsaShareCertificate_3yExpiryTemplate: Functi
                             />
                         }
                         file={document.pdfContent_pdf}
-                        onLoadSuccess={onDocumentLoadSuccess}
-                    >
-                        {renderedPdfPages}
-                    </ScaleToViewportPdfDocument>
+                    />
                 )}
             </div>
         </>
