@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Govtech/CrisprCop",
+    "type": "object",
+    "required": [
+        "name",
+        "programmeTitle",
+        "issueDate",
+        "signeeName",
+        "signeeDesignation",
+        "signeeSignature"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of participant",
+            "examples": ["John Doe"],
+            "minLength": 1,
+            "maxLength": 40
+        },
+        "programmeTitle": {
+            "type": "string",
+            "description": "Title of the programme",
+            "examples": ["CRISPr Workshop"],
+            "minLength": 1,
+            "maxLength": 60
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2025-03-26"],
+            "format": "date"
+        },
+        "signeeName": {
+            "type": "string",
+            "description": "Name of signee",
+            "enum": ["Yap Ghim Eng"],
+            "examples": ["Yap Ghim Eng"]
+        },
+        "signeeDesignation": {
+            "type": "string",
+            "description": "Designation of signee",
+            "enum": ["Director of Data Engineering Practice"],
+            "examples": ["Director of Data Engineering Practice"]
+        },
+        "signeeSignature": {
+            "type": "string",
+            "description": "SHA256 hash of the signee's signature",
+            "enum": [
+                "yap-ghim-eng-signature&d5385b8a7e5a66e9be2b8e942ead4c23d9392c196d77b93a1be24d5c94324986.png"
+            ],
+            "examples": [
+                "yap-ghim-eng-signature&d5385b8a7e5a66e9be2b8e942ead4c23d9392c196d77b93a1be24d5c94324986.png"
+            ]
+        }
+    },
+    "additionalProperties": false
+}

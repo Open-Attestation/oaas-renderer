@@ -14,3 +14,12 @@ export const GtoFormattedDate = ({ date }: { date: DateTime }) => {
         </>
     )
 }
+
+export const GtoCrisprFormattedDate = ({ date }: { date: DateTime }) => {
+    return (
+        <>
+            {date.toFormat('d').toUpperCase()}
+            <sup>{getOrdinal(date.day)}</sup> {date.toFormat('MMM')} {date.year}
+        </>
+    )
+}
