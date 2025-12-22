@@ -1,0 +1,144 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "HealthSciencesAuthority/FreeSaleMedicalDevices",
+    "type": "object",
+    "required": [
+        "DateOfIssue",
+        "certificateNumber",
+        "manufacturingSiteName",
+        "manufacturingSiteAddress",
+        "productOwnerName",
+        "productOwnerAddress",
+        "registrantName",
+        "registrantAddress",
+        "signature_image",
+        "signatoryName",
+        "signatoryTitle",
+        "schedule"
+    ],
+    "properties": {
+        "DateOfIssue": {
+            "type": "string",
+            "description": "Date of Issue in YYYY-MM-DD",
+            "examples": ["2023-12-31"],
+            "format": "date"
+        },
+        "certificateNumber": {
+            "type": "string",
+            "description": "Certificate Number",
+            "examples": ["FSC/258/2023"],
+            "minLength": 1
+        },
+        "manufacturingSiteName": {
+            "type": "string",
+            "description": "Manufacturing Site name",
+            "examples": ["GMC INC"],
+            "minLength": 1
+        },
+        "manufacturingSiteAddress": {
+            "type": "string",
+            "description": "Manufacturing Site address",
+            "examples": ["NO.686, SU CHU RD, CHUZHOU, ANHUI, CHINA"],
+            "minLength": 1
+        },
+        "productOwnerName": {
+            "type": "string",
+            "description": "Product owner name",
+            "examples": ["ROSSMAX SWISS GMBH"],
+            "minLength": 1
+        },
+        "productOwnerAddress": {
+            "type": "string",
+            "description": "Product owner address",
+            "examples": ["WIDNAUERSTRASSE 1, CH-9435, HEERBRUGG, SWITZERLAND"],
+            "minLength": 1
+        },
+        "registrantName": {
+            "type": "string",
+            "description": "Registrant name",
+            "examples": ["BION ADVANCE PTE. LTD"],
+            "minLength": 1
+        },
+        "registrantAddress": {
+            "type": "string",
+            "description": "Registrant address",
+            "examples": ["35 PIONEER ROAD NORTH, #02-03 SINGAPORE 628475"],
+            "minLength": 1
+        },
+        "signature_image": {
+            "type": "string",
+            "description": "Signature of signatory",
+            "examples": ["signature.png"],
+            "minLength": 1
+        },
+        "signatoryName": {
+            "type": "string",
+            "description": "Signature of signatory",
+            "examples": ["DR LAKSHMIDEVI BALAKRISHNAN"],
+            "minLength": 1
+        },
+        "signatoryTitle": {
+            "type": "string",
+            "description": "Title of signatory",
+            "examples": ["REGULATORY CONSULTANT"],
+            "minLength": 1
+        },
+        "schedule": {
+            "type": "array",
+            "maxItems": 10,
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "required": [
+                    "deviceProprietaryOrBrandName",
+                    "intendedUse",
+                    "appendix"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "deviceProprietaryOrBrandName": {
+                        "type": "string",
+                        "description": "Device Proprietary/Brand Name",
+                        "examples": [
+                            "Rossmax Blood Pressure Monitors(Upper Arm)"
+                        ],
+                        "minLength": 1
+                    },
+                    "intendedUse": {
+                        "type": "string",
+                        "description": "Intended Use",
+                        "examples": [
+                            "Intended for measuring systolic and diastolic blood pressure using the oscillometric method for adults at home."
+                        ],
+                        "minLength": 1
+                    },
+                    "appendix": {
+                        "type": "array",
+                        "maxItems": 10,
+                        "minItems": 1,
+                        "items": {
+                            "type": "object",
+                            "required": ["modelOrDescription", "productNumber"],
+                            "additionalProperties": false,
+                            "properties": {
+                                "modelOrDescription": {
+                                    "type": "string",
+                                    "description": "Model/ Description",
+                                    "examples": ["Rossmax CF155f"],
+                                    "minLength": 1
+                                },
+                                "productNumber": {
+                                    "type": "string",
+                                    "description": "Product number",
+                                    "examples": ["CF155f"],
+                                    "minLength": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

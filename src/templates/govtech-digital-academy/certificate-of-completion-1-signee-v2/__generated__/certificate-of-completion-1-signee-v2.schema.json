@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GovtechDigitalAcademy/CertificateOfCompletion_1SigneeV2",
+    "type": "object",
+    "required": [
+        "name",
+        "programmeTitle",
+        "issueDate",
+        "signeeName",
+        "signeeDesignation",
+        "signeeDivision",
+        "signeeOrganisation",
+        "signeeSignature"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of participant",
+            "examples": ["THONG YONG JIE ANDRE"],
+            "minLength": 1
+        },
+        "programmeTitle": {
+            "type": "string",
+            "description": "Title of the programme",
+            "examples": [
+                "Certified ScrumMaster (CSM) + Certified LeSS Basics (CLB) Workshop"
+            ],
+            "minLength": 1
+        },
+        "issueDate": {
+            "type": "string",
+            "description": "Date of issue",
+            "examples": ["2022-05-10"],
+            "format": "date"
+        },
+        "signeeName": {
+            "type": "string",
+            "description": "Name of signee",
+            "enum": ["Patrick Pang"],
+            "examples": ["Patrick Pang"]
+        },
+        "signeeDesignation": {
+            "type": "string",
+            "description": "Designation of signee",
+            "enum": ["Director"],
+            "examples": ["Director"]
+        },
+        "signeeDivision": {
+            "type": "string",
+            "description": "Division of signee",
+            "enum": ["GovTech Digital Academy"],
+            "examples": ["GovTech Digital Academy"]
+        },
+        "signeeOrganisation": {
+            "type": "string",
+            "description": "Organisation of signee",
+            "enum": ["Government Technology Agency"],
+            "examples": ["Government Technology Agency"]
+        },
+        "signeeSignature": {
+            "type": "string",
+            "description": "SHA256 hash of the signee's signature",
+            "enum": [
+                "patrick-pang-signature&39573e7f99ce6836b3fc4785dc6d2071b037fe9926fc9133b08aaabab40451a4.png"
+            ],
+            "examples": [
+                "patrick-pang-signature&39573e7f99ce6836b3fc4785dc6d2071b037fe9926fc9133b08aaabab40451a4.png"
+            ]
+        }
+    },
+    "additionalProperties": false
+}

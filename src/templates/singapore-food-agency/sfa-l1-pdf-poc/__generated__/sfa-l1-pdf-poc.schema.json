@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "SingaporeFoodAgency/SfaL1PdfPoc",
+    "type": "object",
+    "required": ["validUntil", "meta", "input_pdf"],
+    "properties": {
+        "signatoryName": {
+            "type": "string",
+            "description": "Name of SAL officer",
+            "examples": ["Thong Yong Jie Andre"],
+            "minLength": 1
+        },
+        "signatoryDesignation": {
+            "type": "string",
+            "description": "Designation of SAL officer",
+            "examples": ["Approving officer"],
+            "minLength": 1
+        },
+        "agencyName": {
+            "type": "string",
+            "description": "Agency name for the SAL e-apostille",
+            "examples": ["Singapore Food Agency"],
+            "minLength": 1
+        },
+        "validUntil": {
+            "type": "string",
+            "description": "Expiry date of permit",
+            "examples": ["2030-04-20"],
+            "format": "date"
+        },
+        "meta": {
+            "type": "object",
+            "required": ["organisationName", "documentName"],
+            "additionalProperties": false,
+            "properties": {
+                "organisationName": {
+                    "type": "string",
+                    "description": "Name of the receiving oraganisation",
+                    "examples": ["ABC PTE LTD"],
+                    "minLength": 1
+                },
+                "documentName": {
+                    "type": "string",
+                    "description": "Document name of the TrustDoc",
+                    "examples": ["XYZ License"],
+                    "minLength": 1
+                }
+            }
+        },
+        "input_pdf": {
+            "type": "string",
+            "description": "input pdf filename",
+            "examples": ["input.pdf"],
+            "minLength": 1
+        }
+    },
+    "additionalProperties": false
+}
